@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Research Report.aux
+The style file: abbrv.bst
+Database file #1: database.bib.bib
+Warning--I didn't find a database entry for "cppreference"
+You've used 42 entries,
+            2118 wiz_defined-function locations,
+            730 strings with 10008 characters,
+and the built_in function-call counts, 9267 in all, are:
+= -- 904
+> -- 343
+< -- 0
++ -- 144
+- -- 102
+* -- 251
+:= -- 1577
+add.period$ -- 168
+call.type$ -- 42
+change.case$ -- 177
+chr.to.int$ -- 0
+cite$ -- 42
+duplicate$ -- 294
+empty$ -- 925
+format.name$ -- 102
+if$ -- 2028
+int.to.chr$ -- 0
+int.to.str$ -- 42
+missing$ -- 0
+newline$ -- 255
+num.names$ -- 84
+pop$ -- 429
+preamble$ -- 1
+purify$ -- 135
+quote$ -- 0
+skip$ -- 210
+stack$ -- 0
+substring$ -- 210
+swap$ -- 42
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 168
+warning$ -- 0
+while$ -- 84
+width$ -- 44
+write$ -- 464
+(There was 1 warning)

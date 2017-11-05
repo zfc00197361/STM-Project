@@ -1,0 +1,1397 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  5 NOV 2017 12:38
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Research Report.tex"
+(./Research Report.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count87
+\float@exts=\toks14
+\float@box=\box26
+\@float@everytoks=\toks15
+\@floatcapt=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\captionmargin=\dimen103
+\captionmargin@=\dimen104
+\captionwidth=\dimen105
+\caption@tempdima=\dimen106
+\caption@indent=\dimen107
+\caption@parindent=\dimen108
+\caption@hangindent=\dimen109
+)
+\c@ContinuedFloat=\count88
+Package caption Info: float package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count89
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+\Gin@req@height=\dimen110
+\Gin@req@width=\dimen111
+)
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip45
+\f@ncyO@elh=\skip46
+\f@ncyO@erh=\skip47
+\f@ncyO@olh=\skip48
+\f@ncyO@orh=\skip49
+\f@ncyO@elf=\skip50
+\f@ncyO@erf=\skip51
+\f@ncyO@olf=\skip52
+\f@ncyO@orf=\skip53
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count91
+\lst@gtempboxa=\box28
+\lst@token=\toks17
+\lst@length=\count92
+\lst@currlwidth=\dimen112
+\lst@column=\count93
+\lst@pos=\count94
+\lst@lostspace=\dimen113
+\lst@width=\dimen114
+\lst@newlines=\count95
+\lst@lineno=\count96
+\lst@maxwidth=\dimen115
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count97
+\lst@skipnumbers=\count98
+\lst@framebox=\box29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen116
+\Hy@linkcounter=\count99
+\Hy@pagecounter=\count100
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count101
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count102
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen117
+\Fld@menulength=\count103
+\Field@Width=\dimen118
+\Fld@charsize=\dimen119
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count104
+\c@Item=\count105
+\c@Hfootnote=\count106
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count107
+\c@bookmark@seq@number=\count108
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip54
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+
+(./Research Report.aux)
+\openout1 = `"Research Report.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 33.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count109
+\scratchdimen=\dimen120
+\scratchbox=\box30
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen121
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks19
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count115
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring ON on input line 33.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count116
+)
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
+
+(./Research Report.out) (./Research Report.out)
+\@outlinefile=\write3
+\openout3 = `"Research Report.out"'.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+
+<Pictures/carlow.png, id=241, 266.9975pt x 144.54pt>
+File: Pictures/carlow.png Graphic file (type png)
+ <use Pictures/carlow.png>
+Package pdftex.def Info: Pictures/carlow.png used on input line 59.
+(pdftex.def)             Requested size: 186.89696pt x 101.17729pt.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Pictures/carlow.png>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
+
+(./Research Report.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 ...umberline {5}STM Libraries}{26}{section.5}
+                                                   [1])
+\tf@toc=\write4
+\openout4 = `"Research Report.toc"'.
+
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+
+ []
+
+[1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+<Pictures/Concurrency_multicore-multithreada.png, id=384, 368.1253pt x 227.3493
+8pt>
+File: Pictures/Concurrency_multicore-multithreada.png Graphic file (type png)
+ <use Pictures/Concurrency_multicore-multithreada.png>
+Package pdftex.def Info: Pictures/Concurrency_multicore-multithreada.png used o
+n input line 96.
+(pdftex.def)             Requested size: 184.0622pt x 113.67441pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+[3 <./Pictures/Concurrency_multicore-multithreada.png>]
+<Pictures/single_core.png, id=400, 301.125pt x 273.02pt>
+File: Pictures/single_core.png Graphic file (type png)
+
+<use Pictures/single_core.png>
+Package pdftex.def Info: Pictures/single_core.png used on input line 110.
+(pdftex.def)             Requested size: 155.99762pt x 141.44214pt.
+
+<Pictures/multi_core.png, id=403, 301.125pt x 273.02pt>
+File: Pictures/multi_core.png Graphic file (type png)
+
+<use Pictures/multi_core.png>
+Package pdftex.def Info: Pictures/multi_core.png used on input line 115.
+(pdftex.def)             Requested size: 155.99762pt x 141.44214pt.
+
+<Pictures/concurrent_vs_parallel.png, id=406, 877.2775pt x 250.9375pt>
+File: Pictures/concurrent_vs_parallel.png Graphic file (type png)
+
+<use Pictures/concurrent_vs_parallel.png>
+Package pdftex.def Info: Pictures/concurrent_vs_parallel.png used on input line
+ 127.
+(pdftex.def)             Requested size: 263.18527pt x 75.28181pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+[4 <./Pictures/single_core.png> <./Pictures/multi_core.png>]
+<Pictures/single_multi_thread.png, id=416, 602.25pt x 424.58624pt>
+File: Pictures/single_multi_thread.png Graphic file (type png)
+
+<use Pictures/single_multi_thread.png>
+Package pdftex.def Info: Pictures/single_multi_thread.png used on input line 13
+8.
+(pdftex.def)             Requested size: 301.12425pt x 212.2926pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+Overfull \hbox (14.67188pt too wide) in paragraph at lines 145--146
+\OT1/ptm/m/n/12 de-sign, that de-rives to new is-sues and re-quire cre-at-ing l
+ocks on shared vari-ables/mem-
+ []
+
+[5 <./Pictures/concurrent_vs_parallel.png>]
+<Pictures/issue1.png, id=427, 328.22626pt x 269.005pt>
+File: Pictures/issue1.png Graphic file (type png)
+
+<use Pictures/issue1.png>
+Package pdftex.def Info: Pictures/issue1.png used on input line 150.
+(pdftex.def)             Requested size: 155.99762pt x 127.85257pt.
+ <Pictures/issue2.png, id=430, 337.26pt x 256.96pt>
+File: Pictures/issue2.png Graphic file (type png)
+
+<use Pictures/issue2.png>
+Package pdftex.def Info: Pictures/issue2.png used on input line 155.
+(pdftex.def)             Requested size: 155.99762pt x 118.85782pt.
+ [6 <./Pictures/single_multi_thread.png> <./Pictures/issue1.png> <./Pictures/is
+sue2.png>]
+<Pictures/deadlock.png, id=441, 401.5pt x 245.91875pt>
+File: Pictures/deadlock.png Graphic file (type png)
+
+<use Pictures/deadlock.png>
+Package pdftex.def Info: Pictures/deadlock.png used on input line 171.
+(pdftex.def)             Requested size: 200.7495pt x 122.95906pt.
+ [7 <./Pictures/deadlock.png>]
+<Pictures/livelock.png, id=451, 311.66437pt x 199.49532pt>
+File: Pictures/livelock.png Graphic file (type png)
+
+<use Pictures/livelock.png>
+Package pdftex.def Info: Pictures/livelock.png used on input line 180.
+(pdftex.def)             Requested size: 155.8318pt x 99.7474pt.
+
+Overfull \hbox (3.52103pt too wide) in paragraph at lines 185--186
+[]\OT1/ptm/m/n/12 Starvation is the state when some threads are mak-ing progres
+s, but other threads
+ []
+
+<Pictures/starvation.jpg, id=454, 401.5pt x 225.84375pt>
+File: Pictures/starvation.jpg Graphic file (type jpg)
+
+<use Pictures/starvation.jpg>
+Package pdftex.def Info: Pictures/starvation.jpg used on input line 189.
+(pdftex.def)             Requested size: 240.90184pt x 135.50728pt.
+ [8 <./Pictures/livelock.png> <./Pictures/starvation.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--217
+
+ []
+
+[9
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 224--226
+
+ []
+
+
+Overfull \hbox (11.18889pt too wide) in paragraph at lines 227--228
+[]\OT1/ptm/m/n/12 Software Trans-ac-tional mem-ory use trans-ac-tion in-stead o
+f locks and semaphores,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+ []
+
+[10
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+<Pictures/realLife.png, id=484, 1285.80376pt x 281.05pt>
+File: Pictures/realLife.png Graphic file (type png)
+
+<use Pictures/realLife.png>
+Package pdftex.def Info: Pictures/realLife.png used on input line 249.
+(pdftex.def)             Requested size: 385.74411pt x 84.31564pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
+
+ []
+
+[11 <./Pictures/realLife.png>]
+<Pictures/lockvsatomicjpg.png, id=495, 1344.02126pt x 441.65pt>
+File: Pictures/lockvsatomicjpg.png Graphic file (type png)
+
+<use Pictures/lockvsatomicjpg.png>
+Package pdftex.def Info: Pictures/lockvsatomicjpg.png used on input line 263.
+(pdftex.def)             Requested size: 268.79948pt x 88.32843pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
+[12 <./Pictures/lockvsatomicjpg.png>]
+<Pictures/rollback.png, id=506, 355.3275pt x 467.7475pt>
+File: Pictures/rollback.png Graphic file (type png)
+
+<use Pictures/rollback.png>
+Package pdftex.def Info: Pictures/rollback.png used on input line 274.
+(pdftex.def)             Requested size: 106.59906pt x 140.32532pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+<Pictures/STM.png, id=510, 319.1925pt x 245.91875pt>
+File: Pictures/STM.png Graphic file (type png)
+ <use Pictures/STM.png>
+Package pdftex.def Info: Pictures/STM.png used on input line 290.
+(pdftex.def)             Requested size: 127.67473pt x 98.36575pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+<Pictures/STMtwoThreads.png, id=513, 360.34625pt x 398.48875pt>
+File: Pictures/STMtwoThreads.png Graphic file (type png)
+
+<use Pictures/STMtwoThreads.png>
+Package pdftex.def Info: Pictures/STMtwoThreads.png used on input line 298.
+(pdftex.def)             Requested size: 90.08633pt x 99.62193pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+
+ []
+
+[13 <./Pictures/rollback.png>]
+<Pictures/STMRollback.png, id=528, 420.57124pt x 334.24875pt>
+File: Pictures/STMRollback.png Graphic file (type png)
+
+<use Pictures/STMRollback.png>
+Package pdftex.def Info: Pictures/STMRollback.png used on input line 316.
+(pdftex.def)             Requested size: 336.45746pt x 267.39935pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 322--323
+
+ []
+
+[14 <./Pictures/STM.png> <./Pictures/STMtwoThreads.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
+
+ []
+
+
+Overfull \hbox (14.83978pt too wide) in paragraph at lines 329--330
+\OT1/ptm/m/n/12 lock the ac-tors are com-mu-ni-cat-ing with each other via mes-
+sage pass-ing.citeVolkmann 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
+
+ []
+
+[15 <./Pictures/STMRollback.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 332--333
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 360.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 360.
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 386--392
+
+ []
+
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 398.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
+File: omlptm.fd 
+)
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 398.
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--405
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 425--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 445--449
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 445--449
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 450--451
+
+ []
+
+[19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 507--508
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--512
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 513--514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 515--516
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--528
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--532
+
+ []
+
+[21] [22]
+Overfull \hbox (0.77538pt too wide) in paragraph at lines 593--594
+\OT1/ptm/m/n/12 Atomically per-forms bit-wise OR be-tween the ar-gu-ment and th
+e value of the atomic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 597--598
+
+ []
+
+
+Package natbib Warning: Citation `cppreference' on page 23 undefined on input l
+ine 621.
+
+
+Overfull \hbox (13.2041pt too wide) in paragraph at lines 626--627
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 649--650
+
+ []
+
+[24] [25]
+Overfull \hbox (0.40442pt too wide) in paragraph at lines 683--685
+\OT1/ptm/m/it/12 trans-ac-tional sys-tem which is de-vel-oped and main-tained a
+t sun micro-systems.\OT1/ptm/m/n/12 [[]]
+ []
+
+[26
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 690--691
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--703
+
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--708
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 720--721
+
+ []
+
+[28]
+Overfull \hbox (20.97858pt too wide) in paragraph at lines 725--726
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (42.5788pt too wide) in paragraph at lines 734--735
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (13.7785pt too wide) in paragraph at lines 738--739
+[][][][][][][][][][][][][][][][] 
+ []
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ¦ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ¦ in font ptmr7t!
+[29] <Pictures/table.png, id=862, 351.3125pt x 135.50626pt>
+File: Pictures/table.png Graphic file (type png)
+
+<use Pictures/table.png>
+Package pdftex.def Info: Pictures/table.png used on input line 796.
+(pdftex.def)             Requested size: 140.5225pt x 54.20152pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[30]
+Overfull \hbox (6.57843pt too wide) in paragraph at lines 836--837
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[31 <./Pictures/table.png>]
+Overfull \hbox (42.5788pt too wide) in paragraph at lines 854--855
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[32] [33] [34]
+Missing character: There is no Í in font ptmr7t!
+Missing character: There is no ¾ in font ptmr7t!
+Missing character: There is no Í in font ptmr7t!
+Missing character: There is no ¾ in font ptmr7t!
+Missing character: There is no Í in font ptmr7t!
+Missing character: There is no ¾ in font ptmr7t!
+ [35]
+Missing character: There is no Í in font ptmr7t!
+Missing character: There is no ¾ in font ptmr7t!
+
+Overfull \hbox (28.17865pt too wide) in paragraph at lines 1024--1025
+[][][][][][][][][][][][] 
+ []
+
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ¦ in font ptmr7t!
+[36] [37]
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1097
+
+ []
+
+[38] [39] [40] [41]
+Underfull \hbox (badness 10000) in paragraph at lines 1258--1259
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1287--1289
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1290--1292
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1293--1294
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 1319--1320
+
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 1338--1339
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1355--1356
+
+ []
+
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 1380--1381
+
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1383
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1384--1385
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1386--1387
+
+ []
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 1415--1416
+
+ []
+
+
+Package natbib Warning: Citation `Bolton_d' on page 48 undefined on input line 
+1418.
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1422
+
+ []
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 1429--1430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1436--1437
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1438--1439
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1441--1442
+
+ []
+
+[50
+
+] [51] (./Research Report.bbl
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 7186) in paragraph at lines 4--9
+[]\OT1/ptm/m/n/12 M. Am-gad, E. H. Has-san, S. Khlid, G. Mina, and G. Mo-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+\OT1/ptm/m/n/12 hamed.  Soft-ware Trans-ac-tional Mem-ory (STM).  [][]$\OT1/pcr
+/m/n/12 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+\OT1/pcr/m/n/12 / / www . cs . purdue . edu / homes / amadkour / presentations 
+/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+\OT1/pcr/m/n/12 SoftwareTransactionalMemory . pdf$[][]\OT1/ptm/m/n/12 .  2017, 
+(Ac-cessed :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+\OT1/pcr/m/n/12 questions / 11255640 / what -[] is -[] transactional -[] memory
+$[][]\OT1/ptm/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--29
+\OT1/pcr/m/n/12 realworldhaskell . org / read / software -[] transactional -[]
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 31--36
+[]\OT1/ptm/m/n/12 K. Chris-tos.  Par-al-lel Com-puter Ar-chi-tec-ture and Pro-g
+ram-ming .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--36
+[][]$\OT1/pcr/m/n/12 http : / / www . cs . cmu . edu / afs / cs / academic / cl
+ass / 15418 -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
+[]\OT1/ptm/m/n/12 H. Cristo-pher.  Free C/C++ Com-pil-ers.  [][]$\OT1/pcr/m/n/1
+2 https : / / www .
+ []
+
+
+Underfull \hbox (badness 5908) in paragraph at lines 44--48
+\OT1/pcr/m/n/12 thefreecountry . com / compilers / cpp . shtml$[][]\OT1/ptm/m/n
+/12 .  2017, (Ac-
+ []
+
+
+Underfull \hbox (badness 2229) in paragraph at lines 50--55
+[]\OT1/ptm/m/n/12 G. Crowd.  Best In-te-grated De-vel-op-ment En-vi-ron-ment (I
+DE) Soft-
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 57--61
+[]\OT1/ptm/m/n/12 B. David.  List of Free C and C++ Com-pil-ers.  [][]$\OT1/pcr
+/m/n/12 https : / / www .
+ []
+
+[52]
+Underfull \hbox (badness 3492) in paragraph at lines 76--80
+[]\OT1/ptm/m/n/12 Q. Doc-u-men-ta-tion.  Qt Doc-u-men-ta-tion.  [][]$\OT1/pcr/m
+/n/12 http : / / doc . qt . io /
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 82--87
+[]\OT1/ptm/m/n/12 R. Flo-rian.  Asyn-chronous mod-els and pat-terns.  [][]$\OT1
+/pcr/m/n/12 https : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--87
+\OT1/pcr/m/n/12 codeproject . com / Articles / 562021 / Asynchronous -[]
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 95--100
+[]\OT1/ptm/m/n/12 R. Grimm.  Trans-ac-tional Mem-ory in C++20.  [][]$\OT1/pcr/m
+/n/12 https : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--100
+\OT1/pcr/m/n/12 linkedin . com / pulse / transactional -[] memory -[] c20 -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--113
+\OT1/pcr/m/n/12 / / java91 . blogspot . ie / 2017 / 01 / what -[] is -[] starva
+tion -[]
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 123--127
+[]\OT1/ptm/m/n/12 J. Jakob.  Java Con-cur-rency / Mul-ti-thread-ing Tu-to-rial.
+  [][]$\OT1/pcr/m/n/12 http :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--127
+\OT1/pcr/m/n/12 / / tutorials . jenkov . com / java -[] concurrency / index . h
+tml$[][]\OT1/ptm/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--134
+[]\OT1/ptm/m/n/12 JIghtuse.  Trans-ac-tional Mem-ory: His-tory and De-vel-op-me
+nt.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--134
+[][]$\OT1/pcr/m/n/12 https : / / kukuruku . co / post / transactional -[] memor
+y -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
+[]\OT1/ptm/m/n/12 E. Kasper.  A Soft-ware Trans-ac-tional Mem-ory Li-brary for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
+\OT1/ptm/m/n/12 C++.  [][]$\OT1/pcr/m/n/12 http : / / www . diku . dk / forskni
+ng / performance -[]
+ []
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 142--147
+\OT1/pcr/m/n/12 colorado . edu / []kena / classes / 5828 / s12 / lectures / 19 
+-[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--160
+\OT1/pcr/m/n/12 article / all -[] about -[] multi -[] core -[] processors -[] w
+hat -[] they -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--167
+[]\OT1/ptm/m/n/12 P. Nick and Z. Julie.  Thread and Semaphores Ex-am-ples.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--167
+[][]$\OT1/pcr/m/n/12 https : / / see . stanford . edu / materials / icsppcs107 
+/ 23 -[]
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 169--174
+\OT1/ptm/m/n/12 cepts.  [][]$\OT1/pcr/m/n/12 http : / / nikgrozev . com / 2015 
+/ 07 / 14 / overview -[] of -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--181
+\OT1/pcr/m/n/12 students / 08hs -[] saurer -[] libstm . pdf$[][]\OT1/ptm/m/n/12
+ .  2008, (Ac-cessed :
+ []
+
+
+Underfull \hbox (badness 4279) in paragraph at lines 189--193
+[]\OT1/ptm/m/n/12 N. org.  Net-beans IDE fea-tures.  [][]$\OT1/pcr/m/n/12 https
+ : / / netbeans . org /
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 201--206
+[]\OT1/ptm/m/n/12 J. Paul.  Javare-vis-ited.  [][]$\OT1/pcr/m/n/12 http : / / j
+avarevisited . blogspot .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--206
+\OT1/pcr/m/n/12 ie / 2010 / 10 / what -[] is -[] deadlock -[] in -[] java -[] h
+ow -[] to -[] fix -[]
+ []
+
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 215--220
+\OT1/pcr/m/n/12 com / What -[] is -[] the -[] difference -[] between -[] gcc -[
+] cc -[] and -[] g + +$[][]\OT1/ptm/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--227
+[]\OT1/ptm/m/n/12 S. Si-tansu.  What is star-va-tion in Thread ?.  [][]$\OT1/pc
+r/m/n/12 http : / /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--227
+\OT1/pcr/m/n/12 www . installsetupconfig . com / win32programming /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--227
+\OT1/pcr/m/n/12 threadprocesssynchronizationapis11 _ 10 . html$[][]\OT1/ptm/m/n
+/12 .  2017,
+ []
+
+
+Underfull \hbox (badness 6001) in paragraph at lines 229--234
+[]\OT1/ptm/m/n/12 S. Swarup.  What are the key new fea-tures in the C++ 14
+ []
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 229--234
+\OT1/ptm/m/n/12 stan-dard?  [][]$\OT1/pcr/m/n/12 https : / / www . quora . com 
+/ What -[] are -[] the -[] key -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--241
+[]\OT1/ptm/m/n/12 Techopedia.  C++ Pro-gram-ming Lan-guage.  [][]$\OT1/pcr/m/n/
+12 https : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--241
+\OT1/pcr/m/n/12 techopedia . com / definition / 26184 / c -[] programming -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--248
+\OT1/pcr/m/n/12 id . pt / []mcouceiro / eurotm / finalevent2015 / riegel . pdf$
+[][]\OT1/ptm/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--255
+[]\OT1/ptm/m/n/12 Tutorialspoint.  C++ Stan-dard Li-brary.  [][]$\OT1/pcr/m/n/1
+2 https : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--255
+\OT1/pcr/m/n/12 tutorialspoint . com / cplusplus / cpp _ standard _ library .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--262
+[]\OT1/ptm/m/n/12 Tutorialspoint.  Op-er-at-ing Sys-tem Multi-Threading.  [][]$
+\OT1/pcr/m/n/12 https :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--262
+\OT1/pcr/m/n/12 / / www . tutorialspoint . com / operating _ systemos _ multi _
+
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 264--269
+[]\OT1/ptm/m/n/12 T. Va-sude-van.  Mul-ti-core CPUs and the con-cur-rency chang
+es they
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 271--275
+[]\OT1/ptm/m/n/12 R. M. Volk-mann.  Soft-ware Trans-ac-tional Mem-ory.  [][]$\O
+T1/pcr/m/n/12 http : / /
+ []
+
+[55])
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1454.
+[56]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1454.
+ (./Research Report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1454.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1454.
+
+
+
+Package rerunfilecheck Warning: File `"Research Report".out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `"Research Report".out':
+(rerunfilecheck)             Before: DB5BF1EC8622E2FB8AB74D59CEDCB178;4029
+(rerunfilecheck)             After:  BAAC0FB5A904055980E26565607394E5;4029.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1454.
+ ) 
+Here is how much of TeX's memory you used:
+ 9387 strings out of 493029
+ 139810 string characters out of 6136233
+ 232497 words of memory out of 5000000
+ 12052 multiletter control sequences out of 15000+600000
+ 21355 words of font info for 44 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,14n,49p,1467b,1743s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "Research Report.pdf" (59 pages, 645946 bytes).
+PDF statistics:
+ 1646 PDF objects out of 1728 (max. 8388607)
+ 1525 compressed objects within 16 object streams
+ 763 named destinations out of 1000 (max. 500000)
+ 563 words of extra memory for PDF output out of 10000 (max. 10000000)
+

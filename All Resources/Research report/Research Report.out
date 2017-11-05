@@ -1,0 +1,59 @@
+\BOOKMARK [1][-]{section.1}{Abstract}{}% 1
+\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
+\BOOKMARK [1][-]{section.3}{Concurrency}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{What is concurrency}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Why need concurrency}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Single-core, Multi-core}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Parallel vs. Concurrent}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{Process vs. Thread}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.6}{Issues}{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Mutual Exclusion and Semaphores}{subsection.3.6}% 10
+\BOOKMARK [3][-]{subsubsection.3.6.2}{Deadlock}{subsection.3.6}% 11
+\BOOKMARK [3][-]{subsubsection.3.6.3}{Live-lock}{subsection.3.6}% 12
+\BOOKMARK [3][-]{subsubsection.3.6.4}{Starvation}{subsection.3.6}% 13
+\BOOKMARK [2][-]{subsection.3.7}{Concurrency Conclusion}{section.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.7.1}{Advantages}{subsection.3.7}% 15
+\BOOKMARK [3][-]{subsubsection.3.7.2}{Disadvantages}{subsection.3.7}% 16
+\BOOKMARK [1][-]{section.4}{Software Transactional Memory \(STM\)}{}% 17
+\BOOKMARK [2][-]{subsection.4.1}{Transaction.}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Transactional Memory\(TM\).}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.1}{How does it work?}{subsection.4.2}% 20
+\BOOKMARK [2][-]{subsection.4.3}{STM algorithms}{section.4}% 21
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Lock based concurrency}{subsection.4.3}% 22
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Actor based concurrency}{subsection.4.3}% 23
+\BOOKMARK [3][-]{subsubsection.4.3.3}{STM implementation}{subsection.4.3}% 24
+\BOOKMARK [2][-]{subsection.4.4}{Why use STM?}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.5}{STM Code semantics.}{section.4}% 26
+\BOOKMARK [3][-]{subsubsection.4.5.1}{Four ways to demarcate a transaction}{subsection.4.5}% 27
+\BOOKMARK [3][-]{subsubsection.4.5.2}{Transactional syntaxes}{subsection.4.5}% 28
+\BOOKMARK [3][-]{subsubsection.4.5.3}{ Atomic variables member functions:}{subsection.4.5}% 29
+\BOOKMARK [3][-]{subsubsection.4.5.4}{Atomic variables specialized member functions:}{subsection.4.5}% 30
+\BOOKMARK [2][-]{subsection.4.6}{Compiler support.}{section.4}% 31
+\BOOKMARK [2][-]{subsection.4.7}{STM Conclusion.}{section.4}% 32
+\BOOKMARK [3][-]{subsubsection.4.7.1}{Advantage of STM.}{subsection.4.7}% 33
+\BOOKMARK [3][-]{subsubsection.4.7.2}{Disadvantage of STM.}{subsection.4.7}% 34
+\BOOKMARK [1][-]{section.5}{STM Libraries}{}% 35
+\BOOKMARK [2][-]{subsection.5.1}{Bloom Filter}{section.5}% 36
+\BOOKMARK [2][-]{subsection.5.2}{Tiny STM}{section.5}% 37
+\BOOKMARK [2][-]{subsection.5.3}{TL2 STM}{section.5}% 38
+\BOOKMARK [2][-]{subsection.5.4}{fastSTM}{section.5}% 39
+\BOOKMARK [2][-]{subsection.5.5}{Haskell and Clojure}{section.5}% 40
+\BOOKMARK [2][-]{subsection.5.6}{Scala STM}{section.5}% 41
+\BOOKMARK [2][-]{subsection.5.7}{Conclusion of STM libraries}{section.5}% 42
+\BOOKMARK [1][-]{section.6}{C++14/17}{}% 43
+\BOOKMARK [2][-]{subsection.6.1}{C++.}{section.6}% 44
+\BOOKMARK [2][-]{subsection.6.2}{New features in C++14}{section.6}% 45
+\BOOKMARK [2][-]{subsection.6.3}{New features in C++17}{section.6}% 46
+\BOOKMARK [2][-]{subsection.6.4}{C++ Libraries}{section.6}% 47
+\BOOKMARK [1][-]{section.7}{Platforms}{}% 48
+\BOOKMARK [2][-]{subsection.7.1}{Integrated Development Environment\(IDE\)}{section.7}% 49
+\BOOKMARK [2][-]{subsection.7.2}{Compilers}{section.7}% 50
+\BOOKMARK [3][-]{subsubsection.7.2.1}{GCC and G++}{subsection.7.2}% 51
+\BOOKMARK [3][-]{subsubsection.7.2.2}{MVSC}{subsection.7.2}% 52
+\BOOKMARK [3][-]{subsubsection.7.2.3}{CLANG}{subsection.7.2}% 53
+\BOOKMARK [2][-]{subsection.7.3}{Conclusion of platform}{section.7}% 54
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 55
+\BOOKMARK [2][-]{subsection.8.1}{Concurrency as a base problem}{section.8}% 56
+\BOOKMARK [2][-]{subsection.8.2}{Software Transactional Memory}{section.8}% 57
+\BOOKMARK [2][-]{subsection.8.3}{Platform and Compilers}{section.8}% 58
+\BOOKMARK [1][-]{section.9}{Bibliography}{}% 59

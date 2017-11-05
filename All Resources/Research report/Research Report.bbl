@@ -1,0 +1,282 @@
+\begin{thebibliography}{10}
+
+\bibitem{STM}
+M.~Amgad, E.~H. Hassan, S.~Khlid, G.~Mina, and G.~Mohamed.
+\newblock {Software Transactional Memory (STM).}
+\newblock
+  \url{https://www.cs.purdue.edu/homes/amadkour/presentations/SoftwareTransactionalMemory.pdf}.
+\newblock 2017, (Accessed : 24/10/2017).
+
+\bibitem{Bartek}
+Bartek.
+\newblock {Bartek's coding blog}.
+\newblock \url{http://www.bfilipek.com/2017/01/cpp17features.html}.
+\newblock 2017, (Accessed : 29/10/2017).
+
+\bibitem{Stack}
+Ben.
+\newblock {What is transactional memory?}
+\newblock
+  \url{https://stackoverflow.com/questions/11255640/what-is-transactional-memory}.
+\newblock 2012, (Accessed : 22/10/2017).
+
+\bibitem{BDJ}
+O.~Bryen, S.~Don, and G.~John.
+\newblock {Real World Haskell.}
+\newblock
+  \url{http://book.realworldhaskell.org/read/software-transactional-memory.html}.
+\newblock 2008, (Accessed : 22/10/2017).
+
+\bibitem{TMvsLock}
+K.~Christos.
+\newblock {Parallel Computer Architecture and Programming }.
+\newblock
+  \url{http://www.cs.cmu.edu/afs/cs/academic/class/15418-s12/www/lectures/20_transactionalmem.pdf}.
+\newblock 2012, (Accessed : 22/10/2017).
+
+\bibitem{VS}
+M.~com.
+\newblock {Visual Studio.}
+\newblock \url{https://www.visualstudio.com/}.
+\newblock 2017, (Accessed : 29/10/2017).
+
+\bibitem{Heng}
+H.~Cristopher.
+\newblock {Free C/C++ Compilers.}
+\newblock \url{https://www.thefreecountry.com/compilers/cpp.shtml}.
+\newblock 2017, (Accessed : 30/10/2017).
+
+\bibitem{G2}
+G.~Crowd.
+\newblock {Best Integrated Development Environment (IDE) Software.}
+\newblock
+  \url{https://www.g2crowd.com/categories/integrated-development-environment-ide}.
+\newblock 2017, (Accessed : 29/10/2017).
+
+\bibitem{Bolton}
+B.~David.
+\newblock {List of Free C and C++ Compilers.}
+\newblock \url{https://www.thoughtco.com/list-of-free-c-compilers-958190}.
+\newblock 2017, (Accessed : 30/10/2017).
+
+\bibitem{BoltonD}
+B.~David.
+\newblock {What is Clang.}
+\newblock \url{https://uk.dice.com/technews/what-is-clang/}.
+\newblock 2015, (Accessed : 30/10/2017).
+
+\bibitem{Dennis}
+J.~Dennis.
+\newblock {DeathByTape }.
+\newblock
+  \url{http://deathbytape.com/articles/2015/04/12/software-transactional-memory.html}.
+\newblock 2015, (Accessed : 22/10/2017).
+
+\bibitem{QT}
+Q.~Documentation.
+\newblock {Qt Documentation.}
+\newblock \url{http://doc.qt.io/qtcreator/ }.
+\newblock 2017, (Accessed : 29/10/2017).
+
+\bibitem{Florian}
+R.~Florian.
+\newblock {Asynchronous models and patterns.}
+\newblock
+  \url{https://www.codeproject.com/Articles/562021/Asynchronous-models-and-patterns}.
+\newblock 2013, (Accessed : 16/10/2017).
+
+\bibitem{Emacs}
+F.~S. Foundation.
+\newblock {GNU Emacs.}
+\newblock \url{https://www.gnu.org/software/emacs/index.html}.
+\newblock 2017, (Accessed : 29/10/2017).
+
+\bibitem{Grimm}
+R.~Grimm.
+\newblock {Transactional Memory in C++20}.
+\newblock
+  \url{https://www.linkedin.com/pulse/transactional-memory-c20-rainer-grimm}.
+\newblock 2015, (Accessed : 28/10/2017).
+
+\bibitem{Hall}
+B.~Hall.
+\newblock {Transactional Memory in Practice}.
+\newblock \url{https://www.youtube.com/watch?v=k20nWb9fHj0}.
+\newblock 2015, (Accessed : 25/10/2017).
+
+\bibitem{installsetupconfig}
+installsetupconfig.
+\newblock {Windows Thread Synchronization 11.}
+\newblock
+  \url{http:http://java91.blogspot.ie/2017/01/what-is-starvation-in-thread.html}.
+\newblock N/A, (Accessed : 24/10/2017).
+
+\bibitem{ISO/IEC}
+ISOIEC.
+\newblock {Technical Specification for C++ Extensions for Transactional
+  Memory}.
+\newblock
+  \url{http://www.open-std.org/Jtc1/sc22/wg21/docs/papers/2015/n4514.pdf}.
+\newblock 2015, (Accessed : 29/10/2017).
+
+\bibitem{Jakob}
+J.~Jakob.
+\newblock {Java Concurrency / Multithreading Tutorial.}
+\newblock \url{http://tutorials.jenkov.com/java-concurrency/index.html}.
+\newblock 2014, (Accessed : 16/10/2017).
+
+\bibitem{JIghtuse}
+JIghtuse.
+\newblock {Transactional Memory: History and Development}.
+\newblock
+  \url{https://kukuruku.co/post/transactional-memory-history-and-development/}.
+\newblock 2014, (Accessed : 25/10/2017).
+
+\bibitem{Kasper}
+E.~Kasper.
+\newblock {A Software Transactional Memory Library for C++.}
+\newblock \url{http://www.diku.dk/forskning/performance-engineering/Kasper/}.
+\newblock N/A, (Accessed : 22/10/2017).
+
+\bibitem{Kenneth}
+M.~A. Kenneth.
+\newblock {Software Transactional Memory}.
+\newblock
+  \url{https://www.cs.colorado.edu/~kena/classes/5828/s12/lectures/19-stm.pdf}.
+\newblock 2012, (Accessed : 22/10/2017).
+
+\bibitem{Bloom}
+llimllib.
+\newblock {Bloom Filters by Example}.
+\newblock \url{https://llimllib.github.io/bloomfilter-tutorial/}.
+\newblock N/A, (Accessed : 22/10/2017).
+
+\bibitem{Looper}
+C.~Looper.
+\newblock {All about multiprocessors.}
+\newblock
+  \url{https://www.pcmech.com/article/all-about-multi-core-processors-what-they-are-how\\-they-work-and-where-they-came-from/}.
+\newblock 2015, (Accessed : 16/10/2017).
+
+\bibitem{Nick&Julie}
+P.~Nick and Z.~Julie.
+\newblock {Thread and Semaphores Examples}.
+\newblock
+  \url{https://see.stanford.edu/materials/icsppcs107/23-Concurrency-Examples.pdf}.
+\newblock 2008, (Accessed : 16/10/2017).
+
+\bibitem{Nikolay}
+G.~Nikolay.
+\newblock {Overview of Modern Concurrency and Parallelism Concepts.}
+\newblock
+  \url{http://nikgrozev.com/2015/07/14/overview-of-modern-concurrency-and-parallelism-concepts/}.
+\newblock 2015, (Accessed : 16/10/2017).
+
+\bibitem{Olivier}
+S.~Olivier.
+\newblock {fastSTM}.
+\newblock
+  \url{https://nebelwelt.net/publications/students/08hs-saurer-libstm.pdf}.
+\newblock 2008, (Accessed : 22/10/2017).
+
+\bibitem{CMake}
+C.~org.
+\newblock {About CMake.}
+\newblock \url{https://cmake.org/overview/}.
+\newblock N/A, (Accessed : 30/10/2017).
+
+\bibitem{Netbeans}
+N.~org.
+\newblock {Netbeans IDE features.}
+\newblock \url{https://netbeans.org/features/cpp/index.html}.
+\newblock 2017, (Accessed : 29/10/2017).
+
+\bibitem{Patent}
+G.~Patents.
+\newblock {STM with multiple global version counters }.
+\newblock \url{http://www.google.sr/patents/US8688921}.
+\newblock 2014, (Accessed : 22/10/2017).
+
+\bibitem{Paul}
+J.~Paul.
+\newblock {Javarevisited.}
+\newblock
+  \url{http://javarevisited.blogspot.ie/2010/10/what-is-deadlock-in-java-how-to-fix-it.html}.
+\newblock 2010, (Accessed : 16/10/2017).
+
+\bibitem{Timstamp}
+K.~Priyanka, P.~Sanhys, and V.~K.
+\newblock {A TimeStamp based Multi-version STM Algorithm.}
+\newblock
+  \url{https://www.iith.ac.in/~sathya_p/index_files/MVTO-ICDCN2014.pdf}.
+\newblock 2009, (Accessed : 30/10/2017).
+
+\bibitem{Rohan}
+P.~Rohan.
+\newblock {I'm a Compiler Compiler Compiler.}
+\newblock
+  \url{https://www.quora.com/What-is-the-difference-between-gcc-cc-and-g++}.
+\newblock 2013, (Accessed : 30/10/2017).
+
+\bibitem{Sitansu}
+S.~Sitansu.
+\newblock {What is starvation in Thread ?.}
+\newblock
+  \url{http://www.installsetupconfig.com/win32programming/threadprocesssynchronizationapis11_10.html}.
+\newblock 2017, (Accessed : 24/10/2017).
+
+\bibitem{Sahoo}
+S.~Swarup.
+\newblock {What are the key new features in the C++ 14 standard?}
+\newblock
+  \url{https://www.quora.com/What-are-the-key-new-features-in-the-C++-14-standard}.
+\newblock 2014, (Accessed : 29/10/2017).
+
+\bibitem{Techopedia}
+Techopedia.
+\newblock {C++ Programming Language}.
+\newblock
+  \url{https://www.techopedia.com/definition/26184/c-programming-language}.
+\newblock N/A, (Accessed : 29/10/2017).
+
+\bibitem{Torvald}
+R.~Torvald.
+\newblock {Transactional Memory for C++}.
+\newblock
+  \url{http://www.gsd.inesc-id.pt/~mcouceiro/eurotm/finalevent2015/riegel.pdf}.
+\newblock 2015, (Accessed : 22/10/2017).
+
+\bibitem{Tutorialspointlibraries}
+Tutorialspoint.
+\newblock {C++ Standard Library}.
+\newblock
+  \url{https://www.tutorialspoint.com/cplusplus/cpp_standard_library.htm}.
+\newblock 2017, (Accessed : 29/10/2017).
+
+\bibitem{Tutorialspoint}
+Tutorialspoint.
+\newblock {Operating System Multi-Threading.}
+\newblock
+  \url{https://www.tutorialspoint.com/operating_systemos_multi_threading.htm}.
+\newblock 2013, (Accessed : 16/10/2017).
+
+\bibitem{Vasudevan}
+T.~Vasudevan.
+\newblock {Multicore CPUs and the concurrency changes they bring.}
+\newblock
+  \url{https://www.ibm.com/developerworks/library/j-nothreads/index.htmll}.
+\newblock 2012 (Accessed : 16/10/2017).
+
+\bibitem{Volkmann}
+R.~M. Volkmann.
+\newblock {Software Transactional Memory.}
+\newblock \url{http://java.ociweb.com/mark/stm/article.html}.
+\newblock 2009, (Accessed : 30/10/2017).
+
+\bibitem{Haskell}
+Wikibooks.
+\newblock {Haskell/Concurrency}.
+\newblock \url{https://en.wikibooks.org/wiki/Haskell/Concurrency}.
+\newblock 2015, (Accessed : 22/10/2017).
+
+\end{thebibliography}
