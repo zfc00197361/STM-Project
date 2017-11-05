@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{times}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage[hyphens,spaces,obeyspaces]{url}
+\usepackage{hyperref}
+\pagenumbering{roman}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor = gray,
+    linktoc=all
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\textit{\color{gray}\today}}
+\lhead{\textit{\color{gray}C++14 Software Transactional Memory}}
+\rfoot{Page \thepage}
+\lfoot{\color{gray}\LaTeX}
+
+\pagenumbering{roman}
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+	\line(1,0){350}\\
+	[0.3 cm]
+	\huge{\textbf{Software Transactional Memory\\[0.3 cm]C++14 STM\\ }} 
+	\line(1,0){200}\\
+	[0.3 cm]
+	\huge{\textbf{Design document }} 
+		\begin{LARGE}
+		\\[0.3 cm]Zoltan Fuzesi\\
+		\today
+		\end{LARGE}
+		
+		\begin{LARGE}
+		\line(1,0){150}\\
+		[1.0 cm]
+		Student ID: C00197361\\
+		Supervisor: Joseph Kehoe\\
+		\color{gray}Institute of Technology Carlow\\
+		\color{gray}Software Engineering
+		\end{LARGE}
+		
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{Pictures/carlow.png}
+\end{figure}
+		
+	\end{center}
+\end{titlepage}
+
+\tableofcontents
+
+
+
+
+
+
+
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\newpage
+\section{Bibliography}
+\begin{center}
+\bibliographystyle{abbrv}
+\bibliography{database.bib}
+
+\end{center}
+
+
+\end{document}
