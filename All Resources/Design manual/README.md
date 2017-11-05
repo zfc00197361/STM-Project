@@ -1,4 +1,4 @@
-Design document resources
+Design document resources due 20/11/2017
 
 Design Manual
 Model the Application.
