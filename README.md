@@ -1,2 +1,1 @@
-C++14 STM PDF documents
-C++ source code
+C++14 STM PDF documents and C++ source code
