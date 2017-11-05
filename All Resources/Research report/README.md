@@ -1,4 +1,4 @@
-Research report resources
+Research report resources due 06/11/2017
 
 Research Report
 The research report should have the following sections:
