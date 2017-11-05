@@ -1,6 +1,6 @@
 Functional Specs resources due 13/11/2017
 
-Functional Specification_
+Functional Specification<br>
 Define the Application._
 What is the application supposed to be?_
 What the product is._
