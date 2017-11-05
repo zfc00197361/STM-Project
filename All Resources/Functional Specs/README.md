@@ -1,4 +1,4 @@
-Functional Specs resources
+Functional Specs resources due 13/11/2017
 
 Functional Specification
 Define the Application.
