@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  5 NOV 2017 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  5 NOV 2017 13:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"Design document.tex"
-(./Design document.tex
+**"Design manual.tex"
+(./Design manual.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -266,8 +266,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 23.
 
-(./Design document.aux)
-\openout1 = `"Design document.aux"'.
+(./Design manual.aux)
+\openout1 = `"Design manual.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
@@ -284,16 +284,14 @@ LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 33.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count109
 \scratchdimen=\dimen120
@@ -337,9 +335,9 @@ LaTeX Info: Redefining \ref on input line 33.
 LaTeX Info: Redefining \pageref on input line 33.
 LaTeX Info: Redefining \nameref on input line 33.
 
-(./Design document.out) (./Design document.out)
+(./Design manual.out) (./Design manual.out)
 \@outlinefile=\write3
-\openout3 = `"Design document.out"'.
+\openout3 = `"Design manual.out"'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
@@ -356,12 +354,12 @@ Package pdftex.def Info: Pictures/carlow.png used on input line 59.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
 
-(./Design document.toc
+(./Design manual.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 )
 \tf@toc=\write4
-\openout4 = `"Design document.toc"'.
+\openout4 = `"Design manual.toc"'.
 
 
 
@@ -381,39 +379,36 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.73 \clearpage
-                [1] (./Design document.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-)
+                [1]
+No file "Design manual".bbl.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
- [1
+[1
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
- (./Design document.aux)
+ (./Design manual.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
-Package rerunfilecheck Info: File `"Design document".out' has not changed.
+Package rerunfilecheck Info: File `"Design manual".out' has not changed.
 (rerunfilecheck)             Checksum: 1A0415265D5D10913B1B9C96C25B3D94;47.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
- 8274 strings out of 493029
- 123703 string characters out of 6136233
+ 8271 strings out of 493029
+ 123623 string characters out of 6136233
  209834 words of memory out of 5000000
  11724 multiletter control sequences out of 15000+600000
  18707 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,13n,43p,259b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,13n,43p,257b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on "Design document.pdf" (3 pages, 45540 bytes).
+Output written on "Design manual.pdf" (3 pages, 45085 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
+ 45 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
  14 words of extra memory for PDF output out of 10000 (max. 10000000)
 
