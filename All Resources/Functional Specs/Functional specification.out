@@ -1,1 +1,14 @@
-\BOOKMARK [1][-]{section.1}{Bibliography}{}% 1
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{What the product can do}{}% 2
+\BOOKMARK [1][-]{section.3}{Functional description}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Create transaction}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Start transaction}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Commit transaction}{section.3}% 6
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Version checking}{subsection.3.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Roll-back transaction}{subsection.3.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Updating}{subsection.3.3}% 9
+\BOOKMARK [1][-]{section.4}{Target users}{}% 10
+\BOOKMARK [1][-]{section.5}{Metrics}{}% 11
+\BOOKMARK [2][-]{subsubsection.5.0.1}{FURPS}{section.5}% 12
+\BOOKMARK [1][-]{section.6}{Other STM libraries}{}% 13
+\BOOKMARK [1][-]{section.7}{Bibliography}{}% 14

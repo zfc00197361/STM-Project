@@ -1220,7 +1220,7 @@ The Standard Libraries provide several interface to manipulate data, function ob
 		\item cerno
 		\end{itemize}
 		
-	\item Dinamic memory management,
+	\item Dynamic memory management,
 		\begin{itemize}
 		\item new
 		\item memory
@@ -1268,7 +1268,7 @@ C++ is a compiled language while some other programming language is interpreted.
 	\item Ubuntu
 	\item Debian
 	\item Red hat
-	\item Fedore
+	\item Fedora
 	\item Suse
 	\end{enumerate}
 \item Solaris //derived form Unix
@@ -1290,7 +1290,7 @@ To create an application in any programming language the best way to use an IDE.
 Some of the IDE are supporting many programming languages, some of them specialized only for one given language. Most of the IDE are cross-platform but some are written for single-platform. There are many IDE available but here will be describe only few of the top IDE developer tools.\\
 {\setlength{\parindent}{0cm}
 \begin{enumerate}
-\item \textbf{QT creator : }is available for free with free core libraries or payable professional libraries as well. \textit{"Qt Creator provides a cross-platform, complete integrated development environment (IDE) for application developers to create applications for multiple desktop, embedded, and mobile device platforms, such as Android and iOS."}\cite{QT} It is supported on variety of 64 and 32-bit systems with the built in GCC vendor supplied compiler, or can attach any third party compiler. Qt provide code editor with C++, QML and ECMAscript, syntax highlighting and code completion, static code checking, source code refactoring and parenthesis matching.The most powerful feature is the Qt GUI application development framework that includes integrated GIU designer. QT use has it is own GUI libraries to place C++ Qt widgets to create visual applications.\\
+\item \textbf{QT creator : }is available for free with free core libraries or payable professional libraries as well. \textit{"Qt Creator provides a cross-platform, complete integrated development environment (IDE) for application developers to create applications for multiple desktop, embedded, and mobile device platforms, such as Android and iOS."}\cite{QT} It is supported on variety of 64 and 32-bit systems with the built in GCC vendor supplied compiler, or can attach any third party compiler. Qt provide code editor with C++, QML and ECMAscript, syntax highlighting and code completion, static code checking, source code refactoring and parenthesis matching.The most powerful feature is the Qt GUI application development framework that includes integrated GUI designer. QT use has it is own GUI libraries to place C++ Qt widgets to create visual applications.\\
 
 QT creator has integrated set of tool like version control to connect with:
 \begin{enumerate}
