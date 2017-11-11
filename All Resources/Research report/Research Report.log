@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  5 NOV 2017 19:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  11 NOV 2017 20:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -868,10 +868,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 597--598
  []
 
 
-Package natbib Warning: Citation `cppreference' on page 23 undefined on input l
-ine 621.
-
-
 Overfull \hbox (13.2041pt too wide) in paragraph at lines 626--627
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -882,7 +878,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 649--650
  []
 
 [24] [25]
-Overfull \hbox (0.40442pt too wide) in paragraph at lines 683--685
+Overfull \hbox (41.94653pt too wide) in paragraph at lines 692--695
+\OT1/ptm/m/n/12 Runing make com-piles tinySTM and puts a static li-brary file a
+t /tinySTM-0.9.9/lib/libstm.a.
+ []
+
+
+Overfull \hbox (0.40442pt too wide) in paragraph at lines 704--706
 \OT1/ptm/m/it/12 trans-ac-tional sys-tem which is de-vel-oped and main-tained a
 t sun micro-systems.\OT1/ptm/m/n/12 [[]]
  []
@@ -890,186 +892,246 @@ t sun micro-systems.\OT1/ptm/m/n/12 [[]]
 [26
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 690--691
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 702--703
+Underfull \hbox (badness 10000) in paragraph at lines 711--712
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 704--705
+Overfull \hbox (27.60425pt too wide) in paragraph at lines 726--727
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 729--731
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--708
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 720--721
-
+Overfull \hbox (78.00476pt too wide) in paragraph at lines 744--745
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [28]
-Overfull \hbox (20.97858pt too wide) in paragraph at lines 725--726
+Underfull \hbox (badness 10000) in paragraph at lines 756--757
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 758--759
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 761--762
+
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 774--775
+
+ []
+
+
+Overfull \hbox (20.97858pt too wide) in paragraph at lines 779--780
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (42.5788pt too wide) in paragraph at lines 734--735
+Overfull \hbox (42.5788pt too wide) in paragraph at lines 788--789
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (13.7785pt too wide) in paragraph at lines 738--739
+Overfull \hbox (13.7785pt too wide) in paragraph at lines 792--793
 [][][][][][][][][][][][][][][][] 
  []
 
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ¦ in font ptmr7t!
+[30]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ¦ in font ptmr7t!
-[29] <Pictures/table.png, id=862, 351.3125pt x 135.50626pt>
+ [31] <Pictures/table.png, id=946, 351.3125pt x 135.50626pt>
 File: Pictures/table.png Graphic file (type png)
 
 <use Pictures/table.png>
-Package pdftex.def Info: Pictures/table.png used on input line 796.
+Package pdftex.def Info: Pictures/table.png used on input line 850.
 (pdftex.def)             Requested size: 140.5225pt x 54.20152pt.
+ [32 <./Pictures/table.png>]
+Overfull \hbox (6.57843pt too wide) in paragraph at lines 890--891
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (42.5788pt too wide) in paragraph at lines 908--909
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[33] [34] [35] [36]
+Missing character: There is no Í in font ptmr7t!
+Missing character: There is no ¾ in font ptmr7t!
+Missing character: There is no Í in font ptmr7t!
+Missing character: There is no ¾ in font ptmr7t!
+Missing character: There is no Í in font ptmr7t!
+Missing character: There is no ¾ in font ptmr7t!
+Missing character: There is no Í in font ptmr7t!
+Missing character: There is no ¾ in font ptmr7t!
+
+Overfull \hbox (28.17865pt too wide) in paragraph at lines 1078--1079
+[][][][][][][][][][][][] 
+ []
+
+[37]
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ¦ in font ptmr7t!
+ [38]
+Underfull \hbox (badness 10000) in paragraph at lines 1150--1151
+
+ []
+
+[39]
+Overfull \hbox (27.53403pt too wide) in paragraph at lines 1165--1166
+[]\OT1/ptm/m/n/12 Object Ori-ented Class Li-braries : Col-lec-tion of Classes a
+nd in-her-ited functions.[[]] 
+ []
+
+[40] [41]
+Overfull \hbox (1.90492pt too wide) in paragraph at lines 1261--1262
+[]\OT1/ptm/m/n/12 The Lo-cal-iza-tion li-brary, in-cludes in-ter-na-tion-al-iza
+-tion sup-port for char-
+ []
+
+[42]
+Overfull \hbox (27.22469pt too wide) in paragraph at lines 1277--1278
+[]\OT1/ptm/m/n/12 Dynamic mem-ory man-age-ment, smart point-ers en-able au-to-m
+atic, exception-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1312--1313
+
+ []
+
+[43] [44]
+Underfull \hbox (badness 10000) in paragraph at lines 1341--1343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1344--1346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1347--1348
+
+ []
+
+<Pictures/qtcreator.jpg, id=1308, 481.8pt x 261.22594pt>
+File: Pictures/qtcreator.jpg Graphic file (type jpg)
+
+<use Pictures/qtcreator.jpg>
+Package pdftex.def Info: Pictures/qtcreator.jpg used on input line 1351.
+(pdftex.def)             Requested size: 240.8994pt x 130.61264pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[30]
-Overfull \hbox (6.57843pt too wide) in paragraph at lines 836--837
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[31 <./Pictures/table.png>]
-Overfull \hbox (42.5788pt too wide) in paragraph at lines 854--855
-[][][][][][][][][][][][][][][][][][] 
- []
-
-[32] [33] [34]
-Missing character: There is no Í in font ptmr7t!
-Missing character: There is no ¾ in font ptmr7t!
-Missing character: There is no Í in font ptmr7t!
-Missing character: There is no ¾ in font ptmr7t!
-Missing character: There is no Í in font ptmr7t!
-Missing character: There is no ¾ in font ptmr7t!
- [35]
-Missing character: There is no Í in font ptmr7t!
-Missing character: There is no ¾ in font ptmr7t!
-
-Overfull \hbox (28.17865pt too wide) in paragraph at lines 1024--1025
-[][][][][][][][][][][][] 
- []
-
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no ¦ in font ptmr7t!
-[36] [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1097
-
- []
-
-[38] [39] [40] [41]
-Underfull \hbox (badness 10000) in paragraph at lines 1258--1259
-
- []
-
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 1287--1289
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1290--1292
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1293--1294
-
- []
-
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 1319--1320
-
- []
-
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 1338--1339
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1355--1356
-
- []
-
 [45]
-Underfull \hbox (badness 10000) in paragraph at lines 1380--1381
-
- []
-
-[46]
 Underfull \hbox (badness 10000) in paragraph at lines 1382--1383
 
  []
 
+[46 <./Pictures/qtcreator.jpg>]
+<Pictures/visualStudio.png, id=1341, 481.8pt x 301.125pt>
+File: Pictures/visualStudio.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1385
+<use Pictures/visualStudio.png>
+Package pdftex.def Info: Pictures/visualStudio.png used on input line 1386.
+(pdftex.def)             Requested size: 240.8994pt x 150.56212pt.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1386--1387
-
- []
-
-[47]
-Underfull \hbox (badness 10000) in paragraph at lines 1415--1416
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1410
 
  []
 
+[47 <./Pictures/visualStudio.png>]
+<Pictures/netbeans.png, id=1360, 632.3625pt x 442.65375pt>
+File: Pictures/netbeans.png Graphic file (type png)
 
-Package natbib Warning: Citation `Bolton_d' on page 48 undefined on input line 
-1418.
+<use Pictures/netbeans.png>
+Package pdftex.def Info: Pictures/netbeans.png used on input line 1413.
+(pdftex.def)             Requested size: 316.18048pt x 221.32632pt.
+ [48 <./Pictures/netbeans.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1432--1433
 
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 1421--1422
+ []
+
+<Pictures/emacs.png, id=1377, 724.7075pt x 656.4525pt>
+File: Pictures/emacs.png Graphic file (type png)
+
+<use Pictures/emacs.png>
+Package pdftex.def Info: Pictures/emacs.png used on input line 1436.
+(pdftex.def)             Requested size: 362.35286pt x 328.22545pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1463--1464
 
  []
 
 [49]
-Underfull \hbox (badness 10000) in paragraph at lines 1429--1430
+Underfull \hbox (badness 10000) in paragraph at lines 1465--1466
+
+ []
+
+[50 <./Pictures/emacs.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1467--1468
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1436--1437
+Underfull \hbox (badness 10000) in paragraph at lines 1469--1470
+
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 1498--1499
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1438--1439
+Underfull \hbox (badness 10000) in paragraph at lines 1504--1505
+
+ []
+
+[52] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 1512--1513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1441--1442
+Underfull \hbox (badness 10000) in paragraph at lines 1519--1520
 
  []
 
-[50
 
-] [51] (./Research Report.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1522
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1524--1525
+
+ []
+
+[54
+
+] [55] (./Research Report.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
@@ -1121,270 +1183,306 @@ ass / 15418 -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--48
+Underfull \hbox (badness 2057) in paragraph at lines 44--48
+[]\OT1/ptm/m/n/12 cppreference.  C++ Stan-dard Li-brary header files.  [][]$\OT
+1/pcr/m/n/12 http : / / en .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--54
 []\OT1/ptm/m/n/12 H. Cristo-pher.  Free C/C++ Com-pil-ers.  [][]$\OT1/pcr/m/n/1
 2 https : / / www .
  []
 
 
-Underfull \hbox (badness 5908) in paragraph at lines 44--48
+Underfull \hbox (badness 5908) in paragraph at lines 50--54
 \OT1/pcr/m/n/12 thefreecountry . com / compilers / cpp . shtml$[][]\OT1/ptm/m/n
 /12 .  2017, (Ac-
  []
 
 
-Underfull \hbox (badness 2229) in paragraph at lines 50--55
+Underfull \hbox (badness 2229) in paragraph at lines 56--61
 []\OT1/ptm/m/n/12 G. Crowd.  Best In-te-grated De-vel-op-ment En-vi-ron-ment (I
 DE) Soft-
  []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 57--61
+Underfull \hbox (badness 1189) in paragraph at lines 63--67
 []\OT1/ptm/m/n/12 B. David.  List of Free C and C++ Com-pil-ers.  [][]$\OT1/pcr
 /m/n/12 https : / / www .
  []
 
-[52]
-Underfull \hbox (badness 3492) in paragraph at lines 76--80
+[56]
+Underfull \hbox (badness 3492) in paragraph at lines 82--86
 []\OT1/ptm/m/n/12 Q. Doc-u-men-ta-tion.  Qt Doc-u-men-ta-tion.  [][]$\OT1/pcr/m
 /n/12 http : / / doc . qt . io /
  []
 
 
-Underfull \hbox (badness 1490) in paragraph at lines 82--87
+Underfull \hbox (badness 1490) in paragraph at lines 88--93
 []\OT1/ptm/m/n/12 R. Flo-rian.  Asyn-chronous mod-els and pat-terns.  [][]$\OT1
 /pcr/m/n/12 https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--87
+Underfull \hbox (badness 10000) in paragraph at lines 88--93
 \OT1/pcr/m/n/12 codeproject . com / Articles / 562021 / Asynchronous -[]
  []
 
 
-Underfull \hbox (badness 2717) in paragraph at lines 95--100
+Underfull \hbox (badness 2134) in paragraph at lines 101--105
+[]\OT1/ptm/m/n/12 GNU.  A Guided Tour of Emacs.  [][]$ \OT1/pcr/m/n/12 https : 
+/ / www . gnu . org /
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 107--112
 []\OT1/ptm/m/n/12 R. Grimm.  Trans-ac-tional Mem-ory in C++20.  [][]$\OT1/pcr/m
 /n/12 https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--100
+Underfull \hbox (badness 10000) in paragraph at lines 107--112
 \OT1/pcr/m/n/12 linkedin . com / pulse / transactional -[] memory -[] c20 -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--113
+Underfull \hbox (badness 10000) in paragraph at lines 120--125
 \OT1/pcr/m/n/12 / / java91 . blogspot . ie / 2017 / 01 / what -[] is -[] starva
 tion -[]
  []
 
 
-Underfull \hbox (badness 3536) in paragraph at lines 123--127
+Underfull \hbox (badness 3536) in paragraph at lines 135--139
 []\OT1/ptm/m/n/12 J. Jakob.  Java Con-cur-rency / Mul-ti-thread-ing Tu-to-rial.
   [][]$\OT1/pcr/m/n/12 http :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--127
+Underfull \hbox (badness 10000) in paragraph at lines 135--139
 \OT1/pcr/m/n/12 / / tutorials . jenkov . com / java -[] concurrency / index . h
 tml$[][]\OT1/ptm/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
+Underfull \hbox (badness 10000) in paragraph at lines 141--146
 []\OT1/ptm/m/n/12 JIghtuse.  Trans-ac-tional Mem-ory: His-tory and De-vel-op-me
 nt.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
+Underfull \hbox (badness 10000) in paragraph at lines 141--146
 [][]$\OT1/pcr/m/n/12 https : / / kukuruku . co / post / transactional -[] memor
 y -[]
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--140
+[57]
+Underfull \hbox (badness 10000) in paragraph at lines 148--152
 []\OT1/ptm/m/n/12 E. Kasper.  A Soft-ware Trans-ac-tional Mem-ory Li-brary for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--140
+Underfull \hbox (badness 10000) in paragraph at lines 148--152
 \OT1/ptm/m/n/12 C++.  [][]$\OT1/pcr/m/n/12 http : / / www . diku . dk / forskni
 ng / performance -[]
  []
 
-[53]
-Underfull \hbox (badness 10000) in paragraph at lines 142--147
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--159
 \OT1/pcr/m/n/12 colorado . edu / []kena / classes / 5828 / s12 / lectures / 19 
 -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--160
+Underfull \hbox (badness 10000) in paragraph at lines 161--166
+\OT1/pcr/m/n/12 net / 2009 / 09 / getting -[] started -[] with -[] tinystm -[] 
+ubuntu -[] 9 -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--179
 \OT1/pcr/m/n/12 article / all -[] about -[] multi -[] core -[] processors -[] w
 hat -[] they -[]
  []
 
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--167
+Underfull \hbox (badness 10000) in paragraph at lines 187--192
 []\OT1/ptm/m/n/12 P. Nick and Z. Julie.  Thread and Semaphores Ex-am-ples.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--167
+Underfull \hbox (badness 10000) in paragraph at lines 187--192
 [][]$\OT1/pcr/m/n/12 https : / / see . stanford . edu / materials / icsppcs107 
 / 23 -[]
  []
 
 
-Underfull \hbox (badness 1546) in paragraph at lines 169--174
+Underfull \hbox (badness 1546) in paragraph at lines 194--199
 \OT1/ptm/m/n/12 cepts.  [][]$\OT1/pcr/m/n/12 http : / / nikgrozev . com / 2015 
 / 07 / 14 / overview -[] of -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--181
+Underfull \hbox (badness 10000) in paragraph at lines 201--206
 \OT1/pcr/m/n/12 students / 08hs -[] saurer -[] libstm . pdf$[][]\OT1/ptm/m/n/12
  .  2008, (Ac-cessed :
  []
 
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ˜ in font ptmr7t!
+Missing character: There is no â in font ptmr7t!
+Missing character: There is no € in font ptmr7t!
+Missing character: There is no ™ in font ptmr7t!
 
-Underfull \hbox (badness 4279) in paragraph at lines 189--193
+Underfull \hbox (badness 1005) in paragraph at lines 208--214
+\OT1/ptm/m/n/12 ate QT Ap-pli-ca-tions .  [][]$\OT1/pcr/m/n/12 http : / / open 
+-[] tube . com / the -[] top -[] qt -[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--214
+\OT1/pcr/m/n/12 ide -[] qt -[] creator -[] provides -[] easy -[] ways -[] to -[
+] create -[] qt -[]
+ []
+
+[58]
+Underfull \hbox (badness 4279) in paragraph at lines 228--232
 []\OT1/ptm/m/n/12 N. org.  Net-beans IDE fea-tures.  [][]$\OT1/pcr/m/n/12 https
  : / / netbeans . org /
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 201--206
+Underfull \hbox (badness 2671) in paragraph at lines 240--245
 []\OT1/ptm/m/n/12 J. Paul.  Javare-vis-ited.  [][]$\OT1/pcr/m/n/12 http : / / j
 avarevisited . blogspot .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--206
+Underfull \hbox (badness 10000) in paragraph at lines 240--245
 \OT1/pcr/m/n/12 ie / 2010 / 10 / what -[] is -[] deadlock -[] in -[] java -[] h
 ow -[] to -[] fix -[]
  []
 
-[54]
-Underfull \hbox (badness 10000) in paragraph at lines 215--220
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--259
 \OT1/pcr/m/n/12 com / What -[] is -[] the -[] difference -[] between -[] gcc -[
 ] cc -[] and -[] g + +$[][]\OT1/ptm/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--227
+Underfull \hbox (badness 10000) in paragraph at lines 261--266
 []\OT1/ptm/m/n/12 S. Si-tansu.  What is star-va-tion in Thread ?.  [][]$\OT1/pc
 r/m/n/12 http : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--227
+Underfull \hbox (badness 10000) in paragraph at lines 261--266
 \OT1/pcr/m/n/12 www . installsetupconfig . com / win32programming /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--227
+Underfull \hbox (badness 10000) in paragraph at lines 261--266
 \OT1/pcr/m/n/12 threadprocesssynchronizationapis11 _ 10 . html$[][]\OT1/ptm/m/n
 /12 .  2017,
  []
 
 
-Underfull \hbox (badness 6001) in paragraph at lines 229--234
+Underfull \hbox (badness 6001) in paragraph at lines 268--273
 []\OT1/ptm/m/n/12 S. Swarup.  What are the key new fea-tures in the C++ 14
  []
 
 
-Underfull \hbox (badness 3386) in paragraph at lines 229--234
+Underfull \hbox (badness 3386) in paragraph at lines 268--273
 \OT1/ptm/m/n/12 stan-dard?  [][]$\OT1/pcr/m/n/12 https : / / www . quora . com 
 / What -[] are -[] the -[] key -[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--241
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
 []\OT1/ptm/m/n/12 Techopedia.  C++ Pro-gram-ming Lan-guage.  [][]$\OT1/pcr/m/n/
 12 https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--241
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
 \OT1/pcr/m/n/12 techopedia . com / definition / 26184 / c -[] programming -[]
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--248
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 282--287
 \OT1/pcr/m/n/12 id . pt / []mcouceiro / eurotm / finalevent2015 / riegel . pdf$
 [][]\OT1/ptm/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--255
+Underfull \hbox (badness 10000) in paragraph at lines 289--294
 []\OT1/ptm/m/n/12 Tutorialspoint.  C++ Stan-dard Li-brary.  [][]$\OT1/pcr/m/n/1
 2 https : / / www .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--255
+Underfull \hbox (badness 10000) in paragraph at lines 289--294
 \OT1/pcr/m/n/12 tutorialspoint . com / cplusplus / cpp _ standard _ library .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--262
+Underfull \hbox (badness 10000) in paragraph at lines 296--301
 []\OT1/ptm/m/n/12 Tutorialspoint.  Op-er-at-ing Sys-tem Multi-Threading.  [][]$
 \OT1/pcr/m/n/12 https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--262
+Underfull \hbox (badness 10000) in paragraph at lines 296--301
 \OT1/pcr/m/n/12 / / www . tutorialspoint . com / operating _ systemos _ multi _
 
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 264--269
+Underfull \hbox (badness 1946) in paragraph at lines 303--308
 []\OT1/ptm/m/n/12 T. Va-sude-van.  Mul-ti-core CPUs and the con-cur-rency chang
 es they
  []
 
 
-Underfull \hbox (badness 4108) in paragraph at lines 271--275
+Underfull \hbox (badness 4108) in paragraph at lines 310--314
 []\OT1/ptm/m/n/12 R. M. Volk-mann.  Soft-ware Trans-ac-tional Mem-ory.  [][]$\O
 T1/pcr/m/n/12 http : / /
  []
 
-[55])
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1454.
-[56]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1454.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1537.
+ [60]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1537.
  (./Research Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1454.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1454.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1537.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1537.
 
 Package rerunfilecheck Info: File `"Research Report".out' has not changed.
 (rerunfilecheck)             Checksum: BAAC0FB5A904055980E26565607394E5;4029.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1454.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1537.
  ) 
 Here is how much of TeX's memory you used:
- 9387 strings out of 493029
- 139810 string characters out of 6136233
- 232497 words of memory out of 5000000
- 12052 multiletter control sequences out of 15000+600000
+ 9479 strings out of 493029
+ 141377 string characters out of 6136233
+ 231593 words of memory out of 5000000
+ 12084 multiletter control sequences out of 15000+600000
  21355 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,49p,1467b,1743s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,49p,1467b,1739s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "Research Report.pdf" (59 pages, 645944 bytes).
+Output written on "Research Report.pdf" (63 pages, 1185846 bytes).
 PDF statistics:
- 1646 PDF objects out of 1728 (max. 8388607)
- 1525 compressed objects within 16 object streams
- 763 named destinations out of 1000 (max. 500000)
- 563 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1775 PDF objects out of 2073 (max. 8388607)
+ 1638 compressed objects within 17 object streams
+ 819 named destinations out of 1000 (max. 500000)
+ 583 words of extra memory for PDF output out of 10000 (max. 10000000)
 

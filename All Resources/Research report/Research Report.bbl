@@ -40,6 +40,12 @@ M.~com.
 \newblock \url{https://www.visualstudio.com/}.
 \newblock 2017, (Accessed : 29/10/2017).
 
+\bibitem{cppreferenceLib}
+cppreference.
+\newblock {C++ Standard Library header files}.
+\newblock \url{http://en.cppreference.com/w/cpp/header}.
+\newblock 2017, (Accessed : 29/10/2017).
+
 \bibitem{Heng}
 H.~Cristopher.
 \newblock {Free C/C++ Compilers.}
@@ -59,7 +65,7 @@ B.~David.
 \newblock \url{https://www.thoughtco.com/list-of-free-c-compilers-958190}.
 \newblock 2017, (Accessed : 30/10/2017).
 
-\bibitem{BoltonD}
+\bibitem{Bolton_d}
 B.~David.
 \newblock {What is Clang.}
 \newblock \url{https://uk.dice.com/technews/what-is-clang/}.
@@ -90,6 +96,12 @@ F.~S. Foundation.
 \newblock {GNU Emacs.}
 \newblock \url{https://www.gnu.org/software/emacs/index.html}.
 \newblock 2017, (Accessed : 29/10/2017).
+
+\bibitem{gnu}
+GNU.
+\newblock {A Guided Tour of Emacs}.
+\newblock \url{ https://www.gnu.org/software/emacs/tour/}.
+\newblock 2017, (Accessed : 11/11/2017).
 
 \bibitem{Grimm}
 R.~Grimm.
@@ -145,6 +157,13 @@ M.~A. Kenneth.
   \url{https://www.cs.colorado.edu/~kena/classes/5828/s12/lectures/19-stm.pdf}.
 \newblock 2012, (Accessed : 22/10/2017).
 
+\bibitem{Kalish}
+K.~Kristopher.
+\newblock {Getting Started with tinySTM }.
+\newblock
+  \url{http://kris.kalish.net/2009/09/getting-started-with-tinystm-ubuntu-9-04/}.
+\newblock 2009, (Accessed : 29/10/2017).
+
 \bibitem{Bloom}
 llimllib.
 \newblock {Bloom Filters by Example}.
@@ -157,6 +176,12 @@ C.~Looper.
 \newblock
   \url{https://www.pcmech.com/article/all-about-multi-core-processors-what-they-are-how\\-they-work-and-where-they-came-from/}.
 \newblock 2015, (Accessed : 16/10/2017).
+
+\bibitem{visualstudio}
+Microsoft.
+\newblock {What’s new in Visual Studio 2017 }.
+\newblock \url{ https://www.visualstudio.com/vs/whatsnew/}.
+\newblock 2017, (Accessed : 11/11/2017).
 
 \bibitem{Nick&Julie}
 P.~Nick and Z.~Julie.
@@ -178,6 +203,20 @@ S.~Olivier.
 \newblock
   \url{https://nebelwelt.net/publications/students/08hs-saurer-libstm.pdf}.
 \newblock 2008, (Accessed : 22/10/2017).
+
+\bibitem{opentube}
+open tube.
+\newblock {The Top QT IDE ‘QT Creator’ Provides Easy Ways To Create QT
+  Applications }.
+\newblock
+  \url{http://open-tube.com/the-top-qt-ide-qt-creator-provides-easy-ways-to-create-qt-applications/}.
+\newblock 2010, (Accessed : 11/11/2017).
+
+\bibitem{netbeans2}
+Oracle.
+\newblock {JSX in NetBeans IDE 8.2}.
+\newblock \url{ https://blogs.oracle.com/geertjan/jsx-in-netbeans-ide-82}.
+\newblock 2017, (Accessed : 11/11/2017).
 
 \bibitem{CMake}
 C.~org.

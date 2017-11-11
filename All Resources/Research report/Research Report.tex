@@ -618,8 +618,8 @@ bool success = x->compare_exchange_strong(y,z);
 	//Otherwise set y=x and return False
 \end{lstlisting}
 
-\textbf{Atomic store memory order :}\cite{cppreference}
-The atomic variables can store the value in diverse memory order:
+\textbf{Atomic store memory order :}
+The atomic variables can store the value in diverse memory order:\cite{cppreferenceLib}
 \begin{lstlisting}
 syntax : x.store(value, std::memory_order_*);
  memory_order_relaxed 
@@ -677,22 +677,76 @@ Software Transactional Memory are implemented in diverse programming and scripti
 \textit{"A Bloom filter is a data structure designed to tell you, rapidly and memory-efficiently, whether an element is present in a set."}\cite{Bloom} It is a probabilistic data structure, to test whether an object is a member of a set. This data structure use by some STM library to determine the thread is a member of a transaction or not.
 
 \subsection{Tiny STM}
-\textit{"The tinySTM system was developed at the University de Neuchtel by Pascal Felber."}\cite{Olivier}  The tinySTM is word-based and light weighted word-based STM implementation. TinySTM algorithm is derived from lazy snapshot algorithm, that guarantees that the transactions always read from the actual memory state. It is compiles and run on booth 32 and 64-bit operating systems and cross platform since was tested on Unix, Mac OS, and on Windows using cygwin. \textit{"No bloom filter is used for fast membership test in the read- or write-set."}\cite{Olivier}
+\textit{"The tinySTM system was developed at the University de Neuchtel by Pascal Felber."}\cite{Olivier}  The tinySTM is word-based and light weighted word-based STM implementation written in C++ programming language. TinySTM algorithm is derived from lazy snapshot algorithm, that guarantees that the transactions always read from the actual memory state. It is compiles and run on booth 32 and 64-bit operating systems and cross platform since was tested on Unix, Mac OS, and on Windows using cygwin. \textit{"No bloom filter is used for fast membership test in the read- or write-set."}\cite{Olivier}
 
+Usage of tinySTM on linux:\cite{Kalish}
+\begin{lstlisting}
+wget http://tinystm.org/sites/tinystm.org/
+files/tinySTM/tinySTM-0.9.9.tgz
+tar -xvf tinySTM-0.9.9.tgz
+cd tinySTM-0.9.9
+sudo apt-get install libatomic-ops-dev
+export LIBAO_HOME=/usr/include/atomic_ops
+make
+\end{lstlisting}
+Runing make compiles tinySTM and puts a static library
+file at~/tinySTM-0.9.9/lib/libstm.a. Anything we write
+to use tinySTM will need to link to this lib file. 
+
+\begin{lstlisting}
+stm_init();
+//initialize tinySTM library
+stm_exit();
+// Let tinySTM clean up after itself
+	
+\end{lstlisting}
 \subsection{TL2 STM}
 \textit{"The Transactional Locking 2 (TL2) is a state-of-the-art word-based software transactional system which is developed and maintained at sun micro-systems.}\cite{Olivier} TL2 is a time and lock-based STM system, that used global shared counter and time stamping when data was accessed by object/thread during transaction. This way the memory location temporary locked by the commit time and conflict can be resolved if at least one of the transactions must be cancelled. TL2 store the read and write sets in a simple linked list.\textit{"For fast membership test in the read and
 write-set a bloom filter is used."}\cite{Olivier}
 
 \subsection{fastSTM}
-\textit{"We present fastSTM, a modular word-based software transactional memory library, which supports commit-time and encounter-time locking. Validation of the read- and write-set is done using a global version-clock. To reduce cache misses we store read- and write-entries together in small blocks of multiple cache line size. For fast membership test in the read and write-set a bloom filter is used."}\cite{Olivier}
+\textit{"We present fastSTM, a modular word-based software transactional memory library, which supports commit-time and encounter-time locking written in C++ language. Validation of the read- and write-set is done using a global version-clock. To reduce cache misses we store read- and write-entries together in small blocks of multiple cache line size. For fast membership test in the read and write-set a bloom filter is used."}\cite{Olivier}
 
 \subsection{Haskell and Clojure}
 Clojure is the only language, that the transactional memory has built in. Clojure used Multi Version Concurrency Control(MVCC), multiple logic version of data.\textit{"During transaction a thread watches the snapshot of data for the moment of its start."}\cite{JIghtuse}\\
 
 Haskell is a purely functional language. \textit{"In Haskell the STM library implements transactional memory. It is part of the Haskell Platform. Types ensure that transactions are used correctly and violations cause errors at compile time.In order to execute any action atomically in Haskell it is preceded by the word atomically."}\cite{JIghtuse} 
+\begin{lstlisting}
+data STM a -- abstract
+instance Monad STM -- among other things
 
+atomically :: STM a -> IO a
+data TVar a -- abstract
+newTVar   :: a -> STM (TVar a)
+readTVar  :: TVar a -> STM a
+writeTVar :: TVar a -> a -> STM ()
+retry     :: STM a
+orElse    :: STM a -> STM a -> STM a
+throwSTM  :: Exception e => e -> STM a
+catchSTM  :: Exception e => STM a -> (e -> STM a) -> STM a
+\end{lstlisting}
 \subsection{Scala STM}
 Haskell and Clojure STM implementation have been influence of Scala STM development. It use the Akka framework for parallel programming and it is provide Ref cell that can be changed inside transaction only.\cite{JIghtuse} 
+Written in Java programming language and is a single JAR with no dependencies.\\
+
+Sample usage of ScalaSTM:
+\begin{lstlisting}
+import scala.concurrent.stm._
+
+val x = Ref(0) // allocate a Ref[Int]
+val y = Ref.make[String]() // type-specific default
+val z = x.single // Ref.View[Int]
+
+atomic { implicit txn =>
+  val i = x() // read
+  y() = "x was " + i // write
+  val eq = atomic { implicit txn => // nested atomic
+    x() == z() // both Ref and Ref.View can be used inside atomic
+  }
+  assert(eq)
+  y.set(y.get + ", long-form access")
+}
+\end{lstlisting}
 
 \subsection{Conclusion of STM libraries}
 There are many diverse Software Transactional Memory(STM) implementation built from various of programming languages. Haskell the only programming language that has STM library built in to the platform. However, these libraries use different logic to tracking the threads and the shared variables or memory spaces inside the functions, all has the same purpose. These STM libraries allows to simplify the threaded programming issues,speed up the applications, increase concurrency and with atomic functions and variables to make it thread safe.
@@ -719,7 +773,7 @@ The changes between C++11 and C++14 are very small and not highly significant.\\
 \subsection{New features in C++17}
 The next generation of C++ has a lots of new features in the language. The most significant updates in C++17 are the follows:\cite{Bartek}\\
 \begin{enumerate}
-\item auto rules for direct-list-initialization
+\item auto rules for direct-list-initialization.
 \begin{lstlisting}
 auto x = foo(); // copy-initialization
 auto x{foo}; // direct-initialization, initializes an 
@@ -727,7 +781,7 @@ auto x{foo}; // direct-initialization, initializes an
 int x = foo(); // copy-initialization
 int x{foo}; // direct-initialization
 \end{lstlisting}
-\item static assert with no message : allows to have conditions without passing the message
+\item static assert with no message : allows to have conditions without passing the message.
 \begin{lstlisting}
 static_assert-declaration:
 static_assert ( constant-expression ) ;
@@ -1098,7 +1152,7 @@ The C++ Object Oriented Programming language including a Standard Library what i
 The Standard Libraries provide several interface to manipulate data, function objects, string, data structures through specific syntax and semantics of generics algorithms to the C++ programming language for daily task like find the fraction of a number, printing to the screen, threaded programming, iterations and much more.\\ \cite{Tutorialspoint}
 
 \begin{enumerate}
-\item Standard Function Library : General purpose, stand-alone functions and not part of nay class.
+\item Standard Function Library : General purpose, stand-alone functions and not part of nay class.\cite{cppreferenceLib}
 	\begin{itemize}
 	\item I/O
 	\item String and character handling,
@@ -1108,9 +1162,9 @@ The Standard Libraries provide several interface to manipulate data, function ob
 	\item Miscellaneous,
 	\item Wide-character functions,
 	\end{itemize}
-\item Object Oriented Class Libraries : Collection of Classes and inherited functions.
+\item Object Oriented Class Libraries : Collection of Classes and inherited functions.\cite{cppreferenceLib}
 	\begin{itemize}
-	\item The Standard C++ I/O Classes,
+	\item The Standard C++ I/O Classes, occurs in streams, which are sequences of bytes flow from a device like a keyboard, a disk drive, or a network connection etc. to main memory to a display screen, a printer, a disk drive, or a network connection, etc., this is called output operation.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item iosfwd
 		\item ios
@@ -1125,7 +1179,7 @@ The Standard Libraries provide several interface to manipulate data, function ob
 		\item cstdio
 		\end{itemize}
 		
-	\item Thread Support libraries,
+	\item Thread Support libraries, enable programs to execute across several processor cores.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item thread
 		\item mutex
@@ -1134,28 +1188,28 @@ The Standard Libraries provide several interface to manipulate data, function ob
 		\item condition variable
 		\end{itemize}
 		
-	\item Atomic operation library,
+	\item Atomic operation library, provides components for atomic operations allowing for lockless concurrent programming.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item atomic
 		\end{itemize}
-	\item Filesystem library,
+	\item Filesystem library, provides facilities for performing operations on file systems and their components, such as paths, regular files, and directories.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item filesystem
 		\end{itemize}
 		
-	\item Regular Expression library,
+	\item Regular Expression library,  provides a class that represents regular expressions, which are a kind of mini-language used to perform pattern matching within string.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item regex
 		\end{itemize}
 		
-	\item Localization library,
+	\item Localization library, includes internationalization support for character classification and string collation, numeric, monetary, and date/time formatting and parsing, and message retrieval.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item locale
 		\item clocale
 		\item codecvt
 		\end{itemize}
 		
-	\item The String Class,
+	\item The String Class, includes support for three general types of strings.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item cctype
 		\item cwctype
@@ -1167,7 +1221,7 @@ The Standard Libraries provide several interface to manipulate data, function ob
 		\item charconv
 		\end{itemize}
 		
-	\item The Numeric Classes,
+	\item The Numeric Classes, includes common mathematical functions and types, as well as optimized numeric arrays and support for random number generation.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item cmath
 		\item complex
@@ -1178,7 +1232,7 @@ The Standard Libraries provide several interface to manipulate data, function ob
 		\item cfenv
 		\end{itemize}
 		
-	\item The STL Container Classes,
+	\item The STL Container Classes,  is a generic collection of class templates and algorithms that allow programmers to easily implement common data structures like queues, lists and stacks.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item array
 		\item vector
@@ -1193,25 +1247,25 @@ The Standard Libraries provide several interface to manipulate data, function ob
 		\item  queue
 		\end{itemize}
 		
-	\item The STL Algorithms,
+	\item The STL Algorithms, defines functions for a variety of purposes (e.g. searching, sorting, counting, manipulating) that operate on ranges of elements.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item algirithm
 		\item execution
 		\end{itemize}
 
-	\item The STL Iterators,
+	\item The STL Iterators, provides definitions for five kinds of iterators as well as iterator traits, adapters, and utility functions.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item iterator
 		\end{itemize}
 		
-	\item The Localization library,
+	\item The Localization library, includes internationalization support for character classification and string collation, numeric, monetary, and date/time formatting and parsing, and message retrieval.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item locale
 		\item clocale
 		\item codecvt
 		\end{itemize}
 		
-	\item Exception Handling Classes,
+	\item Exception Handling Classes, provides consistent interface to handle errors through the throw expression.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item execption
 		\item stdexcept
@@ -1220,7 +1274,7 @@ The Standard Libraries provide several interface to manipulate data, function ob
 		\item cerno
 		\end{itemize}
 		
-	\item Dynamic memory management,
+	\item Dynamic memory management, smart pointers enable automatic, exception-safe, object lifetime management.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item new
 		\item memory
@@ -1228,7 +1282,7 @@ The Standard Libraries provide several interface to manipulate data, function ob
 		\item memory resource		
 		\end{itemize}
 		
-	\item Utilities library
+	\item Utilities library, includes a variety of utility libraries that provide functionality ranging from bit-counting to partial function application.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item cstdlib
 		\item csingnal
@@ -1261,9 +1315,9 @@ C++ is a compiled language while some other programming language is interpreted.
 \textbf{The main platforms for desktop computer are:}
 }
 \begin{enumerate}
-\item Mac OsX //derived from Unix
+\item Mac OsX/Unix
 \item Windows
-\item Linux // Kernel
+\item Linux/Unix
 	\begin{enumerate}
 	\item Ubuntu
 	\item Debian
@@ -1271,7 +1325,7 @@ C++ is a compiled language while some other programming language is interpreted.
 	\item Fedora
 	\item Suse
 	\end{enumerate}
-\item Solaris //derived form Unix
+\item Solaris/Unix
 \item Unix systems
 	\begin{enumerate}
 	\item FreeBSD
@@ -1291,6 +1345,15 @@ Some of the IDE are supporting many programming languages, some of them speciali
 {\setlength{\parindent}{0cm}
 \begin{enumerate}
 \item \textbf{QT creator : }is available for free with free core libraries or payable professional libraries as well. \textit{"Qt Creator provides a cross-platform, complete integrated development environment (IDE) for application developers to create applications for multiple desktop, embedded, and mobile device platforms, such as Android and iOS."}\cite{QT} It is supported on variety of 64 and 32-bit systems with the built in GCC vendor supplied compiler, or can attach any third party compiler. Qt provide code editor with C++, QML and ECMAscript, syntax highlighting and code completion, static code checking, source code refactoring and parenthesis matching.The most powerful feature is the Qt GUI application development framework that includes integrated GUI designer. QT use has it is own GUI libraries to place C++ Qt widgets to create visual applications.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/qtcreator.jpg}
+\caption{\textit{\color{gray}QT Creator IDE \cite{opentube}}}
+\end{figure}
+
+
+
 
 QT creator has integrated set of tool like version control to connect with:
 \begin{enumerate}
@@ -1318,6 +1381,14 @@ Supported platforms :
 
 \item \textbf{Microsoft Visual Studio(MSVS) : } is Microsoft IDE that available in free community version and payable professional version. MVSV is a very powerful software developer kit to create desktop, web, mobile, console and nearly any kind of application. It's code editor support IntelliSense(code completition) and code refactoring. MSVS has built integrated debugger that works on source-code and on machine-code level as well. As a built in feature MSVS able to create C++ GUI application without any external library. However, it is works on Windows platform and just released to Mac OsX, Microsoft Visual Studio is a very powerful Integrated Development Environment.\cite{VS}\\
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/visualStudio.png}
+\caption{\textit{\color{gray}Visual Studio 2017 IDE \cite{visualstudio}}}
+\end{figure}
+
+
+
 Microsoft C and C++ compiler and linker is the cl.exe that produce the Common Object File Format(COFF), objetc file (.obj) and produce the executable (.exe)file or dynamic-link(Dlls) libraries. 
 
 MSVS has built in version control and can connect to different version control systems:
@@ -1337,6 +1408,12 @@ Supported platforms :
 
 \item \textbf{Netbeans : } is a free IDE provide developer interface for many different languages. Netbeans provide project types and templates for C and C++ projects. It is well integrated with GNU gdb debugger, code refactoring, code completiton. Supports variety of leading compiler such Oracle Solaris Studio, GNU, CLang, LLVM, Cygwin, MinGW, and has option to pre-process definition, compile-time, language standards etc. As an interesting factor in Netbeans support QT application development framework to create GUI application.\cite{Netbeans}\\
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/netbeans.png}
+\caption{\textit{\color{gray}Netbeans 8.2 IDE \cite{netbeans2}}}
+\end{figure}
+
 Netbeans provide version control in default for some remote system:
 \begin{enumerate}
 \item Git
@@ -1353,6 +1430,12 @@ Supported platforms :
 \end{enumerate}
 
 \item \textbf{EMACS : } is a free extensible, customizable, self-documenting, real-time display free text editor. It is a highly customizable developer kit since it has more than 10,000 built-in commands, that the user can combine and automatize to do automated work. Use Lips programming language in the background to operate the IDE. Since Emacs use its own key combination, thus the users who never used before Emacs, it could be very difficult at the begging. Supporting lots of different programming languages, other text and unicode format as well. Since Emacs use command line to control the IDE and compile the C++ code, thus any type of compiler can be use with it.\cite{Emacs}\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/emacs.png}
+\caption{\textit{\color{gray}Emacs IDE \cite{gnu}}}
+\end{figure}
 
 Emacs version control interface is called VC. Commands works with several different version control systems:
 \begin{enumerate}
@@ -1446,7 +1529,7 @@ QT development is including the QT libraries and the GUI designer to create cros
 \section{Bibliography}
 \begin{center}
 \bibliographystyle{abbrv}
-\bibliography{database.bib}
+\bibliography{database}
 
 \end{center}
 

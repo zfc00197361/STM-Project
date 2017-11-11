@@ -35,25 +35,25 @@
 \contentsline {section}{\numberline {5}STM Libraries}{26}{section.5}
 \contentsline {subsection}{\numberline {5.1}Bloom Filter}{26}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Tiny STM}{26}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}TL2 STM}{26}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}fastSTM}{26}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.3}TL2 STM}{27}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}fastSTM}{27}{subsection.5.4}
 \contentsline {subsection}{\numberline {5.5}Haskell and Clojure}{27}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Scala STM}{27}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Conclusion of STM libraries}{27}{subsection.5.7}
-\contentsline {section}{\numberline {6}C++14/17}{28}{section.6}
-\contentsline {subsection}{\numberline {6.1}C++.}{28}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}New features in C++14}{28}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}New features in C++17}{29}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}C++ Libraries}{38}{subsection.6.4}
-\contentsline {section}{\numberline {7}Platforms}{42}{section.7}
-\contentsline {subsection}{\numberline {7.1}Integrated Development Environment(IDE)}{43}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Compilers}{46}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}GCC and G++}{48}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}MVSC}{48}{subsubsection.7.2.2}
-\contentsline {subsubsection}{\numberline {7.2.3}CLANG}{48}{subsubsection.7.2.3}
-\contentsline {subsection}{\numberline {7.3}Conclusion of platform}{49}{subsection.7.3}
-\contentsline {section}{\numberline {8}Conclusion}{50}{section.8}
-\contentsline {subsection}{\numberline {8.1}Concurrency as a base problem}{50}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Software Transactional Memory}{50}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Platform and Compilers}{50}{subsection.8.3}
-\contentsline {section}{\numberline {9}Bibliography}{52}{section.9}
+\contentsline {subsection}{\numberline {5.6}Scala STM}{28}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Conclusion of STM libraries}{28}{subsection.5.7}
+\contentsline {section}{\numberline {6}C++14/17}{29}{section.6}
+\contentsline {subsection}{\numberline {6.1}C++.}{29}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}New features in C++14}{29}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}New features in C++17}{30}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}C++ Libraries}{39}{subsection.6.4}
+\contentsline {section}{\numberline {7}Platforms}{44}{section.7}
+\contentsline {subsection}{\numberline {7.1}Integrated Development Environment(IDE)}{45}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Compilers}{50}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}GCC and G++}{52}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}MVSC}{52}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}CLANG}{52}{subsubsection.7.2.3}
+\contentsline {subsection}{\numberline {7.3}Conclusion of platform}{53}{subsection.7.3}
+\contentsline {section}{\numberline {8}Conclusion}{54}{section.8}
+\contentsline {subsection}{\numberline {8.1}Concurrency as a base problem}{54}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Software Transactional Memory}{54}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Platform and Compilers}{54}{subsection.8.3}
+\contentsline {section}{\numberline {9}Bibliography}{56}{section.9}

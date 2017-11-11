@@ -301,12 +301,46 @@ Transactional Memory}},
     Url = {https://www.techopedia.com/definition/26184/c-programming-language},
     note   = "N/A, (Accessed : 29/10/2017)"
     }
-    
+@misc{Kalish,
+    Author = {Kristopher, Kalish.},
+    Howpublished = {\url{http://kris.kalish.net/2009/09/getting-started-with-tinystm-ubuntu-9-04/}},
+    Title = {{Getting Started with tinySTM }},
+    Url = {http://kris.kalish.net/2009/09/getting-started-with-tinystm-ubuntu-9-04/},
+    note   = "2009, (Accessed : 29/10/2017)"
+    }
+@misc{opentube,
+    Author = {open-tube.},
+    Howpublished = {\url{http://open-tube.com/the-top-qt-ide-qt-creator-provides-easy-ways-to-create-qt-applications/}},
+    Title = {{The Top QT IDE ‘QT Creator’ Provides Easy Ways To Create QT Applications }},
+    Url = {http://open-tube.com/the-top-qt-ide-qt-creator-provides-easy-ways-to-create-qt-applications/},
+    note   = "2010, (Accessed : 11/11/2017)"
+    }
+@misc{visualstudio,
+    Author = {Microsoft.},
+    Howpublished = {\url{ https://www.visualstudio.com/vs/whatsnew/}},
+    Title = {{What’s new in Visual Studio 2017 }},
+    Url = { https://www.visualstudio.com/vs/whatsnew/},
+    note   = "2017, (Accessed : 11/11/2017)"
+    }
+@misc{netbeans2,
+    Author = {Oracle.},
+    Howpublished = {\url{ https://blogs.oracle.com/geertjan/jsx-in-netbeans-ide-82}},
+    Title = {{JSX in NetBeans IDE 8.2}},
+    Url = { https://blogs.oracle.com/geertjan/jsx-in-netbeans-ide-82},
+    note   = "2017, (Accessed : 11/11/2017)"
+    }
+@misc{gnu,
+    Author = {GNU.},
+    Howpublished = {\url{ https://www.gnu.org/software/emacs/tour/}},
+    Title = {{A Guided Tour of Emacs}},
+    Url = { https://www.gnu.org/software/emacs/tour/},
+    note   = "2017, (Accessed : 11/11/2017)"
+    }
 
        
 
-    
-    
+
+   
 
 
     
