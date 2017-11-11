@@ -1,1 +1,1 @@
-STM c++ resource folder
+STM CPP resource folder
