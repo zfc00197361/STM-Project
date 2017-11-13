@@ -773,7 +773,7 @@ The changes between C++11 and C++14 are very small and not highly significant.\\
 \subsection{New features in C++17}
 The next generation of C++ has a lots of new features in the language. The most significant updates in C++17 are the follows:\cite{Bartek}\\
 \begin{enumerate}
-\item auto rules for direct-list-initialization
+\item auto rules for direct-list-initialization.
 \begin{lstlisting}
 auto x = foo(); // copy-initialization
 auto x{foo}; // direct-initialization, initializes an 
@@ -781,7 +781,7 @@ auto x{foo}; // direct-initialization, initializes an
 int x = foo(); // copy-initialization
 int x{foo}; // direct-initialization
 \end{lstlisting}
-\item static assert with no message : allows to have conditions without passing the message
+\item static assert with no message : allows to have conditions without passing the message.
 \begin{lstlisting}
 static_assert-declaration:
 static_assert ( constant-expression ) ;

@@ -71,13 +71,11 @@
 \section{Introduction}
 Since the modern computers has more the one core embedded into the CPU, the concurrent and parallel programming is the way to keep the CPU throughput as high as possible and create faster applications. The concurrent and parallel programming requires to sharing memory spaces between processes, cores associated with a running application.\\
 
-The purpose of this project to implement a Software Transactional Memory library in C++14 programming language, to enable other programs to include and use this library as a lock free solution for concurrent programming to protect shared memory spaces, which are used by an application. Because the STM library implementation does not require graphical user interface, database connection and network connectivities, the implementation is limited only for logical C++ code solution, that can be used and tested by an external application. The library itself will be a file with '*.a' extension, that need to be placed into the file system in the Linux operating system. So, as the part of the project, it is require to create a test application to illustrate and test the library usage.\\
+The purpose of this project to implement a Software Transactional Memory library in C++14 programming language, to enable other programs to include and use this library as a lock free solution, to use for concurrent programming to protect shared memory spaces, which are used by an application. Because the STM library implementation does not require graphical user interface, database connection and network connectivities, the implementation is limited only for logical C++ code solution, that can be used and tested by an external application. The library itself will be a file with '*.a' extension, that need to be placed into the file system in the Linux operating system. So, as the part of the project, it is require to create a test application to illustrate and test the library usage.\\
 
 As the mandatory requirements, the project will be fully documented by the Doxygen document generator tool, to provide the description of the available interface functions to other programmers, if they intend to use the library. Create a test application to demonstrate the library usage.\\
 
-To make it available on different platforms such as Linux, Windows and Mac OsX, the library possibly will be tested and available in cross platform versions.\\
-
-As a final result could be good to create a benchmarking result, to compare with other Software Transactional Memory solutions or similar systems.
+To make it available on different operating systems, or at least on Linux and Windows, then possibly Mac OsX, the library will be tested and available in cross platform versions. As a final result, create benchmarking test, to compare with other Software Transactional Memory solutions or similar systems.
 
 \clearpage
 \section{What the product can do}

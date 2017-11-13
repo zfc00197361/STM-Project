@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  11 NOV 2017 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  13 NOV 2017 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -396,18 +396,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-
- []
-
 [1
 
 ] <Pictures/eager.png, id=108, 703.62875pt x 514.92375pt>
 File: Pictures/eager.png Graphic file (type png)
 
 <use Pictures/eager.png>
-Package pdftex.def Info: Pictures/eager.png used on input line 91.
+Package pdftex.def Info: Pictures/eager.png used on input line 89.
 (pdftex.def)             Requested size: 281.4465pt x 205.96585pt.
 
 
@@ -416,35 +411,36 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Pictures/lazy.png, id=111, 688.5725pt x 506.89375pt>
 File: Pictures/lazy.png Graphic file (type png)
  <use Pictures/lazy.png>
-Package pdftex.def Info: Pictures/lazy.png used on input line 97.
+Package pdftex.def Info: Pictures/lazy.png used on input line 95.
 (pdftex.def)             Requested size: 275.4241pt x 202.7539pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 101.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
 [2
 
 ] [3 <./Pictures/eager.png> <./Pictures/lazy.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 121.
+[4]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 119.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
- [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 119.
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
 
-Overfull \hbox (2.4807pt too wide) in paragraph at lines 148--149
+Overfull \hbox (2.4807pt too wide) in paragraph at lines 146--147
 []\OT1/ptm/m/n/12 Full Soft-ware Trans-ac-tional Mem-ory im-ple-men-ta-tion in 
 C++ lan-guage. 
  []
@@ -454,10 +450,10 @@ C++ lan-guage.
 ]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 172.
+(hyperref)                than one, level fixed on input line 170.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
@@ -475,17 +471,17 @@ LaTeX Font Info:    Try loading font information for OT1+pcr on input line 6.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 223.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
  [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 223.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
 
 (./Functional specification.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 223.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 223.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
 Package rerunfilecheck Info: File `"Functional specification".out' has not chan
 ged.
 (rerunfilecheck)             Checksum: 0876ECF49166EFF6D21985FAC8ECDA55;838.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 223.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
  ) 
 Here is how much of TeX's memory you used:
  8420 strings out of 493029
@@ -494,13 +490,13 @@ Here is how much of TeX's memory you used:
  11805 multiletter control sequences out of 15000+600000
  21355 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,49p,912b,1608s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,13n,49p,912b,1093s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "Functional specification.pdf" (11 pages, 225296 bytes).
+Output written on "Functional specification.pdf" (11 pages, 226006 bytes).
 PDF statistics:
  224 PDF objects out of 1000 (max. 8388607)
  198 compressed objects within 2 object streams
