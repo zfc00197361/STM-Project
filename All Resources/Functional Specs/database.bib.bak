@@ -13,3 +13,17 @@ and Development .}},
     Url = {http://www.cs.unh.edu/~cs619/slides/usecase.pdf},
     note   = "2013 (Accessed : 11/11/2017)",
     }
+@misc{DLUATM,
+    Author = {Richard, Dias. and Joao, Lourenco. and Goncalo, Cunha.},
+    Howpublished = {\url{https://www.google.ie/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiHvNOJ0L7XAhVqCMAKHeplBUQQFggpMAA&url=http%3A%2F%2Fwww.comsis.org%2Fpdf.php%3Fid%3D038-0612&usg=AOvVaw3J5gJGporTwDe-WY27QHCC}},
+    Title = {{Developing Libraries Using Software Transactional Memory.}},
+    Url = {https://www.google.ie/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiHvNOJ0L7XAhVqCMAKHeplBUQQFggpMAA&url=http%3A%2F%2Fwww.comsis.org%2Fpdf.php%3Fid%3D038-0612&usg=AOvVaw3J5gJGporTwDe-WY27QHCC},
+    note   = "2016 (Accessed : 11/11/2017)",
+    }
+@misc{Bartosz,
+    Author = {Bartosz, milewski.},
+    Howpublished = {\url{https://bartoszmilewski.com/2010/09/11/beyond-locks-software-transactional-memory/}},
+    Title = {{Beyond Locks: Software Transactional Memory.}},
+    Url = {https://bartoszmilewski.com/2010/09/11/beyond-locks-software-transactional-memory/},
+    note   = "2010 (Accessed : 11/11/2017)",
+    }

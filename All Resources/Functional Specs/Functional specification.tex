@@ -96,23 +96,47 @@ Software Transactional Memory allows to create several actions, that all can be 
 \caption{\textit{\color{gray}A simple example of lazy version. \cite{Xelblade}.}}
 \end{figure}
 
+\clearpage
 \subsection{Create transaction}
-When the external program create an object of the transaction library, it's functions available to the transaction object. The transaction object able to pass the required values to send to the transaction library to make changes on them.
+When the external program creates an object of the transaction library, it's functions available to the transaction object. The transaction object able to pass the required values to the transaction library, to make changes on them. When the object calls the function and passing the values/object to the transactional memory library, the transaction has created and the transaction life cycle begin.\textit{\color{gray}Figure 3}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{Pictures/begin.png}
+\caption{\textit{\color{gray}Transaction basic life cycle. \cite{DLUATM}.}}
+\end{figure}
+
+The values/object received by the transactional memory library, it creates a copy of the value/object to the local shared data set to work with. It is an important step, since the library not making changes on the original value until the end of the transaction life cycle.\textit{\color{gray}Figure 4}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{Pictures/transactionLifeCycle.png}
+\caption{\textit{\color{gray}Transaction life cycle states. \cite{DLUATM}.}}
+\end{figure}
+
+A copy created and associating a version number with it. This version number will be used to determine the changes on the value/object by the other transactions within the context.
 
 \subsection{Start transaction}
-When the transaction start, the library store the version number associated with the data and a copy of the data itself into the library shared data set, to use later on to compare version numbers against each other, to determine the conflicts.
+When the transaction start, the library check the version number associated with the data/object, to compare against the transaction own copy. If the version numbers are not the same, then the transaction aborting and restart with the new copy of the version number. If the version numbers are same, then the transaction locks the global data set copy of the value/object and make the changes are required. Before the transaction commit, make permanent changes on the value/object used in the transaction it needs to compare the version number again to determine the conflicts.   
 
 \subsection{Commit transaction}
-This phase of the transaction, the library locks the used shared memory spaces in an atomic block, and hide from the other processes to write changes in to the local data set. After the changes has made on the local data set, before finalize the write process to the destination shared memory spaces, must to determine if any other process had accessed the same data set, and made changes on it. It is happening with compare the transaction version number associated with the shared memory space version number. 
+This phase of the transaction, the library locks the used shared memory spaces in an atomic block, and hide from the other processes to write changes in to the local data set. After the changes has made on the local data set, before finalize the write process to the destination shared memory spaces, must to determine if any other process had accessed the same data set, and made changes on it. It is happening with compare the transaction version number associated with the shared memory space version number. The transaction commits the changes if no conflict detected between version numbers. When changes make then release the lock on the data/object and the transaction has finished.\\ 
 
 \subsubsection{Version checking}
 The version number representing the changes associated with destination data by the transactions. The transaction can detect the conflict early when first time accessing the value or when the transaction attempts to commit. When a transaction commit the changes, write the new values to the shared memory space, and the same time increasing the global version number to indicate the other transactions, that some changes happened with the value. At commit time or when accessing the value, the transaction compare the version numbers. The version number in the actual transaction and the global version number associated with the data must match. If the values are not the same the transaction will be cancelled, updating the local version number and rolling back the changes before writing the new value to the shared memory space and restart the transaction.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{Pictures/version.png}
+\caption{\textit{\color{gray}Check version number. \cite{Bartosz}.}}
+\end{figure}
+
 
 \subsubsection{Roll-back transaction}
 The roll-back part of the transaction, simply goes back to the begging of the transaction and restart the process. The library should implement some sort of checking logic, that the roll-back process must be cancelled at some stage, otherwise it can create an infinite or very long looping time and cause starvation in the software application.
 
 \subsubsection{Updating}
-At commit time, if the compared versions are holding same values, then the transaction updating the shared memory space the target data set and closing the transaction. \\
+At commit time, if the compared versions are holding same values, then the transaction updating the shared memory space on the target data set and closing the transaction. \\
 
 The following code snippet is an atomic transaction to change nodes in linked list structure:
 \begin{lstlisting}
@@ -121,7 +145,7 @@ atomic {
   tail = node.tail;
 }
 \end{lstlisting}
-\clearpage
+
 \section{Target users}
 The potential target users can be any programmer, how planning to use concurrent programming features in their application, but in the same time they wants to avoid of the lock based programming disadvantages. Since, STM provide interface to access the built in transactional functionalities through object accessible method call, it is easy to use because only need to include the library into the software application.\\
 
@@ -134,24 +158,24 @@ The potential target users can be who:
 \end{enumerate}
 }
 
-
+\clearpage
 \section{Metrics}
-The C++14 Software transactional Memory project is successful, when the library working as it is expected in all circumstances with no error accepted. To fulfil these achievement the project must produce the following requirements:
+The C++14 Software transactional Memory project is successful, when the library working as it is expected in all circumstances with no error accepted. To fulfil these achievement the project must produce the following requirements:\\
 
 
 \textbf{Mandatory requirements:} 
 \begin{enumerate}
-\item The library have to:
+\item The project have to:
 	\begin{itemize}
-	\item Full Software Transactional Memory implementation in C++ language.
-	\item Full documentation of the library using Doxygen documentation tool.
-	\item Tutorial showing how to use the library.
+	\item Implemented Software Transactional Memory library in C++ language working on Linux platform.
+	\item Documentation of the library using Doxygen documentation tool.
+	\item Tutorial showing how to use the library, including test application that use the STM library.
 	\end{itemize}
 
 
 \textbf{Discretionary requirements:} 
 
-\item The library have to:
+\item The project have to:
 	\begin{itemize}
 	\item Portable : tested across multiple platform (Windows, Linux, OSX).
 	\item Web site: library backed up and demonstrating it usage.
@@ -160,23 +184,22 @@ The C++14 Software transactional Memory project is successful, when the library 
 \clearpage
 \textbf{Exceptional requirements:} 
 
-\item The library have to:
+\item The project have to:
 	\begin{itemize}
-	\item Benchmarked : The library fully benchmarked.
-	\item Comparisons : Compare between other STM solutions and other approaches.
+	\item Benchmarked : The project including benchmarking test to show the performance in different circumstances.
+	\item Comparisons : Compare between other STM solutions and other approaches with usability, performance.
 	\end{itemize}
 \end{enumerate}
 
 \subsubsection{FURPS}
 As part of the metrics, the library should implement not functional requirements (FURPS)\cite{PPTX}
 \begin{enumerate}
-\item \textbf{Functionality} - Features, capabilities, security.
-\item \textbf{Usability} - Human factors, help, documentation. 
-\item \textbf{Reliability} - Frequency of failure, recoverability, predictability.
-\item \textbf{Performance} - Response times, throughput, accuracy, availability,
-resource usage. 
-\item \textbf{Supportability} - Adaptability, maintainability, internationalization,
-configurability. 
+\item \textbf{Functionality} - The product features that represent the domain of the product solution being developed. 
+\item \textbf{Usability} - Capturing and stating the requirements based on functional interface of the product and how easy to use based on the product documentation. 
+\item \textbf{Reliability} -  Includes the availability, frequency of failures and recoverability if the product has unexpected failure.
+\item \textbf{Performance} - Includes throughput, response time with diverse circumstances - example 10, 100 or 1000 threads are using the library with benchmarking test.
+\item \textbf{Supportability} - Includes all other requirements such as 
+testability, adaptability, maintainability, scalability and portability between platforms. 
 \end{enumerate}
 
 `
@@ -185,7 +208,6 @@ The Software Transactional Memory was implemented in C/C++ language many time be
 
 The Software Transactional Memory was implemented in many different languages as well, including C, C++, Clojure, Common Lisp, Haskell, Java, Python, Pearl and many more.
 
-\clearpage
 \textbf{Some C/C++ STM implementation:} 
 \begin{enumerate}
 \item TinySTM is a lightweight and efficient word-based STM implementation in C++.

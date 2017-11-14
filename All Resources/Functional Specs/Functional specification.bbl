@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{Bartosz}
+m.~Bartosz.
+\newblock {Beyond Locks: Software Transactional Memory.}
+\newblock
+  \url{https://bartoszmilewski.com/2010/09/11/beyond-locks-software-transactional-memory/}.
+\newblock 2010 (Accessed : 11/11/2017).
+
 \bibitem{PPTX}
 cs.unh.edu.
 \newblock {CS 619 Introduction to OO Design and Development .}
@@ -11,5 +18,12 @@ A.~X.~T. Mayank.
 \newblock {Implementing Transactional Memory.}
 \newblock \url{http://15418.courses.cs.cmu.edu/spring2013/article/40}.
 \newblock 2013 (Accessed : 11/11/2017).
+
+\bibitem{DLUATM}
+D.~Richard, L.~Joao, and C.~Goncalo.
+\newblock {Developing Libraries Using Software Transactional Memory.}
+\newblock
+  \url{https://www.google.ie/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwiHvNOJ0L7XAhVqCMAKHeplBUQQFggpMAA&url=http%3A%2F%2Fwww.comsis.org%2Fpdf.php%3Fid%3D038-0612&usg=AOvVaw3J5gJGporTwDe-WY27QHCC}.
+\newblock 2016 (Accessed : 11/11/2017).
 
 \end{thebibliography}
