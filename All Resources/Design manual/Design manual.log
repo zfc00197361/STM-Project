@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  17 NOV 2017 06:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  17 NOV 2017 06:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -411,18 +411,17 @@ File: Pictures/flowDiagram.png Graphic file (type png)
 
 <use Pictures/flowDiagram.png>
 Package pdftex.def Info: Pictures/flowDiagram.png used on input line 100.
-(pdftex.def)             Requested size: 252.94878pt x 298.6201pt.
+(pdftex.def)             Requested size: 361.3491pt x 426.59271pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
-
+[3 <./Pictures/flowDiagram.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
-[3 <./Pictures/flowDiagram.png (PNG copy)>]
 <Pictures/usacase.png, id=102, 602.25pt x 612.2875pt>
 File: Pictures/usacase.png Graphic file (type png)
 
@@ -430,16 +429,20 @@ File: Pictures/usacase.png Graphic file (type png)
 Package pdftex.def Info: Pictures/usacase.png used on input line 115.
 (pdftex.def)             Requested size: 210.79065pt x 214.30383pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 120--123
 
  []
 
-[4 <./Pictures/usacase.png (PNG copy)>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 128--131
 
  []
@@ -449,12 +452,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--135
 
  []
 
-
+[5 <./Pictures/usacase.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 136--139
 
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 140--144
 
  []
@@ -519,12 +522,12 @@ Here is how much of TeX's memory you used:
  11759 multiletter control sequences out of 15000+600000
  20840 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,43p,1193b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,43p,1197b,369s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on "Design manual.pdf" (13 pages, 206631 bytes).
+Output written on "Design manual.pdf" (13 pages, 206742 bytes).
 PDF statistics:
  205 PDF objects out of 1000 (max. 8388607)
  178 compressed objects within 2 object streams
