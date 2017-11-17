@@ -136,7 +136,7 @@ The version number representing the changes associated with destination data by 
 The roll-back part of the transaction, simply goes back to the begging of the transaction and restart the process. The library should implement some sort of checking logic, that the roll-back process must be cancelled at some stage, otherwise it can create an infinite or very long looping time and cause starvation in the software application.
 
 \subsubsection{Updating}
-At commit time, if the compared versions are holding same values, then the transaction updating the shared memory space the target data set and closing the transaction. \\
+At commit time, if the compared versions are holding same values, then the transaction updating the shared memory space on the target data set and closing the transaction. \\
 
 The following code snippet is an atomic transaction to change nodes in linked list structure:
 \begin{lstlisting}
@@ -195,12 +195,11 @@ The C++14 Software transactional Memory project is successful, when the library 
 As part of the metrics, the library should implement not functional requirements (FURPS)\cite{PPTX}
 \begin{enumerate}
 \item \textbf{Functionality} - The product features that represent the domain of the product solution being developed. 
-\item \textbf{Usability} - Capturing and stating the requirements based on functional interface of the product. How easy to use based on the product documentation. 
+\item \textbf{Usability} - Capturing and stating the requirements based on functional interface of the product and how easy to use based on the product documentation. 
 \item \textbf{Reliability} -  Includes the availability, frequency of failures and recoverability if the product has unexpected failure.
-\item \textbf{Performance} - Response times, throughput, accuracy, availability,
-resource usage. 
-\item \textbf{Supportability} - Adaptability, maintainability, internationalization,
-configurability. 
+\item \textbf{Performance} - Includes throughput, response time with diverse circumstances - example 10, 100 or 1000 threads are using the library with benchmarking test.
+\item \textbf{Supportability} - Includes all other requirements such as 
+testability, adaptability, maintainability, scalability and portability between platforms. 
 \end{enumerate}
 
 `
@@ -209,7 +208,6 @@ The Software Transactional Memory was implemented in C/C++ language many time be
 
 The Software Transactional Memory was implemented in many different languages as well, including C, C++, Clojure, Common Lisp, Haskell, Java, Python, Pearl and many more.
 
-\clearpage
 \textbf{Some C/C++ STM implementation:} 
 \begin{enumerate}
 \item TinySTM is a lightweight and efficient word-based STM implementation in C++.

@@ -1,1 +1,11 @@
-\BOOKMARK [1][-]{section.1}{Bibliography}{}% 1
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Model of the application}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Library integration to the application}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Flow diagram}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Use case}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Brief case}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Detailed use case}{section.3}% 7
+\BOOKMARK [1][-]{section.4}{Domain model}{}% 8
+\BOOKMARK [1][-]{section.5}{System sequence diagram}{}% 9
+\BOOKMARK [1][-]{section.6}{Testing the STM Library}{}% 10
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 11
