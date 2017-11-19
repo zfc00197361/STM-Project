@@ -80,17 +80,17 @@
 \setcounter{page}{1}
 
 \section{Introduction}
-The document is introducing the design of the C++ STM library logic and structure. The document will describe the flow of the data within the library and the external application that uses the STM library. The use case diagram will discover the possible library API interface functionalities that need to implement in the project. With the use cases and the detailed use cases can characterize the required steps and potential alternative steps during the library execution life cycle. The domain model shows the main functionality of the library and the association between the software components, follows with the sequence diagram that helps to understand the sequence of steps required to follows each other to implement lock free atomic transaction.\\
+This document is introducing the design of the C++ STM library logic and structure. The document will describe the flow of the data within the library and the external application that uses the STM library. The use case diagram will discover the possible library API interface functionalities that need to implement in the project. With the use cases and the detailed use cases can characterize the required steps and potential alternative steps during the library execution life cycle. The domain model shows the main functionality of the library and the association between the software components, follows with the sequence diagram that helps to understand the sequence of steps required to follows each other to implement lock free atomic transaction.\\
 
 This document helps to discover the potential errors and required handlers with the use cases and the sequence diagram. However, this diagrams and use case descriptions are identify the potential issues and risks, that may can mislead the future development if not well designed. To use or test the STM library implementation, the programmers must to write their own application and includes it like any external libraries in C or C++ programming design. The usage of the library can happen with the object method call that will be described in the use case diagram and studies thoroughly in the detailed use cases.\\
  
  
 \newpage
 \section{Model of the application}
-The following flow diagram introducing the dynamic relationship of the STM library. This relations interacting with the external application and the objects delegated to the STM library. In order to use the STM library the programmers must include it, in the programmed module to create an instance to use the API interfaces. When the instances is created then the method call are available to the library object. The key of the library usage is that the programmers can not instantiate more then on object of the library per application, because the library will keep track of any single process involved in the transactional process by the process or thread ID in the library built in Data structure.
+The flow diagram \textit{Figure 2} introducing the dynamic relationship of the STM library. This relations interacting with the external application and the objects delegated to the STM library. In order to use the STM library the programmers must include it in the programmed module, to create an instance of a transaction, associated with the application by the Process ID to use the API interfaces. When the instances is created then the function calls are available to the library object. The key of the library usage is that the programmers can not instantiate more then one transaction object of the library per application, because the library will keep track of all process accessed the transaction manager by the process or process ID in the built in Data structure.
 
 \subsection{Library integration to the application}
-The library at compilation time get integrated into the C/C++ application. First the source code get transformed into intermediate code, that later get  compiled and linked with the STM library. As the STM library included in the source code, the library will be linked when the executable created from the application. \\
+The library at compilation time get integrated into the C/C++ application. First the source code get transformed into intermediate code, that later get compiled and linked with the STM library. As the STM library included in the source code, the library will be linked when the executable created from the application. \\
 
 \begin{figure}[h!]
 \centering
@@ -106,11 +106,11 @@ The library at compilation time get integrated into the C/C++ application. First
 \caption{\textit{\color{gray}The flow of the data in the library.}}
 \end{figure}
 
-When the \textbf{create transaction} API call happens by the application, the library place the process into the built in data structure and returning back a transactional object.\\
+When the \textbf{create transaction} API call happens by the application, the library place a new transactional object into the built in data structure, associating by the process ID and returning back a transactional object to the given application.\\
 
-The \textbf{start transaction} API call will starting the process of the Object transactional changes. Fist place the object into the read set and creates a copy of it to the write set to use it for local temporary changes, and a version number assigned to it as a counter for Object changes. Because more then one thread can use the same object it must check the version number at the first step to determine the changes at early stage of the transaction life cycle. If the version number in the object is different then the global version number the transaction will cancel and restart. if the transaction that the object hold and the global version number are same, then the copy of the object in the write set will update to the new required value. Before the original object can change from the local copy, the transaction library must check the version numbers equality. If the version numbers are same , that means no other process accessed the same object during the updating process and the object can get assign the new value. Otherwise, the transaction must cancel if the object has accessed by other process and the life cycle restart again.\\
+The \textbf{start transaction} API call will starting the process of the Object transactional life cycle. First, place the object into the read set, and creates a copy of it to the write set to use it for local temporary changes, and add a version number to it, as a counter to determine the Object changes. Because more then one thread can use the same object it must check the version number at the first step to determine the changes at early stage of the object transactional life cycle. If the version number in the object is different then the global version number the transaction will cancel and restart. If the transaction that the object hold and the global version number in the write set are same, then the copy of the object in the write set will update to the new required value. Before the original object can change from the local copy, the transaction library must check the version numbers equality again. If the version numbers are same, that means no other process accessed the same object during the updating process, and the object can get assign the new value. Otherwise, the transaction must cancel if the object has accessed by other process and the life cycle restart again.\\
 
-In this phase of the program execution the transaction marked as processable process, and the \textbf{commit method} available for execution. This API call will update the original object, update the version number assigned to it and returns back to the main process and finish it execution. If other processes or thread are still using the same object, they must detect the changes on the version number, and restart the transactional if it required.
+In this phase of the program execution, the transaction marked as processable process, and the \textbf{commit method} available for execution. This API call will update the original object, update/increase the version number assigned to it and returns back to the main process and finish it execution. If other processes or thread are still using the same object, they must detect the changes on the version number, and restart the transactional if it required.
 
 \newpage
 \section{API usage}
@@ -121,6 +121,7 @@ This part of the document will design the library API interface function usage b
 ]
 #include <STM.h>
 #include <sstream> //get the thread id
+#include <unistd.h> //get the Application process id
 
 //Create a Transaction manager
 TM transactionManager;
@@ -157,7 +158,7 @@ class Account : public Tobj{
 //Single object operation
 bool updateAccount(std::shared_ptr<Account> account, double amount){
 
-	
+	//All threads updating account * times
 	for(int i = 0; i < updateTimes; ++i)
 		{
 
@@ -170,7 +171,7 @@ bool updateAccount(std::shared_ptr<Account> account, double amount){
 
 		barrier->Wait();
 		bool done = false
-
+		//All threads commits their transactions
 		while(!done){
 			Account tmp = loadTransactionObject(std::this_thread::get_id());
 			done = transaction.commitTransaction(std::this_thread::get_id(), &tmp);
@@ -203,19 +204,21 @@ bool exchange(double amount, std::vector<Account>*acconts){
 }
 
 int main(){
-
-	//create a thread
+	 //get the process id
+	 pid_t ppid;
+     ppid = getppid();
+	 //create a thread
 	 std::thread threadOne;
 	 //Create shared poinetrs of the bank accounts
 	 std::shared_ptr<Account> from(100,1234,"JOE");
 	 std::shared_ptr<Account> to(50,2345,"BOB");
 
  	//add the thread to the TM manager HasMap and return the transaction
- 	transaction = transactionManager.createTX();
+ 	transaction = transactionManager.createTX(ppid);
 
  	//transaction add the account object to the transaction HasMap read and write sets and return the local copy 
- 	auto copyFrom = transaction.startTransaction(&from);
-	auto copyTo = transaction.startTransaction(&to);
+ 	auto copyFrom = transaction.startTransaction(std::this_thread::get_id(), &from);
+	auto copyTo = transaction.startTransaction(std::this_thread::get_id(), &to);
 
 	//Add the local copies to the vector to store all the associated transactions
 	std::vector<Accont*> accounts;
@@ -250,7 +253,7 @@ int main(){
 
 	//Otherwise destroy the manager that clean out the memory from
 	//all the transactions
-	transactionManager.destroy();
+	transactionManager.destroy(ppid);
 	
 	return 0;
 }
@@ -262,12 +265,16 @@ int main(){
 \begin{lstlisting}[
     basicstyle=\tiny, %or \small or \footnotesize etc.
 ]
-TX createTX(){
+//Create transaction associated with Application
+TX createTX(pid_t ppid){
 
-	if (tx == null) {
+	MAP::const_iterator position = transactions.find(ppid);
+	TX tx;
+	if (position == map.end()) {
 	    tx = new TX();
-
+		transactions[ppid] = tx;
 	} 
+
 	retrun Tx;
 }
 \end{lstlisting}
@@ -276,13 +283,18 @@ TX createTX(){
 \begin{lstlisting}[
     basicstyle=\tiny, %or \small or \footnotesize etc.
 ]
-//Destroy transaction
-bool destroyTransaction(){
+//Destroy transaction associated with Application
+bool destroyTX(pid_t ppid){
 
-	if(tx != null){
-		tx = null;
+	MAP::const_iterator position = transactions.find(id);
+	if (position == map.end()) {
+	    return true
+	}else{
+		transactions[ppid] = null;
 	}
+
 	return true;
+	
 }
 \end{lstlisting}
 
@@ -290,20 +302,21 @@ bool destroyTransaction(){
 \begin{lstlisting}[
     basicstyle=\tiny, %or \small or \footnotesize etc.
 ]
-bool startTransaction(Tobj* obj){
+//store object in read and write set
+bool startTransaction(std::thread::id id, Tobj* obj){
 
-	MAP::const_iterator position = readSet.find(obj.getId());
+	MAP::const_iterator position = readSet.find(id);
 	//Update data set only if not registered
 	if (position == map.end()) {
 		obj.setVersionNumber(0);
 	    //register object to the read set
-		readSet[obj.getAccountId] = boj;
+		readSet[id] = boj;
 		//Call the copy constructor to make a copy of the object
 		Tobj objCopy = obj;
 		objCopy.setVersionNumber(0);
 		//Register object to the write set as a copy of the original
 		Tobj object = copyObject(obj)
-		writeSet[obj.getAccountId] = object;
+		writeSet[id] = object;
 	} 
 	
 	return true;
@@ -316,18 +329,18 @@ bool startTransaction(Tobj* obj){
     basicstyle=\tiny, %or \small or \footnotesize etc.
 ]
 //Commit Transaction , single object transaction
-bool commitTransaction(Tobj* obj){
+bool commitTransaction(std::thread::id id, Tobj* obj){
 	//Compare the working write set object version number with the read set version number
-	if(obj.getVersionNumber() == getVersionNumber(obj.getId())){
+	if(obj.getVersionNumber() == getVersionNumber(id)){
 		//Update write set object values
 		updateTransaction(*obj);
 		//before change the readset checks again for version number
-		if(obj.getVersionNumber() == getVersionNumber(obj.getId())){
+		if(obj.getVersionNumber() == getVersionNumber(id)){
 			updateSharedMemory(*obj);
 			obj.incrementVersionNumber();
 			return true;
 		}else{
-			rollbackTransaction(obj.getId());
+			rollbackTransaction(id);
 			return false;
 		}
 	}
@@ -336,19 +349,20 @@ bool commitTransaction(Tobj* obj){
 }
 \end{lstlisting}
 
-\newpage
 \subsection{Commit transactions}
 \begin{lstlisting}[
     basicstyle=\tiny, %or \small or \footnotesize etc.
 ]
 //Commit Transactions , multiple objects transactions
-bool commitTransactions(vector<Tobj*> & accounts){
+bool commitTransactions(std::thread::id id, vector<Tobj*> & accounts){
 	 for (int i=0; i<accounts.size(); i++)
     {
-        if(accounts[i].getVersionNumber())  == getVersionNumber(obj.getId()){
+    		//get the object
+    		Tobj* obj = getObject(id);
+        if(accounts[i].getVersionNumber())  == obj.getVersioNumber(){
         	//Update write set object values
 			updateTransaction(*obj);
-			if(accounts[i].getVersionNumber())  == getVersionNumber(obj.getId()){
+			if(accounts[i].getVersionNumber())  == obj.getVersioNumber(){
 				updateSharedMemory(*accounts[i]);
 				*accounts[i].incrementVersionNumber();
 				//If all object has updated
@@ -356,7 +370,7 @@ bool commitTransactions(vector<Tobj*> & accounts){
 					return true;
 				}
 			}else{
-				rollbackTransaction(accounts[i].getId());
+				rollbackTransaction(id);
 				return false;
 			}
     	}
@@ -375,10 +389,10 @@ bool commitTransactions(vector<Tobj*> & accounts){
 \begin{lstlisting}[
     basicstyle=\tiny, %or \small or \footnotesize etc.
 ]
-//Load transaction object
-Tobj* loadTransactionObject(Tobj* obj){
+//Load transaction return object
+Tobj* loadTransactionObject(std::thread::id id, Tobj* obj){
 
-	return &writeSet[obj.geId()];
+	return &writeSet[id];
 }
 \end{lstlisting}
 
@@ -387,9 +401,9 @@ Tobj* loadTransactionObject(Tobj* obj){
     basicstyle=\tiny, %or \small or \footnotesize etc.
 ]
 //Store transaction is updating the object in the write set 
-bool storeTransaction(Tobj* obj){
+bool storeTransaction(std::thread::id id, Tobj* obj){
 		//Update/overwrite collection value by  
-		writeSet[obj.getId()] = boj.getVersionNumber();
+		writeSet[id] = obj;
 	
 	return true;
 }
@@ -402,12 +416,8 @@ bool storeTransaction(Tobj* obj){
 //Store transaction is updating the object in the write set 
 bool storeTransactions(std::thread::id id, vector<Tobj*> & accounts){
 	//Update/overwrite collection value by  
-    for (int i=0; i<accounts.size(); i++)
-    {
-        writeSet[obj.getId()] = boj.getVersionNumber();
-    }
-		
-	
+        writeSet[id] = accounts;
+
 	return true;
 }
 \end{lstlisting}
@@ -426,40 +436,41 @@ This section of the document the use case diagram will list the API actions or e
 \subsubsection{Create transaction}
 \textbf{Use case} : Create transaction.\\
 \textbf{Actors} : Application\\
-\textbf{Description} : This use case begin when Application wants instantiate an object of the STM transactional library. The library registering the process by the process/thread ID and returning a transactional object that can use the library API interface, which ends this use case.\\
+\textbf{Description} : This use case begin when Application wants instantiate an object of the STM transactional library. The library registering a new transactional object by the process Id and returning the transactional object that can use the library API interface, which ends this use case.\\
 \subsubsection{Destroy transaction}
 \textbf{Use case} : Destroy transaction.\\
 \textbf{Actors} : Application\\
-\textbf{Description} : This use case begin when Application wants to destroy the object of the STM transactional library. The application calls the API function, that is deleting the object, which ends this use case.\\
+\textbf{Description} : This use case begin when Application wants to destroy the object of the STM transactional library associated with the application. The application calls the API function and send the process Id, that is deleting the object from the data set, which ends this use case.\\
 \subsubsection{Start transaction}
 \textbf{Use case} : Start transaction.\\\
 \textbf{Actors} : Application\\
-\textbf{Description} : This use case begin when Application wants to add a new object to the STM library. The transactional object call the API function and send the Object which wants to operate on it. This object will be registered in the library read data set and a copy of it in the write data set, which ends this use case.\\  
+\textbf{Description} : This use case begin when Application wants to add a new object to the STM library. The transactional object call the API function and send the Object and the thread id which wants to operate on it. This object will be registered in the library read data set and a copy of it in the write data set, which ends this use case.\\  
 \subsubsection{Start transactions}
 \textbf{Use case} : Start transactions.\\\
 \textbf{Actors} : Application\\
-\textbf{Description} : This use case begin when Application wants to add new objects to the STM library. The transactional object call the API function and send the vector of Objects which wants to operate on it. This objects will be registered in the library read data set and a copy of it in the write data set, which ends this use case.\\ 
+\textbf{Description} : This use case begin when Application wants to add new objects to the STM library. The transactional object call the API function and send the collection of Objects with the thread id  which wants to operate on it. This objects will be registered in the library read data set and a copy of it in the write data set, which ends this use case.\\ 
 \subsubsection{Commit transaction}
 \textbf{Use case} : Commit transaction.\\
 \textbf{Actors} : Application\\
-\textbf{Description} : This use case begin when Application wants commit or make permanent changes on the object shared value, while that is not available to the other processes. The transactional object calls the commit transaction function call. The library checking the version number associated with the object. If the version numbers are same in the global data set and the object itself, then the STM library updates the read set and checks the write set again to the version number. If the version number is still the same, then the library updates the shared memory space permanently and indicate the application that the object have been updated,  which ends this use case.\\ 
+\textbf{Description} : This use case begin when Application wants commit or make permanent changes on the object shared value, while that is not available to the other processes. The transactional object calls the commit transaction function call. The library checking the version number associated with the thread ant the object. If the version numbers are same in the global data set and the object itself, then the STM library updates the read set and checks the write set again to the version number. If the version number is still the same, then the library updates the shared memory space permanently and indicate the application that the object have been updated, which ends this use case.\\ 
 \subsubsection{commit transactions}
 \textbf{Use case} : Commit transactions.\\
 \textbf{Actors} : Application\\
-\textbf{Description} : This use case begin when Application wants commit or make permanent changes on more objects shared value, while those are not available to the other processes. The transactional object calls the commit transaction function call. The library goes through on all the objects in the collection set and doing the following process on each object.First checking the version number associated with the object. If the version numbers are same in the global data set and the object itself, then the STM library updates the read set and checks the write set again to the version number. If the version number is still the same, then the library updates the shared memory space permanently and indicate the application that the object have been updated,  which ends this use case.\\
+\textbf{Description} : This use case begin when Application wants commit or make permanent changes on more objects shared value, while those are not available to the other processes. The transactional object calls the commit transaction function call. The library goes through on all the objects in the collection set, and doing the following process on each object.First checking the version number associated with the object. If the version numbers are same in the global data set and the object itself, then the STM library updates the write set and checks the read set again to the version number. If the version number is still the same, then the library updates the shared memory space permanently and indicate the application that the object have been updated,  which ends this use case.\\
 \subsubsection{Load Transaction object}
 \textbf{Use case} : Load Transaction object.\\
 \textbf{Actors} : Application\\
-\textbf{Description} : This use case begin when Application wants to receive the copy of the object from the STM library. The application calls the API function, that is returning back the copy of the object, which ends this use case.\\
+\textbf{Description} : This use case begin when Application wants to receive the copy of the object from the STM library. The application calls the API function and passing the thread Id, that is returning back the copy of the object associated with the thread Id, which ends this use case.\\
 \subsubsection{Store transaction}
 \textbf{Use case} : Store transaction.\\
 \textbf{Actors} : Application\\
-\textbf{Description} : This use case begin when Application wants to store an object involved in the transaction. The transaction object calls the store transaction API function, that will save the object associated with the object id, which ends this use case.\\
+\textbf{Description} : This use case begin when Application wants to store an object involved in the transaction. The transaction object calls the store transaction API function, that will save the object associated with the thread id, which ends this use case.\\
 \subsubsection{Store transactions}
 \textbf{Use case} : Store transactions.\\
 \textbf{Actors} : Application\\
-\textbf{Description} : This use case begin when Application wants to store more object involved in the transaction. The transaction object calls the store transactions API function, that will goes through on the object  collection and save all the objects associated with the object id, which ends this use case.\\
+\textbf{Description} : This use case begin when Application wants to store more object involved in the transaction. The transaction object calls the store transactions API function, that will goes through on the object  collection and save all the objects associated with the thread id, which ends this use case.\\
 }
+\newpage
 \subsection{Detailed use case}
 {\setlength{\parindent}{0cm}
 \subsubsection{Create transaction}
@@ -477,9 +488,10 @@ This section of the document the use case diagram will list the API actions or e
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.5]{Pictures/create.png}
+\includegraphics[scale=0.4]{Pictures/create.png}
 \caption{\textit{\color{gray}Create transaction.}}
 \end{figure}
+
 
 \subsubsection{Destroy transaction}
 \textbf{Name} : Destroy transaction.\\
@@ -492,7 +504,7 @@ This section of the document the use case diagram will list the API actions or e
   \item The library delete the transaction  
   \item The library returns the transactional object to the Application.
 \end{enumerate}
-\textbf{Alternatives}\\
+
 
 \begin{figure}[h!]
 \centering
@@ -500,13 +512,14 @@ This section of the document the use case diagram will list the API actions or e
 \caption{\textit{\color{gray}Destroying transaction object.}}
 \end{figure}
 
+\subsubsection{Start transaction}
 \textbf{Name} : Start transaction.\\
 \textbf{Actors} : Application\\
 \textbf{Main Scenario.}
 \begin{enumerate}
   \item The use case begins when Application wants add an object to the transactional library.
-  \item The Application call the start transaction API function and passing the object to the library.
-  \item The library registering the object to the read data set and creates  a copy of it to the write data set.
+  \item The Application call the start transaction API function and passing the object and thread Id to the library.
+  \item The library registering the object to the read data set and creates a copy of it to the write data set.
   \item The library assign a version number to the registered object.
   \item The library indicate the Application that the object registered with the returned copy of it.
 \end{enumerate}
@@ -519,7 +532,7 @@ This section of the document the use case diagram will list the API actions or e
 \caption{\textit{\color{gray}Start transaction.}}
 \end{figure}
 
-\subsubsection{Start transaction}
+\subsubsection{Start transactions}
 \textbf{Name} : Start transactions.\\
 \textbf{Actors} : Application\\
 \textbf{Main Scenario.}
@@ -532,6 +545,13 @@ This section of the document the use case diagram will list the API actions or e
 \end{enumerate}
 \textbf{Alternatives}\\
 3a. The objects already in the data set don't need to be register.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/startTransactions.png}
+\caption{\textit{\color{gray}Start transactions.}}
+\end{figure}
+
 \subsubsection{Commit transaction}
 \textbf{Name} : Commit transaction.\\
 \textbf{Actors} : Application\\
@@ -576,6 +596,14 @@ This section of the document the use case diagram will list the API actions or e
 3b. The library cancel all the transaction and indicates the Application with a false answer.\\
 5a. The library later stage find the difference between the version numbers.\\
 5b. The library cancel all the transaction and indicates the Application with a false answer.\\
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{Pictures/commitTransactions.png}
+\caption{\textit{\color{gray}Commit transactions.}}
+\end{figure}
+
+\newpage
 \subsubsection{Load transaction}
 \textbf{Name} : Load transaction.\\
 \textbf{Actors} : Application\\
@@ -583,7 +611,7 @@ This section of the document the use case diagram will list the API actions or e
 \begin{enumerate}
   \item The use case begins when the Application wants receive a copy of an object.
   \item The Application calls the load transaction object function in the library API. 
-  \item The library returning back the object determined by tjhe id. 
+  \item The library returning back the object determined by the id. 
 \end{enumerate}
 \textbf{Alternatives}\\
 3a. The library can not find the Object by the id..\\
@@ -600,7 +628,7 @@ This section of the document the use case diagram will list the API actions or e
 \textbf{Main Scenario.}
 \begin{enumerate}
   \item The use case begins when the Application wants to register a single object in the library.
-  \item The Application calls the store function and sending the object to the library API interface.
+  \item The Application calls the store function and sending the object and the thread id to the library API interface.
   \item The library registering the object by the id.
 \end{enumerate}
 \textbf{Alternatives}\\
@@ -624,9 +652,15 @@ This section of the document the use case diagram will list the API actions or e
 \textbf{Alternatives}\\
 3a. The collection contains null equivalent object.\\
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{Pictures/storeTransactions.png}
+\caption{\textit{\color{gray}Add collection to the transaction.}}
+\end{figure}
 
 }
 
+\newpage
 \section{System sequence diagram}
 \begin{figure}[h!]
 \centering
@@ -683,7 +717,9 @@ Multi-threaded multiple Objects test :\\
 Ten threads are  accessing a collection of 10 Objects.\\
 Every Objects has 10 unit.\\
 Every threads will accessing every the Objects in the collection and increasing the amount by 1 unit.\\
-After the test every Object has 20 units.    
+After the test every Object has 20 units.\\
+
+Test the library with two different running processes, that has different process id, and perhaps hold two different transactional objects. Any of the above testing method can apply for this test, using by two applications in the same time.  
 
 
 }
@@ -696,7 +732,7 @@ After the test every Object has 20 units.
 \section{Conclusion}
 The design document helps to discover the functionality and the association between system components. Give a clearer picture of the project functions, sequence of the processes and relation between the application and the library.\\
 
-Because this project developed in an Agile way, the described functions and system components my will change during the future development in the project life cycle. The designed Software Transactional Library is operating on inherited objects instead of primitive type of variables. However, if it will cause any difficulties during the development, it may will change back to operate on primitive types, that cause to redesign the domain of the software design.  
+Because this project developed in an Agile way, the described functions, source code and system components my will change during the future development in the project life cycle. The designed Software Transactional Library is operating on inherited objects instead of primitive type of variables. So, the programmers must inherit from the Tobj in order to use the STM library. However, if it will make major difficulties during the development, it may will change back to operate on primitive types, that cause to redesign the domain of the software design.  
 
 
 \end{document}

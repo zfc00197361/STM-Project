@@ -22,16 +22,17 @@
 \contentsline {subsubsection}{\numberline {4.1.7}Load Transaction object}{11}{subsubsection.4.1.7}
 \contentsline {subsubsection}{\numberline {4.1.8}Store transaction}{11}{subsubsection.4.1.8}
 \contentsline {subsubsection}{\numberline {4.1.9}Store transactions}{12}{subsubsection.4.1.9}
-\contentsline {subsection}{\numberline {4.2}Detailed use case}{12}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Create transaction}{12}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Destroy transaction}{12}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2}Detailed use case}{13}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Create transaction}{13}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Destroy transaction}{13}{subsubsection.4.2.2}
 \contentsline {subsubsection}{\numberline {4.2.3}Start transaction}{14}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Commit transaction}{15}{subsubsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.5}Commit transactions}{17}{subsubsection.4.2.5}
-\contentsline {subsubsection}{\numberline {4.2.6}Load transaction}{17}{subsubsection.4.2.6}
-\contentsline {subsubsection}{\numberline {4.2.7}Store transaction}{18}{subsubsection.4.2.7}
-\contentsline {subsubsection}{\numberline {4.2.8}Store transactions}{19}{subsubsection.4.2.8}
-\contentsline {section}{\numberline {5}System sequence diagram}{20}{section.5}
-\contentsline {section}{\numberline {6}Domain model}{21}{section.6}
-\contentsline {section}{\numberline {7}Testing the STM Library}{21}{section.7}
-\contentsline {section}{\numberline {8}Conclusion}{23}{section.8}
+\contentsline {subsubsection}{\numberline {4.2.4}Start transactions}{15}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}Commit transaction}{16}{subsubsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.6}Commit transactions}{17}{subsubsection.4.2.6}
+\contentsline {subsubsection}{\numberline {4.2.7}Load transaction}{19}{subsubsection.4.2.7}
+\contentsline {subsubsection}{\numberline {4.2.8}Store transaction}{19}{subsubsection.4.2.8}
+\contentsline {subsubsection}{\numberline {4.2.9}Store transactions}{20}{subsubsection.4.2.9}
+\contentsline {section}{\numberline {5}System sequence diagram}{22}{section.5}
+\contentsline {section}{\numberline {6}Domain model}{23}{section.6}
+\contentsline {section}{\numberline {7}Testing the STM Library}{23}{section.7}
+\contentsline {section}{\numberline {8}Conclusion}{25}{section.8}

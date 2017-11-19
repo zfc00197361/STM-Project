@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  18 NOV 2017 03:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  19 NOV 2017 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -348,7 +348,7 @@ LaTeX Info: Redefining \nameref on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 
-<Pictures/carlow.png, id=152, 266.9975pt x 144.54pt>
+<Pictures/carlow.png, id=156, 266.9975pt x 144.54pt>
 File: Pictures/carlow.png Graphic file (type png)
  <use Pictures/carlow.png>
 Package pdftex.def Info: Pictures/carlow.png used on input line 64.
@@ -380,7 +380,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 ...numberline {6}Domain model}{21}{section.6}
+l.35 ...{5}System sequence diagram}{22}{section.5}
                                                    [1])
 \tf@toc=\write4
 \openout4 = `"Design manual.toc"'.
@@ -405,14 +405,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-<Pictures/transformation.png, id=251, 552.0625pt x 441.65pt>
+<Pictures/transformation.png, id=257, 552.0625pt x 441.65pt>
 File: Pictures/transformation.png Graphic file (type png)
 
 <use Pictures/transformation.png>
 Package pdftex.def Info: Pictures/transformation.png used on input line 97.
 (pdftex.def)             Requested size: 276.03056pt x 220.82445pt.
  [2 <./Pictures/transformation.png (PNG copy)>] <Pictures/flowDiagram.png, id=2
-57, 722.7pt x 853.1875pt>
+63, 722.7pt x 853.1875pt>
 File: Pictures/flowDiagram.png Graphic file (type png)
 
 <use Pictures/flowDiagram.png>
@@ -442,240 +442,275 @@ File: omlptm.fd
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <6> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 122.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 130.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 131.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <6> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 130.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 136.
+(Font)              <5> on input line 137.
+LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 161.
  [5]
-Overfull \hbox (27.60425pt too wide) in paragraph at lines 216--217
+Overfull \hbox (27.60425pt too wide) in paragraph at lines 219--220
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ] 
  []
 
-[6] [7] [8] <Pictures/usecase.png, id=534, 602.25pt x 602.25pt>
+[6] [7] [8] <Pictures/usecase.png, id=551, 602.25pt x 602.25pt>
 File: Pictures/usecase.png Graphic file (type png)
 
 <use Pictures/usecase.png>
-Package pdftex.def Info: Pictures/usecase.png used on input line 421.
+Package pdftex.def Info: Pictures/usecase.png used on input line 431.
 (pdftex.def)             Requested size: 210.79065pt x 210.79065pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 427--430
+Underfull \hbox (badness 10000) in paragraph at lines 437--440
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--434
+Underfull \hbox (badness 10000) in paragraph at lines 441--444
 
  []
 
 [9 <./Pictures/usecase.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 435--438
+Underfull \hbox (badness 10000) in paragraph at lines 445--448
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--442
+Underfull \hbox (badness 10000) in paragraph at lines 449--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 443--446
+Underfull \hbox (badness 10000) in paragraph at lines 453--456
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 447--450
+Underfull \hbox (badness 10000) in paragraph at lines 457--460
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 451--454
+Underfull \hbox (badness 10000) in paragraph at lines 461--464
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 455--458
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 459--463
+Underfull \hbox (badness 10000) in paragraph at lines 465--468
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 475--477
+Underfull \hbox (badness 10000) in paragraph at lines 469--473
 
  []
-
-<Pictures/create.png, id=549, 722.7pt x 341.275pt>
-File: Pictures/create.png Graphic file (type png)
- <use Pictures/create.png>
-Package pdftex.def Info: Pictures/create.png used on input line 480.
-(pdftex.def)             Requested size: 361.3491pt x 170.63707pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 495--496
+Underfull \hbox (badness 10000) in paragraph at lines 486--488
 
  []
 
-<Pictures/destroy.png, id=559, 672.5125pt x 481.8pt>
+<Pictures/create.png, id=570, 672.5125pt x 341.275pt>
+File: Pictures/create.png Graphic file (type png)
+
+<use Pictures/create.png>
+Package pdftex.def Info: Pictures/create.png used on input line 491.
+(pdftex.def)             Requested size: 269.00023pt x 136.50757pt.
+ [13 <./Pictures/create.png (PNG copy)>]
+<Pictures/destroy.png, id=580, 662.475pt x 311.1625pt>
 File: Pictures/destroy.png Graphic file (type png)
 
 <use Pictures/destroy.png>
-Package pdftex.def Info: Pictures/destroy.png used on input line 499.
-(pdftex.def)             Requested size: 336.25542pt x 240.8994pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13 <./Pictures/create.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 513--515
+Package pdftex.def Info: Pictures/destroy.png used on input line 511.
+(pdftex.def)             Requested size: 331.2367pt x 155.58087pt.
+ [14 <./Pictures/destroy.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 526--528
 
  []
 
-<Pictures/start.png, id=573, 662.475pt x 341.275pt>
+<Pictures/start.png, id=595, 672.5125pt x 361.35pt>
 File: Pictures/start.png Graphic file (type png)
  <use Pictures/start.png>
-Package pdftex.def Info: Pictures/start.png used on input line 518.
-(pdftex.def)             Requested size: 331.2367pt x 170.63707pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[14 <./Pictures/destroy.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 533--535
-
- []
+Package pdftex.def Info: Pictures/start.png used on input line 531.
+(pdftex.def)             Requested size: 336.25542pt x 180.67456pt.
 
 [15 <./Pictures/start.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 548--553
+Underfull \hbox (badness 10000) in paragraph at lines 546--548
 
  []
 
-<Pictures/commit.png, id=594, 722.7pt x 481.8pt>
+<Pictures/startTransactions.png, id=606, 672.5125pt x 361.35pt>
+File: Pictures/startTransactions.png Graphic file (type png)
+
+<use Pictures/startTransactions.png>
+Package pdftex.def Info: Pictures/startTransactions.png used on input line 551.
+
+(pdftex.def)             Requested size: 336.25542pt x 180.67456pt.
+ [16 <./Pictures/startTransactions.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 568--573
+
+ []
+
+<Pictures/commit.png, id=619, 782.925pt x 451.6875pt>
 File: Pictures/commit.png Graphic file (type png)
- <use Pictures/commit.png>
-Package pdftex.def Info: Pictures/commit.png used on input line 556.
-(pdftex.def)             Requested size: 361.3491pt x 240.8994pt.
 
-[16 <./Pictures/commit.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 574--579
+<use Pictures/commit.png>
+Package pdftex.def Info: Pictures/commit.png used on input line 576.
+(pdftex.def)             Requested size: 391.46155pt x 225.84319pt.
+
+Overfull \hbox (1.46155pt too wide) in paragraph at lines 576--577
+ [][] 
+ []
+
+[17 <./Pictures/commit.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 594--599
 
  []
 
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 588--590
+<Pictures/commitTransactions.png, id=628, 782.925pt x 451.6875pt>
+File: Pictures/commitTransactions.png Graphic file (type png)
+
+<use Pictures/commitTransactions.png>
+Package pdftex.def Info: Pictures/commitTransactions.png used on input line 602
+.
+(pdftex.def)             Requested size: 234.8793pt x 135.5073pt.
+ [18 <./Pictures/commitTransactions.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 616--618
 
  []
 
-<Pictures/load.png, id=618, 662.475pt x 481.8pt>
+<Pictures/load.png, id=642, 782.925pt x 371.3875pt>
 File: Pictures/load.png Graphic file (type png)
  <use Pictures/load.png>
-Package pdftex.def Info: Pictures/load.png used on input line 593.
-(pdftex.def)             Requested size: 331.2367pt x 240.8994pt.
+Package pdftex.def Info: Pictures/load.png used on input line 621.
+(pdftex.def)             Requested size: 391.46155pt x 185.69328pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 606--608
+Overfull \hbox (1.46155pt too wide) in paragraph at lines 621--622
+ [][] 
+ []
+
+[19 <./Pictures/load.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 634--636
 
  []
 
-[18 <./Pictures/load.png (PNG copy)>]
-<Pictures/store.png, id=628, 652.4375pt x 481.8pt>
+<Pictures/store.png, id=652, 652.4375pt x 371.3875pt>
 File: Pictures/store.png Graphic file (type png)
  <use Pictures/store.png>
-Package pdftex.def Info: Pictures/store.png used on input line 611.
-(pdftex.def)             Requested size: 326.21794pt x 240.8994pt.
+Package pdftex.def Info: Pictures/store.png used on input line 639.
+(pdftex.def)             Requested size: 326.21794pt x 185.69328pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 624--626
+Underfull \hbox (badness 10000) in paragraph at lines 652--654
 
  []
 
-[19 <./Pictures/store.png (PNG copy)>]
-<Pictures/sequence.png, id=638, 863.225pt x 913.4125pt>
+<Pictures/storeTransactions.png, id=653, 672.5125pt x 371.3875pt>
+File: Pictures/storeTransactions.png Graphic file (type png)
+
+<use Pictures/storeTransactions.png>
+Package pdftex.def Info: Pictures/storeTransactions.png used on input line 657.
+
+(pdftex.def)             Requested size: 336.25542pt x 185.69328pt.
+ [20 <./Pictures/store.png (PNG copy)>]
+[21 <./Pictures/storeTransactions.png (PNG copy)>]
+<Pictures/sequence.png, id=669, 873.2625pt x 933.4875pt>
 File: Pictures/sequence.png Graphic file (type png)
 
 <use Pictures/sequence.png>
-Package pdftex.def Info: Pictures/sequence.png used on input line 633.
-(pdftex.def)             Requested size: 388.44766pt x 411.03183pt.
- [20 <./Pictures/sequence.png (PNG copy)>]
-<Pictures/domainModel.png, id=644, 1063.975pt x 642.4pt>
+Package pdftex.def Info: Pictures/sequence.png used on input line 667.
+(pdftex.def)             Requested size: 392.9645pt x 420.06549pt.
+
+Overfull \hbox (2.9645pt too wide) in paragraph at lines 667--668
+ [][] 
+ []
+
+[22 <./Pictures/sequence.png (PNG copy)>]
+<Pictures/domainModel.png, id=676, 1063.975pt x 642.4pt>
 File: Pictures/domainModel.png Graphic file (type png)
 
 <use Pictures/domainModel.png>
-Package pdftex.def Info: Pictures/domainModel.png used on input line 642.
+Package pdftex.def Info: Pictures/domainModel.png used on input line 676.
 (pdftex.def)             Requested size: 425.58246pt x 256.95544pt.
 
-Overfull \hbox (35.58246pt too wide) in paragraph at lines 642--643
+Overfull \hbox (35.58246pt too wide) in paragraph at lines 676--677
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--649
+Underfull \hbox (badness 10000) in paragraph at lines 681--683
 
  []
 
-[21 <./Pictures/domainModel.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 662--663
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 664--670
+[23 <./Pictures/domainModel.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 696--697
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 671--675
+Underfull \hbox (badness 10000) in paragraph at lines 698--704
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 676--681
+Underfull \hbox (badness 10000) in paragraph at lines 705--709
 
  []
 
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 697--698
+
+Underfull \hbox (badness 10000) in paragraph at lines 710--715
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 702.
-[23]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 702.
+
+Underfull \hbox (badness 10000) in paragraph at lines 716--721
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
+
+ []
+
+
+Overfull \hbox (1.52953pt too wide) in paragraph at lines 735--736
+[]\OT1/ptm/m/n/12 Because this project de-vel-oped in an Ag-ile way, the de-scr
+ibed func-tions, source
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 738.
+[25]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 738.
  (./Design manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 702.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 702.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 738.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 738.
 Package rerunfilecheck Info: File `"Design manual".out' has not changed.
-(rerunfilecheck)             Checksum: 05DFD8397461A2E7CF62B16438CAD426;2555.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 702.
+(rerunfilecheck)             Checksum: 1979A199F95752ABA06D8C33076521B5;2633.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 738.
  ) 
 Here is how much of TeX's memory you used:
- 9096 strings out of 493029
- 135440 string characters out of 6136233
- 286308 words of memory out of 5000000
- 12158 multiletter control sequences out of 15000+600000
+ 9139 strings out of 493029
+ 136328 string characters out of 6136233
+ 290308 words of memory out of 5000000
+ 12181 multiletter control sequences out of 15000+600000
  25735 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,49p,1197b,1741s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,49p,1244b,1741s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on "Design manual.pdf" (26 pages, 360344 bytes).
+Output written on "Design manual.pdf" (28 pages, 423188 bytes).
 PDF statistics:
- 765 PDF objects out of 1000 (max. 8388607)
- 711 compressed objects within 8 object streams
- 371 named destinations out of 1000 (max. 500000)
- 357 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 799 PDF objects out of 1000 (max. 8388607)
+ 740 compressed objects within 8 object streams
+ 388 named destinations out of 1000 (max. 500000)
+ 380 words of extra memory for PDF output out of 10000 (max. 10000000)
 

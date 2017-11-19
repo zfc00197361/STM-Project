@@ -26,12 +26,13 @@
 \BOOKMARK [3][-]{subsubsection.4.2.1}{Create transaction}{subsection.4.2}% 26
 \BOOKMARK [3][-]{subsubsection.4.2.2}{Destroy transaction}{subsection.4.2}% 27
 \BOOKMARK [3][-]{subsubsection.4.2.3}{Start transaction}{subsection.4.2}% 28
-\BOOKMARK [3][-]{subsubsection.4.2.4}{Commit transaction}{subsection.4.2}% 29
-\BOOKMARK [3][-]{subsubsection.4.2.5}{Commit transactions}{subsection.4.2}% 30
-\BOOKMARK [3][-]{subsubsection.4.2.6}{Load transaction}{subsection.4.2}% 31
-\BOOKMARK [3][-]{subsubsection.4.2.7}{Store transaction}{subsection.4.2}% 32
-\BOOKMARK [3][-]{subsubsection.4.2.8}{Store transactions}{subsection.4.2}% 33
-\BOOKMARK [1][-]{section.5}{System sequence diagram}{}% 34
-\BOOKMARK [1][-]{section.6}{Domain model}{}% 35
-\BOOKMARK [1][-]{section.7}{Testing the STM Library}{}% 36
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 37
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Start transactions}{subsection.4.2}% 29
+\BOOKMARK [3][-]{subsubsection.4.2.5}{Commit transaction}{subsection.4.2}% 30
+\BOOKMARK [3][-]{subsubsection.4.2.6}{Commit transactions}{subsection.4.2}% 31
+\BOOKMARK [3][-]{subsubsection.4.2.7}{Load transaction}{subsection.4.2}% 32
+\BOOKMARK [3][-]{subsubsection.4.2.8}{Store transaction}{subsection.4.2}% 33
+\BOOKMARK [3][-]{subsubsection.4.2.9}{Store transactions}{subsection.4.2}% 34
+\BOOKMARK [1][-]{section.5}{System sequence diagram}{}% 35
+\BOOKMARK [1][-]{section.6}{Domain model}{}% 36
+\BOOKMARK [1][-]{section.7}{Testing the STM Library}{}% 37
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 38
