@@ -21,38 +21,6 @@
       <in>WAREHOUSE.cpp</in>
       <in>main.cpp</in>
     </df>
-    <logicalFolder name="Object_STM"
-                   displayName="Object_STM"
-                   projectFiles="true"
-                   root="../Object_STM">
-      <itemPath>../Object_STM/AIB.cpp</itemPath>
-      <itemPath>../Object_STM/AIB.h</itemPath>
-      <itemPath>../Object_STM/BANK.cpp</itemPath>
-      <itemPath>../Object_STM/BANK.h</itemPath>
-      <itemPath>../Object_STM/BOA.cpp</itemPath>
-      <itemPath>../Object_STM/BOA.h</itemPath>
-      <itemPath>../Object_STM/BOI.cpp</itemPath>
-      <itemPath>../Object_STM/BOI.h</itemPath>
-      <itemPath>../Object_STM/CARLOW_W.cpp</itemPath>
-      <itemPath>../Object_STM/CARLOW_W.h</itemPath>
-      <itemPath>../Object_STM/CARPHONE_WAREHOUSE.cpp</itemPath>
-      <itemPath>../Object_STM/CARPHONE_WAREHOUSE.h</itemPath>
-      <itemPath>../Object_STM/OSTM.cpp</itemPath>
-      <itemPath>../Object_STM/OSTM.h</itemPath>
-      <itemPath>../Object_STM/SWBPLC.cpp</itemPath>
-      <itemPath>../Object_STM/SWBPLC.h</itemPath>
-      <itemPath>../Object_STM/TM.cpp</itemPath>
-      <itemPath>../Object_STM/TM.h</itemPath>
-      <itemPath>../Object_STM/TX.cpp</itemPath>
-      <itemPath>../Object_STM/TX.h</itemPath>
-      <itemPath>../Object_STM/ULSTER.cpp</itemPath>
-      <itemPath>../Object_STM/ULSTER.h</itemPath>
-      <itemPath>../Object_STM/UNBL.cpp</itemPath>
-      <itemPath>../Object_STM/UNBL.h</itemPath>
-      <itemPath>../Object_STM/WAREHOUSE.cpp</itemPath>
-      <itemPath>../Object_STM/WAREHOUSE.h</itemPath>
-      <itemPath>../Object_STM/main.cpp</itemPath>
-    </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false"
@@ -74,9 +42,7 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <flagsDictionary>
-        <element flagsID="0"
-                 commonFlags="-mtune=generic -march=x86-64 -std=c++14 -fgnu-tm -fstack-protector-strong"/>
-        <element flagsID="1" commonFlags="-std=c++14 -fgnu-tm"/>
+        <element flagsID="0" commonFlags="-std=c++14 -fgnu-tm"/>
       </flagsDictionary>
       <codeAssistance>
       </codeAssistance>
@@ -92,142 +58,76 @@
           <preBuildCommand></preBuildCommand>
         </preBuild>
       </makefileType>
-      <item path="../Object_STM/AIB.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/BANK.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/BOA.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/BOI.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/CARLOW_W.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/CARPHONE_WAREHOUSE.cpp"
-            ex="false"
-            tool="1"
-            flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/OSTM.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/SWBPLC.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/TM.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/TX.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/ULSTER.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/UNBL.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/WAREHOUSE.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
-      <item path="../Object_STM/main.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="0">
-        </ccTool>
-      </item>
       <item path="AIB.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="BANK.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="BOA.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="BOI.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="CARLOW_W.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="CARPHONE_WAREHOUSE.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="DUNDALK_W.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="KILKENNY_W.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="OSTM.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="SLIGO_W.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="SWBPLC.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="TALLAGH_W.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="TM.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="TX.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="ULSTER.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="UNBL.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
       <item path="WAREHOUSE.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
-      <folder path="Object_STM">
-        <ccTool>
-          <incDir>
-            <pElem>../Object_STM</pElem>
-          </incDir>
-        </ccTool>
-      </folder>
       <item path="main.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
+        <ccTool flags="0">
         </ccTool>
       </item>
     </conf>

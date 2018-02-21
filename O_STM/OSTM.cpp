@@ -46,7 +46,7 @@ OSTM::OSTM(int _version_number_, int _unique_id_)
  * De-constructor
  */
 OSTM::~OSTM() {
-
+    //std::cout << "[OSTM DELETE]" << std::endl;
 }
 
 /*!

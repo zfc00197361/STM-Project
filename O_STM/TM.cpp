@@ -102,12 +102,13 @@ void TM::_TX_EXIT(){
     std::map<pid_t, std::map< std::thread::id, int >>::iterator process_map_collection_Iterator = TM::process_map_collection.find(ppid);
     if (process_map_collection_Iterator != TM::process_map_collection.end()) {
 
-        for (auto current = process_map_collection_Iterator->second.begin(); current != process_map_collection_Iterator->second.end(); ++current) {
-            /*
-             * Delete all transaction associated with the actual main process
-             */
-            txMap.erase(current->first);
-        }
+//        for (auto current = process_map_collection_Iterator->second.begin(); current != process_map_collection_Iterator->second.end(); ++current) {
+//            /*
+//             * Delete all transaction associated with the actual main process
+//             */
+//            txMap.erase(current->first);
+//        }
+        txMap.clear();
 
     }
     tx.ostm_exit();
