@@ -106,7 +106,15 @@ void TX::_register(std::shared_ptr<OSTM> object) {
      * MUST USE SHARED LOCK TO PROTECT SHARED GLOBAL MAP/COLLECTION 
      */
     std::lock_guard<std::mutex> guard(TX::register_Lock);
-
+    
+    /*
+     * Check for null pointer !
+     * Null pointer can cause segmentation fault!!!
+     */
+    if(object == nullptr){
+        throw std::runtime_error(std::string("[RUNTIME ERROR : NULL POINTER IN REGISTER FUNCTION]") );
+    }
+    
     pid_t ppid = getppid();
     std::map<pid_t, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection.find(ppid);
     if (process_map_collection_Iterator == TX::process_map_collection.end()) {
@@ -147,21 +155,35 @@ void TX::_register(std::shared_ptr<OSTM> object) {
 std::shared_ptr<OSTM> TX::load(std::shared_ptr<OSTM> object) {
 
     std::map< int, std::shared_ptr<OSTM> >::iterator working_Map_collection_Object_Shared_Pointer_Iterator;
+    /*
+     * Check for null pointer !
+     * Null pointer can cause segmentation fault!!!
+     */
+    if(object == nullptr){
+        throw std::runtime_error(std::string("[RUNTIME ERROR : NULL POINTER IN LOAD FUNCTION]") );
+    }
 
-    working_Map_collection_Object_Shared_Pointer_Iterator = working_Map_collection.find(object->Get_Unique_ID());
+        working_Map_collection_Object_Shared_Pointer_Iterator = working_Map_collection.find(object->Get_Unique_ID());
+
     if (working_Map_collection_Object_Shared_Pointer_Iterator != working_Map_collection.end()) {
 
         return working_Map_collection_Object_Shared_Pointer_Iterator->second->getBaseCopy(working_Map_collection_Object_Shared_Pointer_Iterator->second);
-    }else {
-        std::cout << "[ERROR LOAD]" << std::endl;
-    }
+        
+    } else { throw std::runtime_error(std::string("[RUNTIME ERROR : NO OBJECT FOUND LOAD FUNCTION]") );}
 }
 /*!
  * \brief store void, receive an std::shared_ptr<OSTM> object to store the changes within the transaction, depends the user action
  * \param  working_Map_collection std::map, store all the std::shared_ptr<OSTM> pointer in the transaction
  */
 void TX::store(std::shared_ptr<OSTM> object) {
-
+    /*
+     * Check for null pointer !
+     * Null pointer can cause segmentation fault!!!
+     */
+    if(object == nullptr){
+        throw std::runtime_error(std::string("[RUNTIME ERROR : NULL POINTER IN STORE FUNCTION]") );
+    }
+    
     std::map< int, std::shared_ptr<OSTM> >::iterator working_Map_collection_Object_Shared_Pointer_Iterator;
 
     working_Map_collection_Object_Shared_Pointer_Iterator = working_Map_collection.find(object->Get_Unique_ID());
@@ -169,9 +191,7 @@ void TX::store(std::shared_ptr<OSTM> object) {
 
         working_Map_collection_Object_Shared_Pointer_Iterator->second = object;
 
-    } else {
-        std::cout << "[ERROR STORE]" << std::endl;
-    }
+    } else { std::cout << "[ERROR STORE]" << std::endl; }
 }
 /*!
  * \brief commit bool, returns boolean value TRUE/FALSE depends on the action taken within the function
@@ -182,7 +202,7 @@ void TX::store(std::shared_ptr<OSTM> object) {
 bool TX::commit() {
 
     bool can_Commit = true;
-
+ 
     /*
      * Dealing with nested transactions first 
      */
@@ -195,18 +215,16 @@ bool TX::commit() {
 
     std::map<int, std::shared_ptr<OSTM>>::iterator main_Process_Map_collection_Iterator;
     for (working_Map_collection_Object_Shared_Pointer_Iterator = working_Map_collection.begin(); working_Map_collection_Object_Shared_Pointer_Iterator != working_Map_collection.end(); working_Map_collection_Object_Shared_Pointer_Iterator++) {
-        bool found_object = false;
 
-        while (!found_object) {
             main_Process_Map_collection_Iterator = TX::main_Process_Map_collection.find(working_Map_collection_Object_Shared_Pointer_Iterator->second->Get_Unique_ID());
-            if(main_Process_Map_collection_Iterator != TX::main_Process_Map_collection.end())
+            /*
+             * Throws runtime error if object can not find
+             */
+            if(main_Process_Map_collection_Iterator == TX::main_Process_Map_collection.end())
             {
-                found_object = true;
-            } else {
-                std::cout << "[MISS] " << working_Map_collection_Object_Shared_Pointer_Iterator->second->Get_Unique_ID() << std::endl;
-                found_object = true;
+                throw std::runtime_error(std::string("[RUNTIME ERROR : CAN'T FIND OBJECT COMMIT FUNCTION]"));
             }
-        }
+
         /*
          * Busy wait WHILE object locked by other thread
          */
@@ -248,7 +266,7 @@ bool TX::commit() {
 
 
                 } else {
-                    std::cout << "[COMMIT ERROR]" << std::endl;
+                    throw std::runtime_error(std::string("[RUNTIME ERROR : CAN'T FIND OBJECT COMMIT FUNCTION]"));
 
                 }
         }
@@ -325,7 +343,7 @@ std::map< int, int > TX::get_thread_Map() {
 /*!
  * ONLY FOR TESTING CHECK THE MAP AFTER THREAD EXIT AND ALL SHOULD BE DELETED!!!!!!!
  */
-void TX::printAllThreadInTheMap() {
+void TX::_print_all_tx() {
 
     std::cout << "[PRINTALLTHREAD]" << std::endl;
     std::map< int, std::shared_ptr<OSTM> >::iterator it;

@@ -1,6 +1,6 @@
 /* 
  * File:   OSTM.h
- * Author: zoltan
+ * Author: Zoltan FUzesi
  *
  * Created on December 18, 2017, 2:09 PM
  * OSTM header file fields and  methods declarations
@@ -24,30 +24,22 @@ public:
      * \brief OSTM Custom Constructor
      */
     OSTM(int _version_number_, int _unique_id_);
-
     /*!
      * \brief De-constructor
      */
     virtual ~OSTM();
-    
     /*!
      * \brief OSTM required virtual method for deep copy
      */ 
-    virtual void copy(std::shared_ptr<OSTM> from, std::shared_ptr<OSTM> to){};
-     /*!
-     * \brief OSTM required virtual method for casting back to OSTM pointer
-     */
-   // virtual std::shared_ptr<OSTM> _cast(std::shared_ptr<OSTM> _object){};
-    
+    virtual void copy(std::shared_ptr<OSTM> from, std::shared_ptr<OSTM> to){};  
      /*!
      * \brief OSTM required virtual method for returning a pointer that is copy of the original pointer
      */
-    virtual std::shared_ptr<OSTM> getBaseCopy(std::shared_ptr<OSTM> object){std::cout << "[OSTM GETBASECOPY]" << std::endl;};
+    virtual std::shared_ptr<OSTM> getBaseCopy(std::shared_ptr<OSTM> object){};//std::cout << "[OSTM GETBASECOPY]" << std::endl;};
      /*!
      * \brief OSTM required virtual method for display object
      */
     virtual void toString(){};
-    
     /*!
      * \brief setter for unique id
      */
@@ -126,6 +118,10 @@ private:
      * \brief Object built in lock
      */
     std::mutex mutex;
+    /*!
+     * Returning global_Unique_ID_Number to the constructor
+     */
+    int Get_global_Unique_ID_Number();
 
 };
 

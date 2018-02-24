@@ -64,10 +64,10 @@ public:
      * \brief Remove TX nesting level by one
      */
     void _decrease_tx_nesting();
-    
-    
-
-    
+    /*!
+     * Only TM Transaction Manager can create instance of TX Transaction
+     */
+    friend class TM;
     /*
      * \brief ONLY FOR TESTING!!! returning the number of rollback happened during transactions
      */
@@ -76,12 +76,10 @@ public:
      * \param test_counter int ONLY FOR TESTING!!!
      */
     static int test_counter;
-    
-    
     /*
      * TESTING ONLY
      */
-    void printAllThreadInTheMap() ;
+    void _print_all_tx() ;
 
 
 private:

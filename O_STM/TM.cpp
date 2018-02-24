@@ -82,11 +82,12 @@ std::shared_ptr<TX>const TM::_get_tx()
     if(it == txMap.end())
     {
        registerTX();
+       it = txMap.find(std::this_thread::get_id());
        
     } else {
         it->second->_increase_tx_nesting();
     }
-    it = txMap.find(std::this_thread::get_id());
+    //it = txMap.find(std::this_thread::get_id());
     
 
     return it->second;
@@ -102,13 +103,13 @@ void TM::_TX_EXIT(){
     std::map<pid_t, std::map< std::thread::id, int >>::iterator process_map_collection_Iterator = TM::process_map_collection.find(ppid);
     if (process_map_collection_Iterator != TM::process_map_collection.end()) {
 
-//        for (auto current = process_map_collection_Iterator->second.begin(); current != process_map_collection_Iterator->second.end(); ++current) {
-//            /*
-//             * Delete all transaction associated with the actual main process
-//             */
-//            txMap.erase(current->first);
-//        }
-        txMap.clear();
+        for (auto current = process_map_collection_Iterator->second.begin(); current != process_map_collection_Iterator->second.end(); ++current) {
+            /*
+             * Delete all transaction associated with the actual main process
+             */
+            txMap.erase(current->first);
+        }
+        TM::process_map_collection.erase(ppid);
 
     }
     tx.ostm_exit();

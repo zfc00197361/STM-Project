@@ -20,7 +20,7 @@ int OSTM::global_Unique_ID_Number = 0;
 OSTM::OSTM()
 {
     this->version = ZERO;
-    this->uniqueID = ++global_Unique_ID_Number;
+    this->uniqueID = Get_global_Unique_ID_Number(); //++global_Unique_ID_Number;
     this->canCommit = true;
     this->abort_Transaction = false;
 }
@@ -47,6 +47,16 @@ OSTM::OSTM(int _version_number_, int _unique_id_)
  */
 OSTM::~OSTM() {
     //std::cout << "[OSTM DELETE]" << std::endl;
+}
+/*!
+ * If global_Unique_ID_Number equals to 10000000 then reset back to ZERO, to make sure the value of 
+ * global_Unique_ID_Number never exceed the MAX_INT value
+ */
+
+int OSTM::Get_global_Unique_ID_Number() {
+    if(global_Unique_ID_Number > 10000000)
+        global_Unique_ID_Number = 0;
+    return ++global_Unique_ID_Number;
 }
 
 /*!
