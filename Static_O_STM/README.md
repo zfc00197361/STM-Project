@@ -5,10 +5,9 @@ In order to use the O_STM library with any C++ application, it need to be placed
 3. CReate Makefile :
 3. Create Makefile :
 <br><br>
-### Makefile.mk Documentationbr><br
+### Makefile.mk Documentation<br><br
 EXE =Test<br>
 CC = g++<br>
-#DOXYGEN = doxygen<br>
 PROGRAM = app<br>
 CFLAGS =-std=c++14 -pthread <br>
 CFILES = main.cpp AIB.cpp ULSTER.cpp BOA.cpp UNBL.cpp SWBPLC.cpp<br>
