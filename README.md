@@ -1,1 +1,1 @@
-C++14 STM PDF documents and C++ source code
+C++ Software Transactional Memory PDF documents and C++ source code
