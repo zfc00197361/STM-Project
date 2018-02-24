@@ -775,8 +775,8 @@ int main(void) {
     /*
      * TEST 1 : object requirements
      */
-    aib_ptr->toString();
-    boi_ptr->toString();
+//    aib_ptr->toString();
+//    boi_ptr->toString();
 
     /*
      * TEST 2 : object requirements 
@@ -794,10 +794,10 @@ int main(void) {
     /*
      * TEST 3 : object requirements
      */
-    //    w_dist->toString();
-    //    c_shop->toString();
-    //    k_shop->toString();
-    //    t_shop->toString();
+        w_dist->toString();
+        c_shop->toString();
+        k_shop->toString();
+        t_shop->toString();
 
     /*
      * TEST 4 : objects requirements
@@ -850,12 +850,12 @@ int main(void) {
          * \brief TEST 1 : Nested transaction Test<br>
          * thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
          */
-        if (i % 3 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
-        else if (i % 2 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
-        else if (i % 1 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+//        if (i % 3 == 0)
+//            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+//        else if (i % 2 == 0)
+//            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+//        else if (i % 1 == 0)
+//            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
 
         /*!
          * \brief TEST 2 :Three different type of function call where the objects are participating in multiple type of transactions<br>
@@ -875,12 +875,12 @@ int main(void) {
          * \brief TEST 3 : Testing WAREHOUSE type pointers within transactions<br>
          * thArray[i] = std::thread(_phone_transfer_, c_shop, w_dist, std::ref(tm), transferAmount);
          */
-        //        if (i % 3 == 0)
-        //            thArray[i] = std::thread(_warehouse_transfer_, c_shop, w_dist, std::ref(tm), transferAmount);
-        //        else if (i % 2 == 0)
-        //            thArray[i] = std::thread(_warehouse_transfer_, k_shop, w_dist, std::ref(tm), transferAmount);
-        //        else if (i % 1 == 0)
-        //            thArray[i] = std::thread(_warehouse_transfer_, t_shop, w_dist, std::ref(tm), transferAmount);
+                if (i % 3 == 0)
+                    thArray[i] = std::thread(_warehouse_transfer_, c_shop, w_dist, std::ref(tm), transferAmount);
+                else if (i % 2 == 0)
+                    thArray[i] = std::thread(_warehouse_transfer_, k_shop, w_dist, std::ref(tm), transferAmount);
+                else if (i % 1 == 0)
+                    thArray[i] = std::thread(_warehouse_transfer_, t_shop, w_dist, std::ref(tm), transferAmount);
 
         /*!
          * \brief TEST 4 : Testing WAREHOUSE type pointers within nested transactions<br>
@@ -928,8 +928,8 @@ int main(void) {
     /*
      * TEST 1 : object requirements
      */
-    aib_ptr->toString();
-    boi_ptr->toString();
+//    aib_ptr->toString();
+//    boi_ptr->toString();
 
     /*
      * TEST 2 : object requirements 
@@ -947,10 +947,10 @@ int main(void) {
     /*
      * TEST 3 : object requirements
      */
-    //            w_dist->toString();
-    //            c_shop->toString();
-    //            k_shop->toString();
-    //            t_shop->toString();
+                w_dist->toString();
+                c_shop->toString();
+                k_shop->toString();
+                t_shop->toString();
 
     /*
      * TEST 4 : objects requirements

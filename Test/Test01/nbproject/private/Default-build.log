@@ -1,0 +1,1 @@
+g++ -std=c++14 -pthread  *.cpp -I -L /usr/lib/lib_o_stm.so  -o Test01	

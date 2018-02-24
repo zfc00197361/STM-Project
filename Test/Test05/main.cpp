@@ -775,8 +775,8 @@ int main(void) {
     /*
      * TEST 1 : object requirements
      */
-    aib_ptr->toString();
-    boi_ptr->toString();
+//    aib_ptr->toString();
+//    boi_ptr->toString();
 
     /*
      * TEST 2 : object requirements 
@@ -813,12 +813,12 @@ int main(void) {
     /*
      * TEST 5 : objects requirements
      */
-    //        w_dist->toString();
-    //        c_shop->toString();
-    //        k_shop->toString();
-    //        t_shop->toString();
-    //        d_shop->toString();
-    //        s_shop->toString();
+            w_dist->toString();
+            c_shop->toString();
+            k_shop->toString();
+            t_shop->toString();
+            d_shop->toString();
+            s_shop->toString();
 
     //        for(auto&& elem: _warehouse_vec){
     //            elem->toString(); // virtual dispatch
@@ -850,12 +850,12 @@ int main(void) {
          * \brief TEST 1 : Nested transaction Test<br>
          * thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
          */
-        if (i % 3 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
-        else if (i % 2 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
-        else if (i % 1 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+//        if (i % 3 == 0)
+//            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+//        else if (i % 2 == 0)
+//            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+//        else if (i % 1 == 0)
+//            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
 
         /*!
          * \brief TEST 2 :Three different type of function call where the objects are participating in multiple type of transactions<br>
@@ -901,12 +901,12 @@ int main(void) {
          * 
          */
 
-        //        if (i % 3 == 0)
-        //            thArray[i] = std::thread(_warehouse_transfer_, c_shop, w_dist, std::ref(tm), transferAmount);
-        //        else if (i % 2 == 0)
-        //            thArray[i] = std::thread(_nested_warehouse_transfer_, k_shop, s_shop, t_shop, w_dist, std::ref(tm), transferAmount);
-        //        else if (i % 1 == 0)
-        //            thArray[i] = std::thread(_complex_warehouse_transfer_, d_shop, s_shop, c_shop, std::ref(_warehouse_vec), w_dist, std::ref(tm), transferAmount);
+                if (i % 3 == 0)
+                    thArray[i] = std::thread(_warehouse_transfer_, c_shop, w_dist, std::ref(tm), transferAmount);
+                else if (i % 2 == 0)
+                    thArray[i] = std::thread(_nested_warehouse_transfer_, k_shop, s_shop, t_shop, w_dist, std::ref(tm), transferAmount);
+                else if (i % 1 == 0)
+                    thArray[i] = std::thread(_complex_warehouse_transfer_, d_shop, s_shop, c_shop, std::ref(_warehouse_vec), w_dist, std::ref(tm), transferAmount);
 
 
     }
@@ -928,8 +928,8 @@ int main(void) {
     /*
      * TEST 1 : object requirements
      */
-    aib_ptr->toString();
-    boi_ptr->toString();
+//    aib_ptr->toString();
+//    boi_ptr->toString();
 
     /*
      * TEST 2 : object requirements 
@@ -965,17 +965,17 @@ int main(void) {
     /*
      * TEST 5 : objects requirements
      */
-    //        w_dist->toString();
-    //        c_shop->toString();
-    //        k_shop->toString();
-    //        t_shop->toString();
-    //        d_shop->toString();
-    //        s_shop->toString();
+            w_dist->toString();
+            c_shop->toString();
+            k_shop->toString();
+            t_shop->toString();
+            d_shop->toString();
+            s_shop->toString();
 
-    //        for(auto&& elem: _warehouse_vec){
-    //            elem->toString(); // virtual dispatch
-    //            
-    //        }
+            for(auto&& elem: _warehouse_vec){
+                elem->toString(); // virtual dispatch
+                
+            }
 
     /* TEST 5 FINISH */
 

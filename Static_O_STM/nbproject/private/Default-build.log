@@ -1,0 +1,5 @@
+g++ -fPIC -c "TM.cpp" -o TM.o
+g++ -fPIC -c "TX.cpp" -o TX.o 
+g++ -fPIC -c "OSTM.cpp" -o OSTM.o
+** Building the O_STM library
+g++ -shared -o lib_o_stm.so TM.o TX.o OSTM.o

@@ -21,3 +21,4 @@ clean:
 	rm -f *.o
 
 .PHONY: all clean
+#-c -Wall -Werror -fpic

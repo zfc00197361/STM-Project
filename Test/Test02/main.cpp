@@ -775,18 +775,18 @@ int main(void) {
     /*
      * TEST 1 : object requirements
      */
-    aib_ptr->toString();
-    boi_ptr->toString();
+//    aib_ptr->toString();
+//    boi_ptr->toString();
 
     /*
      * TEST 2 : object requirements 
      */
-    //    aib_ptr->toString();
-    //    boi_ptr->toString();
-    //    boa_ptr->toString();
-    //    swplc_ptr->toString();
-    //    ulster_ptr->toString();
-    //    unbl_ptr->toString();
+        aib_ptr->toString();
+        boi_ptr->toString();
+        boa_ptr->toString();
+        swplc_ptr->toString();
+        ulster_ptr->toString();
+        unbl_ptr->toString();
     //    for(int i=0; i<vector_number; ++i){
     //        _customer_vec[i]->toString();
     //    }
@@ -850,12 +850,12 @@ int main(void) {
          * \brief TEST 1 : Nested transaction Test<br>
          * thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
          */
-        if (i % 3 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
-        else if (i % 2 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
-        else if (i % 1 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+//        if (i % 3 == 0)
+//            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+//        else if (i % 2 == 0)
+//            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+//        else if (i % 1 == 0)
+//            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
 
         /*!
          * \brief TEST 2 :Three different type of function call where the objects are participating in multiple type of transactions<br>
@@ -863,12 +863,12 @@ int main(void) {
          * thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount)<br>
          * thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
          */
-        //    if (i % 3 == 0) 
-        //        thArray[i] = std::thread(_two_account_transfer_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
-        //    else if (i % 2 == 0)
-        //        thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount);
-        //    else if (i % 1 == 0)
-        //        thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
+            if (i % 3 == 0) 
+                thArray[i] = std::thread(_two_account_transfer_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+            else if (i % 2 == 0)
+                thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount);
+            else if (i % 1 == 0)
+                thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
 
 
         /*!
@@ -928,21 +928,21 @@ int main(void) {
     /*
      * TEST 1 : object requirements
      */
-    aib_ptr->toString();
-    boi_ptr->toString();
+//    aib_ptr->toString();
+//    boi_ptr->toString();
 
     /*
      * TEST 2 : object requirements 
      */
-    //    aib_ptr->toString();
-    //    boi_ptr->toString();
-    //    boa_ptr->toString();
-    //    swplc_ptr->toString();
-    //    ulster_ptr->toString();
-    //    unbl_ptr->toString();
-    //    for(int i=0; i<vector_number; ++i){
-    //        _customer_vec[i]->toString();
-    //    }
+        aib_ptr->toString();
+        boi_ptr->toString();
+        boa_ptr->toString();
+        swplc_ptr->toString();
+        ulster_ptr->toString();
+        unbl_ptr->toString();
+        for(int i=0; i<vector_number; ++i){
+            _customer_vec[i]->toString();
+        }
 
     /*
      * TEST 3 : object requirements
