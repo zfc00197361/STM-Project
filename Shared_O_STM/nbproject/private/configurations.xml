@@ -2,41 +2,12 @@
 <configurationDescriptor version="100">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
-      <in>AIB.cpp</in>
-      <in>AIB.h</in>
-      <in>BANK.cpp</in>
-      <in>BANK.h</in>
-      <in>BOA.cpp</in>
-      <in>BOA.h</in>
-      <in>BOI.cpp</in>
-      <in>BOI.h</in>
-      <in>CARLOW_W.cpp</in>
-      <in>CARLOW_W.h</in>
-      <in>CARPHONE_WAREHOUSE.cpp</in>
-      <in>CARPHONE_WAREHOUSE.h</in>
-      <in>DUNDALK_W.cpp</in>
-      <in>DUNDALK_W.h</in>
-      <in>KILKENNY_W.cpp</in>
-      <in>KILKENNY_W.h</in>
       <in>OSTM.cpp</in>
       <in>OSTM.h</in>
-      <in>SLIGO_W.cpp</in>
-      <in>SLIGO_W.h</in>
-      <in>SWBPLC.cpp</in>
-      <in>SWBPLC.h</in>
-      <in>TALLAGH_W.cpp</in>
-      <in>TALLAGH_W.h</in>
       <in>TM.cpp</in>
       <in>TM.h</in>
       <in>TX.cpp</in>
       <in>TX.h</in>
-      <in>ULSTER.cpp</in>
-      <in>ULSTER.h</in>
-      <in>UNBL.cpp</in>
-      <in>UNBL.h</in>
-      <in>WAREHOUSE.cpp</in>
-      <in>WAREHOUSE.h</in>
-      <in>main.cpp</in>
     </df>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -64,8 +35,6 @@
         <gdb_interceptlist>
           <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
         </gdb_interceptlist>
-        <gdb_signals>
-        </gdb_signals>
         <gdb_options>
           <DebugOptions>
           </DebugOptions>

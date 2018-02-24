@@ -1,0 +1,565 @@
+\hypertarget{class_o_s_t_m}{}\section{O\+S\+TM Class Reference}
+\label{class_o_s_t_m}\index{O\+S\+TM@{O\+S\+TM}}
+
+
+{\ttfamily \#include $<$O\+S\+T\+M.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_o_s_t_m_a968edf778668bd0ec7603f0571619196}{O\+S\+TM} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_o_s_t_m}{O\+S\+TM} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{class_o_s_t_m_a2314f55a127b94aa8a51d19ba798401e}{O\+S\+TM} (int \+\_\+version\+\_\+number\+\_\+, int \+\_\+unique\+\_\+id\+\_\+)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_o_s_t_m}{O\+S\+TM} Custom Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_o_s_t_m_a30a17d73d0259c60eeab72d6dfa9ceb1}{$\sim$\+O\+S\+TM} ()
+\begin{DoxyCompactList}\small\item\em De-\/constructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d}{copy} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ from, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ to)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_o_s_t_m}{O\+S\+TM} required virtual method for deep copy. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \hyperlink{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c}{get\+Base\+Copy} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ object)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_o_s_t_m}{O\+S\+TM} required virtual method for returning a pointer that is copy of the original pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59}{to\+String} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_o_s_t_m}{O\+S\+TM} required virtual method for display object. \end{DoxyCompactList}\item 
+void \hyperlink{class_o_s_t_m_ab5019a32185631c08abbf826422f2d93}{Set\+\_\+\+Unique\+\_\+\+ID} (int unique\+ID)
+\begin{DoxyCompactList}\small\item\em setter for unique id \end{DoxyCompactList}\item 
+int \hyperlink{class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d}{Get\+\_\+\+Unique\+\_\+\+ID} () const 
+\begin{DoxyCompactList}\small\item\em getter for unique id \end{DoxyCompactList}\item 
+void \hyperlink{class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1}{Set\+\_\+\+Version} (int version)
+\begin{DoxyCompactList}\small\item\em setter for version number \end{DoxyCompactList}\item 
+int \hyperlink{class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b}{Get\+\_\+\+Version} () const 
+\begin{DoxyCompactList}\small\item\em getter for version number \end{DoxyCompactList}\item 
+void \hyperlink{class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a}{increase\+\_\+\+Version\+Number} ()
+\begin{DoxyCompactList}\small\item\em commit time increase version number to child object \end{DoxyCompactList}\item 
+bool \hyperlink{class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7}{Is\+\_\+\+Can\+\_\+\+Commit} () const 
+\begin{DoxyCompactList}\small\item\em N\+OT U\+S\+ED Y\+ET. \end{DoxyCompactList}\item 
+void \hyperlink{class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d}{Set\+\_\+\+Can\+\_\+\+Commit} (bool can\+Commit)
+\begin{DoxyCompactList}\small\item\em N\+OT U\+S\+ED Y\+ET. \end{DoxyCompactList}\item 
+void \hyperlink{class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4}{Set\+\_\+\+Abort\+\_\+\+Transaction} (bool abort\+Transaction)
+\begin{DoxyCompactList}\small\item\em N\+OT U\+S\+ED Y\+ET. \end{DoxyCompactList}\item 
+bool \hyperlink{class_o_s_t_m_afc2851abf5342c3c67342c2c14820115}{Is\+\_\+\+Abort\+\_\+\+Transaction} () const 
+\begin{DoxyCompactList}\small\item\em N\+OT U\+S\+ED Y\+ET. \end{DoxyCompactList}\item 
+void \hyperlink{class_o_s_t_m_af192c598a3c647f37aaba5757e60240f}{lock\+\_\+\+Mutex} ()
+\begin{DoxyCompactList}\small\item\em object unique lock, locks mutex \end{DoxyCompactList}\item 
+void \hyperlink{class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762}{unlock\+\_\+\+Mutex} ()
+\begin{DoxyCompactList}\small\item\em object unique lock, unlocks mutex \end{DoxyCompactList}\item 
+bool \hyperlink{class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0}{is\+\_\+\+Locked} ()
+\begin{DoxyCompactList}\small\item\em object unique lock, try locks mutex return boolean value depends on the lock state \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file O\+S\+T\+M.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{O\+S\+TM@{O\+S\+TM}!O\+S\+TM@{O\+S\+TM}}
+\index{O\+S\+TM@{O\+S\+TM}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{O\+S\+T\+M()}{OSTM()}}]{\setlength{\rightskip}{0pt plus 5cm}O\+S\+T\+M\+::\+O\+S\+TM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_o_s_t_m_a968edf778668bd0ec7603f0571619196}{}\label{class_o_s_t_m_a968edf778668bd0ec7603f0571619196}
+
+
+\hyperlink{class_o_s_t_m}{O\+S\+TM} Constructor. 
+
+Default constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & indicates the version number of the inherited child pointer \\
+\hline
+{\em unique\+ID} & is a unique identifier assigned to every object registered in \hyperlink{class_o_s_t_m}{O\+S\+TM} library \\
+\hline
+{\em can\+Commit} & N\+OT U\+S\+ED Y\+ET \\
+\hline
+{\em abort\+\_\+\+Transaction} & N\+OT U\+S\+ED Y\+ET \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file O\+S\+T\+M.\+cpp.
+
+\index{O\+S\+TM@{O\+S\+TM}!O\+S\+TM@{O\+S\+TM}}
+\index{O\+S\+TM@{O\+S\+TM}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{O\+S\+T\+M(int \+\_\+version\+\_\+number\+\_\+, int \+\_\+unique\+\_\+id\+\_\+)}{OSTM(int _version_number_, int _unique_id_)}}]{\setlength{\rightskip}{0pt plus 5cm}O\+S\+T\+M\+::\+O\+S\+TM (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+version\+\_\+number\+\_\+, }
+\item[{int}]{\+\_\+unique\+\_\+id\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{class_o_s_t_m_a2314f55a127b94aa8a51d19ba798401e}{}\label{class_o_s_t_m_a2314f55a127b94aa8a51d19ba798401e}
+
+
+\hyperlink{class_o_s_t_m}{O\+S\+TM} Custom Constructor. 
+
+Custom Constructor Used for copy object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & indicates the version number of the inherited child pointer \\
+\hline
+{\em unique\+ID} & is a unique identifier assigned to every object registered in \hyperlink{class_o_s_t_m}{O\+S\+TM} library \\
+\hline
+{\em can\+Commit} & N\+OT U\+S\+ED Y\+ET \\
+\hline
+{\em abort\+\_\+\+Transaction} & N\+OT U\+S\+ED Y\+ET \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file O\+S\+T\+M.\+cpp.
+
+\index{O\+S\+TM@{O\+S\+TM}!````~O\+S\+TM@{$\sim$\+O\+S\+TM}}
+\index{````~O\+S\+TM@{$\sim$\+O\+S\+TM}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{$\sim$\+O\+S\+T\+M()}{~OSTM()}}]{\setlength{\rightskip}{0pt plus 5cm}O\+S\+T\+M\+::$\sim$\+O\+S\+TM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_o_s_t_m_a30a17d73d0259c60eeab72d6dfa9ceb1}{}\label{class_o_s_t_m_a30a17d73d0259c60eeab72d6dfa9ceb1}
+
+
+De-\/constructor. 
+
+De-\/constructor 
+
+Definition at line 48 of file O\+S\+T\+M.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{O\+S\+TM@{O\+S\+TM}!copy@{copy}}
+\index{copy@{copy}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ from, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ to)}{copy(std::shared_ptr< OSTM > from, std::shared_ptr< OSTM > to)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void O\+S\+T\+M\+::copy (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{from, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d}{}\label{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d}
+
+
+\hyperlink{class_o_s_t_m}{O\+S\+TM} required virtual method for deep copy. 
+
+
+
+Definition at line 34 of file O\+S\+T\+M.\+h.
+
+\index{O\+S\+TM@{O\+S\+TM}!Get\+\_\+\+Unique\+\_\+\+ID@{Get\+\_\+\+Unique\+\_\+\+ID}}
+\index{Get\+\_\+\+Unique\+\_\+\+ID@{Get\+\_\+\+Unique\+\_\+\+ID}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Unique\+\_\+\+I\+D() const }{Get_Unique_ID() const }}]{\setlength{\rightskip}{0pt plus 5cm}int O\+S\+T\+M\+::\+Get\+\_\+\+Unique\+\_\+\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d}{}\label{class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d}
+
+
+getter for unique id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+ID} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file O\+S\+T\+M.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{O\+S\+TM@{O\+S\+TM}!Get\+\_\+\+Version@{Get\+\_\+\+Version}}
+\index{Get\+\_\+\+Version@{Get\+\_\+\+Version}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{Get\+\_\+\+Version() const }{Get_Version() const }}]{\setlength{\rightskip}{0pt plus 5cm}int O\+S\+T\+M\+::\+Get\+\_\+\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b}{}\label{class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b}
+
+
+getter for version number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file O\+S\+T\+M.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{O\+S\+TM@{O\+S\+TM}!get\+Base\+Copy@{get\+Base\+Copy}}
+\index{get\+Base\+Copy@{get\+Base\+Copy}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{get\+Base\+Copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ object)}{getBaseCopy(std::shared_ptr< OSTM > object)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::shared\+\_\+ptr$<${\bf O\+S\+TM}$>$ O\+S\+T\+M\+::get\+Base\+Copy (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c}{}\label{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c}
+
+
+\hyperlink{class_o_s_t_m}{O\+S\+TM} required virtual method for returning a pointer that is copy of the original pointer. 
+
+
+
+Definition at line 38 of file O\+S\+T\+M.\+h.
+
+\index{O\+S\+TM@{O\+S\+TM}!increase\+\_\+\+Version\+Number@{increase\+\_\+\+Version\+Number}}
+\index{increase\+\_\+\+Version\+Number@{increase\+\_\+\+Version\+Number}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{increase\+\_\+\+Version\+Number()}{increase_VersionNumber()}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::increase\+\_\+\+Version\+Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a}{}\label{class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a}
+
+
+commit time increase version number to child object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 97 of file O\+S\+T\+M.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{O\+S\+TM@{O\+S\+TM}!Is\+\_\+\+Abort\+\_\+\+Transaction@{Is\+\_\+\+Abort\+\_\+\+Transaction}}
+\index{Is\+\_\+\+Abort\+\_\+\+Transaction@{Is\+\_\+\+Abort\+\_\+\+Transaction}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{Is\+\_\+\+Abort\+\_\+\+Transaction() const }{Is_Abort_Transaction() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+T\+M\+::\+Is\+\_\+\+Abort\+\_\+\+Transaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_o_s_t_m_afc2851abf5342c3c67342c2c14820115}{}\label{class_o_s_t_m_afc2851abf5342c3c67342c2c14820115}
+
+
+N\+OT U\+S\+ED Y\+ET. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em abort\+\_\+\+Transaction} & boolean \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 126 of file O\+S\+T\+M.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{O\+S\+TM@{O\+S\+TM}!Is\+\_\+\+Can\+\_\+\+Commit@{Is\+\_\+\+Can\+\_\+\+Commit}}
+\index{Is\+\_\+\+Can\+\_\+\+Commit@{Is\+\_\+\+Can\+\_\+\+Commit}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{Is\+\_\+\+Can\+\_\+\+Commit() const }{Is_Can_Commit() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+T\+M\+::\+Is\+\_\+\+Can\+\_\+\+Commit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7}{}\label{class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7}
+
+
+N\+OT U\+S\+ED Y\+ET. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em can\+Commit} & boolean \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 112 of file O\+S\+T\+M.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{O\+S\+TM@{O\+S\+TM}!is\+\_\+\+Locked@{is\+\_\+\+Locked}}
+\index{is\+\_\+\+Locked@{is\+\_\+\+Locked}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{is\+\_\+\+Locked()}{is_Locked()}}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+T\+M\+::is\+\_\+\+Locked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0}{}\label{class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0}
+
+
+object unique lock, try locks mutex return boolean value depends on the lock state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mutex} & std\+::mutex \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 147 of file O\+S\+T\+M.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{O\+S\+TM@{O\+S\+TM}!lock\+\_\+\+Mutex@{lock\+\_\+\+Mutex}}
+\index{lock\+\_\+\+Mutex@{lock\+\_\+\+Mutex}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{lock\+\_\+\+Mutex()}{lock_Mutex()}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::lock\+\_\+\+Mutex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_o_s_t_m_af192c598a3c647f37aaba5757e60240f}{}\label{class_o_s_t_m_af192c598a3c647f37aaba5757e60240f}
+
+
+object unique lock, locks mutex 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mutex} & std\+::mutex \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 133 of file O\+S\+T\+M.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{O\+S\+TM@{O\+S\+TM}!Set\+\_\+\+Abort\+\_\+\+Transaction@{Set\+\_\+\+Abort\+\_\+\+Transaction}}
+\index{Set\+\_\+\+Abort\+\_\+\+Transaction@{Set\+\_\+\+Abort\+\_\+\+Transaction}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{Set\+\_\+\+Abort\+\_\+\+Transaction(bool abort\+Transaction)}{Set_Abort_Transaction(bool abortTransaction)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::\+Set\+\_\+\+Abort\+\_\+\+Transaction (
+\begin{DoxyParamCaption}
+\item[{bool}]{abort\+Transaction}
+\end{DoxyParamCaption}
+)}\hypertarget{class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4}{}\label{class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4}
+
+
+N\+OT U\+S\+ED Y\+ET. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em abort\+\_\+\+Transaction} & boolean \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 119 of file O\+S\+T\+M.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{O\+S\+TM@{O\+S\+TM}!Set\+\_\+\+Can\+\_\+\+Commit@{Set\+\_\+\+Can\+\_\+\+Commit}}
+\index{Set\+\_\+\+Can\+\_\+\+Commit@{Set\+\_\+\+Can\+\_\+\+Commit}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{Set\+\_\+\+Can\+\_\+\+Commit(bool can\+Commit)}{Set_Can_Commit(bool canCommit)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::\+Set\+\_\+\+Can\+\_\+\+Commit (
+\begin{DoxyParamCaption}
+\item[{bool}]{can\+Commit}
+\end{DoxyParamCaption}
+)}\hypertarget{class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d}{}\label{class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d}
+
+
+N\+OT U\+S\+ED Y\+ET. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em can\+Commit} & boolean \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 105 of file O\+S\+T\+M.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{O\+S\+TM@{O\+S\+TM}!Set\+\_\+\+Unique\+\_\+\+ID@{Set\+\_\+\+Unique\+\_\+\+ID}}
+\index{Set\+\_\+\+Unique\+\_\+\+ID@{Set\+\_\+\+Unique\+\_\+\+ID}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{Set\+\_\+\+Unique\+\_\+\+I\+D(int unique\+I\+D)}{Set_Unique_ID(int uniqueID)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::\+Set\+\_\+\+Unique\+\_\+\+ID (
+\begin{DoxyParamCaption}
+\item[{int}]{unique\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_o_s_t_m_ab5019a32185631c08abbf826422f2d93}{}\label{class_o_s_t_m_ab5019a32185631c08abbf826422f2d93}
+
+
+setter for unique id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+ID} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 66 of file O\+S\+T\+M.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{O\+S\+TM@{O\+S\+TM}!Set\+\_\+\+Version@{Set\+\_\+\+Version}}
+\index{Set\+\_\+\+Version@{Set\+\_\+\+Version}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{Set\+\_\+\+Version(int version)}{Set_Version(int version)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::\+Set\+\_\+\+Version (
+\begin{DoxyParamCaption}
+\item[{int}]{version}
+\end{DoxyParamCaption}
+)}\hypertarget{class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1}{}\label{class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1}
+
+
+setter for version number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 81 of file O\+S\+T\+M.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{O\+S\+TM@{O\+S\+TM}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{to\+String()}{toString()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void O\+S\+T\+M\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59}{}\label{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59}
+
+
+\hyperlink{class_o_s_t_m}{O\+S\+TM} required virtual method for display object. 
+
+
+
+Definition at line 42 of file O\+S\+T\+M.\+h.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{O\+S\+TM@{O\+S\+TM}!unlock\+\_\+\+Mutex@{unlock\+\_\+\+Mutex}}
+\index{unlock\+\_\+\+Mutex@{unlock\+\_\+\+Mutex}!O\+S\+TM@{O\+S\+TM}}
+\subsubsection[{\texorpdfstring{unlock\+\_\+\+Mutex()}{unlock_Mutex()}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::unlock\+\_\+\+Mutex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762}{}\label{class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762}
+
+
+object unique lock, unlocks mutex 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mutex} & std\+::mutex \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 140 of file O\+S\+T\+M.\+cpp.
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Shared\+\_\+\+O\+\_\+\+S\+T\+M/\hyperlink{_o_s_t_m_8h}{O\+S\+T\+M.\+h}\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Shared\+\_\+\+O\+\_\+\+S\+T\+M/\hyperlink{_o_s_t_m_8cpp}{O\+S\+T\+M.\+cpp}\end{DoxyCompactItemize}
