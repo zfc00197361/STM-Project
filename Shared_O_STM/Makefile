@@ -13,7 +13,7 @@ OSTM.o: OSTM.cpp
 	g++ -fPIC -c "OSTM.cpp" -o OSTM.o
 
 library: TM.o TX.o OSTM.o
-	@echo "** Building the game Wator Simulation"
+	@echo "** Building the O_STM library"
 	g++ -shared -o lib_o_stm.so TM.o TX.o OSTM.o
 
 clean:
