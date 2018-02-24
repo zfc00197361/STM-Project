@@ -1,1 +1,1 @@
-Test appplications
+Test applications

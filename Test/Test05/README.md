@@ -5,5 +5,8 @@ The _nested_warehouse_transfer_ takes four WAREHOUSE type objects and creates mu
 The function _nested_warehouse_transfer_ create nested transaction and invokes the _warehouse_transfer_ function<br>
 as a most inner transaction.<br>
 The _complex_warehouse_transfer_ takes four WAREHOUSE type of objects and a vector with WAREHOUSE objetcs, and tranfere items between <br>
-the collection and the sibngle objetcs.
+the collection and the sibngle objetcs.br>
+<br>
+TEST details:
+
 
