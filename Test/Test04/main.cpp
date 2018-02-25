@@ -259,7 +259,7 @@ int main(void) {
      * If the threadArraySize is divisible with three, the threads will be distributed between function.<br>
      * However, you can creates any number of threads, but to follow the correct output should increase the IF ELSE statement to distribute the threads in equal number. 
      */
-    int threadArraySize = 99;
+    int threadArraySize = 300;
     std::thread thArray[threadArraySize];
 
     /*!
@@ -272,12 +272,13 @@ int main(void) {
          * \brief TEST 4 : Testing WAREHOUSE type pointers within nested transactions<br>
          * thArray[i] = std::thread(_nested_warehouse_transfer_, c_shop, d_shop, k_shop, w_dist, std::ref(tm), transferAmount);
          */
-                if (i % 3 == 0)
-                    thArray[i] = std::thread(_nested_warehouse_transfer_, c_shop, d_shop, k_shop, w_dist, std::ref(tm), transferAmount);
-                else if (i % 2 == 0)
-                    thArray[i] = std::thread(_nested_warehouse_transfer_, k_shop, s_shop, t_shop, w_dist, std::ref(tm), transferAmount);
-                else if (i % 1 == 0)
-                    thArray[i] = std::thread(_nested_warehouse_transfer_, t_shop, c_shop, s_shop, w_dist, std::ref(tm), transferAmount);
+        thArray[i] = std::thread(_nested_warehouse_transfer_, c_shop, d_shop, k_shop, w_dist, std::ref(tm), transferAmount);
+//                if (i % 3 == 0)
+//                    thArray[i] = std::thread(_nested_warehouse_transfer_, c_shop, d_shop, k_shop, w_dist, std::ref(tm), transferAmount);
+//                else if (i % 2 == 0)
+//                    thArray[i] = std::thread(_nested_warehouse_transfer_, k_shop, s_shop, t_shop, w_dist, std::ref(tm), transferAmount);
+//                else if (i % 1 == 0)
+//                    thArray[i] = std::thread(_nested_warehouse_transfer_, t_shop, c_shop, s_shop, w_dist, std::ref(tm), transferAmount);
 
     }
     /*
