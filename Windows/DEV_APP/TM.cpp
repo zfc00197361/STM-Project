@@ -8,7 +8,7 @@
 #include "TM.h"
 #include <thread>
 //#include <unistd.h>
-#include <process.h>
+#include <process.h> 
 #include <sys/types.h>
 #include <iostream>
 
@@ -27,7 +27,7 @@ std::map<int, std::map< std::thread::id, int >> TM::process_map_collection;
  */
 TM& TM::Instance() {
     static TM _instance;
-    _instance._tm_id = getpid();
+    _instance._tm_id = _getpid();
 
     return _instance;
 }

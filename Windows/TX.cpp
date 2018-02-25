@@ -14,7 +14,7 @@ std::map<int, std::shared_ptr<OSTM> >TX::main_Process_Map_collection;
 /*!
  * \param static Global std::map process_map_collection store all transactional objects/pointers
  */
-std::map<int, std::map< int, int >> TX::process_map_collection;
+std::map<pid_t, std::map< int, int >> TX::process_map_collection;
 /*!
  * \param static shared std:mutex register_Lock to protect writes into shared global collection
  */
@@ -72,8 +72,8 @@ void TX::th_exit() {
 void TX::ostm_exit() {
     std::map<int, std::shared_ptr<OSTM>>::iterator main_Process_Map_collection_Iterator;
      
-    int ppid = _getpid();
-    std::map<int, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection.find(ppid);
+    pid_t ppid = getppid();
+    std::map<pid_t, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection.find(ppid);
     if (process_map_collection_Iterator != TX::process_map_collection.end()) {
 
         for (auto current = process_map_collection_Iterator->second.begin(); current != process_map_collection_Iterator->second.end(); ++current) {
@@ -115,8 +115,8 @@ void TX::_register(std::shared_ptr<OSTM> object) {
         throw std::runtime_error(std::string("[RUNTIME ERROR : NULL POINTER IN REGISTER FUNCTION]") );
     }
     
-    int ppid = _getpid();
-    std::map<int, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection.find(ppid);
+    pid_t ppid = getppid();
+    std::map<pid_t, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection.find(ppid);
     if (process_map_collection_Iterator == TX::process_map_collection.end()) {
         /*
          * Register main process/application to the global map
@@ -350,8 +350,8 @@ void TX::_print_all_tx() {
     /*
      * All registered thread id in the TX global 
      */
-    int ppid = _getpid();
-    std::map<int, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection.find(ppid);
+     pid_t ppid = getppid();
+    std::map<pid_t, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection.find(ppid);
     if (process_map_collection_Iterator != TX::process_map_collection.end()) {
 
         for (auto current = process_map_collection_Iterator->second.begin(); current != process_map_collection_Iterator->second.end(); ++current) {

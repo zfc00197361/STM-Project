@@ -46,12 +46,10 @@
 #define TM_H
 
 #include <thread>
-//#include <unistd.h>//used for pid_t
-#include <io.h>
+#include <unistd.h>//used for pid_t
 #include <mutex>
 #include <unordered_map>
 #include <utility>
-#include <process.h>
 #include <map>
 #include "TX.h"
 
@@ -81,7 +79,7 @@ private:
      * \brief STATIC GLOBAL MAP Collection to store all process associated keys to find when deleting transactions 
      * \param process_map_collection std::map
      */
-    static std::map<int, std::map< std::thread::id, int >> process_map_collection;
+    static std::map<pid_t, std::map< std::thread::id, int >> process_map_collection;
      /*!
      * \brief get_thread_Map returning and map to insert to the process_map_collection as an inner value
      */
@@ -101,7 +99,7 @@ private:
     /*!
      * \param _tm_id pid_t, process id determine the actual process between process in the shared OSTM library
      */
-    static int _tm_id;
+    static pid_t _tm_id;
 
 
 public:

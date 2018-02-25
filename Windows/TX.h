@@ -13,10 +13,8 @@
 #include <map>
 #include <iostream>
 #include <mutex>
-//#include <unistd.h>
-#include <io.h>
+#include <unistd.h>
 #include <memory>
-#include <process.h>
 #include <stdio.h>
 #include <thread>
 #include "OSTM.h"
@@ -110,8 +108,7 @@ private:
      * \brief STATIC GLOBAL MAP Collection to store all process associated keys to find when deleting transactions 
      * \param process_map_collection std::map
      */
-    static std::map<int, std::map< int, int >> process_map_collection;
-    //static std::map<pid_t, std::map< int, std::pair<ppid, int>  >> process_map_collection;
+    static std::map<pid_t, std::map< int, int >> process_map_collection;
     /*!
      * \brief get_thread_Map returning and map to insert to the process_map_collection as an inner value
      */

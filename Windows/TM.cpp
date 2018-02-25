@@ -8,18 +8,17 @@
 #include "TM.h"
 #include <thread>
 //#include <unistd.h>
-#include <process.h>
 #include <sys/types.h>
 #include <iostream>
 
 /*!
  * \param _tm_id pid_t, process id determine the actual process between process in the shared OSTM library
  */
-int TM::_tm_id;
+pid_t TM::_tm_id;
 /*!
  * \param static Global std::map process_map_collection store all transactional objects/pointers
  */
-std::map<int, std::map< std::thread::id, int >> TM::process_map_collection;
+std::map<pid_t, std::map< std::thread::id, int >> TM::process_map_collection;
 /*!
  * \brief Instance TM, return the same singleton object to any process
  * \param _instance TM, static class reference to the instance of the Transaction Manager class
@@ -43,8 +42,8 @@ TM& TM::Instance() {
 void TM::registerTX()
 {
     std::lock_guard<std::mutex> guard(register_Lock);
-    int ppid = _getpid();
-    std::map<int, std::map< std::thread::id, int >>::iterator process_map_collection_Iterator = TM::process_map_collection.find(ppid);
+    pid_t ppid = getppid();
+    std::map<pid_t, std::map< std::thread::id, int >>::iterator process_map_collection_Iterator = TM::process_map_collection.find(ppid);
     if (process_map_collection_Iterator == TM::process_map_collection.end()) {
         /*
          * Register main process/application to the global map
@@ -100,8 +99,8 @@ std::shared_ptr<TX>const TM::_get_tx()
   */
 void TM::_TX_EXIT(){
     TX tx(std::this_thread::get_id());
-    int ppid = _getpid();
-    std::map<int, std::map< std::thread::id, int >>::iterator process_map_collection_Iterator = TM::process_map_collection.find(ppid);
+    pid_t ppid = getppid();
+    std::map<pid_t, std::map< std::thread::id, int >>::iterator process_map_collection_Iterator = TM::process_map_collection.find(ppid);
     if (process_map_collection_Iterator != TM::process_map_collection.end()) {
 
         for (auto current = process_map_collection_Iterator->second.begin(); current != process_map_collection_Iterator->second.end(); ++current) {

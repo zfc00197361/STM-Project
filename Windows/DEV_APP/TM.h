@@ -46,12 +46,10 @@
 #define TM_H
 
 #include <thread>
-//#include <unistd.h>//used for pid_t
-#include <io.h>
+#include <process.h> 
 #include <mutex>
 #include <unordered_map>
 #include <utility>
-#include <process.h>
 #include <map>
 #include "TX.h"
 

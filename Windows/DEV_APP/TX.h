@@ -13,10 +13,8 @@
 #include <map>
 #include <iostream>
 #include <mutex>
-//#include <unistd.h>
-#include <io.h>
+#include <process.h> 
 #include <memory>
-#include <process.h>
 #include <stdio.h>
 #include <thread>
 #include "OSTM.h"

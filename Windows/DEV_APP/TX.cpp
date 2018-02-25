@@ -350,7 +350,7 @@ void TX::_print_all_tx() {
     /*
      * All registered thread id in the TX global 
      */
-    int ppid = _getpid();
+     int ppid = _getpid();
     std::map<int, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection.find(ppid);
     if (process_map_collection_Iterator != TX::process_map_collection.end()) {
 
