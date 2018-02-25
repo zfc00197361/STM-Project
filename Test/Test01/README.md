@@ -8,7 +8,7 @@ Used values :<br>
 Tanfer amount used in the transactions :<br>
 *transferAmount = 1<br>
 Number of threads used in the test application : <br>
-*threadArraySize = 300<br>
+*threadArraySize = 1 -10 - 300 specified in every test<br>
 <br>
 Six OSTM type smart pointer aib_ptr, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, unbl_ptr , these objects are inherites from BANK parent class.<br>
 Every thread used two object in the transaction within the _nesting_ function, and creates a nested transaction using the same objects.<br>

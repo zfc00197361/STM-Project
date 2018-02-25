@@ -342,9 +342,9 @@ int main(void) {
         swplc_ptr->toString();
         ulster_ptr->toString();
         unbl_ptr->toString();
-        for(int i=0; i<vector_number; ++i){
-            _customer_vec[i]->toString();
-        }
+//        for(int i=0; i<vector_number; ++i){
+//            _customer_vec[i]->toString();
+//        }
 
     /*!
      * \param transferAmount in the transaction, control the value in the transaction between objetcs
@@ -356,7 +356,7 @@ int main(void) {
      * If the threadArraySize is divisible with three, the threads will be distributed between function.<br>
      * However, you can creates any number of threads, but to follow the correct output should increase the IF ELSE statement to distribute the threads in equal number. 
      */
-    int threadArraySize = 99;
+    int threadArraySize = 10;
     std::thread thArray[threadArraySize];
 
     /*!
@@ -372,12 +372,13 @@ int main(void) {
          * thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount)<br>
          * thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
          */
-            if (i % 3 == 0) 
-                thArray[i] = std::thread(_two_account_transfer_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
-            else if (i % 2 == 0)
-                thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount);
-            else if (i % 1 == 0)
-                thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
+        thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
+//            if (i % 3 == 0) 
+//                thArray[i] = std::thread(_two_account_transfer_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+//            else if (i % 2 == 0)
+//                thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount);
+//            else if (i % 1 == 0)
+//                thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
 
     }
     /*
