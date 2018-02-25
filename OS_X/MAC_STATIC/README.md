@@ -1,0 +1,1 @@
+MAC OSx Static library
