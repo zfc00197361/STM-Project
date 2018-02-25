@@ -37,6 +37,88 @@
 #include <vector>
 
 /*!
+ * \brief _two_account_transfer_ function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account
+ * \param  std::shared_ptr<TX> tx, Transaction Object
+ * \param std::shared_ptr<BANK> type, _TO_BANK_ & _FROM_BANK_
+ * \param std::shared_ptr<OSTM> type, _TO_OSTM_ & _FROM_OSTM_
+ */
+void _two_account_transfer_(std::shared_ptr<OSTM> _to_, std::shared_ptr<OSTM> _from_, TM& _tm, double _amount) {
+    std::shared_ptr<TX> tx = _tm._get_tx();
+    /*!
+     * Register the two single account
+     */
+    tx->_register(_to_);
+    tx->_register(_from_);
+    /*!
+     * Declare required pointers 
+     */
+    std::shared_ptr<BANK> _TO_BANK_, _FROM_BANK_;
+    std::shared_ptr<OSTM> _TO_OSTM_, _FROM_OSTM_;
+
+    bool done = false;
+    try {
+        while (!done) {
+            /*!
+             * From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+             */
+            _TO_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_to_));
+            _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_));
+            /*!
+             * Make changes with the objects
+             */
+            _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+            _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+            /*!
+             * From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+             */
+            _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+            _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+            /*!
+             * Store changes
+             */
+            tx->store(_TO_OSTM_);
+            tx->store(_FROM_OSTM_);
+
+            /*!
+             * NESTED TRANSACTION
+             */
+            std::shared_ptr<TX> txTwo = _tm._get_tx();
+
+            bool nestedDone = false;
+            while (!nestedDone) {
+                _TO_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_to_));
+                _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_from_));
+                /*!
+                 * Make changes with the objects
+                 */
+                _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+                _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+                /*!
+                 * From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+                 */
+                _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+                _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+                /*!
+                 * Store changes
+                 */
+                txTwo->store(_TO_OSTM_);
+                txTwo->store(_FROM_OSTM_);
+                /*!
+                 * Commit changes
+                 */
+                nestedDone = txTwo->commit();
+            }
+            /*!
+             * Commit changes
+             */
+            done = tx->commit();
+        }
+    } catch (std::runtime_error& e) {
+        std::cout << e.what() << std::endl;
+    }
+}
+
+/*!
  * \brief _nesting_ function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account
  * This function create nested transactions inside the transaction, and call other function to nesting the transaction as well  
  * \param  std::shared_ptr<TX> tx, Transaction Object
@@ -182,7 +264,7 @@ int main(void) {
      * If the threadArraySize is divisible with three, the threads will be distributed between function.<br>
      * However, you can creates any number of threads, but to follow the correct output should increase the IF ELSE statement to distribute the threads in equal number. 
      */
-    int threadArraySize = 300;
+    int threadArraySize = 1;
     std::thread thArray[threadArraySize];
 
     /*!
@@ -200,9 +282,9 @@ int main(void) {
         if (i % 3 == 0)
             thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
         else if (i % 2 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+            thArray[i] = std::thread(_nesting_, boa_ptr, swplc_ptr, std::ref(tm), transferAmount);
         else if (i % 1 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+            thArray[i] = std::thread(_nesting_, ulster_ptr, unbl_ptr, std::ref(tm), transferAmount);
 
     }
     /*
