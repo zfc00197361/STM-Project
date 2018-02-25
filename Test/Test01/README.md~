@@ -17,27 +17,8 @@ So, every thread used the objects in four level deep transactions.<br>
 To make easyer to folow the calculation the transactions are using the objects in the same transfering oder, from-to.<br>
 <br>
 Test 1: using only 1 Thread with two objetcs aib_ptr, boi_ptr and tranfering 1 unit in every transaction :<br>
-thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);<br>
 Start values : Double value : 500 to each.<br>
-Nesting level 4.<br>
 After transactions : <br>
 * To account : aib_ptr - Double value : 504 <br>
 * From account : boi_ptr - Double value : 496 <br>
-<br>
-Test 2: using only 10 Thread with two objetcs aib_ptr, boi_ptr and tranfering 1 unit in every transaction :<br>
-Start values : Double value : 500 to each.<br>
-Nesting level 4.<br>
-After transactions : <br>
-* To account : aib_ptr - Double value : 540 <br>
-* From account : boi_ptr - Double value : 460 <br>
-<br>
-Test 3: using only 300 Thread with six objetcs aib_ptr, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, unbl_ptr and tranfering 1 unit in every transaction :<br>
-Start values : Double value : 500 to each.<br>
-Nesting level 4.<br>
-After transactions : <br>
-* To account : aib_ptr - Double value : 900 <br>
-* From account : boi_ptr - Double value : 100 <br>
-* To account : boa_ptr - Double value : 900 <br>
-* From account : swplc_ptr - Double value : 100 <br>
-* To account : ulster_ptr - Double value : 900 <br>
-* From account : unbl_ptr - Double value : 100 <br>
+

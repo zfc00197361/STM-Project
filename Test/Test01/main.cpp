@@ -264,7 +264,7 @@ int main(void) {
      * If the threadArraySize is divisible with three, the threads will be distributed between function.<br>
      * However, you can creates any number of threads, but to follow the correct output should increase the IF ELSE statement to distribute the threads in equal number. 
      */
-    int threadArraySize = 1;
+    int threadArraySize = 300;
     std::thread thArray[threadArraySize];
 
     /*!
@@ -279,6 +279,7 @@ int main(void) {
          * thArray[i] = std::thread(_two_account_transfer_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
          * thArray[i] = std::thread(_six_account_transfer_, aib_ptr, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, unbl_ptr, std::ref(tm), transferAmount);
          */
+        //thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
         if (i % 3 == 0)
             thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
         else if (i % 2 == 0)
