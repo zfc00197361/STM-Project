@@ -207,7 +207,7 @@ vector objetcs<br>
 *No. Nokia : 500<br>
 *No. Alcatel : 200<br>
 <br>
-* k_shop version : 100 <br>
+* k_shop version : 200 <br>
 *No. Iphones : 300<br>
 *No. Samsung : 300<br>
 *No. Sony : 300<br>
