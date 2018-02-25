@@ -41,18 +41,18 @@ public:
     /*
      * Bank specific virtual functions
      */
-    virtual void SetAddress(std::string address){};
-    virtual std::string GetAddress() const{};
-    virtual void SetBalance(double balance){};
-    virtual double GetBalance() const{};
-    virtual void SetAccountNumber(int accountNumber){};
-    virtual int GetAccountNumber() const{};
-    virtual void SetLastName(std::string lastName){};
-    virtual std::string GetLastName() const{};
-    virtual void SetFirstName(std::string firstName){};
-    virtual std::string GetFirstName() const{};
-    virtual void SetFullname(std::string fullname){};
-    virtual std::string GetFullname() const{};
+    virtual void SetAddress(std::string address)= 0;
+    virtual std::string GetAddress() const = 0;
+    virtual void SetBalance(double balance)= 0;
+    virtual double GetBalance() const = 0;
+    virtual void SetAccountNumber(int accountNumber)= 0;
+    virtual int GetAccountNumber() const = 0;
+    virtual void SetLastName(std::string lastName) = 0;
+    virtual std::string GetLastName() const = 0;
+    virtual void SetFirstName(std::string firstName) = 0;
+    virtual std::string GetFirstName() const = 0;
+    virtual void SetFullname(std::string fullname) = 0;
+    virtual std::string GetFullname() const = 0;
     
 private:
 

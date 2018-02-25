@@ -60,7 +60,7 @@ public:
     /*!
      * Operator
      */
-    SWBPLC operator=(const SWBPLC& orig) {};
+    //SWBPLC operator=(const SWBPLC& orig) {};
     /*!
      * de-constructor
      */

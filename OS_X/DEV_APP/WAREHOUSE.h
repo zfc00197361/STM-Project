@@ -40,22 +40,22 @@ public:
      * WAREHOUSE BASE METHODS
      */
     
-    virtual void SetNumber_of_alcatel(int _number_of_alcatel){};
-    virtual int GetNumber_of_alcatel(){};
-    virtual void SetNumber_of_nokia(int _number_of_nokia){};
-    virtual int GetNumber_of_nokia(){};
-    virtual void SetNumber_of_huawei(int _number_of_huawei){};
-    virtual int GetNumber_of_huawei(){};
-    virtual void SetNumber_of_sony(int _number_of_sony){};
-    virtual int GetNumber_of_sony(){};
-    virtual void SetNumber_of_samsung(int _number_of_samsung){};
-    virtual int GetNumber_of_samsung(){};
-    virtual void SetNumber_of_iphones(int _number_of_iphones){};
-    virtual int GetNumber_of_iphones(){};
-    virtual void SetShop_name(std::string _shop_name){};
-    virtual std::string GetShop_name(){};
-    virtual void SetShop_address(std::string _shop_address){};
-    virtual std::string GetShop_address(){};
+    virtual void SetNumber_of_alcatel(int _number_of_alcatel) = 0;
+    virtual int GetNumber_of_alcatel() = 0;
+    virtual void SetNumber_of_nokia(int _number_of_nokia) = 0;
+    virtual int GetNumber_of_nokia() = 0;
+    virtual void SetNumber_of_huawei(int _number_of_huawei) = 0;
+    virtual int GetNumber_of_huawei() = 0;
+    virtual void SetNumber_of_sony(int _number_of_sony) = 0;
+    virtual int GetNumber_of_sony() = 0;
+    virtual void SetNumber_of_samsung(int _number_of_samsung) = 0;
+    virtual int GetNumber_of_samsung() = 0;
+    virtual void SetNumber_of_iphones(int _number_of_iphones) = 0;
+    virtual int GetNumber_of_iphones() = 0;
+    virtual void SetShop_name(std::string _shop_name) = 0;
+    virtual std::string GetShop_name() = 0;
+    virtual void SetShop_address(std::string _shop_address) = 0;
+    virtual std::string GetShop_address() = 0;
     
 private:
 

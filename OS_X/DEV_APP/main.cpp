@@ -838,7 +838,7 @@ int main(void) {
      * However, you can creates any number of threads, but to follow the correct output should increase the IF ELSE statement to distribute the threads in equal number. 
      */
     int threadArraySize = 99;
-    std::thread thArray[threadArraySize];
+    std::thread thArray[99];
 
     /*!
      * Creating threads^n -> threadArraySize<br>
@@ -850,12 +850,13 @@ int main(void) {
          * \brief TEST 1 : Nested transaction Test<br>
          * thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
          */
-        if (i % 3 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
-        else if (i % 2 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
-        else if (i % 1 == 0)
-            thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+        thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+ //       if (i % 3 == 0)
+ //           thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+ //       else if (i % 2 == 0)
+ //           thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+ //       else if (i % 1 == 0)
+ //           thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
 
         /*!
          * \brief TEST 2 :Three different type of function call where the objects are participating in multiple type of transactions<br>

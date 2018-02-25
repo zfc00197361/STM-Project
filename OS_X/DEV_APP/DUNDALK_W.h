@@ -72,7 +72,7 @@ public:
     /*!
      * Operator
      */
-    DUNDALK_W operator=(const DUNDALK_W& orig){};
+    //DUNDALK_W operator=(const DUNDALK_W& orig){};
     /*!
      * de-constructor
      */

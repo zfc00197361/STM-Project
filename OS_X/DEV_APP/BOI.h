@@ -62,7 +62,7 @@ public:
     /*!
      * Operator
      */
-    BOI operator=(const BOI& orig){};
+    //BOI operator=(const BOI& orig){};
     /*!
      * de-constructor
      */

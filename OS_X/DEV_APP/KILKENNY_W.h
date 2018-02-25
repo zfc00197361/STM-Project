@@ -72,7 +72,7 @@ public:
     /*!
      * Operator
      */
-    KILKENNY_W operator=(const KILKENNY_W& orig){};
+    //KILKENNY_W operator=(const KILKENNY_W& orig){};
     /*!
      * de-constructor
      */

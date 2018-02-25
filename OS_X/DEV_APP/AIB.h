@@ -63,7 +63,7 @@ public:
     /*!
      * Operator
      */
-    AIB operator=(const AIB& orig){};
+    //AIB operator=(const AIB& orig){};
     /*!
      * de-constructor
      */

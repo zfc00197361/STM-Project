@@ -72,7 +72,7 @@ public:
     /*!
      * Operator
      */
-    TALLAGH_W operator=(const TALLAGH_W& orig){};
+    //TALLAGH_W operator=(const TALLAGH_W& orig){};
     /*!
      * de-constructor
      */

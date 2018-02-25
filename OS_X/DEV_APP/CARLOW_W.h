@@ -72,7 +72,7 @@ public:
     /*!
      * Operator
      */
-    CARLOW_W operator=(const CARLOW_W& orig){};
+    //CARLOW_W operator=(const CARLOW_W& orig){};
     /*!
      * de-constructor
      */

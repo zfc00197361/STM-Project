@@ -1,9 +1,9 @@
 ### Makefile.mk Documentation
 EXE =app
-CC = g++ -g
+CC = g++ -lstdc++
 #DOXYGEN = doxygen
 PROGRAM = app
-CFLAGS =-std=c++14 -pthread -fgnu-tm -o$(EXE)
+CFLAGS =-std=c++14 -pthread -o$(EXE)
 CFILES = main.cpp TM.cpp TX.cpp OSTM.cpp AIB.cpp ULSTER.cpp BOA.cpp UNBL.cpp SWBPLC.cpp
 HFILES = TM.h TX.h OSTM.h AIB.h ULSTER.h BOA.h UNBL.h SWBPLC.h
 

@@ -59,7 +59,7 @@ public:
     /*!
      * Operator
      */
-    UNBL operator=(const UNBL& orig) {};
+    //UNBL operator=(const UNBL& orig) {};
     /*!
      * de-constructor
      */

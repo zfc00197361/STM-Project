@@ -72,7 +72,7 @@ public:
     /*!
      * Operator
      */
-    CARPHONE_WAREHOUSE operator=(const CARPHONE_WAREHOUSE& orig){};
+    //CARPHONE_WAREHOUSE operator=(const CARPHONE_WAREHOUSE& orig){};
     /*!
      * de-constructor
      */

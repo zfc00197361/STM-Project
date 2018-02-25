@@ -59,7 +59,7 @@ public:
     /*!
      * Operator
      */
-    ULSTER operator=(const ULSTER& orig) {};
+    //ULSTER operator=(const ULSTER& orig) {};
     /*!
      * de-constructor
      */

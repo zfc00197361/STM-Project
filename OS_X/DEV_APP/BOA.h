@@ -61,8 +61,7 @@ public:
     /*!
      * Operator
      */
-    BOA operator=(const BOA& orig) {
-    };
+    //BOA operator=(const BOA& orig) {};
     /*!
      * de-constructor
      */

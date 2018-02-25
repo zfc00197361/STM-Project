@@ -72,7 +72,7 @@ public:
     /*!
      * Operator
      */
-    SLIGO_W operator=(const SLIGO_W& orig){};
+    SLIGO_W operator=(const SLIGO_W& orig);
     /*!
      * de-constructor
      */

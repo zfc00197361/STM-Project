@@ -35,7 +35,7 @@ public:
      /*!
      * \brief OSTM required virtual method for returning a pointer that is copy of the original pointer
      */
-    virtual std::shared_ptr<OSTM> getBaseCopy(std::shared_ptr<OSTM> object){};//std::cout << "[OSTM GETBASECOPY]" << std::endl;};
+    virtual std::shared_ptr<OSTM> getBaseCopy(std::shared_ptr<OSTM> object) = 0;//std::cout << "[OSTM GETBASECOPY]" << std::endl;};
      /*!
      * \brief OSTM required virtual method for display object
      */
