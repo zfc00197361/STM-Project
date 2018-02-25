@@ -23,15 +23,18 @@ Nesting level 4.<br>
 After transactions : <br>
 * To account : aib_ptr - Double value : 504 <br>
 * From account : boi_ptr - Double value : 496 <br>
+* version number 1. for all object used in transaction<br>
 <br>
-Test 2: using only 10 Thread with two objetcs aib_ptr, boi_ptr and tranfering 1 unit in every transaction :<br>
+Test 2: using 10 Thread with two objetcs aib_ptr, boi_ptr and tranfering 1 unit in every transaction :<br>
 Start values : Double value : 500 to each.<br>
 Nesting level 4.<br>
 After transactions : <br>
 * To account : aib_ptr - Double value : 540 <br>
 * From account : boi_ptr - Double value : 460 <br>
+* version number 10. for all object used in transaction<br>
 <br>
-Test 3: using only 300 Thread with six objetcs aib_ptr, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, unbl_ptr and tranfering 1 unit in every transaction :<br>
+Test 3: using 300 Thread with six objetcs aib_ptr, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, unbl_ptr and tranfering 1 unit in every transaction :<br>
+Every object will be used by 100 threads.<br>
 Start values : Double value : 500 to each.<br>
 Nesting level 4.<br>
 After transactions : <br>
@@ -41,3 +44,8 @@ After transactions : <br>
 * From account : swplc_ptr - Double value : 100 <br>
 * To account : ulster_ptr - Double value : 900 <br>
 * From account : unbl_ptr - Double value : 100 <br>
+* version number 100. for all object used in transaction<br>
+
+
+
+
