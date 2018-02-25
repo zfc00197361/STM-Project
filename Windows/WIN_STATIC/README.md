@@ -1,0 +1,1 @@
+Windows STATIC library
