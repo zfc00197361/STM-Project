@@ -177,10 +177,10 @@ vector objetcs<br>
 * version number vary for objects used in transaction, depends how many transactions they are used<br>
 * w_dist : version :300 <br>
 *No. Iphones : -170900<br>
-*No. Samsung : 170900<br>
-*No. Sony : 170900<br>
+*No. Samsung : -170900<br>
+*No. Sony : -170900<br>
 *No. Huawei : 200<br>
-*No. Nokia : 170900<br>
+*No. Nokia : -170900<br>
 *No. Alcatel : 200<br> 
 <br>
 * d_shop version : 100 <br>
