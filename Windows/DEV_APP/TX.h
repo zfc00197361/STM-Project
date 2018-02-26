@@ -21,7 +21,7 @@
 
 class TM;
 
-class TX {
+class __declspec(dllexport) TX {
 public:
     /*!
      * \brief Constructor
@@ -43,19 +43,19 @@ public:
     /*!
      * \brief Register OSTM pointer into STM library 
      */
-    void _register(std::shared_ptr<OSTM>  object);
+	void _register(std::shared_ptr<OSTM>  object);
     /*!
      * Register OSTM pointer into STM library 
      */
-    std::shared_ptr<OSTM>  load(std::shared_ptr<OSTM>  object);
+	std::shared_ptr<OSTM>  load(std::shared_ptr<OSTM>  object);
     /*!
      * \brief Store transactional changes
      */
-    void store(std::shared_ptr<OSTM>  object);
+	void store(std::shared_ptr<OSTM>  object);
     /*!
      * \brief Commit transactional changes
      */
-    bool commit();
+	bool commit();
     /*!
      * \brief Add TX nesting level by one
      */
@@ -71,7 +71,7 @@ public:
     /*
      * \brief ONLY FOR TESTING!!! returning the number of rollback happened during transactions
      */
-    int getTest_counter();
+	int getTest_counter();
     /*!
      * \param test_counter int ONLY FOR TESTING!!!
      */
@@ -79,7 +79,7 @@ public:
     /*
      * TESTING ONLY
      */
-    void _print_all_tx() ;
+	void _print_all_tx() ;
 
 
 private:
