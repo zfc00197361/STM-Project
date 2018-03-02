@@ -1,19 +1,15 @@
 Windows STATIC library.<br>
-The 32 bit dll version can be found in the x86 directory.<br>
-The 64 bit dll version can be found in the x64 directory.<br>
-The APP solution directory contains cpp, h files and the test application.<br> 
-The DLL solution directory contains the c, h files and the Visual Studio DLL solution.<br>
+The APP and LIB solution directory contains cpp, h files, test application and the Static lib project.<br> 
+The STATIC_LIB directory containing the x64 .lib file.<br>
 <br>
-HOW TO USE THE LIBRARY:<br>
-The DLL solution directory containing the Visual Studio 2017 solution to build the x64 and x86 version of the library.<br>
-The APP solution directory containing the Visual Studio 2017 solution to build the test app to use the static library.<br>
+HOW TO BUILD THE APPLICATION WITH THE LIBRARY:<br>
 <br>
-The settings must change if the application buil as a x86 or x64 application.<br>
-To build x86 application use x86 DLL otherwise use x64 DLL at linking time.<br>
+The settings must change if the application build as a x86 or x64 application.<br>
+To build x86 application use x86 .lib otherwise use x64 .lib at build time.<br>
 Visual Studio settings to create application:<br>
-1. Create empty project. This project will be the application<br>
+1. Create empty project. This project will be the Application<br>
 2. Add cpp and h files.<br>
-3. Add new project to the project. This project will be the static library<br>
+3. Add new project to the project. This project will be the Static Library<br>
 5. Add cpp and h files.<br>
 4. Property Pages<br>
 * General.<br>
