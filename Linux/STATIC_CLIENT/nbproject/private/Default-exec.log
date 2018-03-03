@@ -1,0 +1,26 @@
+called: /usr/bin/g++
+	/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/STATIC_CLIENT
+	g++
+	-std=c++14
+	-pthread
+	AIB.cpp
+	BANK.cpp
+	BOA.cpp
+	BOI.cpp
+	CARLOW_W.cpp
+	CARPHONE_WAREHOUSE.cpp
+	DUNDALK_W.cpp
+	KILKENNY_W.cpp
+	SLIGO_W.cpp
+	SWBPLC.cpp
+	TALLAGH_W.cpp
+	ULSTER.cpp
+	UNBL.cpp
+	WAREHOUSE.cpp
+	main.cpp
+	-I
+	-L
+	/usr/lib/lib_o_stm.so
+	-o
+	Test01
+
