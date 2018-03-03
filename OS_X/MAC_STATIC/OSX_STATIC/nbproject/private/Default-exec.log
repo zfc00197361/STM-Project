@@ -1,0 +1,8 @@
+called: /usr/bin/g++
+	/Users/Hanna/Documents/ZOLTAN_OSTM/STM-Project/OS_X/MAC_STATIC/OSX_STATIC
+	/usr/bin/g++
+	-c
+	TM.cpp
+	-o
+	TM.o
+

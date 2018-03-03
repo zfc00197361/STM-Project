@@ -1,0 +1,2 @@
+g++ -lstdc++ -std=c++14 -pthread -oapp *.cpp -I -L /usr/lib/lib_o_stm.dylib  -o app
+#g++ client.cpp -L/dir/ -lutils
