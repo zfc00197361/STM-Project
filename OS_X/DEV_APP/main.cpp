@@ -297,6 +297,7 @@ void _complex_transfer_(std::shared_ptr<OSTM> _from_, std::shared_ptr<OSTM> _fro
      * Register the two single account
      */
     tx->_register(_from_);
+    
     tx->_register(_from_two_);
     /*!
      * Declare required pointers 
@@ -837,8 +838,8 @@ int main(void) {
      * If the threadArraySize is divisible with three, the threads will be distributed between function.<br>
      * However, you can creates any number of threads, but to follow the correct output should increase the IF ELSE statement to distribute the threads in equal number. 
      */
-    int threadArraySize = 99;
-    std::thread thArray[99];
+    int threadArraySize = 30;
+    std::thread thArray[30];
 
     /*!
      * Creating threads^n -> threadArraySize<br>
