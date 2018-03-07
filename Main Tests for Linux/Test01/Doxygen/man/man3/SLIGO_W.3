@@ -1,0 +1,173 @@
+.TH "SLIGO_W" 3 "Wed Mar 7 2018" "C++ Softwrae Transactional memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SLIGO_W \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SLIGO_W\&.h>\fP
+.PP
+Inherits \fBWAREHOUSE\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSLIGO_W\fP ()"
+.br
+.ti -1c
+.RI "\fBSLIGO_W\fP (std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)"
+.br
+.ti -1c
+.RI "\fBSLIGO_W\fP (std::shared_ptr< \fBWAREHOUSE\fP > obj, int _version, int _unique_id)"
+.br
+.ti -1c
+.RI "\fBSLIGO_W\fP (const \fBSLIGO_W\fP &orig)"
+.br
+.ti -1c
+.RI "\fBSLIGO_W\fP \fBoperator=\fP (const \fBSLIGO_W\fP &orig)"
+.br
+.ti -1c
+.RI "virtual \fB~SLIGO_W\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBcopy\fP (std::shared_ptr< \fBOSTM\fP > to, std::shared_ptr< \fBOSTM\fP > from)"
+.br
+.RI "\fIcopy function, make deep copy of the object/pointer \fP"
+.ti -1c
+.RI "virtual std::shared_ptr< \fBOSTM\fP > \fBgetBaseCopy\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fIgetBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object \fP"
+.ti -1c
+.RI "virtual void \fBtoString\fP ()"
+.br
+.RI "\fI_cast, is use to cast bak the std::shared_ptr<OSTM> to the required type \fP"
+.ti -1c
+.RI "virtual void \fBSetNumber_of_alcatel\fP (int _number_of_alcatel)"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_alcatel\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_nokia\fP (int _number_of_nokia)"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_nokia\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_huawei\fP (int _number_of_huawei)"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_huawei\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_sony\fP (int _number_of_sony)"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_sony\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_samsung\fP (int _number_of_samsung)"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_samsung\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_iphones\fP (int _number_of_iphones)"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_iphones\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetShop_name\fP (std::string _shop_name)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetShop_name\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetShop_address\fP (std::string _shop_address)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetShop_address\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Inherit from \fBWAREHOUSE\fP 
+.PP
+Definition at line 19 of file SLIGO_W\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SLIGO_W::SLIGO_W ()\fC [inline]\fP"
+Constructor 
+.PP
+Definition at line 24 of file SLIGO_W\&.h\&.
+.SS "SLIGO_W::SLIGO_W (std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)\fC [inline]\fP"
+Custom constructor 
+.PP
+Definition at line 38 of file SLIGO_W\&.h\&.
+.SS "SLIGO_W::SLIGO_W (std::shared_ptr< \fBWAREHOUSE\fP > obj, int _version, int _unique_id)\fC [inline]\fP"
+Custom constructor, used by the library for deep copying 
+.PP
+Definition at line 55 of file SLIGO_W\&.h\&.
+.SS "SLIGO_W::SLIGO_W (const \fBSLIGO_W\fP & orig)"
+Copy constructor 
+.PP
+Definition at line 15 of file SLIGO_W\&.cpp\&.
+.SS "SLIGO_W::~SLIGO_W ()\fC [virtual]\fP"
+de-constructor 
+.PP
+Definition at line 12 of file SLIGO_W\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void SLIGO_W::copy (std::shared_ptr< \fBOSTM\fP > to, std::shared_ptr< \fBOSTM\fP > from)\fC [virtual]\fP"
+
+.PP
+copy function, make deep copy of the object/pointer 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobjTO\fP is a BANK* type object casted back from std::shared_ptr<OSTM> 
+.br
+\fIobjFROM\fP is a BANK* type object casted back from std::shared_ptr<OSTM> 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 35 of file SLIGO_W\&.cpp\&.
+.SS "std::shared_ptr< \fBOSTM\fP > SLIGO_W::getBaseCopy (std::shared_ptr< \fBOSTM\fP > object)\fC [virtual]\fP"
+
+.PP
+getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobjTO\fP is a \fBBANK\fP type pointer for casting 
+.br
+\fIobj\fP is a BANK* return type 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 22 of file SLIGO_W\&.cpp\&.
+.SS "\fBSLIGO_W\fP SLIGO_W::operator= (const \fBSLIGO_W\fP & orig)\fC [inline]\fP"
+Operator 
+.PP
+Definition at line 75 of file SLIGO_W\&.h\&.
+.SS "void SLIGO_W::toString ()\fC [virtual]\fP"
+
+.PP
+_cast, is use to cast bak the std::shared_ptr<OSTM> to the required type toString function, displays the object values in formatted way 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 62 of file SLIGO_W\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Softwrae Transactional memory from the source code\&.

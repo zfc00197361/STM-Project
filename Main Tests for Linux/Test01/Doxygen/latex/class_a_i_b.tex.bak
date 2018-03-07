@@ -1,0 +1,232 @@
+\section{A\+IB Class Reference}
+\label{class_a_i_b}\index{A\+IB@{A\+IB}}
+
+
+{\ttfamily \#include $<$A\+I\+B.\+h$>$}
+
+Inheritance diagram for A\+IB\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_a_i_b}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf A\+IB} ()
+\item 
+{\bf A\+IB} (int account\+Number, double balance, std\+::string first\+Name, std\+::string last\+Name, std\+::string address)
+\item 
+{\bf A\+IB} (std\+::shared\+\_\+ptr$<$ {\bf B\+A\+NK} $>$ obj, int \+\_\+version, int \+\_\+unique\+\_\+id)
+\item 
+{\bf A\+IB} (const {\bf A\+IB} \&orig)
+\item 
+{\bf A\+IB} {\bf operator=} (const {\bf A\+IB} \&orig)
+\item 
+virtual {\bf $\sim$\+A\+IB} ()
+\item 
+virtual void {\bf copy} (std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ to, std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ from)
+\begin{DoxyCompactList}\small\item\em copy function, make deep copy of the object/pointer \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ {\bf get\+Base\+Copy} (std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ object)
+\begin{DoxyCompactList}\small\item\em get\+Base\+Copy function, make deep copy of the object/pointer and Return a new std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ type object \end{DoxyCompactList}\item 
+virtual void {\bf to\+String} ()
+\begin{DoxyCompactList}\small\item\em \+\_\+cast, is use to cast bak the std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to the required type \end{DoxyCompactList}\item 
+virtual void {\bfseries Set\+Address} (std\+::string address)\label{class_a_i_b_ab5fd22fbbc0ea75a022aaeb7174fc450}
+
+\item 
+virtual std\+::string {\bfseries Get\+Address} () const \label{class_a_i_b_a5092c8741fbe231531aa5aaa61d26b9c}
+
+\item 
+virtual void {\bfseries Set\+Balance} (double balance)\label{class_a_i_b_ac286e13b8cf985bc88ce356b0eaada81}
+
+\item 
+virtual double {\bfseries Get\+Balance} () const \label{class_a_i_b_ac75087ae73c308bd946e47a71dc85b86}
+
+\item 
+virtual void {\bfseries Set\+Account\+Number} (int account\+Number)\label{class_a_i_b_ae582677d2d890f1728dedb9f43965df6}
+
+\item 
+virtual int {\bfseries Get\+Account\+Number} () const \label{class_a_i_b_aef34bfbf20d767114e05b8b532cab777}
+
+\item 
+virtual void {\bfseries Set\+Last\+Name} (std\+::string last\+Name)\label{class_a_i_b_afe4e3c7b481bf87437968dde2cc75882}
+
+\item 
+virtual std\+::string {\bfseries Get\+Last\+Name} () const \label{class_a_i_b_a1b09db7268734beeaf6a9e7e9d8feb02}
+
+\item 
+virtual void {\bfseries Set\+First\+Name} (std\+::string first\+Name)\label{class_a_i_b_a671e44bdbf1286d97d7a22295177dd2e}
+
+\item 
+virtual std\+::string {\bfseries Get\+First\+Name} () const \label{class_a_i_b_aa0833919c1c211481560cd88cb5b381b}
+
+\item 
+virtual void {\bfseries Set\+Fullname} (std\+::string fullname)\label{class_a_i_b_a03def15426e627042951369ea18b97f6}
+
+\item 
+virtual std\+::string {\bfseries Get\+Fullname} () const \label{class_a_i_b_a4fbad1d62d84d47e78b2b7065be14942}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Inherit from \doxyref{B\+A\+NK}{p.}{class_b_a_n_k} 
+
+Definition at line 18 of file A\+I\+B.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{A\+IB@{A\+IB}!A\+IB@{A\+IB}}
+\index{A\+IB@{A\+IB}!A\+IB@{A\+IB}}
+\subsubsection[{A\+I\+B()}]{\setlength{\rightskip}{0pt plus 5cm}A\+I\+B\+::\+A\+IB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_i_b_a4783110463bf12f937a85b62455faf38}
+Constructor 
+
+Definition at line 23 of file A\+I\+B.\+h.
+
+\index{A\+IB@{A\+IB}!A\+IB@{A\+IB}}
+\index{A\+IB@{A\+IB}!A\+IB@{A\+IB}}
+\subsubsection[{A\+I\+B(int account\+Number, double balance, std\+::string first\+Name, std\+::string last\+Name, std\+::string address)}]{\setlength{\rightskip}{0pt plus 5cm}A\+I\+B\+::\+A\+IB (
+\begin{DoxyParamCaption}
+\item[{int}]{account\+Number, }
+\item[{double}]{balance, }
+\item[{std\+::string}]{first\+Name, }
+\item[{std\+::string}]{last\+Name, }
+\item[{std\+::string}]{address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_i_b_a5fe3963becf294f6b1ce1a747f9122a0}
+Custom constructor 
+
+Definition at line 36 of file A\+I\+B.\+h.
+
+\index{A\+IB@{A\+IB}!A\+IB@{A\+IB}}
+\index{A\+IB@{A\+IB}!A\+IB@{A\+IB}}
+\subsubsection[{A\+I\+B(std\+::shared\+\_\+ptr$<$ B\+A\+N\+K $>$ obj, int \+\_\+version, int \+\_\+unique\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}A\+I\+B\+::\+A\+IB (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf B\+A\+NK} $>$}]{obj, }
+\item[{int}]{\+\_\+version, }
+\item[{int}]{\+\_\+unique\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_i_b_aa0faccb7aadf423d12bddb2469ff5053}
+Custom constructor, used by the library for deep copying 
+
+Definition at line 48 of file A\+I\+B.\+h.
+
+\index{A\+IB@{A\+IB}!A\+IB@{A\+IB}}
+\index{A\+IB@{A\+IB}!A\+IB@{A\+IB}}
+\subsubsection[{A\+I\+B(const A\+I\+B \&orig)}]{\setlength{\rightskip}{0pt plus 5cm}A\+I\+B\+::\+A\+IB (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+IB} \&}]{orig}
+\end{DoxyParamCaption}
+)}\label{class_a_i_b_ab13d0db3498d59dbe6a946c469587c55}
+Copy constructor 
+
+Definition at line 14 of file A\+I\+B.\+cpp.
+
+\index{A\+IB@{A\+IB}!````~A\+IB@{$\sim$\+A\+IB}}
+\index{````~A\+IB@{$\sim$\+A\+IB}!A\+IB@{A\+IB}}
+\subsubsection[{$\sim$\+A\+I\+B()}]{\setlength{\rightskip}{0pt plus 5cm}A\+I\+B\+::$\sim$\+A\+IB (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_i_b_a22b11c50b0986326c86315957528bf79}
+de-\/constructor 
+
+Definition at line 17 of file A\+I\+B.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{A\+IB@{A\+IB}!copy@{copy}}
+\index{copy@{copy}!A\+IB@{A\+IB}}
+\subsubsection[{copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ to, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ from)}]{\setlength{\rightskip}{0pt plus 5cm}void A\+I\+B\+::copy (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{to, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{from}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_i_b_ad76f25ce86cb42028440f41c371903e0}
+
+
+copy function, make deep copy of the object/pointer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+TO} & is a std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ type object casted back from std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ \\
+\hline
+{\em obj\+F\+R\+OM} & is a std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ type object casted back from std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from {\bf O\+S\+TM} \doxyref{}{p.}{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d}.
+
+
+
+Definition at line 37 of file A\+I\+B.\+cpp.
+
+\index{A\+IB@{A\+IB}!get\+Base\+Copy@{get\+Base\+Copy}}
+\index{get\+Base\+Copy@{get\+Base\+Copy}!A\+IB@{A\+IB}}
+\subsubsection[{get\+Base\+Copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ object)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ A\+I\+B\+::get\+Base\+Copy (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_i_b_a987107f3d7a04790f84c1e7eeee37575}
+
+
+get\+Base\+Copy function, make deep copy of the object/pointer and Return a new std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ type object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+TO} & is a \doxyref{B\+A\+NK}{p.}{class_b_a_n_k} type pointer for casting \\
+\hline
+{\em obj} & is a std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ return type \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from {\bf O\+S\+TM} \doxyref{}{p.}{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c}.
+
+
+
+Definition at line 24 of file A\+I\+B.\+cpp.
+
+\index{A\+IB@{A\+IB}!operator=@{operator=}}
+\index{operator=@{operator=}!A\+IB@{A\+IB}}
+\subsubsection[{operator=(const A\+I\+B \&orig)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\+IB} A\+I\+B\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf A\+IB} \&}]{orig}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_a_i_b_a77b6f74ea3ef39cb1ccb916db7a48740}
+Operator 
+
+Definition at line 66 of file A\+I\+B.\+h.
+
+\index{A\+IB@{A\+IB}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!A\+IB@{A\+IB}}
+\subsubsection[{to\+String()}]{\setlength{\rightskip}{0pt plus 5cm}void A\+I\+B\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_a_i_b_aff0f0a0db75a17efec4bd500b888232d}
+
+
+\+\_\+cast, is use to cast bak the std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to the required type 
+
+to\+String function, displays the object values in formatted way 
+
+Reimplemented from {\bf O\+S\+TM} \doxyref{}{p.}{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59}.
+
+
+
+Definition at line 56 of file A\+I\+B.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Main Tests for Linux/\+Test01/A\+I\+B.\+h\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Main Tests for Linux/\+Test01/A\+I\+B.\+cpp\end{DoxyCompactItemize}

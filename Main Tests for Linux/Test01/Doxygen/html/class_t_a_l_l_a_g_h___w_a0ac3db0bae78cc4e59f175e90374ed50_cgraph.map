@@ -1,0 +1,9 @@
+<map id="TALLAGH_W::operator=" name="TALLAGH_W::operator=">
+<area shape="rect" id="node2" href="$class_t_a_l_l_a_g_h___w.html#aad3a2ca2d942a0629716b1c9f446931f" title="TALLAGH_W::~TALLAGH_W" alt="" coords="219,5,417,32"/>
+<area shape="rect" id="node3" href="$class_t_a_l_l_a_g_h___w.html#a7cd62cf694fbe8c6242916f26df8f6ca" title="copy function, make deep copy of the object/pointer " alt="" coords="249,56,387,83"/>
+<area shape="rect" id="node4" href="$class_t_a_l_l_a_g_h___w.html#a51957c778c31d56f98febdf294f88a4c" title="getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object ..." alt="" coords="223,107,413,133"/>
+<area shape="rect" id="node6" href="$class_t_a_l_l_a_g_h___w.html#ac7a438b7511cf2931490e6b44eff4a49" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="241,157,395,184"/>
+<area shape="rect" id="node5" href="$class_t_a_l_l_a_g_h___w.html#aeafc411edee7a3e8bfcc54fa478e2104" title="TALLAGH_W::TALLAGH_W" alt="" coords="465,107,656,133"/>
+<area shape="rect" id="node7" href="$class_o_s_t_m.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="481,157,640,184"/>
+<area shape="rect" id="node8" href="$class_o_s_t_m.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="491,208,631,235"/>
+</map>

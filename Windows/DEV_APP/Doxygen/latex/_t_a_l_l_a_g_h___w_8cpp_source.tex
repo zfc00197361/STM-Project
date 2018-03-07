@@ -1,0 +1,127 @@
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source}{}\subsection{T\+A\+L\+L\+A\+G\+H\+\_\+\+W.\+cpp}
+
+\begin{DoxyCode}
+00001 
+00002 \textcolor{comment}{/* }
+00003 \textcolor{comment}{ * File:   TALLAGH\_W.cpp}
+00004 \textcolor{comment}{ * Author: Zoltan Fuzesi}
+00005 \textcolor{comment}{ * IT Carlow : C00197361}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * Created on January 17, 2018, 8:02 PM}
+00008 \textcolor{comment}{ */}
+00009 
+00010 \textcolor{preprocessor}{#include "\hyperlink{_t_a_l_l_a_g_h___w_8h}{TALLAGH\_W.h}"}
+00011 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00012}{}\hyperlink{class_t_a_l_l_a_g_h___w_aad3a2ca2d942a0629716b1c9f446931f}{00012} \hyperlink{class_t_a_l_l_a_g_h___w_aad3a2ca2d942a0629716b1c9f446931f}{TALLAGH\_W::~TALLAGH\_W}() \{
+00013 \}
+00014 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00015}{}\hyperlink{class_t_a_l_l_a_g_h___w_a92cfa48ee385c9299427e4fa95b57003}{00015} \hyperlink{class_t_a_l_l_a_g_h___w_aeafc411edee7a3e8bfcc54fa478e2104}{TALLAGH\_W::TALLAGH\_W}(\textcolor{keyword}{const} \hyperlink{class_t_a_l_l_a_g_h___w}{TALLAGH\_W}& orig) \{
+00016 \}
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00022}{}\hyperlink{class_t_a_l_l_a_g_h___w_a51957c778c31d56f98febdf294f88a4c}{00022} std::shared\_ptr<OSTM> \hyperlink{class_t_a_l_l_a_g_h___w_a51957c778c31d56f98febdf294f88a4c}{TALLAGH\_W::getBaseCopy}(std::shared\_ptr<OSTM> \textcolor{keywordtype}{object})
+00023 \{
+00024 
+00025     std::shared\_ptr<WAREHOUSE> objTO = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}>(object);
+00026     std::shared\_ptr<WAREHOUSE> obj(\textcolor{keyword}{new} \hyperlink{class_t_a_l_l_a_g_h___w_aeafc411edee7a3e8bfcc54fa478e2104}{TALLAGH\_W}(objTO, object->Get\_Version(),\textcolor{keywordtype}{object}->
+      Get\_Unique\_ID()));
+00027     std::shared\_ptr<OSTM> ostm\_obj = std::dynamic\_pointer\_cast<OSTM>(obj);                                 
+       
+00028     \textcolor{keywordflow}{return} ostm\_obj;
+00029 \}
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00035}{}\hyperlink{class_t_a_l_l_a_g_h___w_a7cd62cf694fbe8c6242916f26df8f6ca}{00035} \textcolor{keywordtype}{void} \hyperlink{class_t_a_l_l_a_g_h___w_a7cd62cf694fbe8c6242916f26df8f6ca}{TALLAGH\_W::copy}(std::shared\_ptr<OSTM> to, std::shared\_ptr<OSTM> from)\{
+00036 
+00037     std::shared\_ptr<TALLAGH\_W> objTO = std::dynamic\_pointer\_cast<\hyperlink{class_t_a_l_l_a_g_h___w}{TALLAGH\_W}>(to);
+00038     std::shared\_ptr<TALLAGH\_W> objFROM = std::dynamic\_pointer\_cast<\hyperlink{class_t_a_l_l_a_g_h___w}{TALLAGH\_W}>(from);
+00039     objTO->\_shop\_address = objFROM->GetShop\_address();
+00040     objTO->\_shop\_name = objFROM->GetShop\_name();
+00041     objTO->\_number\_of\_iphones = objFROM->GetNumber\_of\_iphones();
+00042     objTO->\_number\_of\_samsung = objFROM->GetNumber\_of\_samsung();
+00043     objTO->\_number\_of\_sony = objFROM->GetNumber\_of\_sony();
+00044     objTO->\_number\_of\_huawei = objFROM->GetNumber\_of\_huawei();
+00045     objTO->\_number\_of\_nokia = objFROM->GetNumber\_of\_nokia();
+00046     objTO->\_number\_of\_alcatel = objFROM->GetNumber\_of\_alcatel();
+00047     objTO->Set\_Unique\_ID(objFROM->Get\_Unique\_ID());
+00048     objTO->Set\_Version(objFROM->Get\_Version());
+00049     
+00050    
+00051 \}
+00055 \textcolor{comment}{//std::shared\_ptr<TALLAGH\_W> TALLAGH\_W::\_cast(std::shared\_ptr<OSTM> \_object)\{}
+00056 \textcolor{comment}{//    }
+00057 \textcolor{comment}{//    return static\_cast<std::shared\_ptr<TALLAGH\_W>>(\_object);}
+00058 \textcolor{comment}{//\}}
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00062}{}\hyperlink{class_t_a_l_l_a_g_h___w_ac7a438b7511cf2931490e6b44eff4a49}{00062} \textcolor{comment}{}\textcolor{keywordtype}{void} \hyperlink{class_t_a_l_l_a_g_h___w_ac7a438b7511cf2931490e6b44eff4a49}{TALLAGH\_W::toString}()
+00063 \{
+00064     std::cout << \textcolor{stringliteral}{"\(\backslash\)n"} << this->\hyperlink{class_t_a_l_l_a_g_h___w_a3baca7e101bfde39d7a1bf91d99c4f51}{GetShop\_name}() << \textcolor{stringliteral}{"\(\backslash\)nUnique ID : "} << this->Get\_Unique\_ID() << \textcolor{stringliteral}{"
+      \(\backslash\)nShop Name : "}  << this->\hyperlink{class_t_a_l_l_a_g_h___w_a3baca7e101bfde39d7a1bf91d99c4f51}{GetShop\_name}() << \textcolor{stringliteral}{"\(\backslash\)nShop Address : "} << this->
+      \hyperlink{class_t_a_l_l_a_g_h___w_a591b5f445be4f3b636b415e7b614b82c}{GetShop\_address}() << \textcolor{stringliteral}{"\(\backslash\)nNo. Iphones : "} << this->
+      \hyperlink{class_t_a_l_l_a_g_h___w_ad82b0c59cba2cb442520e35ab6011d17}{GetNumber\_of\_iphones}() << \textcolor{stringliteral}{"\(\backslash\)nNo. Samsung : "} << this->
+      \hyperlink{class_t_a_l_l_a_g_h___w_ad400c7b40f8605f5419b09e946677bbb}{GetNumber\_of\_samsung}() << \textcolor{stringliteral}{"\(\backslash\)nNo. Sony : "} << this->
+      \hyperlink{class_t_a_l_l_a_g_h___w_a161417e8ef4952c560182735de51a44f}{GetNumber\_of\_sony}() << \textcolor{stringliteral}{"\(\backslash\)nNo. Huawei : "} << this->
+      \hyperlink{class_t_a_l_l_a_g_h___w_a0ac4137af5b2aa2e4157c7e85629f064}{GetNumber\_of\_huawei}() << \textcolor{stringliteral}{"\(\backslash\)nNo. Nokia : "} << this->
+      \hyperlink{class_t_a_l_l_a_g_h___w_a20a127a379a2ebed2bd7ee89ca5661fb}{GetNumber\_of\_nokia}() << \textcolor{stringliteral}{"\(\backslash\)nNo. Alcatel : "} << this->
+      \hyperlink{class_t_a_l_l_a_g_h___w_a548597d48b3bbb35ffa2035eee3b645d}{GetNumber\_of\_alcatel}() << \textcolor{stringliteral}{"\(\backslash\)nVersion number : "} << this->Get\_Version() << std::endl;
+00065 \}
+00066 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00067}{}\hyperlink{class_t_a_l_l_a_g_h___w_ad4a8e9cab71ab1b742298e630b6c32da}{00067} \textcolor{keywordtype}{void} \hyperlink{class_t_a_l_l_a_g_h___w_ad4a8e9cab71ab1b742298e630b6c32da}{TALLAGH\_W::SetNumber\_of\_alcatel}(\textcolor{keywordtype}{int} \_number\_of\_alcatel) \{
+00068     this->\_number\_of\_alcatel = \_number\_of\_alcatel;
+00069 \}
+00070 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00071}{}\hyperlink{class_t_a_l_l_a_g_h___w_a548597d48b3bbb35ffa2035eee3b645d}{00071} \textcolor{keywordtype}{int} \hyperlink{class_t_a_l_l_a_g_h___w_a548597d48b3bbb35ffa2035eee3b645d}{TALLAGH\_W::GetNumber\_of\_alcatel}()\{
+00072     \textcolor{keywordflow}{return} \_number\_of\_alcatel;
+00073 \}
+00074 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00075}{}\hyperlink{class_t_a_l_l_a_g_h___w_ae60d0ca1392d87afa206f98d5f1c59d1}{00075} \textcolor{keywordtype}{void} \hyperlink{class_t_a_l_l_a_g_h___w_ae60d0ca1392d87afa206f98d5f1c59d1}{TALLAGH\_W::SetNumber\_of\_nokia}(\textcolor{keywordtype}{int} \_number\_of\_nokia) \{
+00076     this->\_number\_of\_nokia = \_number\_of\_nokia;
+00077 \}
+00078 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00079}{}\hyperlink{class_t_a_l_l_a_g_h___w_a20a127a379a2ebed2bd7ee89ca5661fb}{00079} \textcolor{keywordtype}{int} \hyperlink{class_t_a_l_l_a_g_h___w_a20a127a379a2ebed2bd7ee89ca5661fb}{TALLAGH\_W::GetNumber\_of\_nokia}()\{
+00080     \textcolor{keywordflow}{return} \_number\_of\_nokia;
+00081 \}
+00082 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00083}{}\hyperlink{class_t_a_l_l_a_g_h___w_a94b6a0ce95c1edc5cd0bc195cbedc74f}{00083} \textcolor{keywordtype}{void} \hyperlink{class_t_a_l_l_a_g_h___w_a94b6a0ce95c1edc5cd0bc195cbedc74f}{TALLAGH\_W::SetNumber\_of\_huawei}(\textcolor{keywordtype}{int} \_number\_of\_huawei) \{
+00084     this->\_number\_of\_huawei = \_number\_of\_huawei;
+00085 \}
+00086 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00087}{}\hyperlink{class_t_a_l_l_a_g_h___w_a0ac4137af5b2aa2e4157c7e85629f064}{00087} \textcolor{keywordtype}{int} \hyperlink{class_t_a_l_l_a_g_h___w_a0ac4137af5b2aa2e4157c7e85629f064}{TALLAGH\_W::GetNumber\_of\_huawei}()\{
+00088     \textcolor{keywordflow}{return} \_number\_of\_huawei;
+00089 \}
+00090 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00091}{}\hyperlink{class_t_a_l_l_a_g_h___w_a700cbcd6355556eeaa33955e50010641}{00091} \textcolor{keywordtype}{void} \hyperlink{class_t_a_l_l_a_g_h___w_a700cbcd6355556eeaa33955e50010641}{TALLAGH\_W::SetNumber\_of\_sony}(\textcolor{keywordtype}{int} \_number\_of\_sony) \{
+00092     this->\_number\_of\_sony = \_number\_of\_sony;
+00093 \}
+00094 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00095}{}\hyperlink{class_t_a_l_l_a_g_h___w_a161417e8ef4952c560182735de51a44f}{00095} \textcolor{keywordtype}{int} \hyperlink{class_t_a_l_l_a_g_h___w_a161417e8ef4952c560182735de51a44f}{TALLAGH\_W::GetNumber\_of\_sony}()\{
+00096     \textcolor{keywordflow}{return} \_number\_of\_sony;
+00097 \}
+00098 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00099}{}\hyperlink{class_t_a_l_l_a_g_h___w_aec915c88a9cce504e58bf9481d897e7e}{00099} \textcolor{keywordtype}{void} \hyperlink{class_t_a_l_l_a_g_h___w_aec915c88a9cce504e58bf9481d897e7e}{TALLAGH\_W::SetNumber\_of\_samsung}(\textcolor{keywordtype}{int} \_number\_of\_samsung) \{
+00100     this->\_number\_of\_samsung = \_number\_of\_samsung;
+00101 \}
+00102 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00103}{}\hyperlink{class_t_a_l_l_a_g_h___w_ad400c7b40f8605f5419b09e946677bbb}{00103} \textcolor{keywordtype}{int} \hyperlink{class_t_a_l_l_a_g_h___w_ad400c7b40f8605f5419b09e946677bbb}{TALLAGH\_W::GetNumber\_of\_samsung}()\{
+00104     \textcolor{keywordflow}{return} \_number\_of\_samsung;
+00105 \}
+00106 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00107}{}\hyperlink{class_t_a_l_l_a_g_h___w_aba9c1573606adb336fd5e94969f2f8e8}{00107} \textcolor{keywordtype}{void} \hyperlink{class_t_a_l_l_a_g_h___w_aba9c1573606adb336fd5e94969f2f8e8}{TALLAGH\_W::SetNumber\_of\_iphones}(\textcolor{keywordtype}{int} \_number\_of\_iphones) \{
+00108     this->\_number\_of\_iphones = \_number\_of\_iphones;
+00109 \}
+00110 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00111}{}\hyperlink{class_t_a_l_l_a_g_h___w_ad82b0c59cba2cb442520e35ab6011d17}{00111} \textcolor{keywordtype}{int} \hyperlink{class_t_a_l_l_a_g_h___w_ad82b0c59cba2cb442520e35ab6011d17}{TALLAGH\_W::GetNumber\_of\_iphones}()\{
+00112     \textcolor{keywordflow}{return} \_number\_of\_iphones;
+00113 \}
+00114 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00115}{}\hyperlink{class_t_a_l_l_a_g_h___w_a3ab6212769f348c15cd2d242af70ea02}{00115} \textcolor{keywordtype}{void} \hyperlink{class_t_a_l_l_a_g_h___w_a3ab6212769f348c15cd2d242af70ea02}{TALLAGH\_W::SetShop\_name}(std::string \_shop\_name) \{
+00116     this->\_shop\_name = \_shop\_name;
+00117 \}
+00118 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00119}{}\hyperlink{class_t_a_l_l_a_g_h___w_a3baca7e101bfde39d7a1bf91d99c4f51}{00119} std::string \hyperlink{class_t_a_l_l_a_g_h___w_a3baca7e101bfde39d7a1bf91d99c4f51}{TALLAGH\_W::GetShop\_name}()\{
+00120     \textcolor{keywordflow}{return} \_shop\_name;
+00121 \}
+00122 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00123}{}\hyperlink{class_t_a_l_l_a_g_h___w_a45bd91f41ac4d384b4281e6572bc2f8a}{00123} \textcolor{keywordtype}{void} \hyperlink{class_t_a_l_l_a_g_h___w_a45bd91f41ac4d384b4281e6572bc2f8a}{TALLAGH\_W::SetShop\_address}(std::string \_shop\_address) \{
+00124     this->\_shop\_address = \_shop\_address;
+00125 \}
+00126 
+\hypertarget{_t_a_l_l_a_g_h___w_8cpp_source.tex_l00127}{}\hyperlink{class_t_a_l_l_a_g_h___w_a591b5f445be4f3b636b415e7b614b82c}{00127} std::string \hyperlink{class_t_a_l_l_a_g_h___w_a591b5f445be4f3b636b415e7b614b82c}{TALLAGH\_W::GetShop\_address}()\{
+00128     \textcolor{keywordflow}{return} \_shop\_address;
+00129 \}
+\end{DoxyCode}

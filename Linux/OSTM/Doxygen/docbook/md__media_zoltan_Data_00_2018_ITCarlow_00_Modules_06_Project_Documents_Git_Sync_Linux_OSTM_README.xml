@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>README</title>
+
+<para>Usage of the STM library on Linux.
+<literallayout>
+</literallayout>
+ In order to use the O_STM library with any C++ application, it need to be placed to the operation system /usr/lib directory.
+<literallayout>
+</literallayout>
+<orderedlist>
+<listitem>
+<para>Copy lib_o_stm.so file to /usr/lib: sudo cp lib_o_stm.so /usr/lib</para>
+</listitem><listitem>
+<para>Include the <link linkend="_t_m_8h_source">TM.h</link> <link linkend="_t_x_8h_source">TX.h</link> and the <link linkend="_o_s_t_m_8h_source">OSTM.h</link> files in your application.
+<literallayout>
+</literallayout>
+</para>
+</listitem><listitem>
+<para>Create Makefile : 
+<literallayout>
+</literallayout>
+
+<literallayout>
+</literallayout>
+ <formalpara><title>Makefile.mk Documentation&lt;br&gt;
+<literallayout>
+</literallayout>
+</title></formalpara>
+</para>
+</listitem></orderedlist>
+</para>
+
+<para>EXE =Test
+<literallayout>
+</literallayout>
+ CC = g++
+<literallayout>
+</literallayout>
+ PROGRAM = app
+<literallayout>
+</literallayout>
+ CFLAGS =-std=c++14 -pthread 
+<literallayout>
+</literallayout>
+ CFILES = main.cpp AIB.cpp ULSTER.cpp BOA.cpp UNBL.cpp SWBPLC.cpp
+<literallayout>
+</literallayout>
+ HFILES = <link linkend="_t_m_8h_source">TM.h</link> <link linkend="_t_x_8h_source">TX.h</link> <link linkend="_o_s_t_m_8h_source">OSTM.h</link> AIB.h ULSTER.h BOA.h UNBL.h SWBPLC.h
+<literallayout>
+</literallayout>
+ 
+<literallayout>
+</literallayout>
+
+<literallayout>
+</literallayout>
+ all:
+<literallayout>
+</literallayout>
+ 
+<literallayout>
+</literallayout>
+
+<literallayout>
+</literallayout>
+ <formalpara><title>Rule for SHARED linking
+<literallayout>
+</literallayout>
+</title></formalpara>
+</para>
+
+<para>: 
+<literallayout>
+</literallayout>
+   *.cpp -I -L /usr/lib/lib_o_stm.so -o  
+<literallayout>
+</literallayout>
+ clean:
+<literallayout>
+</literallayout>
+ rm -f *.o
+<literallayout>
+</literallayout>
+ 
+<literallayout>
+</literallayout>
+<orderedlist>
+<listitem>
+<para>Run the application/executable file : ./Test </para>
+</listitem></orderedlist>
+</para>
+
+</chapter>

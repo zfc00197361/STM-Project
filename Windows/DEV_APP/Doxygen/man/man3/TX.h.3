@@ -1,0 +1,159 @@
+.TH "TX.h" 3 "Wed Mar 7 2018" "C++ Software Transactional memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TX.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cstdlib>\fP
+.br
+\fC#include <utility>\fP
+.br
+\fC#include <map>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <mutex>\fP
+.br
+\fC#include <process\&.h>\fP
+.br
+\fC#include <memory>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <thread>\fP
+.br
+\fC#include 'OSTM\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "class \fB__declspec\fP (dllexport) TX"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "class __declspec (dllexport)"
+Constructor
+.PP
+De-constructor
+.PP
+Default copy constructor
+.PP
+Delete all map entries associated with the main process
+.PP
+Register OSTM pointer into STM library
+.PP
+Register OSTM pointer into STM library
+.PP
+Store transactional changes
+.PP
+Commit transactional changes
+.PP
+Add TX nesting level by one
+.PP
+Remove TX nesting level by one
+.PP
+Only TM Transaction Manager can create instance of TX Transaction
+.PP
+\fBParameters:\fP
+.RS 4
+\fItest_counter\fP int ONLY FOR TESTING!!!
+.RE
+.PP
+MAP Collection to store OSTM* parent based pointers to make invisible changes during isolated transaction 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIworking_Map_collection\fP std::map
+.RE
+.PP
+Returning the transaction number 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItransaction_Number\fP std::thread::id NOT USED YET
+.br
+\fI_tx_nesting_level\fP int
+.RE
+.PP
+STATIC GLOBAL MAP Collection to store OSTM* parent based pointers to control/lock and compare objects version number within transactions 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImain_Process_Map_collection\fP std::map
+.RE
+.PP
+STATIC GLOBAL MAP Collection to store all process associated keys to find when deleting transactions 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIprocess_map_collection\fP std::map
+.RE
+.PP
+get_thread_Map returning and map to insert to the process_map_collection as an inner value
+.PP
+\fBParameters:\fP
+.RS 4
+\fIregister_Lock\fP std::mutex to control shared access on MAIN MAP
+.RE
+.PP
+_get_tx_number returning the transaction uniqe identifier
+.PP
+Release the locks in objects with transaction associated collection
+.PP
+Clean up all associated values by the thread delete from working_Map_collection, it is an automated function
+.PP
+Definition at line 24 of file TX\&.h\&.
+.PP
+.nf
+24                                {
+25 public:
+29     TX(std::thread::id id);
+33     ~TX();
+37     TX(const TX& orig);
+41     void ostm_exit();
+42     
+46     void _register(std::shared_ptr<OSTM>  object);
+50     std::shared_ptr<OSTM>  load(std::shared_ptr<OSTM>  object);
+54     void store(std::shared_ptr<OSTM>  object);
+58     bool commit();
+62     void _increase_tx_nesting();
+66     void _decrease_tx_nesting();
+70     friend class TM;
+71     /*
+72      * \brief ONLY FOR TESTING!!! returning the number of rollback happened during transactions
+73      */
+74     int getTest_counter();
+78     static int test_counter;
+79     /*
+80      * TESTING ONLY
+81      */
+82     void _print_all_tx() ;
+83 
+84 
+85 private:
+90     std::map< int, std::shared_ptr<OSTM>  > working_Map_collection;
+96     std::thread::id transaction_Number;
+100     int _tx_nesting_level;
+101     
+106     static std::map<int, std::shared_ptr<OSTM>  >main_Process_Map_collection;
+111     static std::map<int, std::map< int, int >> process_map_collection;
+112     //static std::map<pid_t, std::map< int, std::pair<ppid, int>  >> process_map_collection;
+116     std::map< int , int > get_thread_Map();
+120     static std::mutex register_Lock;
+124     const std::thread::id _get_tx_number() const;
+125    
+129     void _release_object_lock();
+133     void th_exit();
+134     
+135     
+136 
+137 };
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software Transactional memory from the source code\&.

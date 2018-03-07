@@ -1,0 +1,9 @@
+<map id="KILKENNY_W::operator=" name="KILKENNY_W::operator=">
+<area shape="rect" id="node2" href="$class_k_i_l_k_e_n_n_y___w.html#a5b3f84f505c05449d9a7235f25ff3694" title="KILKENNY_W::~KILKENNY_W" alt="" coords="225,5,437,32"/>
+<area shape="rect" id="node3" href="$class_k_i_l_k_e_n_n_y___w.html#a36a02e862f3563fbab3c94dfec4a0934" title="copy function, make deep copy of the object/pointer " alt="" coords="259,56,404,83"/>
+<area shape="rect" id="node4" href="$class_k_i_l_k_e_n_n_y___w.html#ad8c5f7f6ac7689fa9acd6cafb0cb69a4" title="getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object ..." alt="" coords="233,107,429,133"/>
+<area shape="rect" id="node6" href="$class_k_i_l_k_e_n_n_y___w.html#aea627b4c0efd0f725363556afe1ad849" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="250,157,413,184"/>
+<area shape="rect" id="node5" href="$class_k_i_l_k_e_n_n_y___w.html#aee4c4b30bc934ff827f0851077b7fbab" title="KILKENNY_W::KILKENNY_W" alt="" coords="485,107,689,133"/>
+<area shape="rect" id="node7" href="$class_o_s_t_m.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="508,157,667,184"/>
+<area shape="rect" id="node8" href="$class_o_s_t_m.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="517,208,657,235"/>
+</map>

@@ -1,0 +1,120 @@
+\section{B\+A\+NK Class Reference}
+\label{class_b_a_n_k}\index{B\+A\+NK@{B\+A\+NK}}
+
+
+{\ttfamily \#include $<$B\+A\+N\+K.\+h$>$}
+
+Inheritance diagram for B\+A\+NK\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_b_a_n_k}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf B\+A\+NK} ()
+\item 
+{\bf B\+A\+NK} (int \+\_\+version, int \+\_\+unique\+\_\+id)
+\item 
+{\bf B\+A\+NK} (const {\bf B\+A\+NK} \&orig)
+\item 
+virtual {\bf $\sim$\+B\+A\+NK} ()
+\item 
+virtual void {\bfseries Set\+Address} (std\+::string address)\label{class_b_a_n_k_a52ad99454b2059d44967868157208393}
+
+\item 
+virtual std\+::string {\bfseries Get\+Address} () const \label{class_b_a_n_k_a358741f647f9494026e02fd3fd27cde6}
+
+\item 
+virtual void {\bfseries Set\+Balance} (double balance)\label{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0}
+
+\item 
+virtual double {\bfseries Get\+Balance} () const \label{class_b_a_n_k_a7ac46c74859cebdc933cb27e148d18b1}
+
+\item 
+virtual void {\bfseries Set\+Account\+Number} (int account\+Number)\label{class_b_a_n_k_a9d8fb8bde35d63eca7e9f87d22b45752}
+
+\item 
+virtual int {\bfseries Get\+Account\+Number} () const \label{class_b_a_n_k_a62adf3cea60d863a4a10eeee485fa1aa}
+
+\item 
+virtual void {\bfseries Set\+Last\+Name} (std\+::string last\+Name)\label{class_b_a_n_k_a2dc1b7664f9e3b005cb33e71b2ba42ee}
+
+\item 
+virtual std\+::string {\bfseries Get\+Last\+Name} () const \label{class_b_a_n_k_a4612063ec2bfd6d883a77a0d3697af90}
+
+\item 
+virtual void {\bfseries Set\+First\+Name} (std\+::string first\+Name)\label{class_b_a_n_k_a547cb9f21be894f045bb3cec6b12525c}
+
+\item 
+virtual std\+::string {\bfseries Get\+First\+Name} () const \label{class_b_a_n_k_ad0ba1c785c67e7d4760dc8776f3d4bca}
+
+\item 
+virtual void {\bfseries Set\+Fullname} (std\+::string fullname)\label{class_b_a_n_k_a8845dbfc7ddfbc2e0c0efda561a70ec3}
+
+\item 
+virtual std\+::string {\bfseries Get\+Fullname} () const \label{class_b_a_n_k_aa1528c533bf6389bc8d7f3eeca114bab}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\doxyref{B\+A\+NK}{p.}{class_b_a_n_k} inherit from the \doxyref{O\+S\+TM}{p.}{class_o_s_t_m} library. It is declares the common functions in the child classes as a virtual function. 
+
+Definition at line 16 of file B\+A\+N\+K.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{B\+A\+NK@{B\+A\+NK}!B\+A\+NK@{B\+A\+NK}}
+\index{B\+A\+NK@{B\+A\+NK}!B\+A\+NK@{B\+A\+NK}}
+\subsubsection[{B\+A\+N\+K()}]{\setlength{\rightskip}{0pt plus 5cm}B\+A\+N\+K\+::\+B\+A\+NK (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_b_a_n_k_a0bc938356cebff14fb0560264abe5a34}
+Constructor 
+
+Definition at line 23 of file B\+A\+N\+K.\+h.
+
+\index{B\+A\+NK@{B\+A\+NK}!B\+A\+NK@{B\+A\+NK}}
+\index{B\+A\+NK@{B\+A\+NK}!B\+A\+NK@{B\+A\+NK}}
+\subsubsection[{B\+A\+N\+K(int \+\_\+version, int \+\_\+unique\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}B\+A\+N\+K\+::\+B\+A\+NK (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+version, }
+\item[{int}]{\+\_\+unique\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_b_a_n_k_a7382dd275d8f4f10a8b53ccbc93e1e87}
+Custom Constructor 
+
+Definition at line 29 of file B\+A\+N\+K.\+h.
+
+\index{B\+A\+NK@{B\+A\+NK}!B\+A\+NK@{B\+A\+NK}}
+\index{B\+A\+NK@{B\+A\+NK}!B\+A\+NK@{B\+A\+NK}}
+\subsubsection[{B\+A\+N\+K(const B\+A\+N\+K \&orig)}]{\setlength{\rightskip}{0pt plus 5cm}B\+A\+N\+K\+::\+B\+A\+NK (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+A\+NK} \&}]{orig}
+\end{DoxyParamCaption}
+)}\label{class_b_a_n_k_a4dd657c30039ea00a040e6226c23ccd4}
+Copy constructor 
+
+Definition at line 11 of file B\+A\+N\+K.\+cpp.
+
+\index{B\+A\+NK@{B\+A\+NK}!````~B\+A\+NK@{$\sim$\+B\+A\+NK}}
+\index{````~B\+A\+NK@{$\sim$\+B\+A\+NK}!B\+A\+NK@{B\+A\+NK}}
+\subsubsection[{$\sim$\+B\+A\+N\+K()}]{\setlength{\rightskip}{0pt plus 5cm}B\+A\+N\+K\+::$\sim$\+B\+A\+NK (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_b_a_n_k_ad609a1e004efdebab6495d95eced2346}
+de-\/constructor 
+
+Definition at line 14 of file B\+A\+N\+K.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Main Tests for Linux/\+Test01/B\+A\+N\+K.\+h\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Main Tests for Linux/\+Test01/B\+A\+N\+K.\+cpp\end{DoxyCompactItemize}

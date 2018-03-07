@@ -1,0 +1,684 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_o_s_t_m">
+<title>OSTM class Reference</title>
+<para>Inheritance diagram for OSTM</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_o_s_t_m__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for OSTM</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_o_s_t_m__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int version</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int uniqueID</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool canCommit</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool abort_Transaction</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const int ZERO<para><emphasis>Meaningful display for value 0.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::mutex mutex<para><emphasis>Object built in lock.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int global_Unique_ID_Number<para><emphasis>Unique object number increase at object creation.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196">OSTM</link> (
+)<para><emphasis>OSTM Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_o_s_t_m_1a2314f55a127b94aa8a51d19ba798401e">OSTM</link> (
+int _version_number_, int _unique_id_)<para><emphasis>OSTM Custom Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_o_s_t_m_1a30a17d73d0259c60eeab72d6dfa9ceb1">~OSTM</link> (
+)<para><emphasis>De-constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_o_s_t_m_1a535d90fced5adbb70312c92f3778e08d">copy</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; from, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; to)<para><emphasis>OSTM required virtual method for deep copy.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; <link linkend="class_o_s_t_m_1a0bfa3763bd441407dd6365f42714f94c">getBaseCopy</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; object)<para><emphasis>OSTM required virtual method for returning a pointer that is copy of the original pointer.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_o_s_t_m_1a513396a115f2987fd07c203309ae8a59">toString</link> (
+)<para><emphasis>OSTM required virtual method for display object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93">Set_Unique_ID</link> (
+int uniqueID)<para><emphasis>setter for unique id</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d">Get_Unique_ID</link> (
+)<para><emphasis>getter for unique id</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_o_s_t_m_1a9529ad8d6d28c1f0cc9b86ed91df1ae1">Set_Version</link> (
+int version)<para><emphasis>setter for version number</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b">Get_Version</link> (
+)<para><emphasis>getter for version number</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_o_s_t_m_1a5f90caa4384d371c16b7cac860d9f89a">increase_VersionNumber</link> (
+)<para><emphasis>commit time increase version number to child object</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_o_s_t_m_1a8df39ced3b401aa466df97e26d14b1b7">Is_Can_Commit</link> (
+)<para><emphasis>return boolean</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_o_s_t_m_1a813ee61c9d1c83c6a6ae30d12aca8a5d">Set_Can_Commit</link> (
+bool canCommit)<para><emphasis>set boolean</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_o_s_t_m_1aba384cf65c5f56f5b86833730c3c6ea4">Set_Abort_Transaction</link> (
+bool abortTransaction)<para><emphasis>set boolean</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_o_s_t_m_1afc2851abf5342c3c67342c2c14820115">Is_Abort_Transaction</link> (
+)<para><emphasis>return boolean</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_o_s_t_m_1af192c598a3c647f37aaba5757e60240f">lock_Mutex</link> (
+)<para><emphasis>object unique lock, locks mutex</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_o_s_t_m_1a6cd703bc26c719fd95b4f5362d050762">unlock_Mutex</link> (
+)<para><emphasis>object unique lock, unlocks mutex</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_o_s_t_m_1afb6520023ed2c4a6188b688c46f192d0">is_Locked</link> (
+)<para><emphasis>object unique lock, try locks mutex return boolean value depends on the lock state</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_o_s_t_m_1adee6903c1100e0d78640bd4b85e5d7df">Get_global_Unique_ID_Number</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196">
+                <title>OSTM::OSTM ()</title> <emphasis>OSTM Constructor.</emphasis>
+                
+<para>Default constructor.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>version</entry>
+                                <entry>
+<para>indicates the version number of the inherited child pointer </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>uniqueID</entry>
+                                <entry>
+<para>is a unique identifier assigned to every object registered in <link linkend="class_o_s_t_m">OSTM</link> library </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>canCommit</entry>
+                                <entry>
+<para>boolean </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>abort_Transaction</entry>
+                                <entry>
+<para>boolean </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1a2314f55a127b94aa8a51d19ba798401e">
+                <title>OSTM::OSTM (int _version_number_, int _unique_id_)</title> <emphasis>OSTM Custom Constructor.</emphasis>
+                
+<para>Custom Constructor Used for copy object.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>version</entry>
+                                <entry>
+<para>indicates the version number of the inherited child pointer </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>uniqueID</entry>
+                                <entry>
+<para>is a unique identifier assigned to every object registered in <link linkend="class_o_s_t_m">OSTM</link> library </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>canCommit</entry>
+                                <entry>
+<para>boolean </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>abort_Transaction</entry>
+                                <entry>
+<para>boolean </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1a30a17d73d0259c60eeab72d6dfa9ceb1">
+                <title>OSTM::~OSTM ()</title> <emphasis>De-constructor.</emphasis>
+                
+<para>De-constructor </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1a535d90fced5adbb70312c92f3778e08d">
+                <title>virtual void OSTM::copy (std::shared_ptr&lt; OSTM &gt; from, std::shared_ptr&lt; OSTM &gt; to)</title> <emphasis>OSTM required virtual method for deep copy.</emphasis>
+                
+            </section>
+            <section xml:id="class_o_s_t_m_1a0bfa3763bd441407dd6365f42714f94c">
+                <title>virtual std::shared_ptr&lt;OSTM&gt; OSTM::getBaseCopy (std::shared_ptr&lt; OSTM &gt; object)</title> <emphasis>OSTM required virtual method for returning a pointer that is copy of the original pointer.</emphasis>
+                
+            </section>
+            <section xml:id="class_o_s_t_m_1a513396a115f2987fd07c203309ae8a59">
+                <title>virtual void OSTM::toString ()</title> <emphasis>OSTM required virtual method for display object.</emphasis>
+                
+            </section>
+            <section xml:id="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93">
+                <title>void OSTM::Set_Unique_ID (int uniqueID)</title> <emphasis>setter for unique id</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>uniqueID</entry>
+                                <entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d">
+                <title>int OSTM::Get_Unique_ID () const </title> <emphasis>getter for unique id</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>uniqueID</entry>
+                                <entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1a9529ad8d6d28c1f0cc9b86ed91df1ae1">
+                <title>void OSTM::Set_Version (int version)</title> <emphasis>setter for version number</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>version</entry>
+                                <entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b">
+                <title>int OSTM::Get_Version () const </title> <emphasis>getter for version number</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>version</entry>
+                                <entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1a5f90caa4384d371c16b7cac860d9f89a">
+                <title>void OSTM::increase_VersionNumber ()</title> <emphasis>commit time increase version number to child object</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>version</entry>
+                                <entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1a8df39ced3b401aa466df97e26d14b1b7">
+                <title>bool OSTM::Is_Can_Commit () const </title> <emphasis>return boolean</emphasis>
+                
+<para>NOT USED YET.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>canCommit</entry>
+                                <entry>
+<para>boolean </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1a813ee61c9d1c83c6a6ae30d12aca8a5d">
+                <title>void OSTM::Set_Can_Commit (bool canCommit)</title> <emphasis>set boolean</emphasis>
+                
+<para>NOT USED YET.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>canCommit</entry>
+                                <entry>
+<para>boolean </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1aba384cf65c5f56f5b86833730c3c6ea4">
+                <title>void OSTM::Set_Abort_Transaction (bool abortTransaction)</title> <emphasis>set boolean</emphasis>
+                
+<para>NOT USED YET.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>abort_Transaction</entry>
+                                <entry>
+<para>boolean </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1afc2851abf5342c3c67342c2c14820115">
+                <title>bool OSTM::Is_Abort_Transaction () const </title> <emphasis>return boolean</emphasis>
+                
+<para>NOT USED YET.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>abort_Transaction</entry>
+                                <entry>
+<para>boolean </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1af192c598a3c647f37aaba5757e60240f">
+                <title>void OSTM::lock_Mutex ()</title> <emphasis>object unique lock, locks mutex</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mutex</entry>
+                                <entry>
+<para>std::mutex </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1a6cd703bc26c719fd95b4f5362d050762">
+                <title>void OSTM::unlock_Mutex ()</title> <emphasis>object unique lock, unlocks mutex</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mutex</entry>
+                                <entry>
+<para>std::mutex </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1afb6520023ed2c4a6188b688c46f192d0">
+                <title>bool OSTM::is_Locked ()</title> <emphasis>object unique lock, try locks mutex return boolean value depends on the lock state</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mutex</entry>
+                                <entry>
+<para>std::mutex </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_o_s_t_m_1adee6903c1100e0d78640bd4b85e5d7df">
+                <title>int OSTM::Get_global_Unique_ID_Number ()</title> <emphasis></emphasis>
+                
+<para>Returning global_Unique_ID_Number to the constructor</para>
+
+<para>If global_Unique_ID_Number equals to 10000000 then reset back to ZERO, to make sure the value of global_Unique_ID_Number never exceed the MAX_INT value </para>
+
+            </section>
+</section>

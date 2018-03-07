@@ -1,0 +1,97 @@
+\section{TX Class Reference}
+\label{class_t_x}\index{TX@{TX}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf TX} (std\+::thread\+::id id)\label{class_t_x_a8a4b83eab0171ae834bfa92bbced1094}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+{\bf $\sim$\+TX} ()\label{class_t_x_abecf854cc3228ab6dd51175b3cd1c70a}
+
+\begin{DoxyCompactList}\small\item\em De-\/constructor. \end{DoxyCompactList}\item 
+{\bf TX} (const {\bf TX} \&orig)\label{class_t_x_ab96b3dd2bfd621b47307f0af3ec4f35c}
+
+\begin{DoxyCompactList}\small\item\em Default copy constructor. \end{DoxyCompactList}\item 
+void {\bf ostm\+\_\+exit} ()\label{class_t_x_aa9739c5c2077454c779098db7baefc2b}
+
+\begin{DoxyCompactList}\small\item\em Delete all map entries associated with the main process. \end{DoxyCompactList}\item 
+void {\bf \+\_\+register} (std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ object)\label{class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e}
+
+\begin{DoxyCompactList}\small\item\em Register \doxyref{O\+S\+TM}{p.}{class_o_s_t_m} pointer into S\+TM library. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ {\bf load} (std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ object)
+\item 
+void {\bf store} (std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ object)\label{class_t_x_a7dbcb369aa4a3370b6c6829d278ece5d}
+
+\begin{DoxyCompactList}\small\item\em Store transactional changes. \end{DoxyCompactList}\item 
+bool {\bf commit} ()\label{class_t_x_a9dde5d356b35e557448e58d260087356}
+
+\begin{DoxyCompactList}\small\item\em Commit transactional changes. \end{DoxyCompactList}\item 
+void {\bf \+\_\+increase\+\_\+tx\+\_\+nesting} ()\label{class_t_x_a1384bdf12d795854b5d32e7f61ffbdb8}
+
+\begin{DoxyCompactList}\small\item\em Add \doxyref{TX}{p.}{class_t_x} nesting level by one. \end{DoxyCompactList}\item 
+void {\bf \+\_\+decrease\+\_\+tx\+\_\+nesting} ()\label{class_t_x_aa3ac499f576326588628ade96b27b4b1}
+
+\begin{DoxyCompactList}\small\item\em Remove \doxyref{TX}{p.}{class_t_x} nesting level by one. \end{DoxyCompactList}\item 
+int {\bfseries get\+Test\+\_\+counter} ()\label{class_t_x_ae9bf97930c4670f59d334b345353a71e}
+
+\item 
+void {\bfseries \+\_\+print\+\_\+all\+\_\+tx} ()\label{class_t_x_a3d96ed91eb9ec73e16589f705661c5a7}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int {\bf test\+\_\+counter}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf TM}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file T\+X.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{TX@{TX}!load@{load}}
+\index{load@{load}!TX@{TX}}
+\subsubsection[{load(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ object)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<${\bf O\+S\+TM}$>$ T\+X\+::load (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{object}
+\end{DoxyParamCaption}
+)}\label{class_t_x_ae8d20c952a5874d488b6a0f030177f6d}
+Register \doxyref{O\+S\+TM}{p.}{class_o_s_t_m} pointer into S\+TM library 
+
+\subsection{Friends And Related Function Documentation}
+\index{TX@{TX}!TM@{TM}}
+\index{TM@{TM}!TX@{TX}}
+\subsubsection[{TM}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf TM}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_t_x_adf1ccda799ef5c419cb43b8ae55eb45c}
+Only \doxyref{TM}{p.}{class_t_m} Transaction Manager can create instance of \doxyref{TX}{p.}{class_t_x} Transaction 
+
+Definition at line 70 of file T\+X.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\index{TX@{TX}!test\+\_\+counter@{test\+\_\+counter}}
+\index{test\+\_\+counter@{test\+\_\+counter}!TX@{TX}}
+\subsubsection[{test\+\_\+counter}]{\setlength{\rightskip}{0pt plus 5cm}int T\+X\+::test\+\_\+counter\hspace{0.3cm}{\ttfamily [static]}}\label{class_t_x_a25838234aab99ae891a90eb8623a8b3c}
+
+\begin{DoxyParams}{Parameters}
+{\em test\+\_\+counter} & int O\+N\+LY F\+OR T\+E\+S\+T\+I\+N\+G!!! \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 78 of file T\+X.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Main Tests for Linux/\+Test01/T\+X.\+h\end{DoxyCompactItemize}

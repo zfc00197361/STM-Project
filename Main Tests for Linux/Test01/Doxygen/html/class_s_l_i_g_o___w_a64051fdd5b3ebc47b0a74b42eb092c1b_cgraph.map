@@ -1,0 +1,9 @@
+<map id="SLIGO_W::operator=" name="SLIGO_W::operator=">
+<area shape="rect" id="node2" href="$class_s_l_i_g_o___w.html#aa6cc833af07309dee5eb2493cddf443c" title="SLIGO_W::~SLIGO_W" alt="" coords="204,5,363,32"/>
+<area shape="rect" id="node3" href="$class_s_l_i_g_o___w.html#acd5ae7347e6ca94c52eb013e07a66116" title="copy function, make deep copy of the object/pointer " alt="" coords="224,56,343,83"/>
+<area shape="rect" id="node4" href="$class_s_l_i_g_o___w.html#a37ead49afd27bfe7e404d1d7626f09fe" title="getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object ..." alt="" coords="199,107,368,133"/>
+<area shape="rect" id="node6" href="$class_s_l_i_g_o___w.html#a8f49deaa85f48ff29dd8cdeb7c9dda56" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="216,157,351,184"/>
+<area shape="rect" id="node5" href="$class_s_l_i_g_o___w.html#a9b669809dc7cf8d9982181ac7997b0da" title="SLIGO_W::SLIGO_W" alt="" coords="420,107,571,133"/>
+<area shape="rect" id="node7" href="$class_o_s_t_m.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="416,157,575,184"/>
+<area shape="rect" id="node8" href="$class_o_s_t_m.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="425,208,565,235"/>
+</map>

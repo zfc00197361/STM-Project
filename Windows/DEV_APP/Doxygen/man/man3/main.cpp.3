@@ -1,0 +1,1142 @@
+.TH "main.cpp" 3 "Wed Mar 7 2018" "C++ Software Transactional memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <windows\&.h>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <thread>\fP
+.br
+\fC#include <process\&.h>\fP
+.br
+\fC#include 'TM\&.h'\fP
+.br
+\fC#include 'AIB\&.h'\fP
+.br
+\fC#include 'BOI\&.h'\fP
+.br
+\fC#include 'BOA\&.h'\fP
+.br
+\fC#include 'SWBPLC\&.h'\fP
+.br
+\fC#include 'ULSTER\&.h'\fP
+.br
+\fC#include 'UNBL\&.h'\fP
+.br
+\fC#include 'WAREHOUSE\&.h'\fP
+.br
+\fC#include 'CARPHONE_WAREHOUSE\&.h'\fP
+.br
+\fC#include 'CARLOW_W\&.h'\fP
+.br
+\fC#include 'KILKENNY_W\&.h'\fP
+.br
+\fC#include 'TALLAGH_W\&.h'\fP
+.br
+\fC#include 'DUNDALK_W\&.h'\fP
+.br
+\fC#include 'SLIGO_W\&.h'\fP
+.br
+\fC#include <mutex>\fP
+.br
+\fC#include <memory>\fP
+.br
+\fC#include <condition_variable>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fB_six_account_transfer_\fP (std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_one_, std::shared_ptr< OSTM > _from_two_, std::shared_ptr< OSTM > _from_three_, std::shared_ptr< OSTM > _from_four_, std::shared_ptr< OSTM > _from_five_, TM &_tm, double _amount)"
+.br
+.RI "\fI\fIsix_account_transfer\fP function, takes six std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from five account to one account \fP"
+.ti -1c
+.RI "void \fB_two_account_transfer_\fP (std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)"
+.br
+.RI "\fI\fItwo_account_transfer\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account \fP"
+.ti -1c
+.RI "void \fB_nesting_\fP (std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)"
+.br
+.RI "\fI\fInesting\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well \fP"
+.ti -1c
+.RI "void \fB_complex_transfer_\fP (std::shared_ptr< OSTM > _from_, std::shared_ptr< OSTM > _from_two_, std::vector< std::shared_ptr< OSTM >> _customer_vec, TM &_tm, double _amount)"
+.br
+.RI "\fI\fIcomplex_transfer\fP function, takes two std::shared_ptr<OSTM> pointer, a vector of std::shared_ptr<OSTM> pointers, the Transaction manager, and the amount to use in the transaction, and transfer the _amount value from booth single objects to the objects to the vector collection \fP"
+.ti -1c
+.RI "void \fB_warehouse_transfer_\fP (std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)"
+.br
+.RI "\fI\fIwarehouse_transfer\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account \fP"
+.ti -1c
+.RI "void \fB_nested_warehouse_transfer_\fP (std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _to_two, std::shared_ptr< OSTM > _to_three, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)"
+.br
+.RI "\fI\fInested_warehouse_transfer\fP function, takes three std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account \fP"
+.ti -1c
+.RI "void \fB_complex_warehouse_transfer_\fP (std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _to_two, std::shared_ptr< OSTM > _to_three, std::vector< std::shared_ptr< OSTM >> _warehouse_vec, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)"
+.br
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void _complex_transfer_ (std::shared_ptr< OSTM > _from_, std::shared_ptr< OSTM > _from_two_, std::vector< std::shared_ptr< OSTM >> _customer_vec, TM & _tm, double _amount)"
+
+.PP
+\fIcomplex_transfer\fP function, takes two std::shared_ptr<OSTM> pointer, a vector of std::shared_ptr<OSTM> pointers, the Transaction manager, and the amount to use in the transaction, and transfer the _amount value from booth single objects to the objects to the vector collection 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::shared_ptr<TX>\fP tx, Transaction Object 
+.br
+\fIstd::shared_ptr<BANK>\fP type, \fIFROM\fP & \fIFROM_TWO\fP & \fITO\fP 
+.br
+\fIstd::shared_ptr<OSTM>\fP type, \fIFROM_OSTM_ONE\fP & \fIFROM_OSTM_TWO\fP & \fITO_OSTM\fP 
+.RE
+.PP
+Register the two single account
+.PP
+Declare required pointers
+.PP
+Register customers accounts from the collection (vector)
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+Commit changes
+.PP
+Definition at line 296 of file main\&.cpp\&.
+.PP
+References BANK::SetBalance()\&.
+.PP
+.nf
+296                                                                                                                                                            {
+297     std::shared_ptr<TX> tx = _tm\&._get_tx();
+301     tx->_register(_from_);
+302     tx->_register(_from_two_);
+306     std::shared_ptr<OSTM> _FROM_OSTM_ONE_, _FROM_OSTM_TWO_, _TO_OSTM_;
+307     std::shared_ptr<BANK> _FROM_, _FROM_TWO_, _TO_;
+308 
+309     bool done = false;
+310     try {
+311         while (!done) {
+312             // for (int i = 0; i < vector_number; ++i) {
+313             for (auto&& obj : _customer_vec) {
+317                 // auto&& obj = _customer_vec\&.at(i);
+318                 tx->_register(obj);
+322                 _FROM_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_));
+323                 _FROM_TWO_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_two_));
+324                 _TO_ = std::dynamic_pointer_cast<BANK> (tx->load(obj));
+328                 _FROM_->SetBalance(_FROM_->GetBalance() - _amount);
+329                 _FROM_TWO_->SetBalance(_FROM_TWO_->GetBalance() - _amount);
+330                 _TO_->SetBalance(_TO_->GetBalance() + (_amount * 2));
+334                 _FROM_OSTM_ONE_ = std::dynamic_pointer_cast<OSTM> (_FROM_);
+335                 _FROM_OSTM_TWO_ = std::dynamic_pointer_cast<OSTM> (_FROM_TWO_);
+336                 _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_);
+340                 tx->store(_FROM_OSTM_ONE_);
+341                 tx->store(_FROM_OSTM_TWO_);
+342                 tx->store(_TO_OSTM_);
+343             }
+347             done = tx->commit();
+348         }
+349     } catch (std::runtime_error& e) {
+350         std::cout << e\&.what() << std::endl;
+351     }
+352 }
+.fi
+.SS "void _complex_warehouse_transfer_ (std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _to_two, std::shared_ptr< OSTM > _to_three, std::vector< std::shared_ptr< OSTM >> _warehouse_vec, std::shared_ptr< OSTM > _from_, TM & _tm, double _amount)"
+Register the two single account
+.PP
+Declare required pointers
+.PP
+Register customers accounts from the collection (vector)
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<WAREHOUSE> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+NESTED \fBWAREHOUSE\fP TEST _to_two
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+Commit changes
+.PP
+Definition at line 520 of file main\&.cpp\&.
+.PP
+References _nested_warehouse_transfer_(), _warehouse_transfer_(), and WAREHOUSE::SetNumber_of_nokia()\&.
+.PP
+.nf
+520                                                                                                                                                                                                                             {
+521     std::shared_ptr<TX> tx = _tm\&._get_tx();
+525     tx->_register(_to_);
+526     tx->_register(_to_two);
+527     tx->_register(_to_three);
+528     tx->_register(_from_);
+532     std::shared_ptr<WAREHOUSE> _TO_SHOP_, _TO_SHOP_TWO, _TO_SHOP_VEC, _FROM_DIST_;
+533     std::shared_ptr<OSTM> _TO_OSTM_, _TO_OSTM_TWO, _TO_OSTM_VEC, _FROM_OSTM_;
+534 
+535     bool done = false;
+536     try {
+537         while (!done) {
+538 
+539             // for (int i = 0; i < vector_number; ++i) {
+540             for (auto&& obj : _warehouse_vec) {
+544                 //auto&& obj = _warehouse_vec\&.at(i);
+545                 tx->_register(obj);
+549                 _TO_SHOP_ = std::dynamic_pointer_cast<WAREHOUSE> (tx->load(_to_));
+550                 _TO_SHOP_TWO = std::dynamic_pointer_cast<WAREHOUSE> (tx->load(_to_two));
+551                 _TO_SHOP_VEC = std::dynamic_pointer_cast<WAREHOUSE> (tx->load(obj));
+552                 _FROM_DIST_ = std::dynamic_pointer_cast<WAREHOUSE> (tx->load(_from_));
+553 
+557                 _TO_SHOP_->SetNumber_of_nokia(_TO_SHOP_->GetNumber_of_nokia() + _amount);
+558                 _TO_SHOP_TWO->SetNumber_of_nokia(_TO_SHOP_TWO->GetNumber_of_nokia() + _amount);
+559                 _TO_SHOP_VEC->SetNumber_of_nokia(_TO_SHOP_VEC->GetNumber_of_nokia() + _amount);
+560                 _FROM_DIST_->SetNumber_of_nokia(_FROM_DIST_->GetNumber_of_nokia() - (_amount * 3));
+561 
+562                 _TO_SHOP_->SetNumber_of_samsung(_TO_SHOP_->GetNumber_of_samsung() + _amount);
+563                 _TO_SHOP_TWO->SetNumber_of_samsung(_TO_SHOP_TWO->GetNumber_of_samsung() + _amount);
+564                 _TO_SHOP_VEC->SetNumber_of_samsung(_TO_SHOP_VEC->GetNumber_of_samsung() + _amount);
+565                 _FROM_DIST_->SetNumber_of_samsung(_FROM_DIST_->GetNumber_of_samsung() - (_amount * 3));
+566 
+567                 _TO_SHOP_->SetNumber_of_iphones(_TO_SHOP_->GetNumber_of_iphones() + _amount);
+568                 _TO_SHOP_TWO->SetNumber_of_iphones(_TO_SHOP_TWO->GetNumber_of_iphones() + _amount);
+569                 _TO_SHOP_VEC->SetNumber_of_iphones(_TO_SHOP_VEC->GetNumber_of_iphones() + _amount);
+570                 _FROM_DIST_->SetNumber_of_iphones(_FROM_DIST_->GetNumber_of_iphones() - (_amount * 3));
+571 
+572                 _TO_SHOP_->SetNumber_of_sony(_TO_SHOP_->GetNumber_of_sony() + _amount);
+573                 _TO_SHOP_TWO->SetNumber_of_sony(_TO_SHOP_TWO->GetNumber_of_sony() + _amount);
+574                 _TO_SHOP_VEC->SetNumber_of_sony(_TO_SHOP_VEC->GetNumber_of_sony() + _amount);
+575                 _FROM_DIST_->SetNumber_of_sony(_FROM_DIST_->GetNumber_of_sony() - (_amount * 3));
+576 
+580                 _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_SHOP_);
+581                 _TO_OSTM_TWO = std::dynamic_pointer_cast<OSTM> (_TO_SHOP_TWO);
+582                 _TO_OSTM_VEC = std::dynamic_pointer_cast<OSTM> (_TO_SHOP_VEC);
+583                 _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_DIST_);
+587                 tx->store(_TO_OSTM_);
+588                 tx->store(_TO_SHOP_TWO);
+589                 tx->store(_TO_SHOP_VEC);
+590                 tx->store(_FROM_OSTM_);
+591 
+592 
+593 
+594             }
+598             std::shared_ptr<TX> txTwo = _tm\&._get_tx();
+599             bool nestedDone = false;
+600             while (!nestedDone) {
+601                 _TO_SHOP_ = std::dynamic_pointer_cast<WAREHOUSE> (txTwo->load(_to_two));
+602                 _FROM_DIST_ = std::dynamic_pointer_cast<WAREHOUSE> (txTwo->load(_from_));
+606                 _TO_SHOP_->SetNumber_of_nokia(_TO_SHOP_->GetNumber_of_nokia() + _amount);
+607                 _FROM_DIST_->SetNumber_of_nokia(_FROM_DIST_->GetNumber_of_nokia() - _amount);
+608 
+609                 _TO_SHOP_->SetNumber_of_samsung(_TO_SHOP_->GetNumber_of_samsung() + _amount);
+610                 _FROM_DIST_->SetNumber_of_samsung(_FROM_DIST_->GetNumber_of_samsung() - _amount);
+611 
+612                 _TO_SHOP_->SetNumber_of_iphones(_TO_SHOP_->GetNumber_of_iphones() + _amount);
+613                 _FROM_DIST_->SetNumber_of_iphones(_FROM_DIST_->GetNumber_of_iphones() - _amount);
+614 
+615                 _TO_SHOP_->SetNumber_of_sony(_TO_SHOP_->GetNumber_of_sony() + _amount);
+616                 _FROM_DIST_->SetNumber_of_sony(_FROM_DIST_->GetNumber_of_sony() - _amount);
+620                 _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_SHOP_);
+621                 _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_DIST_);
+625                 txTwo->store(_TO_OSTM_);
+626                 txTwo->store(_FROM_OSTM_);
+627 
+628                 /*
+629                  * NESTED TRANSACTION TEST _to_three
+630                  */
+631                 _warehouse_transfer_(_to_three, _from_, _tm, _amount);
+632                 _nested_warehouse_transfer_(_to_, _to_two, _to_three, _from_, _tm, _amount);
+633 
+634                 nestedDone = tx->commit();
+635             }
+636 
+640             done = tx->commit();
+641 
+642         }
+643     } catch (std::runtime_error& e) {
+644         std::cout << e\&.what() << std::endl;
+645     }
+646 }
+.fi
+.SS "void _nested_warehouse_transfer_ (std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _to_two, std::shared_ptr< OSTM > _to_three, std::shared_ptr< OSTM > _from_, TM & _tm, double _amount)"
+
+.PP
+\fInested_warehouse_transfer\fP function, takes three std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::shared_ptr<TX>\fP tx, Transaction Object 
+.br
+\fIstd::shared_ptr<WAREHOUSE>\fP type, \fITO_SHOP\fP & \fIFROM_DIST\fP 
+.br
+\fIstd::shared_ptr<OSTM>\fP type, \fITO_OSTM\fP & \fIFROM_OSTM\fP 
+.RE
+.PP
+Register the two single account
+.PP
+Declare required pointers
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+NESTED \fBWAREHOUSE\fP TEST _to_two
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+Commit changes
+.PP
+Definition at line 421 of file main\&.cpp\&.
+.PP
+References _warehouse_transfer_(), and WAREHOUSE::SetNumber_of_nokia()\&.
+.PP
+Referenced by _complex_warehouse_transfer_()\&.
+.PP
+.nf
+421                                                                                                                                                                             {
+422     std::shared_ptr<TX> tx = _tm\&._get_tx();
+426     tx->_register(_to_);
+427     tx->_register(_to_two);
+428     tx->_register(_to_three);
+429     tx->_register(_from_);
+433     std::shared_ptr<WAREHOUSE> _TO_SHOP_, _FROM_DIST_;
+434     std::shared_ptr<OSTM> _TO_OSTM_, _FROM_OSTM_;
+435 
+436     bool done = false;
+437     try {
+438         while (!done) {
+442             _TO_SHOP_ = std::dynamic_pointer_cast<WAREHOUSE> (tx->load(_to_));
+443             _FROM_DIST_ = std::dynamic_pointer_cast<WAREHOUSE> (tx->load(_from_));
+447             _TO_SHOP_->SetNumber_of_nokia(_TO_SHOP_->GetNumber_of_nokia() + _amount);
+448             _FROM_DIST_->SetNumber_of_nokia(_FROM_DIST_->GetNumber_of_nokia() - _amount);
+449 
+450             _TO_SHOP_->SetNumber_of_samsung(_TO_SHOP_->GetNumber_of_samsung() + _amount);
+451             _FROM_DIST_->SetNumber_of_samsung(_FROM_DIST_->GetNumber_of_samsung() - _amount);
+452 
+453             _TO_SHOP_->SetNumber_of_iphones(_TO_SHOP_->GetNumber_of_iphones() + _amount);
+454             _FROM_DIST_->SetNumber_of_iphones(_FROM_DIST_->GetNumber_of_iphones() - _amount);
+455 
+456             _TO_SHOP_->SetNumber_of_sony(_TO_SHOP_->GetNumber_of_sony() + _amount);
+457             _FROM_DIST_->SetNumber_of_sony(_FROM_DIST_->GetNumber_of_sony() - _amount);
+461             _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_SHOP_);
+462             _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_DIST_);
+466             tx->store(_TO_OSTM_);
+467             tx->store(_FROM_OSTM_);
+468 
+472             std::shared_ptr<TX> txTwo = _tm\&._get_tx();
+473             bool nestedDone = false;
+474             while (!nestedDone) {
+475                 _TO_SHOP_ = std::dynamic_pointer_cast<WAREHOUSE> (txTwo->load(_to_two));
+476                 _FROM_DIST_ = std::dynamic_pointer_cast<WAREHOUSE> (txTwo->load(_from_));
+480                 _TO_SHOP_->SetNumber_of_nokia(_TO_SHOP_->GetNumber_of_nokia() + _amount);
+481                 _FROM_DIST_->SetNumber_of_nokia(_FROM_DIST_->GetNumber_of_nokia() - _amount);
+482 
+483                 _TO_SHOP_->SetNumber_of_samsung(_TO_SHOP_->GetNumber_of_samsung() + _amount);
+484                 _FROM_DIST_->SetNumber_of_samsung(_FROM_DIST_->GetNumber_of_samsung() - _amount);
+485 
+486                 _TO_SHOP_->SetNumber_of_iphones(_TO_SHOP_->GetNumber_of_iphones() + _amount);
+487                 _FROM_DIST_->SetNumber_of_iphones(_FROM_DIST_->GetNumber_of_iphones() - _amount);
+488 
+489                 _TO_SHOP_->SetNumber_of_sony(_TO_SHOP_->GetNumber_of_sony() + _amount);
+490                 _FROM_DIST_->SetNumber_of_sony(_FROM_DIST_->GetNumber_of_sony() - _amount);
+494                 _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_SHOP_);
+495                 _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_DIST_);
+499                 txTwo->store(_TO_OSTM_);
+500                 txTwo->store(_FROM_OSTM_);
+501 
+502                 /*
+503                  * NESTED TRANSACTION TEST _to_three
+504                  */
+505                 _warehouse_transfer_(_to_three, _from_, _tm, _amount);
+506 
+507 
+508                 nestedDone = tx->commit();
+509             }
+513             done = tx->commit();
+514         }
+515     } catch (std::runtime_error& e) {
+516         std::cout << e\&.what() << std::endl;
+517     }
+518 }
+.fi
+.SS "void _nesting_ (std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_, TM & _tm, double _amount)"
+
+.PP
+\fInesting\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::shared_ptr<TX>\fP tx, Transaction Object 
+.br
+\fIstd::shared_ptr<BANK>\fP type, \fITO_BANK\fP & \fIFROM_BANK\fP 
+.br
+\fIstd::shared_ptr<OSTM>\fP type, \fITO_OSTM\fP & \fIFROM_OSTM\fP 
+.RE
+.PP
+Register the two single account
+.PP
+Declare required pointers
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+NESTED TRANSACTION
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+NESTED TRANSACTION IN THE NESTED TRANSACTION \fItwo_account_transfer\fP function call
+.PP
+Commit changes
+.PP
+Definition at line 208 of file main\&.cpp\&.
+.PP
+References _two_account_transfer_(), and BANK::SetBalance()\&.
+.PP
+Referenced by main()\&.
+.PP
+.nf
+208                                                                                               {
+209     std::shared_ptr<TX> tx = _tm\&._get_tx();
+213     tx->_register(_to_);
+214     tx->_register(_from_);
+218     std::shared_ptr<BANK> _TO_BANK_, _FROM_BANK_;
+219     std::shared_ptr<OSTM> _TO_OSTM_, _FROM_OSTM_;
+220 
+221 
+222     bool done = false;
+223     try {
+224         while (!done) {
+228             _TO_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_to_));
+229             _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_));
+233             _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+234             _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+238             _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+239             _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+243             tx->store(_TO_OSTM_);
+244             tx->store(_FROM_OSTM_);
+245 
+249             std::shared_ptr<TX> txTwo = _tm\&._get_tx();
+250 
+251             bool nestedDone = false;
+252             while (!nestedDone) {
+253                 _TO_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_to_));
+254                 _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_from_));
+258                 _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+259                 _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+263                 _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+264                 _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+268                 txTwo->store(_TO_OSTM_);
+269                 txTwo->store(_FROM_OSTM_);
+274                 _two_account_transfer_(_to_, _from_, _tm, _amount);
+275 
+276                 nestedDone = txTwo->commit();
+277             }
+278 
+282             done = tx->commit();
+283         }
+284     } catch (std::runtime_error& e) {
+285         std::cout << e\&.what() << std::endl;
+286     }
+287 }
+.fi
+.SS "void _six_account_transfer_ (std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_one_, std::shared_ptr< OSTM > _from_two_, std::shared_ptr< OSTM > _from_three_, std::shared_ptr< OSTM > _from_four_, std::shared_ptr< OSTM > _from_five_, TM & _tm, double _amount)"
+
+.PP
+\fIsix_account_transfer\fP function, takes six std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from five account to one account 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::shared_ptr<TX>\fP tx, Transaction Object 
+.br
+\fIstd::shared_ptr<BANK>\fP type, \fITO\fP & \fIFROM_ONE\fP & \fIFROM_TWO\fP & \fIFROM_THREE\fP & \fIFROM_FOUR\fP & \fIFROM_FIVE\fP 
+.br
+\fIstd::shared_ptr<OSTM>\fP type, _TO_OSTM & _FROM_ONE_OSTM & _FROM_TWO_OSTM & _FROM_THREE_OSTM & _FROM_FOUR_OSTM & _FROM_FIVE_OSTM 
+.RE
+.PP
+Register the two single account
+.PP
+Required pointers to use in transaction
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+Commit changes
+.PP
+Definition at line 53 of file main\&.cpp\&.
+.PP
+References BANK::SetBalance()\&.
+.PP
+.nf
+53                                                                                                                                                                                                                                                    {
+54     std::shared_ptr<TX> tx = _tm\&._get_tx();
+58     tx->_register(_to_);
+59     tx->_register(_from_one_);
+60     tx->_register(_from_two_);
+61     tx->_register(_from_three_);
+62     tx->_register(_from_four_);
+63     tx->_register(_from_five_);
+64 
+68     std::shared_ptr<OSTM> _TO_OSTM, _FROM_ONE_OSTM, _FROM_TWO_OSTM, _FROM_THREE_OSTM, _FROM_FOUR_OSTM, _FROM_FIVE_OSTM;
+69     std::shared_ptr<BANK> _TO_, _FROM_ONE_, _FROM_TWO_, _FROM_THREE_, _FROM_FOUR_, _FROM_FIVE_;
+70     try {
+71         bool done = false;
+72         while (!done) {
+76             _TO_ = std::dynamic_pointer_cast<BANK> (tx->load(_to_));
+77             _FROM_ONE_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_one_));
+78             _FROM_TWO_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_two_));
+79             _FROM_THREE_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_three_));
+80             _FROM_FOUR_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_four_));
+81             _FROM_FIVE_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_five_));
+85             _TO_->SetBalance(_TO_->GetBalance() + (_amount * 5));
+86             _FROM_ONE_->SetBalance(_FROM_ONE_->GetBalance() - _amount);
+87             _FROM_TWO_->SetBalance(_FROM_TWO_->GetBalance() - _amount);
+88             _FROM_THREE_->SetBalance(_FROM_THREE_->GetBalance() - _amount);
+89             _FROM_FOUR_->SetBalance(_FROM_FOUR_->GetBalance() - _amount);
+90             _FROM_FIVE_->SetBalance(_FROM_FIVE_->GetBalance() - _amount);
+94             _TO_OSTM = std::dynamic_pointer_cast<OSTM> (_TO_);
+95             _FROM_ONE_OSTM = std::dynamic_pointer_cast<OSTM> (_FROM_ONE_);
+96             _FROM_TWO_OSTM = std::dynamic_pointer_cast<OSTM> (_FROM_TWO_);
+97             _FROM_THREE_OSTM = std::dynamic_pointer_cast<OSTM> (_FROM_THREE_);
+98             _FROM_FOUR_OSTM = std::dynamic_pointer_cast<OSTM> (_FROM_FOUR_);
+99             _FROM_FIVE_OSTM = std::dynamic_pointer_cast<OSTM> (_FROM_FIVE_);
+103             tx->store(_TO_OSTM);
+104             tx->store(_FROM_ONE_OSTM);
+105             tx->store(_FROM_TWO_OSTM);
+106             tx->store(_FROM_THREE_OSTM);
+107             tx->store(_FROM_FOUR_OSTM);
+108             tx->store(_FROM_FIVE_OSTM);
+112             done = tx->commit();
+113         }
+114     } catch (std::runtime_error& e) {
+115         std::cout << e\&.what() << std::endl;
+116     }
+117 }
+.fi
+.SS "void _two_account_transfer_ (std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_, TM & _tm, double _amount)"
+
+.PP
+\fItwo_account_transfer\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::shared_ptr<TX>\fP tx, Transaction Object 
+.br
+\fIstd::shared_ptr<BANK>\fP type, \fITO_BANK\fP & \fIFROM_BANK\fP 
+.br
+\fIstd::shared_ptr<OSTM>\fP type, \fITO_OSTM\fP & \fIFROM_OSTM\fP 
+.RE
+.PP
+Register the two single account
+.PP
+Declare required pointers
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+NESTED TRANSACTION
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+Commit changes
+.PP
+Commit changes
+.PP
+Definition at line 125 of file main\&.cpp\&.
+.PP
+References BANK::SetBalance()\&.
+.PP
+Referenced by _nesting_()\&.
+.PP
+.nf
+125                                                                                                            {
+126     std::shared_ptr<TX> tx = _tm\&._get_tx();
+130     tx->_register(_to_);
+131     tx->_register(_from_);
+135     std::shared_ptr<BANK> _TO_BANK_, _FROM_BANK_;
+136     std::shared_ptr<OSTM> _TO_OSTM_, _FROM_OSTM_;
+137 
+138     bool done = false;
+139     try {
+140         while (!done) {
+144             _TO_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_to_));
+145             _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_));
+149             _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+150             _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+154             _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+155             _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+159             tx->store(_TO_OSTM_);
+160             tx->store(_FROM_OSTM_);
+161 
+165             std::shared_ptr<TX> txTwo = _tm\&._get_tx();
+166 
+167             bool nestedDone = false;
+168             while (!nestedDone) {
+169                 _TO_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_to_));
+170                 _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_from_));
+174                 _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+175                 _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+179                 _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+180                 _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+184                 txTwo->store(_TO_OSTM_);
+185                 txTwo->store(_FROM_OSTM_);
+189                 nestedDone = txTwo->commit();
+190             }
+194             done = tx->commit();
+195         }
+196     } catch (std::runtime_error& e) {
+197         std::cout << e\&.what() << std::endl;
+198     }
+199 }
+.fi
+.SS "void _warehouse_transfer_ (std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_, TM & _tm, double _amount)"
+
+.PP
+\fIwarehouse_transfer\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::shared_ptr<TX>\fP tx, Transaction Object 
+.br
+\fIstd::shared_ptr<WAREHOUSE>\fP type, \fITO_SHOP\fP & \fIFROM_DIST\fP 
+.br
+\fIstd::shared_ptr<OSTM>\fP type, \fITO_OSTM\fP & \fIFROM_OSTM\fP 
+.RE
+.PP
+Register the two single account
+.PP
+Declare required pointers
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+Commit changes
+.PP
+Definition at line 360 of file main\&.cpp\&.
+.PP
+References WAREHOUSE::SetNumber_of_nokia()\&.
+.PP
+Referenced by _complex_warehouse_transfer_(), and _nested_warehouse_transfer_()\&.
+.PP
+.nf
+360                                                                                                          {
+361     std::shared_ptr<TX> tx = _tm\&._get_tx();
+365     tx->_register(_to_);
+366     tx->_register(_from_);
+370     std::shared_ptr<WAREHOUSE> _TO_SHOP_, _FROM_DIST_;
+371     std::shared_ptr<OSTM> _TO_OSTM_, _FROM_OSTM_;
+372 
+373     bool done = false;
+374     try {
+375         while (!done) {
+379             _TO_SHOP_ = std::dynamic_pointer_cast<WAREHOUSE> (tx->load(_to_));
+380             _FROM_DIST_ = std::dynamic_pointer_cast<WAREHOUSE> (tx->load(_from_));
+384             _TO_SHOP_->SetNumber_of_nokia(_TO_SHOP_->GetNumber_of_nokia() + _amount);
+385             _FROM_DIST_->SetNumber_of_nokia(_FROM_DIST_->GetNumber_of_nokia() - _amount);
+386 
+387             _TO_SHOP_->SetNumber_of_samsung(_TO_SHOP_->GetNumber_of_samsung() + _amount);
+388             _FROM_DIST_->SetNumber_of_samsung(_FROM_DIST_->GetNumber_of_samsung() - _amount);
+389 
+390             _TO_SHOP_->SetNumber_of_iphones(_TO_SHOP_->GetNumber_of_iphones() + _amount);
+391             _FROM_DIST_->SetNumber_of_iphones(_FROM_DIST_->GetNumber_of_iphones() - _amount);
+392 
+393             _TO_SHOP_->SetNumber_of_sony(_TO_SHOP_->GetNumber_of_sony() + _amount);
+394             _FROM_DIST_->SetNumber_of_sony(_FROM_DIST_->GetNumber_of_sony() - _amount);
+398             _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_SHOP_);
+399             _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_DIST_);
+403             tx->store(_TO_OSTM_);
+404             tx->store(_FROM_OSTM_);
+408             done = tx->commit();
+409         }
+410     } catch (std::runtime_error& e) {
+411         std::cout << e\&.what() << std::endl;
+412     }
+413 }
+.fi
+.SS "int main (void)"
+main method to run test Get the Transaction Manager
+.br
+ TM& tm = TM::Instance();
+.br
+.PP
+Create vector to store std::shared_ptr<OSTM> pointers\&. All object will have unique ID by default
+.br
+ std::vector<std::shared_ptr<OSTM>> _customer_vec(vector_number);
+.br
+ std::vector<std::shared_ptr<OSTM>> _warehouse_vec(vector_number);
+.br
+.PP
+Create objects type of \fBBANK\fP\&. All object will have unique ID by default
+.br
+ std::shared_ptr<OSTM> aib_ptr = new \fBAIB\fP(100, 500, 'Joe', 'Blog', 'High street, Kilkenny, Co\&.Kilkenny');
+.br
+ std::shared_ptr<OSTM> boi_ptr = new \fBBOI\fP(200, 500, 'Joe', 'Blog', 'High street, Kilkenny, Co\&.Kilkenny');
+.br
+ std::shared_ptr<OSTM> boa_ptr = new \fBBOA\fP(300, 500, 'Joe', 'Blog', 'High street, Kilkenny, Co\&.Kilkenny');
+.br
+ std::shared_ptr<OSTM> swplc_ptr = new \fBSWBPLC\fP(400, 500, 'Joe', 'Blog', 'High street, Kilkenny, Co\&.Kilkenny');
+.br
+ std::shared_ptr<OSTM> ulster_ptr = new \fBULSTER\fP(500, 500, 'Joe', 'Blog', 'High street, Kilkenny, Co\&.Kilkenny');
+.br
+ std::shared_ptr<OSTM> unbl_ptr = new \fBUNBL\fP(600, 500, 'Joe', 'Blog', 'High street, Kilkenny, Co\&.Kilkenny');
+.br
+.PP
+Create objects type of \fBWAREHOUSE\fP\&. All object will have unique ID by default
+.br
+ std::shared_ptr<OSTM> w_dist = new \fBCARPHONE_WAREHOUSE()\fP;
+.br
+ std::shared_ptr<OSTM> c_shop = new \fBCARLOW_W()\fP;
+.br
+ std::shared_ptr<OSTM> k_shop = new \fBKILKENNY_W()\fP;
+.br
+ std::shared_ptr<OSTM> t_shop = new \fBTALLAGH_W()\fP;
+.br
+ std::shared_ptr<OSTM> d_shop = new \fBDUNDALK_W()\fP;
+.br
+ std::shared_ptr<OSTM> s_shop = new \fBSLIGO_W()\fP;
+.br
+.PP
+Create vector of std::shared_ptr<OSTM> \fBBANK\fP pointers
+.br
+ vector_number is 100 at the moment
+.br
+ for(int i=0;i<vector_number;++i)
+.PP
+Create vector of std::shared_ptr<OSTM> \fBWAREHOUSE\fP pointers
+.br
+ vector_number is 100 at the moment
+.br
+ for(int i=0;i<vector_number;++i)
+.PP
+Display \fBWAREHOUSE\fP objects before transaction
+.br
+ w_dist->toString();
+.br
+ c_shop->toString();
+.br
+ k_shop->toString();
+.br
+ t_shop->toString();
+.br
+ d_shop->toString();
+.br
+ s_shop->toString();
+.br
+.PP
+Display \fBBANK\fP objects before transaction
+.br
+ aib_ptr->toString();
+.br
+ boi_ptr->toString();
+.br
+ boa_ptr->toString();
+.br
+ swplc_ptr->toString();
+.br
+ ulster_ptr->toString();
+.br
+ unbl_ptr->toString();
+.br
+.PP
+\fBParameters:\fP
+.RS 4
+\fItransferAmount\fP in the transaction, control the value in the transaction between objetcs
+.br
+\fIthreadArraySize\fP control number of threads 
+.br
+ The logic in the IF ELSE statement distribute the threads between three different thread creating option\&.
+.br
+ If the threadArraySize is divisible with three, the threads will be distributed between function\&.
+.br
+ However, you can creates any number of threads, but to follow the correct output should increase the IF ELSE statement to distribute the threads in equal number\&.
+.RE
+.PP
+Creating threads^n -> threadArraySize
+.br
+ for (int i = 0; i < threadArraySize; ++i)
+.br
+.PP
+TEST 1 : Nested transaction Test
+.br
+ thArray[i] = std::thread(\fInesting\fP, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+.PP
+TEST 2 :Three different type of function call where the objects are participating in multiple type of transactions
+.br
+ thArray[i] = std::thread(\fItwo_account_transfer\fP, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+.br
+ thArray[i] = std::thread(\fIsix_account_transfer\fP, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount)
+.br
+ thArray[i] = std::thread(\fIcomplex_transfer\fP, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
+.PP
+TEST 3 : Testing \fBWAREHOUSE\fP type pointers within transactions
+.br
+ thArray[i] = std::thread(\fIphone_transfer\fP, c_shop, w_dist, std::ref(tm), transferAmount);
+.PP
+TEST 4 : Testing \fBWAREHOUSE\fP type pointers within nested transactions
+.br
+ thArray[i] = std::thread(\fInested_warehouse_transfer\fP, c_shop, d_shop, k_shop, w_dist, std::ref(tm), transferAmount);
+.PP
+TEST 5 : Testing \fBWAREHOUSE\fP type pointers within mixed and nested transactions
+.br
+ thArray[i] = std::thread(\fIwarehouse_transfer\fP, c_shop, w_dist, std::ref(tm), transferAmount);
+.br
+ thArray[i] = std::thread(\fInested_warehouse_transfer\fP, c_shop, d_shop, k_shop, w_dist, std::ref(tm), transferAmount);
+.br
+ thArray[i] = std::thread(\fIcomplex_warehouse_transfer\fP, d_shop, c_shop, std::ref(_warehouse_vec), w_dist, std::ref(tm), transferAmount);
+.br
+.PP
+Display objects after all transactions are finished
+.br
+ Uncomment the required corresponding TEST to display results
+.PP
+Extra tx to call and display ROLLBACK value
+.br
+ std::shared_ptr<TX> tx = tm\&._get_tx();
+.br
+.PP
+Display the number of ROLLBACK by all the threads 
+.br
+ std::cout << 'Rollback counter is : ' << tx->getTest_counter() << std::endl;
+.PP
+Display object from vector
+.PP
+Clean up Transaction Manager from all main process associated transactions
+.br
+ tm\&._TX_EXIT();
+.PP
+Display all Transactions associated with the main process\&. It should be empty after _TX_EXIT() function call!!!
+.br
+ tm\&.print_all();
+.PP
+Definition at line 651 of file main\&.cpp\&.
+.PP
+References _nesting_()\&.
+.PP
+.nf
+651                {
+656     TM& tm = TM::Instance();
+657 
+664     std::vector<std::shared_ptr < OSTM>>_customer_vec; //(vector_number);
+665     std::vector<std::shared_ptr < OSTM>>_warehouse_vec; //(vector_number);
+666 
+676     std::shared_ptr<OSTM> aib_ptr(new AIB(100, 500, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+677     std::shared_ptr<OSTM> boi_ptr(new BOI(200, 500, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+678     std::shared_ptr<OSTM> boa_ptr(new BOA(300, 500, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+679     std::shared_ptr<OSTM> swplc_ptr(new SWBPLC(400, 500, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+680     std::shared_ptr<OSTM> ulster_ptr(new ULSTER(500, 500, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+681     std::shared_ptr<OSTM> unbl_ptr(new UNBL(600, 500, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+682 
+693     std::shared_ptr<OSTM> w_dist(new CARPHONE_WAREHOUSE());
+694     std::shared_ptr<OSTM> c_shop(new CARLOW_W());
+695     std::shared_ptr<OSTM> k_shop(new KILKENNY_W());
+696     std::shared_ptr<OSTM> t_shop(new TALLAGH_W());
+697     std::shared_ptr<OSTM> d_shop(new DUNDALK_W());
+698     std::shared_ptr<OSTM> s_shop(new SLIGO_W());
+699 
+705     for (int i = 0; i < vector_number; ++i) {
+706         if (i % 5 == 0) {
+707             std::shared_ptr<OSTM> sharedptr(new CARLOW_W());
+708             _warehouse_vec\&.push_back(std::move(sharedptr));
+709         } else if (i % 4 == 0) {
+710             std::shared_ptr<OSTM> sharedptr(new KILKENNY_W());
+711             _warehouse_vec\&.push_back(std::move(sharedptr));
+712         } else if (i % 3 == 0) {
+713             std::shared_ptr<OSTM> sharedptr(new TALLAGH_W());
+714             _warehouse_vec\&.push_back(std::move(sharedptr));
+715         } else if (i % 2 == 0) {
+716             std::shared_ptr<OSTM> sharedptr(new DUNDALK_W());
+717             _warehouse_vec\&.push_back(std::move(sharedptr));
+718         } else if (i % 1 == 0) {
+719             std::shared_ptr<OSTM> sharedptr(new SLIGO_W());
+720             _warehouse_vec\&.push_back(std::move(sharedptr));
+721         }
+722     }
+723 
+729     for (int i = 0; i < vector_number; ++i) {
+730         if (i % 6 == 0) {
+731             std::shared_ptr<OSTM> sharedptr(new AIB(i, 50, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+732             _customer_vec\&.push_back(std::move(sharedptr));
+733         } else if (i % 5 == 0) {
+734             std::shared_ptr<OSTM> sharedptr(new BOI(i, 50, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+735             _customer_vec\&.push_back(std::move(sharedptr));
+736         } else if (i % 4 == 0) {
+737             std::shared_ptr<OSTM> sharedptr(new BOA(i, 50, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+738             _customer_vec\&.push_back(std::move(sharedptr));
+739         } else if (i % 3 == 0) {
+740             std::shared_ptr<OSTM> sharedptr(new SWBPLC(i, 50, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+741             _customer_vec\&.push_back(std::move(sharedptr));
+742         } else if (i % 2 == 0) {
+743             std::shared_ptr<OSTM> sharedptr(new ULSTER(i, 50, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+744             _customer_vec\&.push_back(std::move(sharedptr));
+745         } else if (i % 1 == 0) {
+746             std::shared_ptr<OSTM> sharedptr(new UNBL(i, 50, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+747             _customer_vec\&.push_back(std::move(sharedptr));
+748         }
+749     }
+750 
+760     //    w_dist->toString();
+761     //    c_shop->toString();
+762     //    k_shop->toString();
+763     //    t_shop->toString();
+764     //    d_shop->toString();
+765     //    s_shop->toString();
+766 
+777     /*
+778      * TEST 1 : object requirements
+779      */
+780     aib_ptr->toString();
+781     boi_ptr->toString();
+782     boa_ptr->toString();
+783     swplc_ptr->toString();
+784     ulster_ptr->toString();
+785     unbl_ptr->toString();
+786 
+787     /*
+788      * TEST 2 : object requirements 
+789      */
+790     //    aib_ptr->toString();
+791     //    boi_ptr->toString();
+792     //    boa_ptr->toString();
+793     //    swplc_ptr->toString();
+794     //    ulster_ptr->toString();
+795     //    unbl_ptr->toString();
+796     //    for(int i=0; i<vector_number; ++i){
+797     //        _customer_vec[i]->toString();
+798     //    }
+799 
+800     /*
+801      * TEST 3 : object requirements
+802      */
+803     //    w_dist->toString();
+804     //    c_shop->toString();
+805     //    k_shop->toString();
+806     //    t_shop->toString();
+807 
+808     /*
+809      * TEST 4 : objects requirements
+810      */
+811     //        w_dist->toString();
+812     //        c_shop->toString();
+813     //        k_shop->toString();
+814     //        t_shop->toString();
+815     //        d_shop->toString();
+816     //        s_shop->toString();
+817 
+818 
+819     /*
+820      * TEST 5 : objects requirements
+821      */
+822     //        w_dist->toString();
+823     //        c_shop->toString();
+824     //        k_shop->toString();
+825     //        t_shop->toString();
+826     //        d_shop->toString();
+827     //        s_shop->toString();
+828 
+829     //        for(auto&& elem: _warehouse_vec){
+830     //            elem->toString(); // virtual dispatch
+831     //            
+832     //        }
+833 
+834 
+835 
+839     int transferAmount = 1;
+846     int threadArraySize = 300;
+847 
+848     std::thread thArray[300];
+849 
+854     for (int i = 0; i < threadArraySize; ++i) {
+855 
+860         //thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+861       if (i % 3 == 0)
+862           thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+863       else if (i % 2 == 0)
+864           thArray[i] = std::thread(_nesting_, boa_ptr, swplc_ptr, std::ref(tm), transferAmount);
+865       else if (i % 1 == 0)
+866           thArray[i] = std::thread(_nesting_, ulster_ptr, unbl_ptr, std::ref(tm), transferAmount);
+867 
+874         //    if (i % 3 == 0) 
+875         //        thArray[i] = std::thread(_two_account_transfer_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+876         //    else if (i % 2 == 0)
+877         //        thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount);
+878         //    else if (i % 1 == 0)
+879         //        thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
+880 
+881 
+886         //        if (i % 3 == 0)
+887         //            thArray[i] = std::thread(_warehouse_transfer_, c_shop, w_dist, std::ref(tm), transferAmount);
+888         //        else if (i % 2 == 0)
+889         //            thArray[i] = std::thread(_warehouse_transfer_, k_shop, w_dist, std::ref(tm), transferAmount);
+890         //        else if (i % 1 == 0)
+891         //            thArray[i] = std::thread(_warehouse_transfer_, t_shop, w_dist, std::ref(tm), transferAmount);
+892 
+897         //        if (i % 3 == 0)
+898         //            thArray[i] = std::thread(_nested_warehouse_transfer_, c_shop, d_shop, k_shop, w_dist, std::ref(tm), transferAmount);
+899         //        else if (i % 2 == 0)
+900         //            thArray[i] = std::thread(_nested_warehouse_transfer_, k_shop, s_shop, t_shop, w_dist, std::ref(tm), transferAmount);
+901         //        else if (i % 1 == 0)
+902         //            thArray[i] = std::thread(_nested_warehouse_transfer_, t_shop, c_shop, s_shop, w_dist, std::ref(tm), transferAmount);
+903 
+912         //        if (i % 3 == 0)
+913         //            thArray[i] = std::thread(_warehouse_transfer_, c_shop, w_dist, std::ref(tm), transferAmount);
+914         //        else if (i % 2 == 0)
+915         //            thArray[i] = std::thread(_nested_warehouse_transfer_, k_shop, s_shop, t_shop, w_dist, std::ref(tm), transferAmount);
+916         //        else if (i % 1 == 0)
+917         //            thArray[i] = std::thread(_complex_warehouse_transfer_, d_shop, s_shop, c_shop, std::ref(_warehouse_vec), w_dist, std::ref(tm), transferAmount);
+918 
+919 
+920     }
+921     /*
+922      * Join threads^n -> threadArraySize<br>
+923      * thArray[i]\&.join();
+924      */
+925     for (int i = 0; i < threadArraySize; ++i) {
+926         thArray[i]\&.join();
+927     }
+928 
+929 
+930     std::cout << "\nMain process print " << std::endl;
+936     /*
+937      * TEST 1 : object requirements
+938      */
+939     aib_ptr->toString();
+940     boi_ptr->toString();
+941     boa_ptr->toString();
+942     swplc_ptr->toString();
+943     ulster_ptr->toString();
+944     unbl_ptr->toString();
+945 
+946     /*
+947      * TEST 2 : object requirements 
+948      */
+949     //    aib_ptr->toString();
+950     //    boi_ptr->toString();
+951     //    boa_ptr->toString();
+952     //    swplc_ptr->toString();
+953     //    ulster_ptr->toString();
+954     //    unbl_ptr->toString();
+955     //    for(int i=0; i<vector_number; ++i){
+956     //        _customer_vec[i]->toString();
+957     //    }
+958 
+959     /*
+960      * TEST 3 : object requirements
+961      */
+962     //            w_dist->toString();
+963     //            c_shop->toString();
+964     //            k_shop->toString();
+965     //            t_shop->toString();
+966 
+967     /*
+968      * TEST 4 : objects requirements
+969      */
+970     //        w_dist->toString();
+971     //        c_shop->toString();
+972     //        k_shop->toString();
+973     //        t_shop->toString();
+974     //        d_shop->toString();
+975     //        s_shop->toString();
+976 
+977     /*
+978      * TEST 5 : objects requirements
+979      */
+980     //        w_dist->toString();
+981     //        c_shop->toString();
+982     //        k_shop->toString();
+983     //        t_shop->toString();
+984     //        d_shop->toString();
+985     //        s_shop->toString();
+986 
+987     //        for(auto&& elem: _warehouse_vec){
+988     //            elem->toString(); // virtual dispatch
+989     //            
+990     //        }
+991 
+992     /* TEST 5 FINISH */
+993 
+994 
+995     std::cout << "\nMAIN PROCESS EXIT !!!! " << std::endl;
+1000     std::shared_ptr<TX> tx = tm\&._get_tx();
+1001 
+1006     std::cout << "Rollback counter is : " << tx->getTest_counter() << std::endl;
+1010     //    std::cout << "[vector_number]" << std::endl;
+1011     //    for (int i = 0; i < vector_number; ++i) {
+1012     //        //_customer_vec[i]->toString();
+1013     //        auto&& os = _customer_vec\&.at(i);
+1014     //        os->toString();
+1015     //    }
+1016     //    std::cout << "[_warehouse_vec]" << std::endl;
+1017     //    for(auto&& elem: _warehouse_vec){
+1018     //        elem->toString(); // virtual dispatch
+1019     //        
+1020     //    }
+1021     //_customer_vec[10]->toString();
+1022 
+1027     tm\&._TX_EXIT();
+1028     std::cout << "\nPRINT ALL FROM TM !!!! SHOULD BE EMPTY AFTER _TX_EXIT() !!" << std::endl;
+1033     tm\&.print_all();
+1034     int t = 0;
+1035     std::cin >> t;
+1036     return 0;
+1037 }
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software Transactional memory from the source code\&.

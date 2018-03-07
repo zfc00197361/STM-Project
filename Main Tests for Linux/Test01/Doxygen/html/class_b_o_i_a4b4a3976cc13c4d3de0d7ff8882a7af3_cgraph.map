@@ -1,0 +1,10 @@
+<map id="BOI::operator=" name="BOI::operator=">
+<area shape="rect" id="node2" href="$class_b_o_i.html#a617f46a599129178c6b11b4846759a6c" title="BOI::~BOI" alt="" coords="185,5,269,32"/>
+<area shape="rect" id="node3" href="$class_b_o_i.html#ad53ae2918a656793b9d7a670d35ecfa3" title="getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object ..." alt="" coords="161,56,293,83"/>
+<area shape="rect" id="node5" href="$class_b_o_i.html#a9ff2d32c25c23a1bea6316f50c3bf677" title="copy function, make deep copy of the object/pointer " alt="" coords="187,107,268,133"/>
+<area shape="rect" id="node7" href="$class_b_o_i.html#ab02a4dd4ebcc5b2abfaca19f2dff2006" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="178,157,277,184"/>
+<area shape="rect" id="node4" href="$class_b_o_i.html#a6af682a5f199a029681f0cb2b8658706" title="BOI::BOI" alt="" coords="383,56,459,83"/>
+<area shape="rect" id="node6" href="$class_o_s_t_m.html#ab5019a32185631c08abbf826422f2d93" title="setter for unique id " alt="" coords="342,107,499,133"/>
+<area shape="rect" id="node8" href="$class_o_s_t_m.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="341,157,500,184"/>
+<area shape="rect" id="node9" href="$class_o_s_t_m.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="351,208,491,235"/>
+</map>

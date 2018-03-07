@@ -1,0 +1,93 @@
+.TH "OSTM" 3 "Wed Mar 7 2018" "C++ Softwrae Transactional memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OSTM \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBBANK\fP, and \fBWAREHOUSE\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOSTM\fP ()"
+.br
+.RI "\fI\fBOSTM\fP Constructor\&. \fP"
+.ti -1c
+.RI "\fBOSTM\fP (int _version_number_, int _unique_id_)"
+.br
+.RI "\fI\fBOSTM\fP Custom Constructor\&. \fP"
+.ti -1c
+.RI "virtual \fB~OSTM\fP ()"
+.br
+.RI "\fIDe-constructor\&. \fP"
+.ti -1c
+.RI "virtual void \fBcopy\fP (std::shared_ptr< \fBOSTM\fP > from, std::shared_ptr< \fBOSTM\fP > to)"
+.br
+.RI "\fI\fBOSTM\fP required virtual method for deep copy\&. \fP"
+.ti -1c
+.RI "virtual std::shared_ptr< \fBOSTM\fP > \fBgetBaseCopy\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fI\fBOSTM\fP required virtual method for returning a pointer that is copy of the original pointer\&. \fP"
+.ti -1c
+.RI "virtual void \fBtoString\fP ()"
+.br
+.RI "\fI\fBOSTM\fP required virtual method for display object\&. \fP"
+.ti -1c
+.RI "void \fBSet_Unique_ID\fP (int uniqueID)"
+.br
+.RI "\fIsetter for unique id \fP"
+.ti -1c
+.RI "int \fBGet_Unique_ID\fP () const "
+.br
+.RI "\fIgetter for unique id \fP"
+.ti -1c
+.RI "void \fBSet_Version\fP (int version)"
+.br
+.RI "\fIsetter for version number \fP"
+.ti -1c
+.RI "int \fBGet_Version\fP () const "
+.br
+.RI "\fIgetter for version number \fP"
+.ti -1c
+.RI "void \fBincrease_VersionNumber\fP ()"
+.br
+.RI "\fIcommit time increase version number to child object \fP"
+.ti -1c
+.RI "bool \fBIs_Can_Commit\fP () const "
+.br
+.RI "\fINOT USED YET\&. \fP"
+.ti -1c
+.RI "void \fBSet_Can_Commit\fP (bool canCommit)"
+.br
+.RI "\fINOT USED YET\&. \fP"
+.ti -1c
+.RI "void \fBSet_Abort_Transaction\fP (bool abortTransaction)"
+.br
+.RI "\fINOT USED YET\&. \fP"
+.ti -1c
+.RI "bool \fBIs_Abort_Transaction\fP () const "
+.br
+.RI "\fINOT USED YET\&. \fP"
+.ti -1c
+.RI "void \fBlock_Mutex\fP ()"
+.br
+.RI "\fIobject unique lock, locks mutex \fP"
+.ti -1c
+.RI "void \fBunlock_Mutex\fP ()"
+.br
+.RI "\fIobject unique lock, unlocks mutex \fP"
+.ti -1c
+.RI "bool \fBis_Locked\fP ()"
+.br
+.RI "\fIobject unique lock, try locks mutex return boolean value depends on the lock state \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 17 of file OSTM\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Softwrae Transactional memory from the source code\&.

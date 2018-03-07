@@ -1,0 +1,1053 @@
+\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e}{}\subsection{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE Class Reference}
+\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e}\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+
+
+{\ttfamily \#include $<$C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h$>$}
+
+
+
+Inheritance diagram for C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0acec1e20e236b4debf1e0d26334a868}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} ()
+\item 
+\hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a1e61584abd37ed2189143f0c0d4d2e40}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} (std\+::string address, std\+::string shop\+\_\+name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)
+\item 
+\hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a131eb8df5342de81022b166f40f94d92}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} $>$ obj, int \+\_\+version, int \+\_\+unique\+\_\+id)
+\item 
+\hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a7b2446d35d557bdfaa8dbd769f845abb}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} (const \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} \&orig)
+\item 
+\hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a8d5661ef7c79d7527967c61654ebb612}{operator=} (const \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} \&orig)
+\item 
+virtual \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ad125d83e519b6c7ca025a7e2b705c2a8}{$\sim$\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} ()
+\item 
+virtual void \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ab9ecf71cd2728f348a5b61df698e054c}{copy} (std\+::shared\+\_\+ptr$<$ O\+S\+TM $>$ to, std\+::shared\+\_\+ptr$<$ O\+S\+TM $>$ from)
+\begin{DoxyCompactList}\small\item\em copy function, make deep copy of the object/pointer \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ O\+S\+TM $>$ \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a1d3b2f023c0d6e715416f1e87e7245bb}{get\+Base\+Copy} (std\+::shared\+\_\+ptr$<$ O\+S\+TM $>$ object)
+\begin{DoxyCompactList}\small\item\em get\+Base\+Copy function, make deep copy of the object/pointer and Return a new B\+A\+N\+K$\ast$ type object \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4d96bb512ffcd1e0b13f632cb7fd242b}{to\+String} ()
+\begin{DoxyCompactList}\small\item\em \+\_\+cast, is use to cast bak the std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to the required type \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a84d8d820016c7eb50323c2dcbb4d73f3}{Set\+Number\+\_\+of\+\_\+alcatel} (int \+\_\+number\+\_\+of\+\_\+alcatel)
+\item 
+virtual int \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a8d278005b2ba46869f6787681ad05704}{Get\+Number\+\_\+of\+\_\+alcatel} ()
+\item 
+virtual void \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a5f2abf60f6fa8a614fadb1419bf1de83}{Set\+Number\+\_\+of\+\_\+nokia} (int \+\_\+number\+\_\+of\+\_\+nokia)
+\item 
+virtual int \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_aac1959dee51204439fc0721403d23447}{Get\+Number\+\_\+of\+\_\+nokia} ()
+\item 
+virtual void \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a87ba00e49e5b201548c57ef4b8beaeff}{Set\+Number\+\_\+of\+\_\+huawei} (int \+\_\+number\+\_\+of\+\_\+huawei)
+\item 
+virtual int \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a9200c484f288fce0246008e5d683507f}{Get\+Number\+\_\+of\+\_\+huawei} ()
+\item 
+virtual void \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ac59a3e67850e4ce6db9f0f0d5a72d8df}{Set\+Number\+\_\+of\+\_\+sony} (int \+\_\+number\+\_\+of\+\_\+sony)
+\item 
+virtual int \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a955e5b413e1f41a36dcc12837664f364}{Get\+Number\+\_\+of\+\_\+sony} ()
+\item 
+virtual void \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a179265eb31e367a082eb4048f38e602d}{Set\+Number\+\_\+of\+\_\+samsung} (int \+\_\+number\+\_\+of\+\_\+samsung)
+\item 
+virtual int \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0cd9d93b5b145846627d3005dff71f6f}{Get\+Number\+\_\+of\+\_\+samsung} ()
+\item 
+virtual void \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a167a9f9ac25b17395e5964b57099b462}{Set\+Number\+\_\+of\+\_\+iphones} (int \+\_\+number\+\_\+of\+\_\+iphones)
+\item 
+virtual int \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a640af469d055cb8836c42ac4ce135e6f}{Get\+Number\+\_\+of\+\_\+iphones} ()
+\item 
+virtual void \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a832266a32b6ee4be5e531aaacb83610c}{Set\+Shop\+\_\+name} (std\+::string \+\_\+shop\+\_\+name)
+\item 
+virtual std\+::string \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4932d1483f97e12e01be200951c572df}{Get\+Shop\+\_\+name} ()
+\item 
+virtual void \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_af26abc216ad013f1cb8ea2b3f788e048}{Set\+Shop\+\_\+address} (std\+::string \+\_\+shop\+\_\+address)
+\item 
+virtual std\+::string \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a90c80d52aa860d00c3fb9c165646637b}{Get\+Shop\+\_\+address} ()
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+Inherit from \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} 
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00019}{19} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h}.
+
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E()}{CARPHONE_WAREHOUSE()}}]{\setlength{\rightskip}{0pt plus 5cm}C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0acec1e20e236b4debf1e0d26334a868}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0acec1e20e236b4debf1e0d26334a868}
+Constructor 
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00024}{24} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00055}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E()}, and \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00021}{get\+Base\+Copy()}.
+
+
+\begin{DoxyCode}
+00024                         : \hyperlink{class_w_a_r_e_h_o_u_s_e_a7a924d389af91f54ed0e1d1d8d56ec57}{WAREHOUSE}()\{
+00025         
+00026         this->\_shop\_address = \textcolor{stringliteral}{"DUBLIN XII"};
+00027         this->\_shop\_name = \textcolor{stringliteral}{"DISTRIBUTION CENTER"};
+00028         this->\_number\_of\_iphones = 10000;
+00029         this->\_number\_of\_samsung = 10000;
+00030         this->\_number\_of\_sony = 10000;
+00031         this->\_number\_of\_huawei = 10000;
+00032         this->\_number\_of\_nokia = 10000;
+00033         this->\_number\_of\_alcatel = 10000;
+00034     \};
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0acec1e20e236b4debf1e0d26334a868_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E(std\+::string address, std\+::string shop\+\_\+name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)}{CARPHONE_WAREHOUSE(std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{address, }
+\item[{std\+::string}]{shop\+\_\+name, }
+\item[{int}]{iphone, }
+\item[{int}]{samsung, }
+\item[{int}]{sony, }
+\item[{int}]{huawei, }
+\item[{int}]{nokia, }
+\item[{int}]{alcatel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a1e61584abd37ed2189143f0c0d4d2e40}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a1e61584abd37ed2189143f0c0d4d2e40}
+Custom constructor 
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00038}{38} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h}.
+
+
+\begin{DoxyCode}
+00038                                                                                                            
+                                : \hyperlink{class_w_a_r_e_h_o_u_s_e_a7a924d389af91f54ed0e1d1d8d56ec57}{WAREHOUSE}()\{
+00039         \textcolor{comment}{/*}
+00040 \textcolor{comment}{         * copy over values}
+00041 \textcolor{comment}{         */}
+00042         this->\_shop\_address = address;
+00043         this->\_shop\_name = shop\_name;
+00044         this->\_number\_of\_iphones = iphone;
+00045         this->\_number\_of\_samsung = samsung;
+00046         this->\_number\_of\_sony = sony;
+00047         this->\_number\_of\_huawei = huawei;
+00048         this->\_number\_of\_nokia = nokia;
+00049         this->\_number\_of\_alcatel = alcatel;
+00050         
+00051     \}; 
+\end{DoxyCode}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E(std\+::shared\+\_\+ptr$<$ W\+A\+R\+E\+H\+O\+U\+S\+E $>$ obj, int \+\_\+version, int \+\_\+unique\+\_\+id)}{CARPHONE_WAREHOUSE(std::shared_ptr< WAREHOUSE > obj, int _version, int _unique_id)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf W\+A\+R\+E\+H\+O\+U\+SE} $>$}]{obj, }
+\item[{int}]{\+\_\+version, }
+\item[{int}]{\+\_\+unique\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a131eb8df5342de81022b166f40f94d92}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a131eb8df5342de81022b166f40f94d92}
+Custom constructor, used by the library for deep copying 
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00055}{55} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h}.
+
+
+
+References \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00024}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E()}.
+
+
+\begin{DoxyCode}
+00055                                                                                   : 
+      \hyperlink{class_w_a_r_e_h_o_u_s_e_a7a924d389af91f54ed0e1d1d8d56ec57}{WAREHOUSE}(\_version, \_unique\_id)\{
+00056         \textcolor{comment}{/*}
+00057 \textcolor{comment}{         * copy over values}
+00058 \textcolor{comment}{         */}
+00059         this->\_shop\_address = obj->GetShop\_address();
+00060         this->\_shop\_name = obj->GetShop\_name();
+00061         this->\_number\_of\_iphones = obj->GetNumber\_of\_iphones();
+00062         this->\_number\_of\_samsung = obj->GetNumber\_of\_samsung();
+00063         this->\_number\_of\_sony = obj->GetNumber\_of\_sony();
+00064         this->\_number\_of\_huawei = obj->GetNumber\_of\_huawei();
+00065         this->\_number\_of\_nokia = obj->GetNumber\_of\_nokia();
+00066         this->\_number\_of\_alcatel = obj->GetNumber\_of\_alcatel();
+00067     \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a131eb8df5342de81022b166f40f94d92_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E(const C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E \&orig)}{CARPHONE_WAREHOUSE(const CARPHONE_WAREHOUSE &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a7b2446d35d557bdfaa8dbd769f845abb}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a7b2446d35d557bdfaa8dbd769f845abb}
+Copy constructor 
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00011}{11} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+\begin{DoxyCode}
+00011                                                                      \{
+00012 \}
+\end{DoxyCode}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!````~C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{$\sim$\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{````~C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{$\sim$\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{$\sim$\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E()}{~CARPHONE_WAREHOUSE()}}]{\setlength{\rightskip}{0pt plus 5cm}C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::$\sim$\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ad125d83e519b6c7ca025a7e2b705c2a8}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ad125d83e519b6c7ca025a7e2b705c2a8}
+de-\/constructor 
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00014}{14} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}.
+
+
+\begin{DoxyCode}
+00014                                         \{
+00015 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ad125d83e519b6c7ca025a7e2b705c2a8_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsubsection{Member Function Documentation}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!copy@{copy}}
+\index{copy@{copy}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ to, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ from)}{copy(std::shared_ptr< OSTM > to, std::shared_ptr< OSTM > from)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::copy (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ O\+S\+TM $>$}]{to, }
+\item[{std\+::shared\+\_\+ptr$<$ O\+S\+TM $>$}]{from}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ab9ecf71cd2728f348a5b61df698e054c}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ab9ecf71cd2728f348a5b61df698e054c}
+
+
+copy function, make deep copy of the object/pointer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+TO} & is a B\+A\+N\+K$\ast$ type object casted back from std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ \\
+\hline
+{\em obj\+F\+R\+OM} & is a B\+A\+N\+K$\ast$ type object casted back from std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00034}{34} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}.
+
+
+\begin{DoxyCode}
+00034                                                                              \{
+00035 
+00036     std::shared\_ptr<CARPHONE\_WAREHOUSE> objTO = std::dynamic\_pointer\_cast<
+      \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e}{CARPHONE\_WAREHOUSE}>(to);
+00037     std::shared\_ptr<CARPHONE\_WAREHOUSE> objFROM = std::dynamic\_pointer\_cast<
+      \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e}{CARPHONE\_WAREHOUSE}>(from);
+00038     objTO->\_shop\_address = objFROM->GetShop\_address();
+00039     objTO->\_shop\_name = objFROM->GetShop\_name();
+00040     objTO->\_number\_of\_iphones = objFROM->GetNumber\_of\_iphones();
+00041     objTO->\_number\_of\_samsung = objFROM->GetNumber\_of\_samsung();
+00042     objTO->\_number\_of\_sony = objFROM->GetNumber\_of\_sony();
+00043     objTO->\_number\_of\_huawei = objFROM->GetNumber\_of\_huawei();
+00044     objTO->\_number\_of\_nokia = objFROM->GetNumber\_of\_nokia();
+00045     objTO->\_number\_of\_alcatel = objFROM->GetNumber\_of\_alcatel();
+00046     objTO->Set\_Unique\_ID(objFROM->Get\_Unique\_ID());
+00047     objTO->Set\_Version(objFROM->Get\_Version());
+00048    
+00049 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ab9ecf71cd2728f348a5b61df698e054c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!get\+Base\+Copy@{get\+Base\+Copy}}
+\index{get\+Base\+Copy@{get\+Base\+Copy}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{get\+Base\+Copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ object)}{getBaseCopy(std::shared_ptr< OSTM > object)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ O\+S\+TM $>$ C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::get\+Base\+Copy (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ O\+S\+TM $>$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a1d3b2f023c0d6e715416f1e87e7245bb}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a1d3b2f023c0d6e715416f1e87e7245bb}
+
+
+get\+Base\+Copy function, make deep copy of the object/pointer and Return a new B\+A\+N\+K$\ast$ type object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+TO} & is a \hyperlink{class_b_a_n_k}{B\+A\+NK} type pointer for casting \\
+\hline
+{\em obj} & is a B\+A\+N\+K$\ast$ return type \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00021}{21} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+References \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00024}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E()}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}.
+
+
+\begin{DoxyCode}
+00022 \{
+00023 
+00024     std::shared\_ptr<WAREHOUSE> objTO = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}>(object);
+00025     std::shared\_ptr<WAREHOUSE> obj(\textcolor{keyword}{new} \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0acec1e20e236b4debf1e0d26334a868}{CARPHONE\_WAREHOUSE}(objTO, object->Get\_Version(),\textcolor{keywordtype}{
+      object}->Get\_Unique\_ID()));
+00026     std::shared\_ptr<OSTM> ostm\_obj = std::dynamic\_pointer\_cast<OSTM>(obj);
+00027     \textcolor{keywordflow}{return} ostm\_obj;
+00028 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a1d3b2f023c0d6e715416f1e87e7245bb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a1d3b2f023c0d6e715416f1e87e7245bb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Get\+Number\+\_\+of\+\_\+alcatel@{Get\+Number\+\_\+of\+\_\+alcatel}}
+\index{Get\+Number\+\_\+of\+\_\+alcatel@{Get\+Number\+\_\+of\+\_\+alcatel}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Get\+Number\+\_\+of\+\_\+alcatel()}{GetNumber_of_alcatel()}}]{\setlength{\rightskip}{0pt plus 5cm}int C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Get\+Number\+\_\+of\+\_\+alcatel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a8d278005b2ba46869f6787681ad05704}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a8d278005b2ba46869f6787681ad05704}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_a2b19e422d84873daecf0e87bf8df900c}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00071}{71} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}, and \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00060}{to\+String()}.
+
+
+\begin{DoxyCode}
+00071                                             \{
+00072     \textcolor{keywordflow}{return} \_number\_of\_alcatel;
+00073 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a8d278005b2ba46869f6787681ad05704_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Get\+Number\+\_\+of\+\_\+huawei@{Get\+Number\+\_\+of\+\_\+huawei}}
+\index{Get\+Number\+\_\+of\+\_\+huawei@{Get\+Number\+\_\+of\+\_\+huawei}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Get\+Number\+\_\+of\+\_\+huawei()}{GetNumber_of_huawei()}}]{\setlength{\rightskip}{0pt plus 5cm}int C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Get\+Number\+\_\+of\+\_\+huawei (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a9200c484f288fce0246008e5d683507f}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a9200c484f288fce0246008e5d683507f}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_adc96b7eec7ce949b02d5413fa3815991}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00087}{87} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}, and \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00060}{to\+String()}.
+
+
+\begin{DoxyCode}
+00087                                            \{
+00088     \textcolor{keywordflow}{return} \_number\_of\_huawei;
+00089 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a9200c484f288fce0246008e5d683507f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Get\+Number\+\_\+of\+\_\+iphones@{Get\+Number\+\_\+of\+\_\+iphones}}
+\index{Get\+Number\+\_\+of\+\_\+iphones@{Get\+Number\+\_\+of\+\_\+iphones}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Get\+Number\+\_\+of\+\_\+iphones()}{GetNumber_of_iphones()}}]{\setlength{\rightskip}{0pt plus 5cm}int C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Get\+Number\+\_\+of\+\_\+iphones (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a640af469d055cb8836c42ac4ce135e6f}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a640af469d055cb8836c42ac4ce135e6f}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_a296a84da4d198c798a6686dbe94d5d69}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00111}{111} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}, and \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00060}{to\+String()}.
+
+
+\begin{DoxyCode}
+00111                                             \{
+00112     \textcolor{keywordflow}{return} \_number\_of\_iphones;
+00113 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a640af469d055cb8836c42ac4ce135e6f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Get\+Number\+\_\+of\+\_\+nokia@{Get\+Number\+\_\+of\+\_\+nokia}}
+\index{Get\+Number\+\_\+of\+\_\+nokia@{Get\+Number\+\_\+of\+\_\+nokia}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Get\+Number\+\_\+of\+\_\+nokia()}{GetNumber_of_nokia()}}]{\setlength{\rightskip}{0pt plus 5cm}int C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Get\+Number\+\_\+of\+\_\+nokia (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_aac1959dee51204439fc0721403d23447}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_aac1959dee51204439fc0721403d23447}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_a27681648a8edcaee6c968b7ffe97ef40}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00079}{79} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}, and \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00060}{to\+String()}.
+
+
+\begin{DoxyCode}
+00079                                           \{
+00080     \textcolor{keywordflow}{return} \_number\_of\_nokia;
+00081 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_aac1959dee51204439fc0721403d23447_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Get\+Number\+\_\+of\+\_\+samsung@{Get\+Number\+\_\+of\+\_\+samsung}}
+\index{Get\+Number\+\_\+of\+\_\+samsung@{Get\+Number\+\_\+of\+\_\+samsung}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Get\+Number\+\_\+of\+\_\+samsung()}{GetNumber_of_samsung()}}]{\setlength{\rightskip}{0pt plus 5cm}int C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Get\+Number\+\_\+of\+\_\+samsung (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0cd9d93b5b145846627d3005dff71f6f}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0cd9d93b5b145846627d3005dff71f6f}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_ace5070fb2546482d39effdad0c5c8013}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00103}{103} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}, and \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00060}{to\+String()}.
+
+
+\begin{DoxyCode}
+00103                                             \{
+00104     \textcolor{keywordflow}{return} \_number\_of\_samsung; 
+00105 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0cd9d93b5b145846627d3005dff71f6f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Get\+Number\+\_\+of\+\_\+sony@{Get\+Number\+\_\+of\+\_\+sony}}
+\index{Get\+Number\+\_\+of\+\_\+sony@{Get\+Number\+\_\+of\+\_\+sony}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Get\+Number\+\_\+of\+\_\+sony()}{GetNumber_of_sony()}}]{\setlength{\rightskip}{0pt plus 5cm}int C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Get\+Number\+\_\+of\+\_\+sony (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a955e5b413e1f41a36dcc12837664f364}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a955e5b413e1f41a36dcc12837664f364}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_a7bac68719dc829c5002dfe4333300b76}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00095}{95} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}, and \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00060}{to\+String()}.
+
+
+\begin{DoxyCode}
+00095                                          \{
+00096     \textcolor{keywordflow}{return} \_number\_of\_sony;
+00097 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a955e5b413e1f41a36dcc12837664f364_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Get\+Shop\+\_\+address@{Get\+Shop\+\_\+address}}
+\index{Get\+Shop\+\_\+address@{Get\+Shop\+\_\+address}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Get\+Shop\+\_\+address()}{GetShop_address()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Get\+Shop\+\_\+address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a90c80d52aa860d00c3fb9c165646637b}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a90c80d52aa860d00c3fb9c165646637b}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_a3525cf304b157992335584c8de81e8e5}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00127}{127} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}, and \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00060}{to\+String()}.
+
+
+\begin{DoxyCode}
+00127                                              \{
+00128     \textcolor{keywordflow}{return} \_shop\_address;
+00129 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a90c80d52aa860d00c3fb9c165646637b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Get\+Shop\+\_\+name@{Get\+Shop\+\_\+name}}
+\index{Get\+Shop\+\_\+name@{Get\+Shop\+\_\+name}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Get\+Shop\+\_\+name()}{GetShop_name()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Get\+Shop\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4932d1483f97e12e01be200951c572df}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4932d1483f97e12e01be200951c572df}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_aef518a1984623c261351a3429d133222}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00119}{119} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}, and \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00060}{to\+String()}.
+
+
+\begin{DoxyCode}
+00119                                           \{
+00120     \textcolor{keywordflow}{return} \_shop\_name;
+00121 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4932d1483f97e12e01be200951c572df_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!operator=@{operator=}}
+\index{operator=@{operator=}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{operator=(const C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E \&orig)}{operator=(const CARPHONE_WAREHOUSE &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} \&}]{orig}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a8d5661ef7c79d7527967c61654ebb612}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a8d5661ef7c79d7527967c61654ebb612}
+Operator 
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{75} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h}.
+
+
+
+References \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00034}{copy()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00021}{get\+Base\+Copy()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00071}{Get\+Number\+\_\+of\+\_\+alcatel()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00087}{Get\+Number\+\_\+of\+\_\+huawei()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00111}{Get\+Number\+\_\+of\+\_\+iphones()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00079}{Get\+Number\+\_\+of\+\_\+nokia()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00103}{Get\+Number\+\_\+of\+\_\+samsung()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00095}{Get\+Number\+\_\+of\+\_\+sony()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00127}{Get\+Shop\+\_\+address()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00119}{Get\+Shop\+\_\+name()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00067}{Set\+Number\+\_\+of\+\_\+alcatel()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00083}{Set\+Number\+\_\+of\+\_\+huawei()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00107}{Set\+Number\+\_\+of\+\_\+iphones()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00075}{Set\+Number\+\_\+of\+\_\+nokia()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00099}{Set\+Number\+\_\+of\+\_\+samsung()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00091}{Set\+Number\+\_\+of\+\_\+sony()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00123}{Set\+Shop\+\_\+address()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00115}{Set\+Shop\+\_\+name()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00060}{to\+String()}, and \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00014}{$\sim$\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E()}.
+
+
+\begin{DoxyCode}
+00075 \{\};
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a8d5661ef7c79d7527967c61654ebb612_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Set\+Number\+\_\+of\+\_\+alcatel@{Set\+Number\+\_\+of\+\_\+alcatel}}
+\index{Set\+Number\+\_\+of\+\_\+alcatel@{Set\+Number\+\_\+of\+\_\+alcatel}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Set\+Number\+\_\+of\+\_\+alcatel(int \+\_\+number\+\_\+of\+\_\+alcatel)}{SetNumber_of_alcatel(int _number_of_alcatel)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Set\+Number\+\_\+of\+\_\+alcatel (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+number\+\_\+of\+\_\+alcatel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a84d8d820016c7eb50323c2dcbb4d73f3}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a84d8d820016c7eb50323c2dcbb4d73f3}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_aa1353184ecc71cce178d76b77f37158b}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00067}{67} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}.
+
+
+\begin{DoxyCode}
+00067                                                                     \{
+00068     this->\_number\_of\_alcatel = \_number\_of\_alcatel;
+00069 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a84d8d820016c7eb50323c2dcbb4d73f3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Set\+Number\+\_\+of\+\_\+huawei@{Set\+Number\+\_\+of\+\_\+huawei}}
+\index{Set\+Number\+\_\+of\+\_\+huawei@{Set\+Number\+\_\+of\+\_\+huawei}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Set\+Number\+\_\+of\+\_\+huawei(int \+\_\+number\+\_\+of\+\_\+huawei)}{SetNumber_of_huawei(int _number_of_huawei)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Set\+Number\+\_\+of\+\_\+huawei (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+number\+\_\+of\+\_\+huawei}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a87ba00e49e5b201548c57ef4b8beaeff}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a87ba00e49e5b201548c57ef4b8beaeff}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_ac0bd1c55f03bd8685163c0413be30ed1}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00083}{83} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}.
+
+
+\begin{DoxyCode}
+00083                                                                   \{
+00084     this->\_number\_of\_huawei = \_number\_of\_huawei;
+00085 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a87ba00e49e5b201548c57ef4b8beaeff_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Set\+Number\+\_\+of\+\_\+iphones@{Set\+Number\+\_\+of\+\_\+iphones}}
+\index{Set\+Number\+\_\+of\+\_\+iphones@{Set\+Number\+\_\+of\+\_\+iphones}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Set\+Number\+\_\+of\+\_\+iphones(int \+\_\+number\+\_\+of\+\_\+iphones)}{SetNumber_of_iphones(int _number_of_iphones)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Set\+Number\+\_\+of\+\_\+iphones (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+number\+\_\+of\+\_\+iphones}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a167a9f9ac25b17395e5964b57099b462}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a167a9f9ac25b17395e5964b57099b462}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_ac522b8812b1554d8f18f967c0b64ad98}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00107}{107} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}.
+
+
+\begin{DoxyCode}
+00107                                                                     \{
+00108     this->\_number\_of\_iphones = \_number\_of\_iphones;
+00109 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a167a9f9ac25b17395e5964b57099b462_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Set\+Number\+\_\+of\+\_\+nokia@{Set\+Number\+\_\+of\+\_\+nokia}}
+\index{Set\+Number\+\_\+of\+\_\+nokia@{Set\+Number\+\_\+of\+\_\+nokia}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Set\+Number\+\_\+of\+\_\+nokia(int \+\_\+number\+\_\+of\+\_\+nokia)}{SetNumber_of_nokia(int _number_of_nokia)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Set\+Number\+\_\+of\+\_\+nokia (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+number\+\_\+of\+\_\+nokia}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a5f2abf60f6fa8a614fadb1419bf1de83}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a5f2abf60f6fa8a614fadb1419bf1de83}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_a13ace834a25aab61c689a7cedad94343}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00075}{75} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}.
+
+
+\begin{DoxyCode}
+00075                                                                 \{
+00076     this->\_number\_of\_nokia = \_number\_of\_nokia;
+00077 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a5f2abf60f6fa8a614fadb1419bf1de83_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Set\+Number\+\_\+of\+\_\+samsung@{Set\+Number\+\_\+of\+\_\+samsung}}
+\index{Set\+Number\+\_\+of\+\_\+samsung@{Set\+Number\+\_\+of\+\_\+samsung}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Set\+Number\+\_\+of\+\_\+samsung(int \+\_\+number\+\_\+of\+\_\+samsung)}{SetNumber_of_samsung(int _number_of_samsung)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Set\+Number\+\_\+of\+\_\+samsung (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+number\+\_\+of\+\_\+samsung}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a179265eb31e367a082eb4048f38e602d}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a179265eb31e367a082eb4048f38e602d}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_a251878c76f2143c0db5863548118555c}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00099}{99} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}.
+
+
+\begin{DoxyCode}
+00099                                                                     \{
+00100     this->\_number\_of\_samsung = \_number\_of\_samsung;
+00101 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a179265eb31e367a082eb4048f38e602d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Set\+Number\+\_\+of\+\_\+sony@{Set\+Number\+\_\+of\+\_\+sony}}
+\index{Set\+Number\+\_\+of\+\_\+sony@{Set\+Number\+\_\+of\+\_\+sony}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Set\+Number\+\_\+of\+\_\+sony(int \+\_\+number\+\_\+of\+\_\+sony)}{SetNumber_of_sony(int _number_of_sony)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Set\+Number\+\_\+of\+\_\+sony (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+number\+\_\+of\+\_\+sony}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ac59a3e67850e4ce6db9f0f0d5a72d8df}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ac59a3e67850e4ce6db9f0f0d5a72d8df}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_aaa0244f513caf1c886a4bd24af72d8aa}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00091}{91} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}.
+
+
+\begin{DoxyCode}
+00091                                                               \{
+00092     this->\_number\_of\_sony = \_number\_of\_sony;
+00093 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ac59a3e67850e4ce6db9f0f0d5a72d8df_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Set\+Shop\+\_\+address@{Set\+Shop\+\_\+address}}
+\index{Set\+Shop\+\_\+address@{Set\+Shop\+\_\+address}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Set\+Shop\+\_\+address(std\+::string \+\_\+shop\+\_\+address)}{SetShop_address(std::string _shop_address)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Set\+Shop\+\_\+address (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{\+\_\+shop\+\_\+address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_af26abc216ad013f1cb8ea2b3f788e048}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_af26abc216ad013f1cb8ea2b3f788e048}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_abb864be9031bba0bcd96ca16edc15476}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00123}{123} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}.
+
+
+\begin{DoxyCode}
+00123                                                                 \{
+00124     this->\_shop\_address = \_shop\_address;
+00125 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_af26abc216ad013f1cb8ea2b3f788e048_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!Set\+Shop\+\_\+name@{Set\+Shop\+\_\+name}}
+\index{Set\+Shop\+\_\+name@{Set\+Shop\+\_\+name}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{Set\+Shop\+\_\+name(std\+::string \+\_\+shop\+\_\+name)}{SetShop_name(std::string _shop_name)}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Set\+Shop\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{\+\_\+shop\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a832266a32b6ee4be5e531aaacb83610c}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a832266a32b6ee4be5e531aaacb83610c}
+
+
+Implements \hyperlink{class_w_a_r_e_h_o_u_s_e_a2703b514a6c2a403f392a61dbb066b46}{W\+A\+R\+E\+H\+O\+U\+SE}.
+
+
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00115}{115} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}.
+
+
+\begin{DoxyCode}
+00115                                                           \{
+00116     this->\_shop\_name = \_shop\_name;
+00117 \}
+\end{DoxyCode}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a832266a32b6ee4be5e531aaacb83610c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\paragraph[{\texorpdfstring{to\+String()}{toString()}}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4d96bb512ffcd1e0b13f632cb7fd242b}{}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4d96bb512ffcd1e0b13f632cb7fd242b}
+
+
+\+\_\+cast, is use to cast bak the std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to the required type 
+
+to\+String function, displays the object values in formatted way 
+
+Definition at line \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00060}{60} of file \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}.
+
+
+
+References \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00071}{Get\+Number\+\_\+of\+\_\+alcatel()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00087}{Get\+Number\+\_\+of\+\_\+huawei()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00111}{Get\+Number\+\_\+of\+\_\+iphones()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00079}{Get\+Number\+\_\+of\+\_\+nokia()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00103}{Get\+Number\+\_\+of\+\_\+samsung()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00095}{Get\+Number\+\_\+of\+\_\+sony()}, \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00127}{Get\+Shop\+\_\+address()}, and \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp_source_l00119}{Get\+Shop\+\_\+name()}.
+
+
+
+Referenced by \hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h_source_l00075}{operator=()}.
+
+
+\begin{DoxyCode}
+00061 \{
+00062    std::cout << \textcolor{stringliteral}{"\(\backslash\)n"} <<  this->\hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4932d1483f97e12e01be200951c572df}{GetShop\_name}() << \textcolor{stringliteral}{"\(\backslash\)nUnique ID : "} << this->Get\_Unique\_ID() << \textcolor{stringliteral}{"
+      \(\backslash\)nShop Name : "}  << this->\hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4932d1483f97e12e01be200951c572df}{GetShop\_name}() << \textcolor{stringliteral}{"\(\backslash\)nShop Address : "} << this->
+      \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a90c80d52aa860d00c3fb9c165646637b}{GetShop\_address}() << \textcolor{stringliteral}{"\(\backslash\)nNo. Iphones : "} << this->
+      \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a640af469d055cb8836c42ac4ce135e6f}{GetNumber\_of\_iphones}() << \textcolor{stringliteral}{"\(\backslash\)nNo. Samsung : "} << this->
+      \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0cd9d93b5b145846627d3005dff71f6f}{GetNumber\_of\_samsung}() << \textcolor{stringliteral}{"\(\backslash\)nNo. Sony : "} << this->
+      \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a955e5b413e1f41a36dcc12837664f364}{GetNumber\_of\_sony}() << \textcolor{stringliteral}{"\(\backslash\)nNo. Huawei : "} << this->
+      \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a9200c484f288fce0246008e5d683507f}{GetNumber\_of\_huawei}() << \textcolor{stringliteral}{"\(\backslash\)nNo. Nokia : "} << this->
+      \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_aac1959dee51204439fc0721403d23447}{GetNumber\_of\_nokia}() << \textcolor{stringliteral}{"\(\backslash\)nNo. Alcatel : "} << this->
+      \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a8d278005b2ba46869f6787681ad05704}{GetNumber\_of\_alcatel}() << \textcolor{stringliteral}{"\(\backslash\)nVersion number : "} << this->Get\_Version() << std::endl;
+00063 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4d96bb512ffcd1e0b13f632cb7fd242b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4d96bb512ffcd1e0b13f632cb7fd242b_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h}\item 
+\hyperlink{_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp}\end{DoxyCompactItemize}

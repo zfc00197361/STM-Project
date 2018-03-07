@@ -1,0 +1,101 @@
+.TH "TX" 3 "Wed Mar 7 2018" "C++ Softwrae Transactional memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TX \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTX\fP (std::thread::id id)"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "\fB~TX\fP ()"
+.br
+.RI "\fIDe-constructor\&. \fP"
+.ti -1c
+.RI "\fBTX\fP (const \fBTX\fP &orig)"
+.br
+.RI "\fIDefault copy constructor\&. \fP"
+.ti -1c
+.RI "void \fBostm_exit\fP ()"
+.br
+.RI "\fIDelete all map entries associated with the main process\&. \fP"
+.ti -1c
+.RI "void \fB_register\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fIRegister \fBOSTM\fP pointer into STM library\&. \fP"
+.ti -1c
+.RI "std::shared_ptr< \fBOSTM\fP > \fBload\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.ti -1c
+.RI "void \fBstore\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fIStore transactional changes\&. \fP"
+.ti -1c
+.RI "bool \fBcommit\fP ()"
+.br
+.RI "\fICommit transactional changes\&. \fP"
+.ti -1c
+.RI "void \fB_increase_tx_nesting\fP ()"
+.br
+.RI "\fIAdd \fBTX\fP nesting level by one\&. \fP"
+.ti -1c
+.RI "void \fB_decrease_tx_nesting\fP ()"
+.br
+.RI "\fIRemove \fBTX\fP nesting level by one\&. \fP"
+.ti -1c
+.RI "int \fBgetTest_counter\fP ()"
+.br
+.ti -1c
+.RI "void \fB_print_all_tx\fP ()"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static int \fBtest_counter\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBTM\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 24 of file TX\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "std::shared_ptr<\fBOSTM\fP> TX::load (std::shared_ptr< \fBOSTM\fP > object)"
+Register \fBOSTM\fP pointer into STM library 
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBTM\fP\fC [friend]\fP"
+Only \fBTM\fP Transaction Manager can create instance of \fBTX\fP Transaction 
+.PP
+Definition at line 70 of file TX\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int TX::test_counter\fC [static]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fItest_counter\fP int ONLY FOR TESTING!!! 
+.RE
+.PP
+
+.PP
+Definition at line 78 of file TX\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Softwrae Transactional memory from the source code\&.

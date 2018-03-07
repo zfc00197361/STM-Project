@@ -1,0 +1,93 @@
+.TH "BANK" 3 "Wed Mar 7 2018" "C++ Softwrae Transactional memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BANK \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <BANK\&.h>\fP
+.PP
+Inherits \fBOSTM\fP\&.
+.PP
+Inherited by \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBANK\fP ()"
+.br
+.ti -1c
+.RI "\fBBANK\fP (int _version, int _unique_id)"
+.br
+.ti -1c
+.RI "\fBBANK\fP (const \fBBANK\fP &orig)"
+.br
+.ti -1c
+.RI "virtual \fB~BANK\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetAddress\fP (std::string address)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetAddress\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetBalance\fP (double balance)"
+.br
+.ti -1c
+.RI "virtual double \fBGetBalance\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetAccountNumber\fP (int accountNumber)"
+.br
+.ti -1c
+.RI "virtual int \fBGetAccountNumber\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetLastName\fP (std::string lastName)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetLastName\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetFirstName\fP (std::string firstName)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetFirstName\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetFullname\fP (std::string fullname)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetFullname\fP () const "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBBANK\fP inherit from the \fBOSTM\fP library\&. It is declares the common functions in the child classes as a virtual function\&. 
+.PP
+Definition at line 16 of file BANK\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "BANK::BANK ()\fC [inline]\fP"
+Constructor 
+.PP
+Definition at line 23 of file BANK\&.h\&.
+.SS "BANK::BANK (int _version, int _unique_id)\fC [inline]\fP"
+Custom Constructor 
+.PP
+Definition at line 29 of file BANK\&.h\&.
+.SS "BANK::BANK (const \fBBANK\fP & orig)"
+Copy constructor 
+.PP
+Definition at line 11 of file BANK\&.cpp\&.
+.SS "BANK::~BANK ()\fC [virtual]\fP"
+de-constructor 
+.PP
+Definition at line 14 of file BANK\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Softwrae Transactional memory from the source code\&.

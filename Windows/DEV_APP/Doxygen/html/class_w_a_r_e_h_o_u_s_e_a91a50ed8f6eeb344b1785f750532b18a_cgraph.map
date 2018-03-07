@@ -1,0 +1,20 @@
+<map id="WAREHOUSE::WAREHOUSE" name="WAREHOUSE::WAREHOUSE">
+<area shape="rect" id="node2" href="$class_w_a_r_e_h_o_u_s_e.html#a2b19e422d84873daecf0e87bf8df900c" title="WAREHOUSE::GetNumber\l_of_alcatel" alt="" coords="276,5,463,47"/>
+<area shape="rect" id="node3" href="$class_w_a_r_e_h_o_u_s_e.html#adc96b7eec7ce949b02d5413fa3815991" title="WAREHOUSE::GetNumber\l_of_huawei" alt="" coords="276,71,463,112"/>
+<area shape="rect" id="node4" href="$class_w_a_r_e_h_o_u_s_e.html#a296a84da4d198c798a6686dbe94d5d69" title="WAREHOUSE::GetNumber\l_of_iphones" alt="" coords="276,136,463,177"/>
+<area shape="rect" id="node5" href="$class_w_a_r_e_h_o_u_s_e.html#a27681648a8edcaee6c968b7ffe97ef40" title="WAREHOUSE::GetNumber\l_of_nokia" alt="" coords="276,201,463,243"/>
+<area shape="rect" id="node6" href="$class_w_a_r_e_h_o_u_s_e.html#ace5070fb2546482d39effdad0c5c8013" title="WAREHOUSE::GetNumber\l_of_samsung" alt="" coords="276,267,463,308"/>
+<area shape="rect" id="node7" href="$class_w_a_r_e_h_o_u_s_e.html#a7bac68719dc829c5002dfe4333300b76" title="WAREHOUSE::GetNumber\l_of_sony" alt="" coords="276,332,463,373"/>
+<area shape="rect" id="node8" href="$class_w_a_r_e_h_o_u_s_e.html#a3525cf304b157992335584c8de81e8e5" title="WAREHOUSE::GetShop\l_address" alt="" coords="284,397,455,439"/>
+<area shape="rect" id="node9" href="$class_w_a_r_e_h_o_u_s_e.html#aef518a1984623c261351a3429d133222" title="WAREHOUSE::GetShop_name" alt="" coords="265,463,474,490"/>
+<area shape="rect" id="node10" href="$class_w_a_r_e_h_o_u_s_e.html#aa1353184ecc71cce178d76b77f37158b" title="WAREHOUSE::SetNumber\l_of_alcatel" alt="" coords="277,515,462,556"/>
+<area shape="rect" id="node11" href="$class_w_a_r_e_h_o_u_s_e.html#ac0bd1c55f03bd8685163c0413be30ed1" title="WAREHOUSE::SetNumber\l_of_huawei" alt="" coords="277,580,462,621"/>
+<area shape="rect" id="node12" href="$class_w_a_r_e_h_o_u_s_e.html#ac522b8812b1554d8f18f967c0b64ad98" title="WAREHOUSE::SetNumber\l_of_iphones" alt="" coords="277,645,462,687"/>
+<area shape="rect" id="node13" href="$class_w_a_r_e_h_o_u_s_e.html#a13ace834a25aab61c689a7cedad94343" title="WAREHOUSE::SetNumber\l_of_nokia" alt="" coords="277,711,462,752"/>
+<area shape="rect" id="node14" href="$class_w_a_r_e_h_o_u_s_e.html#a251878c76f2143c0db5863548118555c" title="WAREHOUSE::SetNumber\l_of_samsung" alt="" coords="277,776,462,817"/>
+<area shape="rect" id="node15" href="$class_w_a_r_e_h_o_u_s_e.html#aaa0244f513caf1c886a4bd24af72d8aa" title="WAREHOUSE::SetNumber\l_of_sony" alt="" coords="277,841,462,883"/>
+<area shape="rect" id="node16" href="$class_w_a_r_e_h_o_u_s_e.html#abb864be9031bba0bcd96ca16edc15476" title="WAREHOUSE::SetShop\l_address" alt="" coords="285,907,454,948"/>
+<area shape="rect" id="node17" href="$class_w_a_r_e_h_o_u_s_e.html#a2703b514a6c2a403f392a61dbb066b46" title="WAREHOUSE::SetShop_name" alt="" coords="265,973,473,999"/>
+<area shape="rect" id="node18" href="$class_w_a_r_e_h_o_u_s_e.html#a7a924d389af91f54ed0e1d1d8d56ec57" title="WAREHOUSE::WAREHOUSE" alt="" coords="265,1023,473,1050"/>
+<area shape="rect" id="node19" href="$class_w_a_r_e_h_o_u_s_e.html#ad5aa686839d7be9bfea33d469c58086b" title="WAREHOUSE::~WAREHOUSE" alt="" coords="261,1074,477,1101"/>
+</map>

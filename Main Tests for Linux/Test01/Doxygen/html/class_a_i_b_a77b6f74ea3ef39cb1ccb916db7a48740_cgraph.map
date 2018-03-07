@@ -1,0 +1,10 @@
+<map id="AIB::operator=" name="AIB::operator=">
+<area shape="rect" id="node2" href="$class_a_i_b.html#a22b11c50b0986326c86315957528bf79" title="AIB::~AIB" alt="" coords="184,5,267,32"/>
+<area shape="rect" id="node3" href="$class_a_i_b.html#ad76f25ce86cb42028440f41c371903e0" title="copy function, make deep copy of the object/pointer " alt="" coords="185,56,265,83"/>
+<area shape="rect" id="node5" href="$class_a_i_b.html#a987107f3d7a04790f84c1e7eeee37575" title="getBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr&lt;BANK&gt; typ..." alt="" coords="160,107,291,133"/>
+<area shape="rect" id="node7" href="$class_a_i_b.html#aff0f0a0db75a17efec4bd500b888232d" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="177,157,274,184"/>
+<area shape="rect" id="node4" href="$class_o_s_t_m.html#ab5019a32185631c08abbf826422f2d93" title="setter for unique id " alt="" coords="339,56,497,83"/>
+<area shape="rect" id="node6" href="$class_a_i_b.html#a4783110463bf12f937a85b62455faf38" title="AIB::AIB" alt="" coords="381,107,455,133"/>
+<area shape="rect" id="node8" href="$class_o_s_t_m.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="339,157,497,184"/>
+<area shape="rect" id="node9" href="$class_o_s_t_m.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="348,208,488,235"/>
+</map>

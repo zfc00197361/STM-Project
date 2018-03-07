@@ -1,0 +1,10 @@
+.TH "md__r_e_a_d_m_e" 3 "Wed Mar 7 2018" "C++ Software Transactional memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md__r_e_a_d_m_e \- README 
+C++ Software Transactional Memory (STM)
+.PP
+This documentation includes all the project specific files that required to build the STM library and the client code to use the library\&. The client code is demostrate the usage of the STM API (Application Programming Interface)\&. The STM library is a object based implementation, where the client need to inherite from the library on order to achieve the polymorphic Object Oriented Programming (OOP) behaviour\&.
+.PP
+The client application use a middle class to declare the child (Classes inherite from \fBBANK\fP) specific behaviour as a virtual methods\&. Whit this implementation the client application need to casting back the OSTM object to \fBBANK\fP object to use the child class implemented speciffic behaviours\&. 

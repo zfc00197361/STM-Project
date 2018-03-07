@@ -1,0 +1,62 @@
+thread\+Array\+Size = 1 -\/ 300 Nested transaction Test with any number of threads~\newline
+ Function {\itshape nesting} is create a transaction and transfer between two objects~\newline
+ Then create a Transaction inside the transaction, (nested Transaction)~\newline
+ and inside the nested transaction invokes the {\itshape two\+\_\+account\+\_\+transfer} transaction, that will be the third level inner transaction.~\newline
+ ~\newline
+ T\+E\+ST details\+: Used values \+:~\newline
+ Tanfer amount used in the transactions \+:~\newline
+ $\ast$transfer\+Amount = 1~\newline
+ Number of threads used in the test application \+: ~\newline
+ $\ast$thread\+Array\+Size = 1 -\/10 -\/ 300 specified in every test~\newline
+ ~\newline
+ Six \doxyref{O\+S\+TM}{p.}{class_o_s_t_m} type smart pointer aib\+\_\+ptr, boi\+\_\+ptr, boa\+\_\+ptr, swplc\+\_\+ptr, ulster\+\_\+ptr, unbl\+\_\+ptr , these objects are inherites from \doxyref{B\+A\+NK}{p.}{class_b_a_n_k} parent class.~\newline
+ Every thread used two object in the transaction within the {\itshape nesting} function, and creates a nested transaction using the same objects.~\newline
+ Inside the nested transaction makes a function call to the {\itshape two\+\_\+account\+\_\+transfer} function, which is creates a transaction and a nested transaction in the nested transaction.~\newline
+ So, every thread used the objects in four level deep transactions.~\newline
+ To make easyer to folow the calculation the transactions are using the objects in the same transfering oder, from-\/to.~\newline
+ ~\newline
+ Test 1\+: using only 1 Thread with two objetcs aib\+\_\+ptr, boi\+\_\+ptr and tranfering 1 unit in every transaction \+:~\newline
+ th\+Array[i] = std\+::thread({\itshape nesting}, aib\+\_\+ptr, boi\+\_\+ptr, std\+::ref(tm), transfer\+Amount);~\newline
+ Start values \+: Double value \+: 500 to each.~\newline
+ Nesting level 4.~\newline
+ After transactions \+: ~\newline
+
+\begin{DoxyItemize}
+\item To account \+: aib\+\_\+ptr -\/ Double value \+: 504 ~\newline
+
+\item From account \+: boi\+\_\+ptr -\/ Double value \+: 496 ~\newline
+
+\item version number 1. for all object used in transaction~\newline
+ ~\newline
+ Test 2\+: using 10 Thread with two objetcs aib\+\_\+ptr, boi\+\_\+ptr and tranfering 1 unit in every transaction \+:~\newline
+ Start values \+: Double value \+: 500 to each.~\newline
+ Nesting level 4.~\newline
+ After transactions \+: ~\newline
+
+\item To account \+: aib\+\_\+ptr -\/ Double value \+: 540 ~\newline
+
+\item From account \+: boi\+\_\+ptr -\/ Double value \+: 460 ~\newline
+
+\item version number 10. for all object used in transaction~\newline
+ ~\newline
+ Test 3\+: using 300 Thread with six objetcs aib\+\_\+ptr, boi\+\_\+ptr, boa\+\_\+ptr, swplc\+\_\+ptr, ulster\+\_\+ptr, unbl\+\_\+ptr and tranfering 1 unit in every transaction \+:~\newline
+ Every object will be used by 100 threads.~\newline
+ Start values \+: Double value \+: 500 to each.~\newline
+ Nesting level 4.~\newline
+ After transactions \+: ~\newline
+
+\item To account \+: aib\+\_\+ptr -\/ Double value \+: 900 ~\newline
+
+\item From account \+: boi\+\_\+ptr -\/ Double value \+: 100 ~\newline
+
+\item To account \+: boa\+\_\+ptr -\/ Double value \+: 900 ~\newline
+
+\item From account \+: swplc\+\_\+ptr -\/ Double value \+: 100 ~\newline
+
+\item To account \+: ulster\+\_\+ptr -\/ Double value \+: 900 ~\newline
+
+\item From account \+: unbl\+\_\+ptr -\/ Double value \+: 100 ~\newline
+
+\item version number 100. for all object used in transaction~\newline
+ 
+\end{DoxyItemize}

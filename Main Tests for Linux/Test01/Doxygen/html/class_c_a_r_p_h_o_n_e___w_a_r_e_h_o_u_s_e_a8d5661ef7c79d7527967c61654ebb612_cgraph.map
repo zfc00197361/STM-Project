@@ -1,0 +1,9 @@
+<map id="CARPHONE_WAREHOUSE::operator=" name="CARPHONE_WAREHOUSE::operator=">
+<area shape="rect" id="node2" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e.html#ad125d83e519b6c7ca025a7e2b705c2a8" title="CARPHONE_WAREHOUSE\l::~CARPHONE_WAREHOUSE" alt="" coords="248,5,459,47"/>
+<area shape="rect" id="node3" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e.html#ab9ecf71cd2728f348a5b61df698e054c" title="copy function, make deep copy of the object/pointer " alt="" coords="256,71,451,112"/>
+<area shape="rect" id="node4" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e.html#a1d3b2f023c0d6e715416f1e87e7245bb" title="getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object ..." alt="" coords="256,136,451,177"/>
+<area shape="rect" id="node6" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e.html#a4d96bb512ffcd1e0b13f632cb7fd242b" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="256,201,451,243"/>
+<area shape="rect" id="node5" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e.html#a0acec1e20e236b4debf1e0d26334a868" title="CARPHONE_WAREHOUSE\l::CARPHONE_WAREHOUSE" alt="" coords="507,136,709,177"/>
+<area shape="rect" id="node7" href="$class_o_s_t_m.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="529,205,687,231"/>
+<area shape="rect" id="node8" href="$class_o_s_t_m.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="538,255,678,282"/>
+</map>

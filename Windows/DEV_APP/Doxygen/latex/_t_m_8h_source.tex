@@ -1,0 +1,48 @@
+\hypertarget{_t_m_8h_source}{}\subsection{T\+M.\+h}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/* }
+00002 \textcolor{comment}{ * File:   TM.h}
+00003 \textcolor{comment}{ * Author: Zoltan Fuzesi}
+00004 \textcolor{comment}{ * }
+00005 \textcolor{comment}{ * Created on December 18, 2017, 2:09 PM}
+00006 \textcolor{comment}{ * Transaction Manager class fields and methods declarations}
+00007 \textcolor{comment}{ */}
+00037 \textcolor{preprocessor}{#ifndef TM\_H}
+00038 \textcolor{preprocessor}{#define TM\_H}
+00039 
+00040 \textcolor{preprocessor}{#include <thread>}
+00041 \textcolor{preprocessor}{#include <process.h>} 
+00042 \textcolor{preprocessor}{#include <mutex>}
+00043 \textcolor{preprocessor}{#include <unordered\_map>}
+00044 \textcolor{preprocessor}{#include <utility>}
+00045 \textcolor{preprocessor}{#include <map>}
+00046 \textcolor{preprocessor}{#include "\hyperlink{_t_x_8h}{TX.h}"}
+00047 
+\hypertarget{_t_m_8h_source.tex_l00048}{}\hyperlink{_t_m_8h_af1e9f68adb6103ea4a812b24f578c750}{00048} \textcolor{keyword}{class }\textcolor{keyword}{\_\_declspec(dllexport)} TM \{
+00049 \textcolor{keyword}{private}:
+00053     TM() = \textcolor{keywordflow}{default};
+00057     ~TM() = \textcolor{keywordflow}{default};
+00061     TM(\textcolor{keyword}{const} TM&) = \textcolor{keyword}{delete};
+00065     TM& operator=(\textcolor{keyword}{const} TM&) = \textcolor{keyword}{delete};
+00069     std::map<std::thread::id, std::shared\_ptr<TX>>txMap;
+00074     \textcolor{keyword}{static} std::map<int, std::map< std::thread::id, int >> process\_map\_collection;
+00078     std::map< std::thread::id, int > get\_thread\_Map();
+00082     \textcolor{keywordtype}{void} registerTX();
+00086     std::mutex register\_Lock;
+00090     std::mutex get\_Lock;
+00094     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \_tm\_id;
+00095     
+00096 \textcolor{keyword}{public}:
+00097 
+00101     \textcolor{keyword}{static} TM& Instance();
+00105     std::shared\_ptr<TX>\textcolor{keyword}{const} \_get\_tx();
+00109     \textcolor{keywordtype}{void} \_TX\_EXIT();
+00113     \textcolor{keywordtype}{void} print\_all();
+00114     
+00115 
+00116 \};
+00117 
+00118 
+00119 \textcolor{preprocessor}{#endif // TM\_H}
+\end{DoxyCode}

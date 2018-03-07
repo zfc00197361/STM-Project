@@ -1,0 +1,195 @@
+\hypertarget{class_t_m}{}\subsection{TM Class Reference}
+\label{class_t_m}\index{TM@{TM}}
+
+
+Collaboration diagram for TM\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_t_m__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_t_x}{TX} $>$ const \hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075}{\+\_\+get\+\_\+tx} ()
+\begin{DoxyCompactList}\small\item\em \+\_\+get\+\_\+tx std\+::shared\+\_\+ptr$<$\+T\+X$>$, returning a shared pointer with the transaction \end{DoxyCompactList}\item 
+void \hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06}{\+\_\+\+T\+X\+\_\+\+E\+X\+IT} ()
+\begin{DoxyCompactList}\small\item\em \+\_\+\+T\+X\+\_\+\+E\+X\+IT void, the thread calls the ostm\+\_\+exit function in the transaction, and clear all elements from the shared global collection associated with the main process \end{DoxyCompactList}\item 
+void \hyperlink{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09}{print\+\_\+all} ()
+\begin{DoxyCompactList}\small\item\em O\+N\+LY F\+OR T\+E\+S\+T\+I\+NG print\+\_\+all void, print out all object key from tx\+M\+AP collection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_t_m}{TM} \& \hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60}{Instance} ()
+\begin{DoxyCompactList}\small\item\em Scott Meyer\textquotesingle{}s Singleton creation, what is thread safe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+
+
+Definition at line \hyperlink{_t_m_8h_source_l00049}{49} of file \hyperlink{_t_m_8h_source}{T\+M.\+h}.
+
+
+
+\subsubsection{Member Function Documentation}
+\index{TM@{TM}!\+\_\+get\+\_\+tx@{\+\_\+get\+\_\+tx}}
+\index{\+\_\+get\+\_\+tx@{\+\_\+get\+\_\+tx}!TM@{TM}}
+\paragraph[{\texorpdfstring{\+\_\+get\+\_\+tx()}{_get_tx()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf TX} $>$ const T\+M\+::\+\_\+get\+\_\+tx (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_t_m_a41cb0226cc4080c931651b13f74a0075}{}\label{class_t_m_a41cb0226cc4080c931651b13f74a0075}
+
+
+\+\_\+get\+\_\+tx std\+::shared\+\_\+ptr$<$\+T\+X$>$, returning a shared pointer with the transaction 
+
+\+\_\+get\+\_\+tx std\+::shared\+\_\+ptr$<$\+T\+X$>$, return a shared\+\_\+ptr with the Transaction object, if \hyperlink{class_t_x}{TX} not exists then create one, else increasing the nesting level  std\+::mutex, protect shared collection from critical section
+
+
+\begin{DoxyParams}{Parameters}
+{\em guard} & std\+::lock\+\_\+guard, locks the register\+\_\+\+Lock mutex, unlock automatically when goes out of the scope \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_t_m_8cpp_source_l00077}{77} of file \hyperlink{_t_m_8cpp_source}{T\+M.\+cpp}.
+
+
+\begin{DoxyCode}
+00078 \{
+00079     std::lock\_guard<std::mutex> guard(get\_Lock);
+00080 
+00081     std::map<std::thread::id, std::shared\_ptr<TX>>::iterator it = txMap.find(std::this\_thread::get\_id());
+00082     \textcolor{keywordflow}{if}(it == txMap.end())
+00083     \{
+00084        registerTX();
+00085        it = txMap.find(std::this\_thread::get\_id());
+00086        
+00087     \} \textcolor{keywordflow}{else} \{
+00088         it->second->\_increase\_tx\_nesting();
+00089     \}
+00090     \textcolor{comment}{//it = txMap.find(std::this\_thread::get\_id());}
+00091     
+00092 
+00093     \textcolor{keywordflow}{return} it->second;
+00094 
+00095 \}
+\end{DoxyCode}
+\index{TM@{TM}!\+\_\+\+T\+X\+\_\+\+E\+X\+IT@{\+\_\+\+T\+X\+\_\+\+E\+X\+IT}}
+\index{\+\_\+\+T\+X\+\_\+\+E\+X\+IT@{\+\_\+\+T\+X\+\_\+\+E\+X\+IT}!TM@{TM}}
+\paragraph[{\texorpdfstring{\+\_\+\+T\+X\+\_\+\+E\+X\+I\+T()}{_TX_EXIT()}}]{\setlength{\rightskip}{0pt plus 5cm}void T\+M\+::\+\_\+\+T\+X\+\_\+\+E\+X\+IT (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_t_m_a5e2d1127f2429f2f524d25f430eade06}{}\label{class_t_m_a5e2d1127f2429f2f524d25f430eade06}
+
+
+\+\_\+\+T\+X\+\_\+\+E\+X\+IT void, the thread calls the ostm\+\_\+exit function in the transaction, and clear all elements from the shared global collection associated with the main process 
+
+\+\_\+\+T\+X\+\_\+\+E\+X\+IT void, the thread calls the ostm\+\_\+exit function in the transaction, and clear all elements from the shared global collection associated with the main process  tx \hyperlink{class_t_x}{TX}, local object to function in transaction 
+
+Definition at line \hyperlink{_t_m_8cpp_source_l00100}{100} of file \hyperlink{_t_m_8cpp_source}{T\+M.\+cpp}.
+
+
+
+References \hyperlink{_t_x_8cpp_source_l00072}{T\+X\+::ostm\+\_\+exit()}.
+
+
+\begin{DoxyCode}
+00100                  \{
+00101     \hyperlink{class_t_x}{TX} tx(std::this\_thread::get\_id());
+00102     pid\_t ppid = getppid();
+00103     std::map<pid\_t, std::map< std::thread::id, int >>::iterator process\_map\_collection\_Iterator = 
+      TM::process\_map\_collection.find(ppid);
+00104     \textcolor{keywordflow}{if} (process\_map\_collection\_Iterator != TM::process\_map\_collection.end()) \{
+00105 
+00106         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} current = process\_map\_collection\_Iterator->second.begin(); current != 
+      process\_map\_collection\_Iterator->second.end(); ++current) \{
+00107             \textcolor{comment}{/*}
+00108 \textcolor{comment}{             * Delete all transaction associated with the actual main process
+}
+00109 \textcolor{comment}{             */}
+00110             txMap.erase(current->first);
+00111         \}
+00112         TM::process\_map\_collection.erase(ppid);
+00113 
+00114     \}
+00115     tx.ostm\_exit();
+00116 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_t_m_a5e2d1127f2429f2f524d25f430eade06_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{TM@{TM}!Instance@{Instance}}
+\index{Instance@{Instance}!TM@{TM}}
+\paragraph[{\texorpdfstring{Instance()}{Instance()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TM} \& T\+M\+::\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60}{}\label{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60}
+
+
+Scott Meyer\textquotesingle{}s Singleton creation, what is thread safe. 
+
+Instance \hyperlink{class_t_m}{TM}, return the same singleton object to any process.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+instance} & \hyperlink{class_t_m}{TM}, static class reference to the instance of the Transaction Manager class \\
+\hline
+{\em \+\_\+instance} & ppid, assigning the process id whoever created the Singleton instance \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_t_m_8cpp_source_l00027}{27} of file \hyperlink{_t_m_8cpp_source}{T\+M.\+cpp}.
+
+
+\begin{DoxyCode}
+00027                  \{
+00028     \textcolor{keyword}{static} \hyperlink{class_t_m}{TM} \_instance;
+00029     \_instance.\_tm\_id = getpid();
+00030 
+00031     \textcolor{keywordflow}{return} \_instance;
+00032 \}
+\end{DoxyCode}
+\index{TM@{TM}!print\+\_\+all@{print\+\_\+all}}
+\index{print\+\_\+all@{print\+\_\+all}!TM@{TM}}
+\paragraph[{\texorpdfstring{print\+\_\+all()}{print_all()}}]{\setlength{\rightskip}{0pt plus 5cm}void T\+M\+::print\+\_\+all (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09}{}\label{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09}
+
+
+O\+N\+LY F\+OR T\+E\+S\+T\+I\+NG print\+\_\+all void, print out all object key from tx\+M\+AP collection. 
+
+O\+N\+LY F\+OR T\+E\+S\+T\+I\+NG print\+\_\+all void, prints all object in the tx\+Map 
+
+Definition at line \hyperlink{_t_m_8cpp_source_l00120}{120} of file \hyperlink{_t_m_8cpp_source}{T\+M.\+cpp}.
+
+
+\begin{DoxyCode}
+00120                   \{
+00121     get\_Lock.lock();
+00122     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} current = txMap.begin(); current != txMap.end(); ++current) \{
+00123         std::cout << \textcolor{stringliteral}{"KEY : "} << current->first << std::endl;
+00124     \}
+00125     get\_Lock.unlock();
+00126 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+M.\+h\item 
+T\+M.\+cpp\end{DoxyCompactItemize}

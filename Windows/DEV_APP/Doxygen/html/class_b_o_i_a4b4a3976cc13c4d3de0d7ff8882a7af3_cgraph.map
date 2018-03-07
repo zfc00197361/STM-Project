@@ -1,0 +1,19 @@
+<map id="BOI::operator=" name="BOI::operator=">
+<area shape="rect" id="node2" href="$class_b_o_i.html#a9ff2d32c25c23a1bea6316f50c3bf677" title="copy function, make deep copy of the object/pointer " alt="" coords="188,49,269,76"/>
+<area shape="rect" id="node3" href="$class_b_o_i.html#affc9e7e2a36214b3790f250b7108bb65" title="BOI::SetAccountNumber" alt="" coords="345,24,511,50"/>
+<area shape="rect" id="node4" href="$class_b_o_i.html#a5b18e1538f3d37835234946cdf9f240f" title="BOI::GetAccountNumber" alt="" coords="344,106,512,133"/>
+<area shape="rect" id="node5" href="$class_b_o_i.html#a8920e1f47b22445ba954e86012207462" title="BOI::GetAddress" alt="" coords="167,353,290,380"/>
+<area shape="rect" id="node6" href="$class_b_o_i.html#a25b289dece2a1685bb9d1a9332c9be0b" title="BOI::GetBalance" alt="" coords="367,182,489,209"/>
+<area shape="rect" id="node7" href="$class_b_o_i.html#ad53ae2918a656793b9d7a670d35ecfa3" title="getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object ..." alt="" coords="163,404,295,430"/>
+<area shape="rect" id="node9" href="$class_b_o_i.html#ab4b9d50c6008a666aa4382def580e7d1" title="BOI::GetFirstName" alt="" coords="361,245,495,272"/>
+<area shape="rect" id="node10" href="$class_b_o_i.html#af56446a377068cd65526e40e8b31b878" title="BOI::GetFullname" alt="" coords="165,454,292,481"/>
+<area shape="rect" id="node11" href="$class_b_o_i.html#a37828f3fa4a32f522966e2cad90eaab2" title="BOI::GetLastName" alt="" coords="361,302,495,329"/>
+<area shape="rect" id="node12" href="$class_b_o_i.html#a00c9386c862cf2442968bf7fc30102b3" title="BOI::SetAddress" alt="" coords="168,505,289,532"/>
+<area shape="rect" id="node13" href="$class_b_o_i.html#a416667693c10f5e4120eec97a9269348" title="BOI::SetBalance" alt="" coords="169,556,289,582"/>
+<area shape="rect" id="node14" href="$class_b_o_i.html#ae9042f87be085c2cec799981c30d7d19" title="BOI::SetFirstName" alt="" coords="161,606,296,633"/>
+<area shape="rect" id="node15" href="$class_b_o_i.html#a93091f16610f1a1474aea31fd5f81ffd" title="BOI::SetFullname" alt="" coords="165,657,292,684"/>
+<area shape="rect" id="node16" href="$class_b_o_i.html#a663906e9a59ffa970fb928746c01e8af" title="BOI::SetLastName" alt="" coords="162,708,295,734"/>
+<area shape="rect" id="node17" href="$class_b_o_i.html#ab02a4dd4ebcc5b2abfaca19f2dff2006" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="179,201,278,228"/>
+<area shape="rect" id="node18" href="$class_b_o_i.html#a617f46a599129178c6b11b4846759a6c" title="BOI::~BOI" alt="" coords="187,758,271,785"/>
+<area shape="rect" id="node8" href="$class_b_o_i.html#a6af682a5f199a029681f0cb2b8658706" title="BOI::BOI" alt="" coords="390,404,466,430"/>
+</map>

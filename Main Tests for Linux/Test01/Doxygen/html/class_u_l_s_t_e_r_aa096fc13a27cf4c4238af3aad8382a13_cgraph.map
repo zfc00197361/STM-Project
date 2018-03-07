@@ -1,0 +1,10 @@
+<map id="ULSTER::operator=" name="ULSTER::operator=">
+<area shape="rect" id="node2" href="$class_u_l_s_t_e_r.html#a4ceb68bdbc806f74f9e55096f8223453" title="ULSTER::~ULSTER" alt="" coords="201,5,345,32"/>
+<area shape="rect" id="node3" href="$class_u_l_s_t_e_r.html#aeef5c3e20f2a82344b4b83e5ccf4cc40" title="copy function, make deep copy of the object/pointer " alt="" coords="218,56,329,83"/>
+<area shape="rect" id="node5" href="$class_u_l_s_t_e_r.html#ad0c05e562b0c67283edfa4940c9aa728" title="getBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr&lt;BANK&gt; typ..." alt="" coords="192,107,355,133"/>
+<area shape="rect" id="node7" href="$class_u_l_s_t_e_r.html#a341bbcb3f7d6ef10f30d4734ceed10ee" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="209,157,337,184"/>
+<area shape="rect" id="node4" href="$class_o_s_t_m.html#ab5019a32185631c08abbf826422f2d93" title="setter for unique id " alt="" coords="403,56,561,83"/>
+<area shape="rect" id="node6" href="$class_u_l_s_t_e_r.html#a637ad8cb5537167ab51cd079637a8323" title="ULSTER::ULSTER" alt="" coords="414,107,550,133"/>
+<area shape="rect" id="node8" href="$class_o_s_t_m.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="403,157,561,184"/>
+<area shape="rect" id="node9" href="$class_o_s_t_m.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="412,208,552,235"/>
+</map>

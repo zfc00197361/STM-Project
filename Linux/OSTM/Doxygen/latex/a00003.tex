@@ -1,0 +1,423 @@
+\hypertarget{a00003}{}\subsection{O\+S\+TM Class Reference}
+\label{a00003}\index{O\+S\+TM@{O\+S\+TM}}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{a00003_a968edf778668bd0ec7603f0571619196}{O\+S\+TM} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{a00003}{O\+S\+TM} Constructor. \end{DoxyCompactList}\item 
+\hyperlink{a00003_a2314f55a127b94aa8a51d19ba798401e}{O\+S\+TM} (int \+\_\+version\+\_\+number\+\_\+, int \+\_\+unique\+\_\+id\+\_\+)
+\begin{DoxyCompactList}\small\item\em \hyperlink{a00003}{O\+S\+TM} Custom Constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{a00003_a30a17d73d0259c60eeab72d6dfa9ceb1}{$\sim$\+O\+S\+TM} ()
+\begin{DoxyCompactList}\small\item\em De-\/constructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00003_a535d90fced5adbb70312c92f3778e08d}{copy} (std\+::shared\+\_\+ptr$<$ \hyperlink{a00003}{O\+S\+TM} $>$ from, std\+::shared\+\_\+ptr$<$ \hyperlink{a00003}{O\+S\+TM} $>$ to)\hypertarget{a00003_a535d90fced5adbb70312c92f3778e08d}{}\label{a00003_a535d90fced5adbb70312c92f3778e08d}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{a00003}{O\+S\+TM} required virtual method for deep copy. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{a00003}{O\+S\+TM} $>$ \hyperlink{a00003_a0bfa3763bd441407dd6365f42714f94c}{get\+Base\+Copy} (std\+::shared\+\_\+ptr$<$ \hyperlink{a00003}{O\+S\+TM} $>$ object)\hypertarget{a00003_a0bfa3763bd441407dd6365f42714f94c}{}\label{a00003_a0bfa3763bd441407dd6365f42714f94c}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{a00003}{O\+S\+TM} required virtual method for returning a pointer that is copy of the original pointer. \end{DoxyCompactList}\item 
+virtual void \hyperlink{a00003_a513396a115f2987fd07c203309ae8a59}{to\+String} ()\hypertarget{a00003_a513396a115f2987fd07c203309ae8a59}{}\label{a00003_a513396a115f2987fd07c203309ae8a59}
+
+\begin{DoxyCompactList}\small\item\em \hyperlink{a00003}{O\+S\+TM} required virtual method for display object. \end{DoxyCompactList}\item 
+void \hyperlink{a00003_ab5019a32185631c08abbf826422f2d93}{Set\+\_\+\+Unique\+\_\+\+ID} (int unique\+ID)
+\begin{DoxyCompactList}\small\item\em setter for unique id \end{DoxyCompactList}\item 
+int \hyperlink{a00003_a5a01a8b98d16b1d1904ecf9356e7b71d}{Get\+\_\+\+Unique\+\_\+\+ID} () const 
+\begin{DoxyCompactList}\small\item\em getter for unique id \end{DoxyCompactList}\item 
+void \hyperlink{a00003_a9529ad8d6d28c1f0cc9b86ed91df1ae1}{Set\+\_\+\+Version} (int version)
+\begin{DoxyCompactList}\small\item\em setter for version number \end{DoxyCompactList}\item 
+int \hyperlink{a00003_a1f1db9d482f22c8e7caa17dfb340626b}{Get\+\_\+\+Version} () const 
+\begin{DoxyCompactList}\small\item\em getter for version number \end{DoxyCompactList}\item 
+void \hyperlink{a00003_a5f90caa4384d371c16b7cac860d9f89a}{increase\+\_\+\+Version\+Number} ()
+\begin{DoxyCompactList}\small\item\em commit time increase version number to child object \end{DoxyCompactList}\item 
+bool \hyperlink{a00003_a8df39ced3b401aa466df97e26d14b1b7}{Is\+\_\+\+Can\+\_\+\+Commit} () const 
+\begin{DoxyCompactList}\small\item\em N\+OT U\+S\+ED Y\+ET. \end{DoxyCompactList}\item 
+void \hyperlink{a00003_a813ee61c9d1c83c6a6ae30d12aca8a5d}{Set\+\_\+\+Can\+\_\+\+Commit} (bool can\+Commit)
+\begin{DoxyCompactList}\small\item\em N\+OT U\+S\+ED Y\+ET. \end{DoxyCompactList}\item 
+void \hyperlink{a00003_aba384cf65c5f56f5b86833730c3c6ea4}{Set\+\_\+\+Abort\+\_\+\+Transaction} (bool abort\+Transaction)
+\begin{DoxyCompactList}\small\item\em N\+OT U\+S\+ED Y\+ET. \end{DoxyCompactList}\item 
+bool \hyperlink{a00003_afc2851abf5342c3c67342c2c14820115}{Is\+\_\+\+Abort\+\_\+\+Transaction} () const 
+\begin{DoxyCompactList}\small\item\em N\+OT U\+S\+ED Y\+ET. \end{DoxyCompactList}\item 
+void \hyperlink{a00003_af192c598a3c647f37aaba5757e60240f}{lock\+\_\+\+Mutex} ()
+\begin{DoxyCompactList}\small\item\em object unique lock, locks mutex \end{DoxyCompactList}\item 
+void \hyperlink{a00003_a6cd703bc26c719fd95b4f5362d050762}{unlock\+\_\+\+Mutex} ()
+\begin{DoxyCompactList}\small\item\em object unique lock, unlocks mutex \end{DoxyCompactList}\item 
+bool \hyperlink{a00003_afb6520023ed2c4a6188b688c46f192d0}{is\+\_\+\+Locked} ()
+\begin{DoxyCompactList}\small\item\em object unique lock, try locks mutex return boolean value depends on the lock state \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+
+
+Definition at line 17 of file O\+S\+T\+M.\+h.
+
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\index{O\+S\+TM@{O\+S\+TM}!O\+S\+TM@{O\+S\+TM}}
+\index{O\+S\+TM@{O\+S\+TM}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{O\+S\+T\+M()}{OSTM()}}]{\setlength{\rightskip}{0pt plus 5cm}O\+S\+T\+M\+::\+O\+S\+TM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{a00003_a968edf778668bd0ec7603f0571619196}{}\label{a00003_a968edf778668bd0ec7603f0571619196}
+
+
+\hyperlink{a00003}{O\+S\+TM} Constructor. 
+
+Default constructor.
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & indicates the version number of the inherited child pointer \\
+\hline
+{\em unique\+ID} & is a unique identifier assigned to every object registered in \hyperlink{a00003}{O\+S\+TM} library \\
+\hline
+{\em can\+Commit} & N\+OT U\+S\+ED Y\+ET \\
+\hline
+{\em abort\+\_\+\+Transaction} & N\+OT U\+S\+ED Y\+ET \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file O\+S\+T\+M.\+cpp.
+
+\index{O\+S\+TM@{O\+S\+TM}!O\+S\+TM@{O\+S\+TM}}
+\index{O\+S\+TM@{O\+S\+TM}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{O\+S\+T\+M(int \+\_\+version\+\_\+number\+\_\+, int \+\_\+unique\+\_\+id\+\_\+)}{OSTM(int _version_number_, int _unique_id_)}}]{\setlength{\rightskip}{0pt plus 5cm}O\+S\+T\+M\+::\+O\+S\+TM (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+version\+\_\+number\+\_\+, }
+\item[{int}]{\+\_\+unique\+\_\+id\+\_\+}
+\end{DoxyParamCaption}
+)}\hypertarget{a00003_a2314f55a127b94aa8a51d19ba798401e}{}\label{a00003_a2314f55a127b94aa8a51d19ba798401e}
+
+
+\hyperlink{a00003}{O\+S\+TM} Custom Constructor. 
+
+Custom Constructor Used for copy object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & indicates the version number of the inherited child pointer \\
+\hline
+{\em unique\+ID} & is a unique identifier assigned to every object registered in \hyperlink{a00003}{O\+S\+TM} library \\
+\hline
+{\em can\+Commit} & N\+OT U\+S\+ED Y\+ET \\
+\hline
+{\em abort\+\_\+\+Transaction} & N\+OT U\+S\+ED Y\+ET \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file O\+S\+T\+M.\+cpp.
+
+\index{O\+S\+TM@{O\+S\+TM}!````~O\+S\+TM@{$\sim$\+O\+S\+TM}}
+\index{````~O\+S\+TM@{$\sim$\+O\+S\+TM}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{$\sim$\+O\+S\+T\+M()}{~OSTM()}}]{\setlength{\rightskip}{0pt plus 5cm}O\+S\+T\+M\+::$\sim$\+O\+S\+TM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{a00003_a30a17d73d0259c60eeab72d6dfa9ceb1}{}\label{a00003_a30a17d73d0259c60eeab72d6dfa9ceb1}
+
+
+De-\/constructor. 
+
+De-\/constructor 
+
+Definition at line 48 of file O\+S\+T\+M.\+cpp.
+
+
+
+\subsubsection{Member Function Documentation}
+\index{O\+S\+TM@{O\+S\+TM}!Get\+\_\+\+Unique\+\_\+\+ID@{Get\+\_\+\+Unique\+\_\+\+ID}}
+\index{Get\+\_\+\+Unique\+\_\+\+ID@{Get\+\_\+\+Unique\+\_\+\+ID}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{Get\+\_\+\+Unique\+\_\+\+I\+D() const }{Get_Unique_ID() const }}]{\setlength{\rightskip}{0pt plus 5cm}int O\+S\+T\+M\+::\+Get\+\_\+\+Unique\+\_\+\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{a00003_a5a01a8b98d16b1d1904ecf9356e7b71d}{}\label{a00003_a5a01a8b98d16b1d1904ecf9356e7b71d}
+
+
+getter for unique id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+ID} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file O\+S\+T\+M.\+cpp.
+
+
+
+Referenced by to\+String().
+
+\index{O\+S\+TM@{O\+S\+TM}!Get\+\_\+\+Version@{Get\+\_\+\+Version}}
+\index{Get\+\_\+\+Version@{Get\+\_\+\+Version}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{Get\+\_\+\+Version() const }{Get_Version() const }}]{\setlength{\rightskip}{0pt plus 5cm}int O\+S\+T\+M\+::\+Get\+\_\+\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{a00003_a1f1db9d482f22c8e7caa17dfb340626b}{}\label{a00003_a1f1db9d482f22c8e7caa17dfb340626b}
+
+
+getter for version number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file O\+S\+T\+M.\+cpp.
+
+
+
+Referenced by to\+String().
+
+\index{O\+S\+TM@{O\+S\+TM}!increase\+\_\+\+Version\+Number@{increase\+\_\+\+Version\+Number}}
+\index{increase\+\_\+\+Version\+Number@{increase\+\_\+\+Version\+Number}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{increase\+\_\+\+Version\+Number()}{increase_VersionNumber()}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::increase\+\_\+\+Version\+Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{a00003_a5f90caa4384d371c16b7cac860d9f89a}{}\label{a00003_a5f90caa4384d371c16b7cac860d9f89a}
+
+
+commit time increase version number to child object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 97 of file O\+S\+T\+M.\+cpp.
+
+
+
+Referenced by to\+String().
+
+\index{O\+S\+TM@{O\+S\+TM}!Is\+\_\+\+Abort\+\_\+\+Transaction@{Is\+\_\+\+Abort\+\_\+\+Transaction}}
+\index{Is\+\_\+\+Abort\+\_\+\+Transaction@{Is\+\_\+\+Abort\+\_\+\+Transaction}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{Is\+\_\+\+Abort\+\_\+\+Transaction() const }{Is_Abort_Transaction() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+T\+M\+::\+Is\+\_\+\+Abort\+\_\+\+Transaction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{a00003_afc2851abf5342c3c67342c2c14820115}{}\label{a00003_afc2851abf5342c3c67342c2c14820115}
+
+
+N\+OT U\+S\+ED Y\+ET. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em abort\+\_\+\+Transaction} & boolean \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 126 of file O\+S\+T\+M.\+cpp.
+
+
+
+Referenced by to\+String().
+
+\index{O\+S\+TM@{O\+S\+TM}!Is\+\_\+\+Can\+\_\+\+Commit@{Is\+\_\+\+Can\+\_\+\+Commit}}
+\index{Is\+\_\+\+Can\+\_\+\+Commit@{Is\+\_\+\+Can\+\_\+\+Commit}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{Is\+\_\+\+Can\+\_\+\+Commit() const }{Is_Can_Commit() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+T\+M\+::\+Is\+\_\+\+Can\+\_\+\+Commit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{a00003_a8df39ced3b401aa466df97e26d14b1b7}{}\label{a00003_a8df39ced3b401aa466df97e26d14b1b7}
+
+
+N\+OT U\+S\+ED Y\+ET. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em can\+Commit} & boolean \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 112 of file O\+S\+T\+M.\+cpp.
+
+
+
+Referenced by to\+String().
+
+\index{O\+S\+TM@{O\+S\+TM}!is\+\_\+\+Locked@{is\+\_\+\+Locked}}
+\index{is\+\_\+\+Locked@{is\+\_\+\+Locked}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{is\+\_\+\+Locked()}{is_Locked()}}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+T\+M\+::is\+\_\+\+Locked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{a00003_afb6520023ed2c4a6188b688c46f192d0}{}\label{a00003_afb6520023ed2c4a6188b688c46f192d0}
+
+
+object unique lock, try locks mutex return boolean value depends on the lock state 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mutex} & std\+::mutex \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 147 of file O\+S\+T\+M.\+cpp.
+
+
+
+Referenced by to\+String().
+
+\index{O\+S\+TM@{O\+S\+TM}!lock\+\_\+\+Mutex@{lock\+\_\+\+Mutex}}
+\index{lock\+\_\+\+Mutex@{lock\+\_\+\+Mutex}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{lock\+\_\+\+Mutex()}{lock_Mutex()}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::lock\+\_\+\+Mutex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{a00003_af192c598a3c647f37aaba5757e60240f}{}\label{a00003_af192c598a3c647f37aaba5757e60240f}
+
+
+object unique lock, locks mutex 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mutex} & std\+::mutex \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 133 of file O\+S\+T\+M.\+cpp.
+
+
+
+Referenced by to\+String().
+
+\index{O\+S\+TM@{O\+S\+TM}!Set\+\_\+\+Abort\+\_\+\+Transaction@{Set\+\_\+\+Abort\+\_\+\+Transaction}}
+\index{Set\+\_\+\+Abort\+\_\+\+Transaction@{Set\+\_\+\+Abort\+\_\+\+Transaction}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{Set\+\_\+\+Abort\+\_\+\+Transaction(bool abort\+Transaction)}{Set_Abort_Transaction(bool abortTransaction)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::\+Set\+\_\+\+Abort\+\_\+\+Transaction (
+\begin{DoxyParamCaption}
+\item[{bool}]{abort\+Transaction}
+\end{DoxyParamCaption}
+)}\hypertarget{a00003_aba384cf65c5f56f5b86833730c3c6ea4}{}\label{a00003_aba384cf65c5f56f5b86833730c3c6ea4}
+
+
+N\+OT U\+S\+ED Y\+ET. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em abort\+\_\+\+Transaction} & boolean \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 119 of file O\+S\+T\+M.\+cpp.
+
+
+
+Referenced by to\+String().
+
+\index{O\+S\+TM@{O\+S\+TM}!Set\+\_\+\+Can\+\_\+\+Commit@{Set\+\_\+\+Can\+\_\+\+Commit}}
+\index{Set\+\_\+\+Can\+\_\+\+Commit@{Set\+\_\+\+Can\+\_\+\+Commit}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{Set\+\_\+\+Can\+\_\+\+Commit(bool can\+Commit)}{Set_Can_Commit(bool canCommit)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::\+Set\+\_\+\+Can\+\_\+\+Commit (
+\begin{DoxyParamCaption}
+\item[{bool}]{can\+Commit}
+\end{DoxyParamCaption}
+)}\hypertarget{a00003_a813ee61c9d1c83c6a6ae30d12aca8a5d}{}\label{a00003_a813ee61c9d1c83c6a6ae30d12aca8a5d}
+
+
+N\+OT U\+S\+ED Y\+ET. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em can\+Commit} & boolean \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 105 of file O\+S\+T\+M.\+cpp.
+
+
+
+Referenced by to\+String().
+
+\index{O\+S\+TM@{O\+S\+TM}!Set\+\_\+\+Unique\+\_\+\+ID@{Set\+\_\+\+Unique\+\_\+\+ID}}
+\index{Set\+\_\+\+Unique\+\_\+\+ID@{Set\+\_\+\+Unique\+\_\+\+ID}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{Set\+\_\+\+Unique\+\_\+\+I\+D(int unique\+I\+D)}{Set_Unique_ID(int uniqueID)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::\+Set\+\_\+\+Unique\+\_\+\+ID (
+\begin{DoxyParamCaption}
+\item[{int}]{unique\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{a00003_ab5019a32185631c08abbf826422f2d93}{}\label{a00003_ab5019a32185631c08abbf826422f2d93}
+
+
+setter for unique id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+ID} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 66 of file O\+S\+T\+M.\+cpp.
+
+
+
+Referenced by to\+String().
+
+\index{O\+S\+TM@{O\+S\+TM}!Set\+\_\+\+Version@{Set\+\_\+\+Version}}
+\index{Set\+\_\+\+Version@{Set\+\_\+\+Version}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{Set\+\_\+\+Version(int version)}{Set_Version(int version)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::\+Set\+\_\+\+Version (
+\begin{DoxyParamCaption}
+\item[{int}]{version}
+\end{DoxyParamCaption}
+)}\hypertarget{a00003_a9529ad8d6d28c1f0cc9b86ed91df1ae1}{}\label{a00003_a9529ad8d6d28c1f0cc9b86ed91df1ae1}
+
+
+setter for version number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em version} & int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 81 of file O\+S\+T\+M.\+cpp.
+
+
+
+Referenced by to\+String().
+
+\index{O\+S\+TM@{O\+S\+TM}!unlock\+\_\+\+Mutex@{unlock\+\_\+\+Mutex}}
+\index{unlock\+\_\+\+Mutex@{unlock\+\_\+\+Mutex}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{unlock\+\_\+\+Mutex()}{unlock_Mutex()}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::unlock\+\_\+\+Mutex (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{a00003_a6cd703bc26c719fd95b4f5362d050762}{}\label{a00003_a6cd703bc26c719fd95b4f5362d050762}
+
+
+object unique lock, unlocks mutex 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mutex} & std\+::mutex \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 140 of file O\+S\+T\+M.\+cpp.
+
+
+
+Referenced by to\+String().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Linux/\+O\+S\+T\+M/O\+S\+T\+M.\+h\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Linux/\+O\+S\+T\+M/O\+S\+T\+M.\+cpp\end{DoxyCompactItemize}

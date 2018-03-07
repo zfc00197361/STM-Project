@@ -1,0 +1,24 @@
+\hypertarget{_r_e_a_d_m_e_8md_source}{}\subsection{R\+E\+A\+D\+M\+E.\+md}
+
+\begin{DoxyCode}
+00001 C++ Software Transactional Memory (STM)
+00002 
+00003 This documentation includes all the project specific files that required to build the STM library and
+       the
+00004 client code to use the library. The client code is demostrate the usage of the STM API (Application
+       Programming Interface).
+00005 The STM library is a object based implementation, where the client need to inherite from the library
+       on order to
+00006 achieve the polymorphic Object Oriented Programming (OOP) behaviour. 
+00007 
+00008 The client application use a middle class to declare the child (Classes inherite from BANK) specific
+       behaviour as a virtual methods. 
+00009 Whit this implementation the client application need to casting back the OSTM object to BANK object to
+       use the child class
+00010 implemented speciffic behaviours.  
+00011 
+00012 
+00013 
+00014 
+00015 
+\end{DoxyCode}

@@ -1,0 +1,122 @@
+.TH "OSTM.h" 3 "Wed Mar 7 2018" "C++ Software Transactional memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+OSTM.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <mutex>\fP
+.br
+\fC#include <memory>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <iostream>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "class \fB__declspec\fP (dllexport) OSTM"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "class __declspec (dllexport)"
+OSTM Constructor
+.PP
+OSTM Custom Constructor
+.PP
+De-constructor
+.PP
+OSTM required virtual method for deep copy
+.PP
+OSTM required virtual method for returning a pointer that is copy of the original pointer
+.PP
+OSTM required virtual method for display object
+.PP
+setter for unique id
+.PP
+getter for unique id
+.PP
+setter for version number
+.PP
+getter for version number
+.PP
+commit time increase version number to child object
+.PP
+NOT USED YET
+.PP
+NOT USED YET
+.PP
+NOT USED YET
+.PP
+NOT USED YET
+.PP
+object unique lock, locks mutex
+.PP
+object unique lock, unlocks mutex
+.PP
+object unique lock, try locks mutex return boolean value depends on the lock state
+.PP
+Unique object number increase at object creation
+.PP
+Meaningful display for value 0
+.PP
+Object built in lock
+.PP
+Returning global_Unique_ID_Number to the constructor
+.PP
+Definition at line 17 of file OSTM\&.h\&.
+.PP
+.nf
+17                                  {
+18 public:
+22     OSTM();
+26     OSTM(int _version_number_, int _unique_id_);
+30     virtual ~OSTM();
+34     virtual void copy(std::shared_ptr<OSTM> from, std::shared_ptr<OSTM> to){};
+38     virtual std::shared_ptr<OSTM> getBaseCopy(std::shared_ptr<OSTM> object) = 0;//std::cout << "[OSTM GETBASECOPY]" << std::endl;};
+42     virtual void toString(){};
+46     void Set_Unique_ID(int uniqueID);
+50     int Get_Unique_ID() const;
+54     void Set_Version(int version);
+58     int Get_Version() const;
+62     void increase_VersionNumber();
+66     bool Is_Can_Commit() const;
+70     void Set_Can_Commit(bool canCommit);
+74     void Set_Abort_Transaction(bool abortTransaction);
+78     bool Is_Abort_Transaction() const;
+82     void lock_Mutex();
+86     void unlock_Mutex();
+90     bool is_Locked();
+91 
+92 private:
+93     /*
+94      * \brief Object version number
+95      */
+96     int version;
+97     /*
+98      * \brief Object unique identifier
+99      */
+100     int uniqueID;
+101     /*
+102      * \brief Boolean value to check any other thread failed to commit
+103      */
+104     bool canCommit;
+105     /*
+106      * \brief Abort the transaction
+107      */
+108     bool abort_Transaction;
+112     static int global_Unique_ID_Number;
+116     const int ZERO = 0;
+120     std::mutex mutex;
+124     int Get_global_Unique_ID_Number();
+125 
+126 };
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software Transactional memory from the source code\&.

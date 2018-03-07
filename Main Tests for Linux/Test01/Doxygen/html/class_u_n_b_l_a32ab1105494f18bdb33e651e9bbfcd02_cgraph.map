@@ -1,0 +1,10 @@
+<map id="UNBL::operator=" name="UNBL::operator=">
+<area shape="rect" id="node2" href="$class_u_n_b_l.html#a32d405e6e9adfab1ffdeec6406f9e72f" title="UNBL::~UNBL" alt="" coords="192,5,303,32"/>
+<area shape="rect" id="node3" href="$class_u_n_b_l.html#a14d5e1adc618827667d8d9524abaf31b" title="copy function, make deep copy of the object/pointer " alt="" coords="200,56,295,83"/>
+<area shape="rect" id="node5" href="$class_u_n_b_l.html#a5dfe7f9e5fbb66abff9a73e40e803887" title="getBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr&lt;BANK&gt; typ..." alt="" coords="175,107,320,133"/>
+<area shape="rect" id="node7" href="$class_u_n_b_l.html#a76d8bba21d64d79d8de63763b8acc1fd" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="192,157,303,184"/>
+<area shape="rect" id="node4" href="$class_o_s_t_m.html#ab5019a32185631c08abbf826422f2d93" title="setter for unique id " alt="" coords="369,56,526,83"/>
+<area shape="rect" id="node6" href="$class_u_n_b_l.html#aa264ef64c453e6049b3d4c984d84d1de" title="UNBL::UNBL" alt="" coords="396,107,499,133"/>
+<area shape="rect" id="node8" href="$class_o_s_t_m.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="368,157,527,184"/>
+<area shape="rect" id="node9" href="$class_o_s_t_m.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="377,208,517,235"/>
+</map>

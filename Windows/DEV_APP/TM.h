@@ -31,14 +31,6 @@
  * \subsection step6 Step 6: Now your application use transactional environment, that guarantees the consistency between object transactions.  
  * 
  * \subsection step7 Step 7: Run the application.
- * 
- * Abbreviation for bank names used in the test cases:<br>
- * BOA  - Bank of America<br>
- * ULSTER - Ulster Bank<br>
- * UNBL - United National Bank Limited<br>
- * SWBPLC - Scottish Windows Bank PLC<br>
- * AIB - Allied Irish Bank<br>
- * BOI - Bank of Ireland<br>
  */
 
 

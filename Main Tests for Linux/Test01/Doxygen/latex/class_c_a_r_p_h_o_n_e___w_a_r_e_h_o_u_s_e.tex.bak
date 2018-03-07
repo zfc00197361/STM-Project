@@ -1,0 +1,247 @@
+\section{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE Class Reference}
+\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e}\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+
+
+{\ttfamily \#include $<$C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h$>$}
+
+Inheritance diagram for C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} ()
+\item 
+{\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} (std\+::string address, std\+::string shop\+\_\+name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)
+\item 
+{\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} (std\+::shared\+\_\+ptr$<$ {\bf W\+A\+R\+E\+H\+O\+U\+SE} $>$ obj, int \+\_\+version, int \+\_\+unique\+\_\+id)
+\item 
+{\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} (const {\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} \&orig)
+\item 
+{\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} {\bf operator=} (const {\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} \&orig)
+\item 
+virtual {\bf $\sim$\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} ()
+\item 
+virtual void {\bf copy} (std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ to, std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ from)
+\begin{DoxyCompactList}\small\item\em copy function, make deep copy of the object/pointer \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ {\bf get\+Base\+Copy} (std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ object)
+\begin{DoxyCompactList}\small\item\em get\+Base\+Copy function, make deep copy of the object/pointer and Return a new B\+A\+N\+K$\ast$ type object \end{DoxyCompactList}\item 
+virtual void {\bf to\+String} ()
+\begin{DoxyCompactList}\small\item\em \+\_\+cast, is use to cast bak the std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to the required type \end{DoxyCompactList}\item 
+virtual void {\bfseries Set\+Number\+\_\+of\+\_\+alcatel} (int \+\_\+number\+\_\+of\+\_\+alcatel)\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a84d8d820016c7eb50323c2dcbb4d73f3}
+
+\item 
+virtual int {\bfseries Get\+Number\+\_\+of\+\_\+alcatel} ()\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a8d278005b2ba46869f6787681ad05704}
+
+\item 
+virtual void {\bfseries Set\+Number\+\_\+of\+\_\+nokia} (int \+\_\+number\+\_\+of\+\_\+nokia)\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a5f2abf60f6fa8a614fadb1419bf1de83}
+
+\item 
+virtual int {\bfseries Get\+Number\+\_\+of\+\_\+nokia} ()\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_aac1959dee51204439fc0721403d23447}
+
+\item 
+virtual void {\bfseries Set\+Number\+\_\+of\+\_\+huawei} (int \+\_\+number\+\_\+of\+\_\+huawei)\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a87ba00e49e5b201548c57ef4b8beaeff}
+
+\item 
+virtual int {\bfseries Get\+Number\+\_\+of\+\_\+huawei} ()\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a9200c484f288fce0246008e5d683507f}
+
+\item 
+virtual void {\bfseries Set\+Number\+\_\+of\+\_\+sony} (int \+\_\+number\+\_\+of\+\_\+sony)\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ac59a3e67850e4ce6db9f0f0d5a72d8df}
+
+\item 
+virtual int {\bfseries Get\+Number\+\_\+of\+\_\+sony} ()\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a955e5b413e1f41a36dcc12837664f364}
+
+\item 
+virtual void {\bfseries Set\+Number\+\_\+of\+\_\+samsung} (int \+\_\+number\+\_\+of\+\_\+samsung)\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a179265eb31e367a082eb4048f38e602d}
+
+\item 
+virtual int {\bfseries Get\+Number\+\_\+of\+\_\+samsung} ()\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0cd9d93b5b145846627d3005dff71f6f}
+
+\item 
+virtual void {\bfseries Set\+Number\+\_\+of\+\_\+iphones} (int \+\_\+number\+\_\+of\+\_\+iphones)\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a167a9f9ac25b17395e5964b57099b462}
+
+\item 
+virtual int {\bfseries Get\+Number\+\_\+of\+\_\+iphones} ()\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a640af469d055cb8836c42ac4ce135e6f}
+
+\item 
+virtual void {\bfseries Set\+Shop\+\_\+name} (std\+::string \+\_\+shop\+\_\+name)\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a832266a32b6ee4be5e531aaacb83610c}
+
+\item 
+virtual std\+::string {\bfseries Get\+Shop\+\_\+name} ()\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4932d1483f97e12e01be200951c572df}
+
+\item 
+virtual void {\bfseries Set\+Shop\+\_\+address} (std\+::string \+\_\+shop\+\_\+address)\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_af26abc216ad013f1cb8ea2b3f788e048}
+
+\item 
+virtual std\+::string {\bfseries Get\+Shop\+\_\+address} ()\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a90c80d52aa860d00c3fb9c165646637b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Inherit from \doxyref{W\+A\+R\+E\+H\+O\+U\+SE}{p.}{class_w_a_r_e_h_o_u_s_e} 
+
+Definition at line 19 of file C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E()}]{\setlength{\rightskip}{0pt plus 5cm}C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0acec1e20e236b4debf1e0d26334a868}
+Constructor 
+
+Definition at line 24 of file C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h.
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E(std\+::string address, std\+::string shop\+\_\+name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)}]{\setlength{\rightskip}{0pt plus 5cm}C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{address, }
+\item[{std\+::string}]{shop\+\_\+name, }
+\item[{int}]{iphone, }
+\item[{int}]{samsung, }
+\item[{int}]{sony, }
+\item[{int}]{huawei, }
+\item[{int}]{nokia, }
+\item[{int}]{alcatel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a1e61584abd37ed2189143f0c0d4d2e40}
+Custom constructor 
+
+Definition at line 38 of file C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h.
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E(std\+::shared\+\_\+ptr$<$ W\+A\+R\+E\+H\+O\+U\+S\+E $>$ obj, int \+\_\+version, int \+\_\+unique\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf W\+A\+R\+E\+H\+O\+U\+SE} $>$}]{obj, }
+\item[{int}]{\+\_\+version, }
+\item[{int}]{\+\_\+unique\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a131eb8df5342de81022b166f40f94d92}
+Custom constructor, used by the library for deep copying 
+
+Definition at line 55 of file C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h.
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E(const C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E \&orig)}]{\setlength{\rightskip}{0pt plus 5cm}C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} \&}]{orig}
+\end{DoxyParamCaption}
+)}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a7b2446d35d557bdfaa8dbd769f845abb}
+Copy constructor 
+
+Definition at line 11 of file C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp.
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!````~C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{$\sim$\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{````~C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{$\sim$\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{$\sim$\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E()}]{\setlength{\rightskip}{0pt plus 5cm}C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::$\sim$\+C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ad125d83e519b6c7ca025a7e2b705c2a8}
+de-\/constructor 
+
+Definition at line 14 of file C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!copy@{copy}}
+\index{copy@{copy}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ to, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ from)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::copy (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{to, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{from}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_ab9ecf71cd2728f348a5b61df698e054c}
+
+
+copy function, make deep copy of the object/pointer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+TO} & is a B\+A\+N\+K$\ast$ type object casted back from std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ \\
+\hline
+{\em obj\+F\+R\+OM} & is a B\+A\+N\+K$\ast$ type object casted back from std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from {\bf O\+S\+TM} \doxyref{}{p.}{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d}.
+
+
+
+Definition at line 34 of file C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp.
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!get\+Base\+Copy@{get\+Base\+Copy}}
+\index{get\+Base\+Copy@{get\+Base\+Copy}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{get\+Base\+Copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ object)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::get\+Base\+Copy (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a1d3b2f023c0d6e715416f1e87e7245bb}
+
+
+get\+Base\+Copy function, make deep copy of the object/pointer and Return a new B\+A\+N\+K$\ast$ type object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+TO} & is a \doxyref{B\+A\+NK}{p.}{class_b_a_n_k} type pointer for casting \\
+\hline
+{\em obj} & is a B\+A\+N\+K$\ast$ return type \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from {\bf O\+S\+TM} \doxyref{}{p.}{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c}.
+
+
+
+Definition at line 21 of file C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp.
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!operator=@{operator=}}
+\index{operator=@{operator=}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{operator=(const C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E \&orig)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE} \&}]{orig}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a8d5661ef7c79d7527967c61654ebb612}
+Operator 
+
+Definition at line 75 of file C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h.
+
+\index{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE@{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{to\+String()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4d96bb512ffcd1e0b13f632cb7fd242b}
+
+
+\+\_\+cast, is use to cast bak the std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to the required type 
+
+to\+String function, displays the object values in formatted way 
+
+Reimplemented from {\bf O\+S\+TM} \doxyref{}{p.}{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59}.
+
+
+
+Definition at line 60 of file C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Main Tests for Linux/\+Test01/C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Main Tests for Linux/\+Test01/C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp\end{DoxyCompactItemize}

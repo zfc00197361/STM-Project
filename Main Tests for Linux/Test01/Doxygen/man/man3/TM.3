@@ -1,0 +1,42 @@
+.TH "TM" 3 "Wed Mar 7 2018" "C++ Softwrae Transactional memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TM \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBTX\fP > const \fB_get_tx\fP ()"
+.br
+.RI "\fI_get_tx std::shared_ptr<TX>, returning a shared pointer with the transaction \fP"
+.ti -1c
+.RI "void \fB_TX_EXIT\fP ()"
+.br
+.RI "\fI_TX_EXIT void, the thread calls the ostm_exit function in the transaction, and clear all elements from the shared global collection associated with the main process \fP"
+.ti -1c
+.RI "void \fBprint_all\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBTM\fP & \fBInstance\fP ()"
+.br
+.RI "\fIScott Meyer's Singleton creation, what is thread safe\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 56 of file TM\&.h\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void TM::print_all ()"
+ONLY FOR TESTING print_all void, prints all object in the txMap 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Softwrae Transactional memory from the source code\&.

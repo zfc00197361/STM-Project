@@ -1,0 +1,132 @@
+\section{W\+A\+R\+E\+H\+O\+U\+SE Class Reference}
+\label{class_w_a_r_e_h_o_u_s_e}\index{W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}}
+
+
+{\ttfamily \#include $<$W\+A\+R\+E\+H\+O\+U\+S\+E.\+h$>$}
+
+Inheritance diagram for W\+A\+R\+E\+H\+O\+U\+SE\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.590909cm]{class_w_a_r_e_h_o_u_s_e}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf W\+A\+R\+E\+H\+O\+U\+SE} ()
+\item 
+{\bf W\+A\+R\+E\+H\+O\+U\+SE} (int \+\_\+version, int \+\_\+unique\+\_\+id)
+\item 
+{\bf W\+A\+R\+E\+H\+O\+U\+SE} (const {\bf W\+A\+R\+E\+H\+O\+U\+SE} \&orig)
+\item 
+virtual {\bf $\sim$\+W\+A\+R\+E\+H\+O\+U\+SE} ()
+\item 
+virtual void {\bfseries Set\+Number\+\_\+of\+\_\+alcatel} (int \+\_\+number\+\_\+of\+\_\+alcatel)\label{class_w_a_r_e_h_o_u_s_e_a91b45d7d40a154308644a9f2b1767d28}
+
+\item 
+virtual int {\bfseries Get\+Number\+\_\+of\+\_\+alcatel} ()\label{class_w_a_r_e_h_o_u_s_e_a9d9d5bc37ddd3763ea633d07785b6020}
+
+\item 
+virtual void {\bfseries Set\+Number\+\_\+of\+\_\+nokia} (int \+\_\+number\+\_\+of\+\_\+nokia)\label{class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f}
+
+\item 
+virtual int {\bfseries Get\+Number\+\_\+of\+\_\+nokia} ()\label{class_w_a_r_e_h_o_u_s_e_a1a0f7539989c00290934e8b671f2fb1c}
+
+\item 
+virtual void {\bfseries Set\+Number\+\_\+of\+\_\+huawei} (int \+\_\+number\+\_\+of\+\_\+huawei)\label{class_w_a_r_e_h_o_u_s_e_ad29bd0333bd7f17178dc107a00e23954}
+
+\item 
+virtual int {\bfseries Get\+Number\+\_\+of\+\_\+huawei} ()\label{class_w_a_r_e_h_o_u_s_e_acacc58d1ceea41e968a6d245007ea127}
+
+\item 
+virtual void {\bfseries Set\+Number\+\_\+of\+\_\+sony} (int \+\_\+number\+\_\+of\+\_\+sony)\label{class_w_a_r_e_h_o_u_s_e_a709e5a9f4b439d0507fe74cc1a362ee1}
+
+\item 
+virtual int {\bfseries Get\+Number\+\_\+of\+\_\+sony} ()\label{class_w_a_r_e_h_o_u_s_e_abb7da1fee113e81fbb06190606fddb4d}
+
+\item 
+virtual void {\bfseries Set\+Number\+\_\+of\+\_\+samsung} (int \+\_\+number\+\_\+of\+\_\+samsung)\label{class_w_a_r_e_h_o_u_s_e_a5564efbb5f54f663208a17c6f7f440e2}
+
+\item 
+virtual int {\bfseries Get\+Number\+\_\+of\+\_\+samsung} ()\label{class_w_a_r_e_h_o_u_s_e_a817b030450f48bc24e3cc6de5dadefec}
+
+\item 
+virtual void {\bfseries Set\+Number\+\_\+of\+\_\+iphones} (int \+\_\+number\+\_\+of\+\_\+iphones)\label{class_w_a_r_e_h_o_u_s_e_a05e7450e1f1e711a53a4d9d40fb9dfa3}
+
+\item 
+virtual int {\bfseries Get\+Number\+\_\+of\+\_\+iphones} ()\label{class_w_a_r_e_h_o_u_s_e_a08312d1a68ff48d459ad637df6aaf2f1}
+
+\item 
+virtual void {\bfseries Set\+Shop\+\_\+name} (std\+::string \+\_\+shop\+\_\+name)\label{class_w_a_r_e_h_o_u_s_e_ae5cb8c03a4ef0d2e84bbe34312bb01e4}
+
+\item 
+virtual std\+::string {\bfseries Get\+Shop\+\_\+name} ()\label{class_w_a_r_e_h_o_u_s_e_a4d39386ec25ec71b513eb7382e5cd869}
+
+\item 
+virtual void {\bfseries Set\+Shop\+\_\+address} (std\+::string \+\_\+shop\+\_\+address)\label{class_w_a_r_e_h_o_u_s_e_a1accf4c214a11a532cad88729d44b91d}
+
+\item 
+virtual std\+::string {\bfseries Get\+Shop\+\_\+address} ()\label{class_w_a_r_e_h_o_u_s_e_a50c29c2f95d148239e8b43b8a0046a31}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\doxyref{W\+A\+R\+E\+H\+O\+U\+SE}{p.}{class_w_a_r_e_h_o_u_s_e} inherit from \doxyref{O\+S\+TM}{p.}{class_o_s_t_m} library 
+
+Definition at line 16 of file W\+A\+R\+E\+H\+O\+U\+S\+E.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}!W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}!W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{W\+A\+R\+E\+H\+O\+U\+S\+E()}]{\setlength{\rightskip}{0pt plus 5cm}W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_w_a_r_e_h_o_u_s_e_a7a924d389af91f54ed0e1d1d8d56ec57}
+Constructor 
+
+Definition at line 21 of file W\+A\+R\+E\+H\+O\+U\+S\+E.\+h.
+
+\index{W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}!W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}!W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{W\+A\+R\+E\+H\+O\+U\+S\+E(int \+\_\+version, int \+\_\+unique\+\_\+id)}]{\setlength{\rightskip}{0pt plus 5cm}W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+version, }
+\item[{int}]{\+\_\+unique\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_w_a_r_e_h_o_u_s_e_a91a50ed8f6eeb344b1785f750532b18a}
+Custom Constructor 
+
+Definition at line 27 of file W\+A\+R\+E\+H\+O\+U\+S\+E.\+h.
+
+\index{W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}!W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}!W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{W\+A\+R\+E\+H\+O\+U\+S\+E(const W\+A\+R\+E\+H\+O\+U\+S\+E \&orig)}]{\setlength{\rightskip}{0pt plus 5cm}W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+\item[{const {\bf W\+A\+R\+E\+H\+O\+U\+SE} \&}]{orig}
+\end{DoxyParamCaption}
+)}\label{class_w_a_r_e_h_o_u_s_e_a4782d251d2203377f8e9f331ba3b0a7e}
+Copy constructor 
+
+Definition at line 12 of file W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp.
+
+\index{W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}!````~W\+A\+R\+E\+H\+O\+U\+SE@{$\sim$\+W\+A\+R\+E\+H\+O\+U\+SE}}
+\index{````~W\+A\+R\+E\+H\+O\+U\+SE@{$\sim$\+W\+A\+R\+E\+H\+O\+U\+SE}!W\+A\+R\+E\+H\+O\+U\+SE@{W\+A\+R\+E\+H\+O\+U\+SE}}
+\subsubsection[{$\sim$\+W\+A\+R\+E\+H\+O\+U\+S\+E()}]{\setlength{\rightskip}{0pt plus 5cm}W\+A\+R\+E\+H\+O\+U\+S\+E\+::$\sim$\+W\+A\+R\+E\+H\+O\+U\+SE (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_w_a_r_e_h_o_u_s_e_ad5aa686839d7be9bfea33d469c58086b}
+de-\/constructor 
+
+Definition at line 15 of file W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Main Tests for Linux/\+Test01/W\+A\+R\+E\+H\+O\+U\+S\+E.\+h\item 
+/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Main Tests for Linux/\+Test01/W\+A\+R\+E\+H\+O\+U\+S\+E.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="BANK" name="BANK">
+<area shape="rect" id="node3" href="$class_a_i_b.html" title="AIB" alt="" coords="5,155,49,181"/>
+<area shape="rect" id="node4" href="$class_b_o_a.html" title="BOA" alt="" coords="74,155,125,181"/>
+<area shape="rect" id="node5" href="$class_b_o_i.html" title="BOI" alt="" coords="149,155,194,181"/>
+<area shape="rect" id="node6" href="$class_s_w_b_p_l_c.html" title="SWBPLC" alt="" coords="219,155,297,181"/>
+<area shape="rect" id="node7" href="$class_u_l_s_t_e_r.html" title="ULSTER" alt="" coords="322,155,397,181"/>
+<area shape="rect" id="node8" href="$class_u_n_b_l.html" title="UNBL" alt="" coords="421,155,479,181"/>
+<area shape="rect" id="node2" href="$class_o_s_t_m.html" title="OSTM" alt="" coords="184,5,244,32"/>
+</map>

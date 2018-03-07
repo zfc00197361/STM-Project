@@ -1,0 +1,19 @@
+<map id="UNBL::operator=" name="UNBL::operator=">
+<area shape="rect" id="node2" href="$class_u_n_b_l.html#a14d5e1adc618827667d8d9524abaf31b" title="copy function, make deep copy of the object/pointer " alt="" coords="201,51,295,77"/>
+<area shape="rect" id="node3" href="$class_u_n_b_l.html#a0ee536d872c0f93486f942b268c2431e" title="UNBL::SetAccountNumber" alt="" coords="370,25,550,52"/>
+<area shape="rect" id="node4" href="$class_u_n_b_l.html#a44a84fb7fe8778e3048921581049c715" title="UNBL::GetAccountNumber" alt="" coords="369,108,551,135"/>
+<area shape="rect" id="node5" href="$class_u_n_b_l.html#a74f8896be6e93ad8f89ca3b0da83525a" title="UNBL::GetAddress" alt="" coords="181,355,315,381"/>
+<area shape="rect" id="node6" href="$class_u_n_b_l.html#ad5b882bff8d1e2619b2ebbd170345c99" title="UNBL::GetBalance" alt="" coords="393,184,527,211"/>
+<area shape="rect" id="node7" href="$class_u_n_b_l.html#a5dfe7f9e5fbb66abff9a73e40e803887" title="getBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr&lt;BANK&gt; typ..." alt="" coords="175,405,321,432"/>
+<area shape="rect" id="node9" href="$class_u_n_b_l.html#ae89215b95f2e11aa70f9c8bbfd55c10c" title="UNBL::GetFirstName" alt="" coords="386,247,534,273"/>
+<area shape="rect" id="node10" href="$class_u_n_b_l.html#a4292e9cafc42be3d9f4f3d6221bc9638" title="UNBL::GetFullname" alt="" coords="178,456,318,483"/>
+<area shape="rect" id="node11" href="$class_u_n_b_l.html#a27f19f2af5e1abd33b5c63f16b493f6c" title="UNBL::GetLastName" alt="" coords="387,304,533,331"/>
+<area shape="rect" id="node12" href="$class_u_n_b_l.html#acbd63767c5070d82605671cfce0433a9" title="UNBL::SetAddress" alt="" coords="181,507,315,533"/>
+<area shape="rect" id="node13" href="$class_u_n_b_l.html#a3b7b2089cf4e2995e99b860b1fb2e5cb" title="UNBL::SetBalance" alt="" coords="181,557,315,584"/>
+<area shape="rect" id="node14" href="$class_u_n_b_l.html#aef061d2cba01bcd752e9305dc374cabc" title="UNBL::SetFirstName" alt="" coords="175,608,321,635"/>
+<area shape="rect" id="node15" href="$class_u_n_b_l.html#a1b3f52c44756930c1ee4acb06f2634ad" title="UNBL::SetFullname" alt="" coords="179,659,317,685"/>
+<area shape="rect" id="node16" href="$class_u_n_b_l.html#abd683db339dffe71af3993a8a5cb5929" title="UNBL::SetLastName" alt="" coords="175,709,321,736"/>
+<area shape="rect" id="node17" href="$class_u_n_b_l.html#a76d8bba21d64d79d8de63763b8acc1fd" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="193,203,303,229"/>
+<area shape="rect" id="node18" href="$class_u_n_b_l.html#a32d405e6e9adfab1ffdeec6406f9e72f" title="UNBL::~UNBL" alt="" coords="193,760,303,787"/>
+<area shape="rect" id="node8" href="$class_u_n_b_l.html#aa264ef64c453e6049b3d4c984d84d1de" title="UNBL::UNBL" alt="" coords="409,405,511,432"/>
+</map>

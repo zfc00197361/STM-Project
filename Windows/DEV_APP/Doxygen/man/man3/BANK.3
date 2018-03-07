@@ -1,0 +1,195 @@
+.TH "BANK" 3 "Wed Mar 7 2018" "C++ Software Transactional memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BANK \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <BANK\&.h>\fP
+.PP
+Inherits OSTM\&.
+.PP
+Inherited by \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBANK\fP ()"
+.br
+.ti -1c
+.RI "\fBBANK\fP (int _version, int _unique_id)"
+.br
+.ti -1c
+.RI "\fBBANK\fP (const \fBBANK\fP &orig)"
+.br
+.ti -1c
+.RI "virtual \fB~BANK\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetAddress\fP (std::string address)=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetAddress\fP () const =0"
+.br
+.ti -1c
+.RI "virtual void \fBSetBalance\fP (double balance)=0"
+.br
+.ti -1c
+.RI "virtual double \fBGetBalance\fP () const =0"
+.br
+.ti -1c
+.RI "virtual void \fBSetAccountNumber\fP (int accountNumber)=0"
+.br
+.ti -1c
+.RI "virtual int \fBGetAccountNumber\fP () const =0"
+.br
+.ti -1c
+.RI "virtual void \fBSetLastName\fP (std::string lastName)=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetLastName\fP () const =0"
+.br
+.ti -1c
+.RI "virtual void \fBSetFirstName\fP (std::string firstName)=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetFirstName\fP () const =0"
+.br
+.ti -1c
+.RI "virtual void \fBSetFullname\fP (std::string fullname)=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetFullname\fP () const =0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBBANK\fP inherit from the OSTM library\&. It is declares the common functions in the child classes as a virtual function\&. 
+.PP
+Definition at line 16 of file BANK\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "BANK::BANK ()\fC [inline]\fP"
+Constructor 
+.PP
+Definition at line 23 of file BANK\&.h\&.
+.PP
+Referenced by BANK()\&.
+.PP
+.nf
+23           : OSTM(){
+24         
+25     };
+.fi
+.SS "BANK::BANK (int _version, int _unique_id)\fC [inline]\fP"
+Custom Constructor 
+.PP
+Definition at line 29 of file BANK\&.h\&.
+.PP
+References BANK(), GetAccountNumber(), GetAddress(), GetBalance(), GetFirstName(), GetFullname(), GetLastName(), SetAccountNumber(), SetAddress(), SetBalance(), SetFirstName(), SetFullname(), SetLastName(), and ~BANK()\&.
+.PP
+.nf
+29                                        : OSTM(_version, _unique_id){
+30         
+31     };
+.fi
+.SS "BANK::BANK (const \fBBANK\fP & orig)"
+Copy constructor 
+.PP
+Definition at line 11 of file BANK\&.cpp\&.
+.PP
+.nf
+11                            {
+12 }
+.fi
+.SS "BANK::~BANK ()\fC [virtual]\fP"
+de-constructor 
+.PP
+Definition at line 14 of file BANK\&.cpp\&.
+.PP
+Referenced by BANK()\&.
+.PP
+.nf
+14             {
+15 }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual int BANK::GetAccountNumber () const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.PP
+Referenced by BANK()\&.
+.SS "virtual std::string BANK::GetAddress () const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.PP
+Referenced by BANK()\&.
+.SS "virtual double BANK::GetBalance () const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.PP
+Referenced by BANK()\&.
+.SS "virtual std::string BANK::GetFirstName () const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.PP
+Referenced by BANK()\&.
+.SS "virtual std::string BANK::GetFullname () const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.PP
+Referenced by BANK()\&.
+.SS "virtual std::string BANK::GetLastName () const\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.PP
+Referenced by BANK()\&.
+.SS "virtual void BANK::SetAccountNumber (int accountNumber)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.PP
+Referenced by BANK()\&.
+.SS "virtual void BANK::SetAddress (std::string address)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.PP
+Referenced by BANK()\&.
+.SS "virtual void BANK::SetBalance (double balance)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.PP
+Referenced by _complex_transfer_(), _nesting_(), _six_account_transfer_(), _two_account_transfer_(), and BANK()\&.
+.SS "virtual void BANK::SetFirstName (std::string firstName)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.PP
+Referenced by BANK()\&.
+.SS "virtual void BANK::SetFullname (std::string fullname)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.PP
+Referenced by BANK()\&.
+.SS "virtual void BANK::SetLastName (std::string lastName)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBAIB\fP, \fBBOA\fP, \fBBOI\fP, \fBSWBPLC\fP, \fBULSTER\fP, and \fBUNBL\fP\&.
+.PP
+Referenced by BANK()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software Transactional memory from the source code\&.

@@ -1,0 +1,231 @@
+.TH "WAREHOUSE" 3 "Wed Mar 7 2018" "C++ Software Transactional memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+WAREHOUSE \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <WAREHOUSE\&.h>\fP
+.PP
+Inherits OSTM\&.
+.PP
+Inherited by \fBCARLOW_W\fP, \fBCARPHONE_WAREHOUSE\fP, \fBDUNDALK_W\fP, \fBKILKENNY_W\fP, \fBSLIGO_W\fP, and \fBTALLAGH_W\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBWAREHOUSE\fP ()"
+.br
+.ti -1c
+.RI "\fBWAREHOUSE\fP (int _version, int _unique_id)"
+.br
+.ti -1c
+.RI "\fBWAREHOUSE\fP (const \fBWAREHOUSE\fP &orig)"
+.br
+.ti -1c
+.RI "virtual \fB~WAREHOUSE\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_alcatel\fP (int _number_of_alcatel)=0"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_alcatel\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_nokia\fP (int _number_of_nokia)=0"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_nokia\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_huawei\fP (int _number_of_huawei)=0"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_huawei\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_sony\fP (int _number_of_sony)=0"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_sony\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_samsung\fP (int _number_of_samsung)=0"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_samsung\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_iphones\fP (int _number_of_iphones)=0"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_iphones\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBSetShop_name\fP (std::string _shop_name)=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetShop_name\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBSetShop_address\fP (std::string _shop_address)=0"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetShop_address\fP ()=0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBWAREHOUSE\fP inherit from OSTM library 
+.PP
+Definition at line 16 of file WAREHOUSE\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "WAREHOUSE::WAREHOUSE ()\fC [inline]\fP"
+Constructor 
+.PP
+Definition at line 21 of file WAREHOUSE\&.h\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.PP
+.nf
+21                :OSTM(){
+22         
+23     };
+.fi
+.SS "WAREHOUSE::WAREHOUSE (int _version, int _unique_id)\fC [inline]\fP"
+Custom Constructor 
+.PP
+Definition at line 27 of file WAREHOUSE\&.h\&.
+.PP
+References GetNumber_of_alcatel(), GetNumber_of_huawei(), GetNumber_of_iphones(), GetNumber_of_nokia(), GetNumber_of_samsung(), GetNumber_of_sony(), GetShop_address(), GetShop_name(), SetNumber_of_alcatel(), SetNumber_of_huawei(), SetNumber_of_iphones(), SetNumber_of_nokia(), SetNumber_of_samsung(), SetNumber_of_sony(), SetShop_address(), SetShop_name(), WAREHOUSE(), and ~WAREHOUSE()\&.
+.PP
+.nf
+27                                             : OSTM(_version, _unique_id){
+28         
+29     };
+.fi
+.SS "WAREHOUSE::WAREHOUSE (const \fBWAREHOUSE\fP & orig)"
+Copy constructor 
+.PP
+Definition at line 12 of file WAREHOUSE\&.cpp\&.
+.PP
+.nf
+12                                           {
+13 }
+.fi
+.SS "WAREHOUSE::~WAREHOUSE ()\fC [virtual]\fP"
+de-constructor 
+.PP
+Definition at line 15 of file WAREHOUSE\&.cpp\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.PP
+.nf
+15                       {
+16 }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual int WAREHOUSE::GetNumber_of_alcatel ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual int WAREHOUSE::GetNumber_of_huawei ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual int WAREHOUSE::GetNumber_of_iphones ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual int WAREHOUSE::GetNumber_of_nokia ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual int WAREHOUSE::GetNumber_of_samsung ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual int WAREHOUSE::GetNumber_of_sony ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual std::string WAREHOUSE::GetShop_address ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual std::string WAREHOUSE::GetShop_name ()\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual void WAREHOUSE::SetNumber_of_alcatel (int _number_of_alcatel)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual void WAREHOUSE::SetNumber_of_huawei (int _number_of_huawei)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual void WAREHOUSE::SetNumber_of_iphones (int _number_of_iphones)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual void WAREHOUSE::SetNumber_of_nokia (int _number_of_nokia)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by _complex_warehouse_transfer_(), _nested_warehouse_transfer_(), _warehouse_transfer_(), and WAREHOUSE()\&.
+.SS "virtual void WAREHOUSE::SetNumber_of_samsung (int _number_of_samsung)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual void WAREHOUSE::SetNumber_of_sony (int _number_of_sony)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual void WAREHOUSE::SetShop_address (std::string _shop_address)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+.SS "virtual void WAREHOUSE::SetShop_name (std::string _shop_name)\fC [pure virtual]\fP"
+
+.PP
+Implemented in \fBCARPHONE_WAREHOUSE\fP, \fBSLIGO_W\fP, \fBTALLAGH_W\fP, \fBCARLOW_W\fP, \fBDUNDALK_W\fP, and \fBKILKENNY_W\fP\&.
+.PP
+Referenced by WAREHOUSE()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software Transactional memory from the source code\&.

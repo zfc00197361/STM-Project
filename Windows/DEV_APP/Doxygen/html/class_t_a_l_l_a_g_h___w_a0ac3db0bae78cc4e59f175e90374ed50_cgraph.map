@@ -1,0 +1,23 @@
+<map id="TALLAGH_W::operator=" name="TALLAGH_W::operator=">
+<area shape="rect" id="node2" href="$class_t_a_l_l_a_g_h___w.html#a7cd62cf694fbe8c6242916f26df8f6ca" title="copy function, make deep copy of the object/pointer " alt="" coords="249,5,387,32"/>
+<area shape="rect" id="node3" href="$class_t_a_l_l_a_g_h___w.html#a51957c778c31d56f98febdf294f88a4c" title="getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object ..." alt="" coords="223,56,413,83"/>
+<area shape="rect" id="node5" href="$class_t_a_l_l_a_g_h___w.html#a548597d48b3bbb35ffa2035eee3b645d" title="TALLAGH_W::GetNumber\l_of_alcatel" alt="" coords="477,77,654,118"/>
+<area shape="rect" id="node6" href="$class_t_a_l_l_a_g_h___w.html#a0ac4137af5b2aa2e4157c7e85629f064" title="TALLAGH_W::GetNumber\l_of_huawei" alt="" coords="477,142,654,183"/>
+<area shape="rect" id="node7" href="$class_t_a_l_l_a_g_h___w.html#ad82b0c59cba2cb442520e35ab6011d17" title="TALLAGH_W::GetNumber\l_of_iphones" alt="" coords="477,207,654,249"/>
+<area shape="rect" id="node8" href="$class_t_a_l_l_a_g_h___w.html#a20a127a379a2ebed2bd7ee89ca5661fb" title="TALLAGH_W::GetNumber\l_of_nokia" alt="" coords="477,273,654,314"/>
+<area shape="rect" id="node9" href="$class_t_a_l_l_a_g_h___w.html#ad400c7b40f8605f5419b09e946677bbb" title="TALLAGH_W::GetNumber\l_of_samsung" alt="" coords="477,338,654,379"/>
+<area shape="rect" id="node10" href="$class_t_a_l_l_a_g_h___w.html#a161417e8ef4952c560182735de51a44f" title="TALLAGH_W::GetNumber\l_of_sony" alt="" coords="477,403,654,445"/>
+<area shape="rect" id="node11" href="$class_t_a_l_l_a_g_h___w.html#a591b5f445be4f3b636b415e7b614b82c" title="TALLAGH_W::GetShop\l_address" alt="" coords="485,469,646,510"/>
+<area shape="rect" id="node12" href="$class_t_a_l_l_a_g_h___w.html#a3baca7e101bfde39d7a1bf91d99c4f51" title="TALLAGH_W::GetShop_name" alt="" coords="465,535,665,561"/>
+<area shape="rect" id="node13" href="$class_t_a_l_l_a_g_h___w.html#ad4a8e9cab71ab1b742298e630b6c32da" title="TALLAGH_W::SetNumber\l_of_alcatel" alt="" coords="230,563,406,605"/>
+<area shape="rect" id="node14" href="$class_t_a_l_l_a_g_h___w.html#a94b6a0ce95c1edc5cd0bc195cbedc74f" title="TALLAGH_W::SetNumber\l_of_huawei" alt="" coords="230,629,406,670"/>
+<area shape="rect" id="node15" href="$class_t_a_l_l_a_g_h___w.html#aba9c1573606adb336fd5e94969f2f8e8" title="TALLAGH_W::SetNumber\l_of_iphones" alt="" coords="230,694,406,735"/>
+<area shape="rect" id="node16" href="$class_t_a_l_l_a_g_h___w.html#ae60d0ca1392d87afa206f98d5f1c59d1" title="TALLAGH_W::SetNumber\l_of_nokia" alt="" coords="230,759,406,801"/>
+<area shape="rect" id="node17" href="$class_t_a_l_l_a_g_h___w.html#aec915c88a9cce504e58bf9481d897e7e" title="TALLAGH_W::SetNumber\l_of_samsung" alt="" coords="230,825,406,866"/>
+<area shape="rect" id="node18" href="$class_t_a_l_l_a_g_h___w.html#a700cbcd6355556eeaa33955e50010641" title="TALLAGH_W::SetNumber\l_of_sony" alt="" coords="230,890,406,931"/>
+<area shape="rect" id="node19" href="$class_t_a_l_l_a_g_h___w.html#a45bd91f41ac4d384b4281e6572bc2f8a" title="TALLAGH_W::SetShop\l_address" alt="" coords="238,955,398,997"/>
+<area shape="rect" id="node20" href="$class_t_a_l_l_a_g_h___w.html#a3ab6212769f348c15cd2d242af70ea02" title="TALLAGH_W::SetShop_name" alt="" coords="219,1021,417,1048"/>
+<area shape="rect" id="node21" href="$class_t_a_l_l_a_g_h___w.html#ac7a438b7511cf2931490e6b44eff4a49" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="241,309,395,336"/>
+<area shape="rect" id="node22" href="$class_t_a_l_l_a_g_h___w.html#aad3a2ca2d942a0629716b1c9f446931f" title="TALLAGH_W::~TALLAGH_W" alt="" coords="219,1072,417,1099"/>
+<area shape="rect" id="node4" href="$class_t_a_l_l_a_g_h___w.html#aeafc411edee7a3e8bfcc54fa478e2104" title="TALLAGH_W::TALLAGH_W" alt="" coords="470,25,661,52"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="SWBPLC::operator=" name="SWBPLC::operator=">
+<area shape="rect" id="node2" href="$class_s_w_b_p_l_c.html#a5d6f00a76145f32424ff6db9ac23c6fe" title="SWBPLC::~SWBPLC" alt="" coords="203,5,355,32"/>
+<area shape="rect" id="node3" href="$class_s_w_b_p_l_c.html#a9468640482a6cfb9bfb4115fc59191d5" title="copy function, make deep copy of the object/pointer " alt="" coords="222,56,337,83"/>
+<area shape="rect" id="node5" href="$class_s_w_b_p_l_c.html#a77f0e0d6c08a95066d277bf6b2073a5c" title="getBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr&lt;BANK&gt; typ..." alt="" coords="196,107,363,133"/>
+<area shape="rect" id="node7" href="$class_s_w_b_p_l_c.html#a761c77b5a204b4ae05ffb01bd602c3c2" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="213,157,345,184"/>
+<area shape="rect" id="node4" href="$class_o_s_t_m.html#ab5019a32185631c08abbf826422f2d93" title="setter for unique id " alt="" coords="411,56,569,83"/>
+<area shape="rect" id="node6" href="$class_s_w_b_p_l_c.html#a320f4e2b023038668d941ce5d0c46aeb" title="SWBPLC::SWBPLC" alt="" coords="418,107,562,133"/>
+<area shape="rect" id="node8" href="$class_o_s_t_m.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="411,157,569,184"/>
+<area shape="rect" id="node9" href="$class_o_s_t_m.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="420,208,560,235"/>
+</map>

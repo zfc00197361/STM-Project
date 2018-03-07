@@ -1,0 +1,105 @@
+\hypertarget{_t_m_8h}{}\subsection{T\+M.\+h File Reference}
+\label{_t_m_8h}\index{T\+M.\+h@{T\+M.\+h}}
+{\ttfamily \#include $<$thread$>$}\\*
+{\ttfamily \#include $<$process.\+h$>$}\\*
+{\ttfamily \#include $<$mutex$>$}\\*
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include \char`\"{}T\+X.\+h\char`\"{}}\\*
+Include dependency graph for T\+M.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_t_m_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{_t_m_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{_t_m_8h_af1e9f68adb6103ea4a812b24f578c750}{\+\_\+\+\_\+declspec} (dllexport) TM
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Function Documentation}
+\index{T\+M.\+h@{T\+M.\+h}!\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}}
+\index{\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}!T\+M.\+h@{T\+M.\+h}}
+\paragraph[{\texorpdfstring{\+\_\+\+\_\+declspec(dllexport) TM}{__declspec(dllexport) TM}}]{\setlength{\rightskip}{0pt plus 5cm}class \+\_\+\+\_\+declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_t_m_8h_af1e9f68adb6103ea4a812b24f578c750}{}\label{_t_m_8h_af1e9f68adb6103ea4a812b24f578c750}
+TM constructor, prevent from multiple instantiation
+
+TM de-\/constructor, prevent from deletion
+
+TM copy constructor, prevent from copying the Transaction Manager
+
+TM copy operator, prevent from copying the Transaction Manager
+
+
+\begin{DoxyParams}{Parameters}
+{\em tx\+Map} & std\+::map, store all transactional objects created with Transaction Manager\\
+\hline
+\end{DoxyParams}
+S\+T\+A\+T\+IC G\+L\+O\+B\+AL M\+AP Collection to store all process associated keys to find when deleting transactions 
+\begin{DoxyParams}{Parameters}
+{\em process\+\_\+map\+\_\+collection} & std\+::map\\
+\hline
+\end{DoxyParams}
+get\+\_\+thread\+\_\+\+Map returning and map to insert to the process\+\_\+map\+\_\+collection as an inner value
+
+register\+TX void, register transaction into tx\+Map
+
+
+\begin{DoxyParams}{Parameters}
+{\em register\+\_\+\+Lock} & std\+::mutex, used in the register\+TX function\\
+\hline
+{\em register\+\_\+\+Lock} & std\+::mutex, used in the \+\_\+get\+\_\+tx function\\
+\hline
+{\em \+\_\+tm\+\_\+id} & pid\+\_\+t, process id determine the actual process between process in the shared O\+S\+TM library\\
+\hline
+\end{DoxyParams}
+Scott Meyer\textquotesingle{}s Singleton creation, what is thread safe
+
+\+\_\+get\+\_\+tx std\+::shared\+\_\+ptr$<$\+T\+X$>$, returning a shared pointer with the transaction
+
+\+\_\+\+T\+X\+\_\+\+E\+X\+IT void, the thread calls the ostm\+\_\+exit function in the transaction, and clear all elements from the shared global collection associated with the main process
+
+O\+N\+LY F\+OR T\+E\+S\+T\+I\+NG print\+\_\+all void, prints all object in the tx\+Map
+
+Definition at line \hyperlink{_t_m_8h_source_l00048}{48} of file \hyperlink{_t_m_8h_source}{T\+M.\+h}.
+
+
+\begin{DoxyCode}
+00048                                \{
+00049 \textcolor{keyword}{private}:
+00053     TM() = \textcolor{keywordflow}{default};
+00057     ~TM() = \textcolor{keywordflow}{default};
+00061     TM(\textcolor{keyword}{const} TM&) = \textcolor{keyword}{delete};
+00065     TM& operator=(\textcolor{keyword}{const} TM&) = \textcolor{keyword}{delete};
+00069     std::map<std::thread::id, std::shared\_ptr<TX>>txMap;
+00074     \textcolor{keyword}{static} std::map<int, std::map< std::thread::id, int >> process\_map\_collection;
+00078     std::map< std::thread::id, int > get\_thread\_Map();
+00082     \textcolor{keywordtype}{void} registerTX();
+00086     std::mutex register\_Lock;
+00090     std::mutex get\_Lock;
+00094     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \_tm\_id;
+00095     
+00096 \textcolor{keyword}{public}:
+00097 
+00101     \textcolor{keyword}{static} TM& Instance();
+00105     std::shared\_ptr<TX>\textcolor{keyword}{const} \_get\_tx();
+00109     \textcolor{keywordtype}{void} \_TX\_EXIT();
+00113     \textcolor{keywordtype}{void} print\_all();
+00114     
+00115 
+00116 \};
+\end{DoxyCode}

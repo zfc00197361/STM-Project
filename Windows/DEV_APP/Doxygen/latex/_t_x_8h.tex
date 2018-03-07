@@ -1,0 +1,151 @@
+\hypertarget{_t_x_8h}{}\subsection{T\+X.\+h File Reference}
+\label{_t_x_8h}\index{T\+X.\+h@{T\+X.\+h}}
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$mutex$>$}\\*
+{\ttfamily \#include $<$process.\+h$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$thread$>$}\\*
+{\ttfamily \#include \char`\"{}O\+S\+T\+M.\+h\char`\"{}}\\*
+Include dependency graph for T\+X.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_t_x_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{_t_x_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{_t_x_8h_aff6924a1418627017270c5afe0db9399}{\+\_\+\+\_\+declspec} (dllexport) TX
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Function Documentation}
+\index{T\+X.\+h@{T\+X.\+h}!\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}}
+\index{\+\_\+\+\_\+declspec@{\+\_\+\+\_\+declspec}!T\+X.\+h@{T\+X.\+h}}
+\paragraph[{\texorpdfstring{\+\_\+\+\_\+declspec(dllexport) TX}{__declspec(dllexport) TX}}]{\setlength{\rightskip}{0pt plus 5cm}class \+\_\+\+\_\+declspec (
+\begin{DoxyParamCaption}
+\item[{dllexport}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_t_x_8h_aff6924a1418627017270c5afe0db9399}{}\label{_t_x_8h_aff6924a1418627017270c5afe0db9399}
+Constructor
+
+De-\/constructor
+
+Default copy constructor
+
+Delete all map entries associated with the main process
+
+Register O\+S\+TM pointer into S\+TM library
+
+Register O\+S\+TM pointer into S\+TM library
+
+Store transactional changes
+
+Commit transactional changes
+
+Add TX nesting level by one
+
+Remove TX nesting level by one
+
+Only TM Transaction Manager can create instance of TX Transaction
+
+
+\begin{DoxyParams}{Parameters}
+{\em test\+\_\+counter} & int O\+N\+LY F\+OR T\+E\+S\+T\+I\+N\+G!!!\\
+\hline
+\end{DoxyParams}
+M\+AP Collection to store O\+S\+T\+M$\ast$ parent based pointers to make invisible changes during isolated transaction 
+\begin{DoxyParams}{Parameters}
+{\em working\+\_\+\+Map\+\_\+collection} & std\+::map\\
+\hline
+\end{DoxyParams}
+Returning the transaction number 
+\begin{DoxyParams}{Parameters}
+{\em transaction\+\_\+\+Number} & std\+::thread\+::id N\+OT U\+S\+ED Y\+ET\\
+\hline
+{\em \+\_\+tx\+\_\+nesting\+\_\+level} & int\\
+\hline
+\end{DoxyParams}
+S\+T\+A\+T\+IC G\+L\+O\+B\+AL M\+AP Collection to store O\+S\+T\+M$\ast$ parent based pointers to control/lock and compare objects version number within transactions 
+\begin{DoxyParams}{Parameters}
+{\em main\+\_\+\+Process\+\_\+\+Map\+\_\+collection} & std\+::map\\
+\hline
+\end{DoxyParams}
+S\+T\+A\+T\+IC G\+L\+O\+B\+AL M\+AP Collection to store all process associated keys to find when deleting transactions 
+\begin{DoxyParams}{Parameters}
+{\em process\+\_\+map\+\_\+collection} & std\+::map\\
+\hline
+\end{DoxyParams}
+get\+\_\+thread\+\_\+\+Map returning and map to insert to the process\+\_\+map\+\_\+collection as an inner value
+
+
+\begin{DoxyParams}{Parameters}
+{\em register\+\_\+\+Lock} & std\+::mutex to control shared access on M\+A\+IN M\+AP\\
+\hline
+\end{DoxyParams}
+\+\_\+get\+\_\+tx\+\_\+number returning the transaction uniqe identifier
+
+Release the locks in objects with transaction associated collection
+
+Clean up all associated values by the thread delete from working\+\_\+\+Map\+\_\+collection, it is an automated function
+
+Definition at line \hyperlink{_t_x_8h_source_l00024}{24} of file \hyperlink{_t_x_8h_source}{T\+X.\+h}.
+
+
+\begin{DoxyCode}
+00024                                \{
+00025 \textcolor{keyword}{public}:
+00029     TX(std::thread::id \textcolor{keywordtype}{id});
+00033     ~TX();
+00037     TX(\textcolor{keyword}{const} TX& orig);
+00041     \textcolor{keywordtype}{void} ostm\_exit();
+00042     
+00046     \textcolor{keywordtype}{void} \_register(std::shared\_ptr<OSTM>  \textcolor{keywordtype}{object});
+00050     std::shared\_ptr<OSTM>  load(std::shared\_ptr<OSTM>  \textcolor{keywordtype}{object});
+00054     \textcolor{keywordtype}{void} store(std::shared\_ptr<OSTM>  \textcolor{keywordtype}{object});
+00058     \textcolor{keywordtype}{bool} commit();
+00062     \textcolor{keywordtype}{void} \_increase\_tx\_nesting();
+00066     \textcolor{keywordtype}{void} \_decrease\_tx\_nesting();
+00070     \textcolor{keyword}{friend} \textcolor{keyword}{class }TM;
+00071     \textcolor{comment}{/*}
+00072 \textcolor{comment}{     * \(\backslash\)brief ONLY FOR TESTING!!! returning the number of rollback happened during transactions}
+00073 \textcolor{comment}{     */}
+00074     \textcolor{keywordtype}{int} getTest\_counter();
+00078     \textcolor{keyword}{static} \textcolor{keywordtype}{int} test\_counter;
+00079     \textcolor{comment}{/*}
+00080 \textcolor{comment}{     * TESTING ONLY}
+00081 \textcolor{comment}{     */}
+00082     \textcolor{keywordtype}{void} \_print\_all\_tx() ;
+00083 
+00084 
+00085 \textcolor{keyword}{private}:
+00090     std::map< int, std::shared\_ptr<OSTM>  > working\_Map\_collection;
+00096     std::thread::id transaction\_Number;
+00100     \textcolor{keywordtype}{int} \_tx\_nesting\_level;
+00101     
+00106     \textcolor{keyword}{static} std::map<int, std::shared\_ptr<OSTM>  >main\_Process\_Map\_collection;
+00111     \textcolor{keyword}{static} std::map<int, std::map< int, int >> process\_map\_collection;
+00112     \textcolor{comment}{//static std::map<pid\_t, std::map< int, std::pair<ppid, int>  >> process\_map\_collection;}
+00116 \textcolor{comment}{}    std::map< int , int > get\_thread\_Map();
+00120     \textcolor{keyword}{static} std::mutex register\_Lock;
+00124     \textcolor{keyword}{const} std::thread::id \_get\_tx\_number() \textcolor{keyword}{const};
+00125    
+00129     \textcolor{keywordtype}{void} \_release\_object\_lock();
+00133     \textcolor{keywordtype}{void} th\_exit();
+00134     
+00135     
+00136 
+00137 \};
+\end{DoxyCode}

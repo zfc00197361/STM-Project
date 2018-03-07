@@ -1,0 +1,9 @@
+<map id="DUNDALK_W::operator=" name="DUNDALK_W::operator=">
+<area shape="rect" id="node2" href="$class_d_u_n_d_a_l_k___w.html#a91d26f413bf5bc2d089b77036f7fbfa9" title="DUNDALK_W::~DUNDALK_W" alt="" coords="224,5,432,32"/>
+<area shape="rect" id="node3" href="$class_d_u_n_d_a_l_k___w.html#a850117e656ee2961317f758e70e5d143" title="copy function, make deep copy of the object/pointer " alt="" coords="257,56,399,83"/>
+<area shape="rect" id="node4" href="$class_d_u_n_d_a_l_k___w.html#a06cbcac20829906b710962967795d4e6" title="getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object ..." alt="" coords="231,107,425,133"/>
+<area shape="rect" id="node6" href="$class_d_u_n_d_a_l_k___w.html#aef2a8301835c60c21f9f3199259fed87" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="248,157,408,184"/>
+<area shape="rect" id="node5" href="$class_d_u_n_d_a_l_k___w.html#ad459a77b4f3e0aaebb3d178eb014a77f" title="DUNDALK_W::DUNDALK_W" alt="" coords="480,107,680,133"/>
+<area shape="rect" id="node7" href="$class_o_s_t_m.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="501,157,659,184"/>
+<area shape="rect" id="node8" href="$class_o_s_t_m.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="510,208,650,235"/>
+</map>

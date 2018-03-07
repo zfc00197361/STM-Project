@@ -1,0 +1,85 @@
+[OPTIONS]
+Compatibility=1.1
+Full-text search=Yes
+Contents file=index.hhc
+Default Window=main
+Default topic=index.html
+Index file=index.hhk
+Language=0x409 English (United States)
+Title=C++ Software transactional Memory
+
+[WINDOWS]
+main="C++ Software transactional Memory","index.hhc","index.hhk","index.html","index.html",,,,,0x23520,,0x10387e,,,,,,,,0
+
+[FILES]
+_o_s_t_m_8cpp_source.html
+_o_s_t_m_8h_source.html
+_r_e_a_d_m_e_8md_source.html
+_t_m_8cpp_source.html
+_t_m_8h_source.html
+_t_x_8cpp_source.html
+_t_x_8h_source.html
+_o_s_t_m_8cpp.html
+_o_s_t_m_8h.html
+_r_e_a_d_m_e_8md.html
+_t_m_8cpp.html
+_t_m_8h.html
+_t_x_8cpp.html
+_t_x_8h.html
+md__media_zoltan_Data_00_2018_ITCarlow_00_Modules_06_Project_Documents_Git_Sync_Linux_OSTM_README.html
+class_o_s_t_m.html
+class_o_s_t_m-members.html
+class_t_m.html
+class_t_m-members.html
+class_t_x.html
+class_t_x-members.html
+graph_legend.html
+index.html
+pages.html
+annotated.html
+classes.html
+functions.html
+functions_func.html
+functions_vars.html
+functions_rela.html
+files.html
+tab_a.png
+tab_b.png
+tab_h.png
+tab_s.png
+nav_h.png
+nav_f.png
+bc_s.png
+doxygen.png
+closed.png
+open.png
+bdwn.png
+sync_on.png
+sync_off.png
+_o_s_t_m_8cpp__incl.png
+_o_s_t_m_8h__incl.png
+_o_s_t_m_8h__dep__incl.png
+_t_m_8cpp__incl.png
+_t_m_8h__incl.png
+_t_m_8h__dep__incl.png
+_t_x_8cpp__incl.png
+_t_x_8h__incl.png
+_t_x_8h__dep__incl.png
+class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_icgraph.png
+class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_icgraph.png
+class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_icgraph.png
+class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_icgraph.png
+class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_icgraph.png
+class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_icgraph.png
+class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_icgraph.png
+class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_icgraph.png
+class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_icgraph.png
+class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_icgraph.png
+class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_icgraph.png
+class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_cgraph.png
+class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_icgraph.png
+class_t_m_a5e2d1127f2429f2f524d25f430eade06_cgraph.png
+class_t_x_aa3ac499f576326588628ade96b27b4b1_icgraph.png
+class_t_x_a9dde5d356b35e557448e58d260087356_cgraph.png
+class_t_x_aa9739c5c2077454c779098db7baefc2b_icgraph.png
+graph_legend.png
