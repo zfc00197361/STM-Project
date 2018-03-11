@@ -1,0 +1,1226 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  11 MAR 2018 15:48
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**_t_x_8cpp_source.tex
+(./_t_x_8cpp_source.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+! Undefined control sequence.
+l.1 \hypertarget
+                {_t_x_8cpp_source}{}\subsection{T\+X.\+cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1 \hypertarget{_
+                  t_x_8cpp_source}{}\subsection{T\+X.\+cpp}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \hypertarget{_
+                  t_x_8cpp_source}{}\subsection{T\+X.\+cpp}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 1.
+! Double subscript.
+l.1 \hypertarget{_t_
+                    x_8cpp_source}{}\subsection{T\+X.\+cpp}
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.1 \hypertarget{_t_x_
+                      8cpp_source}{}\subsection{T\+X.\+cpp}
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Extra }, or forgotten $.
+l.1 \hypertarget{_t_x_8cpp_source}
+                                  {}\subsection{T\+X.\+cpp}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+l.1 \hypertarget{_t_x_8cpp_source}{}\subsection
+                                               {T\+X.\+cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.1 ...ertarget{_t_x_8cpp_source}{}\subsection{T\+
+                                                  X.\+cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.1 ...rget{_t_x_8cpp_source}{}\subsection{T\+X.\+
+                                                  cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (108.96545pt too wide) in paragraph at lines 1--2
+[]$[][][]\OML/cmm/m/it/10 cpp[]ource[][]$ 
+ []
+
+
+! LaTeX Error: Environment DoxyCode undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \begin{DoxyCode}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 0
+     0001 \textcolor{comment}{/* }
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Undefined control sequence.
+l.4 00001 \textcolor
+                    {comment}{/* }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+! Undefined control sequence.
+l.5 00002 \textcolor
+                    {comment}{ * File:   TX.cpp}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no X in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+! Undefined control sequence.
+l.6 00003 \textcolor
+                    {comment}{ * Author: Zoltan Fuzesi C00197361, }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no Z in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+! Undefined control sequence.
+l.7 00004 \textcolor
+                    {comment}{ * IT Carlow, Software Engineering, }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+! Undefined control sequence.
+l.8 00005 \textcolor
+                    {comment}{ *}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 6 in font nullfont!
+! Undefined control sequence.
+l.9 00006 \textcolor
+                    {comment}{ * Supervisor : Joe Kehoe, }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+! Undefined control sequence.
+l.10 00007 \textcolor
+                     {comment}{ *}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+! Undefined control sequence.
+l.11 00008 \textcolor
+                     {comment}{ * C++ Software Transactional Memory, }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no + in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+! Undefined control sequence.
+l.12 00009 \textcolor
+                     {comment}{ * }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+! Undefined control sequence.
+l.13 00010 \textcolor
+                     {comment}{ * Created on December 18, 2017, 2:09 PM}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 7 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+! Undefined control sequence.
+l.14 00011 \textcolor
+                     {comment}{ * OSTM base class function declarations.}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+! Undefined control sequence.
+l.15 00012 \textcolor
+                     {comment}{ */}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no * in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+! Undefined control sequence.
+l.17 00014 \textcolor
+                     {preprocessor}{#include "\hyperlink{_t_x_8h}{TX.h}"}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+! You can't use `macro parameter character #' in horizontal mode.
+l.17 00014 \textcolor{preprocessor}{#
+                                     include "\hyperlink{_t_x_8h}{TX.h}"}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no " in font nullfont!
+! Undefined control sequence.
+l.17 ...xtcolor{preprocessor}{#include "\hyperlink
+                                                  {_t_x_8h}{TX.h}"}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.17 ...color{preprocessor}{#include "\hyperlink{_
+                                                  t_x_8h}{TX.h}"}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+l.17 ...lor{preprocessor}{#include "\hyperlink{_t_
+                                                  x_8h}{TX.h}"}
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.17 ...r{preprocessor}{#include "\hyperlink{_t_x_
+                                                  8h}{TX.h}"}
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Extra }, or forgotten $.
+l.17 ...reprocessor}{#include "\hyperlink{_t_x_8h}
+                                                  {TX.h}"}
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.17 ...sor}{#include "\hyperlink{_t_x_8h}{TX.h}"}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+l.18 00015 \textcolor
+                     {preprocessor}{#include <iostream>}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `macro parameter character #' in math mode.
+l.18 00015 \textcolor{preprocessor}{#
+                                     include <iostream>}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Undefined control sequence.
+l.19 00016 \textcolor
+                     {comment}{/*}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.20 00017 \textcolor
+                     {comment}{ * @19 main\_Process\_Map\_collection, regist...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.22 00018 \textcolor
+                     {comment}{ */}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.23 ...ap<int, std::shared\_ptr<OSTM> >\hyperlink
+                                                  {class_t_x_a1a45d726894190...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.23 ...td::shared\_ptr<OSTM> >\hyperlink{class_t_
+                                                  x_a1a45d726894190695314464...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.23 ...::shared\_ptr<OSTM> >\hyperlink{class_t_x_
+                                                  a1a45d726894190695314464d7...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.24 00020 \textcolor
+                     {comment}{/*}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.25 00021 \textcolor
+                     {comment}{ * @23 process\_map\_collection, register sta...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.27 00022 \textcolor
+                     {comment}{ */}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.28 ...p<pid\_t, std::map< int, int >> \hyperlink
+                                                  {class_t_x_a2e3cd2f52fd93c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.28 ... std::map< int, int >> \hyperlink{class_t_
+                                                  x_a2e3cd2f52fd93cf6ef3eb3c...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.28 ...td::map< int, int >> \hyperlink{class_t_x_
+                                                  a2e3cd2f52fd93cf6ef3eb3c1c...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.29 00024 \textcolor
+                     {comment}{/*}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 00025 \textcolor
+                     {comment}{ * @27 egister\_Lock, register static class l...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.32 00026 \textcolor
+                     {comment}{ */}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.33 00027 std::mutex \hyperlink
+                                {class_t_x_aa688a8c96fa3cdf8cd92e267463536dc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.33 00027 std::mutex \hyperlink{class_t_
+                                         x_aa688a8c96fa3cdf8cd92e267463536dc...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.33 00027 std::mutex \hyperlink{class_t_x_
+                                           aa688a8c96fa3cdf8cd92e267463536dc...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.34 00028 \textcolor
+                     {comment}{/*}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.35 00029 \textcolor
+                     {comment}{ * @31 test\_counter, register class level In...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.37 00030 \textcolor
+                     {comment}{ */}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.38 00031 \textcolor
+                     {keywordtype}{int} \hyperlink{class_t_x_a25838234aab99a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.38 00031 \textcolor{keywordtype}{int} \hyperlink
+                                                  {class_t_x_a25838234aab99a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.38 ...olor{keywordtype}{int} \hyperlink{class_t_
+                                                  x_a25838234aab99ae891a90eb...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.38 ...or{keywordtype}{int} \hyperlink{class_t_x_
+                                                  a25838234aab99ae891a90eb86...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.39 \hypertarget
+                 {_t_x_8cpp_source.tex_l00036}{}\hyperlink{class_t_x_a8a4b83...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.39 \hypertarget{_t_
+                     x_8cpp_source.tex_l00036}{}\hyperlink{class_t_x_a8a4b83...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.39 \hypertarget{_t_x_
+                       8cpp_source.tex_l00036}{}\hyperlink{class_t_x_a8a4b83...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.39 ...t{_t_x_8cpp_source.tex_l00036}{}\hyperlink
+                                                  {class_t_x_a8a4b83eab0171a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.39 ...pp_source.tex_l00036}{}\hyperlink{class_t_
+                                                  x_a8a4b83eab0171ae834bfa92...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.39 ..._source.tex_l00036}{}\hyperlink{class_t_x_
+                                                  a8a4b83eab0171ae834bfa92bb...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.39 ...0171ae834bfa92bbced1094}{00036} \hyperlink
+                                                  {class_t_x_a8a4b83eab0171a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.39 ...bfa92bbced1094}{00036} \hyperlink{class_t_
+                                                  x_a8a4b83eab0171ae834bfa92...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.39 ...a92bbced1094}{00036} \hyperlink{class_t_x_
+                                                  a8a4b83eab0171ae834bfa92bb...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.39 ...ed1094}{TX::TX}(std::thread::id \textcolor
+                                                  {keywordtype}{id}) \{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.40 00038     this->\hyperlink
+                               {class_t_x_a145a1c74b521f277fe481971a930b249_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.40 00038     this->\hyperlink{class_t_
+                                        x_a145a1c74b521f277fe481971a930b249_...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.40 00038     this->\hyperlink{class_t_x_
+                                          a145a1c74b521f277fe481971a930b249_...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.41 00040     this->\hyperlink
+                               {class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.41 00040     this->\hyperlink{class_t_
+                                        x_ae8f413fd7f4fea322e7ad3c668f9898e_...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.41 00040     this->\hyperlink{class_t_x_
+                                          ae8f413fd7f4fea322e7ad3c668f9898e_...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.43 \hypertarget
+                 {_t_x_8cpp_source.tex_l00045}{}\hyperlink{class_t_x_abecf85...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.43 \hypertarget{_t_
+                     x_8cpp_source.tex_l00045}{}\hyperlink{class_t_x_abecf85...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.43 \hypertarget{_t_x_
+                       8cpp_source.tex_l00045}{}\hyperlink{class_t_x_abecf85...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.43 ...t{_t_x_8cpp_source.tex_l00045}{}\hyperlink
+                                                  {class_t_x_abecf854cc3228a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.43 ...pp_source.tex_l00045}{}\hyperlink{class_t_
+                                                  x_abecf854cc3228ab6dd51175...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.43 ..._source.tex_l00045}{}\hyperlink{class_t_x_
+                                                  abecf854cc3228ab6dd51175b3...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.43 ...3228ab6dd51175b3cd1c70a}{00045} \hyperlink
+                                                  {class_t_x_abecf854cc3228a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.43 ...51175b3cd1c70a}{00045} \hyperlink{class_t_
+                                                  x_abecf854cc3228ab6dd51175...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.43 ...175b3cd1c70a}{00045} \hyperlink{class_t_x_
+                                                  abecf854cc3228ab6dd51175b3...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.45 \hypertarget
+                 {_t_x_8cpp_source.tex_l00052}{}\hyperlink{class_t_x_ae04553...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.45 \hypertarget{_t_
+                     x_8cpp_source.tex_l00052}{}\hyperlink{class_t_x_ae04553...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.45 \hypertarget{_t_x_
+                       8cpp_source.tex_l00052}{}\hyperlink{class_t_x_ae04553...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.45 ...t{_t_x_8cpp_source.tex_l00052}{}\hyperlink
+                                                  {class_t_x_ae045534c4a9d39...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.45 ...pp_source.tex_l00052}{}\hyperlink{class_t_
+                                                  x_ae045534c4a9d39bd5c6ea2a...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.45 ..._source.tex_l00052}{}\hyperlink{class_t_x_
+                                                  ae045534c4a9d39bd5c6ea2a39...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.45 ...a9d39bd5c6ea2a39a372a79}{00052} \textcolor
+                                                  {keywordtype}{void} \hyper...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.45 ...} \textcolor{keywordtype}{void} \hyperlink
+                                                  {class_t_x_ae045534c4a9d39...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.45 ...lor{keywordtype}{void} \hyperlink{class_t_
+                                                  x_ae045534c4a9d39bd5c6ea2a...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.45 ...r{keywordtype}{void} \hyperlink{class_t_x_
+                                                  ae045534c4a9d39bd5c6ea2a39...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.46 00054     \textcolor
+                         {keywordflow}{if} (this->\hyperlink{class_t_x_ae8f4...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 ...xtcolor{keywordflow}{if} (this->\hyperlink
+                                                  {class_t_x_ae8f413fd7f4fea...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.46 ...eywordflow}{if} (this->\hyperlink{class_t_
+                                                  x_ae8f413fd7f4fea322e7ad3c...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.46 ...wordflow}{if} (this->\hyperlink{class_t_x_
+                                                  ae8f413fd7f4fea322e7ad3c66...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.47 00055         \textcolor
+                             {comment}{/* Active nested transactions running...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.48 00056     \} \textcolor
+                            {keywordflow}{else} \{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.49 00057         \textcolor
+                             {comment}{/* Remove all elements map entries fr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.50 00058         \hyperlink
+                             {class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a8...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.50 00058         \hyperlink{class_t_
+                                      x_a81aafda16e2f20e36ec6c68e584668ff_a8...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.50 00058         \hyperlink{class_t_x_
+                                        a81aafda16e2f20e36ec6c68e584668ff_a8...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.54 \hypertarget
+                 {_t_x_8cpp_source.tex_l00068}{}\hyperlink{class_t_x_aa9739c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.54 \hypertarget{_t_
+                     x_8cpp_source.tex_l00068}{}\hyperlink{class_t_x_aa9739c...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.54 \hypertarget{_t_x_
+                       8cpp_source.tex_l00068}{}\hyperlink{class_t_x_aa9739c...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Undefined control sequence.
+l.54 ...t{_t_x_8cpp_source.tex_l00068}{}\hyperlink
+                                                  {class_t_x_aa9739c5c207745...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Double subscript.
+l.54 ...pp_source.tex_l00068}{}\hyperlink{class_t_
+                                                  x_aa9739c5c2077454c779098d...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.54 ..._source.tex_l00068}{}\hyperlink{class_t_x_
+                                                  aa9739c5c2077454c779098db7...
+(That makes 100 errors; please try again.) 
+Here is how much of TeX's memory you used:
+ 9 strings out of 493029
+ 221 string characters out of 6136233
+ 64064 words of memory out of 5000000
+ 3645 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 18i,5n,12p,317b,58s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+!  ==> Fatal error occurred, no output PDF file produced!

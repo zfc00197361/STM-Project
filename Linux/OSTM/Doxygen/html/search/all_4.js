@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['load',['load',['../class_t_x.html#a1d78262b8831ddd042ed491f2e600e24',1,'TX']]],
-  ['lock_5fmutex',['lock_Mutex',['../class_o_s_t_m.html#af192c598a3c647f37aaba5757e60240f',1,'OSTM']]]
+  ['increase_5fversionnumber',['increase_VersionNumber',['../class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a.html#a5f90caa4384d371c16b7cac860d9f89a',1,'OSTM']]],
+  ['instance',['Instance',['../class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60.html#a7ce5f35e0dae76df4fe116cf905bbe60',1,'TM']]],
+  ['is_5fabort_5ftransaction',['Is_Abort_Transaction',['../class_o_s_t_m_afc2851abf5342c3c67342c2c14820115.html#afc2851abf5342c3c67342c2c14820115',1,'OSTM']]],
+  ['is_5fcan_5fcommit',['Is_Can_Commit',['../class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7.html#a8df39ced3b401aa466df97e26d14b1b7',1,'OSTM']]],
+  ['is_5flocked',['is_Locked',['../class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0.html#afb6520023ed2c4a6188b688c46f192d0',1,'OSTM']]]
 ];

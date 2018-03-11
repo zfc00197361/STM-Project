@@ -12,7 +12,7 @@
 <listitem>
 <para>Copy lib_o_stm.so file to /usr/lib: sudo cp lib_o_stm.so /usr/lib</para>
 </listitem><listitem>
-<para>Include the <link linkend="_t_m_8h_source">TM.h</link> <link linkend="_t_x_8h_source">TX.h</link> and the <link linkend="_o_s_t_m_8h_source">OSTM.h</link> files in your application.
+<para>Include the <link linkend="_t_m_8h">TM.h</link> <link linkend="_t_x_8h">TX.h</link> and the <link linkend="_o_s_t_m_8h">OSTM.h</link> files in your application.
 <literallayout>
 </literallayout>
 </para>
@@ -46,7 +46,7 @@
  CFILES = main.cpp AIB.cpp ULSTER.cpp BOA.cpp UNBL.cpp SWBPLC.cpp
 <literallayout>
 </literallayout>
- HFILES = <link linkend="_t_m_8h_source">TM.h</link> <link linkend="_t_x_8h_source">TX.h</link> <link linkend="_o_s_t_m_8h_source">OSTM.h</link> AIB.h ULSTER.h BOA.h UNBL.h SWBPLC.h
+ HFILES = <link linkend="_t_m_8h">TM.h</link> <link linkend="_t_x_8h">TX.h</link> <link linkend="_o_s_t_m_8h">OSTM.h</link> AIB.h ULSTER.h BOA.h UNBL.h SWBPLC.h
 <literallayout>
 </literallayout>
  

@@ -44,4 +44,68 @@
         <title>Detailed Description</title>
     <para>Definition in file TM.h</para>
     </simplesect>
+    <literallayout><computeroutput>
+1 
+46 <emphasis class="preprocessor">#ifndef&#32;TM_H</emphasis>
+47 <emphasis class="preprocessor">#define&#32;TM_H</emphasis>
+48 
+49 <emphasis class="preprocessor">#include&#32;&lt;thread&gt;</emphasis>
+50 <emphasis class="preprocessor">#include&#32;&lt;unistd.h&gt;</emphasis><emphasis class="comment">//used&#32;for&#32;pid_t</emphasis>
+51 <emphasis class="preprocessor">#include&#32;&lt;mutex&gt;</emphasis>
+52 <emphasis class="preprocessor">#include&#32;&lt;unordered_map&gt;</emphasis>
+53 <emphasis class="preprocessor">#include&#32;&lt;utility&gt;</emphasis>
+54 <emphasis class="preprocessor">#include&#32;&lt;map&gt;</emphasis>
+55 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_t_x_8h">TX.h</link>&quot;</emphasis>
+56 
+<link linkend="class_t_m">57 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="class_t_m">TM</link>&#32;{
+58 <emphasis class="keyword">private</emphasis>:
+59 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+60 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;TM&#32;constructor,&#32;prevent&#32;from&#32;multiple&#32;instantiation</emphasis>
+61 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+62 &#32;&#32;&#32;&#32;<link linkend="class_t_m_a9b5afb6b9d7c5925ab5cc5c65078ac23_1a9b5afb6b9d7c5925ab5cc5c65078ac23">TM</link>()&#32;=&#32;<emphasis class="keywordflow">default</emphasis>;&#32;
+63 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+64 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;TM&#32;de-constructor,&#32;prevent&#32;from&#32;deletion</emphasis>
+65 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+66 &#32;&#32;&#32;&#32;<link linkend="class_t_m_a985f8cb24f685925ddd637c7030cd2b3_1a985f8cb24f685925ddd637c7030cd2b3">~TM</link>()&#32;=&#32;<emphasis class="keywordflow">default</emphasis>;
+70 &#32;&#32;&#32;&#32;<link linkend="class_t_m_a9b5afb6b9d7c5925ab5cc5c65078ac23_1a9b5afb6b9d7c5925ab5cc5c65078ac23">TM</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_t_m">TM</link>&amp;)&#32;=&#32;<emphasis class="keyword">delete</emphasis>;&#32;
+74 &#32;&#32;&#32;&#32;<link linkend="class_t_m">TM</link>&amp;&#32;<link linkend="class_t_m_a85a6b783f0566f0877bab6a7de977c0a_1a85a6b783f0566f0877bab6a7de977c0a">operator=</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_t_m">TM</link>&amp;)&#32;=&#32;<emphasis class="keyword">delete</emphasis>;&#32;
+75 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+76 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;txMap&#32;std::map,&#32;store&#32;all&#32;transactional&#32;objects&#32;created&#32;with&#32;Transaction&#32;Manager</emphasis>
+77 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">78 </link>&#32;&#32;&#32;&#32;std::map&lt;std::thread::id,&#32;std::shared_ptr&lt;TX&gt;&gt;<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">txMap</link>;
+79 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+80 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;STATIC&#32;GLOBAL&#32;MAP&#32;Collection&#32;to&#32;store&#32;all&#32;process&#32;associated&#32;keys&#32;to&#32;find&#32;when&#32;deleting&#32;transactions&#32;</emphasis>
+81 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_t_m_a6d417b18213968da2a70a914e80d639b_1a6d417b18213968da2a70a914e80d639b">82 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">static</emphasis>&#32;std::map&lt;pid_t,&#32;std::map&lt;&#32;std::thread::id,&#32;int&#32;&gt;&gt;&#32;<link linkend="class_t_m_a6d417b18213968da2a70a914e80d639b_1a6d417b18213968da2a70a914e80d639b">process_map_collection</link>;
+83 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+84 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;get_thread_Map&#32;returning&#32;and&#32;map&#32;to&#32;insert&#32;to&#32;the&#32;process_map_collection&#32;as&#32;an&#32;inner&#32;value</emphasis>
+85 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+86 &#32;&#32;&#32;&#32;std::map&lt;&#32;std::thread::id,&#32;int&#32;&gt;&#32;<link linkend="class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_1afb8bc9f42fe06c52747beb7f4c46915c">get_thread_Map</link>();
+87 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+88 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;registerTX&#32;void,&#32;register&#32;transaction&#32;into&#32;txMap</emphasis>
+89 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+90 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_1a26ea481c24d9aa3aebd6dafb7253376e">registerTX</link>();&#32;
+91 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+92 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;register_Lock&#32;std::mutex,&#32;used&#32;in&#32;the&#32;registerTX&#32;function</emphasis>
+93 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_t_m_aeb26546681bfe64e21606b8c012bb8c3_1aeb26546681bfe64e21606b8c012bb8c3">94 </link>&#32;&#32;&#32;&#32;std::mutex&#32;<link linkend="class_t_m_aeb26546681bfe64e21606b8c012bb8c3_1aeb26546681bfe64e21606b8c012bb8c3">register_Lock</link>;
+95 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+96 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;register_Lock&#32;std::mutex,&#32;used&#32;in&#32;the&#32;_get_tx&#32;function</emphasis>
+97 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_1a123bc5aa0766a7b909bebc54a429e5b0">98 </link>&#32;&#32;&#32;&#32;std::mutex&#32;<link linkend="class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_1a123bc5aa0766a7b909bebc54a429e5b0">get_Lock</link>;
+99 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+100 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;_tm_id&#32;pid_t,&#32;process&#32;id&#32;determine&#32;the&#32;actual&#32;process&#32;between&#32;process&#32;in&#32;the&#32;shared&#32;OSTM&#32;library</emphasis>
+101 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_t_m_a9d49d0ddef82337e54b684c9e1e8ad21_1a9d49d0ddef82337e54b684c9e1e8ad21">102 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">static</emphasis>&#32;pid_t&#32;<link linkend="class_t_m_a9d49d0ddef82337e54b684c9e1e8ad21_1a9d49d0ddef82337e54b684c9e1e8ad21">_tm_id</link>;
+103 
+104 <emphasis class="keyword">public</emphasis>:
+108 &#32;&#32;&#32;&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="class_t_m">TM</link>&amp;&#32;<link linkend="class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_1a7ce5f35e0dae76df4fe116cf905bbe60">Instance</link>();
+112 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();&#32;
+117 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+121 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_1a1d6891b1d3e71cc0acef54e7afe71c09">print_all</link>();
+122 };
+123 
+124 
+125 <emphasis class="preprocessor">#endif&#32;//&#32;TM_H</emphasis>
+    </computeroutput></literallayout>
 </section>

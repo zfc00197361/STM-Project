@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="a00006">
-    <title>OSTM.cpp File Reference</title>
-    <programlisting>#include &quot;OSTM.h&quot;</programlisting>
-    <simplesect>
-        <title>Detailed Description</title>
-    <para>Definition in file /media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.cpp</para>
-    </simplesect>
-</section>

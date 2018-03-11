@@ -3,7 +3,7 @@ Usage of the S\+TM library on Linux.~\newline
 
 \begin{DoxyEnumerate}
 \item Copy lib\+\_\+o\+\_\+stm.\+so file to /usr/lib\+: sudo cp lib\+\_\+o\+\_\+stm.\+so /usr/lib
-\item Include the \hyperlink{_t_m_8h_source}{T\+M.\+h} \hyperlink{_t_x_8h_source}{T\+X.\+h} and the \hyperlink{_o_s_t_m_8h_source}{O\+S\+T\+M.\+h} files in your application.~\newline
+\item Include the \hyperlink{_t_m_8h}{T\+M.\+h} \hyperlink{_t_x_8h}{T\+X.\+h} and the \hyperlink{_o_s_t_m_8h}{O\+S\+T\+M.\+h} files in your application.~\newline
 
 \item Create Makefile \+: ~\newline
 ~\newline
@@ -16,7 +16,7 @@ E\+XE =Test~\newline
  P\+R\+O\+G\+R\+AM = app~\newline
  C\+F\+L\+A\+GS =-\/std=c++14 -\/pthread ~\newline
  C\+F\+I\+L\+ES = main.\+cpp A\+I\+B.\+cpp U\+L\+S\+T\+E\+R.\+cpp B\+O\+A.\+cpp U\+N\+B\+L.\+cpp S\+W\+B\+P\+L\+C.\+cpp~\newline
- H\+F\+I\+L\+ES = \hyperlink{_t_m_8h_source}{T\+M.\+h} \hyperlink{_t_x_8h_source}{T\+X.\+h} \hyperlink{_o_s_t_m_8h_source}{O\+S\+T\+M.\+h} A\+I\+B.\+h U\+L\+S\+T\+E\+R.\+h B\+O\+A.\+h U\+N\+B\+L.\+h S\+W\+B\+P\+L\+C.\+h~\newline
+ H\+F\+I\+L\+ES = \hyperlink{_t_m_8h}{T\+M.\+h} \hyperlink{_t_x_8h}{T\+X.\+h} \hyperlink{_o_s_t_m_8h}{O\+S\+T\+M.\+h} A\+I\+B.\+h U\+L\+S\+T\+E\+R.\+h B\+O\+A.\+h U\+N\+B\+L.\+h S\+W\+B\+P\+L\+C.\+h~\newline
  ~\newline
 ~\newline
  all\+:~\newline

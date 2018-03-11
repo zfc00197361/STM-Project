@@ -1,4 +1,4 @@
-.TH "OSTM" 3 "Wed Mar 7 2018" "C++ Software transactional Memory" \" -*- nroff -*-
+.TH "OSTM" 3 "Sun Mar 11 2018" "C++ Software transactional Memory" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,411 +6,545 @@ OSTM \-
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fC#include <OSTM\&.h>\fP
 .SS "Public Member Functions"
 
 .in +1c
 .ti -1c
-.RI "\fBOSTM\fP ()"
-.br
-.RI "\fI\fBOSTM\fP Constructor\&. \fP"
-.ti -1c
-.RI "\fBOSTM\fP (int _version_number_, int _unique_id_)"
-.br
-.RI "\fI\fBOSTM\fP Custom Constructor\&. \fP"
-.ti -1c
-.RI "virtual \fB~OSTM\fP ()"
-.br
-.RI "\fIDe-constructor\&. \fP"
-.ti -1c
 .RI "virtual void \fBcopy\fP (std::shared_ptr< \fBOSTM\fP > from, std::shared_ptr< \fBOSTM\fP > to)"
 .br
-.RI "\fI\fBOSTM\fP required virtual method for deep copy\&. \fP"
-.ti -1c
-.RI "virtual std::shared_ptr< \fBOSTM\fP > \fBgetBaseCopy\fP (std::shared_ptr< \fBOSTM\fP > object)"
-.br
-.RI "\fI\fBOSTM\fP required virtual method for returning a pointer that is copy of the original pointer\&. \fP"
-.ti -1c
-.RI "virtual void \fBtoString\fP ()"
-.br
-.RI "\fI\fBOSTM\fP required virtual method for display object\&. \fP"
-.ti -1c
-.RI "void \fBSet_Unique_ID\fP (int uniqueID)"
-.br
-.RI "\fIsetter for unique id \fP"
+.RI "\fIThe copy virtual method required for deep copy between objetcs within the transaction\&. \fP"
 .ti -1c
 .RI "int \fBGet_Unique_ID\fP () const "
 .br
-.RI "\fIgetter for unique id \fP"
-.ti -1c
-.RI "void \fBSet_Version\fP (int version)"
-.br
-.RI "\fIsetter for version number \fP"
+.RI "\fI@82 Function <Get_Unique_ID> getter for uniqueID private field \fP"
 .ti -1c
 .RI "int \fBGet_Version\fP () const "
 .br
-.RI "\fIgetter for version number \fP"
+.RI "\fI@100 Function <Get_Version> setter for version private filed \fP"
+.ti -1c
+.RI "virtual std::shared_ptr< \fBOSTM\fP > \fBgetBaseCopy\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fIThe getbasecopy virtual method required for create a copy of the origin object/pointer and returning a copy of the object/pointer\&. \fP"
 .ti -1c
 .RI "void \fBincrease_VersionNumber\fP ()"
 .br
-.RI "\fIcommit time increase version number to child object \fP"
-.ti -1c
-.RI "bool \fBIs_Can_Commit\fP () const "
-.br
-.RI "\fIreturn boolean \fP"
-.ti -1c
-.RI "void \fBSet_Can_Commit\fP (bool canCommit)"
-.br
-.RI "\fIset boolean \fP"
-.ti -1c
-.RI "void \fBSet_Abort_Transaction\fP (bool abortTransaction)"
-.br
-.RI "\fIset boolean \fP"
+.RI "\fI@108 Function <increase_VersionNumber> commit time increase the version number associated with the object \fP"
 .ti -1c
 .RI "bool \fBIs_Abort_Transaction\fP () const "
 .br
-.RI "\fIreturn boolean \fP"
+.RI "\fI@140 Function <Is_Abort_Transaction> return boolean value stored in the <abortTransaction> private filed \fP"
 .ti -1c
-.RI "void \fBlock_Mutex\fP ()"
+.RI "bool \fBIs_Can_Commit\fP () const "
 .br
-.RI "\fIobject unique lock, locks mutex \fP"
-.ti -1c
-.RI "void \fBunlock_Mutex\fP ()"
-.br
-.RI "\fIobject unique lock, unlocks mutex \fP"
+.RI "\fI@124 Function <Is_Can_Commit> boolean function to determin the object can comit or need to roolback\&. \fP"
 .ti -1c
 .RI "bool \fBis_Locked\fP ()"
 .br
-.RI "\fIobject unique lock, try locks mutex return boolean value depends on the lock state \fP"
+.RI "\fI@162 Function <is_Locked> Boolean function to try lock the object\&. If the object not locked then locks and return True it otherwise return False\&. \fP"
+.ti -1c
+.RI "void \fBlock_Mutex\fP ()"
+.br
+.RI "\fI@145 Function <lock_Mutex> setter for mutex to lock the object \fP"
+.ti -1c
+.RI "\fBOSTM\fP ()"
+.br
+.RI "\fI@21 Default constructor \fP"
+.ti -1c
+.RI "\fBOSTM\fP (int _version_number_, int _unique_id_)"
+.br
+.RI "\fI@39 Custom Constructor Used to copying objects \fP"
+.ti -1c
+.RI "void \fBSet_Abort_Transaction\fP (bool abortTransaction)"
+.br
+.RI "\fI@132 Function <Set_Abort_Transaction> setter for abortTransaction private filed \fP"
+.ti -1c
+.RI "void \fBSet_Can_Commit\fP (bool \fBcanCommit\fP)"
+.br
+.RI "\fI@117 Function <Set_Can_Commit> setter for canCommit private filed \fP"
+.ti -1c
+.RI "void \fBSet_Unique_ID\fP (int \fBuniqueID\fP)"
+.br
+.RI "\fI@75 Function <Set_Unique_ID> setter for uniqueID private field \fP"
+.ti -1c
+.RI "void \fBSet_Version\fP (int \fBversion\fP)"
+.br
+.RI "\fI@92 Function <Set_Version> setter for version private filed \fP"
+.ti -1c
+.RI "virtual void \fBtoString\fP ()"
+.br
+.RI "\fIThe toString function displaying/representing the object on the terminal is string format\&. \fP"
+.ti -1c
+.RI "void \fBunlock_Mutex\fP ()"
+.br
+.RI "\fI@154 Function <unlock_Mutex> setter for mutex to unlock the object \fP"
+.ti -1c
+.RI "virtual \fB~OSTM\fP ()"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBGet_global_Unique_ID_Number\fP ()"
+.br
+.RI "\fI@61 Get_global_Unique_ID_Number function, If <global_Unique_ID_Number> equals to 10000000 then reset back to ZERO, to make sure the value of global_Unique_ID_Number never exceed the MAX_INT value \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBabort_Transaction\fP"
+.br
+.ti -1c
+.RI "bool \fBcanCommit\fP"
+.br
+.ti -1c
+.RI "std::mutex \fBmutex\fP"
+.br
+.ti -1c
+.RI "int \fBuniqueID\fP"
+.br
+.ti -1c
+.RI "int \fBversion\fP"
+.br
+.ti -1c
+.RI "const int \fBZERO\fP = 0"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static int \fBglobal_Unique_ID_Number\fP = 0"
+.br
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 17 of file OSTM\&.h\&.
+File: \fBOSTM\&.h\fP Author: Zoltan Fuzesi C00197361, IT Carlow, Software Engineering,
+.PP
+Supervisor : Joe Kehoe,
+.PP
+C++ Software Transactional Memory,
+.PP
+Created on December 18, 2017, 2:09 PM The \fBOSTM\fP class is the base class to all the inherited classes that intend to used with the Software Transactional memory library 
+.PP
+Definition at line 23 of file OSTM\&.h\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "OSTM::OSTM ()"
 
 .PP
-\fBOSTM\fP Constructor\&. Default constructor\&.
+@21 Default constructor @24 Integer field <version> indicates the version number of the inherited child object
 .PP
-\fBParameters:\fP
-.RS 4
-\fIversion\fP indicates the version number of the inherited child pointer 
-.br
-\fIuniqueID\fP is a unique identifier assigned to every object registered in \fBOSTM\fP library 
-.br
-\fIcanCommit\fP boolean 
-.br
-\fIabort_Transaction\fP boolean 
-.RE
+@26 Integer field <uniqueID> is a unique identifier assigned to every object registered in \fBOSTM\fP library
 .PP
-
+@28 Boolean value <canCommit> to determine the object can or cannot commit
 .PP
-Definition at line 20 of file OSTM\&.cpp\&.
+@30 Boolean field <abort_Transaction> to determine the object can or cannot commit 
+.PP
+Definition at line 21 of file OSTM\&.cpp\&.
+.PP
+References abort_Transaction, canCommit, Get_global_Unique_ID_Number(), uniqueID, version, and ZERO\&.
 .PP
 .nf
-21 {
-22     this->version = ZERO;
-23     this->uniqueID = Get_global_Unique_ID_Number(); //++global_Unique_ID_Number;
-24     this->canCommit = true;
-25     this->abort_Transaction = false;
-26 }
+22 {
+24     this->version = ZERO;
+26     this->uniqueID = Get_global_Unique_ID_Number();
+28     this->canCommit = true;
+30     this->abort_Transaction = false;
+31 }
 .fi
 .SS "OSTM::OSTM (int _version_number_, int _unique_id_)"
 
 .PP
-\fBOSTM\fP Custom Constructor\&. Custom Constructor Used for copy object\&.
+@39 Custom Constructor Used to copying objects 
 .PP
 \fBParameters:\fP
 .RS 4
-\fIversion\fP indicates the version number of the inherited child pointer 
+\fI<em>version_number</em>\fP Integer value used to create a copy of the object with the actual version 
 .br
-\fIuniqueID\fP is a unique identifier assigned to every object registered in \fBOSTM\fP library 
-.br
-\fIcanCommit\fP boolean 
-.br
-\fIabort_Transaction\fP boolean 
+\fI<em>unique_id</em>\fP Integer value used to create a copy of the object with the original unique ID 
 .RE
 .PP
-
+@42 Integer field <version> indicates the version number of the inherited child object
 .PP
-Definition at line 36 of file OSTM\&.cpp\&.
+@44 Integer field <uniqueID> is a unique identifier assigned to every object registered in \fBOSTM\fP library
+.PP
+@46 Boolean value <canCommit> to determine the object can or cannot commit
+.PP
+@48 Boolean value <abort_Transaction> to determine the object can or cannot commit 
+.PP
+Definition at line 39 of file OSTM\&.cpp\&.
+.PP
+References abort_Transaction, canCommit, uniqueID, and version\&.
 .PP
 .nf
-37 {
-38    // std::cout << "OSTM COPY CONSTRUCTOR" << global_Unique_ID_Number << std::endl;
-39     this->uniqueID = _unique_id_;
-40     this->version = _version_number_;
-41     this->canCommit = true;
-42     this->abort_Transaction = false;
-43 }
+40 {
+42     this->uniqueID = _unique_id_;
+44     this->version = _version_number_;
+46     this->canCommit = true;
+48     this->abort_Transaction = false;
+49 }
 .fi
 .SS "OSTM::~OSTM ()\fC [virtual]\fP"
-
+@54 Default De-constructor Delete the object\&. 
 .PP
-De-constructor\&. De-constructor 
-.PP
-Definition at line 48 of file OSTM\&.cpp\&.
+Definition at line 54 of file OSTM\&.cpp\&.
 .PP
 .nf
-48             {
-49     //std::cout << "[OSTM DELETE]" << std::endl;
-50 }
+54             {
+56 }
 .fi
 .SH "Member Function Documentation"
 .PP 
-.SS "int OSTM::Get_Unique_ID () const"
+.SS "virtual void OSTM::copy (std::shared_ptr< \fBOSTM\fP > from, std::shared_ptr< \fBOSTM\fP > to)\fC [inline]\fP, \fC [virtual]\fP"
 
 .PP
-getter for unique id 
+The copy virtual method required for deep copy between objetcs within the transaction\&. 
 .PP
-\fBParameters:\fP
+\fBSee also:\fP
 .RS 4
-\fIuniqueID\fP int 
+\fBcopy\fP function implementation in inherited class class 
 .RE
 .PP
 
 .PP
-Definition at line 73 of file OSTM\&.cpp\&.
+Definition at line 41 of file OSTM\&.h\&.
+.PP
+.nf
+41 {};  
+.fi
+.SS "int OSTM::Get_global_Unique_ID_Number ()\fC [private]\fP"
+
+.PP
+@61 Get_global_Unique_ID_Number function, If <global_Unique_ID_Number> equals to 10000000 then reset back to ZERO, to make sure the value of global_Unique_ID_Number never exceed the MAX_INT value Returning global_Unique_ID_Number to the constructor @64 Checking the global_Unique_ID_Number
+.PP
+@65 Reset global_Unique_ID_Number to ZERO
+.PP
+@67 return static global_Unique_ID_Number 
+.PP
+Definition at line 61 of file OSTM\&.cpp\&.
+.PP
+References global_Unique_ID_Number\&.
+.PP
+Referenced by OSTM()\&.
+.PP
+.nf
+61                                       {
+63     if(global_Unique_ID_Number > 10000000)
+65         global_Unique_ID_Number = 0;
+67     return ++global_Unique_ID_Number;
+68 }
+.fi
+.SS "int OSTM::Get_Unique_ID () const"
+
+.PP
+@82 Function <Get_Unique_ID> getter for uniqueID private field @85 return Object uniqueID 
+.PP
+Definition at line 82 of file OSTM\&.cpp\&.
+.PP
+References uniqueID\&.
 .PP
 Referenced by toString()\&.
 .PP
 .nf
-74 {
-75     return uniqueID;
-76 }
+83 {
+85     return uniqueID;
+86 }
 .fi
 .SS "int OSTM::Get_Version () const"
 
 .PP
-getter for version number 
+@100 Function <Get_Version> setter for version private filed return object version number 
 .PP
-\fBParameters:\fP
-.RS 4
-\fIversion\fP int 
-.RE
+Definition at line 100 of file OSTM\&.cpp\&.
 .PP
-
-.PP
-Definition at line 89 of file OSTM\&.cpp\&.
+References version\&.
 .PP
 Referenced by toString()\&.
 .PP
 .nf
-90 {
-91     return version;
-92 }
+101 {
+103     return version;
+104 }
+.fi
+.SS "virtual std::shared_ptr<\fBOSTM\fP> OSTM::getBaseCopy (std::shared_ptr< \fBOSTM\fP > object)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+The getbasecopy virtual method required for create a copy of the origin object/pointer and returning a copy of the object/pointer\&. 
+.PP
+\fBSee also:\fP
+.RS 4
+\fBgetBaseCopy\fP function implementation in child class 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file OSTM\&.h\&.
+.PP
+.nf
+46 {};//std::cout << "[OSTM GETBASECOPY]" << std::endl;};
 .fi
 .SS "void OSTM::increase_VersionNumber ()"
 
 .PP
-commit time increase version number to child object 
+@108 Function <increase_VersionNumber> commit time increase the version number associated with the object @111 increase object version number 
 .PP
-\fBParameters:\fP
-.RS 4
-\fIversion\fP int 
-.RE
+Definition at line 108 of file OSTM\&.cpp\&.
 .PP
-
-.PP
-Definition at line 97 of file OSTM\&.cpp\&.
+References version\&.
 .PP
 Referenced by toString()\&.
 .PP
 .nf
-98 {
-99     this->version += 1;
-100 }
+109 {
+111     this->version += 1;
+112 }
 .fi
 .SS "bool OSTM::Is_Abort_Transaction () const"
 
 .PP
-return boolean NOT USED YET\&.
+@140 Function <Is_Abort_Transaction> return boolean value stored in the <abortTransaction> private filed 
 .PP
 \fBParameters:\fP
 .RS 4
-\fIabort_Transaction\fP boolean 
+\fIabort_Transaction\fP Boolean to determine the object can or cannot commit 
 .RE
 .PP
-
+@142 return abort_Transaction object boolean value 
 .PP
-Definition at line 126 of file OSTM\&.cpp\&.
+Definition at line 140 of file OSTM\&.cpp\&.
+.PP
+References abort_Transaction\&.
 .PP
 Referenced by toString()\&.
 .PP
 .nf
-126                                       {
-127     return abort_Transaction;
-128 }
+140                                       {
+142     return abort_Transaction;
+143 }
 .fi
 .SS "bool OSTM::Is_Can_Commit () const"
 
 .PP
-return boolean NOT USED YET\&.
+@124 Function <Is_Can_Commit> boolean function to determin the object can comit or need to roolback\&. @126 return canCommit boolean value TRUE/FALSE 
 .PP
-\fBParameters:\fP
-.RS 4
-\fIcanCommit\fP boolean 
-.RE
+Definition at line 124 of file OSTM\&.cpp\&.
 .PP
-
-.PP
-Definition at line 112 of file OSTM\&.cpp\&.
+References canCommit\&.
 .PP
 Referenced by toString()\&.
 .PP
 .nf
-112                                {
-113     return canCommit;
-114 }
+124                                {
+126     return canCommit;
+127 }
 .fi
 .SS "bool OSTM::is_Locked ()"
 
 .PP
-object unique lock, try locks mutex return boolean value depends on the lock state 
+@162 Function <is_Locked> Boolean function to try lock the object\&. If the object not locked then locks and return True it otherwise return False\&. @164 Try to unlock the mutex, return TRUE if the lock was acquired successfully, otherwise return FALSE 
 .PP
-\fBParameters:\fP
-.RS 4
-\fImutex\fP std::mutex 
-.RE
+Definition at line 162 of file OSTM\&.cpp\&.
 .PP
-
-.PP
-Definition at line 147 of file OSTM\&.cpp\&.
+References mutex\&.
 .PP
 Referenced by toString()\&.
 .PP
 .nf
-147                     {
-148     return this->mutex\&.try_lock();
-149 }
+162                     {
+164     return this->mutex\&.try_lock();
+165 }
 .fi
 .SS "void OSTM::lock_Mutex ()"
 
 .PP
-object unique lock, locks mutex 
+@145 Function <lock_Mutex> setter for mutex to lock the object @149 Locking the mutex 
 .PP
-\fBParameters:\fP
-.RS 4
-\fImutex\fP std::mutex 
-.RE
+Definition at line 147 of file OSTM\&.cpp\&.
 .PP
-
-.PP
-Definition at line 133 of file OSTM\&.cpp\&.
+References mutex\&.
 .PP
 Referenced by toString()\&.
 .PP
 .nf
-133                       {
-134     this->mutex\&.lock();
-135 }
+147                       {
+149     this->mutex\&.lock();
+150 }
 .fi
 .SS "void OSTM::Set_Abort_Transaction (bool abortTransaction)"
 
 .PP
-set boolean NOT USED YET\&.
+@132 Function <Set_Abort_Transaction> setter for abortTransaction private filed 
 .PP
 \fBParameters:\fP
 .RS 4
-\fIabort_Transaction\fP boolean 
+\fIabortTransaction\fP Boolean to determine the object can or cannot commit 
 .RE
 .PP
-
+@134 set abort_Transaction object variable to parameter boolean value 
 .PP
-Definition at line 119 of file OSTM\&.cpp\&.
+Definition at line 132 of file OSTM\&.cpp\&.
+.PP
+References abort_Transaction\&.
 .PP
 Referenced by toString()\&.
 .PP
 .nf
-119                                                       {
-120     this->abort_Transaction = abortTransaction;
-121 }
+132                                                       {
+134     this->abort_Transaction = abortTransaction;
+135 }
 .fi
 .SS "void OSTM::Set_Can_Commit (bool canCommit)"
 
 .PP
-set boolean NOT USED YET\&.
+@117 Function <Set_Can_Commit> setter for canCommit private filed 
 .PP
 \fBParameters:\fP
 .RS 4
-\fIcanCommit\fP boolean 
+\fIcanCommit\fP Boolean value to determine the object can or cannot commit 
 .RE
 .PP
-
+@119 set canCommit object variable to parameter boolean value 
 .PP
-Definition at line 105 of file OSTM\&.cpp\&.
+Definition at line 117 of file OSTM\&.cpp\&.
+.PP
+References canCommit\&.
 .PP
 Referenced by toString()\&.
 .PP
 .nf
-105                                         {
-106     this->canCommit = canCommit;
-107 }
+117                                         {
+119     this->canCommit = canCommit;
+120 }
 .fi
 .SS "void OSTM::Set_Unique_ID (int uniqueID)"
 
 .PP
-setter for unique id 
+@75 Function <Set_Unique_ID> setter for uniqueID private field 
 .PP
 \fBParameters:\fP
 .RS 4
-\fIuniqueID\fP int 
+\fIuniqueID\fP int Every object inherit from \fBOSTM\fP class will include a version number that is unique for every object\&. The STM library used this value to find object within the transaction to make changes or comparism ith them\&. 
 .RE
 .PP
-
+@77 set object uniqueID to parameter integer value 
 .PP
-Definition at line 66 of file OSTM\&.cpp\&.
+Definition at line 75 of file OSTM\&.cpp\&.
+.PP
+References uniqueID\&.
 .PP
 Referenced by toString()\&.
 .PP
 .nf
-66                                      {
-67     this->uniqueID = uniqueID;
-68 }
+75                                      {
+77     this->uniqueID = uniqueID;
+78 }
 .fi
 .SS "void OSTM::Set_Version (int version)"
 
 .PP
-setter for version number 
+@92 Function <Set_Version> setter for version private filed 
 .PP
 \fBParameters:\fP
 .RS 4
-\fIversion\fP int 
+\fIversion\fP integer The verion number ZERO by default when the object created\&. When a transaction make changes with the object, then the version number will be increased, to indicate the changes on the object\&. 
 .RE
 .PP
-
+@95 set object version to parameter integer value 
 .PP
-Definition at line 81 of file OSTM\&.cpp\&.
+Definition at line 92 of file OSTM\&.cpp\&.
+.PP
+References version\&.
 .PP
 Referenced by toString()\&.
 .PP
 .nf
-82 {
-83     this->version = version;
-84 }
+93 {
+95     this->version = version;
+96 }
+.fi
+.SS "virtual void OSTM::toString ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+The toString function displaying/representing the object on the terminal is string format\&. 
+.PP
+\fBSee also:\fP
+.RS 4
+\fBtoString\fP function implementation in child class 
+.RE
+.PP
+
+.PP
+Definition at line 51 of file OSTM\&.h\&.
+.PP
+References canCommit, Get_Unique_ID(), Get_Version(), increase_VersionNumber(), Is_Abort_Transaction(), Is_Can_Commit(), is_Locked(), lock_Mutex(), Set_Abort_Transaction(), Set_Can_Commit(), Set_Unique_ID(), Set_Version(), uniqueID, unlock_Mutex(), and version\&.
+.PP
+.nf
+51 {};
 .fi
 .SS "void OSTM::unlock_Mutex ()"
 
 .PP
-object unique lock, unlocks mutex 
+@154 Function <unlock_Mutex> setter for mutex to unlock the object @156 Locking the mutex 
 .PP
-\fBParameters:\fP
-.RS 4
-\fImutex\fP std::mutex 
-.RE
+Definition at line 154 of file OSTM\&.cpp\&.
 .PP
-
-.PP
-Definition at line 140 of file OSTM\&.cpp\&.
+References mutex\&.
 .PP
 Referenced by toString()\&.
 .PP
 .nf
-140                         {
-141     this->mutex\&.unlock();
-142 }
+154                         {
+156     this->mutex\&.unlock();
+157 }
 .fi
-
+.SH "Member Data Documentation"
+.PP 
+.SS "bool OSTM::abort_Transaction\fC [private]\fP"
+Boolean value <abort_Transaction> to determine the object can or cannot commit 
+.PP
+Definition at line 125 of file OSTM\&.h\&.
+.PP
+Referenced by Is_Abort_Transaction(), OSTM(), and Set_Abort_Transaction()\&.
+.SS "bool OSTM::canCommit\fC [private]\fP"
+Boolean value <canCommit> to determine the object can or cannot commit 
+.PP
+Definition at line 121 of file OSTM\&.h\&.
+.PP
+Referenced by Is_Can_Commit(), OSTM(), Set_Can_Commit(), and toString()\&.
+.SS "int OSTM::global_Unique_ID_Number = 0\fC [static]\fP, \fC [private]\fP"
+Unique object number start at ZERO The value stored in the static class level <global_Unique_ID_Number> increase every \fBOSTM\fP type object creation\&. 
+.PP
+Definition at line 130 of file OSTM\&.h\&.
+.PP
+Referenced by Get_global_Unique_ID_Number()\&.
+.SS "std::mutex OSTM::mutex\fC [private]\fP"
+Mutex lock <mutex> use to lock the object with transaction, to make sure only one transaction can access the object at the time 
+.PP
+Definition at line 139 of file OSTM\&.h\&.
+.PP
+Referenced by is_Locked(), lock_Mutex(), and unlock_Mutex()\&.
+.SS "int OSTM::uniqueID\fC [private]\fP"
+Object unique identifier Every object inherit from \fBOSTM\fP class will include a version number that is unique for every object\&. The STM library used this value to find object within the transaction to make changes or comparism ith them\&. 
+.PP
+Definition at line 117 of file OSTM\&.h\&.
+.PP
+Referenced by Get_Unique_ID(), OSTM(), Set_Unique_ID(), and toString()\&.
+.SS "int OSTM::version\fC [private]\fP"
+Object private version number\&. The verion number ZERO by default when the object created\&. When a transaction make changes with the object, then the version number will be increased, to indicate the changes on the object\&. 
+.PP
+Definition at line 111 of file OSTM\&.h\&.
+.PP
+Referenced by Get_Version(), increase_VersionNumber(), OSTM(), Set_Version(), and toString()\&.
+.SS "const int OSTM::ZERO = 0\fC [private]\fP"
+Integer <ZERO> meaninful string equalient to 0 
+.PP
+Definition at line 134 of file OSTM\&.h\&.
+.PP
+Referenced by OSTM()\&.
 
 .SH "Author"
 .PP 

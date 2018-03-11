@@ -1,0 +1,4 @@
+<map id="TM::get_thread_Map" name="TM::get_thread_Map">
+<area shape="rect" id="node2" href="$class_t_m_a26ea481c24d9aa3aebd6dafb7253376e.html#a26ea481c24d9aa3aebd6dafb7253376e" title="@45 registerTX void function, register a new TX Transaction object into ythe txMap/Transaction Map to..." alt="" coords="196,5,305,32"/>
+<area shape="rect" id="node3" href="$class_t_m_a41cb0226cc4080c931651b13f74a0075.html#a41cb0226cc4080c931651b13f74a0075" title="@81 _get_tx std::shared_ptr&lt;TX&gt;, return an trtansaction Object as a shared_ptr, if TX not exists then..." alt="" coords="353,5,445,32"/>
+</map>

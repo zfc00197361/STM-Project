@@ -1,67 +1,98 @@
 \hypertarget{_o_s_t_m_8h_source}{}\subsection{O\+S\+T\+M.\+h}
 
 \begin{DoxyCode}
-00001 \textcolor{comment}{/* }
-00002 \textcolor{comment}{ * File:   OSTM.h}
-00003 \textcolor{comment}{ * Author: Zoltan FUzesi}
-00004 \textcolor{comment}{ *}
-00005 \textcolor{comment}{ * Created on December 18, 2017, 2:09 PM}
-00006 \textcolor{comment}{ * OSTM header file fields and  methods declarations}
-00007 \textcolor{comment}{ */}
-00008 
-00009 \textcolor{preprocessor}{#ifndef OSTM\_H}
-00010 \textcolor{preprocessor}{#define OSTM\_H}
-00011 \textcolor{preprocessor}{#include <mutex>}
-00012 \textcolor{preprocessor}{#include <memory>}
-00013 \textcolor{preprocessor}{#include <string>}
-00014 \textcolor{preprocessor}{#include <iostream>}
-00015 \textcolor{preprocessor}{#include <string>}
-00016 
-\hypertarget{_o_s_t_m_8h_source.tex_l00017}{}\hyperlink{class_o_s_t_m}{00017} \textcolor{keyword}{class }\hyperlink{class_o_s_t_m}{OSTM} \{
-00018 \textcolor{keyword}{public}:
-00022     \hyperlink{class_o_s_t_m_a968edf778668bd0ec7603f0571619196}{OSTM}();
-00026     \hyperlink{class_o_s_t_m_a968edf778668bd0ec7603f0571619196}{OSTM}(\textcolor{keywordtype}{int} \_version\_number\_, \textcolor{keywordtype}{int} \_unique\_id\_);
-00030     \textcolor{keyword}{virtual} \hyperlink{class_o_s_t_m_a30a17d73d0259c60eeab72d6dfa9ceb1}{~OSTM}();
-\hypertarget{_o_s_t_m_8h_source.tex_l00034}{}\hyperlink{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d}{00034}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d}{copy}(std::shared\_ptr<OSTM> from, std::shared\_ptr<OSTM> to)\{\};  
-\hypertarget{_o_s_t_m_8h_source.tex_l00038}{}\hyperlink{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c}{00038}     \textcolor{keyword}{virtual} std::shared\_ptr<OSTM> \hyperlink{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c}{getBaseCopy}(std::shared\_ptr<OSTM> \textcolor{keywordtype}{object})\{\};\textcolor{comment}{//std::cout <<
+00001 
+00015 \textcolor{preprocessor}{#ifndef OSTM\_H}
+00016 \textcolor{preprocessor}{#define OSTM\_H}
+00017 \textcolor{preprocessor}{#include <mutex>}
+00018 \textcolor{preprocessor}{#include <memory>}
+00019 \textcolor{preprocessor}{#include <string>}
+00020 \textcolor{preprocessor}{#include <iostream>}
+00021 \textcolor{preprocessor}{#include <string>}
+00022 
+\hypertarget{_o_s_t_m_8h_source.tex_l00023}{}\hyperlink{class_o_s_t_m}{00023} \textcolor{keyword}{class }\hyperlink{class_o_s_t_m}{OSTM} \{
+00024 \textcolor{keyword}{public}:
+00025     \textcolor{comment}{/*}
+00026 \textcolor{comment}{     * Default Constructor}
+00027 \textcolor{comment}{     */}
+00028     \hyperlink{class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f0571619196}{OSTM}();
+00029     \textcolor{comment}{/*}
+00030 \textcolor{comment}{     * Custom Constructor}
+00031 \textcolor{comment}{     */}
+00032     \hyperlink{class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f0571619196}{OSTM}(\textcolor{keywordtype}{int} \_version\_number\_, \textcolor{keywordtype}{int} \_unique\_id\_);
+00033     \textcolor{comment}{/*}
+00034 \textcolor{comment}{     * De-constructor}
+00035 \textcolor{comment}{     */}
+00036     \textcolor{keyword}{virtual} \hyperlink{class_o_s_t_m_a30a17d73d0259c60eeab72d6dfa9ceb1_a30a17d73d0259c60eeab72d6dfa9ceb1}{~OSTM}();
+\hypertarget{_o_s_t_m_8h_source.tex_l00041}{}\hyperlink{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d_a535d90fced5adbb70312c92f3778e08d}{00041}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d_a535d90fced5adbb70312c92f3778e08d}{copy}(std::shared\_ptr<OSTM> from, std::shared\_ptr<OSTM> to)\{\};  
+\hypertarget{_o_s_t_m_8h_source.tex_l00046}{}\hyperlink{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f42714f94c}{00046}     \textcolor{keyword}{virtual} std::shared\_ptr<OSTM> \hyperlink{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f42714f94c}{getBaseCopy}(std::shared\_ptr<OSTM> \textcolor{keywordtype}{object})\{\};\textcolor{comment}{//std::cout <<
        "[OSTM GETBASECOPY]" << std::endl;\};}
-\hypertarget{_o_s_t_m_8h_source.tex_l00042}{}\hyperlink{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59}{00042} \textcolor{comment}{}    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59}{toString}()\{\};
-00046     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_ab5019a32185631c08abbf826422f2d93}{Set\_Unique\_ID}(\textcolor{keywordtype}{int} uniqueID);
-00050     \textcolor{keywordtype}{int} \hyperlink{class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d}{Get\_Unique\_ID}() \textcolor{keyword}{const};
-00054     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1}{Set\_Version}(\textcolor{keywordtype}{int} version);
-00058     \textcolor{keywordtype}{int} \hyperlink{class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b}{Get\_Version}() \textcolor{keyword}{const};
-00062     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a}{increase\_VersionNumber}();
-00066     \textcolor{keywordtype}{bool} \hyperlink{class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7}{Is\_Can\_Commit}() \textcolor{keyword}{const};
-00070     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d}{Set\_Can\_Commit}(\textcolor{keywordtype}{bool} canCommit);
-00074     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4}{Set\_Abort\_Transaction}(\textcolor{keywordtype}{bool} abortTransaction);
-00078     \textcolor{keywordtype}{bool} \hyperlink{class_o_s_t_m_afc2851abf5342c3c67342c2c14820115}{Is\_Abort\_Transaction}() \textcolor{keyword}{const};
-00082     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_af192c598a3c647f37aaba5757e60240f}{lock\_Mutex}();
-00086     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762}{unlock\_Mutex}();
-00090     \textcolor{keywordtype}{bool} \hyperlink{class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0}{is\_Locked}();
-00091 
-00092 \textcolor{keyword}{private}:
-00093     \textcolor{comment}{/*}
-00094 \textcolor{comment}{     * \(\backslash\)brief Object version number}
-00095 \textcolor{comment}{     */}
-00096     \textcolor{keywordtype}{int} version;
-00097     \textcolor{comment}{/*}
-00098 \textcolor{comment}{     * \(\backslash\)brief Object unique identifier}
-00099 \textcolor{comment}{     */}
-00100     \textcolor{keywordtype}{int} uniqueID;
-00101     \textcolor{comment}{/*}
-00102 \textcolor{comment}{     * \(\backslash\)brief Boolean value to check any other thread failed to commit}
-00103 \textcolor{comment}{     */}
-00104     \textcolor{keywordtype}{bool} canCommit;
-00105     \textcolor{comment}{/*}
-00106 \textcolor{comment}{     * \(\backslash\)brief Abort the transaction}
-00107 \textcolor{comment}{     */}
-00108     \textcolor{keywordtype}{bool} abort\_Transaction;
-00112     \textcolor{keyword}{static} \textcolor{keywordtype}{int} global\_Unique\_ID\_Number;
-00116     \textcolor{keyword}{const} \textcolor{keywordtype}{int} ZERO = 0;
-00120     std::mutex mutex;
-00124     \textcolor{keywordtype}{int} Get\_global\_Unique\_ID\_Number();
-00125 
-00126 \};
-00127 
-00128 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* OSTM\_H */}\textcolor{preprocessor}{}
+\hypertarget{_o_s_t_m_8h_source.tex_l00051}{}\hyperlink{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203309ae8a59}{00051} \textcolor{comment}{}    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203309ae8a59}{toString}()\{\};
+00052     \textcolor{comment}{/*}
+00053 \textcolor{comment}{     * Setter for object unique id}
+00054 \textcolor{comment}{     * @param uniqueID Integer to set the uniqueId}
+00055 \textcolor{comment}{     */}
+00056     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_ab5019a32185631c08abbf826422f2d93}{Set\_Unique\_ID}(\textcolor{keywordtype}{int} \hyperlink{class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_aa9fe59368b701af7f70befa23bd6901a}{uniqueID});
+00057     \textcolor{comment}{/*}
+00058 \textcolor{comment}{     * Getter for object unique id}
+00059 \textcolor{comment}{     */}
+00060     \textcolor{keywordtype}{int} \hyperlink{class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_a5a01a8b98d16b1d1904ecf9356e7b71d}{Get\_Unique\_ID}() \textcolor{keyword}{const};
+00061     \textcolor{comment}{/*}
+00062 \textcolor{comment}{     * Setter for object version number}
+00063 \textcolor{comment}{     * @param version Integer to set the version number}
+00064 \textcolor{comment}{     */}
+00065     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_a9529ad8d6d28c1f0cc9b86ed91df1ae1}{Set\_Version}(\textcolor{keywordtype}{int} \hyperlink{class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_a9a6ea36181be2db7f9082d77956511d7}{version});
+00066     \textcolor{comment}{/*}
+00067 \textcolor{comment}{     * Getter for object version number}
+00068 \textcolor{comment}{     */}
+00069     \textcolor{keywordtype}{int} \hyperlink{class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_a1f1db9d482f22c8e7caa17dfb340626b}{Get\_Version}() \textcolor{keyword}{const};
+00070     \textcolor{comment}{/*}
+00071 \textcolor{comment}{     * When transacion make changes on object at commit time increase the version number on the object.}
+00072 \textcolor{comment}{     */}
+00073     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_a5f90caa4384d371c16b7cac860d9f89a}{increase\_VersionNumber}();
+00074     \textcolor{comment}{/*}
+00075 \textcolor{comment}{     * Determin if the object can commit or not. Return boolean TRUE/FALSE}
+00076 \textcolor{comment}{     */}
+00077     \textcolor{keywordtype}{bool} \hyperlink{class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_a8df39ced3b401aa466df97e26d14b1b7}{Is\_Can\_Commit}() \textcolor{keyword}{const};
+00078     \textcolor{comment}{/*}
+00079 \textcolor{comment}{     * Setter for canCommit boolean filed}
+00080 \textcolor{comment}{     * @param canCommit Boolean to set the canCommit variable}
+00081 \textcolor{comment}{     */}
+00082     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_a813ee61c9d1c83c6a6ae30d12aca8a5d}{Set\_Can\_Commit}(\textcolor{keywordtype}{bool} \hyperlink{class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_a2a5b89641af274ddc69bdf8c1c1a07d6}{canCommit});
+00083     \textcolor{comment}{/*}
+00084 \textcolor{comment}{     * set boolean}
+00085 \textcolor{comment}{     * @param abortTransaction boolean to set the abort\_Transaction TRUE or FALSE}
+00086 \textcolor{comment}{     */}
+00087     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_aba384cf65c5f56f5b86833730c3c6ea4}{Set\_Abort\_Transaction}(\textcolor{keywordtype}{bool} abortTransaction);
+00088     \textcolor{comment}{/*}
+00089 \textcolor{comment}{     * Determin if the object need to abort the transaction or not. Return boolean TRUE/FALSE}
+00090 \textcolor{comment}{     */}
+00091     \textcolor{keywordtype}{bool} \hyperlink{class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_afc2851abf5342c3c67342c2c14820115}{Is\_Abort\_Transaction}() \textcolor{keyword}{const};
+00092     \textcolor{comment}{/*}
+00093 \textcolor{comment}{     * Function to lock the object itself}
+00094 \textcolor{comment}{     */}
+00095     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_af192c598a3c647f37aaba5757e60240f}{lock\_Mutex}();
+00096     \textcolor{comment}{/*}
+00097 \textcolor{comment}{     * Function to unlock the object itself}
+00098 \textcolor{comment}{     */}
+00099     \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_a6cd703bc26c719fd95b4f5362d050762}{unlock\_Mutex}();
+00100     \textcolor{comment}{/*}
+00101 \textcolor{comment}{     * Function to try lock the object itself if it is not locked. Return boolean value TRUE/FALSE
+       depending if it is can lock or not.}
+00102 \textcolor{comment}{     */}
+00103     \textcolor{keywordtype}{bool} \hyperlink{class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_afb6520023ed2c4a6188b688c46f192d0}{is\_Locked}();
+00104 
+00105 \textcolor{keyword}{private}:
+\hypertarget{_o_s_t_m_8h_source.tex_l00111}{}\hyperlink{class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_a9a6ea36181be2db7f9082d77956511d7}{00111}     \textcolor{keywordtype}{int} \hyperlink{class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_a9a6ea36181be2db7f9082d77956511d7}{version};
+\hypertarget{_o_s_t_m_8h_source.tex_l00117}{}\hyperlink{class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_aa9fe59368b701af7f70befa23bd6901a}{00117}     \textcolor{keywordtype}{int} \hyperlink{class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_aa9fe59368b701af7f70befa23bd6901a}{uniqueID};
+\hypertarget{_o_s_t_m_8h_source.tex_l00121}{}\hyperlink{class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_a2a5b89641af274ddc69bdf8c1c1a07d6}{00121}     \textcolor{keywordtype}{bool} \hyperlink{class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_a2a5b89641af274ddc69bdf8c1c1a07d6}{canCommit};
+\hypertarget{_o_s_t_m_8h_source.tex_l00125}{}\hyperlink{class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a_a5121d9c4b08320b26beca82ba2f85c4a}{00125}     \textcolor{keywordtype}{bool} \hyperlink{class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a_a5121d9c4b08320b26beca82ba2f85c4a}{abort\_Transaction};
+\hypertarget{_o_s_t_m_8h_source.tex_l00130}{}\hyperlink{class_o_s_t_m_acb617b9666d198c0de333c8613df0d4b_acb617b9666d198c0de333c8613df0d4b}{00130}     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \hyperlink{class_o_s_t_m_acb617b9666d198c0de333c8613df0d4b_acb617b9666d198c0de333c8613df0d4b}{global\_Unique\_ID\_Number};
+\hypertarget{_o_s_t_m_8h_source.tex_l00134}{}\hyperlink{class_o_s_t_m_a0bb6ae8411d25f8e7b82d0a61729ea89_a0bb6ae8411d25f8e7b82d0a61729ea89}{00134}     \textcolor{keyword}{const} \textcolor{keywordtype}{int} \hyperlink{class_o_s_t_m_a0bb6ae8411d25f8e7b82d0a61729ea89_a0bb6ae8411d25f8e7b82d0a61729ea89}{ZERO} = 0;
+\hypertarget{_o_s_t_m_8h_source.tex_l00139}{}\hyperlink{class_o_s_t_m_aaab0921fd1564b793f882a5002ec7106_aaab0921fd1564b793f882a5002ec7106}{00139}     std::mutex \hyperlink{class_o_s_t_m_aaab0921fd1564b793f882a5002ec7106_aaab0921fd1564b793f882a5002ec7106}{mutex};
+00143     \textcolor{keywordtype}{int} \hyperlink{class_o_s_t_m_adee6903c1100e0d78640bd4b85e5d7df_adee6903c1100e0d78640bd4b85e5d7df}{Get\_global\_Unique\_ID\_Number}();
+00144 
+00145 \};
+00146 
+00147 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* OSTM\_H */}\textcolor{preprocessor}{}
 \end{DoxyCode}

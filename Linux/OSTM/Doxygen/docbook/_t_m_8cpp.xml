@@ -32,4 +32,97 @@
         <title>Detailed Description</title>
     <para>Definition in file TM.cpp</para>
     </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">/*&#32;</emphasis>
+2 <emphasis class="comment">&#32;*&#32;File:&#32;&#32;&#32;TM.cpp</emphasis>
+3 <emphasis class="comment">&#32;*&#32;Author:&#32;Zoltan&#32;Fuzesi&#32;C00197361,&#32;</emphasis>
+4 <emphasis class="comment">&#32;*&#32;IT&#32;Carlow,&#32;Software&#32;Engineering,&#32;</emphasis>
+5 <emphasis class="comment">&#32;*</emphasis>
+6 <emphasis class="comment">&#32;*&#32;Supervisor&#32;:&#32;Joe&#32;Kehoe,&#32;</emphasis>
+7 <emphasis class="comment">&#32;*</emphasis>
+8 <emphasis class="comment">&#32;*&#32;C++&#32;Software&#32;Transactional&#32;Memory,&#32;</emphasis>
+9 <emphasis class="comment">&#32;*&#32;</emphasis>
+10 <emphasis class="comment">&#32;*&#32;Created&#32;on&#32;December&#32;18,&#32;2017,&#32;2:09&#32;PM</emphasis>
+11 <emphasis class="comment">&#32;*&#32;OSTM&#32;base&#32;class&#32;function&#32;declarations.</emphasis>
+12 <emphasis class="comment">&#32;*/</emphasis>
+13 
+14 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_t_m_8h">TM.h</link>&quot;</emphasis>
+15 <emphasis class="preprocessor">#include&#32;&lt;thread&gt;</emphasis>
+16 <emphasis class="preprocessor">#include&#32;&lt;unistd.h&gt;</emphasis>
+17 <emphasis class="preprocessor">#include&#32;&lt;sys/types.h&gt;</emphasis>
+18 <emphasis class="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+19 
+20 <emphasis class="comment">/*</emphasis>
+21 <emphasis class="comment">&#32;*&#32;@23&#32;_tm_id&#32;pid_t,&#32;process&#32;id&#32;determine&#32;the&#32;actual&#32;process&#32;between&#32;process&#32;in&#32;the&#32;STM&#32;library</emphasis>
+22 <emphasis class="comment">&#32;*/</emphasis>
+23 pid_t&#32;<link linkend="class_t_m_a9d49d0ddef82337e54b684c9e1e8ad21_1a9d49d0ddef82337e54b684c9e1e8ad21">TM::_tm_id</link>;
+24 <emphasis class="comment">/*</emphasis>
+25 <emphasis class="comment">&#32;*&#32;@27&#32;static&#32;Global&#32;std::map&#32;process_map_collection&#32;store&#32;all&#32;transactional&#32;objects/pointers</emphasis>
+26 <emphasis class="comment">&#32;*/</emphasis>
+27 std::map&lt;pid_t,&#32;std::map&lt;&#32;std::thread::id,&#32;int&#32;&gt;&gt;&#32;<link linkend="class_t_m_a6d417b18213968da2a70a914e80d639b_1a6d417b18213968da2a70a914e80d639b">TM::process_map_collection</link>;
+<link linkend="class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_1a7ce5f35e0dae76df4fe116cf905bbe60">31 </link><link linkend="class_t_m">TM</link>&amp;&#32;<link linkend="class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_1a7ce5f35e0dae76df4fe116cf905bbe60">TM::Instance</link>()&#32;{
+33 &#32;&#32;&#32;&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="class_t_m">TM</link>&#32;_instance;
+35 &#32;&#32;&#32;&#32;_instance.<link linkend="class_t_m_a9d49d0ddef82337e54b684c9e1e8ad21_1a9d49d0ddef82337e54b684c9e1e8ad21">_tm_id</link>&#32;=&#32;getpid();
+37 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;_instance;
+38 }
+39 
+<link linkend="class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_1a26ea481c24d9aa3aebd6dafb7253376e">45 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_1a26ea481c24d9aa3aebd6dafb7253376e">TM::registerTX</link>()
+46 {
+49 &#32;&#32;&#32;&#32;std::lock_guard&lt;std::mutex&gt;&#32;guard(<link linkend="class_t_m_aeb26546681bfe64e21606b8c012bb8c3_1aeb26546681bfe64e21606b8c012bb8c3">register_Lock</link>);
+51 &#32;&#32;&#32;&#32;pid_t&#32;ppid&#32;=&#32;getppid();
+53 &#32;&#32;&#32;&#32;std::map&lt;pid_t,&#32;std::map&lt;&#32;std::thread::id,&#32;int&#32;&gt;&gt;::iterator&#32;process_map_collection_Iterator&#32;=&#32;<link linkend="class_t_m_a6d417b18213968da2a70a914e80d639b_1a6d417b18213968da2a70a914e80d639b">TM::process_map_collection</link>.find(ppid);
+55 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(process_map_collection_Iterator&#32;==&#32;<link linkend="class_t_m_a6d417b18213968da2a70a914e80d639b_1a6d417b18213968da2a70a914e80d639b">TM::process_map_collection</link>.end())&#32;{
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::map&lt;&#32;std::thread::id,&#32;int&#32;&gt;map&#32;=&#32;<link linkend="class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_1afb8bc9f42fe06c52747beb7f4c46915c">get_thread_Map</link>();
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_m_a6d417b18213968da2a70a914e80d639b_1a6d417b18213968da2a70a914e80d639b">TM::process_map_collection</link>.insert({ppid,&#32;map});
+60 
+61 &#32;&#32;&#32;&#32;}
+63 &#32;&#32;&#32;&#32;std::map&lt;std::thread::id,&#32;std::shared_ptr&#32;&lt;&#32;TX&gt;&gt;::iterator&#32;it&#32;=&#32;<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">txMap</link>.find(std::this_thread::get_id());
+65 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(it&#32;==&#32;<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">txMap</link>.end())&#32;{
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;_transaction_object(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_t_x">TX</link>(std::this_thread::get_id()));
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">txMap</link>.insert({std::this_thread::get_id(),&#32;_transaction_object});
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process_map_collection_Iterator&#32;=&#32;<link linkend="class_t_m_a6d417b18213968da2a70a914e80d639b_1a6d417b18213968da2a70a914e80d639b">TM::process_map_collection</link>.find(ppid);
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process_map_collection_Iterator-&gt;second.insert({std::this_thread::get_id(),&#32;1});
+74 &#32;&#32;&#32;&#32;}
+75 }
+76 
+<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">81 </link>std::shared_ptr&lt;TX&gt;<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">TM::_get_tx</link>()
+82 {
+85 &#32;&#32;&#32;&#32;std::lock_guard&lt;std::mutex&gt;&#32;guard(<link linkend="class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_1a123bc5aa0766a7b909bebc54a429e5b0">get_Lock</link>);
+87 &#32;&#32;&#32;&#32;std::map&lt;std::thread::id,&#32;std::shared_ptr&lt;TX&gt;&gt;::iterator&#32;it&#32;=&#32;<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">txMap</link>.find(std::this_thread::get_id());
+89 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(it&#32;==&#32;<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">txMap</link>.end())
+90 &#32;&#32;&#32;&#32;{
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_1a26ea481c24d9aa3aebd6dafb7253376e">registerTX</link>();
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;it&#32;=&#32;<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">txMap</link>.find(std::this_thread::get_id());
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;
+96 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;{
+98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;it-&gt;second-&gt;_increase_tx_nesting();
+99 &#32;&#32;&#32;&#32;}
+101 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;it-&gt;second;
+102 
+103 }
+<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">108 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">TM::_TX_EXIT</link>(){
+110 &#32;&#32;&#32;&#32;<link linkend="class_t_x">TX</link>&#32;tx(std::this_thread::get_id());
+112 &#32;&#32;&#32;&#32;pid_t&#32;ppid&#32;=&#32;getppid();
+114 &#32;&#32;&#32;&#32;std::map&lt;pid_t,&#32;std::map&lt;&#32;std::thread::id,&#32;int&#32;&gt;&gt;::iterator&#32;process_map_collection_Iterator&#32;=&#32;<link linkend="class_t_m_a6d417b18213968da2a70a914e80d639b_1a6d417b18213968da2a70a914e80d639b">TM::process_map_collection</link>.find(ppid);
+116 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(process_map_collection_Iterator&#32;!=&#32;<link linkend="class_t_m_a6d417b18213968da2a70a914e80d639b_1a6d417b18213968da2a70a914e80d639b">TM::process_map_collection</link>.end())&#32;{
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keyword">auto</emphasis>&#32;current&#32;=&#32;process_map_collection_Iterator-&gt;second.begin();&#32;current&#32;!=&#32;process_map_collection_Iterator-&gt;second.end();&#32;++current)&#32;{
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">txMap</link>.erase(current-&gt;first);
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_m_a6d417b18213968da2a70a914e80d639b_1a6d417b18213968da2a70a914e80d639b">TM::process_map_collection</link>.erase(ppid);
+124 &#32;&#32;&#32;&#32;}
+126 &#32;&#32;&#32;&#32;tx.<link linkend="class_t_x_aa9739c5c2077454c779098db7baefc2b_1aa9739c5c2077454c779098db7baefc2b">ostm_exit</link>();
+127 }
+<link linkend="class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_1a1d6891b1d3e71cc0acef54e7afe71c09">132 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_1a1d6891b1d3e71cc0acef54e7afe71c09">TM::print_all</link>(){
+134 &#32;&#32;&#32;&#32;<link linkend="class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_1a123bc5aa0766a7b909bebc54a429e5b0">get_Lock</link>.lock();
+136 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keyword">auto</emphasis>&#32;current&#32;=&#32;<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">txMap</link>.begin();&#32;current&#32;!=&#32;<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">txMap</link>.end();&#32;++current)&#32;{
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;KEY&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;current-&gt;first&#32;&lt;&lt;&#32;std::endl;
+139 &#32;&#32;&#32;&#32;}
+141 &#32;&#32;&#32;&#32;<link linkend="class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_1a123bc5aa0766a7b909bebc54a429e5b0">get_Lock</link>.unlock();
+142 }
+143 
+<link linkend="class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_1afb8bc9f42fe06c52747beb7f4c46915c">148 </link>std::map&lt;&#32;std::thread::id,&#32;int&#32;&gt;&#32;<link linkend="class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_1afb8bc9f42fe06c52747beb7f4c46915c">TM::get_thread_Map</link>()&#32;{
+150 &#32;&#32;&#32;&#32;std::map&lt;&#32;std::thread::id,&#32;int&#32;&gt;&#32;thread_Map;
+152 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;thread_Map;
+153 }
+    </computeroutput></literallayout>
 </section>

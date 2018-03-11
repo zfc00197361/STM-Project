@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['set_5fabort_5ftransaction',['Set_Abort_Transaction',['../class_o_s_t_m.html#aba384cf65c5f56f5b86833730c3c6ea4',1,'OSTM']]],
-  ['set_5fcan_5fcommit',['Set_Can_Commit',['../class_o_s_t_m.html#a813ee61c9d1c83c6a6ae30d12aca8a5d',1,'OSTM']]],
-  ['set_5funique_5fid',['Set_Unique_ID',['../class_o_s_t_m.html#ab5019a32185631c08abbf826422f2d93',1,'OSTM']]],
-  ['set_5fversion',['Set_Version',['../class_o_s_t_m.html#a9529ad8d6d28c1f0cc9b86ed91df1ae1',1,'OSTM']]],
-  ['store',['store',['../class_t_x.html#a7dbcb369aa4a3370b6c6829d278ece5d',1,'TX']]]
+  ['print_5fall',['print_all',['../class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09.html#a1d6891b1d3e71cc0acef54e7afe71c09',1,'TM']]],
+  ['process_5fmap_5fcollection',['process_map_collection',['../class_t_m_a6d417b18213968da2a70a914e80d639b.html#a6d417b18213968da2a70a914e80d639b',1,'TM::process_map_collection()'],['../class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f.html#a2e3cd2f52fd93cf6ef3eb3c1cb830b9f',1,'TX::process_map_collection()']]]
 ];

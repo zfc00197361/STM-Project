@@ -1,0 +1,2262 @@
+AutoGen Definitions dummy;
+class = {
+  cp-id     = 'class_o_s_t_m';
+  cp-name   = 'OSTM';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d_1a535d90fced5adbb70312c92f3778e08d';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'copy';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::shared_ptr< OSTM >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'from';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::shared_ptr< OSTM >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'to';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '41';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The copy virtual method required for deep copy between objetcs within the transaction.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@see copy function implementation in inherited class class
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_1a5a01a8b98d16b1d1904ecf9356e7b71d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Get_Unique_ID';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '60';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@82 Function <Get_Unique_ID> getter for uniqueID private field
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1aa9fe59368b701af7f70befa23bd6901a';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'uniqueID';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_1a1f1db9d482f22c8e7caa17dfb340626b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Get_Version';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '69';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@100 Function <Get_Version> setter for version private filed
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a9a6ea36181be2db7f9082d77956511d7';
+        sec-mem-ref-line = '111';
+        sec-mem-ref-name = 'version';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_1a0bfa3763bd441407dd6365f42714f94c';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual std::shared_ptr< OSTM >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getBaseCopy';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::shared_ptr< OSTM >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'object';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The getbasecopy virtual method required for create a copy of the origin object/pointer and returning a copy of the object/pointer.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@see getBaseCopy function implementation in child class
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_1a5f90caa4384d371c16b7cac860d9f89a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'increase_VersionNumber';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '73';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@108 Function <increase_VersionNumber> commit time increase the version number associated with the object
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a9a6ea36181be2db7f9082d77956511d7';
+        sec-mem-ref-line = '111';
+        sec-mem-ref-name = 'version';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_1afc2851abf5342c3c67342c2c14820115';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Is_Abort_Transaction';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '91';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@140 Function <Is_Abort_Transaction> return boolean value stored in the <abortTransaction> private filed
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\param abort_Transaction Boolean to determine the object can or cannot commit
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a5121d9c4b08320b26beca82ba2f85c4a';
+        sec-mem-ref-line = '125';
+        sec-mem-ref-name = 'abort_Transaction';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_1a8df39ced3b401aa466df97e26d14b1b7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Is_Can_Commit';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '77';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@124 Function <Is_Can_Commit> boolean function to determin the object can comit or need to roolback.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a2a5b89641af274ddc69bdf8c1c1a07d6';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'canCommit';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_1afb6520023ed2c4a6188b688c46f192d0';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'is_Locked';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '103';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@162 Function <is_Locked> Boolean function to try lock the object. If the object
+not locked then locks and return True it otherwise return False.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1aaab0921fd1564b793f882a5002ec7106';
+        sec-mem-ref-line = '139';
+        sec-mem-ref-name = 'mutex';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_1af192c598a3c647f37aaba5757e60240f';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'lock_Mutex';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '95';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@145 Function <lock_Mutex> setter for mutex to lock the object
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1aaab0921fd1564b793f882a5002ec7106';
+        sec-mem-ref-line = '139';
+        sec-mem-ref-name = 'mutex';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a968edf778668bd0ec7603f0571619196_1a968edf778668bd0ec7603f0571619196';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'OSTM';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '28';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@21 Default constructor
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a5121d9c4b08320b26beca82ba2f85c4a';
+        sec-mem-ref-line = '125';
+        sec-mem-ref-name = 'abort_Transaction';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a2a5b89641af274ddc69bdf8c1c1a07d6';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'canCommit';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1adee6903c1100e0d78640bd4b85e5d7df';
+        sec-mem-ref-line = '61';
+        sec-mem-ref-name = 'Get_global_Unique_ID_Number';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1aa9fe59368b701af7f70befa23bd6901a';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'uniqueID';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a9a6ea36181be2db7f9082d77956511d7';
+        sec-mem-ref-line = '111';
+        sec-mem-ref-name = 'version';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a0bb6ae8411d25f8e7b82d0a61729ea89';
+        sec-mem-ref-line = '134';
+        sec-mem-ref-name = 'ZERO';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a2314f55a127b94aa8a51d19ba798401e_1a2314f55a127b94aa8a51d19ba798401e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'OSTM';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = '_version_number_';
+      }; /*        sec-mem-param--param */
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = '_unique_id_';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '32';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@39 Custom Constructor Used to copying objects
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\param <em>version_number</em>  Integer value used to create a copy of the object with the actual version
+\param <em>unique_id</em> Integer value used to create a copy of the object with the original unique ID
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a5121d9c4b08320b26beca82ba2f85c4a';
+        sec-mem-ref-line = '125';
+        sec-mem-ref-name = 'abort_Transaction';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a2a5b89641af274ddc69bdf8c1c1a07d6';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'canCommit';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1aa9fe59368b701af7f70befa23bd6901a';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'uniqueID';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a9a6ea36181be2db7f9082d77956511d7';
+        sec-mem-ref-line = '111';
+        sec-mem-ref-name = 'version';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_1aba384cf65c5f56f5b86833730c3c6ea4';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Set_Abort_Transaction';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'abortTransaction';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '87';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@132 Function <Set_Abort_Transaction> setter for abortTransaction private filed
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\param abortTransaction Boolean to determine the object can or cannot commit
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a5121d9c4b08320b26beca82ba2f85c4a';
+        sec-mem-ref-line = '125';
+        sec-mem-ref-name = 'abort_Transaction';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_1a813ee61c9d1c83c6a6ae30d12aca8a5d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Set_Can_Commit';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'canCommit';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '82';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@117 Function <Set_Can_Commit> setter for canCommit private filed
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\param canCommit Boolean value to determine the object can or cannot commit
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a2a5b89641af274ddc69bdf8c1c1a07d6';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'canCommit';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_1ab5019a32185631c08abbf826422f2d93';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Set_Unique_ID';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'uniqueID';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '56';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@75 Function <Set_Unique_ID> setter for uniqueID private field
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\param uniqueID int Every object inherit from OSTM class will include a version number that is unique for every object.
+The STM library used this value to find object within the transaction to make changes or comparism ith them.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1aa9fe59368b701af7f70befa23bd6901a';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'uniqueID';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_1a9529ad8d6d28c1f0cc9b86ed91df1ae1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Set_Version';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'version';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '65';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@92 Function <Set_Version> setter for version private filed
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\param version integer The verion number ZERO by default when the object created. When a transaction make changes with the object, then the version number
+will be increased, to indicate the changes on the object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a9a6ea36181be2db7f9082d77956511d7';
+        sec-mem-ref-line = '111';
+        sec-mem-ref-name = 'version';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_1a513396a115f2987fd07c203309ae8a59';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'toString';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '51';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+The toString function displaying/representing the object on the terminal is string format.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@see toString function implementation in child class
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a2a5b89641af274ddc69bdf8c1c1a07d6';
+        sec-mem-ref-line = '121';
+        sec-mem-ref-name = 'canCommit';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a5a01a8b98d16b1d1904ecf9356e7b71d';
+        sec-mem-ref-line = '82';
+        sec-mem-ref-name = 'Get_Unique_ID';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a1f1db9d482f22c8e7caa17dfb340626b';
+        sec-mem-ref-line = '100';
+        sec-mem-ref-name = 'Get_Version';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a5f90caa4384d371c16b7cac860d9f89a';
+        sec-mem-ref-line = '108';
+        sec-mem-ref-name = 'increase_VersionNumber';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1afc2851abf5342c3c67342c2c14820115';
+        sec-mem-ref-line = '140';
+        sec-mem-ref-name = 'Is_Abort_Transaction';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a8df39ced3b401aa466df97e26d14b1b7';
+        sec-mem-ref-line = '124';
+        sec-mem-ref-name = 'Is_Can_Commit';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1afb6520023ed2c4a6188b688c46f192d0';
+        sec-mem-ref-line = '162';
+        sec-mem-ref-name = 'is_Locked';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1af192c598a3c647f37aaba5757e60240f';
+        sec-mem-ref-line = '147';
+        sec-mem-ref-name = 'lock_Mutex';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1aba384cf65c5f56f5b86833730c3c6ea4';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'Set_Abort_Transaction';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a813ee61c9d1c83c6a6ae30d12aca8a5d';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'Set_Can_Commit';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1ab5019a32185631c08abbf826422f2d93';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Set_Unique_ID';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a9529ad8d6d28c1f0cc9b86ed91df1ae1';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'Set_Version';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1aa9fe59368b701af7f70befa23bd6901a';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'uniqueID';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a6cd703bc26c719fd95b4f5362d050762';
+        sec-mem-ref-line = '154';
+        sec-mem-ref-name = 'unlock_Mutex';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a9a6ea36181be2db7f9082d77956511d7';
+        sec-mem-ref-line = '111';
+        sec-mem-ref-name = 'version';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_1a6cd703bc26c719fd95b4f5362d050762';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'unlock_Mutex';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '99';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@154 Function <unlock_Mutex> setter for mutex to unlock the object
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1aaab0921fd1564b793f882a5002ec7106';
+        sec-mem-ref-line = '139';
+        sec-mem-ref-name = 'mutex';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_a30a17d73d0259c60eeab72d6dfa9ceb1_1a30a17d73d0259c60eeab72d6dfa9ceb1';
+      sec-mem-virt = virtual;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+virtual
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~OSTM';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '36';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@54 Default De-constructor
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_o_s_t_m_adee6903c1100e0d78640bd4b85e5d7df_1adee6903c1100e0d78640bd4b85e5d7df';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Get_global_Unique_ID_Number';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '143';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@61 Get_global_Unique_ID_Number function, If <global_Unique_ID_Number> equals to 10000000 then reset back to ZERO, to make sure the value of 
+global_Unique_ID_Number never exceed the MAX_INT value
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Returning global_Unique_ID_Number to the constructor
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1acb617b9666d198c0de333c8613df0d4b';
+        sec-mem-ref-line = '130';
+        sec-mem-ref-name = 'global_Unique_ID_Number';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a968edf778668bd0ec7603f0571619196';
+        sec-mem-ref-line = '21';
+        sec-mem-ref-name = 'OSTM';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a_1a5121d9c4b08320b26beca82ba2f85c4a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'abort_Transaction';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '125';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Boolean value <abort_Transaction> to determine the object can or cannot commit
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1afc2851abf5342c3c67342c2c14820115';
+        sec-mem-ref-line = '140';
+        sec-mem-ref-name = 'Is_Abort_Transaction';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a968edf778668bd0ec7603f0571619196';
+        sec-mem-ref-line = '21';
+        sec-mem-ref-name = 'OSTM';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1aba384cf65c5f56f5b86833730c3c6ea4';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'Set_Abort_Transaction';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_1a2a5b89641af274ddc69bdf8c1c1a07d6';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'canCommit';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '121';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Boolean value <canCommit> to determine the object can or cannot commit
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a8df39ced3b401aa466df97e26d14b1b7';
+        sec-mem-ref-line = '124';
+        sec-mem-ref-name = 'Is_Can_Commit';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a968edf778668bd0ec7603f0571619196';
+        sec-mem-ref-line = '21';
+        sec-mem-ref-name = 'OSTM';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a813ee61c9d1c83c6a6ae30d12aca8a5d';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'Set_Can_Commit';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_o_s_t_m_aaab0921fd1564b793f882a5002ec7106_1aaab0921fd1564b793f882a5002ec7106';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::mutex
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'mutex';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '139';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Mutex lock <mutex> use to lock the object with transaction, to make sure only
+one transaction can access the object at the time
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1afb6520023ed2c4a6188b688c46f192d0';
+        sec-mem-ref-line = '162';
+        sec-mem-ref-name = 'is_Locked';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1af192c598a3c647f37aaba5757e60240f';
+        sec-mem-ref-line = '147';
+        sec-mem-ref-name = 'lock_Mutex';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a6cd703bc26c719fd95b4f5362d050762';
+        sec-mem-ref-line = '154';
+        sec-mem-ref-name = 'unlock_Mutex';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_1aa9fe59368b701af7f70befa23bd6901a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'uniqueID';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '117';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Object unique identifier
+Every object inherit from OSTM class will include a version number that is unique for every object.
+The STM library used this value to find object within the transaction to make changes or comparism ith them.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a5a01a8b98d16b1d1904ecf9356e7b71d';
+        sec-mem-ref-line = '82';
+        sec-mem-ref-name = 'Get_Unique_ID';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a968edf778668bd0ec7603f0571619196';
+        sec-mem-ref-line = '21';
+        sec-mem-ref-name = 'OSTM';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1ab5019a32185631c08abbf826422f2d93';
+        sec-mem-ref-line = '75';
+        sec-mem-ref-name = 'Set_Unique_ID';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_1a9a6ea36181be2db7f9082d77956511d7';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'version';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '111';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Object private version number.
+The verion number ZERO by default when the object created. When a transaction make changes with the object, then the version number
+will be increased, to indicate the changes on the object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a1f1db9d482f22c8e7caa17dfb340626b';
+        sec-mem-ref-line = '100';
+        sec-mem-ref-name = 'Get_Version';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a5f90caa4384d371c16b7cac860d9f89a';
+        sec-mem-ref-line = '108';
+        sec-mem-ref-name = 'increase_VersionNumber';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a968edf778668bd0ec7603f0571619196';
+        sec-mem-ref-line = '21';
+        sec-mem-ref-name = 'OSTM';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a9529ad8d6d28c1f0cc9b86ed91df1ae1';
+        sec-mem-ref-line = '92';
+        sec-mem-ref-name = 'Set_Version';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8h_1a513396a115f2987fd07c203309ae8a59';
+        sec-mem-ref-line = '51';
+        sec-mem-ref-name = 'toString';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_o_s_t_m_a0bb6ae8411d25f8e7b82d0a61729ea89_1a0bb6ae8411d25f8e7b82d0a61729ea89';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ZERO';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '134';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Integer <ZERO> meaninful string equalient to 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1a968edf778668bd0ec7603f0571619196';
+        sec-mem-ref-line = '21';
+        sec-mem-ref-name = 'OSTM';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-static-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_o_s_t_m_acb617b9666d198c0de333c8613df0d4b_1acb617b9666d198c0de333c8613df0d4b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'global_Unique_ID_Number';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+      sec-mem-desc-line = '130';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Unique object number start at ZERO
+The value stored in the static class level <global_Unique_ID_Number> increase every OSTM type object creation.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_o_s_t_m_8cpp_1adee6903c1100e0d78640bd4b85e5d7df';
+        sec-mem-ref-line = '61';
+        sec-mem-ref-name = 'Get_global_Unique_ID_Number';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+  cp-fileline  = '23';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+File:   OSTM.h
+Author: Zoltan Fuzesi C00197361, 
+IT Carlow, Software Engineering, 
+
+Supervisor : Joe Kehoe, 
+
+C++ Software Transactional Memory, 
+
+Created on December 18, 2017, 2:09 PM
+The OSTM class is the base class to all the inherited classes that intend to used 
+with the Software Transactional memory library
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 13;
+        node-label = 'OSTM';
+        node-link = {
+          node-link-id = 'class_o_s_t_m';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_t_m';
+  cp-name   = 'TM';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::shared_ptr< TX > const
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_get_tx';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '112';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@81 _get_tx std::shared_ptr<TX>, return an trtansaction Object as a shared_ptr, if TX not exists then create and register.#
+ If the transaction Object exists then increasing the nesting level within the Transaction Object.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+_get_tx std::shared_ptr<TX>, returning a shared pointer transaction object
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_m_8h_1a123bc5aa0766a7b909bebc54a429e5b0';
+        sec-mem-ref-line = '98';
+        sec-mem-ref-name = 'get_Lock';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_m_8cpp_1a26ea481c24d9aa3aebd6dafb7253376e';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'registerTX';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_m_8h_1a0333dfa193ea99d7626de74a2b932e9b';
+        sec-mem-ref-line = '78';
+        sec-mem-ref-name = 'txMap';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_TX_EXIT';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '117';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@108 _TX_EXIT void, when the thread calls the ostm_exit function in the transaction, and it will clear all elements 
+from the shared global collection associated with the main process
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+_TX_EXIT void function, the thread (TX object) calls the ostm_exit function from the transaction, 
+and clear all elements from the shared global collection associated with the main process
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8cpp_1aa9739c5c2077454c779098db7baefc2b';
+        sec-mem-ref-line = '68';
+        sec-mem-ref-name = 'TX::ostm_exit';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_m_8h_1a6d417b18213968da2a70a914e80d639b';
+        sec-mem-ref-line = '82';
+        sec-mem-ref-name = 'process_map_collection';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_m_8h_1a0333dfa193ea99d7626de74a2b932e9b';
+        sec-mem-ref-line = '78';
+        sec-mem-ref-name = 'txMap';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_1a1d6891b1d3e71cc0acef54e7afe71c09';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'print_all';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '121';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@132 ONLY FOR TESTING print_all void function , print out all object key from txMAP collection associated
+with the main process.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+ONLY FOR TESTING!  print_all void function, prints all object in the txMap
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_m_8h_1a123bc5aa0766a7b909bebc54a429e5b0';
+        sec-mem-ref-line = '98';
+        sec-mem-ref-name = 'get_Lock';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_m_8h_1a0333dfa193ea99d7626de74a2b932e9b';
+        sec-mem-ref-line = '78';
+        sec-mem-ref-name = 'txMap';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-static-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_1a7ce5f35e0dae76df4fe116cf905bbe60';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static TM &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'Instance';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '108';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@31 Instance TM, Scott Meyer's Singleton creation, thread safe Transaction Manager instance creation.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Scott Meyer's Singleton creation, thread safe Transaction Manager instance creation. 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_m_8h_1a9d49d0ddef82337e54b684c9e1e8ad21';
+        sec-mem-ref-line = '102';
+        sec-mem-ref-name = '_tm_id';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_1afb8bc9f42fe06c52747beb7f4c46915c';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::map< std::thread::id, int >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_thread_Map';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '86';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@148 get_thread_Map std::map, returning a map to store all unique ID from all objects from 
+all transactions within the main processes
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a26ea481c24d9aa3aebd6dafb7253376e';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'registerTX';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_m_a85a6b783f0566f0877bab6a7de977c0a_1a85a6b783f0566f0877bab6a7de977c0a';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+TM &
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'operator=';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const TM &
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '74';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+TM copy operator, prevent from copying the Transaction Manager.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_1a26ea481c24d9aa3aebd6dafb7253376e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'registerTX';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '90';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@45 registerTX void function, register a new TX Transaction object into ythe txMap/Transaction 
+Map to manage all the transactions within the shared library. TM Transaction managger checking the Process ID existence in the 
+process map collection, If not in the map then register.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_m_8cpp_1afb8bc9f42fe06c52747beb7f4c46915c';
+        sec-mem-ref-line = '148';
+        sec-mem-ref-name = 'get_thread_Map';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_m_8h_1a6d417b18213968da2a70a914e80d639b';
+        sec-mem-ref-line = '82';
+        sec-mem-ref-name = 'process_map_collection';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_m_8h_1aeb26546681bfe64e21606b8c012bb8c3';
+        sec-mem-ref-line = '94';
+        sec-mem-ref-name = 'register_Lock';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_m_8h_1a0333dfa193ea99d7626de74a2b932e9b';
+        sec-mem-ref-line = '78';
+        sec-mem-ref-name = 'txMap';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a41cb0226cc4080c931651b13f74a0075';
+        sec-mem-ref-line = '81';
+        sec-mem-ref-name = '_get_tx';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_m_a9b5afb6b9d7c5925ab5cc5c65078ac23_1a9b5afb6b9d7c5925ab5cc5c65078ac23';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TM';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '62';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_m_a2d1de4a19f7ed6b2805ed6e955b8e45b_1a2d1de4a19f7ed6b2805ed6e955b8e45b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TM';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const TM &
+_EnD_oF_dEf_TeXt_;
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '70';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+TM copy constructor, prevent from copying the Transaction Manager.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_m_a985f8cb24f685925ddd637c7030cd2b3_1a985f8cb24f685925ddd637c7030cd2b3';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~TM';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '66';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_1a123bc5aa0766a7b909bebc54a429e5b0';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::mutex
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_Lock';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '98';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a41cb0226cc4080c931651b13f74a0075';
+        sec-mem-ref-line = '81';
+        sec-mem-ref-name = '_get_tx';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a1d6891b1d3e71cc0acef54e7afe71c09';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'print_all';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_t_m_aeb26546681bfe64e21606b8c012bb8c3_1aeb26546681bfe64e21606b8c012bb8c3';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::mutex
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'register_Lock';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '94';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a26ea481c24d9aa3aebd6dafb7253376e';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'registerTX';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::map< std::thread::id, std::shared_ptr< TX > >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'txMap';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '78';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a41cb0226cc4080c931651b13f74a0075';
+        sec-mem-ref-line = '81';
+        sec-mem-ref-name = '_get_tx';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a5e2d1127f2429f2f524d25f430eade06';
+        sec-mem-ref-line = '108';
+        sec-mem-ref-name = '_TX_EXIT';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a1d6891b1d3e71cc0acef54e7afe71c09';
+        sec-mem-ref-line = '132';
+        sec-mem-ref-name = 'print_all';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a26ea481c24d9aa3aebd6dafb7253376e';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'registerTX';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-static-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_t_m_a9d49d0ddef82337e54b684c9e1e8ad21_1a9d49d0ddef82337e54b684c9e1e8ad21';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static pid_t
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_tm_id';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '102';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a7ce5f35e0dae76df4fe116cf905bbe60';
+        sec-mem-ref-line = '31';
+        sec-mem-ref-name = 'Instance';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_t_m_a6d417b18213968da2a70a914e80d639b_1a6d417b18213968da2a70a914e80d639b';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static std::map< pid_t, std::map< std::thread::id, int > >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'process_map_collection';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+      sec-mem-desc-line = '82';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a5e2d1127f2429f2f524d25f430eade06';
+        sec-mem-ref-line = '108';
+        sec-mem-ref-name = '_TX_EXIT';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a26ea481c24d9aa3aebd6dafb7253376e';
+        sec-mem-ref-line = '45';
+        sec-mem-ref-name = 'registerTX';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+  cp-fileline  = '57';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 15;
+        node-label = 'TM';
+        node-link = {
+          node-link-id = 'class_t_m';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+class = {
+  cp-id     = 'class_t_x';
+  cp-name   = 'TX';
+  cp-section = {
+    sec-kind = 'public-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_aa3ac499f576326588628ade96b27b4b1_1aa3ac499f576326588628ade96b27b4b1';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_decrease_tx_nesting';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '70';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@279 _decrease_tx_nesting decrease the value stored in _tx_nesting_level by one, when outer transactions commit
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1ae8f413fd7f4fea322e7ad3c668f9898e';
+        sec-mem-ref-line = '101';
+        sec-mem-ref-name = '_tx_nesting_level';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a9dde5d356b35e557448e58d260087356';
+        sec-mem-ref-line = '177';
+        sec-mem-ref-name = 'commit';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_a1384bdf12d795854b5d32e7f61ffbdb8_1a1384bdf12d795854b5d32e7f61ffbdb8';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_increase_tx_nesting';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '66';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@272 _increase_tx_nesting increase the value stored in _tx_nesting_level by one, indicate that the transaction was nested
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1ae8f413fd7f4fea322e7ad3c668f9898e';
+        sec-mem-ref-line = '101';
+        sec-mem-ref-name = '_tx_nesting_level';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_a3d96ed91eb9ec73e16589f705661c5a7_1a3d96ed91eb9ec73e16589f705661c5a7';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_print_all_tx';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '86';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@311 _print_all_tx, only for testing! Prints all transaction associated with the main procees.!
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f';
+        sec-mem-ref-line = '109';
+        sec-mem-ref-name = 'process_map_collection';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a81aafda16e2f20e36ec6c68e584668ff';
+        sec-mem-ref-line = '93';
+        sec-mem-ref-name = 'working_Map_collection';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_1abc32af2f51df97ac483e5bfe7db6ca6e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_register';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::shared_ptr< OSTM >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'object';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '50';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+register void, receives an std::shared_ptr<OSTM> that point to the original memory space to protect from reca conditions
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+@param object std::shared_ptr<OSTM>, is an original shared pointer point to the object memory space
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8cpp_1a3f5671423cb7b9f9c98f8a25f2a4b545';
+        sec-mem-ref-line = '301';
+        sec-mem-ref-name = 'get_thread_Map';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a1a45d726894190695314464d7cd97c29';
+        sec-mem-ref-line = '105';
+        sec-mem-ref-name = 'main_Process_Map_collection';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f';
+        sec-mem-ref-line = '109';
+        sec-mem-ref-name = 'process_map_collection';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1aa688a8c96fa3cdf8cd92e267463536dc';
+        sec-mem-ref-line = '117';
+        sec-mem-ref-name = 'register_Lock';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a81aafda16e2f20e36ec6c68e584668ff';
+        sec-mem-ref-line = '93';
+        sec-mem-ref-name = 'working_Map_collection';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_a9dde5d356b35e557448e58d260087356_1a9dde5d356b35e557448e58d260087356';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+bool
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'commit';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '62';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@176 commit function, returns boolean value TRUE/FALSE depends on the action taken within the function. if commit happens 
+return TRUE, otherwise return FALSE, indicate the transaction muist restart.
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8cpp_1aa3ac499f576326588628ade96b27b4b1';
+        sec-mem-ref-line = '279';
+        sec-mem-ref-name = '_decrease_tx_nesting';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8cpp_1a4c13d2015dc15d0f788fa9a1413f0463';
+        sec-mem-ref-line = '253';
+        sec-mem-ref-name = '_release_object_lock';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1ae8f413fd7f4fea322e7ad3c668f9898e';
+        sec-mem-ref-line = '101';
+        sec-mem-ref-name = '_tx_nesting_level';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a1a45d726894190695314464d7cd97c29';
+        sec-mem-ref-line = '105';
+        sec-mem-ref-name = 'main_Process_Map_collection';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8cpp_1ae045534c4a9d39bd5c6ea2a39a372a79';
+        sec-mem-ref-line = '52';
+        sec-mem-ref-name = 'th_exit';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a81aafda16e2f20e36ec6c68e584668ff';
+        sec-mem-ref-line = '93';
+        sec-mem-ref-name = 'working_Map_collection';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_ae9bf97930c4670f59d334b345353a71e_1ae9bf97930c4670f59d334b345353a71e';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'getTest_counter';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '78';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@287 getTest_counter TESTING ONLY!!! returning the value of the test_counter stored, representing the number of rollbacks
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a25838234aab99ae891a90eb8623a8b3c';
+        sec-mem-ref-line = '82';
+        sec-mem-ref-name = 'test_counter';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_a1d78262b8831ddd042ed491f2e600e24_1a1d78262b8831ddd042ed491f2e600e24';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::shared_ptr< OSTM >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'load';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::shared_ptr< OSTM >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'object';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '54';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@137 load std::shared_ptr<OSTM>, returning an OSTM type shared pointer, that is copy of the original pointer stored in the working map, to work with during transaction life time
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\param  object std::shared_ptr<OSTM>, used as a reference to find transaction copy object by the object unique ID
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a81aafda16e2f20e36ec6c68e584668ff';
+        sec-mem-ref-line = '93';
+        sec-mem-ref-name = 'working_Map_collection';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_aa9739c5c2077454c779098db7baefc2b_1aa9739c5c2077454c779098db7baefc2b';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'ostm_exit';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '46';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@68 ostm_exit void, clear all elements from the shared global collections associated with the main process
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\param main_Process_Map_collection std::map, store all std::shared_ptr<OSTM> from all transaction shared between multiple processes
+\param process_map_collection std::map, store all unique id from all transaction within main process
+DO NOT CALL THIS METHOD EXPLICITLY!!!!!! WILL DELETE ALL PROCESS  ASSOCIATED ELEMENTS!!!!
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a1a45d726894190695314464d7cd97c29';
+        sec-mem-ref-line = '105';
+        sec-mem-ref-name = 'main_Process_Map_collection';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f';
+        sec-mem-ref-line = '109';
+        sec-mem-ref-name = 'process_map_collection';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_m_8cpp_1a5e2d1127f2429f2f524d25f430eade06';
+        sec-mem-ref-line = '108';
+        sec-mem-ref-name = 'TM::_TX_EXIT';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_a7dbcb369aa4a3370b6c6829d278ece5d_1a7dbcb369aa4a3370b6c6829d278ece5d';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'store';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::shared_ptr< OSTM >
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'object';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '58';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@157 store void, receive an OSTM type shared pointer object to store the changes with the transaction copy object
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\param  object std::shared_ptr<OSTM>, receiving a changed shared pointer, that was returned from the load function
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a81aafda16e2f20e36ec6c68e584668ff';
+        sec-mem-ref-line = '93';
+        sec-mem-ref-name = 'working_Map_collection';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_a8a4b83eab0171ae834bfa92bbced1094_1a8a4b83eab0171ae834bfa92bbced1094';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TX';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+std::thread::id
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'id';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '34';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@36 Custom Constructor
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+\param id std::thread::id, represent the transaction number when to the TransactionManager
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1ae8f413fd7f4fea322e7ad3c668f9898e';
+        sec-mem-ref-line = '101';
+        sec-mem-ref-name = '_tx_nesting_level';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a145a1c74b521f277fe481971a930b249';
+        sec-mem-ref-line = '97';
+        sec-mem-ref-name = 'transaction_Number';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_ab96b3dd2bfd621b47307f0af3ec4f35c_1ab96b3dd2bfd621b47307f0af3ec4f35c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TX';
+      sec-mem-param = {
+        sec-mem-param-type = <<_EnD_oF_dEf_TeXt_
+const TX &
+_EnD_oF_dEf_TeXt_;
+        sec-mem-param-declname = 'orig';
+      }; /*        sec-mem-param--param */
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '42';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_abecf854cc3228ab6dd51175b3cd1c70a_1abecf854cc3228ab6dd51175b3cd1c70a';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '~TX';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '38';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@45 De-constructor
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'public-static-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_t_x_a25838234aab99ae891a90eb8623a8b3c_1a25838234aab99ae891a90eb8623a8b3c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'test_counter';
+      sec-mem-initializer = <<_EnD_oF_dEf_TeXt_
+= 0
+_EnD_oF_dEf_TeXt_;
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '82';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1ae9bf97930c4670f59d334b345353a71e';
+        sec-mem-ref-line = '287';
+        sec-mem-ref-name = 'getTest_counter';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-func';
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_a9eba04944d449285905b60ec47223cff_1a9eba04944d449285905b60ec47223cff';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+const std::thread::id
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_get_tx_number';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '121';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@294 _get_tx_number, returning the thread id that has assigned the given transaction
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+_get_tx_number, returning the transaction uniqe identifier
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a145a1c74b521f277fe481971a930b249';
+        sec-mem-ref-line = '97';
+        sec-mem-ref-name = 'transaction_Number';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_1a4c13d2015dc15d0f788fa9a1413f0463';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_release_object_lock';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '125';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@253 _release_object_lock void function, is get called from commit function, with the purpose to release the locks on all the objects participating in the transaction
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+_release_object_lock, Release the locks on all Shared global objects used by the transaction  
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a1a45d726894190695314464d7cd97c29';
+        sec-mem-ref-line = '105';
+        sec-mem-ref-name = 'main_Process_Map_collection';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a81aafda16e2f20e36ec6c68e584668ff';
+        sec-mem-ref-line = '93';
+        sec-mem-ref-name = 'working_Map_collection';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a9dde5d356b35e557448e58d260087356';
+        sec-mem-ref-line = '177';
+        sec-mem-ref-name = 'commit';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_1a3f5671423cb7b9f9c98f8a25f2a4b545';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::map< int, int >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'get_thread_Map';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '113';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@301 get_thread_Map, returning  a map to store all unique ID from all objects from all transactions within the main process
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+get_thread_Map, returning and map to insert to the process_map_collection as an inner value
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1abc32af2f51df97ac483e5bfe7db6ca6e';
+        sec-mem-ref-line = '96';
+        sec-mem-ref-name = '_register';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'function';
+      sec-mem-id   = 'class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_1ae045534c4a9d39bd5c6ea2a39a372a79';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+void
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'th_exit';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '129';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+@52 th_exit void, delete all std::shared_ptr<OSTM> elements from  working_Map_collection, that store pointers to working objects
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+Clean up all associated values by the thread delete from working_Map_collection, it is an automated function by the transactions
+
+\param working_Map_collection std::map, store std::shared_ptr<OSTM> transaction pointers
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1ae8f413fd7f4fea322e7ad3c668f9898e';
+        sec-mem-ref-line = '101';
+        sec-mem-ref-name = '_tx_nesting_level';
+    };
+      sec-mem-referenceto = {
+        sec-mem-ref-id = '_t_x_8h_1a81aafda16e2f20e36ec6c68e584668ff';
+        sec-mem-ref-line = '93';
+        sec-mem-ref-name = 'working_Map_collection';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a9dde5d356b35e557448e58d260087356';
+        sec-mem-ref-line = '177';
+        sec-mem-ref-name = 'commit';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_1ae8f413fd7f4fea322e7ad3c668f9898e';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+int
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = '_tx_nesting_level';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '101';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+_tx_nesting_level, store integer value represent the ttransaction nesting level
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1aa3ac499f576326588628ade96b27b4b1';
+        sec-mem-ref-line = '279';
+        sec-mem-ref-name = '_decrease_tx_nesting';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a1384bdf12d795854b5d32e7f61ffbdb8';
+        sec-mem-ref-line = '272';
+        sec-mem-ref-name = '_increase_tx_nesting';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a9dde5d356b35e557448e58d260087356';
+        sec-mem-ref-line = '177';
+        sec-mem-ref-name = 'commit';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1ae045534c4a9d39bd5c6ea2a39a372a79';
+        sec-mem-ref-line = '52';
+        sec-mem-ref-name = 'th_exit';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a8a4b83eab0171ae834bfa92bbced1094';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'TX';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_t_x_a145a1c74b521f277fe481971a930b249_1a145a1c74b521f277fe481971a930b249';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::thread::id
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'transaction_Number';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '97';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+transaction_Number, Returning the transaction number what is a registered thread number associated with the transaction
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a9eba04944d449285905b60ec47223cff';
+        sec-mem-ref-line = '294';
+        sec-mem-ref-name = '_get_tx_number';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a8a4b83eab0171ae834bfa92bbced1094';
+        sec-mem-ref-line = '36';
+        sec-mem-ref-name = 'TX';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+std::map< int, std::shared_ptr< OSTM > >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'working_Map_collection';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '93';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+working_Map_collection, Collection to store copy of OSTM parent based original Global shared pointers to make invisible changes during isolated transaction
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a3d96ed91eb9ec73e16589f705661c5a7';
+        sec-mem-ref-line = '311';
+        sec-mem-ref-name = '_print_all_tx';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1abc32af2f51df97ac483e5bfe7db6ca6e';
+        sec-mem-ref-line = '96';
+        sec-mem-ref-name = '_register';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a4c13d2015dc15d0f788fa9a1413f0463';
+        sec-mem-ref-line = '253';
+        sec-mem-ref-name = '_release_object_lock';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a9dde5d356b35e557448e58d260087356';
+        sec-mem-ref-line = '177';
+        sec-mem-ref-name = 'commit';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a1d78262b8831ddd042ed491f2e600e24';
+        sec-mem-ref-line = '137';
+        sec-mem-ref-name = 'load';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a7dbcb369aa4a3370b6c6829d278ece5d';
+        sec-mem-ref-line = '157';
+        sec-mem-ref-name = 'store';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1ae045534c4a9d39bd5c6ea2a39a372a79';
+        sec-mem-ref-line = '52';
+        sec-mem-ref-name = 'th_exit';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'private-static-attrib';
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static std::map< int, std::shared_ptr< OSTM > >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'main_Process_Map_collection';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '105';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+main_Process_Map_collection, STATIC GLOBAL MAP Collection to store OSTM parent based shared pointers to control/lock and compare objects version number within transactions
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1abc32af2f51df97ac483e5bfe7db6ca6e';
+        sec-mem-ref-line = '96';
+        sec-mem-ref-name = '_register';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a4c13d2015dc15d0f788fa9a1413f0463';
+        sec-mem-ref-line = '253';
+        sec-mem-ref-name = '_release_object_lock';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a9dde5d356b35e557448e58d260087356';
+        sec-mem-ref-line = '177';
+        sec-mem-ref-name = 'commit';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1aa9739c5c2077454c779098db7baefc2b';
+        sec-mem-ref-line = '68';
+        sec-mem-ref-name = 'ostm_exit';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static std::map< pid_t, std::map< int, int > >
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'process_map_collection';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '109';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+process_map_collection, STATIC GLOBAL MAP Collection to store all process associated keys to find when deleting transactions 
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1a3d96ed91eb9ec73e16589f705661c5a7';
+        sec-mem-ref-line = '311';
+        sec-mem-ref-name = '_print_all_tx';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1abc32af2f51df97ac483e5bfe7db6ca6e';
+        sec-mem-ref-line = '96';
+        sec-mem-ref-name = '_register';
+    };
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1aa9739c5c2077454c779098db7baefc2b';
+        sec-mem-ref-line = '68';
+        sec-mem-ref-name = 'ostm_exit';
+    };
+    }; /* sec-member */
+    sec-member = {
+      sec-mem-kind = 'variable';
+      sec-mem-id   = 'class_t_x_aa688a8c96fa3cdf8cd92e267463536dc_1aa688a8c96fa3cdf8cd92e267463536dc';
+      sec-mem-virt = normal;
+      sec-mem-prot = private;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+static std::mutex
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'register_Lock';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '117';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+register_Lock, std::mutex to control shared access on MAIN MAP
+_EnD_oF_dEf_TeXt_;
+      sec-mem-referenceby = {
+        sec-mem-ref-id = '_t_x_8cpp_1abc32af2f51df97ac483e5bfe7db6ca6e';
+        sec-mem-ref-line = '96';
+        sec-mem-ref-name = '_register';
+    };
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-section = {
+    sec-kind = 'signal';
+    sec-member = {
+      sec-mem-kind = 'friend';
+      sec-mem-id   = 'class_t_x_adf1ccda799ef5c419cb43b8ae55eb45c_1adf1ccda799ef5c419cb43b8ae55eb45c';
+      sec-mem-virt = normal;
+      sec-mem-prot = public;
+      sec-mem-type = <<_EnD_oF_dEf_TeXt_
+friend class
+_EnD_oF_dEf_TeXt_;
+      sec-mem-name = 'TM';
+      sec-mem-desc-file = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+      sec-mem-desc-line = '74';
+      sec-mem-briefdesc =    <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+      sec-mem-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+    }; /* sec-member */
+  }; /* cp-section */
+  cp-filename  = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+  cp-fileline  = '29';
+  cp-briefdesc = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  cp-collaborationgraph = <<_EnD_oF_dEf_TeXt_
+      node = {
+        node-id    = 17;
+        node-label = 'TX';
+        node-link = {
+          node-link-id = 'class_t_x';
+        };
+      }; /* node */
+
+_EnD_oF_dEf_TeXt_;
+}; /* class */
+file = {
+  file-id   = '_o_s_t_m_8cpp';
+  file-name = 'OSTM.cpp';
+  file-full-name  = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_o_s_t_m_8h';
+  file-name = 'OSTM.h';
+  file-full-name  = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/OSTM.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_r_e_a_d_m_e_8md';
+  file-name = 'README.md';
+  file-full-name  = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/README.md';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_t_m_8cpp';
+  file-name = 'TM.cpp';
+  file-full-name  = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_t_m_8h';
+  file-name = 'TM.h';
+  file-full-name  = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TM.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_t_x_8cpp';
+  file-name = 'TX.cpp';
+  file-full-name  = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.cpp';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */
+file = {
+  file-id   = '_t_x_8h';
+  file-name = 'TX.h';
+  file-full-name  = '/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/Linux/OSTM/TX.h';
+  file-first-line = '1';
+  file-briefdesc  = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+  file-documentation = <<_EnD_oF_dEf_TeXt_
+
+_EnD_oF_dEf_TeXt_;
+}; /* file */

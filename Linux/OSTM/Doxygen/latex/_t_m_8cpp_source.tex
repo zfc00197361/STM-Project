@@ -3,107 +3,98 @@
 \begin{DoxyCode}
 00001 \textcolor{comment}{/* }
 00002 \textcolor{comment}{ * File:   TM.cpp}
-00003 \textcolor{comment}{ * Author: Zoltan Fuzesi}
-00004 \textcolor{comment}{ * }
-00005 \textcolor{comment}{ * Created on December 18, 2017, 2:09 PM}
-00006 \textcolor{comment}{ * Transaction Manager class methods implementation}
-00007 \textcolor{comment}{ */}
-00008 \textcolor{preprocessor}{#include "TM.h"}
-00009 \textcolor{preprocessor}{#include <thread>}
-00010 \textcolor{preprocessor}{#include <unistd.h>}
-00011 \textcolor{preprocessor}{#include <sys/types.h>}
-00012 \textcolor{preprocessor}{#include <iostream>}
+00003 \textcolor{comment}{ * Author: Zoltan Fuzesi C00197361, }
+00004 \textcolor{comment}{ * IT Carlow, Software Engineering, }
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * Supervisor : Joe Kehoe, }
+00007 \textcolor{comment}{ *}
+00008 \textcolor{comment}{ * C++ Software Transactional Memory, }
+00009 \textcolor{comment}{ * }
+00010 \textcolor{comment}{ * Created on December 18, 2017, 2:09 PM}
+00011 \textcolor{comment}{ * OSTM base class function declarations.}
+00012 \textcolor{comment}{ */}
 00013 
-00017 pid\_t TM::\_tm\_id;
-00021 std::map<pid\_t, std::map< std::thread::id, int >> TM::process\_map\_collection;
-\hypertarget{_t_m_8cpp_source.tex_l00027}{}\hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60}{00027} \hyperlink{class_t_m}{TM}& \hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60}{TM::Instance}() \{
-00028     \textcolor{keyword}{static} \hyperlink{class_t_m}{TM} \_instance;
-00029     \_instance.\_tm\_id = getpid();
-00030 
-00031     \textcolor{keywordflow}{return} \_instance;
-00032 \}
-00033 
-00034 \textcolor{comment}{//TM Transaction managger checking the Process ID existence in the map}
-00035 \textcolor{comment}{//If not in the map then register}
-00042 \textcolor{comment}{}\textcolor{keywordtype}{void} TM::registerTX()
-00043 \{
-00044     std::lock\_guard<std::mutex> guard(register\_Lock);
-00045     pid\_t ppid = getppid();
-00046     std::map<pid\_t, std::map< std::thread::id, int >>::iterator process\_map\_collection\_Iterator = 
-      TM::process\_map\_collection.find(ppid);
-00047     \textcolor{keywordflow}{if} (process\_map\_collection\_Iterator == TM::process\_map\_collection.end()) \{
-00048         \textcolor{comment}{/*}
-00049 \textcolor{comment}{         * Register main process/application to the global map}
-00050 \textcolor{comment}{         */}
-00051         std::map< std::thread::id, int >map = get\_thread\_Map();
-00052         TM::process\_map\_collection.insert(\{ppid, map\});
-00053 
-00054     \}
-00055     std::map<std::thread::id, std::shared\_ptr < TX>>::iterator it = txMap.find(std::this\_thread::get\_id());
-00056     \textcolor{keywordflow}{if} (it == txMap.end()) \{
-00057         std::shared\_ptr<TX> \_transaction\_object(\textcolor{keyword}{new} \hyperlink{class_t_x}{TX}(std::this\_thread::get\_id()));
-00058         txMap.insert(\{std::this\_thread::get\_id(), \_transaction\_object\});
-00059         \textcolor{comment}{/*}
-00060 \textcolor{comment}{         * Get the map if registered first time}
-00061 \textcolor{comment}{         */}
-00062         process\_map\_collection\_Iterator = TM::process\_map\_collection.find(ppid);
-00063         \textcolor{comment}{/*}
-00064 \textcolor{comment}{         * Insert to the GLOBAL MAP as a helper to clean up at end of main process }
-00065 \textcolor{comment}{         */}
-00066         process\_map\_collection\_Iterator->second.insert(\{std::this\_thread::get\_id(), 1\});
-00067 
-00068     \}
-00069 
-00070 \}
-00071 
-\hypertarget{_t_m_8cpp_source.tex_l00077}{}\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075}{00077} std::shared\_ptr<TX>\textcolor{keyword}{const} \hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075}{TM::\_get\_tx}()
-00078 \{
-00079     std::lock\_guard<std::mutex> guard(get\_Lock);
-00080 
-00081     std::map<std::thread::id, std::shared\_ptr<TX>>::iterator it = txMap.find(std::this\_thread::get\_id());
-00082     \textcolor{keywordflow}{if}(it == txMap.end())
-00083     \{
-00084        registerTX();
-00085        it = txMap.find(std::this\_thread::get\_id());
-00086        
-00087     \} \textcolor{keywordflow}{else} \{
-00088         it->second->\_increase\_tx\_nesting();
-00089     \}
-00090     \textcolor{comment}{//it = txMap.find(std::this\_thread::get\_id());}
-00091     
-00092 
-00093     \textcolor{keywordflow}{return} it->second;
-00094 
-00095 \}
-\hypertarget{_t_m_8cpp_source.tex_l00100}{}\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06}{00100} \textcolor{keywordtype}{void} \hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06}{TM::\_TX\_EXIT}()\{
-00101     \hyperlink{class_t_x}{TX} tx(std::this\_thread::get\_id());
-00102     pid\_t ppid = getppid();
-00103     std::map<pid\_t, std::map< std::thread::id, int >>::iterator process\_map\_collection\_Iterator = 
-      TM::process\_map\_collection.find(ppid);
-00104     \textcolor{keywordflow}{if} (process\_map\_collection\_Iterator != TM::process\_map\_collection.end()) \{
-00105 
-00106         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} current = process\_map\_collection\_Iterator->second.begin(); current != 
+00014 \textcolor{preprocessor}{#include "\hyperlink{_t_m_8h}{TM.h}"}
+00015 \textcolor{preprocessor}{#include <thread>}
+00016 \textcolor{preprocessor}{#include <unistd.h>}
+00017 \textcolor{preprocessor}{#include <sys/types.h>}
+00018 \textcolor{preprocessor}{#include <iostream>}
+00019 
+00020 \textcolor{comment}{/*}
+00021 \textcolor{comment}{ * @23 \_tm\_id pid\_t, process id determine the actual process between process in the STM library}
+00022 \textcolor{comment}{ */}
+00023 pid\_t \hyperlink{class_t_m_a9d49d0ddef82337e54b684c9e1e8ad21_a9d49d0ddef82337e54b684c9e1e8ad21}{TM::\_tm\_id};
+00024 \textcolor{comment}{/*}
+00025 \textcolor{comment}{ * @27 static Global std::map process\_map\_collection store all transactional objects/pointers}
+00026 \textcolor{comment}{ */}
+00027 std::map<pid\_t, std::map< std::thread::id, int >> \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection};
+\hypertarget{_t_m_8cpp_source.tex_l00031}{}\hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_a7ce5f35e0dae76df4fe116cf905bbe60}{00031} \hyperlink{class_t_m}{TM}& \hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_a7ce5f35e0dae76df4fe116cf905bbe60}{TM::Instance}() \{
+00033     \textcolor{keyword}{static} \hyperlink{class_t_m}{TM} \_instance;
+00035     \_instance.\hyperlink{class_t_m_a9d49d0ddef82337e54b684c9e1e8ad21_a9d49d0ddef82337e54b684c9e1e8ad21}{\_tm\_id} = getpid();
+00037     \textcolor{keywordflow}{return} \_instance;
+00038 \}
+00039 
+\hypertarget{_t_m_8cpp_source.tex_l00045}{}\hyperlink{class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e}{00045} \textcolor{keywordtype}{void} \hyperlink{class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e}{TM::registerTX}()
+00046 \{
+00049     std::lock\_guard<std::mutex> guard(\hyperlink{class_t_m_aeb26546681bfe64e21606b8c012bb8c3_aeb26546681bfe64e21606b8c012bb8c3}{register\_Lock});
+00051     pid\_t ppid = getppid();
+00053     std::map<pid\_t, std::map< std::thread::id, int >>::iterator process\_map\_collection\_Iterator = 
+      \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.find(ppid);
+00055     \textcolor{keywordflow}{if} (process\_map\_collection\_Iterator == \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.end()) \{
+00057         std::map< std::thread::id, int >map = \hyperlink{class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46915c}{get\_thread\_Map}();
+00059         \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.insert(\{ppid, map\});
+00060 
+00061     \}
+00063     std::map<std::thread::id, std::shared\_ptr < TX>>::iterator it = \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.find(
+      std::this\_thread::get\_id());
+00065     \textcolor{keywordflow}{if} (it == \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.end()) \{
+00067         std::shared\_ptr<TX> \_transaction\_object(\textcolor{keyword}{new} \hyperlink{class_t_x}{TX}(std::this\_thread::get\_id()));
+00069         \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.insert(\{std::this\_thread::get\_id(), \_transaction\_object\});
+00071         process\_map\_collection\_Iterator = \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.find(ppid);
+00073         process\_map\_collection\_Iterator->second.insert(\{std::this\_thread::get\_id(), 1\});
+00074     \}
+00075 \}
+00076 
+\hypertarget{_t_m_8cpp_source.tex_l00081}{}\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{00081} std::shared\_ptr<TX>\textcolor{keyword}{const} \hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{TM::\_get\_tx}()
+00082 \{
+00085     std::lock\_guard<std::mutex> guard(\hyperlink{class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_a123bc5aa0766a7b909bebc54a429e5b0}{get\_Lock});
+00087     std::map<std::thread::id, std::shared\_ptr<TX>>::iterator it = \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.find(std::this\_thread::get\_id(
+      ));
+00089     \textcolor{keywordflow}{if}(it == \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.end())
+00090     \{
+00092        \hyperlink{class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e}{registerTX}();
+00094        it = \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.find(std::this\_thread::get\_id());
+00095        
+00096     \} \textcolor{keywordflow}{else} \{
+00098         it->second->\_increase\_tx\_nesting();
+00099     \}
+00101     \textcolor{keywordflow}{return} it->second;
+00102 
+00103 \}
+\hypertarget{_t_m_8cpp_source.tex_l00108}{}\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{00108} \textcolor{keywordtype}{void} \hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{TM::\_TX\_EXIT}()\{
+00110     \hyperlink{class_t_x}{TX} tx(std::this\_thread::get\_id());
+00112     pid\_t ppid = getppid();
+00114     std::map<pid\_t, std::map< std::thread::id, int >>::iterator process\_map\_collection\_Iterator = 
+      \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.find(ppid);
+00116     \textcolor{keywordflow}{if} (process\_map\_collection\_Iterator != \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.end()) \{
+00118         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} current = process\_map\_collection\_Iterator->second.begin(); current != 
       process\_map\_collection\_Iterator->second.end(); ++current) \{
-00107             \textcolor{comment}{/*}
-00108 \textcolor{comment}{             * Delete all transaction associated with the actual main process}
-00109 \textcolor{comment}{             */}
-00110             txMap.erase(current->first);
-00111         \}
-00112         TM::process\_map\_collection.erase(ppid);
-00113 
-00114     \}
-00115     tx.\hyperlink{class_t_x_aa9739c5c2077454c779098db7baefc2b}{ostm\_exit}();
-00116 \}
-\hypertarget{_t_m_8cpp_source.tex_l00120}{}\hyperlink{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09}{00120} \textcolor{keywordtype}{void} \hyperlink{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09}{TM::print\_all}()\{
-00121     get\_Lock.lock();
-00122     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} current = txMap.begin(); current != txMap.end(); ++current) \{
-00123         std::cout << \textcolor{stringliteral}{"KEY : "} << current->first << std::endl;
+00120             \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.erase(current->first);
+00121         \}
+00123         \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.erase(ppid);
 00124     \}
-00125     get\_Lock.unlock();
-00126 \}
-00127 
-00132 std::map< std::thread::id, int > TM::get\_thread\_Map() \{
-00133     std::map< std::thread::id, int > thread\_Map;
-00134     \textcolor{keywordflow}{return} thread\_Map;
-00135 \}
+00126     tx.\hyperlink{class_t_x_aa9739c5c2077454c779098db7baefc2b_aa9739c5c2077454c779098db7baefc2b}{ostm\_exit}();
+00127 \}
+\hypertarget{_t_m_8cpp_source.tex_l00132}{}\hyperlink{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_a1d6891b1d3e71cc0acef54e7afe71c09}{00132} \textcolor{keywordtype}{void} \hyperlink{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_a1d6891b1d3e71cc0acef54e7afe71c09}{TM::print\_all}()\{
+00134     \hyperlink{class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_a123bc5aa0766a7b909bebc54a429e5b0}{get\_Lock}.lock();
+00136     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} current = \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.begin(); current != \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.end(); ++current) \{
+00138         std::cout << \textcolor{stringliteral}{"KEY : "} << current->first << std::endl;
+00139     \}
+00141     \hyperlink{class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_a123bc5aa0766a7b909bebc54a429e5b0}{get\_Lock}.unlock();
+00142 \}
+00143 
+\hypertarget{_t_m_8cpp_source.tex_l00148}{}\hyperlink{class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46915c}{00148} std::map< std::thread::id, int > \hyperlink{class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46915c}{TM::get\_thread\_Map}() \{
+00150     std::map< std::thread::id, int > thread\_Map;
+00152     \textcolor{keywordflow}{return} thread\_Map;
+00153 \}
 \end{DoxyCode}

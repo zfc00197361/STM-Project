@@ -107,11 +107,16 @@ $(document).ready(function(){initNavTree('class_t_m.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_t_m-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">TM Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_t_m_8h_source.html">TM.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for TM:</div>
 <div class="dyncontent">
@@ -120,142 +125,61 @@ Collaboration diagram for TM:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a41cb0226cc4080c931651b13f74a0075"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_t_x.html">TX</a> &gt; const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m.html#a41cb0226cc4080c931651b13f74a0075">_get_tx</a> ()</td></tr>
-<tr class="memdesc:a41cb0226cc4080c931651b13f74a0075"><td class="mdescLeft">&#160;</td><td class="mdescRight">_get_tx std::shared_ptr&lt;TX&gt;, returning a shared pointer with the transaction  <a href="#a41cb0226cc4080c931651b13f74a0075">More...</a><br /></td></tr>
+<tr class="memitem:a41cb0226cc4080c931651b13f74a0075"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="class_t_x.html">TX</a> &gt; const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a41cb0226cc4080c931651b13f74a0075.html#a41cb0226cc4080c931651b13f74a0075">_get_tx</a> ()</td></tr>
+<tr class="memdesc:a41cb0226cc4080c931651b13f74a0075"><td class="mdescLeft">&#160;</td><td class="mdescRight">@81 _get_tx std::shared_ptr&lt;TX&gt;, return an trtansaction Object as a shared_ptr, if <a class="el" href="class_t_x.html">TX</a> not exists then create and register.# If the transaction Object exists then increasing the nesting level within the Transaction Object.  <a href="class_t_m_a41cb0226cc4080c931651b13f74a0075.html#a41cb0226cc4080c931651b13f74a0075">More...</a><br /></td></tr>
 <tr class="separator:a41cb0226cc4080c931651b13f74a0075"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e2d1127f2429f2f524d25f430eade06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m.html#a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</a> ()</td></tr>
-<tr class="memdesc:a5e2d1127f2429f2f524d25f430eade06"><td class="mdescLeft">&#160;</td><td class="mdescRight">_TX_EXIT void, the thread calls the ostm_exit function in the transaction, and clear all elements from the shared global collection associated with the main process  <a href="#a5e2d1127f2429f2f524d25f430eade06">More...</a><br /></td></tr>
+<tr class="memitem:a5e2d1127f2429f2f524d25f430eade06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a5e2d1127f2429f2f524d25f430eade06.html#a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</a> ()</td></tr>
+<tr class="memdesc:a5e2d1127f2429f2f524d25f430eade06"><td class="mdescLeft">&#160;</td><td class="mdescRight">@108 _TX_EXIT void, when the thread calls the ostm_exit function in the transaction, and it will clear all elements from the shared global collection associated with the main process  <a href="class_t_m_a5e2d1127f2429f2f524d25f430eade06.html#a5e2d1127f2429f2f524d25f430eade06">More...</a><br /></td></tr>
 <tr class="separator:a5e2d1127f2429f2f524d25f430eade06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d6891b1d3e71cc0acef54e7afe71c09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m.html#a1d6891b1d3e71cc0acef54e7afe71c09">print_all</a> ()</td></tr>
-<tr class="memdesc:a1d6891b1d3e71cc0acef54e7afe71c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">ONLY FOR TESTING print_all void, print out all object key from txMAP collection.  <a href="#a1d6891b1d3e71cc0acef54e7afe71c09">More...</a><br /></td></tr>
+<tr class="memitem:a1d6891b1d3e71cc0acef54e7afe71c09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09.html#a1d6891b1d3e71cc0acef54e7afe71c09">print_all</a> ()</td></tr>
+<tr class="memdesc:a1d6891b1d3e71cc0acef54e7afe71c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">@132 ONLY FOR TESTING print_all void function , print out all object key from txMAP collection associated with the main process.  <a href="class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09.html#a1d6891b1d3e71cc0acef54e7afe71c09">More...</a><br /></td></tr>
 <tr class="separator:a1d6891b1d3e71cc0acef54e7afe71c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7ce5f35e0dae76df4fe116cf905bbe60"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_t_m.html">TM</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m.html#a7ce5f35e0dae76df4fe116cf905bbe60">Instance</a> ()</td></tr>
-<tr class="memdesc:a7ce5f35e0dae76df4fe116cf905bbe60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scott Meyer's Singleton creation, what is thread safe.  <a href="#a7ce5f35e0dae76df4fe116cf905bbe60">More...</a><br /></td></tr>
+<tr class="memitem:a7ce5f35e0dae76df4fe116cf905bbe60"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_t_m.html">TM</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60.html#a7ce5f35e0dae76df4fe116cf905bbe60">Instance</a> ()</td></tr>
+<tr class="memdesc:a7ce5f35e0dae76df4fe116cf905bbe60"><td class="mdescLeft">&#160;</td><td class="mdescRight">@31 Instance <a class="el" href="class_t_m.html">TM</a>, Scott Meyer's Singleton creation, thread safe Transaction Manager instance creation.  <a href="class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60.html#a7ce5f35e0dae76df4fe116cf905bbe60">More...</a><br /></td></tr>
 <tr class="separator:a7ce5f35e0dae76df4fe116cf905bbe60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:afb8bc9f42fe06c52747beb7f4c46915c"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::thread::id, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_afb8bc9f42fe06c52747beb7f4c46915c.html#afb8bc9f42fe06c52747beb7f4c46915c">get_thread_Map</a> ()</td></tr>
+<tr class="memdesc:afb8bc9f42fe06c52747beb7f4c46915c"><td class="mdescLeft">&#160;</td><td class="mdescRight">@148 get_thread_Map std::map, returning a map to store all unique ID from all objects from all transactions within the main processes  <a href="class_t_m_afb8bc9f42fe06c52747beb7f4c46915c.html#afb8bc9f42fe06c52747beb7f4c46915c">More...</a><br /></td></tr>
+<tr class="separator:afb8bc9f42fe06c52747beb7f4c46915c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a6b783f0566f0877bab6a7de977c0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_t_m.html">TM</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a85a6b783f0566f0877bab6a7de977c0a.html#a85a6b783f0566f0877bab6a7de977c0a">operator=</a> (const <a class="el" href="class_t_m.html">TM</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a85a6b783f0566f0877bab6a7de977c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_t_m.html">TM</a> copy operator, prevent from copying the Transaction Manager.  <a href="class_t_m_a85a6b783f0566f0877bab6a7de977c0a.html#a85a6b783f0566f0877bab6a7de977c0a">More...</a><br /></td></tr>
+<tr class="separator:a85a6b783f0566f0877bab6a7de977c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26ea481c24d9aa3aebd6dafb7253376e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a26ea481c24d9aa3aebd6dafb7253376e.html#a26ea481c24d9aa3aebd6dafb7253376e">registerTX</a> ()</td></tr>
+<tr class="memdesc:a26ea481c24d9aa3aebd6dafb7253376e"><td class="mdescLeft">&#160;</td><td class="mdescRight">@45 registerTX void function, register a new <a class="el" href="class_t_x.html">TX</a> Transaction object into ythe txMap/Transaction Map to manage all the transactions within the shared library. <a class="el" href="class_t_m.html">TM</a> Transaction managger checking the Process ID existence in the process map collection, If not in the map then register.  <a href="class_t_m_a26ea481c24d9aa3aebd6dafb7253376e.html#a26ea481c24d9aa3aebd6dafb7253376e">More...</a><br /></td></tr>
+<tr class="separator:a26ea481c24d9aa3aebd6dafb7253376e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b5afb6b9d7c5925ab5cc5c65078ac23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a9b5afb6b9d7c5925ab5cc5c65078ac23.html#a9b5afb6b9d7c5925ab5cc5c65078ac23">TM</a> ()=default</td></tr>
+<tr class="separator:a9b5afb6b9d7c5925ab5cc5c65078ac23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d1de4a19f7ed6b2805ed6e955b8e45b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a2d1de4a19f7ed6b2805ed6e955b8e45b.html#a2d1de4a19f7ed6b2805ed6e955b8e45b">TM</a> (const <a class="el" href="class_t_m.html">TM</a> &amp;)=delete</td></tr>
+<tr class="memdesc:a2d1de4a19f7ed6b2805ed6e955b8e45b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_t_m.html">TM</a> copy constructor, prevent from copying the Transaction Manager.  <a href="class_t_m_a2d1de4a19f7ed6b2805ed6e955b8e45b.html#a2d1de4a19f7ed6b2805ed6e955b8e45b">More...</a><br /></td></tr>
+<tr class="separator:a2d1de4a19f7ed6b2805ed6e955b8e45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985f8cb24f685925ddd637c7030cd2b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a985f8cb24f685925ddd637c7030cd2b3.html#a985f8cb24f685925ddd637c7030cd2b3">~TM</a> ()=default</td></tr>
+<tr class="separator:a985f8cb24f685925ddd637c7030cd2b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a123bc5aa0766a7b909bebc54a429e5b0"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a123bc5aa0766a7b909bebc54a429e5b0.html#a123bc5aa0766a7b909bebc54a429e5b0">get_Lock</a></td></tr>
+<tr class="separator:a123bc5aa0766a7b909bebc54a429e5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb26546681bfe64e21606b8c012bb8c3"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_aeb26546681bfe64e21606b8c012bb8c3.html#aeb26546681bfe64e21606b8c012bb8c3">register_Lock</a></td></tr>
+<tr class="separator:aeb26546681bfe64e21606b8c012bb8c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0333dfa193ea99d7626de74a2b932e9b"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::thread::id, std::shared_ptr&lt; <a class="el" href="class_t_x.html">TX</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a0333dfa193ea99d7626de74a2b932e9b.html#a0333dfa193ea99d7626de74a2b932e9b">txMap</a></td></tr>
+<tr class="separator:a0333dfa193ea99d7626de74a2b932e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a9d49d0ddef82337e54b684c9e1e8ad21"><td class="memItemLeft" align="right" valign="top">static pid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a9d49d0ddef82337e54b684c9e1e8ad21.html#a9d49d0ddef82337e54b684c9e1e8ad21">_tm_id</a></td></tr>
+<tr class="separator:a9d49d0ddef82337e54b684c9e1e8ad21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d417b18213968da2a70a914e80d639b"><td class="memItemLeft" align="right" valign="top">static std::map&lt; pid_t, std::map&lt; std::thread::id, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_t_m_a6d417b18213968da2a70a914e80d639b.html#a6d417b18213968da2a70a914e80d639b">process_map_collection</a></td></tr>
+<tr class="separator:a6d417b18213968da2a70a914e80d639b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_t_m_8h_source.html#l00049">49</a> of file <a class="el" href="_t_m_8h_source.html">TM.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a41cb0226cc4080c931651b13f74a0075"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="class_t_x.html">TX</a> &gt; const TM::_get_tx </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>_get_tx std::shared_ptr&lt;TX&gt;, returning a shared pointer with the transaction </p>
-<p>_get_tx std::shared_ptr&lt;TX&gt;, return a shared_ptr with the Transaction object, if <a class="el" href="class_t_x.html">TX</a> not exists then create one, else increasing the nesting level  std::mutex, protect shared collection from critical section</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">guard</td><td>std::lock_guard, locks the register_Lock mutex, unlock automatically when goes out of the scope </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="_t_m_8cpp_source.html#l00077">77</a> of file <a class="el" href="_t_m_8cpp_source.html">TM.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    std::lock_guard&lt;std::mutex&gt; guard(get_Lock);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::map&lt;std::thread::id, std::shared_ptr&lt;TX&gt;&gt;::iterator it = txMap.find(std::this_thread::get_id());</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span>(it == txMap.end())</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;       registerTX();</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;       it = txMap.find(std::this_thread::get_id());</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;       </div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        it-&gt;second-&gt;_increase_tx_nesting();</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//it = txMap.find(std::this_thread::get_id());</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    </div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> it-&gt;second;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a5e2d1127f2429f2f524d25f430eade06"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TM::_TX_EXIT </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>_TX_EXIT void, the thread calls the ostm_exit function in the transaction, and clear all elements from the shared global collection associated with the main process </p>
-<p>_TX_EXIT void, the thread calls the ostm_exit function in the transaction, and clear all elements from the shared global collection associated with the main process  tx <a class="el" href="class_t_x.html">TX</a>, local object to function in transaction </p>
-
-<p>Definition at line <a class="el" href="_t_m_8cpp_source.html#l00100">100</a> of file <a class="el" href="_t_m_8cpp_source.html">TM.cpp</a>.</p>
-
-<p>References <a class="el" href="_t_x_8cpp_source.html#l00072">TX::ostm_exit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                 {</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="class_t_x.html">TX</a> tx(std::this_thread::get_id());</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    pid_t ppid = getppid();</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::map&lt;pid_t, std::map&lt; std::thread::id, int &gt;&gt;::iterator process_map_collection_Iterator = TM::process_map_collection.find(ppid);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span> (process_map_collection_Iterator != TM::process_map_collection.end()) {</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> current = process_map_collection_Iterator-&gt;second.begin(); current != process_map_collection_Iterator-&gt;second.end(); ++current) {</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="comment">/*</span></div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">             * Delete all transaction associated with the actual main process</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">             */</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            txMap.erase(current-&gt;first);</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        }</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        TM::process_map_collection.erase(ppid);</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    tx.ostm_exit();</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div><div class="ttc" id="class_t_x_html"><div class="ttname"><a href="class_t_x.html">TX</a></div><div class="ttdef"><b>Definition:</b> <a href="_t_x_8h_source.html#l00024">TX.h:24</a></div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_t_m_a5e2d1127f2429f2f524d25f430eade06_cgraph.png" border="0" usemap="#class_t_m_a5e2d1127f2429f2f524d25f430eade06_cgraph" alt=""/></div>
-<map name="class_t_m_a5e2d1127f2429f2f524d25f430eade06_cgraph" id="class_t_m_a5e2d1127f2429f2f524d25f430eade06_cgraph">
-<area shape="rect" id="node2" href="class_t_x.html#aa9739c5c2077454c779098db7baefc2b" title="Delete all map entries associated with the main process. " alt="" coords="164,5,268,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a7ce5f35e0dae76df4fe116cf905bbe60"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_t_m.html">TM</a> &amp; TM::Instance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Scott Meyer's Singleton creation, what is thread safe. </p>
-<p>Instance <a class="el" href="class_t_m.html">TM</a>, return the same singleton object to any process.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_instance</td><td><a class="el" href="class_t_m.html">TM</a>, static class reference to the instance of the Transaction Manager class </td></tr>
-    <tr><td class="paramname">_instance</td><td>ppid, assigning the process id whoever created the Singleton instance </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="_t_m_8cpp_source.html#l00027">27</a> of file <a class="el" href="_t_m_8cpp_source.html">TM.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                 {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_t_m.html">TM</a> _instance;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    _instance._tm_id = getpid();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> _instance;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="ttc" id="class_t_m_html"><div class="ttname"><a href="class_t_m.html">TM</a></div><div class="ttdef"><b>Definition:</b> <a href="_t_m_8h_source.html#l00049">TM.h:49</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a1d6891b1d3e71cc0acef54e7afe71c09"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void TM::print_all </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ONLY FOR TESTING print_all void, print out all object key from txMAP collection. </p>
-<p>ONLY FOR TESTING print_all void, prints all object in the txMap </p>
-
-<p>Definition at line <a class="el" href="_t_m_8cpp_source.html#l00120">120</a> of file <a class="el" href="_t_m_8cpp_source.html">TM.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                  {</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    get_Lock.lock();</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> current = txMap.begin(); current != txMap.end(); ++current) {</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;KEY : &quot;</span> &lt;&lt; current-&gt;first &lt;&lt; std::endl;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    get_Lock.unlock();</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div></div><!-- fragment -->
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<p>Definition at line <a class="el" href="_t_m_8h_source.html#l00057">57</a> of file <a class="el" href="_t_m_8h_source.html">TM.h</a>.</p>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_t_m_8h_source.html">TM.h</a></li>
 <li><a class="el" href="_t_m_8cpp_source.html">TM.cpp</a></li>
 </ul>
@@ -265,7 +189,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_t_m.html">TM</a></li>
-    <li class="footer">Generated by
+    <li class="footer">Generated on Sun Mar 11 2018 15:50:35 for C++ Software transactional Memory by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

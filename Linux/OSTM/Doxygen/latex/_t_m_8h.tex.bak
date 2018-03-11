@@ -1,5 +1,5 @@
-\subsection{/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Linux/\+O\+S\+T\+M/\+TM.h File Reference}
-\label{_t_m_8h}\index{/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Linux/\+O\+S\+T\+M/\+T\+M.\+h@{/media/zoltan/\+Data/00\+\_\+2018\+\_\+\+I\+T\+Carlow/00\+\_\+\+Modules/06\+\_\+\+Project/\+Documents/\+Git\+\_\+\+Sync/\+Linux/\+O\+S\+T\+M/\+T\+M.\+h}}
+\hypertarget{_t_m_8h}{}\subsection{T\+M.\+h File Reference}
+\label{_t_m_8h}\index{T\+M.\+h@{T\+M.\+h}}
 {\ttfamily \#include $<$thread$>$}\\*
 {\ttfamily \#include $<$unistd.\+h$>$}\\*
 {\ttfamily \#include $<$mutex$>$}\\*
@@ -18,11 +18,11 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=241pt]{_t_m_8h__dep__incl}
+\includegraphics[width=130pt]{_t_m_8h__dep__incl}
 \end{center}
 \end{figure}
 \subsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class {\bf TM}
+class \hyperlink{class_t_m}{TM}
 \end{DoxyCompactItemize}

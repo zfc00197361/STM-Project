@@ -28,4 +28,88 @@
         <title>Detailed Description</title>
     <para>Definition in file OSTM.cpp</para>
     </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">/*&#32;</emphasis>
+2 <emphasis class="comment">&#32;*&#32;File:&#32;&#32;&#32;OSTM.cpp</emphasis>
+3 <emphasis class="comment">&#32;*&#32;Author:&#32;Zoltan&#32;Fuzesi&#32;C00197361,&#32;</emphasis>
+4 <emphasis class="comment">&#32;*&#32;IT&#32;Carlow,&#32;Software&#32;Engineering,&#32;</emphasis>
+5 <emphasis class="comment">&#32;*</emphasis>
+6 <emphasis class="comment">&#32;*&#32;Supervisor&#32;:&#32;Joe&#32;Kehoe,&#32;</emphasis>
+7 <emphasis class="comment">&#32;*</emphasis>
+8 <emphasis class="comment">&#32;*&#32;C++&#32;Software&#32;Transactional&#32;Memory,&#32;</emphasis>
+9 <emphasis class="comment">&#32;*&#32;</emphasis>
+10 <emphasis class="comment">&#32;*&#32;Created&#32;on&#32;December&#32;18,&#32;2017,&#32;2:09&#32;PM</emphasis>
+11 <emphasis class="comment">&#32;*&#32;OSTM&#32;base&#32;class&#32;function&#32;declarations.</emphasis>
+12 <emphasis class="comment">&#32;*/</emphasis>
+13 
+14 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_o_s_t_m_8h">OSTM.h</link>&quot;</emphasis>
+15 
+16 <emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_o_s_t_m_acb617b9666d198c0de333c8613df0d4b_1acb617b9666d198c0de333c8613df0d4b">OSTM::global_Unique_ID_Number</link>&#32;=&#32;0;
+17 
+<link linkend="class_o_s_t_m_a968edf778668bd0ec7603f0571619196_1a968edf778668bd0ec7603f0571619196">21 </link><link linkend="class_o_s_t_m_a968edf778668bd0ec7603f0571619196_1a968edf778668bd0ec7603f0571619196">OSTM::OSTM</link>()
+22 {
+24 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_1a9a6ea36181be2db7f9082d77956511d7">version</link>&#32;=&#32;<link linkend="class_o_s_t_m_a0bb6ae8411d25f8e7b82d0a61729ea89_1a0bb6ae8411d25f8e7b82d0a61729ea89">ZERO</link>;
+26 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_1aa9fe59368b701af7f70befa23bd6901a">uniqueID</link>&#32;=&#32;<link linkend="class_o_s_t_m_adee6903c1100e0d78640bd4b85e5d7df_1adee6903c1100e0d78640bd4b85e5d7df">Get_global_Unique_ID_Number</link>();
+28 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_1a2a5b89641af274ddc69bdf8c1c1a07d6">canCommit</link>&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+30 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a_1a5121d9c4b08320b26beca82ba2f85c4a">abort_Transaction</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+31 }
+32 
+33 
+<link linkend="class_o_s_t_m_a2314f55a127b94aa8a51d19ba798401e_1a2314f55a127b94aa8a51d19ba798401e">39 </link><link linkend="class_o_s_t_m_a968edf778668bd0ec7603f0571619196_1a968edf778668bd0ec7603f0571619196">OSTM::OSTM</link>(<emphasis class="keywordtype">int</emphasis>&#32;_version_number_,&#32;<emphasis class="keywordtype">int</emphasis>&#32;_unique_id_)
+40 {
+42 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_1aa9fe59368b701af7f70befa23bd6901a">uniqueID</link>&#32;=&#32;_unique_id_;
+44 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_1a9a6ea36181be2db7f9082d77956511d7">version</link>&#32;=&#32;_version_number_;
+46 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_1a2a5b89641af274ddc69bdf8c1c1a07d6">canCommit</link>&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+48 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a_1a5121d9c4b08320b26beca82ba2f85c4a">abort_Transaction</link>&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+49 }
+50 
+<link linkend="class_o_s_t_m_a30a17d73d0259c60eeab72d6dfa9ceb1_1a30a17d73d0259c60eeab72d6dfa9ceb1">54 </link><link linkend="class_o_s_t_m_a30a17d73d0259c60eeab72d6dfa9ceb1_1a30a17d73d0259c60eeab72d6dfa9ceb1">OSTM::~OSTM</link>()&#32;{
+56 }
+<link linkend="class_o_s_t_m_adee6903c1100e0d78640bd4b85e5d7df_1adee6903c1100e0d78640bd4b85e5d7df">61 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_o_s_t_m_adee6903c1100e0d78640bd4b85e5d7df_1adee6903c1100e0d78640bd4b85e5d7df">OSTM::Get_global_Unique_ID_Number</link>()&#32;{
+63 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(<link linkend="class_o_s_t_m_acb617b9666d198c0de333c8613df0d4b_1acb617b9666d198c0de333c8613df0d4b">global_Unique_ID_Number</link>&#32;&gt;&#32;10000000)
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_o_s_t_m_acb617b9666d198c0de333c8613df0d4b_1acb617b9666d198c0de333c8613df0d4b">global_Unique_ID_Number</link>&#32;=&#32;0;
+67 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;++<link linkend="class_o_s_t_m_acb617b9666d198c0de333c8613df0d4b_1acb617b9666d198c0de333c8613df0d4b">global_Unique_ID_Number</link>;
+68 }
+69 
+<link linkend="class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_1ab5019a32185631c08abbf826422f2d93">75 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_1ab5019a32185631c08abbf826422f2d93">OSTM::Set_Unique_ID</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_1aa9fe59368b701af7f70befa23bd6901a">uniqueID</link>)&#32;{
+77 &#32;&#32;&#32;&#32;this-&gt;uniqueID&#32;=&#32;<link linkend="class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_1aa9fe59368b701af7f70befa23bd6901a">uniqueID</link>;
+78 }
+<link linkend="class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_1a5a01a8b98d16b1d1904ecf9356e7b71d">82 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_1a5a01a8b98d16b1d1904ecf9356e7b71d">OSTM::Get_Unique_ID</link>()<emphasis class="keyword">&#32;const</emphasis>
+83 <emphasis class="keyword"></emphasis>{
+85 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_1aa9fe59368b701af7f70befa23bd6901a">uniqueID</link>;
+86 }
+<link linkend="class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_1a9529ad8d6d28c1f0cc9b86ed91df1ae1">92 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_1a9529ad8d6d28c1f0cc9b86ed91df1ae1">OSTM::Set_Version</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_1a9a6ea36181be2db7f9082d77956511d7">version</link>)
+93 {
+95 &#32;&#32;&#32;&#32;this-&gt;version&#32;=&#32;<link linkend="class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_1a9a6ea36181be2db7f9082d77956511d7">version</link>;
+96 }
+<link linkend="class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_1a1f1db9d482f22c8e7caa17dfb340626b">100 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_1a1f1db9d482f22c8e7caa17dfb340626b">OSTM::Get_Version</link>()<emphasis class="keyword">&#32;const</emphasis>
+101 <emphasis class="keyword"></emphasis>{
+103 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_1a9a6ea36181be2db7f9082d77956511d7">version</link>;
+104 }
+<link linkend="class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_1a5f90caa4384d371c16b7cac860d9f89a">108 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_1a5f90caa4384d371c16b7cac860d9f89a">OSTM::increase_VersionNumber</link>()
+109 {
+111 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_1a9a6ea36181be2db7f9082d77956511d7">version</link>&#32;+=&#32;1;
+112 }
+<link linkend="class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_1a813ee61c9d1c83c6a6ae30d12aca8a5d">117 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_1a813ee61c9d1c83c6a6ae30d12aca8a5d">OSTM::Set_Can_Commit</link>(<emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_1a2a5b89641af274ddc69bdf8c1c1a07d6">canCommit</link>)&#32;{
+119 &#32;&#32;&#32;&#32;this-&gt;canCommit&#32;=&#32;<link linkend="class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_1a2a5b89641af274ddc69bdf8c1c1a07d6">canCommit</link>;
+120 }
+<link linkend="class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_1a8df39ced3b401aa466df97e26d14b1b7">124 </link><emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_1a8df39ced3b401aa466df97e26d14b1b7">OSTM::Is_Can_Commit</link>()<emphasis class="keyword">&#32;const&#32;</emphasis>{
+126 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_1a2a5b89641af274ddc69bdf8c1c1a07d6">canCommit</link>;
+127 }
+<link linkend="class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_1aba384cf65c5f56f5b86833730c3c6ea4">132 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_1aba384cf65c5f56f5b86833730c3c6ea4">OSTM::Set_Abort_Transaction</link>(<emphasis class="keywordtype">bool</emphasis>&#32;abortTransaction)&#32;{
+134 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a_1a5121d9c4b08320b26beca82ba2f85c4a">abort_Transaction</link>&#32;=&#32;abortTransaction;
+135 }
+<link linkend="class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_1afc2851abf5342c3c67342c2c14820115">140 </link><emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_1afc2851abf5342c3c67342c2c14820115">OSTM::Is_Abort_Transaction</link>()<emphasis class="keyword">&#32;const&#32;</emphasis>{
+142 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a_1a5121d9c4b08320b26beca82ba2f85c4a">abort_Transaction</link>;
+143 }
+<link linkend="class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_1af192c598a3c647f37aaba5757e60240f">147 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_1af192c598a3c647f37aaba5757e60240f">OSTM::lock_Mutex</link>()&#32;{
+149 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_o_s_t_m_aaab0921fd1564b793f882a5002ec7106_1aaab0921fd1564b793f882a5002ec7106">mutex</link>.lock();
+150 }
+<link linkend="class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_1a6cd703bc26c719fd95b4f5362d050762">154 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_1a6cd703bc26c719fd95b4f5362d050762">OSTM::unlock_Mutex</link>()&#32;{
+156 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_o_s_t_m_aaab0921fd1564b793f882a5002ec7106_1aaab0921fd1564b793f882a5002ec7106">mutex</link>.unlock();
+157 }
+<link linkend="class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_1afb6520023ed2c4a6188b688c46f192d0">162 </link><emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_1afb6520023ed2c4a6188b688c46f192d0">OSTM::is_Locked</link>(){
+164 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;this-&gt;<link linkend="class_o_s_t_m_aaab0921fd1564b793f882a5002ec7106_1aaab0921fd1564b793f882a5002ec7106">mutex</link>.try_lock();
+165 }
+    </computeroutput></literallayout>
 </section>

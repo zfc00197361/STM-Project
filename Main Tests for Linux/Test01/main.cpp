@@ -6,7 +6,7 @@
 
 /*
  * File:   main.cpp
- * Author: zoltan
+ * Author: Zoltan Fuzesi
  *
  * Created on November 27, 2017, 9:26 PM
  */
