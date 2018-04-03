@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_t_a_l_l_a_g_h___w_8cpp">
+    <title>TALLAGH_W.cpp File Reference</title>
+    <programlisting>#include &quot;TALLAGH_W.h&quot;</programlisting>
+<para>Include dependency diagram for TALLAGH_W.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_t_a_l_l_a_g_h___w_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for TALLAGH_W.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_t_a_l_l_a_g_h___w_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file TALLAGH_W.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 <emphasis class="comment">/*&#32;</emphasis>
+3 <emphasis class="comment">&#32;*&#32;File:&#32;&#32;&#32;TALLAGH_W.cpp</emphasis>
+4 <emphasis class="comment">&#32;*&#32;Author:&#32;Zoltan&#32;Fuzesi</emphasis>
+5 <emphasis class="comment">&#32;*&#32;IT&#32;Carlow&#32;:&#32;C00197361</emphasis>
+6 <emphasis class="comment">&#32;*</emphasis>
+7 <emphasis class="comment">&#32;*&#32;Created&#32;on&#32;January&#32;17,&#32;2018,&#32;8:02&#32;PM</emphasis>
+8 <emphasis class="comment">&#32;*/</emphasis>
+9 
+10 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_t_a_l_l_a_g_h___w_8h">TALLAGH_W.h</link>&quot;</emphasis>
+11 
+<link linkend="class_t_a_l_l_a_g_h___w_aad3a2ca2d942a0629716b1c9f446931f_1aad3a2ca2d942a0629716b1c9f446931f">12 </link><link linkend="class_t_a_l_l_a_g_h___w_aad3a2ca2d942a0629716b1c9f446931f_1aad3a2ca2d942a0629716b1c9f446931f">TALLAGH_W::~TALLAGH_W</link>()&#32;{
+13 }
+14 
+<link linkend="class_t_a_l_l_a_g_h___w_a92cfa48ee385c9299427e4fa95b57003_1a92cfa48ee385c9299427e4fa95b57003">15 </link><link linkend="class_t_a_l_l_a_g_h___w_aeafc411edee7a3e8bfcc54fa478e2104_1aeafc411edee7a3e8bfcc54fa478e2104">TALLAGH_W::TALLAGH_W</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w">TALLAGH_W</link>&amp;&#32;orig)&#32;{
+16 }
+<link linkend="class_t_a_l_l_a_g_h___w_a51957c778c31d56f98febdf294f88a4c_1a51957c778c31d56f98febdf294f88a4c">22 </link>std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_t_a_l_l_a_g_h___w_a51957c778c31d56f98febdf294f88a4c_1a51957c778c31d56f98febdf294f88a4c">TALLAGH_W::getBaseCopy</link>(std::shared_ptr&lt;OSTM&gt;&#32;<emphasis class="keywordtype">object</emphasis>)
+23 {
+24 
+25 &#32;&#32;&#32;&#32;std::shared_ptr&lt;WAREHOUSE&gt;&#32;objTO&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;(object);
+26 &#32;&#32;&#32;&#32;std::shared_ptr&lt;WAREHOUSE&gt;&#32;obj(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_aeafc411edee7a3e8bfcc54fa478e2104_1aeafc411edee7a3e8bfcc54fa478e2104">TALLAGH_W</link>(objTO,&#32;object-&gt;Get_Version(),<emphasis class="keywordtype">object</emphasis>-&gt;Get_Unique_ID()));
+27 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;ostm_obj&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;(obj);&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+28 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;ostm_obj;
+29 }
+<link linkend="class_t_a_l_l_a_g_h___w_a7cd62cf694fbe8c6242916f26df8f6ca_1a7cd62cf694fbe8c6242916f26df8f6ca">35 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a7cd62cf694fbe8c6242916f26df8f6ca_1a7cd62cf694fbe8c6242916f26df8f6ca">TALLAGH_W::copy</link>(std::shared_ptr&lt;OSTM&gt;&#32;to,&#32;std::shared_ptr&lt;OSTM&gt;&#32;from){
+36 
+37 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TALLAGH_W&gt;&#32;objTO&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_t_a_l_l_a_g_h___w">TALLAGH_W</link>&gt;(to);
+38 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TALLAGH_W&gt;&#32;objFROM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_t_a_l_l_a_g_h___w">TALLAGH_W</link>&gt;(from);
+39 &#32;&#32;&#32;&#32;objTO-&gt;<link linkend="class_t_a_l_l_a_g_h___w_a268003f2cd359fa50c6061f1ad011c67_1a268003f2cd359fa50c6061f1ad011c67">_shop_address</link>&#32;=&#32;objFROM-&gt;GetShop_address();
+40 &#32;&#32;&#32;&#32;objTO-&gt;_shop_name&#32;=&#32;objFROM-&gt;GetShop_name();
+41 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_iphones&#32;=&#32;objFROM-&gt;GetNumber_of_iphones();
+42 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_samsung&#32;=&#32;objFROM-&gt;GetNumber_of_samsung();
+43 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_sony&#32;=&#32;objFROM-&gt;GetNumber_of_sony();
+44 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_huawei&#32;=&#32;objFROM-&gt;GetNumber_of_huawei();
+45 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_nokia&#32;=&#32;objFROM-&gt;GetNumber_of_nokia();
+46 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_alcatel&#32;=&#32;objFROM-&gt;GetNumber_of_alcatel();
+47 &#32;&#32;&#32;&#32;objTO-&gt;Set_Unique_ID(objFROM-&gt;Get_Unique_ID());
+48 &#32;&#32;&#32;&#32;objTO-&gt;Set_Version(objFROM-&gt;Get_Version());
+49 &#32;&#32;&#32;&#32;
+50 &#32;&#32;&#32;
+51 }
+55 <emphasis class="comment">//std::shared_ptr&lt;TALLAGH_W&gt;&#32;TALLAGH_W::_cast(std::shared_ptr&lt;OSTM&gt;&#32;_object){</emphasis>
+56 <emphasis class="comment">//&#32;&#32;&#32;&#32;</emphasis>
+57 <emphasis class="comment">//&#32;&#32;&#32;&#32;return&#32;static_cast&lt;std::shared_ptr&lt;TALLAGH_W&gt;&gt;(_object);</emphasis>
+58 <emphasis class="comment">//}</emphasis>
+<link linkend="class_t_a_l_l_a_g_h___w_ac7a438b7511cf2931490e6b44eff4a49_1ac7a438b7511cf2931490e6b44eff4a49">62 </link><emphasis class="comment"></emphasis><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_ac7a438b7511cf2931490e6b44eff4a49_1ac7a438b7511cf2931490e6b44eff4a49">TALLAGH_W::toString</link>()
+63 {
+64 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\n&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_t_a_l_l_a_g_h___w_a3baca7e101bfde39d7a1bf91d99c4f51_1a3baca7e101bfde39d7a1bf91d99c4f51">GetShop_name</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nUnique&#32;ID&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_1a5a01a8b98d16b1d1904ecf9356e7b71d">Get_Unique_ID</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nShop&#32;Name&#32;:&#32;&quot;</emphasis>&#32;&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_t_a_l_l_a_g_h___w_a3baca7e101bfde39d7a1bf91d99c4f51_1a3baca7e101bfde39d7a1bf91d99c4f51">GetShop_name</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nShop&#32;Address&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_t_a_l_l_a_g_h___w_a591b5f445be4f3b636b415e7b614b82c_1a591b5f445be4f3b636b415e7b614b82c">GetShop_address</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Iphones&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_t_a_l_l_a_g_h___w_ad82b0c59cba2cb442520e35ab6011d17_1ad82b0c59cba2cb442520e35ab6011d17">GetNumber_of_iphones</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Samsung&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_t_a_l_l_a_g_h___w_ad400c7b40f8605f5419b09e946677bbb_1ad400c7b40f8605f5419b09e946677bbb">GetNumber_of_samsung</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Sony&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_t_a_l_l_a_g_h___w_a161417e8ef4952c560182735de51a44f_1a161417e8ef4952c560182735de51a44f">GetNumber_of_sony</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Huawei&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_t_a_l_l_a_g_h___w_a0ac4137af5b2aa2e4157c7e85629f064_1a0ac4137af5b2aa2e4157c7e85629f064">GetNumber_of_huawei</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Nokia&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_t_a_l_l_a_g_h___w_a20a127a379a2ebed2bd7ee89ca5661fb_1a20a127a379a2ebed2bd7ee89ca5661fb">GetNumber_of_nokia</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Alcatel&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_t_a_l_l_a_g_h___w_a548597d48b3bbb35ffa2035eee3b645d_1a548597d48b3bbb35ffa2035eee3b645d">GetNumber_of_alcatel</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nVersion&#32;number&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_1a1f1db9d482f22c8e7caa17dfb340626b">Get_Version</link>()&#32;&lt;&lt;&#32;std::endl;
+65 }
+66 
+<link linkend="class_t_a_l_l_a_g_h___w_ad4a8e9cab71ab1b742298e630b6c32da_1ad4a8e9cab71ab1b742298e630b6c32da">67 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_ad4a8e9cab71ab1b742298e630b6c32da_1ad4a8e9cab71ab1b742298e630b6c32da">TALLAGH_W::SetNumber_of_alcatel</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a034f2ba8c42c1b81ae947b15732e5881_1a034f2ba8c42c1b81ae947b15732e5881">_number_of_alcatel</link>)&#32;{
+68 &#32;&#32;&#32;&#32;this-&gt;_number_of_alcatel&#32;=&#32;<link linkend="class_t_a_l_l_a_g_h___w_a034f2ba8c42c1b81ae947b15732e5881_1a034f2ba8c42c1b81ae947b15732e5881">_number_of_alcatel</link>;
+69 }
+70 
+<link linkend="class_t_a_l_l_a_g_h___w_a548597d48b3bbb35ffa2035eee3b645d_1a548597d48b3bbb35ffa2035eee3b645d">71 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a548597d48b3bbb35ffa2035eee3b645d_1a548597d48b3bbb35ffa2035eee3b645d">TALLAGH_W::GetNumber_of_alcatel</link>(){
+72 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a034f2ba8c42c1b81ae947b15732e5881_1a034f2ba8c42c1b81ae947b15732e5881">_number_of_alcatel</link>;
+73 }
+74 
+<link linkend="class_t_a_l_l_a_g_h___w_ae60d0ca1392d87afa206f98d5f1c59d1_1ae60d0ca1392d87afa206f98d5f1c59d1">75 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_ae60d0ca1392d87afa206f98d5f1c59d1_1ae60d0ca1392d87afa206f98d5f1c59d1">TALLAGH_W::SetNumber_of_nokia</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_aa095820dca65526e795d64f31a3aaec1_1aa095820dca65526e795d64f31a3aaec1">_number_of_nokia</link>)&#32;{
+76 &#32;&#32;&#32;&#32;this-&gt;_number_of_nokia&#32;=&#32;<link linkend="class_t_a_l_l_a_g_h___w_aa095820dca65526e795d64f31a3aaec1_1aa095820dca65526e795d64f31a3aaec1">_number_of_nokia</link>;
+77 }
+78 
+<link linkend="class_t_a_l_l_a_g_h___w_a20a127a379a2ebed2bd7ee89ca5661fb_1a20a127a379a2ebed2bd7ee89ca5661fb">79 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a20a127a379a2ebed2bd7ee89ca5661fb_1a20a127a379a2ebed2bd7ee89ca5661fb">TALLAGH_W::GetNumber_of_nokia</link>(){
+80 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_aa095820dca65526e795d64f31a3aaec1_1aa095820dca65526e795d64f31a3aaec1">_number_of_nokia</link>;
+81 }
+82 
+<link linkend="class_t_a_l_l_a_g_h___w_a94b6a0ce95c1edc5cd0bc195cbedc74f_1a94b6a0ce95c1edc5cd0bc195cbedc74f">83 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a94b6a0ce95c1edc5cd0bc195cbedc74f_1a94b6a0ce95c1edc5cd0bc195cbedc74f">TALLAGH_W::SetNumber_of_huawei</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_ab966ff243f14eefc346e0b031f21c9b6_1ab966ff243f14eefc346e0b031f21c9b6">_number_of_huawei</link>)&#32;{
+84 &#32;&#32;&#32;&#32;this-&gt;_number_of_huawei&#32;=&#32;<link linkend="class_t_a_l_l_a_g_h___w_ab966ff243f14eefc346e0b031f21c9b6_1ab966ff243f14eefc346e0b031f21c9b6">_number_of_huawei</link>;
+85 }
+86 
+<link linkend="class_t_a_l_l_a_g_h___w_a0ac4137af5b2aa2e4157c7e85629f064_1a0ac4137af5b2aa2e4157c7e85629f064">87 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a0ac4137af5b2aa2e4157c7e85629f064_1a0ac4137af5b2aa2e4157c7e85629f064">TALLAGH_W::GetNumber_of_huawei</link>(){
+88 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_ab966ff243f14eefc346e0b031f21c9b6_1ab966ff243f14eefc346e0b031f21c9b6">_number_of_huawei</link>;
+89 }
+90 
+<link linkend="class_t_a_l_l_a_g_h___w_a700cbcd6355556eeaa33955e50010641_1a700cbcd6355556eeaa33955e50010641">91 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a700cbcd6355556eeaa33955e50010641_1a700cbcd6355556eeaa33955e50010641">TALLAGH_W::SetNumber_of_sony</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_ab101d3ac8747eef48371cd9078d2366e_1ab101d3ac8747eef48371cd9078d2366e">_number_of_sony</link>)&#32;{
+92 &#32;&#32;&#32;&#32;this-&gt;_number_of_sony&#32;=&#32;<link linkend="class_t_a_l_l_a_g_h___w_ab101d3ac8747eef48371cd9078d2366e_1ab101d3ac8747eef48371cd9078d2366e">_number_of_sony</link>;
+93 }
+94 
+<link linkend="class_t_a_l_l_a_g_h___w_a161417e8ef4952c560182735de51a44f_1a161417e8ef4952c560182735de51a44f">95 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a161417e8ef4952c560182735de51a44f_1a161417e8ef4952c560182735de51a44f">TALLAGH_W::GetNumber_of_sony</link>(){
+96 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_ab101d3ac8747eef48371cd9078d2366e_1ab101d3ac8747eef48371cd9078d2366e">_number_of_sony</link>;
+97 }
+98 
+<link linkend="class_t_a_l_l_a_g_h___w_aec915c88a9cce504e58bf9481d897e7e_1aec915c88a9cce504e58bf9481d897e7e">99 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_aec915c88a9cce504e58bf9481d897e7e_1aec915c88a9cce504e58bf9481d897e7e">TALLAGH_W::SetNumber_of_samsung</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a2438dbd2a390036bfd35f46a63b5b9bf_1a2438dbd2a390036bfd35f46a63b5b9bf">_number_of_samsung</link>)&#32;{
+100 &#32;&#32;&#32;&#32;this-&gt;_number_of_samsung&#32;=&#32;<link linkend="class_t_a_l_l_a_g_h___w_a2438dbd2a390036bfd35f46a63b5b9bf_1a2438dbd2a390036bfd35f46a63b5b9bf">_number_of_samsung</link>;
+101 }
+102 
+<link linkend="class_t_a_l_l_a_g_h___w_ad400c7b40f8605f5419b09e946677bbb_1ad400c7b40f8605f5419b09e946677bbb">103 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_ad400c7b40f8605f5419b09e946677bbb_1ad400c7b40f8605f5419b09e946677bbb">TALLAGH_W::GetNumber_of_samsung</link>(){
+104 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a2438dbd2a390036bfd35f46a63b5b9bf_1a2438dbd2a390036bfd35f46a63b5b9bf">_number_of_samsung</link>;
+105 }
+106 
+<link linkend="class_t_a_l_l_a_g_h___w_aba9c1573606adb336fd5e94969f2f8e8_1aba9c1573606adb336fd5e94969f2f8e8">107 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_aba9c1573606adb336fd5e94969f2f8e8_1aba9c1573606adb336fd5e94969f2f8e8">TALLAGH_W::SetNumber_of_iphones</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_ad8a7847f895cd13b45331e4f3cd20c2e_1ad8a7847f895cd13b45331e4f3cd20c2e">_number_of_iphones</link>)&#32;{
+108 &#32;&#32;&#32;&#32;this-&gt;_number_of_iphones&#32;=&#32;<link linkend="class_t_a_l_l_a_g_h___w_ad8a7847f895cd13b45331e4f3cd20c2e_1ad8a7847f895cd13b45331e4f3cd20c2e">_number_of_iphones</link>;
+109 }
+110 
+<link linkend="class_t_a_l_l_a_g_h___w_ad82b0c59cba2cb442520e35ab6011d17_1ad82b0c59cba2cb442520e35ab6011d17">111 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_ad82b0c59cba2cb442520e35ab6011d17_1ad82b0c59cba2cb442520e35ab6011d17">TALLAGH_W::GetNumber_of_iphones</link>(){
+112 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_ad8a7847f895cd13b45331e4f3cd20c2e_1ad8a7847f895cd13b45331e4f3cd20c2e">_number_of_iphones</link>;
+113 }
+114 
+<link linkend="class_t_a_l_l_a_g_h___w_a3ab6212769f348c15cd2d242af70ea02_1a3ab6212769f348c15cd2d242af70ea02">115 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a3ab6212769f348c15cd2d242af70ea02_1a3ab6212769f348c15cd2d242af70ea02">TALLAGH_W::SetShop_name</link>(std::string&#32;<link linkend="class_t_a_l_l_a_g_h___w_a2d63785f290e8be76f3c4543e5df9508_1a2d63785f290e8be76f3c4543e5df9508">_shop_name</link>)&#32;{
+116 &#32;&#32;&#32;&#32;this-&gt;_shop_name&#32;=&#32;<link linkend="class_t_a_l_l_a_g_h___w_a2d63785f290e8be76f3c4543e5df9508_1a2d63785f290e8be76f3c4543e5df9508">_shop_name</link>;
+117 }
+118 
+<link linkend="class_t_a_l_l_a_g_h___w_a3baca7e101bfde39d7a1bf91d99c4f51_1a3baca7e101bfde39d7a1bf91d99c4f51">119 </link>std::string&#32;<link linkend="class_t_a_l_l_a_g_h___w_a3baca7e101bfde39d7a1bf91d99c4f51_1a3baca7e101bfde39d7a1bf91d99c4f51">TALLAGH_W::GetShop_name</link>(){
+120 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a2d63785f290e8be76f3c4543e5df9508_1a2d63785f290e8be76f3c4543e5df9508">_shop_name</link>;
+121 }
+122 
+<link linkend="class_t_a_l_l_a_g_h___w_a45bd91f41ac4d384b4281e6572bc2f8a_1a45bd91f41ac4d384b4281e6572bc2f8a">123 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a45bd91f41ac4d384b4281e6572bc2f8a_1a45bd91f41ac4d384b4281e6572bc2f8a">TALLAGH_W::SetShop_address</link>(std::string&#32;<link linkend="class_t_a_l_l_a_g_h___w_a268003f2cd359fa50c6061f1ad011c67_1a268003f2cd359fa50c6061f1ad011c67">_shop_address</link>)&#32;{
+124 &#32;&#32;&#32;&#32;this-&gt;_shop_address&#32;=&#32;<link linkend="class_t_a_l_l_a_g_h___w_a268003f2cd359fa50c6061f1ad011c67_1a268003f2cd359fa50c6061f1ad011c67">_shop_address</link>;
+125 }
+126 
+<link linkend="class_t_a_l_l_a_g_h___w_a591b5f445be4f3b636b415e7b614b82c_1a591b5f445be4f3b636b415e7b614b82c">127 </link>std::string&#32;<link linkend="class_t_a_l_l_a_g_h___w_a591b5f445be4f3b636b415e7b614b82c_1a591b5f445be4f3b636b415e7b614b82c">TALLAGH_W::GetShop_address</link>(){
+128 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w_a268003f2cd359fa50c6061f1ad011c67_1a268003f2cd359fa50c6061f1ad011c67">_shop_address</link>;
+129 }
+    </computeroutput></literallayout>
+</section>

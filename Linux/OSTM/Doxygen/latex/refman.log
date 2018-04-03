@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  11 MAR 2018 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.1)  1 APR 2018 14:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,17 +1070,15 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 12.9599pt on input line 126.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 10.79993pt on input line 128.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 130.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 133.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 137.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 133.
+(Font)              scaled to size 12.9599pt on input line 137.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 12.9599pt on input line 133.
+(Font)              scaled to size 12.9599pt on input line 137.
 (./refman.toc
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
@@ -1099,16 +1097,16 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 1.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 3.
+(Font)              scaled to size 6.29996pt on input line 4.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 11.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 106.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 11.
+(Font)              scaled to size 6.29996pt on input line 106.
 [2])
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
-Package hyperref Info: Option `pageanchor' set `true' on input line 135.
+Package hyperref Info: Option `pageanchor' set `true' on input line 139.
 (./index.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 7.
@@ -1119,96 +1117,19 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 9.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 9.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 13.
+(Font)              scaled to size 6.29996pt on input line 10.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 14.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ast' on input line 14.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 14.
-
-[1])
-(./md__media_zoltan_Data_00_2018_ITCarlow_00_Modules_06_Project_Documents_Git_S
-ync_Linux_OSTM_README.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--3
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--11
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--25
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--33
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--33
-
- []
-
-[2]) (./annotated.tex) (./files.tex) (./class_o_s_t_m.tex <class_o_s_t_m__coll_
-_graph.pdf, id=316, 221.82875pt x 414.54875pt>
+) [1]) (./annotated.tex) (./files.tex [2]) (./class_o_s_t_m.tex <class_o_s_t_m_
+_coll__graph.pdf, id=292, 221.82875pt x 414.54875pt>
 File: class_o_s_t_m__coll__graph.pdf Graphic file (type pdf)
 <use class_o_s_t_m__coll__graph.pdf>
 Package pdftex.def Info: class_o_s_t_m__coll__graph.pdf used on input line 13.
 (pdftex.def)             Requested size: 221.0pt x 412.99797pt.
+
+Underfull \vbox (badness 5460) has occurred while \output is active []
+
 [3]
 LaTeX Font Info:    Try loading font information for TS1+phv on input line 19.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
@@ -1216,6 +1137,8 @@ File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 19.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 20.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 20.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
@@ -1226,647 +1149,527 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 6.29996pt on input line 22.
 [4 <./class_o_s_t_m__coll__graph.pdf>] [5]
 <class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f0571619
-196_cgraph.pdf, id=431, 331.2375pt x 111.41624pt>
+196_cgraph.pdf, id=407, 331.2375pt x 111.41624pt>
 File: class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f05
 71619196_cgraph.pdf Graphic file (type pdf)
 
 <use class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f057
 1619196_cgraph.pdf>
 Package pdftex.def Info: class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968ed
-f778668bd0ec7603f0571619196_cgraph.pdf used on input line 136.
+f778668bd0ec7603f0571619196_cgraph.pdf used on input line 135.
 (pdftex.def)             Requested size: 330.0pt x 111.00455pt.
 LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 148.
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 147.
 LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 148.
+(Font)              scaled to size 8.99994pt on input line 147.
 LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 148.
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 147.
 LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 6.29996pt on input line 148.
-[6 <./class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f05
-71619196_cgraph.pdf>]
+(Font)              scaled to size 6.29996pt on input line 147.
 
 LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 189.
+(Font)              using `T1/pcr/m/n' instead on input line 187.
 
-
-Underfull \hbox (badness 10000) detected at line 214
+[6 <./class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f05
+71619196_cgraph.pdf>]
+Underfull \hbox (badness 10000) detected at line 213
 [][][]
  []
 
-
-<class_o_s_t_m_adee6903c1100e0d78640bd4b85e5d7df_adee6903c1100e0d78640bd4b85e5d
-7df_icgraph.pdf, id=480, 331.2375pt x 111.41624pt>
-File: class_o_s_t_m_adee6903c1100e0d78640bd4b85e5d7df_adee6903c1100e0d78640bd4b
-85e5d7df_icgraph.pdf Graphic file (type pdf)
-
-<use class_o_s_t_m_adee6903c1100e0d78640bd4b85e5d7df_adee6903c1100e0d78640bd4b8
-5e5d7df_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_adee6903c1100e0d78640bd4b85e5d7df_adee69
-03c1100e0d78640bd4b85e5d7df_icgraph.pdf used on input line 266.
-(pdftex.def)             Requested size: 330.0pt x 111.00455pt.
 [7]
-<class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_a5a01a8b98d16b1d1904ecf9356e7b
-71d_icgraph.pdf, id=496, 321.2pt x 100.375pt>
-File: class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_a5a01a8b98d16b1d1904ecf93
-56e7b71d_icgraph.pdf Graphic file (type pdf)
-
-<use class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_a5a01a8b98d16b1d1904ecf935
-6e7b71d_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_a5a01a
-8b98d16b1d1904ecf9356e7b71d_icgraph.pdf used on input line 306.
-(pdftex.def)             Requested size: 320.0pt x 100.00255pt.
-[8 <./class_o_s_t_m_adee6903c1100e0d78640bd4b85e5d7df_adee6903c1100e0d78640bd4b
-85e5d7df_icgraph.pdf> <./class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_a5a01a
-8b98d16b1d1904ecf9356e7b71d_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71
-d_a5a01a8b98d16b1d1904ecf9356e7b71d_icgraph.pdf): PDF inclusion: multiple pdfs 
-with page group included in a single page
->]
-<class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_a1f1db9d482f22c8e7caa17dfb3406
-26b_icgraph.pdf, id=524, 307.1475pt x 100.375pt>
-File: class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_a1f1db9d482f22c8e7caa17df
-b340626b_icgraph.pdf Graphic file (type pdf)
-
-<use class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_a1f1db9d482f22c8e7caa17dfb
-340626b_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_a1f1db
-9d482f22c8e7caa17dfb340626b_icgraph.pdf used on input line 346.
-(pdftex.def)             Requested size: 306.0pt x 100.00562pt.
-
-Underfull \hbox (badness 10000) detected at line 362
+Underfull \hbox (badness 10000) detected at line 329
 [][][]
  []
 
 
-<class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_a5f90caa4384d371c16b7cac860d9f
-89a_icgraph.pdf, id=533, 363.3575pt x 100.375pt>
-File: class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_a5f90caa4384d371c16b7cac8
-60d9f89a_icgraph.pdf Graphic file (type pdf)
+<class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f42714f
+94c_cgraph.pdf, id=496, 388.45125pt x 519.9425pt>
+File: class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f4
+2714f94c_cgraph.pdf Graphic file (type pdf)
 
-<use class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_a5f90caa4384d371c16b7cac86
-0d9f89a_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_a5f90c
-aa4384d371c16b7cac860d9f89a_icgraph.pdf used on input line 408.
-(pdftex.def)             Requested size: 350.0pt x 96.68817pt.
-[9 <./class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_a1f1db9d482f22c8e7caa17df
-b340626b_icgraph.pdf>]
-<class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_afc2851abf5342c3c67342c2c14820
-115_icgraph.pdf, id=554, 346.29375pt x 100.375pt>
-File: class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_afc2851abf5342c3c67342c2c
-14820115_icgraph.pdf Graphic file (type pdf)
+<use class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f42
+714f94c_cgraph.pdf>
+Package pdftex.def Info: class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3
+763bd441407dd6365f42714f94c_cgraph.pdf used on input line 350.
+(pdftex.def)             Requested size: 350.0pt x 468.48343pt.
 
-<use class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_afc2851abf5342c3c67342c2c1
-4820115_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_afc285
-1abf5342c3c67342c2c14820115_icgraph.pdf used on input line 453.
-(pdftex.def)             Requested size: 345.0pt x 100.00255pt.
-[10 <./class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_a5f90caa4384d371c16b7cac
-860d9f89a_icgraph.pdf>]
-<class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_a8df39ced3b401aa466df97e26d14b
-1b7_icgraph.pdf, id=577, 324.21124pt x 100.375pt>
-File: class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_a8df39ced3b401aa466df97e2
-6d14b1b7_icgraph.pdf Graphic file (type pdf)
+Underfull \vbox (badness 1571) has occurred while \output is active []
 
-<use class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_a8df39ced3b401aa466df97e26
-d14b1b7_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_a8df39
-ced3b401aa466df97e26d14b1b7_icgraph.pdf used on input line 493.
-(pdftex.def)             Requested size: 323.0pt x 100.00562pt.
-
-<class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_afb6520023ed2c4a6188b688c46f19
-2d0_icgraph.pdf, id=583, 297.11pt x 100.375pt>
-File: class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_afb6520023ed2c4a6188b688c
-46f192d0_icgraph.pdf Graphic file (type pdf)
-
-<use class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_afb6520023ed2c4a6188b688c4
-6f192d0_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_afb652
-0023ed2c4a6188b688c46f192d0_icgraph.pdf used on input line 532.
-(pdftex.def)             Requested size: 296.0pt x 100.00409pt.
-[11 <./class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_afc2851abf5342c3c67342c2
-c14820115_icgraph.pdf> <./class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_a8df3
-9ced3b401aa466df97e26d14b1b7_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b
-7_a8df39ced3b401aa466df97e26d14b1b7_icgraph.pdf): PDF inclusion: multiple pdfs 
-with page group included in a single page
->]
-<class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_af192c598a3c647f37aaba5757e602
-40f_icgraph.pdf, id=612, 303.1325pt x 100.375pt>
-File: class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_af192c598a3c647f37aaba575
-7e60240f_icgraph.pdf Graphic file (type pdf)
-
-<use class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_af192c598a3c647f37aaba5757
-e60240f_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_af192c
-598a3c647f37aaba5757e60240f_icgraph.pdf used on input line 572.
-(pdftex.def)             Requested size: 302.0pt x 100.00102pt.
-
+[8] [9 <./class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd63
+65f42714f94c_cgraph.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[12 <./class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_afb6520023ed2c4a6188b688
-c46f192d0_icgraph.pdf> <./class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_af192
-c598a3c647f37aaba5757e60240f_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./class_o_s_t_m_af192c598a3c647f37aaba5757e60240
-f_af192c598a3c647f37aaba5757e60240f_icgraph.pdf): PDF inclusion: multiple pdfs 
-with page group included in a single page
->]
-<class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_aba384cf65c5f56f5b86833730c3c6
-ea4_icgraph.pdf, id=639, 353.32pt x 100.375pt>
-File: class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_aba384cf65c5f56f5b8683373
-0c3c6ea4_icgraph.pdf Graphic file (type pdf)
-
-<use class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_aba384cf65c5f56f5b86833730
-c3c6ea4_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_aba384
-cf65c5f56f5b86833730c3c6ea4_icgraph.pdf used on input line 617.
-(pdftex.def)             Requested size: 350.0pt x 99.4328pt.
-
-<class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_a813ee61c9d1c83c6a6ae30d12aca8
-a5d_icgraph.pdf, id=646, 331.2375pt x 100.375pt>
-File: class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_a813ee61c9d1c83c6a6ae30d1
-2aca8a5d_icgraph.pdf Graphic file (type pdf)
-
-<use class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_a813ee61c9d1c83c6a6ae30d12
-aca8a5d_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_a813ee
-61c9d1c83c6a6ae30d12aca8a5d_icgraph.pdf used on input line 662.
-(pdftex.def)             Requested size: 330.0pt x 100.00409pt.
-[13 <./class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_aba384cf65c5f56f5b868337
-30c3c6ea4_icgraph.pdf> <./class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_a813e
-e61c9d1c83c6a6ae30d12aca8a5d_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5
-d_a813ee61c9d1c83c6a6ae30d12aca8a5d_icgraph.pdf): PDF inclusion: multiple pdfs 
-with page group included in a single page
->]
-<class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_ab5019a32185631c08abbf826422f2
-d93_icgraph.pdf, id=677, 320.19624pt x 100.375pt>
-File: class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_ab5019a32185631c08abbf826
-422f2d93_icgraph.pdf Graphic file (type pdf)
-
-<use class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_ab5019a32185631c08abbf8264
-22f2d93_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_ab5019
-a32185631c08abbf826422f2d93_icgraph.pdf used on input line 707.
-(pdftex.def)             Requested size: 319.0pt x 100.00102pt.
-
-<class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_a9529ad8d6d28c1f0cc9b86ed91df1
-ae1_icgraph.pdf, id=684, 306.14375pt x 100.375pt>
-File: class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_a9529ad8d6d28c1f0cc9b86ed
-91df1ae1_icgraph.pdf Graphic file (type pdf)
-
-<use class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_a9529ad8d6d28c1f0cc9b86ed9
-1df1ae1_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_a9529a
-d8d6d28c1f0cc9b86ed91df1ae1_icgraph.pdf used on input line 752.
-(pdftex.def)             Requested size: 305.0pt x 100.00562pt.
-[14 <./class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_ab5019a32185631c08abbf82
-6422f2d93_icgraph.pdf>]
-Underfull \hbox (badness 10000) detected at line 768
+[10] [11]
+Underfull \hbox (badness 10000) detected at line 631
 [][][]
  []
 
-
-<class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203309ae8
-a59_cgraph.pdf, id=721, 363.3575pt x 519.9425pt>
-File: class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c2033
-09ae8a59_cgraph.pdf Graphic file (type pdf)
-
-<use class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c20330
-9ae8a59_cgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a51339
-6a115f2987fd07c203309ae8a59_cgraph.pdf used on input line 789.
-(pdftex.def)             Requested size: 350.0pt x 500.84488pt.
-
-Underfull \vbox (badness 4954) has occurred while \output is active []
-
-[15 <./class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_a9529ad8d6d28c1f0cc9b86e
-d91df1ae1_icgraph.pdf>]
-<class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_a6cd703bc26c719fd95b4f5362d050
-762_icgraph.pdf, id=744, 314.17375pt x 100.375pt>
-File: class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_a6cd703bc26c719fd95b4f536
-2d050762_icgraph.pdf Graphic file (type pdf)
-
-<use class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_a6cd703bc26c719fd95b4f5362
-d050762_icgraph.pdf>
-Package pdftex.def Info: class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_a6cd70
-3bc26c719fd95b4f5362d050762_icgraph.pdf used on input line 829.
-(pdftex.def)             Requested size: 313.0pt x 100.00409pt.
-[16 <./class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203
-309ae8a59_cgraph.pdf>] [17 <./class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_a
-6cd703bc26c719fd95b4f5362d050762_icgraph.pdf>]) (./class_t_m.tex <class_t_m__co
-ll__graph.pdf, id=813, 208.78pt x 282.05376pt>
+[12]) (./class_t_m.tex <class_t_m__coll__graph.pdf, id=656, 208.78pt x 282.0537
+6pt>
 File: class_t_m__coll__graph.pdf Graphic file (type pdf)
 <use class_t_m__coll__graph.pdf>
 Package pdftex.def Info: class_t_m__coll__graph.pdf used on input line 13.
 (pdftex.def)             Requested size: 208.0pt x 281.01584pt.
-[18 <./class_t_m__coll__graph.pdf>]
+[13]
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
 (Font)              Font shape `TS1/phv/m/sl' tried instead on input line 29.
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 29.
-[19]
+[14 <./class_t_m__coll__graph.pdf>]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 122--123
+[]\T1/pcr/m/n/7 00084     []/* @85 guard std::lock_guard, locks the get_Lock mu
+tex, unlock automatically when goes out of the scope[] 
+ []
+
+[15]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 138--139
+[]\T1/pcr/m/n/7 00097         []/* @98 If transaction already registered, it me
+ans the thread participating in nested transactions,[] 
+ []
+
+
 <class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075_
-cgraph.pdf, id=897, 411.5375pt x 100.375pt>
+cgraph.pdf, id=750, 411.5375pt x 100.375pt>
 File: class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a
 0075_cgraph.pdf Graphic file (type pdf)
 
 <use class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0
 075_cgraph.pdf>
 Package pdftex.def Info: class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226c
-c4080c931651b13f74a0075_cgraph.pdf used on input line 156.
+c4080c931651b13f74a0075_cgraph.pdf used on input line 153.
 (pdftex.def)             Requested size: 350.0pt x 85.36661pt.
-[20 <./class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 186--186
+[]\T1/pcr/m/n/7 00113     []/* @114 process_map_collection try to find the main
+ process by it's ppid if registred in the library */[][] 
+ []
+
+[16 <./class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74
 a0075_cgraph.pdf>]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 201--202
+[]\T1/pcr/m/n/7 00125     []/* @126 TX class delete all Global Object shared be
+tween the transaction. This function calls only when[] 
+ []
+
+
 <class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06_
-cgraph.pdf, id=932, 278.03876pt x 100.375pt>
+cgraph.pdf, id=784, 278.03876pt x 100.375pt>
 File: class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430ea
 de06_cgraph.pdf Graphic file (type pdf)
 
 <use class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430ead
 e06_cgraph.pdf>
 Package pdftex.def Info: class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f
-2429f2f524d25f430eade06_cgraph.pdf used on input line 217.
+2429f2f524d25f430eade06_cgraph.pdf used on input line 212.
 (pdftex.def)             Requested size: 277.0pt x 100.00102pt.
+[17 <./class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430e
+ade06_cgraph.pdf>]
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 351--351
+[]\T1/pcr/m/n/7 00052     []/* @53 process_map_collection try to find the main 
+process by it's ppid if registred in the library */[][] 
+ []
 
-<class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46915c_
-icgraph.pdf, id=936, 411.5375pt x 100.375pt>
-File: class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46
-915c_icgraph.pdf Graphic file (type pdf)
 
-<use class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c469
-15c_icgraph.pdf>
-Package pdftex.def Info: class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42
-fe06c52747beb7f4c46915c_icgraph.pdf used on input line 255.
-(pdftex.def)             Requested size: 350.0pt x 85.36661pt.
-[21 <./class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430e
-ade06_cgraph.pdf>] [22 <./class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f4
-2fe06c52747beb7f4c46915c_icgraph.pdf>] [23]
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 373--374
+[]\T1/pcr/m/n/7 00072         []/* @73 Insert to the GLOBAL MAP as a helper to 
+clean up at end of main process. The value 1 is not[] 
+ []
+
+
 <class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e_
-cgraph.pdf, id=1013, 306.14375pt x 100.375pt>
+cgraph.pdf, id=839, 306.14375pt x 100.375pt>
 File: class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253
 376e_cgraph.pdf Graphic file (type pdf)
 
 <use class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb72533
 76e_cgraph.pdf>
 Package pdftex.def Info: class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c2
-4d9aa3aebd6dafb7253376e_cgraph.pdf used on input line 412.
+4d9aa3aebd6dafb7253376e_cgraph.pdf used on input line 385.
 (pdftex.def)             Requested size: 305.0pt x 100.00562pt.
-
-<class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e_
-icgraph.pdf, id=1014, 268.00125pt x 100.375pt>
-File: class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253
-376e_icgraph.pdf Graphic file (type pdf)
-
-<use class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb72533
-76e_icgraph.pdf>
-Package pdftex.def Info: class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c2
-4d9aa3aebd6dafb7253376e_icgraph.pdf used on input line 423.
-(pdftex.def)             Requested size: 267.0pt x 99.9995pt.
-[24 <./class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb725
-3376e_cgraph.pdf> <./class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9a
-a3aebd6dafb7253376e_icgraph.pdf
-
-pdfTeX warning: pdflatex (file ./class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a2
-6ea481c24d9aa3aebd6dafb7253376e_icgraph.pdf): PDF inclusion: multiple pdfs with
- page group included in a single page
->]) (./class_t_x.tex <class_t_x__coll__graph.pdf, id=1057, 235.88126pt x 370.38
-374pt>
+[18]) (./class_t_x.tex <class_t_x__coll__graph.pdf, id=871, 235.88126pt x 370.3
+8374pt>
 File: class_t_x__coll__graph.pdf Graphic file (type pdf)
 <use class_t_x__coll__graph.pdf>
 Package pdftex.def Info: class_t_x__coll__graph.pdf used on input line 13.
 (pdftex.def)             Requested size: 235.0pt x 369.00383pt.
-[25 <./class_t_x__coll__graph.pdf>] [26] [27]
-<class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f576326588628ade96b27b4b1_
-icgraph.pdf, id=1169, 316.18124pt x 100.375pt>
-File: class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f576326588628ade96b27
-b4b1_icgraph.pdf Graphic file (type pdf)
-
-<use class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f576326588628ade96b27b
-4b1_icgraph.pdf>
-Package pdftex.def Info: class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f5
-76326588628ade96b27b4b1_icgraph.pdf used on input line 191.
-(pdftex.def)             Requested size: 315.0pt x 100.00716pt.
-[28 <./class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f576326588628ade96b2
-7b4b1_icgraph.pdf>] [29]
-Underfull \hbox (badness 3049) in paragraph at lines 342--343
+[19 <./class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb725
+3376e_cgraph.pdf>] [20 <./class_t_x__coll__graph.pdf>] [21] [22]
+Underfull \hbox (badness 3049) in paragraph at lines 303--304
 []\T1/phv/m/n/10 References [][]get[]_[]thread[]_[][]Map()[][], [][]main[]_[][]
 Process[]_[][]Map[]_[]collection[][], [][]process[]_[]map[]_[]collection[][], [
 ][]register[]_[][]Lock[][], and
  []
 
 
-Overfull \hbox (15.15555pt too wide) in paragraph at lines 367--367
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 308--309
+[]\T1/pcr/m/n/7 00097     []/* @98 register_Lock(mutex) shared lock between all
+ transaction. MUST USE SHARED LOCK TO PROTECT SHARED[] 
+ []
+
+[23]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 343--343
+[]\T1/pcr/m/n/7 00125     []/* @126 Declare and initialize Iterator for working
+_Map_collection, find copy of the original object */[][] 
+ []
+
+
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 344--344
 []\T1/pcr/m/n/7 00126     std::map< int, std::shared_ptr<OSTM> >::iterator work
 ing_Map_collection_Object_Shared_Pointer_Iterator[] 
  []
 
 
 <class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f51df97ac483e5bfe7db6ca6e_
-cgraph.pdf, id=1235, 295.1025pt x 100.375pt>
+cgraph.pdf, id=1055, 295.1025pt x 100.375pt>
 File: class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f51df97ac483e5bfe7db6
 ca6e_cgraph.pdf Graphic file (type pdf)
 
 <use class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f51df97ac483e5bfe7db6c
 a6e_cgraph.pdf>
 Package pdftex.def Info: class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f5
-1df97ac483e5bfe7db6ca6e_cgraph.pdf used on input line 382.
+1df97ac483e5bfe7db6ca6e_cgraph.pdf used on input line 361.
 (pdftex.def)             Requested size: 294.0pt x 100.00255pt.
-[30 <./class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f51df97ac483e5bfe7db
-6ca6e_cgraph.pdf>]
-Overfull \hbox (19.35555pt too wide) in paragraph at lines 421--421
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 393--393
 []\T1/pcr/m/n/7 00255     std::map< int, std::shared_ptr<OSTM> >::iterator work
 ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
  []
 
-
-<class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413f0463_
-icgraph.pdf, id=1260, 312.16624pt x 100.375pt>
-File: class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413f
-0463_icgraph.pdf Graphic file (type pdf)
-
-<use class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413f0
-463_icgraph.pdf>
-Package pdftex.def Info: class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015
-dc15d0f788fa9a1413f0463_icgraph.pdf used on input line 444.
-(pdftex.def)             Requested size: 311.0pt x 100.00255pt.
-
-Underfull \hbox (badness 10000) detected at line 464
-[][][]
- []
-
-[31 <./class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413
-f0463_icgraph.pdf>]
-Underfull \hbox (badness 10000) detected at line 495
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 512
-[][][]
- []
-
-[32]
-Underfull \hbox (badness 10000) detected at line 515
-[][][]
- []
-
-
-Underfull \hbox (badness 768) in paragraph at lines 524--525
+[24 <./class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f51df97ac483e5bfe7db
+6ca6e_cgraph.pdf>]
+Underfull \hbox (badness 768) in paragraph at lines 430--431
 []\T1/phv/m/n/10 References [][][]_[]decrease[]_[]tx[]_[]nesting()[][], [][][]_
 []release[]_[]object[]_[]lock()[][], [][][]_[]tx[]_[]nesting[]_[]level[][], [][
 ]main[]_[][]Process[]_[][]Map[]_[]collection[][],
  []
 
 
-Overfull \hbox (19.35555pt too wide) in paragraph at lines 534--534
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 437--437
+[]\T1/pcr/m/n/7 00180     []/* @182 Dealing with nested transactions first. if 
+nesting level bigger than ZERO do not commit yet */[][] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 444--444
 []\T1/pcr/m/n/7 00187     std::map< int, std::shared_ptr<OSTM> >::iterator work
 ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
  []
 
 
-Overfull \hbox (19.35555pt too wide) in paragraph at lines 546--546
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 452--452
+[]\T1/pcr/m/n/7 00192             []/* @193 Find the Original object in the Sha
+red global colection by the copy object unique ID */[][] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 460--460
 []\T1/pcr/m/n/7 00197                 []throw[] std::runtime_error(std::string(
 []"[RUNTIME ERROR : CAN'T FIND OBJECT COMMIT FUNCTION]"[])[] 
  []
 
-
-Overfull \hbox (27.75554pt too wide) in paragraph at lines 569--569
+[25]
+Overfull \hbox (27.75554pt too wide) in paragraph at lines 496--496
 []      \T1/pcr/m/n/7 working_Map_collection_Object_Shared_Pointer_Iterator->se
 cond, main_Process_Map_collection_Iterator->second);[] 
  []
 
-[33]
-Overfull \hbox (27.75554pt too wide) in paragraph at lines 584--584
+
+Overfull \hbox (27.75554pt too wide) in paragraph at lines 519--519
 []      \T1/pcr/m/n/7 main_Process_Map_collection_Iterator->second, working_Map
 _collection_Object_Shared_Pointer_Iterator->second);[] 
  []
 
 
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 522--522
+[]\T1/pcr/m/n/7 00238                 []/* @195 RUNTIME ERROR. If no object fou
+nd ! Null pointer can cause segmentation fault!!! */[][] 
+ []
+
+
 <class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356b35e557448e58d260087356_
-cgraph.pdf, id=1313, 316.18124pt x 176.66pt>
+cgraph.pdf, id=1108, 316.18124pt x 176.66pt>
 File: class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356b35e557448e58d26008
 7356_cgraph.pdf Graphic file (type pdf)
 
 <use class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356b35e557448e58d260087
 356_cgraph.pdf>
 Package pdftex.def Info: class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356
-b35e557448e58d260087356_cgraph.pdf used on input line 602.
+b35e557448e58d260087356_cgraph.pdf used on input line 542.
 (pdftex.def)             Requested size: 315.0pt x 176.0126pt.
-[34 <./class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356b35e557448e58d2600
+[26 <./class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356b35e557448e58d2600
 87356_cgraph.pdf>]
-<class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_a3f5671423cb7b9f9c98f8a25f2a4b545_
-icgraph.pdf, id=1329, 295.1025pt x 100.375pt>
-File: class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_a3f5671423cb7b9f9c98f8a25f2a4
-b545_icgraph.pdf Graphic file (type pdf)
-
-<use class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_a3f5671423cb7b9f9c98f8a25f2a4b
-545_icgraph.pdf>
-Package pdftex.def Info: class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_a3f5671423
-cb7b9f9c98f8a25f2a4b545_icgraph.pdf used on input line 641.
-(pdftex.def)             Requested size: 294.0pt x 100.00255pt.
-
-Overfull \hbox (19.35555pt too wide) in paragraph at lines 708--708
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 629--629
 []\T1/pcr/m/n/7 00139     std::map< int, std::shared_ptr<OSTM> >::iterator work
 ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
  []
 
-[35 <./class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_a3f5671423cb7b9f9c98f8a25f2a
-4b545_icgraph.pdf>]
-<class_t_x_aa9739c5c2077454c779098db7baefc2b_aa9739c5c2077454c779098db7baefc2b_
-icgraph.pdf, id=1370, 278.03876pt x 100.375pt>
-File: class_t_x_aa9739c5c2077454c779098db7baefc2b_aa9739c5c2077454c779098db7bae
-fc2b_icgraph.pdf Graphic file (type pdf)
-
-<use class_t_x_aa9739c5c2077454c779098db7baefc2b_aa9739c5c2077454c779098db7baef
-c2b_icgraph.pdf>
-Package pdftex.def Info: class_t_x_aa9739c5c2077454c779098db7baefc2b_aa9739c5c2
-077454c779098db7baefc2b_icgraph.pdf used on input line 795.
-(pdftex.def)             Requested size: 277.0pt x 100.00102pt.
-[36]
-Overfull \hbox (19.35555pt too wide) in paragraph at lines 840--840
-[]\T1/pcr/m/n/7 00163     std::map< int, std::shared_ptr<OSTM> >::iterator work
-ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
+[27]
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 685--685
+[]\T1/pcr/m/n/7 00073     []/* @74 process_map_collection try to find the main 
+process by it's ppid if registred in the library */[][] 
  []
 
 
-Overfull \hbox (15.15555pt too wide) in paragraph at lines 846--847
-[]\T1/pcr/m/n/7 00171     } []else[] { []throw[] std::runtime_error(std::string
-([]"[RUNTIME ERROR : NO OBJECT FOUND STORE FUNCTION, CANNOT[] 
- []
-
-[37 <./class_t_x_aa9739c5c2077454c779098db7baefc2b_aa9739c5c2077454c779098db7ba
-efc2b_icgraph.pdf>]
-<class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_ae045534c4a9d39bd5c6ea2a39a372a79_
-icgraph.pdf, id=1406, 249.93375pt x 100.375pt>
-File: class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_ae045534c4a9d39bd5c6ea2a39a37
-2a79_icgraph.pdf Graphic file (type pdf)
-
-<use class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_ae045534c4a9d39bd5c6ea2a39a372
-a79_icgraph.pdf>
-Package pdftex.def Info: class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_ae045534c4
-a9d39bd5c6ea2a39a372a79_icgraph.pdf used on input line 898.
-(pdftex.def)             Requested size: 249.0pt x 100.00409pt.
-[38 <./class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_ae045534c4a9d39bd5c6ea2a39a3
-72a79_icgraph.pdf>]) (./_o_s_t_m_8cpp.tex <_o_s_t_m_8cpp__incl.pdf, id=1465, 32
-7.2225pt x 212.795pt>
-File: _o_s_t_m_8cpp__incl.pdf Graphic file (type pdf)
-<use _o_s_t_m_8cpp__incl.pdf>
-Package pdftex.def Info: _o_s_t_m_8cpp__incl.pdf used on input line 8.
-(pdftex.def)             Requested size: 326.0pt x 211.99895pt.
-) (./_o_s_t_m_8cpp_source.tex [39] [40 <./_o_s_t_m_8cpp__incl.pdf>]) (./_o_s_t_
-m_8h.tex <_o_s_t_m_8h__incl.pdf, id=1554, 327.2225pt x 156.585pt>
-File: _o_s_t_m_8h__incl.pdf Graphic file (type pdf)
-<use _o_s_t_m_8h__incl.pdf>
-Package pdftex.def Info: _o_s_t_m_8h__incl.pdf used on input line 11.
-(pdftex.def)             Requested size: 326.0pt x 155.99922pt.
-<_o_s_t_m_8h__dep__incl.pdf, id=1555, 236.885pt x 269.005pt>
-File: _o_s_t_m_8h__dep__incl.pdf Graphic file (type pdf)
-<use _o_s_t_m_8h__dep__incl.pdf>
-Package pdftex.def Info: _o_s_t_m_8h__dep__incl.pdf used on input line 18.
-(pdftex.def)             Requested size: 236.0pt x 268.00688pt.
-[41 <./_o_s_t_m_8h__incl.pdf>]) (./_o_s_t_m_8h_source.tex [42 <./_o_s_t_m_8h__d
-ep__incl.pdf>]) (./_r_e_a_d_m_e_8md.tex) (./_r_e_a_d_m_e_8md_source.tex [43]) (
-./_t_m_8cpp.tex <_t_m_8cpp__incl.pdf, id=1652, 650.43pt x 325.215pt>
-File: _t_m_8cpp__incl.pdf Graphic file (type pdf)
-<use _t_m_8cpp__incl.pdf>
-Package pdftex.def Info: _t_m_8cpp__incl.pdf used on input line 12.
-(pdftex.def)             Requested size: 350.0pt x 175.00311pt.
-) (./_t_m_8cpp_source.tex [44 <./_t_m_8cpp__incl.pdf>]) (./_t_m_8h.tex <_t_m_8h
-__incl.pdf, id=1708, 636.3775pt x 269.005pt>
-File: _t_m_8h__incl.pdf Graphic file (type pdf)
-<use _t_m_8h__incl.pdf>
-Package pdftex.def Info: _t_m_8h__incl.pdf used on input line 14.
-(pdftex.def)             Requested size: 350.0pt x 147.9491pt.
-[45] <_t_m_8h__dep__incl.pdf, id=1719, 130.4875pt x 156.585pt>
-File: _t_m_8h__dep__incl.pdf Graphic file (type pdf)
-<use _t_m_8h__dep__incl.pdf>
-Package pdftex.def Info: _t_m_8h__dep__incl.pdf used on input line 21.
-(pdftex.def)             Requested size: 130.0pt x 156.00162pt.
-) (./_t_m_8h_source.tex [46 <./_t_m_8h__incl.pdf> <./_t_m_8h__dep__incl.pdf
-
-pdfTeX warning: pdflatex (file ./_t_m_8h__dep__incl.pdf): PDF inclusion: multip
-le pdfs with page group included in a single page
->]
-Overfull \hbox (19.35555pt too wide) in paragraph at lines 33--34
-[]\T1/pcr/m/n/7 00080 []     * STATIC GLOBAL MAP Collection to store all proces
-s associated keys to find when deleting transactions[] 
- []
-
-) (./_t_x_8cpp.tex <_t_x_8cpp__incl.pdf, id=1767, 593.21625pt x 269.005pt>
-File: _t_x_8cpp__incl.pdf Graphic file (type pdf)
-<use _t_x_8cpp__incl.pdf>
-Package pdftex.def Info: _t_x_8cpp__incl.pdf used on input line 9.
-(pdftex.def)             Requested size: 350.0pt x 158.71977pt.
-) (./_t_x_8cpp_source.tex [47 <./_t_x_8cpp__incl.pdf>]
-Overfull \hbox (15.15555pt too wide) in paragraph at lines 30--31
-[]\T1/pcr/m/n/7 00025 [] * @27 egister_Lock, register static class level shared
- std:mutex to protect shared map during transaction[] 
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 701--702
+[]\T1/pcr/m/n/7 00083                 []/* @84 Delete element from shared main_
+Process_Map_collection by object by the unique key,[] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[48]
-Overfull \hbox (15.15555pt too wide) in paragraph at lines 95--95
+[28]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 744--744
+[]\T1/pcr/m/n/7 00163     std::map< int, std::shared_ptr<OSTM> >::iterator work
+ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
+ []
+
+
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 754--755
+[]\T1/pcr/m/n/7 00171     } []else[] { []throw[] std::runtime_error(std::string
+([]"[RUNTIME ERROR : NO OBJECT FOUND STORE FUNCTION, CANNOT[] 
+ []
+
+[29]) (./_o_s_t_m_8cpp.tex <_o_s_t_m_8cpp__incl.pdf, id=1230, 327.2225pt x 212.
+795pt>
+File: _o_s_t_m_8cpp__incl.pdf Graphic file (type pdf)
+<use _o_s_t_m_8cpp__incl.pdf>
+Package pdftex.def Info: _o_s_t_m_8cpp__incl.pdf used on input line 8.
+(pdftex.def)             Requested size: 326.0pt x 211.99895pt.
+[30]) (./_o_s_t_m_8cpp_source.tex [31 <./_o_s_t_m_8cpp__incl.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[32]) (./_o_s_t_m_8h.tex <_o_s_t_m_8h__incl.pdf, id=1336, 327.2225pt x 156.585p
+t>
+File: _o_s_t_m_8h__incl.pdf Graphic file (type pdf)
+<use _o_s_t_m_8h__incl.pdf>
+Package pdftex.def Info: _o_s_t_m_8h__incl.pdf used on input line 11.
+(pdftex.def)             Requested size: 326.0pt x 155.99922pt.
+<_o_s_t_m_8h__dep__incl.pdf, id=1337, 236.885pt x 269.005pt>
+File: _o_s_t_m_8h__dep__incl.pdf Graphic file (type pdf)
+<use _o_s_t_m_8h__dep__incl.pdf>
+Package pdftex.def Info: _o_s_t_m_8h__dep__incl.pdf used on input line 18.
+(pdftex.def)             Requested size: 236.0pt x 268.00688pt.
+[33 <./_o_s_t_m_8h__incl.pdf> <./_o_s_t_m_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./_o_s_t_m_8h__dep__incl.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>]) (./_o_s_t_m_8h_source.tex [34]) (./_t_m_8cpp.tex <_t_m_8cpp__incl.pdf, id=1
+407, 650.43pt x 325.215pt>
+File: _t_m_8cpp__incl.pdf Graphic file (type pdf)
+<use _t_m_8cpp__incl.pdf>
+Package pdftex.def Info: _t_m_8cpp__incl.pdf used on input line 12.
+(pdftex.def)             Requested size: 350.0pt x 175.00311pt.
+) (./_t_m_8cpp_source.tex [35 <./_t_m_8cpp__incl.pdf>]
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 49--49
+[]\T1/pcr/m/n/7 00052     []/* @53 process_map_collection try to find the main 
+process by it's ppid if registred in the library */[][] 
+ []
+
+
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 71--72
+[]\T1/pcr/m/n/7 00072         []/* @73 Insert to the GLOBAL MAP as a helper to 
+clean up at end of main process. The value 1 is not[] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 80--81
+[]\T1/pcr/m/n/7 00084     []/* @85 guard std::lock_guard, locks the get_Lock mu
+tex, unlock automatically when goes out of the scope[] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 96--97
+[]\T1/pcr/m/n/7 00097         []/* @98 If transaction already registered, it me
+ans the thread participating in nested transactions,[] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 111--111
+[]\T1/pcr/m/n/7 00113     []/* @114 process_map_collection try to find the main
+ process by it's ppid if registred in the library */[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[36]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 126--127
+[]\T1/pcr/m/n/7 00125     []/* @126 TX class delete all Global Object shared be
+tween the transaction. This function calls only when[] 
+ []
+
+) (./_t_m_8h.tex <_t_m_8h__incl.pdf, id=1479, 636.3775pt x 269.005pt>
+File: _t_m_8h__incl.pdf Graphic file (type pdf)
+<use _t_m_8h__incl.pdf>
+Package pdftex.def Info: _t_m_8h__incl.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 147.9491pt.
+<_t_m_8h__dep__incl.pdf, id=1480, 130.4875pt x 156.585pt>
+File: _t_m_8h__dep__incl.pdf Graphic file (type pdf)
+<use _t_m_8h__dep__incl.pdf>
+Package pdftex.def Info: _t_m_8h__dep__incl.pdf used on input line 21.
+(pdftex.def)             Requested size: 130.0pt x 156.00162pt.
+
+Underfull \vbox (badness 3536) has occurred while \output is active []
+
+[37 <./_t_m_8h__incl.pdf>]) (./_t_m_8h_source.tex
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 33--34
+[]\T1/pcr/m/n/7 00093 []     * STATIC GLOBAL MAP Collection to store all proces
+s associated keys to find when deleting transactions[] 
+ []
+
+[38 <./_t_m_8h__dep__incl.pdf>]) (./_t_x_8cpp.tex <_t_x_8cpp__incl.pdf, id=1539
+, 593.21625pt x 269.005pt>
+File: _t_x_8cpp__incl.pdf Graphic file (type pdf)
+<use _t_x_8cpp__incl.pdf>
+Package pdftex.def Info: _t_x_8cpp__incl.pdf used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 158.71977pt.
+) (./_t_x_8cpp_source.tex [39 <./_t_x_8cpp__incl.pdf>]
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 66--66
+[]\T1/pcr/m/n/7 00073     []/* @74 process_map_collection try to find the main 
+process by it's ppid if registred in the library */[][] 
+ []
+
+
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 82--83
+[]\T1/pcr/m/n/7 00083                 []/* @84 Delete element from shared main_
+Process_Map_collection by object by the unique key,[] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 94--95
+[]\T1/pcr/m/n/7 00097     []/* @98 register_Lock(mutex) shared lock between all
+ transaction. MUST USE SHARED LOCK TO PROTECT SHARED[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[40]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 129--129
+[]\T1/pcr/m/n/7 00125     []/* @126 Declare and initialize Iterator for working
+_Map_collection, find copy of the original object */[][] 
+ []
+
+
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 130--130
 []\T1/pcr/m/n/7 00126     std::map< int, std::shared_ptr<OSTM> >::iterator work
 ing_Map_collection_Object_Shared_Pointer_Iterator[] 
  []
 
 
-Overfull \hbox (19.35555pt too wide) in paragraph at lines 104--104
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 142--142
 []\T1/pcr/m/n/7 00139     std::map< int, std::shared_ptr<OSTM> >::iterator work
 ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
  []
 
 
-Overfull \hbox (19.35555pt too wide) in paragraph at lines 120--120
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 165--165
 []\T1/pcr/m/n/7 00163     std::map< int, std::shared_ptr<OSTM> >::iterator work
 ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
  []
 
 
-Overfull \hbox (15.15555pt too wide) in paragraph at lines 126--127
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 175--176
 []\T1/pcr/m/n/7 00171     } []else[] { []throw[] std::runtime_error(std::string
 ([]"[RUNTIME ERROR : NO OBJECT FOUND STORE FUNCTION, CANNOT[] 
  []
 
 
-Overfull \hbox (19.35555pt too wide) in paragraph at lines 135--135
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 181--181
+[]\T1/pcr/m/n/7 00180     []/* @182 Dealing with nested transactions first. if 
+nesting level bigger than ZERO do not commit yet */[][] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 188--188
 []\T1/pcr/m/n/7 00187     std::map< int, std::shared_ptr<OSTM> >::iterator work
 ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
  []
 
 
-Overfull \hbox (19.35555pt too wide) in paragraph at lines 147--147
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 196--196
+[]\T1/pcr/m/n/7 00192             []/* @193 Find the Original object in the Sha
+red global colection by the copy object unique ID */[][] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 204--204
 []\T1/pcr/m/n/7 00197                 []throw[] std::runtime_error(std::string(
 []"[RUNTIME ERROR : CAN'T FIND OBJECT COMMIT FUNCTION]"[])[] 
  []
 
 
-Overfull \hbox (27.75554pt too wide) in paragraph at lines 170--170
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[41]
+Overfull \hbox (27.75554pt too wide) in paragraph at lines 240--240
 []      \T1/pcr/m/n/7 working_Map_collection_Object_Shared_Pointer_Iterator->se
 cond, main_Process_Map_collection_Iterator->second);[] 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[49]
-Overfull \hbox (27.75554pt too wide) in paragraph at lines 185--185
+Overfull \hbox (27.75554pt too wide) in paragraph at lines 263--263
 []      \T1/pcr/m/n/7 main_Process_Map_collection_Iterator->second, working_Map
 _collection_Object_Shared_Pointer_Iterator->second);[] 
  []
 
 
-Overfull \hbox (19.35555pt too wide) in paragraph at lines 197--197
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 266--266
+[]\T1/pcr/m/n/7 00238                 []/* @195 RUNTIME ERROR. If no object fou
+nd ! Null pointer can cause segmentation fault!!! */[][] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 282--282
 []\T1/pcr/m/n/7 00255     std::map< int, std::shared_ptr<OSTM> >::iterator work
 ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
  []
 
-) (./_t_x_8h.tex <_t_x_8h__incl.pdf, id=1891, 622.325pt x 212.795pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[42]) (./_t_x_8h.tex <_t_x_8h__incl.pdf, id=1665, 622.325pt x 212.795pt>
 File: _t_x_8h__incl.pdf Graphic file (type pdf)
 <use _t_x_8h__incl.pdf>
 Package pdftex.def Info: _t_x_8h__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 119.6774pt.
-[50] <_t_x_8h__dep__incl.pdf, id=1904, 191.71625pt x 212.795pt>
+
+Underfull \vbox (badness 2932) has occurred while \output is active []
+
+[43] <_t_x_8h__dep__incl.pdf, id=1676, 191.71625pt x 212.795pt>
 File: _t_x_8h__dep__incl.pdf Graphic file (type pdf)
 <use _t_x_8h__dep__incl.pdf>
 Package pdftex.def Info: _t_x_8h__dep__incl.pdf used on input line 24.
 (pdftex.def)             Requested size: 191.0pt x 212.01193pt.
-) (./_t_x_8h_source.tex [51 <./_t_x_8h__incl.pdf> <./_t_x_8h__dep__incl.pdf
+) (./_t_x_8h_source.tex [44 <./_t_x_8h__incl.pdf> <./_t_x_8h__dep__incl.pdf
 
 pdfTeX warning: pdflatex (file ./_t_x_8h__dep__incl.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
->]) [52]
+>]) [45] [46
+
+]
 No file refman.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
 (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 38C3513A67982B30BFA0BAD83312FEB5;11708.
+(rerunfilecheck)             Checksum: 2C415E1FFF49ED98A7410BF5C1ECAC56;9425.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
  ) 
 Here is how much of TeX's memory you used:
- 15576 strings out of 493029
- 241920 string characters out of 6136233
- 322162 words of memory out of 5000000
- 18320 multiletter control sequences out of 15000+600000
- 56414 words of font info for 76 fonts, out of 8000000 for 9000
+ 15424 strings out of 493029
+ 231182 string characters out of 6136235
+ 319064 words of memory out of 5000000
+ 18235 multiletter control sequences out of 15000+600000
+ 55260 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,16n,92p,1867b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,16n,92p,1867b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{_t_x_8h_source_l00074} has been referenced but do
 es not exist, replaced by a fixed one
 
@@ -1936,13 +1739,13 @@ es not exist, replaced by a fixed one
 pdfTeX warning (dest): name{_t_x_8h_source_l00029} has been referenced but does
  not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{_t_m_8h_source_l00094} has been referenced but does
+pdfTeX warning (dest): name{_t_m_8h_source_l00107} has been referenced but does
  not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{_t_m_8cpp_source_l00132} has been referenced but do
 es not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{_t_m_8h_source_l00102} has been referenced but does
+pdfTeX warning (dest): name{_t_m_8h_source_l00115} has been referenced but does
  not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{_t_m_8cpp_source_l00031} has been referenced but do
@@ -1951,7 +1754,7 @@ es not exist, replaced by a fixed one
 pdfTeX warning (dest): name{_t_m_8cpp_source_l00148} has been referenced but do
 es not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{_t_m_8h_source_l00082} has been referenced but does
+pdfTeX warning (dest): name{_t_m_8h_source_l00095} has been referenced but does
  not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{_t_x_8cpp_source_l00068} has been referenced but do
@@ -1960,22 +1763,31 @@ es not exist, replaced by a fixed one
 pdfTeX warning (dest): name{_t_m_8cpp_source_l00108} has been referenced but do
 es not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{_t_m_8h_source_l00078} has been referenced but does
+pdfTeX warning (dest): name{_t_m_8h_source_l00091} has been referenced but does
  not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{_t_m_8cpp_source_l00045} has been referenced but do
 es not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{_t_m_8h_source_l00098} has been referenced but does
+pdfTeX warning (dest): name{_t_m_8h_source_l00111} has been referenced but does
  not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{_t_m_8cpp_source_l00081} has been referenced but do
 es not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{_t_m_8h_source_l00057} has been referenced but does
+pdfTeX warning (dest): name{_t_m_8h_source_l00070} has been referenced but does
  not exist, replaced by a fixed one
 
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00041} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00139} has been referenced but 
+does not exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00154} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00162} has been referenced bu
 t does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00092} has been referenced bu
@@ -1993,12 +1805,6 @@ t does not exist, replaced by a fixed one
 pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00147} has been referenced bu
 t does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00139} has been referenced but 
-does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00162} has been referenced bu
-t does not exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00124} has been referenced bu
 t does not exist, replaced by a fixed one
 
@@ -2007,9 +1813,6 @@ t does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00108} has been referenced bu
 t does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00046} has been referenced but 
-does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00100} has been referenced bu
 t does not exist, replaced by a fixed one
@@ -2023,7 +1826,7 @@ t does not exist, replaced by a fixed one
 pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00130} has been referenced but 
 does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00041} has been referenced but 
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00046} has been referenced but 
 does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00054} has been referenced bu
@@ -2067,10 +1870,10 @@ r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (54 pages, 350341 bytes).
+Output written on refman.pdf (48 pages, 321122 bytes).
 PDF statistics:
- 2111 PDF objects out of 2487 (max. 8388607)
- 1944 compressed objects within 20 object streams
- 460 named destinations out of 1000 (max. 500000)
- 572 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1880 PDF objects out of 2073 (max. 8388607)
+ 1761 compressed objects within 18 object streams
+ 423 named destinations out of 1000 (max. 500000)
+ 448 words of extra memory for PDF output out of 10000 (max. 10000000)
 

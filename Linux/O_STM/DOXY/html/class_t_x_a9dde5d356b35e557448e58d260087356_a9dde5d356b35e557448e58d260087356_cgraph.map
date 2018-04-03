@@ -1,0 +1,5 @@
+<map id="TX::commit" name="TX::commit">
+<area shape="rect" id="node2" href="$class_t_x_aa3ac499f576326588628ade96b27b4b1.html#aa3ac499f576326588628ade96b27b4b1" title="Remove TX nesting level by one. " alt="" coords="144,5,319,32"/>
+<area shape="rect" id="node3" href="$class_t_x_a4c13d2015dc15d0f788fa9a1413f0463.html#a4c13d2015dc15d0f788fa9a1413f0463" title="_release_object_lock void, is get called from commit function, with the purpose to release the locks ..." alt="" coords="147,56,316,83"/>
+<area shape="rect" id="node4" href="$class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79.html#ae045534c4a9d39bd5c6ea2a39a372a79" title="Clean up all associated values by the thread delete from working_Map_collection, it is an automated f..." alt="" coords="188,107,275,133"/>
+</map>

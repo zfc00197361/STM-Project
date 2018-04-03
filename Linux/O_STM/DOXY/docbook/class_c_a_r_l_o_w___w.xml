@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_c_a_r_l_o_w___w">
+<title>CARLOW_W class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_c_a_r_l_o_w___w_8h">&lt;CARLOW_W.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for CARLOW_W</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_c_a_r_l_o_w___w__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for CARLOW_W</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_c_a_r_l_o_w___w__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_alcatel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_huawei</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_iphones</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_nokia</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_samsung</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_sony</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string _shop_address</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string _shop_name</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_c_a_r_l_o_w___w_a8ae6ca6f4db7ea5240322fd27824c55a_1a8ae6ca6f4db7ea5240322fd27824c55a">CARLOW_W</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_c_a_r_l_o_w___w_aa13cfb47255f935a3b27708b68e52129_1aa13cfb47255f935a3b27708b68e52129">CARLOW_W</link> (
+std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_c_a_r_l_o_w___w_ad3b772ca2d09eba4a273cb0c7cece747_1ad3b772ca2d09eba4a273cb0c7cece747">CARLOW_W</link> (
+std::shared_ptr&lt; <link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link> &gt; obj, int _version, int _unique_id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_c_a_r_l_o_w___w_a267a2792c59f475740a68953c8437205_1a267a2792c59f475740a68953c8437205">CARLOW_W</link> (
+const <link linkend="class_c_a_r_l_o_w___w">CARLOW_W</link> &amp; orig)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_c_a_r_l_o_w___w_ac91cb7cbae77752e334e273b97fb988b_1ac91cb7cbae77752e334e273b97fb988b">copy</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; to, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; from)<para><emphasis>copy function, make deep copy of the object/pointer</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; <link linkend="class_c_a_r_l_o_w___w_a1a76566c3a7c01cf469007741dac6b97_1a1a76566c3a7c01cf469007741dac6b97">getBaseCopy</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; object)<para><emphasis>getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_c_a_r_l_o_w___w_ae7ab8852e5eeff1c2cd397126fbac0e7_1ae7ab8852e5eeff1c2cd397126fbac0e7">GetNumber_of_alcatel</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_c_a_r_l_o_w___w_aea38b51a44cda35a01beb7d45fa7a2a4_1aea38b51a44cda35a01beb7d45fa7a2a4">GetNumber_of_huawei</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_c_a_r_l_o_w___w_a50395c707116ea1176743ed98c6b1f76_1a50395c707116ea1176743ed98c6b1f76">GetNumber_of_iphones</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_c_a_r_l_o_w___w_a4e3a644ee69bc4bc4ab3feac1493192b_1a4e3a644ee69bc4bc4ab3feac1493192b">GetNumber_of_nokia</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_c_a_r_l_o_w___w_aecc697b6d017d88f2bdbe3cea2bf3496_1aecc697b6d017d88f2bdbe3cea2bf3496">GetNumber_of_samsung</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_c_a_r_l_o_w___w_a6d31219dac9b4d8842e14b7414ed286e_1a6d31219dac9b4d8842e14b7414ed286e">GetNumber_of_sony</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="class_c_a_r_l_o_w___w_af48a2f69706be684115758820ce79ddd_1af48a2f69706be684115758820ce79ddd">GetShop_address</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="class_c_a_r_l_o_w___w_a68235a63964645c525620053a33de863_1a68235a63964645c525620053a33de863">GetShop_name</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_c_a_r_l_o_w___w">CARLOW_W</link> <link linkend="class_c_a_r_l_o_w___w_a38c83795abf1751b3e122c74494f4586_1a38c83795abf1751b3e122c74494f4586">operator=</link> (
+const <link linkend="class_c_a_r_l_o_w___w">CARLOW_W</link> &amp; orig)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_c_a_r_l_o_w___w_ad264954806d7fd6c418650a5c7c7defb_1ad264954806d7fd6c418650a5c7c7defb">SetNumber_of_alcatel</link> (
+int _number_of_alcatel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_c_a_r_l_o_w___w_a016d1d51b091fc1732c2923a3baa2f58_1a016d1d51b091fc1732c2923a3baa2f58">SetNumber_of_huawei</link> (
+int _number_of_huawei)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_c_a_r_l_o_w___w_ad58af9d68450f4fc70e0e1ecd4b1b498_1ad58af9d68450f4fc70e0e1ecd4b1b498">SetNumber_of_iphones</link> (
+int _number_of_iphones)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_c_a_r_l_o_w___w_af0f395409df02a42b3e9448d027d0776_1af0f395409df02a42b3e9448d027d0776">SetNumber_of_nokia</link> (
+int _number_of_nokia)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_c_a_r_l_o_w___w_a6e629d8043c4c4266ecafa9f6a3e6447_1a6e629d8043c4c4266ecafa9f6a3e6447">SetNumber_of_samsung</link> (
+int _number_of_samsung)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_c_a_r_l_o_w___w_ab255132fb2ef5678d00c74f90acdf2dd_1ab255132fb2ef5678d00c74f90acdf2dd">SetNumber_of_sony</link> (
+int _number_of_sony)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_c_a_r_l_o_w___w_a6f66cd4c060b2b1ac6640768ad5c56e4_1a6f66cd4c060b2b1ac6640768ad5c56e4">SetShop_address</link> (
+std::string _shop_address)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_c_a_r_l_o_w___w_a9d0dcf25c0a9eb8be530c27bd2cf8933_1a9d0dcf25c0a9eb8be530c27bd2cf8933">SetShop_name</link> (
+std::string _shop_name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_c_a_r_l_o_w___w_a79e683650f861b59752fb027a5f16e5a_1a79e683650f861b59752fb027a5f16e5a">toString</link> (
+)<para><emphasis>_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_c_a_r_l_o_w___w_aa628d46e58dfd0517f24499eca88138b_1aa628d46e58dfd0517f24499eca88138b">~CARLOW_W</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>Inherit from <link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link> </para>
+                <para>Definition at line 19 of file CARLOW_W.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>CARLOW_W.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a8ae6ca6f4db7ea5240322fd27824c55a_1a8ae6ca6f4db7ea5240322fd27824c55a">
+                <title>CARLOW_W::CARLOW_W ()</title> <emphasis></emphasis>
+                
+<para>Constructor </para>
+
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_aa13cfb47255f935a3b27708b68e52129_1aa13cfb47255f935a3b27708b68e52129">
+                <title>CARLOW_W::CARLOW_W (std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)</title> <emphasis></emphasis>
+                
+<para>Custom constructor </para>
+
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_ad3b772ca2d09eba4a273cb0c7cece747_1ad3b772ca2d09eba4a273cb0c7cece747">
+                <title>CARLOW_W::CARLOW_W (std::shared_ptr&lt; WAREHOUSE &gt; obj, int _version, int _unique_id)</title> <emphasis></emphasis>
+                
+<para>Custom constructor, used by the library for deep copying </para>
+
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a267a2792c59f475740a68953c8437205_1a267a2792c59f475740a68953c8437205">
+                <title>CARLOW_W::CARLOW_W (const CARLOW_W &amp;orig)</title> <emphasis></emphasis>
+                
+<para>Copy constructor </para>
+
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_ac91cb7cbae77752e334e273b97fb988b_1ac91cb7cbae77752e334e273b97fb988b">
+                <title>void CARLOW_W::copy (std::shared_ptr&lt; OSTM &gt; to, std::shared_ptr&lt; OSTM &gt; from)</title> <emphasis>copy function, make deep copy of the object/pointer</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>objTO</entry>
+                                <entry>
+<para>is a BANK* type object casted back from std::shared_ptr&lt;OSTM&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>objFROM</entry>
+                                <entry>
+<para>is a BANK* type object casted back from std::shared_ptr&lt;OSTM&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a1a76566c3a7c01cf469007741dac6b97_1a1a76566c3a7c01cf469007741dac6b97">
+                <title>std::shared_ptr&lt; OSTM &gt; CARLOW_W::getBaseCopy (std::shared_ptr&lt; OSTM &gt; object)</title> <emphasis>getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>objTO</entry>
+                                <entry>
+<para>is a <link linkend="class_b_a_n_k">BANK</link> type pointer for casting </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>obj</entry>
+                                <entry>
+<para>is a BANK* return type </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_ae7ab8852e5eeff1c2cd397126fbac0e7_1ae7ab8852e5eeff1c2cd397126fbac0e7">
+                <title>int CARLOW_W::GetNumber_of_alcatel ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_aea38b51a44cda35a01beb7d45fa7a2a4_1aea38b51a44cda35a01beb7d45fa7a2a4">
+                <title>int CARLOW_W::GetNumber_of_huawei ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a50395c707116ea1176743ed98c6b1f76_1a50395c707116ea1176743ed98c6b1f76">
+                <title>int CARLOW_W::GetNumber_of_iphones ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a4e3a644ee69bc4bc4ab3feac1493192b_1a4e3a644ee69bc4bc4ab3feac1493192b">
+                <title>int CARLOW_W::GetNumber_of_nokia ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_aecc697b6d017d88f2bdbe3cea2bf3496_1aecc697b6d017d88f2bdbe3cea2bf3496">
+                <title>int CARLOW_W::GetNumber_of_samsung ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a6d31219dac9b4d8842e14b7414ed286e_1a6d31219dac9b4d8842e14b7414ed286e">
+                <title>int CARLOW_W::GetNumber_of_sony ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_af48a2f69706be684115758820ce79ddd_1af48a2f69706be684115758820ce79ddd">
+                <title>std::string CARLOW_W::GetShop_address ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a68235a63964645c525620053a33de863_1a68235a63964645c525620053a33de863">
+                <title>std::string CARLOW_W::GetShop_name ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a38c83795abf1751b3e122c74494f4586_1a38c83795abf1751b3e122c74494f4586">
+                <title>CARLOW_W CARLOW_W::operator= (const CARLOW_W &amp;orig)</title> <emphasis></emphasis>
+                
+<para>Operator </para>
+
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_ad264954806d7fd6c418650a5c7c7defb_1ad264954806d7fd6c418650a5c7c7defb">
+                <title>void CARLOW_W::SetNumber_of_alcatel (int _number_of_alcatel)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a016d1d51b091fc1732c2923a3baa2f58_1a016d1d51b091fc1732c2923a3baa2f58">
+                <title>void CARLOW_W::SetNumber_of_huawei (int _number_of_huawei)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_ad58af9d68450f4fc70e0e1ecd4b1b498_1ad58af9d68450f4fc70e0e1ecd4b1b498">
+                <title>void CARLOW_W::SetNumber_of_iphones (int _number_of_iphones)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_af0f395409df02a42b3e9448d027d0776_1af0f395409df02a42b3e9448d027d0776">
+                <title>void CARLOW_W::SetNumber_of_nokia (int _number_of_nokia)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a6e629d8043c4c4266ecafa9f6a3e6447_1a6e629d8043c4c4266ecafa9f6a3e6447">
+                <title>void CARLOW_W::SetNumber_of_samsung (int _number_of_samsung)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_ab255132fb2ef5678d00c74f90acdf2dd_1ab255132fb2ef5678d00c74f90acdf2dd">
+                <title>void CARLOW_W::SetNumber_of_sony (int _number_of_sony)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a6f66cd4c060b2b1ac6640768ad5c56e4_1a6f66cd4c060b2b1ac6640768ad5c56e4">
+                <title>void CARLOW_W::SetShop_address (std::string _shop_address)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a9d0dcf25c0a9eb8be530c27bd2cf8933_1a9d0dcf25c0a9eb8be530c27bd2cf8933">
+                <title>void CARLOW_W::SetShop_name (std::string _shop_name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_a79e683650f861b59752fb027a5f16e5a_1a79e683650f861b59752fb027a5f16e5a">
+                <title>void CARLOW_W::toString ()</title> <emphasis>_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type</emphasis>
+                
+<para>toString function, displays the object values in formatted way </para>
+
+            </section>
+            <section xml:id="class_c_a_r_l_o_w___w_aa628d46e58dfd0517f24499eca88138b_1aa628d46e58dfd0517f24499eca88138b">
+                <title>CARLOW_W::~CARLOW_W ()</title> <emphasis></emphasis>
+                
+<para>de-constructor </para>
+
+            </section>
+</section>

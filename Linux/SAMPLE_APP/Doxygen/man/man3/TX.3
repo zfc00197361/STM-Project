@@ -1,0 +1,637 @@
+.TH "TX" 3 "Tue Mar 13 2018" "C++ Software transactional Memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TX \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TX\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fB_decrease_tx_nesting\fP ()"
+.br
+.RI "\fI@279 _decrease_tx_nesting decrease the value stored in _tx_nesting_level by one, when outer transactions commit \fP"
+.ti -1c
+.RI "void \fB_increase_tx_nesting\fP ()"
+.br
+.RI "\fI@272 _increase_tx_nesting increase the value stored in _tx_nesting_level by one, indicate that the transaction was nested \fP"
+.ti -1c
+.RI "void \fB_print_all_tx\fP ()"
+.br
+.ti -1c
+.RI "void \fB_register\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fIregister void, receives an std::shared_ptr<OSTM> that point to the original memory space to protect from reca conditions \fP"
+.ti -1c
+.RI "bool \fBcommit\fP ()"
+.br
+.RI "\fI@176 commit function, returns boolean value TRUE/FALSE depends on the action taken within the function\&. if commit happens return TRUE, otherwise return FALSE, indicate the transaction muist restart\&. \fP"
+.ti -1c
+.RI "int \fBgetTest_counter\fP ()"
+.br
+.RI "\fI@287 getTest_counter TESTING ONLY!!! returning the value of the test_counter stored, representing the number of rollbacks \fP"
+.ti -1c
+.RI "std::shared_ptr< \fBOSTM\fP > \fBload\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fI@137 load std::shared_ptr<OSTM>, returning an \fBOSTM\fP type shared pointer, that is copy of the original pointer stored in the working map, to work with during transaction life time \fP"
+.ti -1c
+.RI "void \fBostm_exit\fP ()"
+.br
+.RI "\fI@68 ostm_exit void, clear all elements from the shared global collections associated with the main process \fP"
+.ti -1c
+.RI "void \fBstore\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fI@157 store void, receive an \fBOSTM\fP type shared pointer object to store the changes with the transaction copy object \fP"
+.ti -1c
+.RI "\fBTX\fP (std::thread::id id)"
+.br
+.RI "\fI@36 Custom Constructor \fP"
+.ti -1c
+.RI "\fBTX\fP (const \fBTX\fP &orig)"
+.br
+.ti -1c
+.RI "\fB~TX\fP ()"
+.br
+.RI "\fI@45 De-constructor \fP"
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static int \fBtest_counter\fP = 0"
+.br
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "const std::thread::id \fB_get_tx_number\fP () const "
+.br
+.RI "\fI@294 _get_tx_number, returning the thread id that has assigned the given transaction \fP"
+.ti -1c
+.RI "void \fB_release_object_lock\fP ()"
+.br
+.RI "\fI@253 _release_object_lock void function, is get called from commit function, with the purpose to release the locks on all the objects participating in the transaction \fP"
+.ti -1c
+.RI "std::map< int, int > \fBget_thread_Map\fP ()"
+.br
+.RI "\fI@301 get_thread_Map, returning a map to store all unique ID from all objects from all transactions within the main process \fP"
+.ti -1c
+.RI "void \fBth_exit\fP ()"
+.br
+.RI "\fI@52 th_exit void, delete all std::shared_ptr<OSTM> elements from working_Map_collection, that store pointers to working objects \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fB_tx_nesting_level\fP"
+.br
+.ti -1c
+.RI "std::thread::id \fBtransaction_Number\fP"
+.br
+.ti -1c
+.RI "std::map< int, std::shared_ptr< \fBOSTM\fP > > \fBworking_Map_collection\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static std::map< int, std::shared_ptr< \fBOSTM\fP > > \fBmain_Process_Map_collection\fP"
+.br
+.ti -1c
+.RI "static std::map< pid_t, std::map< int, int > > \fBprocess_map_collection\fP"
+.br
+.ti -1c
+.RI "static std::mutex \fBregister_Lock\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBTM\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 29 of file TX\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "TX::TX (std::thread::id id)"
+
+.PP
+@36 Custom Constructor 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIid\fP std::thread::id, represent the transaction number when to the TransactionManager 
+.RE
+.PP
+
+.PP
+Definition at line 36 of file TX\&.cpp\&.
+.PP
+References _tx_nesting_level, and transaction_Number\&.
+.PP
+.nf
+36                      {
+37     /* @38 Integer field <transaction_Number> indicates the transaction number to the Transaction manager */
+38     this->transaction_Number = id;
+39     /* @40 Integer field <_tx_nesting_level> indicates the nesting level to the transaction itself */
+40     this->_tx_nesting_level = 0;
+41 }
+.fi
+.SS "TX::~TX ()"
+
+.PP
+@45 De-constructor 
+.PP
+Definition at line 45 of file TX\&.cpp\&.
+.PP
+.nf
+45         {
+46     /* Destroy the object\&. */
+47 }
+.fi
+.SS "TX::TX (const \fBTX\fP & orig)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void TX::_decrease_tx_nesting ()"
+
+.PP
+@279 _decrease_tx_nesting decrease the value stored in _tx_nesting_level by one, when outer transactions commit 
+.PP
+Definition at line 279 of file TX\&.cpp\&.
+.PP
+References _tx_nesting_level\&.
+.PP
+Referenced by commit()\&.
+.PP
+.nf
+279                               {
+280     /* @281 Decrease transaction nesting level */
+281     this->_tx_nesting_level -= 1;
+282 ;
+283 }
+.fi
+.SS "const std::thread::id TX::_get_tx_number () const\fC [private]\fP"
+
+.PP
+@294 _get_tx_number, returning the thread id that has assigned the given transaction _get_tx_number, returning the transaction uniqe identifier 
+.PP
+Definition at line 294 of file TX\&.cpp\&.
+.PP
+References transaction_Number\&.
+.PP
+.nf
+294                                            {
+295     /* @296 Return the transaction nuber */
+296     return transaction_Number;
+297 }
+.fi
+.SS "void TX::_increase_tx_nesting ()"
+
+.PP
+@272 _increase_tx_nesting increase the value stored in _tx_nesting_level by one, indicate that the transaction was nested 
+.PP
+Definition at line 272 of file TX\&.cpp\&.
+.PP
+References _tx_nesting_level\&.
+.PP
+.nf
+272                               {
+273     /* @274 Increase transaction nesting level */
+274     this->_tx_nesting_level += 1;
+275 }
+.fi
+.SS "void TX::_print_all_tx ()"
+@311 _print_all_tx, only for testing! Prints all transaction associated with the main procees\&.! 
+.PP
+Definition at line 311 of file TX\&.cpp\&.
+.PP
+References process_map_collection, and working_Map_collection\&.
+.PP
+.nf
+311                        {
+312     /* @313 initialise Iterator */
+313     std::map< int, std::shared_ptr<OSTM> >::iterator it;
+314     /* @315 getppid() return the actual main process thread id, I used it to associate the Transactionas with the main processes */
+315     pid_t ppid = getppid();
+316     /* '317 initialize and assign Iterator to process_map_collection, by the main process id (ppid) */
+317     std::map<pid_t, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection\&.find(ppid);
+318     /* @319 If there is an entry associated with the process then print out all transactions\&. */
+319     if (process_map_collection_Iterator != TX::process_map_collection\&.end()) {
+320         /* @321 Iterate through process_map_collection*/
+321         for (auto current = process_map_collection_Iterator->second\&.begin(); current != process_map_collection_Iterator->second\&.end(); ++current) {
+322             /* @323 Assign value to iterator */
+323             it = working_Map_collection\&.find(current->first);
+324             /* @325 If value found, then print it */
+325             if(it != working_Map_collection\&.end()){
+326                 /* @327 print out the transaction number */
+327                 std::cout << "[Unique number ] : " <<it->second->Get_Unique_ID() << std::endl;
+328             } 
+329         }
+330     }
+331 }
+.fi
+.SS "void TX::_register (std::shared_ptr< \fBOSTM\fP > object)"
+
+.PP
+register void, receives an std::shared_ptr<OSTM> that point to the original memory space to protect from reca conditions 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobject\fP std::shared_ptr<OSTM>, is an original shared pointer point to the object memory space 
+.RE
+.PP
+
+.PP
+Definition at line 96 of file TX\&.cpp\&.
+.PP
+References get_thread_Map(), main_Process_Map_collection, process_map_collection, register_Lock, and working_Map_collection\&.
+.PP
+.nf
+96                                              {
+97     /* @98 register_Lock(mutex) shared lock between all transaction\&. MUST USE SHARED LOCK TO PROTECT SHARED GLOBAL MAP/COLLECTION */
+98     std::lock_guard<std::mutex> guard(TX::register_Lock);
+99     /* @100 RUNTIME ERROR\&. Check for null pointer ! Null pointer can cause segmentation fault!!! */
+100     if(object == nullptr){
+101         throw std::runtime_error(std::string("[RUNTIME ERROR : NULL POINTER IN REGISTER FUNCTION]") );
+102     }
+103     /* @104 getppid() return the actual main process thread id, I used it to associate the Transactionas with the main processes */
+104     pid_t ppid = getppid();
+105     /* @106 Declare and initialize Iterator for process_map_collection, find main process*/
+106     std::map<pid_t, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection\&.find(ppid);
+107     /* @108 If iterator cannot find main process, then register*/
+108     if (process_map_collection_Iterator == TX::process_map_collection\&.end()) {
+109         /* @110 Create new empty map */
+110         std::map< int, int >map =  get_thread_Map();
+111         /* @112 Register main process/application to the global map */
+112         TX::process_map_collection\&.insert({ppid, map});
+113         /* @114 Get the map if registered first time */
+114         process_map_collection_Iterator = TX::process_map_collection\&.find(ppid);
+115     }
+116     /* @117 Declare and initialize Iterator for main_Process_Map_collection, find by original object */
+117     std::map<int, std::shared_ptr<OSTM>>::iterator main_Process_Map_collection_Iterator = TX::main_Process_Map_collection\&.find(object->Get_Unique_ID());
+118     /* @119 If object cannot find, then register */
+119     if (main_Process_Map_collection_Iterator == TX::main_Process_Map_collection\&.end()) {
+120         /* '121 Insert the origin object to the GLOBAL MAP shared between transactions */
+121         TX::main_Process_Map_collection\&.insert({object->Get_Unique_ID(), object});
+122         /* @123 Insert object ID to the GLOBAL MAP as a helper to clean up at end of main process, Second value (1) not specified yet */
+123         process_map_collection_Iterator->second\&.insert({object->Get_Unique_ID(), 1});
+124     } 
+125     /* @126 Declare and initialize Iterator for working_Map_collection, find copy of the original object */
+126     std::map< int, std::shared_ptr<OSTM> >::iterator working_Map_collection_Object_Shared_Pointer_Iterator = working_Map_collection\&.find(object->Get_Unique_ID());
+127     /* @128 If copy of the object not found, then register */
+128     if (working_Map_collection_Object_Shared_Pointer_Iterator == working_Map_collection\&.end()) {
+129         /* @130 Register transaction own copy of the original object */
+130         working_Map_collection\&.insert({object->Get_Unique_ID(), object->getBaseCopy(object)});
+131     }
+132 }
+.fi
+.SS "void TX::_release_object_lock ()\fC [private]\fP"
+
+.PP
+@253 _release_object_lock void function, is get called from commit function, with the purpose to release the locks on all the objects participating in the transaction _release_object_lock, Release the locks on all Shared global objects used by the transaction 
+.PP
+Definition at line 253 of file TX\&.cpp\&.
+.PP
+References main_Process_Map_collection, and working_Map_collection\&.
+.PP
+Referenced by commit()\&.
+.PP
+.nf
+253                              {
+254     /* @255 Declare Iterator for working_Map_collection */
+255     std::map< int, std::shared_ptr<OSTM> >::iterator working_Map_collection_Object_Shared_Pointer_Iterator;
+256     /* @255 Declare Iterator for working_Map_collection */
+257     std::map<int, std::shared_ptr<OSTM>>::iterator main_Process_Map_collection_Iterator;
+258     for (working_Map_collection_Object_Shared_Pointer_Iterator = working_Map_collection\&.begin(); working_Map_collection_Object_Shared_Pointer_Iterator != working_Map_collection\&.end(); working_Map_collection_Object_Shared_Pointer_Iterator++) {
+259             /* @260 Find Global shared original object by the transaction object unique ID*/
+260             main_Process_Map_collection_Iterator = TX::main_Process_Map_collection\&.find((working_Map_collection_Object_Shared_Pointer_Iterator->second)->Get_Unique_ID());
+261             /* @262 If object found, then release lock*/
+262             if (main_Process_Map_collection_Iterator != TX::main_Process_Map_collection\&.end()) {
+263                 /* @264 Release object lock */
+264                 (main_Process_Map_collection_Iterator)->second->unlock_Mutex();
+265             } 
+266         }
+267 }
+.fi
+.SS "bool TX::commit ()"
+
+.PP
+@176 commit function, returns boolean value TRUE/FALSE depends on the action taken within the function\&. if commit happens return TRUE, otherwise return FALSE, indicate the transaction muist restart\&. 
+.PP
+Definition at line 177 of file TX\&.cpp\&.
+.PP
+References _decrease_tx_nesting(), _release_object_lock(), _tx_nesting_level, main_Process_Map_collection, th_exit(), and working_Map_collection\&.
+.PP
+.nf
+177                 {
+178     /* @179 Declare can_Commit boolean variable */
+179     bool can_Commit = true;
+180     /* @182 Dealing with nested transactions first\&. if nesting level bigger than ZERO do not commit yet */
+181     if (this->_tx_nesting_level > 0) {
+182         /* @183 Decrease nesting level @see _decrease_tx_nesting() */
+183         _decrease_tx_nesting();
+184         return true;
+185     } 
+186     /* @187 Declare and initialize Iterator for working_Map_collection */
+187     std::map< int, std::shared_ptr<OSTM> >::iterator working_Map_collection_Object_Shared_Pointer_Iterator;
+188     /* @189 Declare and initialize Iterator for main_Process_Map_collectio */
+189     std::map<int, std::shared_ptr<OSTM>>::iterator main_Process_Map_collection_Iterator;
+190     /* @191 Iterate through the working_Map_collection, for all associated copy objetcs */
+191     for (working_Map_collection_Object_Shared_Pointer_Iterator = working_Map_collection\&.begin(); working_Map_collection_Object_Shared_Pointer_Iterator != working_Map_collection\&.end(); working_Map_collection_Object_Shared_Pointer_Iterator++) {
+192             /* @193 Find the Original object in the Shared global colection by the copy object unique ID */
+193             main_Process_Map_collection_Iterator = TX::main_Process_Map_collection\&.find(working_Map_collection_Object_Shared_Pointer_Iterator->second->Get_Unique_ID());
+194             /* @195 RUNTIME ERROR\&. If no object found ! Null pointer can cause segmentation fault!!! */
+195             if(main_Process_Map_collection_Iterator == TX::main_Process_Map_collection\&.end())
+196             {
+197                 throw std::runtime_error(std::string("[RUNTIME ERROR : CAN'T FIND OBJECT COMMIT FUNCTION]"));
+198             }
+199 
+200         /* @200 Busy waiting WHILE try_lock function return false, If the object locked by another transaction, then waith until it's get unlocked, then lock it */
+201         while(!(main_Process_Map_collection_Iterator->second)->try_lock());
+202         /* @203 Compare the original global object version number with the working object version number\&. If the version number not same, then it cannot coomit*/
+203         if (main_Process_Map_collection_Iterator->second->Get_Version() > working_Map_collection_Object_Shared_Pointer_Iterator->second->Get_Version()) {
+204             /* @2005 Set object boolean value to FALSE, cannot commit */
+205             working_Map_collection_Object_Shared_Pointer_Iterator->second->Set_Can_Commit(false);
+206             /* @207 Set canCommit false Indicate rollback must happen */
+207             can_Commit = false;
+208             break;
+209         } else {
+210             /* @210 If version number are has same value set object boolean value to TRUE*/ 
+211             working_Map_collection_Object_Shared_Pointer_Iterator->second->Set_Can_Commit(true);
+212         }
+213     }
+214     /* @214 IF can_Commit boolean value setted for FALSE then rollback all copy object in the transaction to the Global object values*/
+215     if (!can_Commit) {
+216         /* @217 iterate through all transaction copy objects one by one */
+217         for (working_Map_collection_Object_Shared_Pointer_Iterator = working_Map_collection\&.begin(); working_Map_collection_Object_Shared_Pointer_Iterator != working_Map_collection\&.end(); working_Map_collection_Object_Shared_Pointer_Iterator++) {
+218             /* @219 Find the Global shared object by the transaction copy object unique ID */
+219             main_Process_Map_collection_Iterator  = TX::main_Process_Map_collection\&.find(working_Map_collection_Object_Shared_Pointer_Iterator->second->Get_Unique_ID());
+220             /* @221 Copy all Global shared original objects changed values by another transaction to the transaction copy objetcs */
+221             (working_Map_collection_Object_Shared_Pointer_Iterator->second)->copy(working_Map_collection_Object_Shared_Pointer_Iterator->second, main_Process_Map_collection_Iterator->second);
+222         }
+223         /* @224 When the transaction finish to change copying all values from original objects to local copy, then release all Global shared objects\&. @see _release_object_lock() */
+224         _release_object_lock();
+225         /* @226 Return FALSE to indicate the transaction must restart !*/
+226         return false;
+227     } else {
+228         /* @229 Iterate through working_map_collection\&. If no conflict detected in early stage in the transaction, then commit all the local changes to shared Global objects */
+229         for (working_Map_collection_Object_Shared_Pointer_Iterator = working_Map_collection\&.begin(); working_Map_collection_Object_Shared_Pointer_Iterator != working_Map_collection\&.end(); working_Map_collection_Object_Shared_Pointer_Iterator++) {
+230                 /* @231 Find the Global shared object by the transaction copy object unique ID */
+231                 main_Process_Map_collection_Iterator = TX::main_Process_Map_collection\&.find((working_Map_collection_Object_Shared_Pointer_Iterator->second)->Get_Unique_ID());
+232                 /* @233 If Global shared object found then commit changes */
+233                 if (main_Process_Map_collection_Iterator != TX::main_Process_Map_collection\&.end()) {
+234                     /* @235 Copy over local transaction object values to original Global object*/
+235                     (main_Process_Map_collection_Iterator->second)->copy(main_Process_Map_collection_Iterator->second, working_Map_collection_Object_Shared_Pointer_Iterator->second);
+236                     /* @237 Increase the version number in the original pointer*/
+237                     main_Process_Map_collection_Iterator->second->increase_VersionNumber();
+238                 /* @195 RUNTIME ERROR\&. If no object found ! Null pointer can cause segmentation fault!!! */
+239                 } else { throw std::runtime_error(std::string("[RUNTIME ERROR : CAN'T FIND OBJECT COMMIT FUNCTION]")); }
+240         }
+241         /* @242 When the transaction finish with commit all changes, then release all Global shared objects\&. @see _release_object_lock() */
+242         _release_object_lock();
+243         /* @244 Transaction object clean up all associated values, clean memory\&. @see th_exit()*/
+244         this->th_exit();
+245         /* @246 Return TRUE, indicate the transaction has finished\&. */
+246         return true;
+247     }
+248 }
+.fi
+.SS "std::map< int, int > TX::get_thread_Map ()\fC [private]\fP"
+
+.PP
+@301 get_thread_Map, returning a map to store all unique ID from all objects from all transactions within the main process get_thread_Map, returning and map to insert to the process_map_collection as an inner value 
+.PP
+Definition at line 301 of file TX\&.cpp\&.
+.PP
+Referenced by _register()\&.
+.PP
+.nf
+301                                       {
+302     /* @303 initialize empty map hold int key and values*/
+303     std::map< int, int > thread_Map;
+304     /* @305 Return the map*/
+305     return thread_Map;
+306 }
+.fi
+.SS "int TX::getTest_counter ()"
+
+.PP
+@287 getTest_counter TESTING ONLY!!! returning the value of the test_counter stored, representing the number of rollbacks 
+.PP
+Definition at line 287 of file TX\&.cpp\&.
+.PP
+References test_counter\&.
+.PP
+.nf
+287                         {
+288     /* @289 return class level value hold by test_counter variable */
+289     return TX::test_counter;
+290 }
+.fi
+.SS "std::shared_ptr< \fBOSTM\fP > TX::load (std::shared_ptr< \fBOSTM\fP > object)"
+
+.PP
+@137 load std::shared_ptr<OSTM>, returning an \fBOSTM\fP type shared pointer, that is copy of the original pointer stored in the working map, to work with during transaction life time 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobject\fP std::shared_ptr<OSTM>, used as a reference to find transaction copy object by the object unique ID 
+.RE
+.PP
+
+.PP
+Definition at line 137 of file TX\&.cpp\&.
+.PP
+References working_Map_collection\&.
+.PP
+.nf
+137                                                        {
+138     /* @139 Declare and initialize Iterator for working_Map_collection */
+139     std::map< int, std::shared_ptr<OSTM> >::iterator working_Map_collection_Object_Shared_Pointer_Iterator;
+140     /* @141 RUNTIME ERROR\&. Check for null pointer ! Null pointer can cause segmentation fault!!! */
+141     if(object == nullptr){
+142         throw std::runtime_error(std::string("[RUNTIME ERROR : NULL POINTER IN LOAD FUNCTION]") );
+143     }
+144     /* @145 Find copy object in working_Map_collection by the object unique ID*/
+145     working_Map_collection_Object_Shared_Pointer_Iterator = working_Map_collection\&.find(object->Get_Unique_ID());
+146     /* @147 If object found, then return it */
+147     if (working_Map_collection_Object_Shared_Pointer_Iterator != working_Map_collection\&.end()) {
+148         /* @149 Returning a copy of the working copy object */
+149         return working_Map_collection_Object_Shared_Pointer_Iterator->second->getBaseCopy(working_Map_collection_Object_Shared_Pointer_Iterator->second);
+150     /* @151 If no object found, throw runtime error */  
+151     } else { throw std::runtime_error(std::string("[RUNTIME ERROR : NO OBJECT FOUND LOAD FUNCTION]") );}
+152 }
+.fi
+.SS "void TX::ostm_exit ()"
+
+.PP
+@68 ostm_exit void, clear all elements from the shared global collections associated with the main process 
+.PP
+\fBParameters:\fP
+.RS 4
+\fImain_Process_Map_collection\fP std::map, store all std::shared_ptr<OSTM> from all transaction shared between multiple processes 
+.br
+\fIprocess_map_collection\fP std::map, store all unique id from all transaction within main process DO NOT CALL THIS METHOD EXPLICITLY!!!!!! WILL DELETE ALL PROCESS ASSOCIATED ELEMENTS!!!! 
+.RE
+.PP
+
+.PP
+Definition at line 68 of file TX\&.cpp\&.
+.PP
+References main_Process_Map_collection, and process_map_collection\&.
+.PP
+Referenced by TM::_TX_EXIT()\&.
+.PP
+.nf
+68                    {
+69     /* @70 Declare Iterator main_Process_Map_collection_Iterator */
+70     std::map<int, std::shared_ptr<OSTM>>::iterator main_Process_Map_collection_Iterator;
+71     /* @72 getppid() return the actual main process thread id, I used it to associate the Transactionas with the main processes */
+72     pid_t ppid = getppid();
+73     /* @74 process_map_collection try to find the main process by it's ppid if registred in the library */
+74     std::map<pid_t, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection\&.find(ppid);
+75     /* @76 Check if iterator NOT pointing to the end of the process_map_collection then remove all associated elements */
+76     if (process_map_collection_Iterator != TX::process_map_collection\&.end()) {
+77         /* @78 Iterate through the process_map_collection to find all transaction associated with main process */
+78         for (auto current = process_map_collection_Iterator->second\&.begin(); current != process_map_collection_Iterator->second\&.end(); ++current) {
+79             /* @80 Find the OSTM object in the Global shared map */
+80             main_Process_Map_collection_Iterator = TX::main_Process_Map_collection\&.find(current->first);
+81             /* @82 If object found then delete it*/
+82             if (main_Process_Map_collection_Iterator != TX::main_Process_Map_collection\&.end()){
+83                 /* @84 Delete element from shared main_Process_Map_collection by object by the unique key, and the shaed_ptr will destroy automatically */
+84                 TX::main_Process_Map_collection\&.erase(main_Process_Map_collection_Iterator->first);      
+85             }
+86         }
+87         /* @88 Delete main process from Process_map_collection */
+88         TX::process_map_collection\&.erase(process_map_collection_Iterator->first);
+89     }
+90 }
+.fi
+.SS "void TX::store (std::shared_ptr< \fBOSTM\fP > object)"
+
+.PP
+@157 store void, receive an \fBOSTM\fP type shared pointer object to store the changes with the transaction copy object 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobject\fP std::shared_ptr<OSTM>, receiving a changed shared pointer, that was returned from the load function 
+.RE
+.PP
+
+.PP
+Definition at line 157 of file TX\&.cpp\&.
+.PP
+References working_Map_collection\&.
+.PP
+.nf
+157                                          {
+158     /* @159 RUNTIME ERROR\&. Check for null pointer ! Null pointer can cause segmentation fault!!! */
+159     if(object == nullptr){
+160         throw std::runtime_error(std::string("[RUNTIME ERROR : NULL POINTER IN STORE FUNCTION]") );
+161     }
+162     /* @163 Declare and initialize Iterator for working_Map_collection */
+163     std::map< int, std::shared_ptr<OSTM> >::iterator working_Map_collection_Object_Shared_Pointer_Iterator;
+164     /* @165 Find copy object in working_Map_collection by the object unique ID*/
+165     working_Map_collection_Object_Shared_Pointer_Iterator = working_Map_collection\&.find(object->Get_Unique_ID());
+166     /* @167 If object found, then replace it */
+167     if (working_Map_collection_Object_Shared_Pointer_Iterator != working_Map_collection\&.end()) {
+168         /* @169 Replace copy object in working_Map_collection associated with the unique ID key*/
+169         working_Map_collection_Object_Shared_Pointer_Iterator->second = object;
+170     /* @171 If error happes during store procees throw runtime error */  
+171     } else { throw std::runtime_error(std::string("[RUNTIME ERROR : NO OBJECT FOUND STORE FUNCTION, CANNOT STORE OBJECT]") );}
+172 }
+.fi
+.SS "void TX::th_exit ()\fC [private]\fP"
+
+.PP
+@52 th_exit void, delete all std::shared_ptr<OSTM> elements from working_Map_collection, that store pointers to working objects Clean up all associated values by the thread delete from working_Map_collection, it is an automated function by the transactions
+.PP
+\fBParameters:\fP
+.RS 4
+\fIworking_Map_collection\fP std::map, store std::shared_ptr<OSTM> transaction pointers 
+.RE
+.PP
+
+.PP
+Definition at line 52 of file TX\&.cpp\&.
+.PP
+References _tx_nesting_level, and working_Map_collection\&.
+.PP
+Referenced by commit()\&.
+.PP
+.nf
+52                  {
+53     /* @54 If bigger than ZERO, means active nested transactions running in background, do not delete anything yet */
+54     if (this->_tx_nesting_level > 0) {
+55         /* Active nested transactions running in background, do not delete anything yet */
+56     } else {
+57         /* Remove all elements map entries from transaction and clear the map */
+58         working_Map_collection\&.clear();
+59     }
+60 }
+.fi
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBTM\fP\fC [friend]\fP"
+
+.PP
+Definition at line 74 of file TX\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int TX::_tx_nesting_level\fC [private]\fP"
+_tx_nesting_level, store integer value represent the ttransaction nesting level 
+.PP
+Definition at line 101 of file TX\&.h\&.
+.PP
+Referenced by _decrease_tx_nesting(), _increase_tx_nesting(), commit(), th_exit(), and TX()\&.
+.SS "std::map< int, std::shared_ptr< \fBOSTM\fP > > TX::main_Process_Map_collection\fC [static]\fP, \fC [private]\fP"
+main_Process_Map_collection, STATIC GLOBAL MAP Collection to store \fBOSTM\fP parent based shared pointers to control/lock and compare objects version number within transactions 
+.PP
+Definition at line 105 of file TX\&.h\&.
+.PP
+Referenced by _register(), _release_object_lock(), commit(), and ostm_exit()\&.
+.SS "std::map< pid_t, std::map< int, int > > TX::process_map_collection\fC [static]\fP, \fC [private]\fP"
+process_map_collection, STATIC GLOBAL MAP Collection to store all process associated keys to find when deleting transactions 
+.PP
+Definition at line 109 of file TX\&.h\&.
+.PP
+Referenced by _print_all_tx(), _register(), and ostm_exit()\&.
+.SS "std::mutex TX::register_Lock\fC [static]\fP, \fC [private]\fP"
+register_Lock, std::mutex to control shared access on shared MAIN collection 
+.PP
+Definition at line 117 of file TX\&.h\&.
+.PP
+Referenced by _register()\&.
+.SS "int TX::test_counter = 0\fC [static]\fP"
+
+.PP
+Definition at line 82 of file TX\&.h\&.
+.PP
+Referenced by getTest_counter()\&.
+.SS "std::thread::id TX::transaction_Number\fC [private]\fP"
+transaction_Number, Returning the transaction number what is a registered thread number associated with the transaction 
+.PP
+Definition at line 97 of file TX\&.h\&.
+.PP
+Referenced by _get_tx_number(), and TX()\&.
+.SS "std::map< int, std::shared_ptr<\fBOSTM\fP> > TX::working_Map_collection\fC [private]\fP"
+working_Map_collection, Collection to store copy of \fBOSTM\fP parent based original Global shared pointers to make invisible changes during isolated transaction 
+.PP
+Definition at line 93 of file TX\&.h\&.
+.PP
+Referenced by _print_all_tx(), _register(), _release_object_lock(), commit(), load(), store(), and th_exit()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software transactional Memory from the source code\&.

@@ -10,14 +10,16 @@
 {\ttfamily \#include $<$stdio.\+h$>$}\\*
 {\ttfamily \#include $<$thread$>$}\\*
 {\ttfamily \#include \char`\"{}O\+S\+T\+M.\+h\char`\"{}}\\*
-Include dependency graph for T\+X.\+h\+:\nopagebreak
+Include dependency graph for T\+X.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{_t_x_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

@@ -24,10 +24,9 @@
 00034 \textcolor{comment}{     * De-constructor}
 00035 \textcolor{comment}{     */}
 00036     \textcolor{keyword}{virtual} \hyperlink{class_o_s_t_m_a30a17d73d0259c60eeab72d6dfa9ceb1_a30a17d73d0259c60eeab72d6dfa9ceb1}{~OSTM}();
-\hypertarget{_o_s_t_m_8h_source.tex_l00041}{}\hyperlink{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d_a535d90fced5adbb70312c92f3778e08d}{00041}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d_a535d90fced5adbb70312c92f3778e08d}{copy}(std::shared\_ptr<OSTM> from, std::shared\_ptr<OSTM> to)\{\};  
-\hypertarget{_o_s_t_m_8h_source.tex_l00046}{}\hyperlink{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f42714f94c}{00046}     \textcolor{keyword}{virtual} std::shared\_ptr<OSTM> \hyperlink{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f42714f94c}{getBaseCopy}(std::shared\_ptr<OSTM> \textcolor{keywordtype}{object})\{\};\textcolor{comment}{//std::cout <<
-       "[OSTM GETBASECOPY]" << std::endl;\};}
-\hypertarget{_o_s_t_m_8h_source.tex_l00051}{}\hyperlink{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203309ae8a59}{00051} \textcolor{comment}{}    \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203309ae8a59}{toString}()\{\};
+\hypertarget{_o_s_t_m_8h_source.tex_l00041}{}\hyperlink{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203309ae8a59}{00041}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203309ae8a59}{toString}()\{\};
+\hypertarget{_o_s_t_m_8h_source.tex_l00046}{}\hyperlink{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d_a535d90fced5adbb70312c92f3778e08d}{00046}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d_a535d90fced5adbb70312c92f3778e08d}{copy}(std::shared\_ptr<OSTM> from, std::shared\_ptr<OSTM> to)\{\};  
+\hypertarget{_o_s_t_m_8h_source.tex_l00051}{}\hyperlink{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f42714f94c}{00051}     \textcolor{keyword}{virtual} std::shared\_ptr<OSTM> \hyperlink{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f42714f94c}{getBaseCopy}(std::shared\_ptr<OSTM> \textcolor{keywordtype}{object})\{\};
 00052     \textcolor{comment}{/*}
 00053 \textcolor{comment}{     * Setter for object unique id}
 00054 \textcolor{comment}{     * @param uniqueID Integer to set the uniqueId}
@@ -80,7 +79,7 @@
 00101 \textcolor{comment}{     * Function to try lock the object itself if it is not locked. Return boolean value TRUE/FALSE
        depending if it is can lock or not.}
 00102 \textcolor{comment}{     */}
-00103     \textcolor{keywordtype}{bool} \hyperlink{class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_afb6520023ed2c4a6188b688c46f192d0}{is\_Locked}();
+00103     \textcolor{keywordtype}{bool} \hyperlink{class_o_s_t_m_af3dd41488087b678c95b2f5c16486947_af3dd41488087b678c95b2f5c16486947}{try\_lock}();
 00104 
 00105 \textcolor{keyword}{private}:
 \hypertarget{_o_s_t_m_8h_source.tex_l00111}{}\hyperlink{class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_a9a6ea36181be2db7f9082d77956511d7}{00111}     \textcolor{keywordtype}{int} \hyperlink{class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_a9a6ea36181be2db7f9082d77956511d7}{version};

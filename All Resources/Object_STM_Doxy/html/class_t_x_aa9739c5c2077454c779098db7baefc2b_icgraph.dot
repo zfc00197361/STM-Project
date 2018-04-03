@@ -1,0 +1,11 @@
+digraph "TX::ostm_exit"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TX::ostm_exit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="TM::_TX_EXIT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_m.html#a5e2d1127f2429f2f524d25f430eade06",tooltip="_TX_EXIT void, the thread calls the ostm_exit function in the transaction, and clear all elements fro..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe"];
+}

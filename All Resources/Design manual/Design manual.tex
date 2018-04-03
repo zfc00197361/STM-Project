@@ -80,17 +80,18 @@
 \setcounter{page}{1}
 
 \section{Introduction}
-This document is introducing the design of the C++ STM library logic and structure. The document will describe the flow of the data within the library and the external application that uses the STM library. The use case diagram will discover the possible library API interface functionalities that need to implement in the project. With the use cases and the detailed use cases can characterize the required steps and potential alternative steps during the library execution life cycle. The domain model shows the main functionality of the library and the association between the software components, follows with the sequence diagram that helps to understand the sequence of steps required to follows each other to implement lock free atomic transaction.\\
+This document is introducing the design of the C++ STM library logic and structure. The document will describe the flow of the data within the library and the external application that uses the STM library. The use case diagram will discover the possible library API interface functionalities that need to implement in the project. With the use cases and the detailed use cases can characterize the required steps and potential alternative steps during the library execution life cycle. The domain model shows the main functionality of the library and the association between the software components, follows with the sequence diagram that helps to understand the sequence of steps required to implement lock free, object based locking atomic, transactional mechanism.\\
 
-This document helps to discover the potential errors and required handlers with the use cases and the sequence diagram. However, this diagrams and use case descriptions are identify the potential issues and risks, that may can mislead the future development if not well designed. To use or test the STM library implementation, the programmers must to write their own application and includes it like any external libraries in C or C++ programming design. The usage of the library can happen with the object method call that will be described in the use case diagram and studies thoroughly in the detailed use cases.\\
+This document helps to discover the potential errors and required handlers with the use cases and the sequence diagram. However, this diagrams and use case descriptions are identify the potential issues and risks, that may can mislead the future development if not well designed. To use, or test the STM library implementation, the programmers must to write their own client application and includes the library, like any other (external) libraries in C or C++ programming design. The usage of the library will happen with the API function calls, that will be described in the use case diagram and studies thoroughly in the detailed use cases.\\
  
  
 \newpage
 \section{Model of the application}
-The flow diagram \textit{Figure 2} introducing the dynamic relationship of the STM library. This relations interacting with the external application and the objects delegated to the STM library. In order to use the STM library the programmers must include it in the programmed module, to create an instance of a transaction, associated with the application by the Process ID to use the API interfaces. When the instances is created then the function calls are available to the library object. The key of the library usage is that the programmers can not instantiate more then one transaction object of the library per application, because the library will keep track of all process accessed the transaction manager by the process or process ID in the built in Data structure.
+The flow diagram \textit{Figure 2} introducing the dynamic relationship of the STM library. This relations interacting with the client application and the objects delegated by the STM library. In order to use the STM library, the programmers must include it in the main module, to create an instance of a transaction manager, associated with the application by the Process ID to use the API interfaces. When the instances is created then the API function will be available to the client application. The key of the library usage, the connected processes can not instantiate more then one transaction manager object of the library, because the library use singleton object instantiation, that keep track of all process accessed the transaction manager by the process ID. This way the library can register all connected process in the built in Data structure.
 
-\subsection{Library integration to the application}
-The library at compilation time get integrated into the C/C++ application. First the source code get transformed into intermediate code, that later get compiled and linked with the STM library. As the STM library included in the source code, the library will be linked when the executable created from the application. \\
+\subsection{Library integration to the client application}
+The final solution will include shared and static library solution. The shared library is linked to the client application at compilation time, and the code can be shared between multiple processes. The static library code gets integrated to the client application, which is not shared with other processes. With the booth solution the header files must used as a reference to the library API functions. When the executable created, the header files and the static library file are not required any more. The shared library should be kept somewhere in the operating system.\\
+
 
 \begin{figure}[h!]
 \centering
@@ -108,13 +109,13 @@ The library at compilation time get integrated into the C/C++ application. First
 
 When the \textbf{create transaction} API call happens by the application, the library place a new transactional object into the built in data structure, associating by the process ID and returning back a transactional object to the given application.\\
 
-The \textbf{start transaction} API call will starting the process of the Object transactional life cycle. First, place the object into the read set, and creates a copy of it to the write set to use it for local temporary changes, and add a version number to it, as a counter to determine the Object changes. Because more then one thread can use the same object it must check the version number at the first step to determine the changes at early stage of the object transactional life cycle. If the version number in the object is different then the global version number the transaction will cancel and restart. If the transaction that the object hold and the global version number in the write set are same, then the copy of the object in the write set will update to the new required value. Before the original object can change from the local copy, the transaction library must check the version numbers equality again. If the version numbers are same, that means no other process accessed the same object during the updating process, and the object can get assign the new value. Otherwise, the transaction must cancel if the object has accessed by other process and the life cycle restart again.\\
+The \textbf{start transaction} API call will starting the process of the Object transactional life cycle. First, place the object into the (global shared) read set, and creates a copy of it to the write set, to use it for local temporary changes, and add a version number to it, as a counter to determine the Object changes. Because more then one thread can use the same object, it must check the version number at the first step to determine the changes at early stage of the object transactional life cycle. If the version number in the object is different then the global version number, the transaction will cancel and restart. If the version number that the object hold and the global version number in the write set are same, then the copy of the object in the write set will update to the new required value. Before the original object can change from the local copy, the transaction library must check the version numbers equality again. If the version numbers are same, that means no other process accessed the same object during the updating process, and the object can get assign the new value. Otherwise, the transaction must cancel and the life cycle restart again.\\
 
-In this phase of the program execution, the transaction marked as processable process, and the \textbf{commit method} available for execution. This API call will update the original object, update/increase the version number assigned to it and returns back to the main process and finish it execution. If other processes or thread are still using the same object, they must detect the changes on the version number, and restart the transactional if it required.
+In this phase of the program execution, the transaction marked as processable process, and the \textbf{commit method} available for execution. This API call will update the original object, update/increase the version number assigned to it and returns back to the main process to finish it execution. If other processes or thread are still using the same object, they must detect the changes on the version number, and restart the transactional if required.
 
 \newpage
 \section{API usage}
-This part of the document will design the library API interface function usage by the external application. First the library function calls will be demonstrated with a simple test application, then the library methods.\\
+This part of the document will design the library API interface function(s), that will use by the external application. First, the library function (API) calls will be demonstrated with a simple test application, then the library methods.\\
 
 \begin{lstlisting}[
     basicstyle=\tiny, %or \small or \footnotesize etc.
@@ -133,7 +134,7 @@ class Account : public Tobj{
 			int amount;
 			int accountID;
 			string accountHolder;
-			Account(int amount, int accountID, string accountHolder){
+			Account(int amount, int accountID, string accountHolder):Tobj(){
 				this->amount = amount;
 				this->accountID = accountID;
 				this->accountHolder = accountHolder;
@@ -673,12 +674,18 @@ This section of the document the use case diagram will list the API actions or e
 The domain model is quiet simple since the library do not need include many classes and functions to implement the Software Transactional Memory implementation with the basic functions. Of course, many STM library has implementation of different binary trees as well, that make it more bigger and complex. 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.4]{Pictures/domainModel.png}
+\includegraphics[scale=0.25]{Pictures/domainModel.png}
 \caption{\textit{\color{gray}The class hierarchy.}}
 \end{figure}
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.25]{Pictures/Domain_model.png}
+\caption{\textit{\color{gray}Updated Domain Model.}}
+\end{figure}
+
 \section{Testing the STM Library}
-The only way to test the Software Transaction Memory library functionalities, is to create an application and include the shared library in it. Test is a very important process of the project life cycle.
+One way to test the Software Transaction Memory library functionalities, is to create a client application and include the shared library in it. The other way is to use a C++ Testing framework such as CppUnit to test API functions and the library itself.
 As the library getting more functionality during the development, those functions should be tested one by one. Because the functions have return values, it makes the testing process more easier.\\
 
 \textbf{The functions can be tested separately like:}
@@ -695,28 +702,29 @@ As the library getting more functionality during the development, those function
 {\setlength{\parindent}{0cm}
 The library should able to handle single or multiple threaded environments as well.\\
 
-Single thread multiple transactional object exchange test:\\
-Thread accessing Object1 and Object2.\\
+Multi threaded multiple object exchange test : 10 threads\\
+Multiple Threads accessing Object1 and Object2.\\
 Object1 balance is 100 unit.\\
 Object2 balance is 100 unit.\\
-Object1 receive 50 unit from Object2.\\
+Every transaction transfer 5 unit from Object2 to Object1
+Object1 receive 50 (10*5) unit from Object2.\\
 After transactional process Object1 has 150 unit and Object2 has 50 unit.\\
 
-Multi-threaded single Object test with 10 threads:\\
+Multi-threaded single Object test : 10 threads:\\
 Object1 has 100 unit.\\
 Every thread increase the amount on Object1 by 1 unit.\\
 After the test Object1 has 110 units.\\
 
-Single-threaded multiple object test:\\
-One thread accessing collection of Objects 10 Objects.\\
+Single-threaded multiple object test: 1 thread\\
+One thread accessing collection of Objects : 10 Objects.\\
 Every Objects in the collection has 10 unit.\\
-The thread goes through on each objects 5 times and increase the amount by 1 units.\\
+The thread (process) goes through on each objects 5 times and increase the amount by 1 units.\\
 After the test all Object in the collection has 15 units.  \\
 
-Multi-threaded multiple Objects test :\\
+Multi-threaded multiple Objects test : 10 threads\\
 Ten threads are  accessing a collection of 10 Objects.\\
 Every Objects has 10 unit.\\
-Every threads will accessing every the Objects in the collection and increasing the amount by 1 unit.\\
+Every threads will accessing every Objects in the collection and increasing the amount by 1 unit.\\
 After the test every Object has 20 units.\\
 
 Test the library with two different running processes, that has different process id, and perhaps hold two different transactional objects. Any of the above testing method can apply for this test, using by two applications in the same time.  

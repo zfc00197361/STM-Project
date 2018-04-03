@@ -1,0 +1,789 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="main_8cpp">
+    <title>main.cpp File Reference</title>
+    <programlisting>#include &lt;cstdlib&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;thread&gt;</programlisting>
+    <programlisting>#include &quot;TM.h&quot;</programlisting>
+    <programlisting>#include &quot;AIB.h&quot;</programlisting>
+    <programlisting>#include &quot;BOI.h&quot;</programlisting>
+    <programlisting>#include &quot;BOA.h&quot;</programlisting>
+    <programlisting>#include &quot;SWBPLC.h&quot;</programlisting>
+    <programlisting>#include &quot;ULSTER.h&quot;</programlisting>
+    <programlisting>#include &quot;UNBL.h&quot;</programlisting>
+    <programlisting>#include &quot;WAREHOUSE.h&quot;</programlisting>
+    <programlisting>#include &quot;CARPHONE_WAREHOUSE.h&quot;</programlisting>
+    <programlisting>#include &quot;CARLOW_W.h&quot;</programlisting>
+    <programlisting>#include &quot;KILKENNY_W.h&quot;</programlisting>
+    <programlisting>#include &quot;TALLAGH_W.h&quot;</programlisting>
+    <programlisting>#include &quot;DUNDALK_W.h&quot;</programlisting>
+    <programlisting>#include &quot;SLIGO_W.h&quot;</programlisting>
+    <programlisting>#include &lt;mutex&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &lt;condition_variable&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+<para>Include dependency diagram for main.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="main_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for main.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="main_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="main_8cpp_a988177ecdd12249ecd3a1cdc75546c44_1a988177ecdd12249ecd3a1cdc75546c44">vector_number</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="main_8cpp_a0099d241c74532abfb1baae50a52da52_1a0099d241c74532abfb1baae50a52da52">_complex_transfer_</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_two_, std::vector&lt; std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt;&gt; _customer_vec, <link linkend="class_t_m">TM</link> &amp; _tm, double _amount)<para><emphasis>&lt;em&gt;complex_transfer&lt;/em&gt; function, takes two std::shared_ptr&lt;OSTM&gt; pointer, a vector of std::shared_ptr&lt;OSTM&gt; pointers, the Transaction manager, and the amount to use in the transaction, and transfer the _amount value from booth single
+objects to the objects to the vector collection</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="main_8cpp_a12500f2bcc3c3bb8ad7dd9d74c1637d1_1a12500f2bcc3c3bb8ad7dd9d74c1637d1">_complex_warehouse_transfer_</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_two, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_three, std::vector&lt; std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt;&gt; _warehouse_vec, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_, <link linkend="class_t_m">TM</link> &amp; _tm, double _amount)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="main_8cpp_a52fcb0d50c67be8cd20f2aca338683c7_1a52fcb0d50c67be8cd20f2aca338683c7">_nested_warehouse_transfer_</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_two, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_three, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_, <link linkend="class_t_m">TM</link> &amp; _tm, double _amount)<para><emphasis>&lt;em&gt;nested_warehouse_transfer&lt;/em&gt; function, takes three std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_1a5675cb594d74aa1bf5e80233370ffd81">_nesting_</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_, <link linkend="class_t_m">TM</link> &amp; _tm, double _amount)<para><emphasis>&lt;em&gt;nesting&lt;/em&gt; function, takes two std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account
+This function create nested transactions inside the transaction, and call other function to nesting the transaction as well</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="main_8cpp_a944b67b9489cc68c8eac66d42f4515ec_1a944b67b9489cc68c8eac66d42f4515ec">_six_account_transfer_</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_one_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_two_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_three_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_four_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_five_, <link linkend="class_t_m">TM</link> &amp; _tm, double _amount)<para><emphasis>&lt;em&gt;six_account_transfer&lt;/em&gt; function, takes six std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from five account to one account</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3_1a83aef8c5b69afef4e38d14c17fe782b3">_two_account_transfer_</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_, <link linkend="class_t_m">TM</link> &amp; _tm, double _amount)<para><emphasis>&lt;em&gt;two_account_transfer&lt;/em&gt; function, takes two std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc_1a1c170f18aac9dbb8aba1ad2f7e4619cc">_warehouse_transfer_</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_, <link linkend="class_t_m">TM</link> &amp; _tm, double _amount)<para><emphasis>&lt;em&gt;warehouse_transfer&lt;/em&gt; function, takes two std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_1a840291bc02cba5474a4cb46a9b9566fe">main</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file main.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">/*</emphasis>
+2 <emphasis class="comment">&#32;*&#32;To&#32;change&#32;this&#32;license&#32;header,&#32;choose&#32;License&#32;Headers&#32;in&#32;Project&#32;Properties.</emphasis>
+3 <emphasis class="comment">&#32;*&#32;To&#32;change&#32;this&#32;template&#32;file,&#32;choose&#32;Tools&#32;|&#32;Templates</emphasis>
+4 <emphasis class="comment">&#32;*&#32;and&#32;open&#32;the&#32;template&#32;in&#32;the&#32;editor.</emphasis>
+5 <emphasis class="comment">&#32;*/</emphasis>
+6 
+7 <emphasis class="comment">/*</emphasis>
+8 <emphasis class="comment">&#32;*&#32;File:&#32;&#32;&#32;main.cpp</emphasis>
+9 <emphasis class="comment">&#32;*&#32;Author:&#32;zoltan</emphasis>
+10 <emphasis class="comment">&#32;*</emphasis>
+11 <emphasis class="comment">&#32;*&#32;Created&#32;on&#32;November&#32;27,&#32;2017,&#32;9:26&#32;PM</emphasis>
+12 <emphasis class="comment">&#32;*/</emphasis>
+13 
+14 <emphasis class="preprocessor">#include&#32;&lt;cstdlib&gt;</emphasis>
+15 <emphasis class="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+16 <emphasis class="preprocessor">#include&#32;&lt;thread&gt;</emphasis>
+17 <emphasis class="comment">//#include&#32;&lt;unistd.h&gt;//used&#32;for&#32;pid_t</emphasis>
+18 
+19 <emphasis class="comment">//STM&#32;library&#32;requirement</emphasis>
+20 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_t_m_8h">TM.h</link>&quot;</emphasis>
+21 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_a_i_b_8h">AIB.h</link>&quot;</emphasis>&#32;&#32;&#32;&#32;<emphasis class="comment">//Bank&#32;Account</emphasis>
+22 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_b_o_i_8h">BOI.h</link>&quot;</emphasis>&#32;&#32;&#32;&#32;<emphasis class="comment">//Bank&#32;Account</emphasis>
+23 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_b_o_a_8h">BOA.h</link>&quot;</emphasis>&#32;&#32;&#32;&#32;<emphasis class="comment">//Bank&#32;Account</emphasis>
+24 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_s_w_b_p_l_c_8h">SWBPLC.h</link>&quot;</emphasis>&#32;<emphasis class="comment">//Bank&#32;Account</emphasis>
+25 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_u_l_s_t_e_r_8h">ULSTER.h</link>&quot;</emphasis>&#32;<emphasis class="comment">//Bank&#32;Account</emphasis>
+26 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_u_n_b_l_8h">UNBL.h</link>&quot;</emphasis>&#32;&#32;&#32;<emphasis class="comment">//Bank&#32;Account</emphasis>
+27 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_w_a_r_e_h_o_u_s_e_8h">WAREHOUSE.h</link>&quot;</emphasis>&#32;&#32;&#32;<emphasis class="comment">//WAREHOUSE</emphasis>
+28 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h">CARPHONE_WAREHOUSE.h</link>&quot;</emphasis>&#32;<emphasis class="comment">//WAREHOUSE</emphasis>
+29 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_c_a_r_l_o_w___w_8h">CARLOW_W.h</link>&quot;</emphasis>&#32;&#32;&#32;&#32;<emphasis class="comment">//WAREHOUSE</emphasis>
+30 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_k_i_l_k_e_n_n_y___w_8h">KILKENNY_W.h</link>&quot;</emphasis>&#32;&#32;<emphasis class="comment">//WAREHOUSE</emphasis>
+31 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_t_a_l_l_a_g_h___w_8h">TALLAGH_W.h</link>&quot;</emphasis>&#32;&#32;&#32;<emphasis class="comment">//WAREHOUSE</emphasis>
+32 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_d_u_n_d_a_l_k___w_8h">DUNDALK_W.h</link>&quot;</emphasis>&#32;&#32;&#32;<emphasis class="comment">//WAREHOUSE</emphasis>
+33 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_s_l_i_g_o___w_8h">SLIGO_W.h</link>&quot;</emphasis>&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//WAREHOUSE</emphasis>
+34 <emphasis class="preprocessor">#include&#32;&lt;mutex&gt;</emphasis>
+35 <emphasis class="preprocessor">#include&#32;&lt;memory&gt;</emphasis>
+36 <emphasis class="preprocessor">#include&#32;&lt;condition_variable&gt;</emphasis>
+37 <emphasis class="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+38 
+39 
+<link linkend="main_8cpp_a988177ecdd12249ecd3a1cdc75546c44_1a988177ecdd12249ecd3a1cdc75546c44">43 </link><emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="main_8cpp_a988177ecdd12249ecd3a1cdc75546c44_1a988177ecdd12249ecd3a1cdc75546c44">vector_number</link>&#32;=&#32;600;
+44 
+<link linkend="main_8cpp_a944b67b9489cc68c8eac66d42f4515ec_1a944b67b9489cc68c8eac66d42f4515ec">51 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="main_8cpp_a944b67b9489cc68c8eac66d42f4515ec_1a944b67b9489cc68c8eac66d42f4515ec">_six_account_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_one_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_two_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_three_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_four_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_five_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+52 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+56 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+57 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_one_);
+58 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_two_);
+59 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_three_);
+60 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_four_);
+61 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_five_);
+62 
+66 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM,&#32;_FROM_ONE_OSTM,&#32;_FROM_TWO_OSTM,&#32;_FROM_THREE_OSTM,&#32;_FROM_FOUR_OSTM,&#32;_FROM_FIVE_OSTM;
+67 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_,&#32;_FROM_ONE_,&#32;_FROM_TWO_,&#32;_FROM_THREE_,&#32;_FROM_FOUR_,&#32;_FROM_FIVE_;
+68 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+74 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_to_));
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_ONE_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_one_));
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_two_));
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_THREE_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_three_));
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FOUR_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_four_));
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FIVE_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_five_));
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_-&gt;GetBalance()&#32;+&#32;(_amount&#32;*&#32;5));
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_ONE_-&gt;SetBalance(_FROM_ONE_-&gt;GetBalance()&#32;-&#32;_amount);
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_-&gt;SetBalance(_FROM_TWO_-&gt;GetBalance()&#32;-&#32;_amount);
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_THREE_-&gt;SetBalance(_FROM_THREE_-&gt;GetBalance()&#32;-&#32;_amount);
+87 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FOUR_-&gt;SetBalance(_FROM_FOUR_-&gt;GetBalance()&#32;-&#32;_amount);
+88 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FIVE_-&gt;SetBalance(_FROM_FIVE_-&gt;GetBalance()&#32;-&#32;_amount);
+92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_);
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_ONE_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_ONE_);
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_TWO_);
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_THREE_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_THREE_);
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FOUR_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_FOUR_);
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FIVE_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_FIVE_);
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM);
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_ONE_OSTM);
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_TWO_OSTM);
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_THREE_OSTM);
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_FOUR_OSTM);
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_FIVE_OSTM);
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+112 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+114 &#32;&#32;&#32;&#32;}
+115 }
+116 
+<link linkend="main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3_1a83aef8c5b69afef4e38d14c17fe782b3">123 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3_1a83aef8c5b69afef4e38d14c17fe782b3">_two_account_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+124 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+128 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+129 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_);
+133 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_,&#32;_FROM_BANK_;
+134 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM_,&#32;_FROM_OSTM_;
+135 
+136 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+137 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_to_));
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_));
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_BANK_-&gt;GetBalance()&#32;+&#32;_amount);
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_-&gt;SetBalance(_FROM_BANK_-&gt;GetBalance()&#32;-&#32;_amount);
+152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_BANK_);
+153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_BANK_);
+157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_);
+159 
+163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;txTwo&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+164 
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;nestedDone&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!nestedDone)&#32;{
+167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(txTwo-&gt;load(_to_));
+168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(txTwo-&gt;load(_from_));
+172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_BANK_-&gt;GetBalance()&#32;+&#32;_amount);
+173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_-&gt;SetBalance(_FROM_BANK_-&gt;GetBalance()&#32;-&#32;_amount);
+177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_BANK_);
+178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_BANK_);
+182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;txTwo-&gt;store(_TO_OSTM_);
+183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;txTwo-&gt;store(_FROM_OSTM_);
+187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nestedDone&#32;=&#32;txTwo-&gt;commit();
+188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+194 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+196 &#32;&#32;&#32;&#32;}
+197 }
+198 
+<link linkend="main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_1a5675cb594d74aa1bf5e80233370ffd81">206 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_1a5675cb594d74aa1bf5e80233370ffd81">_nesting_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+207 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+211 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+212 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_);
+216 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_,&#32;_FROM_BANK_;
+217 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM_,&#32;_FROM_OSTM_;
+218 
+219 
+220 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+221 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_to_));
+227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_));
+231 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_BANK_-&gt;GetBalance()&#32;+&#32;_amount);
+232 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_-&gt;SetBalance(_FROM_BANK_-&gt;GetBalance()&#32;-&#32;_amount);
+236 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_BANK_);
+237 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_BANK_);
+241 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+242 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_);
+243 
+247 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;txTwo&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+248 
+249 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;nestedDone&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+250 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!nestedDone)&#32;{
+251 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(txTwo-&gt;load(_to_));
+252 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(txTwo-&gt;load(_from_));
+256 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_BANK_-&gt;GetBalance()&#32;+&#32;_amount);
+257 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_-&gt;SetBalance(_FROM_BANK_-&gt;GetBalance()&#32;-&#32;_amount);
+261 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_BANK_);
+262 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_BANK_);
+266 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;txTwo-&gt;store(_TO_OSTM_);
+267 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;txTwo-&gt;store(_FROM_OSTM_);
+272 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3_1a83aef8c5b69afef4e38d14c17fe782b3">_two_account_transfer_</link>(_to_,&#32;_from_,&#32;_tm,&#32;_amount);
+273 
+274 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nestedDone&#32;=&#32;txTwo-&gt;commit();
+275 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+276 
+280 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+281 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+282 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+283 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+284 &#32;&#32;&#32;&#32;}
+285 }
+286 
+<link linkend="main_8cpp_a0099d241c74532abfb1baae50a52da52_1a0099d241c74532abfb1baae50a52da52">294 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="main_8cpp_a0099d241c74532abfb1baae50a52da52_1a0099d241c74532abfb1baae50a52da52">_complex_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_two_,&#32;std::vector&lt;std::shared_ptr&lt;OSTM&gt;&gt;&#32;_customer_vec,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+295 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+299 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_);
+300 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_two_);
+304 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_FROM_OSTM_ONE_,&#32;_FROM_OSTM_TWO_,&#32;_TO_OSTM_;
+305 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_,&#32;_FROM_TWO_,&#32;_TO_;
+306 
+307 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+308 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+309 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+310 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;for&#32;(int&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;vector_number;&#32;++i)&#32;{</emphasis>
+311 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keyword">auto</emphasis>&amp;&amp;&#32;obj&#32;:&#32;_customer_vec)&#32;{
+315 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;auto&amp;&amp;&#32;obj&#32;=&#32;_customer_vec.at(i);</emphasis>
+316 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;_register(obj);
+320 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_));
+321 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_two_));
+322 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(obj));
+326 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_FROM_-&gt;GetBalance()&#32;-&#32;_amount);
+327 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_-&gt;SetBalance(_FROM_TWO_-&gt;GetBalance()&#32;-&#32;_amount);
+328 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_-&gt;SetBalance(_TO_-&gt;GetBalance()&#32;+&#32;(_amount&#32;*&#32;2));
+332 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_ONE_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_);
+333 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_TWO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_TWO_);
+334 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_);
+338 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_ONE_);
+339 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_TWO_);
+340 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+341 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+345 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+346 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+347 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+348 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+349 &#32;&#32;&#32;&#32;}
+350 }
+351 
+<link linkend="main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc_1a1c170f18aac9dbb8aba1ad2f7e4619cc">358 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc_1a1c170f18aac9dbb8aba1ad2f7e4619cc">_warehouse_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+359 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+363 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+364 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_);
+368 &#32;&#32;&#32;&#32;std::shared_ptr&lt;WAREHOUSE&gt;&#32;_TO_SHOP_,&#32;_FROM_DIST_;
+369 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM_,&#32;_FROM_OSTM_;
+370 
+371 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+372 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+373 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+377 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;&#32;(tx-&gt;load(_to_));
+378 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;&#32;(tx-&gt;load(_from_));
+382 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;<link linkend="class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f_1a300d1fe21a47e45c0d5d27e25add346f">SetNumber_of_nokia</link>(_TO_SHOP_-&gt;GetNumber_of_nokia()&#32;+&#32;_amount);
+383 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_nokia(_FROM_DIST_-&gt;GetNumber_of_nokia()&#32;-&#32;_amount);
+384 
+385 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_samsung(_TO_SHOP_-&gt;GetNumber_of_samsung()&#32;+&#32;_amount);
+386 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_samsung(_FROM_DIST_-&gt;GetNumber_of_samsung()&#32;-&#32;_amount);
+387 
+388 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_iphones(_TO_SHOP_-&gt;GetNumber_of_iphones()&#32;+&#32;_amount);
+389 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_iphones(_FROM_DIST_-&gt;GetNumber_of_iphones()&#32;-&#32;_amount);
+390 
+391 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_sony(_TO_SHOP_-&gt;GetNumber_of_sony()&#32;+&#32;_amount);
+392 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_sony(_FROM_DIST_-&gt;GetNumber_of_sony()&#32;-&#32;_amount);
+396 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_SHOP_);
+397 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_DIST_);
+401 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+402 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_);
+406 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+407 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+408 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+409 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+410 &#32;&#32;&#32;&#32;}
+411 }
+412 
+<link linkend="main_8cpp_a52fcb0d50c67be8cd20f2aca338683c7_1a52fcb0d50c67be8cd20f2aca338683c7">419 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="main_8cpp_a52fcb0d50c67be8cd20f2aca338683c7_1a52fcb0d50c67be8cd20f2aca338683c7">_nested_warehouse_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_to_two,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_to_three,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+420 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+424 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+425 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_two);
+426 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_three);
+427 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_);
+431 &#32;&#32;&#32;&#32;std::shared_ptr&lt;WAREHOUSE&gt;&#32;_TO_SHOP_,&#32;_FROM_DIST_;
+432 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM_,&#32;_FROM_OSTM_;
+433 
+434 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+435 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+436 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+440 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;&#32;(tx-&gt;load(_to_));
+441 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;&#32;(tx-&gt;load(_from_));
+445 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;<link linkend="class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f_1a300d1fe21a47e45c0d5d27e25add346f">SetNumber_of_nokia</link>(_TO_SHOP_-&gt;GetNumber_of_nokia()&#32;+&#32;_amount);
+446 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_nokia(_FROM_DIST_-&gt;GetNumber_of_nokia()&#32;-&#32;_amount);
+447 
+448 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_samsung(_TO_SHOP_-&gt;GetNumber_of_samsung()&#32;+&#32;_amount);
+449 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_samsung(_FROM_DIST_-&gt;GetNumber_of_samsung()&#32;-&#32;_amount);
+450 
+451 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_iphones(_TO_SHOP_-&gt;GetNumber_of_iphones()&#32;+&#32;_amount);
+452 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_iphones(_FROM_DIST_-&gt;GetNumber_of_iphones()&#32;-&#32;_amount);
+453 
+454 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_sony(_TO_SHOP_-&gt;GetNumber_of_sony()&#32;+&#32;_amount);
+455 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_sony(_FROM_DIST_-&gt;GetNumber_of_sony()&#32;-&#32;_amount);
+459 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_SHOP_);
+460 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_DIST_);
+464 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+465 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_);
+466 
+470 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;txTwo&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+471 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;nestedDone&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+472 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!nestedDone)&#32;{
+473 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;&#32;(txTwo-&gt;load(_to_two));
+474 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;&#32;(txTwo-&gt;load(_from_));
+478 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;<link linkend="class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f_1a300d1fe21a47e45c0d5d27e25add346f">SetNumber_of_nokia</link>(_TO_SHOP_-&gt;GetNumber_of_nokia()&#32;+&#32;_amount);
+479 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_nokia(_FROM_DIST_-&gt;GetNumber_of_nokia()&#32;-&#32;_amount);
+480 
+481 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_samsung(_TO_SHOP_-&gt;GetNumber_of_samsung()&#32;+&#32;_amount);
+482 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_samsung(_FROM_DIST_-&gt;GetNumber_of_samsung()&#32;-&#32;_amount);
+483 
+484 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_iphones(_TO_SHOP_-&gt;GetNumber_of_iphones()&#32;+&#32;_amount);
+485 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_iphones(_FROM_DIST_-&gt;GetNumber_of_iphones()&#32;-&#32;_amount);
+486 
+487 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_sony(_TO_SHOP_-&gt;GetNumber_of_sony()&#32;+&#32;_amount);
+488 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_sony(_FROM_DIST_-&gt;GetNumber_of_sony()&#32;-&#32;_amount);
+492 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_SHOP_);
+493 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_DIST_);
+497 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;txTwo-&gt;store(_TO_OSTM_);
+498 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;txTwo-&gt;store(_FROM_OSTM_);
+499 
+500 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+501 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;NESTED&#32;TRANSACTION&#32;TEST&#32;_to_three</emphasis>
+502 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+503 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc_1a1c170f18aac9dbb8aba1ad2f7e4619cc">_warehouse_transfer_</link>(_to_three,&#32;_from_,&#32;_tm,&#32;_amount);
+504 
+505 
+506 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nestedDone&#32;=&#32;tx-&gt;commit();
+507 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+511 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+512 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+513 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+514 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+515 &#32;&#32;&#32;&#32;}
+516 }
+517 
+<link linkend="main_8cpp_a12500f2bcc3c3bb8ad7dd9d74c1637d1_1a12500f2bcc3c3bb8ad7dd9d74c1637d1">518 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="main_8cpp_a12500f2bcc3c3bb8ad7dd9d74c1637d1_1a12500f2bcc3c3bb8ad7dd9d74c1637d1">_complex_warehouse_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_to_two,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_to_three,&#32;std::vector&lt;std::shared_ptr&lt;OSTM&gt;&gt;&#32;_warehouse_vec,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+519 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+523 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+524 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_two);
+525 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_three);
+526 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_);
+530 &#32;&#32;&#32;&#32;std::shared_ptr&lt;WAREHOUSE&gt;&#32;_TO_SHOP_,&#32;_TO_SHOP_TWO,&#32;_TO_SHOP_VEC,&#32;_FROM_DIST_;
+531 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM_,&#32;_TO_OSTM_TWO,&#32;_TO_OSTM_VEC,&#32;_FROM_OSTM_;
+532 
+533 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+534 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+535 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+536 
+537 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;for&#32;(int&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;vector_number;&#32;++i)&#32;{</emphasis>
+538 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keyword">auto</emphasis>&amp;&amp;&#32;obj&#32;:&#32;_warehouse_vec)&#32;{
+542 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//auto&amp;&amp;&#32;obj&#32;=&#32;_warehouse_vec.at(i);</emphasis>
+543 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;_register(obj);
+547 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;&#32;(tx-&gt;load(_to_));
+548 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_TWO&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;&#32;(tx-&gt;load(_to_two));
+549 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_VEC&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;&#32;(tx-&gt;load(obj));
+550 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;&#32;(tx-&gt;load(_from_));
+551 
+555 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;<link linkend="class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f_1a300d1fe21a47e45c0d5d27e25add346f">SetNumber_of_nokia</link>(_TO_SHOP_-&gt;GetNumber_of_nokia()&#32;+&#32;_amount);
+556 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_TWO-&gt;SetNumber_of_nokia(_TO_SHOP_TWO-&gt;GetNumber_of_nokia()&#32;+&#32;_amount);
+557 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_VEC-&gt;SetNumber_of_nokia(_TO_SHOP_VEC-&gt;GetNumber_of_nokia()&#32;+&#32;_amount);
+558 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_nokia(_FROM_DIST_-&gt;GetNumber_of_nokia()&#32;-&#32;(_amount&#32;*&#32;3));
+559 
+560 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_samsung(_TO_SHOP_-&gt;GetNumber_of_samsung()&#32;+&#32;_amount);
+561 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_TWO-&gt;SetNumber_of_samsung(_TO_SHOP_TWO-&gt;GetNumber_of_samsung()&#32;+&#32;_amount);
+562 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_VEC-&gt;SetNumber_of_samsung(_TO_SHOP_VEC-&gt;GetNumber_of_samsung()&#32;+&#32;_amount);
+563 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_samsung(_FROM_DIST_-&gt;GetNumber_of_samsung()&#32;-&#32;(_amount&#32;*&#32;3));
+564 
+565 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_iphones(_TO_SHOP_-&gt;GetNumber_of_iphones()&#32;+&#32;_amount);
+566 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_TWO-&gt;SetNumber_of_iphones(_TO_SHOP_TWO-&gt;GetNumber_of_iphones()&#32;+&#32;_amount);
+567 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_VEC-&gt;SetNumber_of_iphones(_TO_SHOP_VEC-&gt;GetNumber_of_iphones()&#32;+&#32;_amount);
+568 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_iphones(_FROM_DIST_-&gt;GetNumber_of_iphones()&#32;-&#32;(_amount&#32;*&#32;3));
+569 
+570 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_sony(_TO_SHOP_-&gt;GetNumber_of_sony()&#32;+&#32;_amount);
+571 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_TWO-&gt;SetNumber_of_sony(_TO_SHOP_TWO-&gt;GetNumber_of_sony()&#32;+&#32;_amount);
+572 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_VEC-&gt;SetNumber_of_sony(_TO_SHOP_VEC-&gt;GetNumber_of_sony()&#32;+&#32;_amount);
+573 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_sony(_FROM_DIST_-&gt;GetNumber_of_sony()&#32;-&#32;(_amount&#32;*&#32;3));
+574 
+578 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_SHOP_);
+579 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_TWO&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_SHOP_TWO);
+580 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_VEC&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_SHOP_VEC);
+581 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_DIST_);
+585 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+586 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_SHOP_TWO);
+587 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_SHOP_VEC);
+588 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_);
+589 
+590 
+591 
+592 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+596 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;txTwo&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+597 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;nestedDone&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+598 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!nestedDone)&#32;{
+599 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;&#32;(txTwo-&gt;load(_to_two));
+600 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;&#32;(txTwo-&gt;load(_from_));
+604 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;<link linkend="class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f_1a300d1fe21a47e45c0d5d27e25add346f">SetNumber_of_nokia</link>(_TO_SHOP_-&gt;GetNumber_of_nokia()&#32;+&#32;_amount);
+605 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_nokia(_FROM_DIST_-&gt;GetNumber_of_nokia()&#32;-&#32;_amount);
+606 
+607 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_samsung(_TO_SHOP_-&gt;GetNumber_of_samsung()&#32;+&#32;_amount);
+608 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_samsung(_FROM_DIST_-&gt;GetNumber_of_samsung()&#32;-&#32;_amount);
+609 
+610 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_iphones(_TO_SHOP_-&gt;GetNumber_of_iphones()&#32;+&#32;_amount);
+611 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_iphones(_FROM_DIST_-&gt;GetNumber_of_iphones()&#32;-&#32;_amount);
+612 
+613 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_SHOP_-&gt;SetNumber_of_sony(_TO_SHOP_-&gt;GetNumber_of_sony()&#32;+&#32;_amount);
+614 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_DIST_-&gt;SetNumber_of_sony(_FROM_DIST_-&gt;GetNumber_of_sony()&#32;-&#32;_amount);
+618 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_SHOP_);
+619 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_DIST_);
+623 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;txTwo-&gt;store(_TO_OSTM_);
+624 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;txTwo-&gt;store(_FROM_OSTM_);
+625 
+626 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+627 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;NESTED&#32;TRANSACTION&#32;TEST&#32;_to_three</emphasis>
+628 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+629 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc_1a1c170f18aac9dbb8aba1ad2f7e4619cc">_warehouse_transfer_</link>(_to_three,&#32;_from_,&#32;_tm,&#32;_amount);
+630 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="main_8cpp_a52fcb0d50c67be8cd20f2aca338683c7_1a52fcb0d50c67be8cd20f2aca338683c7">_nested_warehouse_transfer_</link>(_to_,&#32;_to_two,&#32;_to_three,&#32;_from_,&#32;_tm,&#32;_amount);
+631 
+632 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nestedDone&#32;=&#32;tx-&gt;commit();
+633 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+634 
+638 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+639 
+640 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+641 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+642 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+643 &#32;&#32;&#32;&#32;}
+644 }
+645 
+<link linkend="main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_1a840291bc02cba5474a4cb46a9b9566fe">649 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_1a840291bc02cba5474a4cb46a9b9566fe">main</link>(<emphasis class="keywordtype">void</emphasis>)&#32;{
+654 &#32;&#32;&#32;&#32;<link linkend="class_t_m">TM</link>&amp;&#32;tm&#32;=&#32;<link linkend="class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_1a7ce5f35e0dae76df4fe116cf905bbe60">TM::Instance</link>();
+655 
+662 &#32;&#32;&#32;&#32;std::vector&lt;std::shared_ptr&#32;&lt;&#32;OSTM&gt;&gt;_customer_vec;&#32;<emphasis class="comment">//(vector_number);</emphasis>
+663 &#32;&#32;&#32;&#32;std::vector&lt;std::shared_ptr&#32;&lt;&#32;OSTM&gt;&gt;_warehouse_vec;&#32;<emphasis class="comment">//(vector_number);</emphasis>
+664 
+674 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;aib_ptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+675 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;boi_ptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+676 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;boa_ptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_a">BOA</link>(300,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+677 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;swplc_ptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_s_w_b_p_l_c">SWBPLC</link>(400,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+678 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;ulster_ptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_l_s_t_e_r">ULSTER</link>(500,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+679 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;unbl_ptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_n_b_l">UNBL</link>(600,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+680 
+691 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;w_dist(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e">CARPHONE_WAREHOUSE</link>());
+692 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;c_shop(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w">CARLOW_W</link>());
+693 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;k_shop(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_k_i_l_k_e_n_n_y___w">KILKENNY_W</link>());
+694 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;t_shop(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w">TALLAGH_W</link>());
+695 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;d_shop(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_d_u_n_d_a_l_k___w">DUNDALK_W</link>());
+696 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;s_shop(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_s_l_i_g_o___w">SLIGO_W</link>());
+697 
+703 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;<link linkend="main_8cpp_a988177ecdd12249ecd3a1cdc75546c44_1a988177ecdd12249ecd3a1cdc75546c44">vector_number</link>;&#32;++i)&#32;{
+704 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;5&#32;==&#32;0)&#32;{
+705 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w">CARLOW_W</link>());
+706 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_warehouse_vec.push_back(std::move(sharedptr));
+707 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;4&#32;==&#32;0)&#32;{
+708 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_k_i_l_k_e_n_n_y___w">KILKENNY_W</link>());
+709 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_warehouse_vec.push_back(std::move(sharedptr));
+710 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;3&#32;==&#32;0)&#32;{
+711 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_t_a_l_l_a_g_h___w">TALLAGH_W</link>());
+712 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_warehouse_vec.push_back(std::move(sharedptr));
+713 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;2&#32;==&#32;0)&#32;{
+714 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_d_u_n_d_a_l_k___w">DUNDALK_W</link>());
+715 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_warehouse_vec.push_back(std::move(sharedptr));
+716 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;1&#32;==&#32;0)&#32;{
+717 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_s_l_i_g_o___w">SLIGO_W</link>());
+718 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_warehouse_vec.push_back(std::move(sharedptr));
+719 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+720 &#32;&#32;&#32;&#32;}
+721 
+727 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;<link linkend="main_8cpp_a988177ecdd12249ecd3a1cdc75546c44_1a988177ecdd12249ecd3a1cdc75546c44">vector_number</link>;&#32;++i)&#32;{
+728 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;6&#32;==&#32;0)&#32;{
+729 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+730 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+731 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;5&#32;==&#32;0)&#32;{
+732 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+733 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+734 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;4&#32;==&#32;0)&#32;{
+735 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_a">BOA</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+736 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+737 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;3&#32;==&#32;0)&#32;{
+738 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_s_w_b_p_l_c">SWBPLC</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+739 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+740 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;2&#32;==&#32;0)&#32;{
+741 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_l_s_t_e_r">ULSTER</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+742 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+743 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;1&#32;==&#32;0)&#32;{
+744 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_n_b_l">UNBL</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+745 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+746 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+747 &#32;&#32;&#32;&#32;}
+748 
+758 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;w_dist-&gt;toString();</emphasis>
+759 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;c_shop-&gt;toString();</emphasis>
+760 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;k_shop-&gt;toString();</emphasis>
+761 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;t_shop-&gt;toString();</emphasis>
+762 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;d_shop-&gt;toString();</emphasis>
+763 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;s_shop-&gt;toString();</emphasis>
+764 
+775 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+776 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;TEST&#32;1&#32;:&#32;object&#32;requirements</emphasis>
+777 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+778 &#32;&#32;&#32;&#32;aib_ptr-&gt;toString();
+779 &#32;&#32;&#32;&#32;boi_ptr-&gt;toString();
+780 
+781 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+782 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;TEST&#32;2&#32;:&#32;object&#32;requirements&#32;</emphasis>
+783 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+784 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;aib_ptr-&gt;toString();</emphasis>
+785 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;boi_ptr-&gt;toString();</emphasis>
+786 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;boa_ptr-&gt;toString();</emphasis>
+787 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;swplc_ptr-&gt;toString();</emphasis>
+788 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;ulster_ptr-&gt;toString();</emphasis>
+789 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;unbl_ptr-&gt;toString();</emphasis>
+790 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;for(int&#32;i=0;&#32;i&lt;vector_number;&#32;++i){</emphasis>
+791 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec[i]-&gt;toString();</emphasis>
+792 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;}</emphasis>
+793 
+794 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+795 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;TEST&#32;3&#32;:&#32;object&#32;requirements</emphasis>
+796 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+797 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;w_dist-&gt;toString();</emphasis>
+798 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;c_shop-&gt;toString();</emphasis>
+799 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;k_shop-&gt;toString();</emphasis>
+800 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;t_shop-&gt;toString();</emphasis>
+801 
+802 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+803 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;TEST&#32;4&#32;:&#32;objects&#32;requirements</emphasis>
+804 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+805 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;w_dist-&gt;toString();</emphasis>
+806 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c_shop-&gt;toString();</emphasis>
+807 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;k_shop-&gt;toString();</emphasis>
+808 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;t_shop-&gt;toString();</emphasis>
+809 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;d_shop-&gt;toString();</emphasis>
+810 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;s_shop-&gt;toString();</emphasis>
+811 
+812 
+813 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+814 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;TEST&#32;5&#32;:&#32;objects&#32;requirements</emphasis>
+815 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+816 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;w_dist-&gt;toString();</emphasis>
+817 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c_shop-&gt;toString();</emphasis>
+818 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;k_shop-&gt;toString();</emphasis>
+819 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;t_shop-&gt;toString();</emphasis>
+820 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;d_shop-&gt;toString();</emphasis>
+821 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;s_shop-&gt;toString();</emphasis>
+822 
+823 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;for(auto&amp;&amp;&#32;elem:&#32;_warehouse_vec){</emphasis>
+824 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;elem-&gt;toString();&#32;//&#32;virtual&#32;dispatch</emphasis>
+825 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
+826 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+827 
+828 
+829 
+833 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;1;
+840 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;99;
+841 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+842 
+847 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+848 
+853 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;3&#32;==&#32;0)
+854 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(<link linkend="main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_1a5675cb594d74aa1bf5e80233370ffd81">_nesting_</link>,&#32;aib_ptr,&#32;boi_ptr,&#32;std::ref(tm),&#32;transferAmount);
+855 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;2&#32;==&#32;0)
+856 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(<link linkend="main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_1a5675cb594d74aa1bf5e80233370ffd81">_nesting_</link>,&#32;aib_ptr,&#32;boi_ptr,&#32;std::ref(tm),&#32;transferAmount);
+857 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;1&#32;==&#32;0)
+858 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(<link linkend="main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_1a5675cb594d74aa1bf5e80233370ffd81">_nesting_</link>,&#32;aib_ptr,&#32;boi_ptr,&#32;std::ref(tm),&#32;transferAmount);
+859 
+866 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;if&#32;(i&#32;%&#32;3&#32;==&#32;0)&#32;</emphasis>
+867 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(_two_account_transfer_,&#32;aib_ptr,&#32;boi_ptr,&#32;std::ref(tm),&#32;transferAmount);</emphasis>
+868 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;else&#32;if&#32;(i&#32;%&#32;2&#32;==&#32;0)</emphasis>
+869 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(_six_account_transfer_,&#32;boi_ptr,&#32;boa_ptr,&#32;swplc_ptr,&#32;ulster_ptr,&#32;aib_ptr,&#32;unbl_ptr,&#32;std::ref(tm),&#32;transferAmount);</emphasis>
+870 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;else&#32;if&#32;(i&#32;%&#32;1&#32;==&#32;0)</emphasis>
+871 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(_complex_transfer_,&#32;aib_ptr,&#32;boi_ptr,&#32;std::ref(_customer_vec),&#32;std::ref(tm),&#32;transferAmount);</emphasis>
+872 
+873 
+878 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(i&#32;%&#32;3&#32;==&#32;0)</emphasis>
+879 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(_warehouse_transfer_,&#32;c_shop,&#32;w_dist,&#32;std::ref(tm),&#32;transferAmount);</emphasis>
+880 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;else&#32;if&#32;(i&#32;%&#32;2&#32;==&#32;0)</emphasis>
+881 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(_warehouse_transfer_,&#32;k_shop,&#32;w_dist,&#32;std::ref(tm),&#32;transferAmount);</emphasis>
+882 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;else&#32;if&#32;(i&#32;%&#32;1&#32;==&#32;0)</emphasis>
+883 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(_warehouse_transfer_,&#32;t_shop,&#32;w_dist,&#32;std::ref(tm),&#32;transferAmount);</emphasis>
+884 
+889 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(i&#32;%&#32;3&#32;==&#32;0)</emphasis>
+890 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(_nested_warehouse_transfer_,&#32;c_shop,&#32;d_shop,&#32;k_shop,&#32;w_dist,&#32;std::ref(tm),&#32;transferAmount);</emphasis>
+891 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;else&#32;if&#32;(i&#32;%&#32;2&#32;==&#32;0)</emphasis>
+892 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(_nested_warehouse_transfer_,&#32;k_shop,&#32;s_shop,&#32;t_shop,&#32;w_dist,&#32;std::ref(tm),&#32;transferAmount);</emphasis>
+893 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;else&#32;if&#32;(i&#32;%&#32;1&#32;==&#32;0)</emphasis>
+894 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(_nested_warehouse_transfer_,&#32;t_shop,&#32;c_shop,&#32;s_shop,&#32;w_dist,&#32;std::ref(tm),&#32;transferAmount);</emphasis>
+895 
+904 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(i&#32;%&#32;3&#32;==&#32;0)</emphasis>
+905 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(_warehouse_transfer_,&#32;c_shop,&#32;w_dist,&#32;std::ref(tm),&#32;transferAmount);</emphasis>
+906 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;else&#32;if&#32;(i&#32;%&#32;2&#32;==&#32;0)</emphasis>
+907 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(_nested_warehouse_transfer_,&#32;k_shop,&#32;s_shop,&#32;t_shop,&#32;w_dist,&#32;std::ref(tm),&#32;transferAmount);</emphasis>
+908 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;else&#32;if&#32;(i&#32;%&#32;1&#32;==&#32;0)</emphasis>
+909 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(_complex_warehouse_transfer_,&#32;d_shop,&#32;s_shop,&#32;c_shop,&#32;std::ref(_warehouse_vec),&#32;w_dist,&#32;std::ref(tm),&#32;transferAmount);</emphasis>
+910 
+911 
+912 &#32;&#32;&#32;&#32;}
+913 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+914 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Join&#32;threads^n&#32;-&gt;&#32;threadArraySize&lt;br&gt;</emphasis>
+915 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;thArray[i].join();</emphasis>
+916 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+917 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+918 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+919 &#32;&#32;&#32;&#32;}
+920 
+921 
+922 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nMain&#32;process&#32;print&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;std::endl;
+928 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+929 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;TEST&#32;1&#32;:&#32;object&#32;requirements</emphasis>
+930 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+931 &#32;&#32;&#32;&#32;aib_ptr-&gt;toString();
+932 &#32;&#32;&#32;&#32;boi_ptr-&gt;toString();
+933 
+934 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+935 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;TEST&#32;2&#32;:&#32;object&#32;requirements&#32;</emphasis>
+936 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+937 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;aib_ptr-&gt;toString();</emphasis>
+938 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;boi_ptr-&gt;toString();</emphasis>
+939 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;boa_ptr-&gt;toString();</emphasis>
+940 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;swplc_ptr-&gt;toString();</emphasis>
+941 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;ulster_ptr-&gt;toString();</emphasis>
+942 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;unbl_ptr-&gt;toString();</emphasis>
+943 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;for(int&#32;i=0;&#32;i&lt;vector_number;&#32;++i){</emphasis>
+944 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec[i]-&gt;toString();</emphasis>
+945 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;}</emphasis>
+946 
+947 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+948 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;TEST&#32;3&#32;:&#32;object&#32;requirements</emphasis>
+949 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+950 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;w_dist-&gt;toString();</emphasis>
+951 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c_shop-&gt;toString();</emphasis>
+952 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;k_shop-&gt;toString();</emphasis>
+953 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;t_shop-&gt;toString();</emphasis>
+954 
+955 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+956 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;TEST&#32;4&#32;:&#32;objects&#32;requirements</emphasis>
+957 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+958 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;w_dist-&gt;toString();</emphasis>
+959 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c_shop-&gt;toString();</emphasis>
+960 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;k_shop-&gt;toString();</emphasis>
+961 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;t_shop-&gt;toString();</emphasis>
+962 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;d_shop-&gt;toString();</emphasis>
+963 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;s_shop-&gt;toString();</emphasis>
+964 
+965 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+966 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;TEST&#32;5&#32;:&#32;objects&#32;requirements</emphasis>
+967 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+968 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;w_dist-&gt;toString();</emphasis>
+969 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;c_shop-&gt;toString();</emphasis>
+970 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;k_shop-&gt;toString();</emphasis>
+971 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;t_shop-&gt;toString();</emphasis>
+972 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;d_shop-&gt;toString();</emphasis>
+973 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;s_shop-&gt;toString();</emphasis>
+974 
+975 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;for(auto&amp;&amp;&#32;elem:&#32;_warehouse_vec){</emphasis>
+976 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;elem-&gt;toString();&#32;//&#32;virtual&#32;dispatch</emphasis>
+977 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
+978 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}</emphasis>
+979 
+980 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;TEST&#32;5&#32;FINISH&#32;*/</emphasis>
+981 
+982 
+983 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nMAIN&#32;PROCESS&#32;EXIT&#32;!!!!&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;std::endl;
+988 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+989 
+994 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;Rollback&#32;counter&#32;is&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;tx-&gt;getTest_counter()&#32;&lt;&lt;&#32;std::endl;
+998 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;&quot;[vector_number]&quot;&#32;&lt;&lt;&#32;std::endl;</emphasis>
+999 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;for&#32;(int&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;vector_number;&#32;++i)&#32;{</emphasis>
+1000 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;//_customer_vec[i]-&gt;toString();</emphasis>
+1001 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;auto&amp;&amp;&#32;os&#32;=&#32;_customer_vec.at(i);</emphasis>
+1002 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;os-&gt;toString();</emphasis>
+1003 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;}</emphasis>
+1004 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;&quot;[_warehouse_vec]&quot;&#32;&lt;&lt;&#32;std::endl;</emphasis>
+1005 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;for(auto&amp;&amp;&#32;elem:&#32;_warehouse_vec){</emphasis>
+1006 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;elem-&gt;toString();&#32;//&#32;virtual&#32;dispatch</emphasis>
+1007 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
+1008 &#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;&#32;&#32;&#32;}</emphasis>
+1009 &#32;&#32;&#32;&#32;<emphasis class="comment">//_customer_vec[10]-&gt;toString();</emphasis>
+1010 
+1015 &#32;&#32;&#32;&#32;tm.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+1016 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nPRINT&#32;ALL&#32;FROM&#32;TM&#32;!!!!&#32;SHOULD&#32;BE&#32;EMPTY&#32;AFTER&#32;_TX_EXIT()&#32;!!&quot;</emphasis>&#32;&lt;&lt;&#32;std::endl;
+1021 &#32;&#32;&#32;&#32;tm.<link linkend="class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_1a1d6891b1d3e71cc0acef54e7afe71c09">print_all</link>();
+1022 
+1023 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;0;
+1024 }
+    </computeroutput></literallayout>
+</section>

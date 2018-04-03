@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="Unit_Test"
+                     displayName="Unit_Test"
+                     projectFiles="true"
+                     root="../Unit_Test">
+        <itemPath>../Unit_Test/AIB.cpp</itemPath>
+        <itemPath>../Unit_Test/AIB.h</itemPath>
+        <itemPath>../Unit_Test/BANK.cpp</itemPath>
+        <itemPath>../Unit_Test/BANK.h</itemPath>
+        <itemPath>../Unit_Test/BOA.cpp</itemPath>
+        <itemPath>../Unit_Test/BOA.h</itemPath>
+        <itemPath>../Unit_Test/BOI.h</itemPath>
+        <itemPath>../Unit_Test/CARLOW_W.h</itemPath>
+        <itemPath>../Unit_Test/CARPHONE_WAREHOUSE.h</itemPath>
+        <itemPath>../Unit_Test/DUNDALK_W.h</itemPath>
+        <itemPath>../Unit_Test/KILKENNY_W.h</itemPath>
+        <itemPath>../Unit_Test/MyTestCAse.cpp</itemPath>
+        <itemPath>../Unit_Test/MyTestCAse.h</itemPath>
+        <itemPath>../Unit_Test/OSTM.cpp</itemPath>
+        <itemPath>../Unit_Test/OSTM.h</itemPath>
+        <itemPath>../Unit_Test/SLIGO_W.h</itemPath>
+        <itemPath>../Unit_Test/SWBPLC.cpp</itemPath>
+        <itemPath>../Unit_Test/SWBPLC.h</itemPath>
+        <itemPath>../Unit_Test/TALLAGH_W.h</itemPath>
+        <itemPath>../Unit_Test/TM.cpp</itemPath>
+        <itemPath>../Unit_Test/TM.h</itemPath>
+        <itemPath>../Unit_Test/TX.cpp</itemPath>
+        <itemPath>../Unit_Test/TX.h</itemPath>
+        <itemPath>../Unit_Test/TestClient.cpp</itemPath>
+        <itemPath>../Unit_Test/ULSTER.cpp</itemPath>
+        <itemPath>../Unit_Test/ULSTER.h</itemPath>
+        <itemPath>../Unit_Test/UNBL.cpp</itemPath>
+        <itemPath>../Unit_Test/UNBL.h</itemPath>
+        <itemPath>../Unit_Test/WAREHOUSE.h</itemPath>
+        <itemPath>../Unit_Test/client.cpp</itemPath>
+        <itemPath>../Unit_Test/client.h</itemPath>
+        <itemPath>../Unit_Test/main.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/CPP_Unit_TEST/Unit_Test/Makefile</itemPath>
+      <itemPath>../Unit_Test/app</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../Unit_Test</Elem>
+  </sourceRootList>
+  <projectmakefile></projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0"
+                 commonFlags="-mtune=generic -march=x86-64 -std=c++14 -fstack-protector-strong"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/media/zoltan/Data/00_2018_ITCarlow/00_Modules/06_Project/Documents/Git_Sync/CPP_Unit_TEST/Unit_Test</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>../Unit_Test/app</executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="../Unit_Test/AIB.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../Unit_Test/BANK.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../Unit_Test/BOA.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../Unit_Test/MyTestCAse.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../Unit_Test/OSTM.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../Unit_Test/SWBPLC.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../Unit_Test/TM.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../Unit_Test/TX.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../Unit_Test/TestClient.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../Unit_Test/ULSTER.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../Unit_Test/UNBL.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../Unit_Test/client.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../Unit_Test/main.cpp" ex="false" tool="1" flavor2="11">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>/usr/include/cppunit/extensions</pElem>
+            <pElem>/usr/include/cppunit</pElem>
+            <pElem>/usr/include/cppunit/ui/text</pElem>
+            <pElem>../Unit_Test</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

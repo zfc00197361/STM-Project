@@ -10,12 +10,9 @@
       <in>CARPHONE_WAREHOUSE.cpp</in>
       <in>DUNDALK_W.cpp</in>
       <in>KILKENNY_W.cpp</in>
-      <in>OSTM.cpp</in>
       <in>SLIGO_W.cpp</in>
       <in>SWBPLC.cpp</in>
       <in>TALLAGH_W.cpp</in>
-      <in>TM.cpp</in>
-      <in>TX.cpp</in>
       <in>ULSTER.cpp</in>
       <in>UNBL.cpp</in>
       <in>WAREHOUSE.cpp</in>
@@ -43,7 +40,6 @@
       </toolsSet>
       <flagsDictionary>
         <element flagsID="0" commonFlags="-std=c++14"/>
-        <element flagsID="1" commonFlags="-std=c++14 -fgnu-tm"/>
       </flagsDictionary>
       <codeAssistance>
       </codeAssistance>
@@ -115,10 +111,6 @@
           </incDir>
         </ccTool>
       </item>
-      <item path="OSTM.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
-        </ccTool>
-      </item>
       <item path="SLIGO_W.cpp" ex="false" tool="1" flavor2="11">
         <ccTool flags="0">
           <incDir>
@@ -138,14 +130,6 @@
           <incDir>
             <pElem>-L</pElem>
           </incDir>
-        </ccTool>
-      </item>
-      <item path="TM.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
-        </ccTool>
-      </item>
-      <item path="TX.cpp" ex="false" tool="1" flavor2="11">
-        <ccTool flags="1">
         </ccTool>
       </item>
       <item path="ULSTER.cpp" ex="false" tool="1" flavor2="11">

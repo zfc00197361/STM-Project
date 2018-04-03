@@ -18,7 +18,6 @@
       <in>DUNDALK_W.h</in>
       <in>KILKENNY_W.cpp</in>
       <in>KILKENNY_W.h</in>
-      <in>OSTM.cpp</in>
       <in>OSTM.h</in>
       <in>SLIGO_W.cpp</in>
       <in>SLIGO_W.h</in>
@@ -26,9 +25,7 @@
       <in>SWBPLC.h</in>
       <in>TALLAGH_W.cpp</in>
       <in>TALLAGH_W.h</in>
-      <in>TM.cpp</in>
       <in>TM.h</in>
-      <in>TX.cpp</in>
       <in>TX.h</in>
       <in>ULSTER.cpp</in>
       <in>ULSTER.h</in>

@@ -1,0 +1,26 @@
+digraph "main"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="TM::Instance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_m.html#a7ce5f35e0dae76df4fe116cf905bbe60",tooltip="Scott Meyer&#39;s Singleton creation, what is thread safe. "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="_nesting_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a5675cb594d74aa1bf5e80233370ffd81",tooltip="nesting function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="TM::_get_tx",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_m.html#a41cb0226cc4080c931651b13f74a0075",tooltip="_get_tx std::shared_ptr<TX>, returning a shared pointer with the transaction "];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="BANK::SetBalance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_a_n_k.html#ae3e45b407bf8ec7175662442ea24b7c0"];
+  Node3 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="_two_account_transfer_",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8cpp.html#a83aef8c5b69afef4e38d14c17fe782b3",tooltip="two_account_transfer function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager..."];
+  Node6 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="TM::_TX_EXIT",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_m.html#a5e2d1127f2429f2f524d25f430eade06",tooltip="_TX_EXIT void, the thread calls the ostm_exit function in the transaction, and clear all elements fro..."];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="TX::ostm_exit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_x.html#aa9739c5c2077454c779098db7baefc2b",tooltip="Delete all map entries associated with the main process. "];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="TM::print_all",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_t_m.html#a1d6891b1d3e71cc0acef54e7afe71c09",tooltip="ONLY FOR TESTING print_all void, print out all object key from txMAP collection. "];
+}

@@ -43,17 +43,16 @@
 \BOOKMARK [1][-]{section.6}{C++14/17}{}% 43
 \BOOKMARK [2][-]{subsection.6.1}{C++.}{section.6}% 44
 \BOOKMARK [2][-]{subsection.6.2}{New features in C++14}{section.6}% 45
-\BOOKMARK [2][-]{subsection.6.3}{New features in C++17}{section.6}% 46
-\BOOKMARK [2][-]{subsection.6.4}{C++ Libraries}{section.6}% 47
-\BOOKMARK [1][-]{section.7}{Platforms}{}% 48
-\BOOKMARK [2][-]{subsection.7.1}{Integrated Development Environment\(IDE\)}{section.7}% 49
-\BOOKMARK [2][-]{subsection.7.2}{Compilers}{section.7}% 50
-\BOOKMARK [3][-]{subsubsection.7.2.1}{GCC and G++}{subsection.7.2}% 51
-\BOOKMARK [3][-]{subsubsection.7.2.2}{MVSC}{subsection.7.2}% 52
-\BOOKMARK [3][-]{subsubsection.7.2.3}{CLANG}{subsection.7.2}% 53
-\BOOKMARK [2][-]{subsection.7.3}{Conclusion of platform}{section.7}% 54
-\BOOKMARK [1][-]{section.8}{Conclusion}{}% 55
-\BOOKMARK [2][-]{subsection.8.1}{Concurrency as a base problem}{section.8}% 56
-\BOOKMARK [2][-]{subsection.8.2}{Software Transactional Memory}{section.8}% 57
-\BOOKMARK [2][-]{subsection.8.3}{Platform and Compilers}{section.8}% 58
-\BOOKMARK [1][-]{section.9}{Bibliography}{}% 59
+\BOOKMARK [2][-]{subsection.6.3}{C++ Libraries}{section.6}% 46
+\BOOKMARK [1][-]{section.7}{Platforms}{}% 47
+\BOOKMARK [2][-]{subsection.7.1}{Integrated Development Environment\(IDE\)}{section.7}% 48
+\BOOKMARK [2][-]{subsection.7.2}{Compilers}{section.7}% 49
+\BOOKMARK [3][-]{subsubsection.7.2.1}{GCC and G++}{subsection.7.2}% 50
+\BOOKMARK [3][-]{subsubsection.7.2.2}{MVSC}{subsection.7.2}% 51
+\BOOKMARK [3][-]{subsubsection.7.2.3}{CLANG}{subsection.7.2}% 52
+\BOOKMARK [2][-]{subsection.7.3}{Conclusion of platform}{section.7}% 53
+\BOOKMARK [1][-]{section.8}{Conclusion}{}% 54
+\BOOKMARK [2][-]{subsection.8.1}{Concurrency as a base problem}{section.8}% 55
+\BOOKMARK [2][-]{subsection.8.2}{Software Transactional Memory}{section.8}% 56
+\BOOKMARK [2][-]{subsection.8.3}{Platform and Compilers}{section.8}% 57
+\BOOKMARK [1][-]{section.9}{Bibliography}{}% 58

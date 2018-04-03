@@ -130,17 +130,18 @@ void _nesting_(std::shared_ptr<OSTM> _to_, std::shared_ptr<OSTM> _from_, TM& _tm
     /*!
      * Register the two single account
      */
-    tx->_register(_to_);
-    tx->_register(_from_);
-    /*!
-     * Declare required pointers 
-     */
-    std::shared_ptr<BANK> _TO_BANK_, _FROM_BANK_;
-    std::shared_ptr<OSTM> _TO_OSTM_, _FROM_OSTM_;
-
-
-    bool done = false;
     try {
+        tx->_register(_to_);
+        tx->_register(_from_);
+        /*!
+         * Declare required pointers 
+         */
+        std::shared_ptr<BANK> _TO_BANK_, _FROM_BANK_;
+        std::shared_ptr<OSTM> _TO_OSTM_, _FROM_OSTM_;
+
+
+        bool done = false;
+
         while (!done) {
             /*!
              * From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
@@ -233,7 +234,7 @@ int main(void) {
     std::shared_ptr<OSTM> ulster_ptr(new ULSTER(500, 500, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
     std::shared_ptr<OSTM> unbl_ptr(new UNBL(600, 500, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
 
- 
+
     /*!
      * Display BANK objects before transaction<br>
      * aib_ptr->toString();<br>
@@ -279,7 +280,7 @@ int main(void) {
          * thArray[i] = std::thread(_two_account_transfer_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
          * thArray[i] = std::thread(_six_account_transfer_, aib_ptr, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, unbl_ptr, std::ref(tm), transferAmount);
          */
-//      thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+        //      thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
         if (i % 3 == 0)
             thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
         else if (i % 2 == 0)

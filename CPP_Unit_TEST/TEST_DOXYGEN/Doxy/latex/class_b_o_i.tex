@@ -1,0 +1,843 @@
+\hypertarget{class_b_o_i}{}\subsection{B\+OI Class Reference}
+\label{class_b_o_i}\index{B\+OI@{B\+OI}}
+
+
+{\ttfamily \#include $<$B\+O\+I.\+h$>$}
+
+
+
+Inheritance diagram for B\+OI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_b_o_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for B\+OI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_b_o_i__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_o_i_a6af682a5f199a029681f0cb2b8658706_a6af682a5f199a029681f0cb2b8658706}{B\+OI} ()
+\item 
+\hyperlink{class_b_o_i_a1807bd07cad08109c974edbb2c32591c_a1807bd07cad08109c974edbb2c32591c}{B\+OI} (int \hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{account\+Number}, double \hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance}, std\+::string \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{first\+Name}, std\+::string \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{last\+Name}, std\+::string \hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address})
+\item 
+\hyperlink{class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_ae4263940f8ffdd40d5f01a714b20f791}{B\+OI} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_b_o_i}{B\+OI} $>$ obj, int \+\_\+version, int \+\_\+unique\+\_\+id)
+\item 
+\hyperlink{class_b_o_i_a7757de8d3ac656871bed4b07d77457ff_a7757de8d3ac656871bed4b07d77457ff}{B\+OI} (const \hyperlink{class_b_o_i}{B\+OI} \&orig)
+\item 
+virtual void \hyperlink{class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_a9ff2d32c25c23a1bea6316f50c3bf677}{copy} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ to, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ from)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_o_s_t_m}{O\+S\+TM} required virtual method for deep copy. \end{DoxyCompactList}\item 
+virtual int \hyperlink{class_b_o_i_a5b18e1538f3d37835234946cdf9f240f_a5b18e1538f3d37835234946cdf9f240f}{Get\+Account\+Number} () const 
+\item 
+virtual std\+::string \hyperlink{class_b_o_i_a8920e1f47b22445ba954e86012207462_a8920e1f47b22445ba954e86012207462}{Get\+Address} () const 
+\item 
+virtual double \hyperlink{class_b_o_i_a25b289dece2a1685bb9d1a9332c9be0b_a25b289dece2a1685bb9d1a9332c9be0b}{Get\+Balance} () const 
+\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \hyperlink{class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_ad53ae2918a656793b9d7a670d35ecfa3}{get\+Base\+Copy} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ object)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_o_s_t_m}{O\+S\+TM} required virtual method for returning a pointer that is copy of the original pointer. \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{class_b_o_i_ab4b9d50c6008a666aa4382def580e7d1_ab4b9d50c6008a666aa4382def580e7d1}{Get\+First\+Name} () const 
+\item 
+virtual std\+::string \hyperlink{class_b_o_i_af56446a377068cd65526e40e8b31b878_af56446a377068cd65526e40e8b31b878}{Get\+Fullname} () const 
+\item 
+virtual std\+::string \hyperlink{class_b_o_i_a37828f3fa4a32f522966e2cad90eaab2_a37828f3fa4a32f522966e2cad90eaab2}{Get\+Last\+Name} () const 
+\item 
+\hyperlink{class_b_o_i}{B\+OI} \hyperlink{class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_a4b4a3976cc13c4d3de0d7ff8882a7af3}{operator=} (const \hyperlink{class_b_o_i}{B\+OI} \&orig)
+\item 
+virtual void \hyperlink{class_b_o_i_affc9e7e2a36214b3790f250b7108bb65_affc9e7e2a36214b3790f250b7108bb65}{Set\+Account\+Number} (int \hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{account\+Number})
+\item 
+virtual void \hyperlink{class_b_o_i_a00c9386c862cf2442968bf7fc30102b3_a00c9386c862cf2442968bf7fc30102b3}{Set\+Address} (std\+::string \hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address})
+\item 
+virtual void \hyperlink{class_b_o_i_a416667693c10f5e4120eec97a9269348_a416667693c10f5e4120eec97a9269348}{Set\+Balance} (double \hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance})
+\item 
+virtual void \hyperlink{class_b_o_i_ae9042f87be085c2cec799981c30d7d19_ae9042f87be085c2cec799981c30d7d19}{Set\+First\+Name} (std\+::string \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{first\+Name})
+\item 
+virtual void \hyperlink{class_b_o_i_a93091f16610f1a1474aea31fd5f81ffd_a93091f16610f1a1474aea31fd5f81ffd}{Set\+Fullname} (std\+::string \hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname})
+\item 
+virtual void \hyperlink{class_b_o_i_a663906e9a59ffa970fb928746c01e8af_a663906e9a59ffa970fb928746c01e8af}{Set\+Last\+Name} (std\+::string \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{last\+Name})
+\item 
+virtual void \hyperlink{class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_ab02a4dd4ebcc5b2abfaca19f2dff2006}{to\+String} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_o_s_t_m}{O\+S\+TM} required virtual method for display object. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_b_o_i_a617f46a599129178c6b11b4846759a6c_a617f46a599129178c6b11b4846759a6c}{$\sim$\+B\+OI} ()
+\end{DoxyCompactItemize}
+\subsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{account\+Number}
+\item 
+std\+::string \hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address}
+\item 
+double \hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance}
+\item 
+std\+::string \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{first\+Name}
+\item 
+std\+::string \hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname}
+\item 
+std\+::string \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{last\+Name}
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+
+
+Definition at line \hyperlink{_b_o_i_8h_source_l00019}{19} of file \hyperlink{_b_o_i_8h_source}{B\+O\+I.\+h}.
+
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\index{B\+OI@{B\+OI}!B\+OI@{B\+OI}}
+\index{B\+OI@{B\+OI}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{B\+O\+I()}{BOI()}}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+I\+::\+B\+OI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_b_o_i_a6af682a5f199a029681f0cb2b8658706_a6af682a5f199a029681f0cb2b8658706}{}\label{class_b_o_i_a6af682a5f199a029681f0cb2b8658706_a6af682a5f199a029681f0cb2b8658706}
+
+
+Definition at line \hyperlink{_b_o_i_8h_source_l00024}{24} of file \hyperlink{_b_o_i_8h_source}{B\+O\+I.\+h}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00099}{account\+Number}, \hyperlink{_b_o_i_8h_source_l00101}{address}, \hyperlink{_b_o_i_8h_source_l00100}{balance}, \hyperlink{_b_o_i_8h_source_l00097}{first\+Name}, \hyperlink{_b_o_i_8h_source_l00096}{fullname}, and \hyperlink{_b_o_i_8h_source_l00098}{last\+Name}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00049}{B\+O\+I()}, and \hyperlink{_b_o_i_8cpp_source_l00022}{get\+Base\+Copy()}.
+
+
+\begin{DoxyCode}
+00024          : \hyperlink{class_b_a_n_k_a0bc938356cebff14fb0560264abe5a34_a0bc938356cebff14fb0560264abe5a34}{BANK}()
+00025     \{
+00026         this->\hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber} = 0;
+00027         this->\hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance} = 50;
+00028         this->\hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName} = \textcolor{stringliteral}{"Joe"};
+00029         this->\hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName} = \textcolor{stringliteral}{"Blog"};
+00030         this->\hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address} = \textcolor{stringliteral}{"High street, Carlow"};
+00031         this->\hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname} = \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName} + \textcolor{stringliteral}{" "} + \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName};
+00032         
+00033     \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!B\+OI@{B\+OI}}
+\index{B\+OI@{B\+OI}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{B\+O\+I(int account\+Number, double balance, std\+::string first\+Name, std\+::string last\+Name, std\+::string address)}{BOI(int accountNumber, double balance, std::string firstName, std::string lastName, std::string address)}}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+I\+::\+B\+OI (
+\begin{DoxyParamCaption}
+\item[{int}]{account\+Number, }
+\item[{double}]{balance, }
+\item[{std\+::string}]{first\+Name, }
+\item[{std\+::string}]{last\+Name, }
+\item[{std\+::string}]{address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_b_o_i_a1807bd07cad08109c974edbb2c32591c_a1807bd07cad08109c974edbb2c32591c}{}\label{class_b_o_i_a1807bd07cad08109c974edbb2c32591c_a1807bd07cad08109c974edbb2c32591c}
+
+
+Definition at line \hyperlink{_b_o_i_8h_source_l00037}{37} of file \hyperlink{_b_o_i_8h_source}{B\+O\+I.\+h}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00099}{account\+Number}, \hyperlink{_b_o_i_8h_source_l00101}{address}, \hyperlink{_b_o_i_8h_source_l00100}{balance}, \hyperlink{_b_o_i_8h_source_l00097}{first\+Name}, \hyperlink{_b_o_i_8h_source_l00096}{fullname}, and \hyperlink{_b_o_i_8h_source_l00098}{last\+Name}.
+
+
+\begin{DoxyCode}
+00037                                                                                                       : 
+      \hyperlink{class_b_a_n_k_a0bc938356cebff14fb0560264abe5a34_a0bc938356cebff14fb0560264abe5a34}{BANK}()
+00038     \{
+00039         this->\hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber} = \hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber};
+00040         this->\hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance} = \hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance};
+00041         this->\hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName} = \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName};
+00042         this->\hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName} = \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName};
+00043         this->\hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address} = \hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address};
+00044         this->\hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname} = \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName} + \textcolor{stringliteral}{" "} + \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName};
+00045     \};
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!B\+OI@{B\+OI}}
+\index{B\+OI@{B\+OI}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{B\+O\+I(std\+::shared\+\_\+ptr$<$ B\+O\+I $>$ obj, int \+\_\+version, int \+\_\+unique\+\_\+id)}{BOI(std::shared_ptr< BOI > obj, int _version, int _unique_id)}}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+I\+::\+B\+OI (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf B\+OI} $>$}]{obj, }
+\item[{int}]{\+\_\+version, }
+\item[{int}]{\+\_\+unique\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_ae4263940f8ffdd40d5f01a714b20f791}{}\label{class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_ae4263940f8ffdd40d5f01a714b20f791}
+
+
+Definition at line \hyperlink{_b_o_i_8h_source_l00049}{49} of file \hyperlink{_b_o_i_8h_source}{B\+O\+I.\+h}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00099}{account\+Number}, \hyperlink{_b_o_i_8h_source_l00101}{address}, \hyperlink{_b_o_i_8h_source_l00100}{balance}, \hyperlink{_b_o_i_8h_source_l00024}{B\+O\+I()}, \hyperlink{_b_o_i_8h_source_l00097}{first\+Name}, \hyperlink{_b_o_i_8h_source_l00096}{fullname}, and \hyperlink{_b_o_i_8h_source_l00098}{last\+Name}.
+
+
+\begin{DoxyCode}
+00049                                                              : \hyperlink{class_b_a_n_k_a0bc938356cebff14fb0560264abe5a34_a0bc938356cebff14fb0560264abe5a34}{BANK}(\_version, \_unique\_id)
+00050     \{
+00051         this->\hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber} = obj->GetAccountNumber();
+00052         this->\hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance} = obj->GetBalance();
+00053         this->\hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName} = obj->GetFirstName();
+00054         this->\hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName} = obj->GetLastName();
+00055         this->\hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address} = obj->GetAddress();
+00056         this->\hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname} = obj->GetFirstName() + \textcolor{stringliteral}{" "} + obj->GetLastName(); 
+00057     \};
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_ae4263940f8ffdd40d5f01a714b20f791_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{B\+OI@{B\+OI}!B\+OI@{B\+OI}}
+\index{B\+OI@{B\+OI}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{B\+O\+I(const B\+O\+I \&orig)}{BOI(const BOI &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+I\+::\+B\+OI (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+OI} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_o_i_a7757de8d3ac656871bed4b07d77457ff_a7757de8d3ac656871bed4b07d77457ff}{}\label{class_b_o_i_a7757de8d3ac656871bed4b07d77457ff_a7757de8d3ac656871bed4b07d77457ff}
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00015}{15} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+\begin{DoxyCode}
+00015                         \{
+00016 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!````~B\+OI@{$\sim$\+B\+OI}}
+\index{````~B\+OI@{$\sim$\+B\+OI}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{$\sim$\+B\+O\+I()}{~BOI()}}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+I\+::$\sim$\+B\+OI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_a617f46a599129178c6b11b4846759a6c_a617f46a599129178c6b11b4846759a6c}{}\label{class_b_o_i_a617f46a599129178c6b11b4846759a6c_a617f46a599129178c6b11b4846759a6c}
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00012}{12} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}.
+
+
+\begin{DoxyCode}
+00012           \{
+00013 \}
+\end{DoxyCode}
+
+
+\subsubsection{Member Function Documentation}
+\index{B\+OI@{B\+OI}!copy@{copy}}
+\index{copy@{copy}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ to, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ from)}{copy(std::shared_ptr< OSTM > to, std::shared_ptr< OSTM > from)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+O\+I\+::copy (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{from, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{to}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_a9ff2d32c25c23a1bea6316f50c3bf677}{}\label{class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_a9ff2d32c25c23a1bea6316f50c3bf677}
+
+
+\hyperlink{class_o_s_t_m}{O\+S\+TM} required virtual method for deep copy. 
+
+
+
+Reimplemented from \hyperlink{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d_a535d90fced5adbb70312c92f3778e08d}{O\+S\+TM}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00035}{35} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_o_s_t_m_8cpp_source_l00066}{O\+S\+T\+M\+::\+Set\+\_\+\+Unique\+\_\+\+I\+D()}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}.
+
+
+\begin{DoxyCode}
+00035                                                               \{
+00036 
+00037     std::shared\_ptr<BOI> objTO = std::dynamic\_pointer\_cast<\hyperlink{class_b_o_i}{BOI}>(to);
+00038     std::shared\_ptr<BOI> objFROM = std::dynamic\_pointer\_cast<\hyperlink{class_b_o_i}{BOI}>(from);
+00039     objTO->\hyperlink{class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_ab5019a32185631c08abbf826422f2d93}{Set\_Unique\_ID}(objFROM->Get\_Unique\_ID());
+00040     objTO->Set\_Version(objFROM->Get\_Version());
+00041     objTO->SetAccountNumber(objFROM->GetAccountNumber());
+00042     objTO->SetBalance(objFROM->GetBalance());
+00043 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_a9ff2d32c25c23a1bea6316f50c3bf677_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{B\+OI@{B\+OI}!Get\+Account\+Number@{Get\+Account\+Number}}
+\index{Get\+Account\+Number@{Get\+Account\+Number}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{Get\+Account\+Number() const }{GetAccountNumber() const }}]{\setlength{\rightskip}{0pt plus 5cm}int B\+O\+I\+::\+Get\+Account\+Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_a5b18e1538f3d37835234946cdf9f240f_a5b18e1538f3d37835234946cdf9f240f}{}\label{class_b_o_i_a5b18e1538f3d37835234946cdf9f240f_a5b18e1538f3d37835234946cdf9f240f}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a62adf3cea60d863a4a10eeee485fa1aa_a62adf3cea60d863a4a10eeee485fa1aa}{B\+A\+NK}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00073}{73} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00099}{account\+Number}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}, and \hyperlink{_b_o_i_8cpp_source_l00049}{to\+String()}.
+
+
+\begin{DoxyCode}
+00073                                 \{
+00074     \textcolor{keywordflow}{return} \hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber};
+00075 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!Get\+Address@{Get\+Address}}
+\index{Get\+Address@{Get\+Address}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{Get\+Address() const }{GetAddress() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string B\+O\+I\+::\+Get\+Address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_a8920e1f47b22445ba954e86012207462_a8920e1f47b22445ba954e86012207462}{}\label{class_b_o_i_a8920e1f47b22445ba954e86012207462_a8920e1f47b22445ba954e86012207462}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a358741f647f9494026e02fd3fd27cde6_a358741f647f9494026e02fd3fd27cde6}{B\+A\+NK}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00057}{57} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00101}{address}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}.
+
+
+\begin{DoxyCode}
+00057                                 \{
+00058     \textcolor{keywordflow}{return} \hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address};
+00059 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!Get\+Balance@{Get\+Balance}}
+\index{Get\+Balance@{Get\+Balance}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{Get\+Balance() const }{GetBalance() const }}]{\setlength{\rightskip}{0pt plus 5cm}double B\+O\+I\+::\+Get\+Balance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_a25b289dece2a1685bb9d1a9332c9be0b_a25b289dece2a1685bb9d1a9332c9be0b}{}\label{class_b_o_i_a25b289dece2a1685bb9d1a9332c9be0b_a25b289dece2a1685bb9d1a9332c9be0b}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a7ac46c74859cebdc933cb27e148d18b1_a7ac46c74859cebdc933cb27e148d18b1}{B\+A\+NK}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00065}{65} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00100}{balance}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}, and \hyperlink{_b_o_i_8cpp_source_l00049}{to\+String()}.
+
+
+\begin{DoxyCode}
+00065                              \{
+00066     \textcolor{keywordflow}{return} \hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance};
+00067 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!get\+Base\+Copy@{get\+Base\+Copy}}
+\index{get\+Base\+Copy@{get\+Base\+Copy}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{get\+Base\+Copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ object)}{getBaseCopy(std::shared_ptr< OSTM > object)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ B\+O\+I\+::get\+Base\+Copy (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_ad53ae2918a656793b9d7a670d35ecfa3}{}\label{class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_ad53ae2918a656793b9d7a670d35ecfa3}
+
+
+\hyperlink{class_o_s_t_m}{O\+S\+TM} required virtual method for returning a pointer that is copy of the original pointer. 
+
+
+
+Reimplemented from \hyperlink{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f42714f94c}{O\+S\+TM}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00022}{22} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00024}{B\+O\+I()}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}.
+
+
+\begin{DoxyCode}
+00023 \{
+00024 
+00025     std::shared\_ptr<BOI> objTO = std::dynamic\_pointer\_cast<\hyperlink{class_b_o_i}{BOI}>(object);
+00026     std::shared\_ptr<BOI> obj(\textcolor{keyword}{new} \hyperlink{class_b_o_i_a6af682a5f199a029681f0cb2b8658706_a6af682a5f199a029681f0cb2b8658706}{BOI}(objTO,object->Get\_Version(),\textcolor{keywordtype}{object}->Get\_Unique\_ID())); 
+00027     std::shared\_ptr<OSTM> ostm\_obj = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}>(obj);
+00028     \textcolor{keywordflow}{return} ostm\_obj;
+00029 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_ad53ae2918a656793b9d7a670d35ecfa3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{B\+OI@{B\+OI}!Get\+First\+Name@{Get\+First\+Name}}
+\index{Get\+First\+Name@{Get\+First\+Name}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{Get\+First\+Name() const }{GetFirstName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string B\+O\+I\+::\+Get\+First\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_ab4b9d50c6008a666aa4382def580e7d1_ab4b9d50c6008a666aa4382def580e7d1}{}\label{class_b_o_i_ab4b9d50c6008a666aa4382def580e7d1_ab4b9d50c6008a666aa4382def580e7d1}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_ad0ba1c785c67e7d4760dc8776f3d4bca_ad0ba1c785c67e7d4760dc8776f3d4bca}{B\+A\+NK}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00089}{89} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00097}{first\+Name}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}, and \hyperlink{_b_o_i_8cpp_source_l00049}{to\+String()}.
+
+
+\begin{DoxyCode}
+00089                                   \{
+00090     \textcolor{keywordflow}{return} \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName};
+00091 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!Get\+Fullname@{Get\+Fullname}}
+\index{Get\+Fullname@{Get\+Fullname}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{Get\+Fullname() const }{GetFullname() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string B\+O\+I\+::\+Get\+Fullname (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_af56446a377068cd65526e40e8b31b878_af56446a377068cd65526e40e8b31b878}{}\label{class_b_o_i_af56446a377068cd65526e40e8b31b878_af56446a377068cd65526e40e8b31b878}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_aa1528c533bf6389bc8d7f3eeca114bab_aa1528c533bf6389bc8d7f3eeca114bab}{B\+A\+NK}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00097}{97} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00096}{fullname}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}.
+
+
+\begin{DoxyCode}
+00097                                  \{
+00098     \textcolor{keywordflow}{return} \hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname};
+00099 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!Get\+Last\+Name@{Get\+Last\+Name}}
+\index{Get\+Last\+Name@{Get\+Last\+Name}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{Get\+Last\+Name() const }{GetLastName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string B\+O\+I\+::\+Get\+Last\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_a37828f3fa4a32f522966e2cad90eaab2_a37828f3fa4a32f522966e2cad90eaab2}{}\label{class_b_o_i_a37828f3fa4a32f522966e2cad90eaab2_a37828f3fa4a32f522966e2cad90eaab2}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a4612063ec2bfd6d883a77a0d3697af90_a4612063ec2bfd6d883a77a0d3697af90}{B\+A\+NK}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00081}{81} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00098}{last\+Name}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}, and \hyperlink{_b_o_i_8cpp_source_l00049}{to\+String()}.
+
+
+\begin{DoxyCode}
+00081                                  \{
+00082     \textcolor{keywordflow}{return} \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName};
+00083 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!operator=@{operator=}}
+\index{operator=@{operator=}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{operator=(const B\+O\+I \&orig)}{operator=(const BOI &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+OI} B\+O\+I\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf B\+OI} \&}]{orig}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_a4b4a3976cc13c4d3de0d7ff8882a7af3}{}\label{class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_a4b4a3976cc13c4d3de0d7ff8882a7af3}
+
+
+Definition at line \hyperlink{_b_o_i_8h_source_l00065}{65} of file \hyperlink{_b_o_i_8h_source}{B\+O\+I.\+h}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00099}{account\+Number}, \hyperlink{_b_o_i_8h_source_l00101}{address}, \hyperlink{_b_o_i_8h_source_l00100}{balance}, \hyperlink{_b_o_i_8cpp_source_l00035}{copy()}, \hyperlink{_b_o_i_8h_source_l00097}{first\+Name}, \hyperlink{_b_o_i_8h_source_l00096}{fullname}, \hyperlink{_b_o_i_8cpp_source_l00073}{Get\+Account\+Number()}, \hyperlink{_b_o_i_8cpp_source_l00057}{Get\+Address()}, \hyperlink{_b_o_i_8cpp_source_l00065}{Get\+Balance()}, \hyperlink{_b_o_i_8cpp_source_l00022}{get\+Base\+Copy()}, \hyperlink{_b_o_i_8cpp_source_l00089}{Get\+First\+Name()}, \hyperlink{_b_o_i_8cpp_source_l00097}{Get\+Fullname()}, \hyperlink{_b_o_i_8cpp_source_l00081}{Get\+Last\+Name()}, \hyperlink{_b_o_i_8h_source_l00098}{last\+Name}, \hyperlink{_b_o_i_8cpp_source_l00069}{Set\+Account\+Number()}, \hyperlink{_b_o_i_8cpp_source_l00053}{Set\+Address()}, \hyperlink{_b_o_i_8cpp_source_l00061}{Set\+Balance()}, \hyperlink{_b_o_i_8cpp_source_l00085}{Set\+First\+Name()}, \hyperlink{_b_o_i_8cpp_source_l00093}{Set\+Fullname()}, \hyperlink{_b_o_i_8cpp_source_l00077}{Set\+Last\+Name()}, \hyperlink{_b_o_i_8cpp_source_l00049}{to\+String()}, and \hyperlink{_b_o_i_8cpp_source_l00012}{$\sim$\+B\+O\+I()}.
+
+
+\begin{DoxyCode}
+00065 \{\};
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_a4b4a3976cc13c4d3de0d7ff8882a7af3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{B\+OI@{B\+OI}!Set\+Account\+Number@{Set\+Account\+Number}}
+\index{Set\+Account\+Number@{Set\+Account\+Number}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{Set\+Account\+Number(int account\+Number)}{SetAccountNumber(int accountNumber)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+O\+I\+::\+Set\+Account\+Number (
+\begin{DoxyParamCaption}
+\item[{int}]{account\+Number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_affc9e7e2a36214b3790f250b7108bb65_affc9e7e2a36214b3790f250b7108bb65}{}\label{class_b_o_i_affc9e7e2a36214b3790f250b7108bb65_affc9e7e2a36214b3790f250b7108bb65}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a9d8fb8bde35d63eca7e9f87d22b45752_a9d8fb8bde35d63eca7e9f87d22b45752}{B\+A\+NK}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00069}{69} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00099}{account\+Number}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}.
+
+
+\begin{DoxyCode}
+00069                                             \{
+00070     this->\hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber} = \hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber};
+00071 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!Set\+Address@{Set\+Address}}
+\index{Set\+Address@{Set\+Address}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{Set\+Address(std\+::string address)}{SetAddress(std::string address)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+O\+I\+::\+Set\+Address (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_a00c9386c862cf2442968bf7fc30102b3_a00c9386c862cf2442968bf7fc30102b3}{}\label{class_b_o_i_a00c9386c862cf2442968bf7fc30102b3_a00c9386c862cf2442968bf7fc30102b3}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a52ad99454b2059d44967868157208393_a52ad99454b2059d44967868157208393}{B\+A\+NK}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00053}{53} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00101}{address}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}.
+
+
+\begin{DoxyCode}
+00053                                       \{
+00054     this->\hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address} = \hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address};
+00055 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!Set\+Balance@{Set\+Balance}}
+\index{Set\+Balance@{Set\+Balance}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{Set\+Balance(double balance)}{SetBalance(double balance)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+O\+I\+::\+Set\+Balance (
+\begin{DoxyParamCaption}
+\item[{double}]{balance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_a416667693c10f5e4120eec97a9269348_a416667693c10f5e4120eec97a9269348}{}\label{class_b_o_i_a416667693c10f5e4120eec97a9269348_a416667693c10f5e4120eec97a9269348}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{B\+A\+NK}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00061}{61} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00100}{balance}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}.
+
+
+\begin{DoxyCode}
+00061                                    \{
+00062     this->\hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance} = \hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance};
+00063 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!Set\+First\+Name@{Set\+First\+Name}}
+\index{Set\+First\+Name@{Set\+First\+Name}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{Set\+First\+Name(std\+::string first\+Name)}{SetFirstName(std::string firstName)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+O\+I\+::\+Set\+First\+Name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{first\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_ae9042f87be085c2cec799981c30d7d19_ae9042f87be085c2cec799981c30d7d19}{}\label{class_b_o_i_ae9042f87be085c2cec799981c30d7d19_ae9042f87be085c2cec799981c30d7d19}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a547cb9f21be894f045bb3cec6b12525c_a547cb9f21be894f045bb3cec6b12525c}{B\+A\+NK}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00085}{85} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00097}{first\+Name}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}.
+
+
+\begin{DoxyCode}
+00085                                           \{
+00086     this->\hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName} = \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName};
+00087 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!Set\+Fullname@{Set\+Fullname}}
+\index{Set\+Fullname@{Set\+Fullname}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{Set\+Fullname(std\+::string fullname)}{SetFullname(std::string fullname)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+O\+I\+::\+Set\+Fullname (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{fullname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_a93091f16610f1a1474aea31fd5f81ffd_a93091f16610f1a1474aea31fd5f81ffd}{}\label{class_b_o_i_a93091f16610f1a1474aea31fd5f81ffd_a93091f16610f1a1474aea31fd5f81ffd}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a8845dbfc7ddfbc2e0c0efda561a70ec3_a8845dbfc7ddfbc2e0c0efda561a70ec3}{B\+A\+NK}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00093}{93} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00096}{fullname}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}.
+
+
+\begin{DoxyCode}
+00093                                         \{
+00094     this->\hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname} = \hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname};
+00095 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!Set\+Last\+Name@{Set\+Last\+Name}}
+\index{Set\+Last\+Name@{Set\+Last\+Name}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{Set\+Last\+Name(std\+::string last\+Name)}{SetLastName(std::string lastName)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+O\+I\+::\+Set\+Last\+Name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{last\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_a663906e9a59ffa970fb928746c01e8af_a663906e9a59ffa970fb928746c01e8af}{}\label{class_b_o_i_a663906e9a59ffa970fb928746c01e8af_a663906e9a59ffa970fb928746c01e8af}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a2dc1b7664f9e3b005cb33e71b2ba42ee_a2dc1b7664f9e3b005cb33e71b2ba42ee}{B\+A\+NK}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00077}{77} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_b_o_i_8h_source_l00098}{last\+Name}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}.
+
+
+\begin{DoxyCode}
+00077                                         \{
+00078     this->\hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName} = \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName};
+00079 \}
+\end{DoxyCode}
+\index{B\+OI@{B\+OI}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{to\+String()}{toString()}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+O\+I\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_ab02a4dd4ebcc5b2abfaca19f2dff2006}{}\label{class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_ab02a4dd4ebcc5b2abfaca19f2dff2006}
+
+
+\hyperlink{class_o_s_t_m}{O\+S\+TM} required virtual method for display object. 
+
+
+
+Reimplemented from \hyperlink{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203309ae8a59}{O\+S\+TM}.
+
+
+
+Definition at line \hyperlink{_b_o_i_8cpp_source_l00049}{49} of file \hyperlink{_b_o_i_8cpp_source}{B\+O\+I.\+cpp}.
+
+
+
+References \hyperlink{_o_s_t_m_8cpp_source_l00073}{O\+S\+T\+M\+::\+Get\+\_\+\+Unique\+\_\+\+I\+D()}, \hyperlink{_o_s_t_m_8cpp_source_l00089}{O\+S\+T\+M\+::\+Get\+\_\+\+Version()}, \hyperlink{_b_o_i_8cpp_source_l00073}{Get\+Account\+Number()}, \hyperlink{_b_o_i_8cpp_source_l00065}{Get\+Balance()}, \hyperlink{_b_o_i_8cpp_source_l00089}{Get\+First\+Name()}, and \hyperlink{_b_o_i_8cpp_source_l00081}{Get\+Last\+Name()}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00065}{operator=()}.
+
+
+\begin{DoxyCode}
+00050 \{
+00051    std::cout << \textcolor{stringliteral}{"\(\backslash\)nBOI BANK"} << \textcolor{stringliteral}{"\(\backslash\)nUnique ID : "} << this->\hyperlink{class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_a5a01a8b98d16b1d1904ecf9356e7b71d}{Get\_Unique\_ID}() << \textcolor{stringliteral}{"\(\backslash\)nInt account : 
+      "} << this->\hyperlink{class_b_o_i_a5b18e1538f3d37835234946cdf9f240f_a5b18e1538f3d37835234946cdf9f240f}{GetAccountNumber}() << \textcolor{stringliteral}{"\(\backslash\)nDouble value : "} << this->
+      \hyperlink{class_b_o_i_a25b289dece2a1685bb9d1a9332c9be0b_a25b289dece2a1685bb9d1a9332c9be0b}{GetBalance}() << \textcolor{stringliteral}{"\(\backslash\)nFirst name: "} << this->\hyperlink{class_b_o_i_ab4b9d50c6008a666aa4382def580e7d1_ab4b9d50c6008a666aa4382def580e7d1}{GetFirstName}() << \textcolor{stringliteral}{"\(\backslash\)nLast name : "} << 
+      this->\hyperlink{class_b_o_i_a37828f3fa4a32f522966e2cad90eaab2_a37828f3fa4a32f522966e2cad90eaab2}{GetLastName}()  << \textcolor{stringliteral}{"\(\backslash\)nVersion number : "} << this->\hyperlink{class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_a1f1db9d482f22c8e7caa17dfb340626b}{Get\_Version}() << std::endl;
+00052 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_ab02a4dd4ebcc5b2abfaca19f2dff2006_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsubsection{Member Data Documentation}
+\index{B\+OI@{B\+OI}!account\+Number@{account\+Number}}
+\index{account\+Number@{account\+Number}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{account\+Number}{accountNumber}}]{\setlength{\rightskip}{0pt plus 5cm}int B\+O\+I\+::account\+Number\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{}\label{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}
+
+
+Definition at line \hyperlink{_b_o_i_8h_source_l00099}{99} of file \hyperlink{_b_o_i_8h_source}{B\+O\+I.\+h}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00024}{B\+O\+I()}, \hyperlink{_b_o_i_8cpp_source_l00073}{Get\+Account\+Number()}, \hyperlink{_b_o_i_8h_source_l00065}{operator=()}, and \hyperlink{_b_o_i_8cpp_source_l00069}{Set\+Account\+Number()}.
+
+\index{B\+OI@{B\+OI}!address@{address}}
+\index{address@{address}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{address}{address}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string B\+O\+I\+::address\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{}\label{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}
+
+
+Definition at line \hyperlink{_b_o_i_8h_source_l00101}{101} of file \hyperlink{_b_o_i_8h_source}{B\+O\+I.\+h}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00024}{B\+O\+I()}, \hyperlink{_b_o_i_8cpp_source_l00057}{Get\+Address()}, \hyperlink{_b_o_i_8h_source_l00065}{operator=()}, and \hyperlink{_b_o_i_8cpp_source_l00053}{Set\+Address()}.
+
+\index{B\+OI@{B\+OI}!balance@{balance}}
+\index{balance@{balance}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{balance}{balance}}]{\setlength{\rightskip}{0pt plus 5cm}double B\+O\+I\+::balance\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{}\label{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}
+
+
+Definition at line \hyperlink{_b_o_i_8h_source_l00100}{100} of file \hyperlink{_b_o_i_8h_source}{B\+O\+I.\+h}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00024}{B\+O\+I()}, \hyperlink{_b_o_i_8cpp_source_l00065}{Get\+Balance()}, \hyperlink{_b_o_i_8h_source_l00065}{operator=()}, and \hyperlink{_b_o_i_8cpp_source_l00061}{Set\+Balance()}.
+
+\index{B\+OI@{B\+OI}!first\+Name@{first\+Name}}
+\index{first\+Name@{first\+Name}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{first\+Name}{firstName}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string B\+O\+I\+::first\+Name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{}\label{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}
+
+
+Definition at line \hyperlink{_b_o_i_8h_source_l00097}{97} of file \hyperlink{_b_o_i_8h_source}{B\+O\+I.\+h}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00024}{B\+O\+I()}, \hyperlink{_b_o_i_8cpp_source_l00089}{Get\+First\+Name()}, \hyperlink{_b_o_i_8h_source_l00065}{operator=()}, and \hyperlink{_b_o_i_8cpp_source_l00085}{Set\+First\+Name()}.
+
+\index{B\+OI@{B\+OI}!fullname@{fullname}}
+\index{fullname@{fullname}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{fullname}{fullname}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string B\+O\+I\+::fullname\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{}\label{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}
+
+
+Definition at line \hyperlink{_b_o_i_8h_source_l00096}{96} of file \hyperlink{_b_o_i_8h_source}{B\+O\+I.\+h}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00024}{B\+O\+I()}, \hyperlink{_b_o_i_8cpp_source_l00097}{Get\+Fullname()}, \hyperlink{_b_o_i_8h_source_l00065}{operator=()}, and \hyperlink{_b_o_i_8cpp_source_l00093}{Set\+Fullname()}.
+
+\index{B\+OI@{B\+OI}!last\+Name@{last\+Name}}
+\index{last\+Name@{last\+Name}!B\+OI@{B\+OI}}
+\paragraph[{\texorpdfstring{last\+Name}{lastName}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string B\+O\+I\+::last\+Name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{}\label{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}
+
+
+Definition at line \hyperlink{_b_o_i_8h_source_l00098}{98} of file \hyperlink{_b_o_i_8h_source}{B\+O\+I.\+h}.
+
+
+
+Referenced by \hyperlink{_b_o_i_8h_source_l00024}{B\+O\+I()}, \hyperlink{_b_o_i_8cpp_source_l00081}{Get\+Last\+Name()}, \hyperlink{_b_o_i_8h_source_l00065}{operator=()}, and \hyperlink{_b_o_i_8cpp_source_l00077}{Set\+Last\+Name()}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_b_o_i_8h}{B\+O\+I.\+h}\item 
+\hyperlink{_b_o_i_8cpp}{B\+O\+I.\+cpp}\end{DoxyCompactItemize}

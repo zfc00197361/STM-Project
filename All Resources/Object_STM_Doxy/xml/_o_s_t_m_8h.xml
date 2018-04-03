@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_o_s_t_m_8h" kind="file" language="C++">
+    <compoundname>OSTM.h</compoundname>
+    <includes local="no">mutex</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">string</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="_b_a_n_k_8h" local="yes">BANK.h</includedby>
+    <includedby refid="_w_a_r_e_h_o_u_s_e_8h" local="yes">WAREHOUSE.h</includedby>
+    <includedby refid="_t_x_8h" local="yes">TX.h</includedby>
+    <includedby refid="_o_s_t_m_8cpp" local="yes">OSTM.cpp</includedby>
+    <incdepgraph>
+      <node id="636">
+        <label>string</label>
+      </node>
+      <node id="633">
+        <label>OSTM.h</label>
+        <link refid="OSTM.h"/>
+        <childnode refid="634" relation="include">
+        </childnode>
+        <childnode refid="635" relation="include">
+        </childnode>
+        <childnode refid="636" relation="include">
+        </childnode>
+        <childnode refid="637" relation="include">
+        </childnode>
+      </node>
+      <node id="637">
+        <label>iostream</label>
+      </node>
+      <node id="634">
+        <label>mutex</label>
+      </node>
+      <node id="635">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="660">
+        <label>DUNDALK_W.cpp</label>
+        <link refid="_d_u_n_d_a_l_k___w_8cpp"/>
+      </node>
+      <node id="668">
+        <label>TX.h</label>
+        <link refid="_t_x_8h"/>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+      </node>
+      <node id="648">
+        <label>SWBPLC.h</label>
+        <link refid="_s_w_b_p_l_c_8h"/>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="649" relation="include">
+        </childnode>
+      </node>
+      <node id="666">
+        <label>SLIGO_W.cpp</label>
+        <link refid="_s_l_i_g_o___w_8cpp"/>
+      </node>
+      <node id="653">
+        <label>UNBL.cpp</label>
+        <link refid="_u_n_b_l_8cpp"/>
+      </node>
+      <node id="644">
+        <label>BOA.h</label>
+        <link refid="_b_o_a_8h"/>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="646">
+        <label>BOI.h</label>
+        <link refid="_b_o_i_8h"/>
+        <childnode refid="647" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="669">
+        <label>TM.h</label>
+        <link refid="_t_m_8h"/>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+      </node>
+      <node id="657">
+        <label>CARPHONE_WAREHOUSE.h</label>
+        <link refid="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h"/>
+        <childnode refid="658" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="638">
+        <label>OSTM.h</label>
+        <link refid="OSTM.h"/>
+        <childnode refid="639" relation="include">
+        </childnode>
+        <childnode refid="654" relation="include">
+        </childnode>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+      </node>
+      <node id="640">
+        <label>AIB.h</label>
+        <link refid="_a_i_b_8h"/>
+        <childnode refid="641" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="656">
+        <label>CARLOW_W.cpp</label>
+        <link refid="_c_a_r_l_o_w___w_8cpp"/>
+      </node>
+      <node id="641">
+        <label>AIB.cpp</label>
+        <link refid="_a_i_b_8cpp"/>
+      </node>
+      <node id="651">
+        <label>ULSTER.cpp</label>
+        <link refid="_u_l_s_t_e_r_8cpp"/>
+      </node>
+      <node id="647">
+        <label>BOI.cpp</label>
+        <link refid="_b_o_i_8cpp"/>
+      </node>
+      <node id="670">
+        <label>TM.cpp</label>
+        <link refid="_t_m_8cpp"/>
+      </node>
+      <node id="663">
+        <label>TALLAGH_W.h</label>
+        <link refid="_t_a_l_l_a_g_h___w_8h"/>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="664" relation="include">
+        </childnode>
+      </node>
+      <node id="665">
+        <label>SLIGO_W.h</label>
+        <link refid="_s_l_i_g_o___w_8h"/>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="666" relation="include">
+        </childnode>
+      </node>
+      <node id="658">
+        <label>CARPHONE_WAREHOUSE.cpp</label>
+        <link refid="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp"/>
+      </node>
+      <node id="654">
+        <label>WAREHOUSE.h</label>
+        <link refid="_w_a_r_e_h_o_u_s_e_8h"/>
+        <childnode refid="655" relation="include">
+        </childnode>
+        <childnode refid="657" relation="include">
+        </childnode>
+        <childnode refid="659" relation="include">
+        </childnode>
+        <childnode refid="661" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+        <childnode refid="667" relation="include">
+        </childnode>
+      </node>
+      <node id="671">
+        <label>TX.cpp</label>
+        <link refid="_t_x_8cpp"/>
+      </node>
+      <node id="643">
+        <label>BANK.cpp</label>
+        <link refid="_b_a_n_k_8cpp"/>
+      </node>
+      <node id="662">
+        <label>KILKENNY_W.cpp</label>
+        <link refid="_k_i_l_k_e_n_n_y___w_8cpp"/>
+      </node>
+      <node id="652">
+        <label>UNBL.h</label>
+        <link refid="_u_n_b_l_8h"/>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="653" relation="include">
+        </childnode>
+      </node>
+      <node id="672">
+        <label>OSTM.cpp</label>
+        <link refid="_o_s_t_m_8cpp"/>
+      </node>
+      <node id="664">
+        <label>TALLAGH_W.cpp</label>
+        <link refid="_t_a_l_l_a_g_h___w_8cpp"/>
+      </node>
+      <node id="655">
+        <label>CARLOW_W.h</label>
+        <link refid="_c_a_r_l_o_w___w_8h"/>
+        <childnode refid="656" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="649">
+        <label>SWBPLC.cpp</label>
+        <link refid="_s_w_b_p_l_c_8cpp"/>
+      </node>
+      <node id="650">
+        <label>ULSTER.h</label>
+        <link refid="_u_l_s_t_e_r_8h"/>
+        <childnode refid="642" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+      </node>
+      <node id="667">
+        <label>WAREHOUSE.cpp</label>
+        <link refid="_w_a_r_e_h_o_u_s_e_8cpp"/>
+      </node>
+      <node id="645">
+        <label>BOA.cpp</label>
+        <link refid="_b_o_a_8cpp"/>
+      </node>
+      <node id="659">
+        <label>DUNDALK_W.h</label>
+        <link refid="_d_u_n_d_a_l_k___w_8h"/>
+        <childnode refid="660" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="639">
+        <label>BANK.h</label>
+        <link refid="_b_a_n_k_8h"/>
+        <childnode refid="640" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
+        </childnode>
+        <childnode refid="648" relation="include">
+        </childnode>
+        <childnode refid="650" relation="include">
+        </childnode>
+        <childnode refid="652" relation="include">
+        </childnode>
+      </node>
+      <node id="661">
+        <label>KILKENNY_W.h</label>
+        <link refid="_k_i_l_k_e_n_n_y___w_8h"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="642">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_o_s_t_m" prot="public">OSTM</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>File:<sp/><sp/><sp/>OSTM.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Zoltan<sp/>FUzesi</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Created<sp/>on<sp/>December<sp/>18,<sp/>2017,<sp/>2:09<sp/>PM</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>OSTM<sp/>header<sp/>file<sp/>fields<sp/>and<sp/><sp/>methods<sp/>declarations</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>OSTM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OSTM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mutex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_o_s_t_m" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_o_s_t_m" kindref="compound">OSTM</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196" kindref="member">OSTM</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196" kindref="member">OSTM</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_version_number_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_unique_id_);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a30a17d73d0259c60eeab72d6dfa9ceb1" kindref="member">~OSTM</ref>();</highlight></codeline>
+<codeline lineno="34" refid="class_o_s_t_m_1a535d90fced5adbb70312c92f3778e08d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a535d90fced5adbb70312c92f3778e08d" kindref="member">copy</ref>(std::shared_ptr&lt;OSTM&gt;<sp/>from,<sp/>std::shared_ptr&lt;OSTM&gt;<sp/>to){};<sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="class_o_s_t_m_1a0bfa3763bd441407dd6365f42714f94c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;OSTM&gt;<sp/><ref refid="class_o_s_t_m_1a0bfa3763bd441407dd6365f42714f94c" kindref="member">getBaseCopy</ref>(std::shared_ptr&lt;OSTM&gt;<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">){};</highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;[OSTM<sp/>GETBASECOPY]&quot;<sp/>&lt;&lt;<sp/>std::endl;};</highlight></codeline>
+<codeline lineno="42" refid="class_o_s_t_m_1a513396a115f2987fd07c203309ae8a59" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a513396a115f2987fd07c203309ae8a59" kindref="member">toString</ref>(){};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93" kindref="member">Set_Unique_ID</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uniqueID);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" kindref="member">Get_Unique_ID</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a9529ad8d6d28c1f0cc9b86ed91df1ae1" kindref="member">Set_Version</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" kindref="member">Get_Version</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a5f90caa4384d371c16b7cac860d9f89a" kindref="member">increase_VersionNumber</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a8df39ced3b401aa466df97e26d14b1b7" kindref="member">Is_Can_Commit</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a813ee61c9d1c83c6a6ae30d12aca8a5d" kindref="member">Set_Can_Commit</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>canCommit);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1aba384cf65c5f56f5b86833730c3c6ea4" kindref="member">Set_Abort_Transaction</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>abortTransaction);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1afc2851abf5342c3c67342c2c14820115" kindref="member">Is_Abort_Transaction</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1af192c598a3c647f37aaba5757e60240f" kindref="member">lock_Mutex</ref>();</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a6cd703bc26c719fd95b4f5362d050762" kindref="member">unlock_Mutex</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1afb6520023ed2c4a6188b688c46f192d0" kindref="member">is_Locked</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>\brief<sp/>Object<sp/>version<sp/>number</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>\brief<sp/>Object<sp/>unique<sp/>identifier</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uniqueID;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>\brief<sp/>Boolean<sp/>value<sp/>to<sp/>check<sp/>any<sp/>other<sp/>thread<sp/>failed<sp/>to<sp/>commit</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>canCommit;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>\brief<sp/>Abort<sp/>the<sp/>transaction</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>abort_Transaction;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>global_Unique_ID_Number;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ZERO<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>std::mutex<sp/>mutex;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Get_global_Unique_ID_Number();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>OSTM_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="OSTM.h"/>
+  </compounddef>
+</doxygen>

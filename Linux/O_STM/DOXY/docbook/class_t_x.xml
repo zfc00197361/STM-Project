@@ -1,0 +1,855 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_t_x">
+<title>TX class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_t_x_8h">&lt;TX.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for TX</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_t_x__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for TX</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_t_x__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int test_counter</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _tx_nesting_level</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::thread::id transaction_Number<para><emphasis>Returning the transaction number.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; int, std::shared_ptr&lt; OSTM &gt; &gt; working_Map_collection<para><emphasis>MAP Collection to store OSTM* parent based pointers to make invisible changes during isolated transaction.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static std::map&lt; int, std::shared_ptr&lt; OSTM &gt; &gt; main_Process_Map_collection<para><emphasis>STATIC GLOBAL MAP Collection to store OSTM* parent based pointers to control/lock and compare objects version number within transactions.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static std::map&lt; int, std::map&lt; int, int &gt; &gt; process_map_collection<para><emphasis>STATIC GLOBAL MAP Collection to store all process associated keys to find when deleting transactions.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static std::mutex register_Lock</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_t_x_aa3ac499f576326588628ade96b27b4b1_1aa3ac499f576326588628ade96b27b4b1">_decrease_tx_nesting</link> (
+)<para><emphasis>Remove TX nesting level by one.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_t_x_a1384bdf12d795854b5d32e7f61ffbdb8_1a1384bdf12d795854b5d32e7f61ffbdb8">_increase_tx_nesting</link> (
+)<para><emphasis>Add TX nesting level by one.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_t_x_a3d96ed91eb9ec73e16589f705661c5a7_1a3d96ed91eb9ec73e16589f705661c5a7">_print_all_tx</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_1abc32af2f51df97ac483e5bfe7db6ca6e">_register</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; object)<para><emphasis>Register OSTM pointer into STM library.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_t_x_a9dde5d356b35e557448e58d260087356_1a9dde5d356b35e557448e58d260087356">commit</link> (
+)<para><emphasis>Commit transactional changes.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_t_x_ae9bf97930c4670f59d334b345353a71e_1ae9bf97930c4670f59d334b345353a71e">getTest_counter</link> (
+)<para><emphasis>getTest_counter TESTING ONLY!!! returning the value of the test_counter stored, number of rollbacks</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; <link linkend="class_t_x_a1d78262b8831ddd042ed491f2e600e24_1a1d78262b8831ddd042ed491f2e600e24">load</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; object)<para><emphasis>load std::shared_ptr&lt;OSTM&gt;, returning an std::shared_ptr&lt;OSTM&gt; copy of the original pointer, to work with during transaction life time</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_t_x_aa9739c5c2077454c779098db7baefc2b_1aa9739c5c2077454c779098db7baefc2b">ostm_exit</link> (
+)<para><emphasis>Delete all map entries associated with the main process.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_t_x_a7dbcb369aa4a3370b6c6829d278ece5d_1a7dbcb369aa4a3370b6c6829d278ece5d">store</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; object)<para><emphasis>Store transactional changes.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_t_x_a8a4b83eab0171ae834bfa92bbced1094_1a8a4b83eab0171ae834bfa92bbced1094">TX</link> (
+std::thread::id id)<para><emphasis>Constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_t_x_ab96b3dd2bfd621b47307f0af3ec4f35c_1ab96b3dd2bfd621b47307f0af3ec4f35c">TX</link> (
+const <link linkend="class_t_x">TX</link> &amp; orig)<para><emphasis>Default copy constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_t_x_abecf854cc3228ab6dd51175b3cd1c70a_1abecf854cc3228ab6dd51175b3cd1c70a">~TX</link> (
+)<para><emphasis>De-constructor.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const std::thread::id <link linkend="class_t_x_a9eba04944d449285905b60ec47223cff_1a9eba04944d449285905b60ec47223cff">_get_tx_number</link> (
+)<para><emphasis>_get_tx_number returning the transaction uniqe identifier</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_1a4c13d2015dc15d0f788fa9a1413f0463">_release_object_lock</link> (
+)<para><emphasis>_release_object_lock void, is get called from commit function, with the purpose to release the locks on all the objects participating in the transaction</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; int, int &gt; <link linkend="class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_1a3f5671423cb7b9f9c98f8a25f2a4b545">get_thread_Map</link> (
+)<para><emphasis>get_thread_Map returning and map to insert to the process_map_collection as an inner value</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_1ae045534c4a9d39bd5c6ea2a39a372a79">th_exit</link> (
+)<para><emphasis>Clean up all associated values by the thread delete from working_Map_collection, it is an automated function.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <simplesect>
+                <title>int TX::test_counter</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>test_counter</entry>
+                                <entry>
+<para>int ONLY FOR TESTING!!!</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>static</entry>
+                                <entry>
+<para>Global counter for rollback </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+                <para>Definition at line 80 of file TX.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>TX.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+            <simplesect>
+                <title>int TX::_tx_nesting_level</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_tx_nesting_level</entry>
+                                <entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+                <para>Definition at line 102 of file TX.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>TX.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>std::thread::id TX::transaction_Number</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>transaction_Number</entry>
+                                <entry>
+<para>std::thread::id NOT USED YET </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+                <para>Definition at line 98 of file TX.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>TX.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>std::map&lt; int, std::shared_ptr&lt;OSTM&gt; &gt; TX::working_Map_collection</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>working_Map_collection</entry>
+                                <entry>
+<para>std::map </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+                <para>Definition at line 92 of file TX.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>TX.h</para></listitem></itemizedlist></para>
+            </simplesect>
+        </section>
+            <simplesect>
+                <title>std::map&lt; int, std::shared_ptr&lt; OSTM &gt; &gt; TX::main_Process_Map_collection</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>main_Process_Map_collection</entry>
+                                <entry>
+<para>std::map</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>static</entry>
+                                <entry>
+<para>Global std::map main_Process_Map_collection store all transactional objects/pointers </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+                <para>Definition at line 108 of file TX.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>TX.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>std::map&lt; int, std::map&lt; int, int &gt; &gt; TX::process_map_collection</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>process_map_collection</entry>
+                                <entry>
+<para>std::map</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>static</entry>
+                                <entry>
+<para>Global std::map process_map_collection store all transactional objects/pointers </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+                <para>Definition at line 113 of file TX.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>TX.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <simplesect>
+                <title>std::mutex TX::register_Lock</title>                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>register_Lock</entry>
+                                <entry>
+<para>std::mutex to control shared access on MAIN MAP</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>static</entry>
+                                <entry>
+<para>shared std:mutex register_Lock to protect writes into shared global collection </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+                <para>Definition at line 122 of file TX.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>TX.h</para></listitem></itemizedlist></para>
+            </simplesect>
+            <section xml:id="class_t_x_aa3ac499f576326588628ade96b27b4b1_1aa3ac499f576326588628ade96b27b4b1">
+                <title>void TX::_decrease_tx_nesting ()</title> <emphasis>Remove TX nesting level by one.</emphasis>
+                
+<para>_decrease_tx_nesting decrease the value stored in _tx_nesting_level by one, when outer transactions commiting</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_tx_nesting_level</entry>
+                                <entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_t_x_a1384bdf12d795854b5d32e7f61ffbdb8_1a1384bdf12d795854b5d32e7f61ffbdb8">
+                <title>void TX::_increase_tx_nesting ()</title> <emphasis>Add TX nesting level by one.</emphasis>
+                
+<para>_increase_tx_nesting increase the value stored in _tx_nesting_level by one, indicate that the transaction nested</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_tx_nesting_level</entry>
+                                <entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_t_x_a3d96ed91eb9ec73e16589f705661c5a7_1a3d96ed91eb9ec73e16589f705661c5a7">
+                <title>void TX::_print_all_tx ()</title> <emphasis></emphasis>
+                
+<para>ONLY FOR TESTING CHECK THE MAP AFTER THREAD EXIT AND ALL SHOULD BE DELETED!!!!!!! </para>
+
+            </section>
+            <section xml:id="class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_1abc32af2f51df97ac483e5bfe7db6ca6e">
+                <title>void TX::_register (std::shared_ptr&lt; OSTM &gt; object)</title> <emphasis>Register OSTM pointer into STM library.</emphasis>
+                
+<para>register void, receives an std::shared_ptr&lt;OSTM&gt; that point to the original memory space to protect from reca conditions</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>working_Map_collection</entry>
+                                <entry>
+<para>std::map, store all the std::shared_ptr&lt;OSTM&gt; pointer in the transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>main_Process_Map_collection</entry>
+                                <entry>
+<para>std::map, store all std::shared_ptr&lt;OSTM&gt; from all transaction, used to lock and compare the objects </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>process_map_collection</entry>
+                                <entry>
+<para>std::map, store all std::shared_ptr&lt;OSTM&gt; unique ID from all transaction, used to delete all pointers used by the main process, from all transaction before the program exit. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>std::lock_guard</entry>
+                                <entry>
+<para>use register_Lock(mutex) shared lock between all transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>ppid</entry>
+                                <entry>
+<para>int, store main process number </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_t_x_a9dde5d356b35e557448e58d260087356_1a9dde5d356b35e557448e58d260087356">
+                <title>bool TX::commit ()</title> <emphasis>Commit transactional changes.</emphasis>
+                
+<para>commit bool, returns boolean value TRUE/FALSE depends on the action taken within the function</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>working_Map_collection</entry>
+                                <entry>
+<para>std::map, store all the std::shared_ptr&lt;OSTM&gt; pointer in the transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>main_Process_Map_collection</entry>
+                                <entry>
+<para>std::map, store all std::shared_ptr&lt;OSTM&gt; from all transaction, used to lock and compare the objects </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>can_Commit</entry>
+                                <entry>
+<para>bool, helps to make decision that the transaction can commit or rollback </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_t_x_ae9bf97930c4670f59d334b345353a71e_1ae9bf97930c4670f59d334b345353a71e">
+                <title>int TX::getTest_counter ()</title> <emphasis>getTest_counter TESTING ONLY!!! returning the value of the test_counter stored, number of rollbacks</emphasis>
+                
+            </section>
+            <section xml:id="class_t_x_a1d78262b8831ddd042ed491f2e600e24_1a1d78262b8831ddd042ed491f2e600e24">
+                <title>std::shared_ptr&lt; OSTM &gt; TX::load (std::shared_ptr&lt; OSTM &gt; object)</title> <emphasis>load std::shared_ptr&lt;OSTM&gt;, returning an std::shared_ptr&lt;OSTM&gt; copy of the original pointer, to work with during transaction life time</emphasis>
+                
+<para>Register <link linkend="class_o_s_t_m">OSTM</link> pointer into STM library</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>working_Map_collection</entry>
+                                <entry>
+<para>std::map, store all the std::shared_ptr&lt;OSTM&gt; pointer in the transaction </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_t_x_aa9739c5c2077454c779098db7baefc2b_1aa9739c5c2077454c779098db7baefc2b">
+                <title>void TX::ostm_exit ()</title> <emphasis>Delete all map entries associated with the main process.</emphasis>
+                
+<para>ostm_exit void, clear all elements from the shared global collections associated with the main process</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>main_Process_Map_collection</entry>
+                                <entry>
+<para>std::map, store all std::shared_ptr&lt;OSTM&gt; from all transaction shared between multiple processes </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>process_map_collection</entry>
+                                <entry>
+<para>std::map, store all unique id from all transaction within main process DO NOT CALL THIS METHOD EXPLICITLY!!!!!! WILL DELETE ALL PROCESS ASSOCIATED ELEMENTS!!!! </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_t_x_a7dbcb369aa4a3370b6c6829d278ece5d_1a7dbcb369aa4a3370b6c6829d278ece5d">
+                <title>void TX::store (std::shared_ptr&lt; OSTM &gt; object)</title> <emphasis>Store transactional changes.</emphasis>
+                
+<para>store void, receive an std::shared_ptr&lt;OSTM&gt; object to store the changes within the transaction, depends the user action</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>working_Map_collection</entry>
+                                <entry>
+<para>std::map, store all the std::shared_ptr&lt;OSTM&gt; pointer in the transaction </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_t_x_a8a4b83eab0171ae834bfa92bbced1094_1a8a4b83eab0171ae834bfa92bbced1094">
+                <title>TX::TX (std::thread::id id)</title> <emphasis>Constructor.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>transaction_Number</entry>
+                                <entry>
+<para>int, to store associated thread </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_tx_nesting_level</entry>
+                                <entry>
+<para>int, to store and indicate nesting level of transactions within transaction </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_t_x_ab96b3dd2bfd621b47307f0af3ec4f35c_1ab96b3dd2bfd621b47307f0af3ec4f35c">
+                <title>TX::TX (const TX &amp;orig)</title> <emphasis>Default copy constructor.</emphasis>
+                
+            </section>
+            <section xml:id="class_t_x_abecf854cc3228ab6dd51175b3cd1c70a_1abecf854cc3228ab6dd51175b3cd1c70a">
+                <title>TX::~TX ()</title> <emphasis>De-constructor.</emphasis>
+                
+            </section>
+            <section xml:id="class_t_x_a9eba04944d449285905b60ec47223cff_1a9eba04944d449285905b60ec47223cff">
+                <title>const std::thread::id TX::_get_tx_number () const </title> <emphasis>_get_tx_number returning the transaction uniqe identifier</emphasis>
+                
+<para>_get_tx_number std::thread::id, returning the thread id that has assigned the given transaction</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>transaction_Number</entry>
+                                <entry>
+<para>int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_1a4c13d2015dc15d0f788fa9a1413f0463">
+                <title>void TX::_release_object_lock ()</title> <emphasis>_release_object_lock void, is get called from commit function, with the purpose to release the locks on all the objects participating in the transaction</emphasis>
+                
+<para>Release the locks in objects with transaction associated collection</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>working_Map_collection</entry>
+                                <entry>
+<para>std::map, store all the std::shared_ptr&lt;OSTM&gt; pointer in the transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>main_Process_Map_collection</entry>
+                                <entry>
+<para>std::map, store all std::shared_ptr&lt;OSTM&gt; from all transaction, used to release the lock on object </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_1a3f5671423cb7b9f9c98f8a25f2a4b545">
+                <title>std::map&lt; int, int &gt; TX::get_thread_Map ()</title> <emphasis>get_thread_Map returning and map to insert to the process_map_collection as an inner value</emphasis>
+                
+<para>get_thread_Map std::map, returning a map to store all unique ID from all objects from all transactions within the main process</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>thread_Map</entry>
+                                <entry>
+<para>std::map&lt; int, int &gt;, </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_1ae045534c4a9d39bd5c6ea2a39a372a79">
+                <title>void TX::th_exit ()</title> <emphasis>Clean up all associated values by the thread delete from working_Map_collection, it is an automated function.</emphasis>
+                
+<para>th_exit void, delete all std::shared_ptr&lt;OSTM&gt; elements from working_Map_collection, that store pointers to working objects</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>working_Map_collection</entry>
+                                <entry>
+<para>std::map, store std::shared_ptr&lt;OSTM&gt; transaction pointers </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

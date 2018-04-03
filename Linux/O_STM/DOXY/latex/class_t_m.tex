@@ -1,0 +1,515 @@
+\hypertarget{class_t_m}{}\subsection{TM Class Reference}
+\label{class_t_m}\index{TM@{TM}}
+
+
+{\ttfamily \#include $<$T\+M.\+h$>$}
+
+
+
+Collaboration diagram for TM\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_t_m__coll__graph}
+\end{center}
+\end{figure}
+\subsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{class_t_x}{TX} $>$ const \hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\+\_\+get\+\_\+tx} ()
+\begin{DoxyCompactList}\small\item\em \+\_\+get\+\_\+tx std\+::shared\+\_\+ptr$<$\+T\+X$>$, returning a shared pointer with the transaction \end{DoxyCompactList}\item 
+void \hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\+\_\+\+T\+X\+\_\+\+E\+X\+IT} ()
+\begin{DoxyCompactList}\small\item\em \+\_\+\+T\+X\+\_\+\+E\+X\+IT void, the thread calls the ostm\+\_\+exit function in the transaction, and clear all elements from the shared global collection associated with the main process \end{DoxyCompactList}\item 
+void \hyperlink{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_a1d6891b1d3e71cc0acef54e7afe71c09}{print\+\_\+all} ()
+\begin{DoxyCompactList}\small\item\em O\+N\+LY F\+OR T\+E\+S\+T\+I\+NG print\+\_\+all void, print out all object key from tx\+M\+AP collection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_t_m}{TM} \& \hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_a7ce5f35e0dae76df4fe116cf905bbe60}{Instance} ()
+\begin{DoxyCompactList}\small\item\em Scott Meyer\textquotesingle{}s Singleton creation, what is thread safe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::thread\+::id, int $>$ \hyperlink{class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46915c}{get\+\_\+thread\+\_\+\+Map} ()
+\begin{DoxyCompactList}\small\item\em get\+\_\+thread\+\_\+\+Map returning and map to insert to the process\+\_\+map\+\_\+collection as an inner value \end{DoxyCompactList}\item 
+\hyperlink{class_t_m}{TM} \& \hyperlink{class_t_m_a85a6b783f0566f0877bab6a7de977c0a_a85a6b783f0566f0877bab6a7de977c0a}{operator=} (const \hyperlink{class_t_m}{TM} \&)=delete
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_t_m}{TM} copy operator, prevent from copying the Transaction Manager. \end{DoxyCompactList}\item 
+void \hyperlink{class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e}{register\+TX} ()
+\begin{DoxyCompactList}\small\item\em register\+TX void, register transaction into tx\+Map \end{DoxyCompactList}\item 
+\hyperlink{class_t_m_a9b5afb6b9d7c5925ab5cc5c65078ac23_a9b5afb6b9d7c5925ab5cc5c65078ac23}{TM} ()=default
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_t_m}{TM} constructor, prevent from multiple instantiation. \end{DoxyCompactList}\item 
+\hyperlink{class_t_m_a2d1de4a19f7ed6b2805ed6e955b8e45b_a2d1de4a19f7ed6b2805ed6e955b8e45b}{TM} (const \hyperlink{class_t_m}{TM} \&)=delete
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_t_m}{TM} copy constructor, prevent from copying the Transaction Manager. \end{DoxyCompactList}\item 
+\hyperlink{class_t_m_a985f8cb24f685925ddd637c7030cd2b3_a985f8cb24f685925ddd637c7030cd2b3}{$\sim$\+TM} ()=default
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_t_m}{TM} de-\/constructor, prevent from deletion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex \hyperlink{class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_a123bc5aa0766a7b909bebc54a429e5b0}{get\+\_\+\+Lock}
+\item 
+std\+::mutex \hyperlink{class_t_m_aeb26546681bfe64e21606b8c012bb8c3_aeb26546681bfe64e21606b8c012bb8c3}{register\+\_\+\+Lock}
+\item 
+std\+::map$<$ std\+::thread\+::id, std\+::shared\+\_\+ptr$<$ \hyperlink{class_t_x}{TX} $>$ $>$ \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{tx\+Map}
+\end{DoxyCompactItemize}
+\subsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_t_m_a6fb90615393f9205838e302c714bbd60_a6fb90615393f9205838e302c714bbd60}{\+\_\+tm\+\_\+id}
+\item 
+static std\+::map$<$ int, std\+::map$<$ std\+::thread\+::id, int $>$ $>$ \hyperlink{class_t_m_a81c3bd28ad2343a620fa070f8ac186ca_a81c3bd28ad2343a620fa070f8ac186ca}{process\+\_\+map\+\_\+collection}
+\begin{DoxyCompactList}\small\item\em S\+T\+A\+T\+IC G\+L\+O\+B\+AL M\+AP Collection to store all process associated keys to find when deleting transactions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsubsection{Detailed Description}
+
+
+Definition at line \hyperlink{_t_m_8h_source_l00080}{80} of file \hyperlink{_t_m_8h_source}{T\+M.\+h}.
+
+
+
+\subsubsection{Constructor \& Destructor Documentation}
+\index{TM@{TM}!TM@{TM}}
+\index{TM@{TM}!TM@{TM}}
+\paragraph[{\texorpdfstring{T\+M()=default}{TM()=default}}]{\setlength{\rightskip}{0pt plus 5cm}T\+M\+::\+TM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}\hypertarget{class_t_m_a9b5afb6b9d7c5925ab5cc5c65078ac23_a9b5afb6b9d7c5925ab5cc5c65078ac23}{}\label{class_t_m_a9b5afb6b9d7c5925ab5cc5c65078ac23_a9b5afb6b9d7c5925ab5cc5c65078ac23}
+
+
+\hyperlink{class_t_m}{TM} constructor, prevent from multiple instantiation. 
+
+\index{TM@{TM}!````~TM@{$\sim$\+TM}}
+\index{````~TM@{$\sim$\+TM}!TM@{TM}}
+\paragraph[{\texorpdfstring{$\sim$\+T\+M()=default}{~TM()=default}}]{\setlength{\rightskip}{0pt plus 5cm}T\+M\+::$\sim$\+TM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}\hypertarget{class_t_m_a985f8cb24f685925ddd637c7030cd2b3_a985f8cb24f685925ddd637c7030cd2b3}{}\label{class_t_m_a985f8cb24f685925ddd637c7030cd2b3_a985f8cb24f685925ddd637c7030cd2b3}
+
+
+\hyperlink{class_t_m}{TM} de-\/constructor, prevent from deletion. 
+
+\index{TM@{TM}!TM@{TM}}
+\index{TM@{TM}!TM@{TM}}
+\paragraph[{\texorpdfstring{T\+M(const T\+M \&)=delete}{TM(const TM &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}T\+M\+::\+TM (
+\begin{DoxyParamCaption}
+\item[{const {\bf TM} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{class_t_m_a2d1de4a19f7ed6b2805ed6e955b8e45b_a2d1de4a19f7ed6b2805ed6e955b8e45b}{}\label{class_t_m_a2d1de4a19f7ed6b2805ed6e955b8e45b_a2d1de4a19f7ed6b2805ed6e955b8e45b}
+
+
+\hyperlink{class_t_m}{TM} copy constructor, prevent from copying the Transaction Manager. 
+
+
+
+\subsubsection{Member Function Documentation}
+\index{TM@{TM}!\+\_\+get\+\_\+tx@{\+\_\+get\+\_\+tx}}
+\index{\+\_\+get\+\_\+tx@{\+\_\+get\+\_\+tx}!TM@{TM}}
+\paragraph[{\texorpdfstring{\+\_\+get\+\_\+tx()}{_get_tx()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf TX} $>$ const T\+M\+::\+\_\+get\+\_\+tx (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{}\label{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}
+
+
+\+\_\+get\+\_\+tx std\+::shared\+\_\+ptr$<$\+T\+X$>$, returning a shared pointer with the transaction 
+
+\+\_\+get\+\_\+tx std\+::shared\+\_\+ptr$<$\+T\+X$>$, return a shared\+\_\+ptr with the Transaction object, if \hyperlink{class_t_x}{TX} not exists then create one, else increasing the nesting level  std\+::mutex, protect shared collection from critical section
+
+
+\begin{DoxyParams}{Parameters}
+{\em guard} & std\+::lock\+\_\+guard, locks the register\+\_\+\+Lock mutex, unlock automatically when goes out of the scope \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_t_m_8cpp_source_l00078}{78} of file \hyperlink{_t_m_8cpp_source}{T\+M.\+cpp}.
+
+
+
+References \hyperlink{_t_m_8h_source_l00122}{get\+\_\+\+Lock}, \hyperlink{_t_m_8cpp_source_l00043}{register\+T\+X()}, and \hyperlink{_t_m_8h_source_l00101}{tx\+Map}.
+
+
+
+Referenced by \hyperlink{main_8cpp_source_l00294}{\+\_\+complex\+\_\+transfer\+\_\+()}, \hyperlink{main_8cpp_source_l00518}{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+()}, \hyperlink{main_8cpp_source_l00419}{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+()}, \hyperlink{main_8cpp_source_l00206}{\+\_\+nesting\+\_\+()}, \hyperlink{main_8cpp_source_l00051}{\+\_\+six\+\_\+account\+\_\+transfer\+\_\+()}, \hyperlink{main_8cpp_source_l00123}{\+\_\+two\+\_\+account\+\_\+transfer\+\_\+()}, \hyperlink{main_8cpp_source_l00358}{\+\_\+warehouse\+\_\+transfer\+\_\+()}, and \hyperlink{main_8cpp_source_l00649}{main()}.
+
+
+\begin{DoxyCode}
+00079 \{
+00080     std::lock\_guard<std::mutex> guard(\hyperlink{class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_a123bc5aa0766a7b909bebc54a429e5b0}{get\_Lock});
+00081 
+00082     std::map<std::thread::id, std::shared\_ptr<TX>>::iterator it = \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.find(std::this\_thread::get\_id(
+      ));
+00083     \textcolor{keywordflow}{if}(it == \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.end())
+00084     \{
+00085        \hyperlink{class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e}{registerTX}();
+00086        it = \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.find(std::this\_thread::get\_id());
+00087        
+00088     \} \textcolor{keywordflow}{else} \{
+00089         it->second->\_increase\_tx\_nesting();
+00090     \}
+00091     \textcolor{comment}{//it = txMap.find(std::this\_thread::get\_id());}
+00092     
+00093 
+00094     \textcolor{keywordflow}{return} it->second;
+00095 
+00096 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{TM@{TM}!\+\_\+\+T\+X\+\_\+\+E\+X\+IT@{\+\_\+\+T\+X\+\_\+\+E\+X\+IT}}
+\index{\+\_\+\+T\+X\+\_\+\+E\+X\+IT@{\+\_\+\+T\+X\+\_\+\+E\+X\+IT}!TM@{TM}}
+\paragraph[{\texorpdfstring{\+\_\+\+T\+X\+\_\+\+E\+X\+I\+T()}{_TX_EXIT()}}]{\setlength{\rightskip}{0pt plus 5cm}void T\+M\+::\+\_\+\+T\+X\+\_\+\+E\+X\+IT (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{}\label{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}
+
+
+\+\_\+\+T\+X\+\_\+\+E\+X\+IT void, the thread calls the ostm\+\_\+exit function in the transaction, and clear all elements from the shared global collection associated with the main process 
+
+\+\_\+\+T\+X\+\_\+\+E\+X\+IT void, the thread calls the ostm\+\_\+exit function in the transaction, and clear all elements from the shared global collection associated with the main process  tx \hyperlink{class_t_x}{TX}, local object to function in transaction 
+
+Definition at line \hyperlink{_t_m_8cpp_source_l00101}{101} of file \hyperlink{_t_m_8cpp_source}{T\+M.\+cpp}.
+
+
+
+References \hyperlink{_t_x_8cpp_source_l00072}{T\+X\+::ostm\+\_\+exit()}, \hyperlink{_t_m_8h_source_l00106}{process\+\_\+map\+\_\+collection}, and \hyperlink{_t_m_8h_source_l00101}{tx\+Map}.
+
+
+
+Referenced by \hyperlink{main_8cpp_source_l00649}{main()}.
+
+
+\begin{DoxyCode}
+00101                  \{
+00102     \hyperlink{class_t_x}{TX} tx(std::this\_thread::get\_id());
+00103     \textcolor{keywordtype}{int} ppid = getpid();
+00104     std::map<int, std::map< std::thread::id, int >>::iterator process\_map\_collection\_Iterator = 
+      \hyperlink{class_t_m_a81c3bd28ad2343a620fa070f8ac186ca_a81c3bd28ad2343a620fa070f8ac186ca}{TM::process\_map\_collection}.find(ppid);
+00105     \textcolor{keywordflow}{if} (process\_map\_collection\_Iterator != \hyperlink{class_t_m_a81c3bd28ad2343a620fa070f8ac186ca_a81c3bd28ad2343a620fa070f8ac186ca}{TM::process\_map\_collection}.end()) \{
+00106 
+00107         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} current = process\_map\_collection\_Iterator->second.begin(); current != 
+      process\_map\_collection\_Iterator->second.end(); ++current) \{
+00108             \textcolor{comment}{/*}
+00109 \textcolor{comment}{             * Delete all transaction associated with the actual main process}
+00110 \textcolor{comment}{             */}
+00111             \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.erase(current->first);
+00112         \}
+00113         \hyperlink{class_t_m_a81c3bd28ad2343a620fa070f8ac186ca_a81c3bd28ad2343a620fa070f8ac186ca}{TM::process\_map\_collection}.erase(ppid);
+00114 
+00115     \}
+00116     tx.ostm\_exit();
+00117 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{TM@{TM}!get\+\_\+thread\+\_\+\+Map@{get\+\_\+thread\+\_\+\+Map}}
+\index{get\+\_\+thread\+\_\+\+Map@{get\+\_\+thread\+\_\+\+Map}!TM@{TM}}
+\paragraph[{\texorpdfstring{get\+\_\+thread\+\_\+\+Map()}{get_thread_Map()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$ std\+::thread\+::id, int $>$ T\+M\+::get\+\_\+thread\+\_\+\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46915c}{}\label{class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46915c}
+
+
+get\+\_\+thread\+\_\+\+Map returning and map to insert to the process\+\_\+map\+\_\+collection as an inner value 
+
+get\+\_\+thread\+\_\+\+Map std\+::map, returning a map to store all unique ID from all objects from all transactions within the main process
+
+
+\begin{DoxyParams}{Parameters}
+{\em thread\+\_\+\+Map} & std\+::map$<$ int, int $>$, \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_t_m_8cpp_source_l00133}{133} of file \hyperlink{_t_m_8cpp_source}{T\+M.\+cpp}.
+
+
+
+Referenced by \hyperlink{_t_m_8cpp_source_l00043}{register\+T\+X()}.
+
+
+\begin{DoxyCode}
+00133                                               \{
+00134     std::map< std::thread::id, int > thread\_Map;
+00135     \textcolor{keywordflow}{return} thread\_Map;
+00136 \}\end{DoxyCode}
+\index{TM@{TM}!Instance@{Instance}}
+\index{Instance@{Instance}!TM@{TM}}
+\paragraph[{\texorpdfstring{Instance()}{Instance()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TM} \& T\+M\+::\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_a7ce5f35e0dae76df4fe116cf905bbe60}{}\label{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_a7ce5f35e0dae76df4fe116cf905bbe60}
+
+
+Scott Meyer\textquotesingle{}s Singleton creation, what is thread safe. 
+
+Instance \hyperlink{class_t_m}{TM}, return the same singleton object to any process.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+instance} & \hyperlink{class_t_m}{TM}, static class reference to the instance of the Transaction Manager class \\
+\hline
+{\em \+\_\+instance} & ppid, assigning the process id whoever created the Singleton instance \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_t_m_8cpp_source_l00028}{28} of file \hyperlink{_t_m_8cpp_source}{T\+M.\+cpp}.
+
+
+
+References \hyperlink{_t_m_8h_source_l00126}{\+\_\+tm\+\_\+id}.
+
+
+
+Referenced by \hyperlink{main_8cpp_source_l00649}{main()}.
+
+
+\begin{DoxyCode}
+00028                  \{
+00029     \textcolor{keyword}{static} \hyperlink{class_t_m}{TM} \_instance;
+00030     \_instance.\hyperlink{class_t_m_a6fb90615393f9205838e302c714bbd60_a6fb90615393f9205838e302c714bbd60}{\_tm\_id} = getpid();
+00031 
+00032     \textcolor{keywordflow}{return} \_instance;
+00033 \}
+\end{DoxyCode}
+\index{TM@{TM}!operator=@{operator=}}
+\index{operator=@{operator=}!TM@{TM}}
+\paragraph[{\texorpdfstring{operator=(const T\+M \&)=delete}{operator=(const TM &)=delete}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf TM}\& T\+M\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf TM} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}\hypertarget{class_t_m_a85a6b783f0566f0877bab6a7de977c0a_a85a6b783f0566f0877bab6a7de977c0a}{}\label{class_t_m_a85a6b783f0566f0877bab6a7de977c0a_a85a6b783f0566f0877bab6a7de977c0a}
+
+
+\hyperlink{class_t_m}{TM} copy operator, prevent from copying the Transaction Manager. 
+
+\index{TM@{TM}!print\+\_\+all@{print\+\_\+all}}
+\index{print\+\_\+all@{print\+\_\+all}!TM@{TM}}
+\paragraph[{\texorpdfstring{print\+\_\+all()}{print_all()}}]{\setlength{\rightskip}{0pt plus 5cm}void T\+M\+::print\+\_\+all (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_a1d6891b1d3e71cc0acef54e7afe71c09}{}\label{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_a1d6891b1d3e71cc0acef54e7afe71c09}
+
+
+O\+N\+LY F\+OR T\+E\+S\+T\+I\+NG print\+\_\+all void, print out all object key from tx\+M\+AP collection. 
+
+O\+N\+LY F\+OR T\+E\+S\+T\+I\+NG print\+\_\+all void, prints all object in the tx\+Map 
+
+Definition at line \hyperlink{_t_m_8cpp_source_l00121}{121} of file \hyperlink{_t_m_8cpp_source}{T\+M.\+cpp}.
+
+
+
+References \hyperlink{_t_m_8h_source_l00122}{get\+\_\+\+Lock}, and \hyperlink{_t_m_8h_source_l00101}{tx\+Map}.
+
+
+
+Referenced by \hyperlink{main_8cpp_source_l00649}{main()}.
+
+
+\begin{DoxyCode}
+00121                   \{
+00122     \hyperlink{class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_a123bc5aa0766a7b909bebc54a429e5b0}{get\_Lock}.lock();
+00123     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} current = \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.begin(); current != \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.end(); ++current) \{
+00124         std::cout << \textcolor{stringliteral}{"KEY : "} << current->first << std::endl;
+00125     \}
+00126     \hyperlink{class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_a123bc5aa0766a7b909bebc54a429e5b0}{get\_Lock}.unlock();
+00127 \}
+\end{DoxyCode}
+\index{TM@{TM}!register\+TX@{register\+TX}}
+\index{register\+TX@{register\+TX}!TM@{TM}}
+\paragraph[{\texorpdfstring{register\+T\+X()}{registerTX()}}]{\setlength{\rightskip}{0pt plus 5cm}void T\+M\+::register\+TX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e}{}\label{class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e}
+
+
+register\+TX void, register transaction into tx\+Map 
+
+register\+TX void, register a new \hyperlink{class_t_x}{TX} Transaction object into ythe tx\+Map/\+Transaction Map to manage all the transactions within the shared library
+
+
+\begin{DoxyParams}{Parameters}
+{\em tx\+Map} & std\+::map, collection to store all transaction created by the Transaction Manager \\
+\hline
+{\em register\+\_\+\+Lock} & std\+::mutex, used by the lock\+\_\+guard to protect shared map from race conditions \\
+\hline
+{\em guard} & std\+::lock\+\_\+guard, locks the register\+\_\+\+Lock mutex, unlock automatically when goes out of the scope \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_t_m_8cpp_source_l00043}{43} of file \hyperlink{_t_m_8cpp_source}{T\+M.\+cpp}.
+
+
+
+References \hyperlink{_t_m_8cpp_source_l00133}{get\+\_\+thread\+\_\+\+Map()}, \hyperlink{_t_m_8h_source_l00106}{process\+\_\+map\+\_\+collection}, \hyperlink{_t_m_8h_source_l00118}{register\+\_\+\+Lock}, and \hyperlink{_t_m_8h_source_l00101}{tx\+Map}.
+
+
+
+Referenced by \hyperlink{_t_m_8cpp_source_l00078}{\+\_\+get\+\_\+tx()}.
+
+
+\begin{DoxyCode}
+00044 \{
+00045     std::lock\_guard<std::mutex> guard(\hyperlink{class_t_m_aeb26546681bfe64e21606b8c012bb8c3_aeb26546681bfe64e21606b8c012bb8c3}{register\_Lock});
+00046     \textcolor{keywordtype}{int} ppid = getpid();
+00047     std::map<int, std::map< std::thread::id, int >>::iterator process\_map\_collection\_Iterator = 
+      \hyperlink{class_t_m_a81c3bd28ad2343a620fa070f8ac186ca_a81c3bd28ad2343a620fa070f8ac186ca}{TM::process\_map\_collection}.find(ppid);
+00048     \textcolor{keywordflow}{if} (process\_map\_collection\_Iterator == \hyperlink{class_t_m_a81c3bd28ad2343a620fa070f8ac186ca_a81c3bd28ad2343a620fa070f8ac186ca}{TM::process\_map\_collection}.end()) \{
+00049         \textcolor{comment}{/*}
+00050 \textcolor{comment}{         * Register main process/application to the global map}
+00051 \textcolor{comment}{         */}
+00052         std::map< std::thread::id, int >map = \hyperlink{class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46915c}{get\_thread\_Map}();
+00053         \hyperlink{class_t_m_a81c3bd28ad2343a620fa070f8ac186ca_a81c3bd28ad2343a620fa070f8ac186ca}{TM::process\_map\_collection}.insert(\{ppid, map\});
+00054 
+00055     \}
+00056     std::map<std::thread::id, std::shared\_ptr < TX>>::iterator it = \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.find(
+      std::this\_thread::get\_id());
+00057     \textcolor{keywordflow}{if} (it == \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.end()) \{
+00058         std::shared\_ptr<TX> \_transaction\_object(\textcolor{keyword}{new} \hyperlink{class_t_x}{TX}(std::this\_thread::get\_id()));
+00059         \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.insert(\{std::this\_thread::get\_id(), \_transaction\_object\});
+00060         \textcolor{comment}{/*}
+00061 \textcolor{comment}{         * Get the map if registered first time}
+00062 \textcolor{comment}{         */}
+00063         process\_map\_collection\_Iterator = \hyperlink{class_t_m_a81c3bd28ad2343a620fa070f8ac186ca_a81c3bd28ad2343a620fa070f8ac186ca}{TM::process\_map\_collection}.find(ppid);
+00064         \textcolor{comment}{/*}
+00065 \textcolor{comment}{         * Insert to the GLOBAL MAP as a helper to clean up at end of main process }
+00066 \textcolor{comment}{         */}
+00067         process\_map\_collection\_Iterator->second.insert(\{std::this\_thread::get\_id(), 1\});
+00068 
+00069     \}
+00070 
+00071 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsubsection{Member Data Documentation}
+\index{TM@{TM}!\+\_\+tm\+\_\+id@{\+\_\+tm\+\_\+id}}
+\index{\+\_\+tm\+\_\+id@{\+\_\+tm\+\_\+id}!TM@{TM}}
+\paragraph[{\texorpdfstring{\+\_\+tm\+\_\+id}{_tm_id}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+M\+::\+\_\+tm\+\_\+id\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{class_t_m_a6fb90615393f9205838e302c714bbd60_a6fb90615393f9205838e302c714bbd60}{}\label{class_t_m_a6fb90615393f9205838e302c714bbd60_a6fb90615393f9205838e302c714bbd60}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+tm\+\_\+id} & pid\+\_\+t, process id determine the actual process between process in the shared \hyperlink{class_o_s_t_m}{O\+S\+TM} library \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_t_m_8h_source_l00126}{126} of file \hyperlink{_t_m_8h_source}{T\+M.\+h}.
+
+
+
+Referenced by \hyperlink{_t_m_8cpp_source_l00028}{Instance()}.
+
+\index{TM@{TM}!get\+\_\+\+Lock@{get\+\_\+\+Lock}}
+\index{get\+\_\+\+Lock@{get\+\_\+\+Lock}!TM@{TM}}
+\paragraph[{\texorpdfstring{get\+\_\+\+Lock}{get_Lock}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mutex T\+M\+::get\+\_\+\+Lock\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_a123bc5aa0766a7b909bebc54a429e5b0}{}\label{class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_a123bc5aa0766a7b909bebc54a429e5b0}
+
+\begin{DoxyParams}{Parameters}
+{\em register\+\_\+\+Lock} & std\+::mutex, used in the \+\_\+get\+\_\+tx function \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_t_m_8h_source_l00122}{122} of file \hyperlink{_t_m_8h_source}{T\+M.\+h}.
+
+
+
+Referenced by \hyperlink{_t_m_8cpp_source_l00078}{\+\_\+get\+\_\+tx()}, and \hyperlink{_t_m_8cpp_source_l00121}{print\+\_\+all()}.
+
+\index{TM@{TM}!process\+\_\+map\+\_\+collection@{process\+\_\+map\+\_\+collection}}
+\index{process\+\_\+map\+\_\+collection@{process\+\_\+map\+\_\+collection}!TM@{TM}}
+\paragraph[{\texorpdfstring{process\+\_\+map\+\_\+collection}{process_map_collection}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$ int, std\+::map$<$ std\+::thread\+::id, int $>$ $>$ T\+M\+::process\+\_\+map\+\_\+collection\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{class_t_m_a81c3bd28ad2343a620fa070f8ac186ca_a81c3bd28ad2343a620fa070f8ac186ca}{}\label{class_t_m_a81c3bd28ad2343a620fa070f8ac186ca_a81c3bd28ad2343a620fa070f8ac186ca}
+
+
+S\+T\+A\+T\+IC G\+L\+O\+B\+AL M\+AP Collection to store all process associated keys to find when deleting transactions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em process\+\_\+map\+\_\+collection} & std\+::map\\
+\hline
+{\em static} & Global std\+::map process\+\_\+map\+\_\+collection store all transactional objects/pointers \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_t_m_8h_source_l00106}{106} of file \hyperlink{_t_m_8h_source}{T\+M.\+h}.
+
+
+
+Referenced by \hyperlink{_t_m_8cpp_source_l00101}{\+\_\+\+T\+X\+\_\+\+E\+X\+I\+T()}, and \hyperlink{_t_m_8cpp_source_l00043}{register\+T\+X()}.
+
+\index{TM@{TM}!register\+\_\+\+Lock@{register\+\_\+\+Lock}}
+\index{register\+\_\+\+Lock@{register\+\_\+\+Lock}!TM@{TM}}
+\paragraph[{\texorpdfstring{register\+\_\+\+Lock}{register_Lock}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mutex T\+M\+::register\+\_\+\+Lock\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_t_m_aeb26546681bfe64e21606b8c012bb8c3_aeb26546681bfe64e21606b8c012bb8c3}{}\label{class_t_m_aeb26546681bfe64e21606b8c012bb8c3_aeb26546681bfe64e21606b8c012bb8c3}
+
+\begin{DoxyParams}{Parameters}
+{\em register\+\_\+\+Lock} & std\+::mutex, used in the register\+TX function \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_t_m_8h_source_l00118}{118} of file \hyperlink{_t_m_8h_source}{T\+M.\+h}.
+
+
+
+Referenced by \hyperlink{_t_m_8cpp_source_l00043}{register\+T\+X()}.
+
+\index{TM@{TM}!tx\+Map@{tx\+Map}}
+\index{tx\+Map@{tx\+Map}!TM@{TM}}
+\paragraph[{\texorpdfstring{tx\+Map}{txMap}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<$std\+::thread\+::id, std\+::shared\+\_\+ptr$<${\bf TX}$>$ $>$ T\+M\+::tx\+Map\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{}\label{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}
+
+\begin{DoxyParams}{Parameters}
+{\em tx\+Map} & std\+::map, store all transactional objects created with Transaction Manager \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{_t_m_8h_source_l00101}{101} of file \hyperlink{_t_m_8h_source}{T\+M.\+h}.
+
+
+
+Referenced by \hyperlink{_t_m_8cpp_source_l00078}{\+\_\+get\+\_\+tx()}, \hyperlink{_t_m_8cpp_source_l00101}{\+\_\+\+T\+X\+\_\+\+E\+X\+I\+T()}, \hyperlink{_t_m_8cpp_source_l00121}{print\+\_\+all()}, and \hyperlink{_t_m_8cpp_source_l00043}{register\+T\+X()}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_t_m_8h}{T\+M.\+h}\item 
+\hyperlink{_t_m_8cpp}{T\+M.\+cpp}\end{DoxyCompactItemize}

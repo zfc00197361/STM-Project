@@ -1,0 +1,543 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$thread$>$}\\*
+{\ttfamily \#include \char`\"{}T\+M.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}A\+I\+B.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}B\+O\+I.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}B\+O\+A.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\+W\+B\+P\+L\+C.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\+L\+S\+T\+E\+R.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\+N\+B\+L.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}W\+A\+R\+E\+H\+O\+U\+S\+E.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}C\+A\+R\+L\+O\+W\+\_\+\+W.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}K\+I\+L\+K\+E\+N\+N\+Y\+\_\+\+W.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\+A\+L\+L\+A\+G\+H\+\_\+\+W.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\+U\+N\+D\+A\+L\+K\+\_\+\+W.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\+L\+I\+G\+O\+\_\+\+W.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$mutex$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$condition\+\_\+variable$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_a944b67b9489cc68c8eac66d42f4515ec}{\+\_\+six\+\_\+account\+\_\+transfer\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+one\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+two\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+three\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+four\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+five\+\_\+, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\begin{DoxyCompactList}\small\item\em {\itshape six\+\_\+account\+\_\+transfer} function, takes six std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from five account to one account \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3}{\+\_\+two\+\_\+account\+\_\+transfer\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\begin{DoxyCompactList}\small\item\em {\itshape two\+\_\+account\+\_\+transfer} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a5675cb594d74aa1bf5e80233370ffd81}{\+\_\+nesting\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\begin{DoxyCompactList}\small\item\em {\itshape nesting} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a0099d241c74532abfb1baae50a52da52}{\+\_\+complex\+\_\+transfer\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+two\+\_\+, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$$>$ \+\_\+customer\+\_\+vec, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\begin{DoxyCompactList}\small\item\em {\itshape complex\+\_\+transfer} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, a vector of std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointers, the Transaction manager, and the amount to use in the transaction, and transfer the \+\_\+amount value from booth single objects to the objects to the vector collection \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc}{\+\_\+warehouse\+\_\+transfer\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\begin{DoxyCompactList}\small\item\em {\itshape warehouse\+\_\+transfer} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a52fcb0d50c67be8cd20f2aca338683c7}{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+two, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+three, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\begin{DoxyCompactList}\small\item\em {\itshape nested\+\_\+warehouse\+\_\+transfer} function, takes three std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a12500f2bcc3c3bb8ad7dd9d74c1637d1}{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+two, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+three, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$$>$ \+\_\+warehouse\+\_\+vec, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\item 
+int \hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{main.\+cpp@{main.\+cpp}!\+\_\+complex\+\_\+transfer\+\_\+@{\+\_\+complex\+\_\+transfer\+\_\+}}
+\index{\+\_\+complex\+\_\+transfer\+\_\+@{\+\_\+complex\+\_\+transfer\+\_\+}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{\+\_\+complex\+\_\+transfer\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+two\+\_\+, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$$>$ \+\_\+customer\+\_\+vec, T\+M \&\+\_\+tm, double \+\_\+amount)}{_complex_transfer_(std::shared_ptr< OSTM > _from_, std::shared_ptr< OSTM > _from_two_, std::vector< std::shared_ptr< OSTM >> _customer_vec, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+complex\+\_\+transfer\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+two\+\_\+, }
+\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$$>$}]{\+\_\+customer\+\_\+vec, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a0099d241c74532abfb1baae50a52da52}{}\label{main_8cpp_a0099d241c74532abfb1baae50a52da52}
+
+
+{\itshape complex\+\_\+transfer} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, a vector of std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointers, the Transaction manager, and the amount to use in the transaction, and transfer the \+\_\+amount value from booth single objects to the objects to the vector collection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::shared\+\_\+ptr$<$\+T\+X$>$} & tx, Transaction Object \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$} & type, {\itshape F\+R\+OM} \& {\itshape F\+R\+O\+M\+\_\+\+T\+WO} \& {\itshape TO} \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$} & type, {\itshape F\+R\+O\+M\+\_\+\+O\+S\+T\+M\+\_\+\+O\+NE} \& {\itshape F\+R\+O\+M\+\_\+\+O\+S\+T\+M\+\_\+\+T\+WO} \& {\itshape T\+O\+\_\+\+O\+S\+TM} \\
+\hline
+\end{DoxyParams}
+Register the two single account
+
+Declare required pointers
+
+Register customers accounts from the collection (vector)
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+Commit changes
+
+Definition at line 294 of file main.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+\index{main.\+cpp@{main.\+cpp}!\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+@{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+}}
+\index{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+@{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+two, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+three, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$$>$ \+\_\+warehouse\+\_\+vec, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+, T\+M \&\+\_\+tm, double \+\_\+amount)}{_complex_warehouse_transfer_(std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _to_two, std::shared_ptr< OSTM > _to_three, std::vector< std::shared_ptr< OSTM >> _warehouse_vec, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+two, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+three, }
+\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$$>$}]{\+\_\+warehouse\+\_\+vec, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a12500f2bcc3c3bb8ad7dd9d74c1637d1}{}\label{main_8cpp_a12500f2bcc3c3bb8ad7dd9d74c1637d1}
+Register the two single account
+
+Declare required pointers
+
+Register customers accounts from the collection (vector)
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+W\+A\+R\+E\+H\+O\+U\+S\+E$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+N\+E\+S\+T\+ED \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} T\+E\+ST \+\_\+to\+\_\+two
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+Commit changes
+
+Definition at line 518 of file main.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\index{main.\+cpp@{main.\+cpp}!\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+@{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+}}
+\index{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+@{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+two, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+three, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+, T\+M \&\+\_\+tm, double \+\_\+amount)}{_nested_warehouse_transfer_(std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _to_two, std::shared_ptr< OSTM > _to_three, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+two, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+three, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a52fcb0d50c67be8cd20f2aca338683c7}{}\label{main_8cpp_a52fcb0d50c67be8cd20f2aca338683c7}
+
+
+{\itshape nested\+\_\+warehouse\+\_\+transfer} function, takes three std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::shared\+\_\+ptr$<$\+T\+X$>$} & tx, Transaction Object \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+W\+A\+R\+E\+H\+O\+U\+S\+E$>$} & type, {\itshape T\+O\+\_\+\+S\+H\+OP} \& {\itshape F\+R\+O\+M\+\_\+\+D\+I\+ST} \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$} & type, {\itshape T\+O\+\_\+\+O\+S\+TM} \& {\itshape F\+R\+O\+M\+\_\+\+O\+S\+TM} \\
+\hline
+\end{DoxyParams}
+Register the two single account
+
+Declare required pointers
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+N\+E\+S\+T\+ED \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} T\+E\+ST \+\_\+to\+\_\+two
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+Commit changes
+
+Definition at line 419 of file main.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+\index{main.\+cpp@{main.\+cpp}!\+\_\+nesting\+\_\+@{\+\_\+nesting\+\_\+}}
+\index{\+\_\+nesting\+\_\+@{\+\_\+nesting\+\_\+}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{\+\_\+nesting\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+, T\+M \&\+\_\+tm, double \+\_\+amount)}{_nesting_(std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+nesting\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a5675cb594d74aa1bf5e80233370ffd81}{}\label{main_8cpp_a5675cb594d74aa1bf5e80233370ffd81}
+
+
+{\itshape nesting} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::shared\+\_\+ptr$<$\+T\+X$>$} & tx, Transaction Object \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$} & type, {\itshape T\+O\+\_\+\+B\+A\+NK} \& {\itshape F\+R\+O\+M\+\_\+\+B\+A\+NK} \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$} & type, {\itshape T\+O\+\_\+\+O\+S\+TM} \& {\itshape F\+R\+O\+M\+\_\+\+O\+S\+TM} \\
+\hline
+\end{DoxyParams}
+Register the two single account
+
+Declare required pointers
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+N\+E\+S\+T\+ED T\+R\+A\+N\+S\+A\+C\+T\+I\+ON
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+N\+E\+S\+T\+ED T\+R\+A\+N\+S\+A\+C\+T\+I\+ON IN T\+HE N\+E\+S\+T\+ED T\+R\+A\+N\+S\+A\+C\+T\+I\+ON {\itshape two\+\_\+account\+\_\+transfer} function call
+
+Commit changes
+
+Definition at line 206 of file main.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 6
+
+
+\index{main.\+cpp@{main.\+cpp}!\+\_\+six\+\_\+account\+\_\+transfer\+\_\+@{\+\_\+six\+\_\+account\+\_\+transfer\+\_\+}}
+\index{\+\_\+six\+\_\+account\+\_\+transfer\+\_\+@{\+\_\+six\+\_\+account\+\_\+transfer\+\_\+}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{\+\_\+six\+\_\+account\+\_\+transfer\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+one\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+two\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+three\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+four\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+five\+\_\+, T\+M \&\+\_\+tm, double \+\_\+amount)}{_six_account_transfer_(std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_one_, std::shared_ptr< OSTM > _from_two_, std::shared_ptr< OSTM > _from_three_, std::shared_ptr< OSTM > _from_four_, std::shared_ptr< OSTM > _from_five_, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+six\+\_\+account\+\_\+transfer\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+one\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+two\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+three\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+four\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+five\+\_\+, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a944b67b9489cc68c8eac66d42f4515ec}{}\label{main_8cpp_a944b67b9489cc68c8eac66d42f4515ec}
+
+
+{\itshape six\+\_\+account\+\_\+transfer} function, takes six std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from five account to one account 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::shared\+\_\+ptr$<$\+T\+X$>$} & tx, Transaction Object \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$} & type, {\itshape TO} \& {\itshape F\+R\+O\+M\+\_\+\+O\+NE} \& {\itshape F\+R\+O\+M\+\_\+\+T\+WO} \& {\itshape F\+R\+O\+M\+\_\+\+T\+H\+R\+EE} \& {\itshape F\+R\+O\+M\+\_\+\+F\+O\+UR} \& {\itshape F\+R\+O\+M\+\_\+\+F\+I\+VE} \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$} & type, \+\_\+\+T\+O\+\_\+\+O\+S\+TM \& \+\_\+\+F\+R\+O\+M\+\_\+\+O\+N\+E\+\_\+\+O\+S\+TM \& \+\_\+\+F\+R\+O\+M\+\_\+\+T\+W\+O\+\_\+\+O\+S\+TM \& \+\_\+\+F\+R\+O\+M\+\_\+\+T\+H\+R\+E\+E\+\_\+\+O\+S\+TM \& \+\_\+\+F\+R\+O\+M\+\_\+\+F\+O\+U\+R\+\_\+\+O\+S\+TM \& \+\_\+\+F\+R\+O\+M\+\_\+\+F\+I\+V\+E\+\_\+\+O\+S\+TM \\
+\hline
+\end{DoxyParams}
+Register the two single account
+
+Required pointers to use in transaction
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+Commit changes
+
+Definition at line 51 of file main.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+% FIG 7
+
+
+\index{main.\+cpp@{main.\+cpp}!\+\_\+two\+\_\+account\+\_\+transfer\+\_\+@{\+\_\+two\+\_\+account\+\_\+transfer\+\_\+}}
+\index{\+\_\+two\+\_\+account\+\_\+transfer\+\_\+@{\+\_\+two\+\_\+account\+\_\+transfer\+\_\+}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{\+\_\+two\+\_\+account\+\_\+transfer\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+, T\+M \&\+\_\+tm, double \+\_\+amount)}{_two_account_transfer_(std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+two\+\_\+account\+\_\+transfer\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3}{}\label{main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3}
+
+
+{\itshape two\+\_\+account\+\_\+transfer} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::shared\+\_\+ptr$<$\+T\+X$>$} & tx, Transaction Object \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$} & type, {\itshape T\+O\+\_\+\+B\+A\+NK} \& {\itshape F\+R\+O\+M\+\_\+\+B\+A\+NK} \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$} & type, {\itshape T\+O\+\_\+\+O\+S\+TM} \& {\itshape F\+R\+O\+M\+\_\+\+O\+S\+TM} \\
+\hline
+\end{DoxyParams}
+Register the two single account
+
+Declare required pointers
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+N\+E\+S\+T\+ED T\+R\+A\+N\+S\+A\+C\+T\+I\+ON
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+Commit changes
+
+Commit changes
+
+Definition at line 123 of file main.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+% FIG 8
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 9
+
+
+\index{main.\+cpp@{main.\+cpp}!\+\_\+warehouse\+\_\+transfer\+\_\+@{\+\_\+warehouse\+\_\+transfer\+\_\+}}
+\index{\+\_\+warehouse\+\_\+transfer\+\_\+@{\+\_\+warehouse\+\_\+transfer\+\_\+}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{\+\_\+warehouse\+\_\+transfer\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+, T\+M \&\+\_\+tm, double \+\_\+amount)}{_warehouse_transfer_(std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+warehouse\+\_\+transfer\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc}{}\label{main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc}
+
+
+{\itshape warehouse\+\_\+transfer} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::shared\+\_\+ptr$<$\+T\+X$>$} & tx, Transaction Object \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+W\+A\+R\+E\+H\+O\+U\+S\+E$>$} & type, {\itshape T\+O\+\_\+\+S\+H\+OP} \& {\itshape F\+R\+O\+M\+\_\+\+D\+I\+ST} \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$} & type, {\itshape T\+O\+\_\+\+O\+S\+TM} \& {\itshape F\+R\+O\+M\+\_\+\+O\+S\+TM} \\
+\hline
+\end{DoxyParams}
+Register the two single account
+
+Declare required pointers
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+Commit changes
+
+Definition at line 358 of file main.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+% FIG 10
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 11
+
+
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{main(void)}{main(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}
+main method to run test Get the Transaction Manager~\newline
+ \hyperlink{class_t_m}{TM}\& tm = \hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60}{T\+M\+::\+Instance()};~\newline
+
+
+Create vector to store std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointers. All object will have unique ID by default~\newline
+ std\+::vector$<$std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$$>$ \+\_\+customer\+\_\+vec(vector\+\_\+number);~\newline
+ std\+::vector$<$std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$$>$ \+\_\+warehouse\+\_\+vec(vector\+\_\+number);~\newline
+
+
+Create objects type of \hyperlink{class_b_a_n_k}{B\+A\+NK}. All object will have unique ID by default~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ aib\+\_\+ptr = new \hyperlink{class_a_i_b}{A\+IB}(100, 500, \char`\"{}\+Joe\char`\"{}, \char`\"{}\+Blog\char`\"{}, \char`\"{}\+High street, Kilkenny, Co.\+Kilkenny\char`\"{});~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ boi\+\_\+ptr = new \hyperlink{class_b_o_i}{B\+OI}(200, 500, \char`\"{}\+Joe\char`\"{}, \char`\"{}\+Blog\char`\"{}, \char`\"{}\+High street, Kilkenny, Co.\+Kilkenny\char`\"{});~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ boa\+\_\+ptr = new \hyperlink{class_b_o_a}{B\+OA}(300, 500, \char`\"{}\+Joe\char`\"{}, \char`\"{}\+Blog\char`\"{}, \char`\"{}\+High street, Kilkenny, Co.\+Kilkenny\char`\"{});~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ swplc\+\_\+ptr = new \hyperlink{class_s_w_b_p_l_c}{S\+W\+B\+P\+LC}(400, 500, \char`\"{}\+Joe\char`\"{}, \char`\"{}\+Blog\char`\"{}, \char`\"{}\+High street, Kilkenny, Co.\+Kilkenny\char`\"{});~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ ulster\+\_\+ptr = new \hyperlink{class_u_l_s_t_e_r}{U\+L\+S\+T\+ER}(500, 500, \char`\"{}\+Joe\char`\"{}, \char`\"{}\+Blog\char`\"{}, \char`\"{}\+High street, Kilkenny, Co.\+Kilkenny\char`\"{});~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ unbl\+\_\+ptr = new \hyperlink{class_u_n_b_l}{U\+N\+BL}(600, 500, \char`\"{}\+Joe\char`\"{}, \char`\"{}\+Blog\char`\"{}, \char`\"{}\+High street, Kilkenny, Co.\+Kilkenny\char`\"{});~\newline
+
+
+Create objects type of \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE}. All object will have unique ID by default~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ w\+\_\+dist = new \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E()};~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ c\+\_\+shop = new \hyperlink{class_c_a_r_l_o_w___w}{C\+A\+R\+L\+O\+W\+\_\+\+W()};~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ k\+\_\+shop = new \hyperlink{class_k_i_l_k_e_n_n_y___w}{K\+I\+L\+K\+E\+N\+N\+Y\+\_\+\+W()};~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ t\+\_\+shop = new \hyperlink{class_t_a_l_l_a_g_h___w}{T\+A\+L\+L\+A\+G\+H\+\_\+\+W()};~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ d\+\_\+shop = new \hyperlink{class_d_u_n_d_a_l_k___w}{D\+U\+N\+D\+A\+L\+K\+\_\+\+W()};~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ s\+\_\+shop = new \hyperlink{class_s_l_i_g_o___w}{S\+L\+I\+G\+O\+\_\+\+W()};~\newline
+
+
+Create vector of std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ \hyperlink{class_b_a_n_k}{B\+A\+NK} pointers~\newline
+ vector\+\_\+number is 100 at the moment~\newline
+ for(int i=0;i$<$vector\+\_\+number;++i)
+
+Create vector of std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} pointers~\newline
+ vector\+\_\+number is 100 at the moment~\newline
+ for(int i=0;i$<$vector\+\_\+number;++i)
+
+Display \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} objects before transaction~\newline
+ w\+\_\+dist-\/$>$to\+String();~\newline
+ c\+\_\+shop-\/$>$to\+String();~\newline
+ k\+\_\+shop-\/$>$to\+String();~\newline
+ t\+\_\+shop-\/$>$to\+String();~\newline
+ d\+\_\+shop-\/$>$to\+String();~\newline
+ s\+\_\+shop-\/$>$to\+String();~\newline
+
+
+Display \hyperlink{class_b_a_n_k}{B\+A\+NK} objects before transaction~\newline
+ aib\+\_\+ptr-\/$>$to\+String();~\newline
+ boi\+\_\+ptr-\/$>$to\+String();~\newline
+ boa\+\_\+ptr-\/$>$to\+String();~\newline
+ swplc\+\_\+ptr-\/$>$to\+String();~\newline
+ ulster\+\_\+ptr-\/$>$to\+String();~\newline
+ unbl\+\_\+ptr-\/$>$to\+String();~\newline
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em transfer\+Amount} & in the transaction, control the value in the transaction between objetcs\\
+\hline
+{\em thread\+Array\+Size} & control number of threads ~\newline
+ The logic in the IF E\+L\+SE statement distribute the threads between three different thread creating option.~\newline
+ If the thread\+Array\+Size is divisible with three, the threads will be distributed between function.~\newline
+ However, you can creates any number of threads, but to follow the correct output should increase the IF E\+L\+SE statement to distribute the threads in equal number.\\
+\hline
+\end{DoxyParams}
+Creating threads$^\wedge$n -\/$>$ thread\+Array\+Size~\newline
+ for (int i = 0; i $<$ thread\+Array\+Size; ++i)~\newline
+
+
+T\+E\+ST 1 \+: Nested transaction Test~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape nesting}, aib\+\_\+ptr, boi\+\_\+ptr, std\+::ref(tm), transfer\+Amount);
+
+T\+E\+ST 2 \+:Three different type of function call where the objects are participating in multiple type of transactions~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape two\+\_\+account\+\_\+transfer}, aib\+\_\+ptr, boi\+\_\+ptr, std\+::ref(tm), transfer\+Amount);~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape six\+\_\+account\+\_\+transfer}, boi\+\_\+ptr, boa\+\_\+ptr, swplc\+\_\+ptr, ulster\+\_\+ptr, aib\+\_\+ptr, unbl\+\_\+ptr, std\+::ref(tm), transfer\+Amount)~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape complex\+\_\+transfer}, aib\+\_\+ptr, boi\+\_\+ptr, std\+::ref(\+\_\+customer\+\_\+vec), std\+::ref(tm), transfer\+Amount);
+
+T\+E\+ST 3 \+: Testing \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} type pointers within transactions~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape phone\+\_\+transfer}, c\+\_\+shop, w\+\_\+dist, std\+::ref(tm), transfer\+Amount);
+
+T\+E\+ST 4 \+: Testing \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} type pointers within nested transactions~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape nested\+\_\+warehouse\+\_\+transfer}, c\+\_\+shop, d\+\_\+shop, k\+\_\+shop, w\+\_\+dist, std\+::ref(tm), transfer\+Amount);
+
+T\+E\+ST 5 \+: Testing \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} type pointers within mixed and nested transactions~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape warehouse\+\_\+transfer}, c\+\_\+shop, w\+\_\+dist, std\+::ref(tm), transfer\+Amount);~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape nested\+\_\+warehouse\+\_\+transfer}, c\+\_\+shop, d\+\_\+shop, k\+\_\+shop, w\+\_\+dist, std\+::ref(tm), transfer\+Amount);~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape complex\+\_\+warehouse\+\_\+transfer}, d\+\_\+shop, c\+\_\+shop, std\+::ref(\+\_\+warehouse\+\_\+vec), w\+\_\+dist, std\+::ref(tm), transfer\+Amount);~\newline
+
+
+Display objects after all transactions are finished~\newline
+ Uncomment the required corresponding T\+E\+ST to display results
+
+Extra tx to call and display R\+O\+L\+L\+B\+A\+CK value~\newline
+ std\+::shared\+\_\+ptr$<$\+T\+X$>$ tx = tm.\+\_\+get\+\_\+tx();~\newline
+
+
+Display the number of R\+O\+L\+L\+B\+A\+CK by all the threads ~\newline
+ std\+::cout $<$$<$ \char`\"{}\+Rollback counter is \+: \char`\"{} $<$$<$ tx-\/$>$get\+Test\+\_\+counter() $<$$<$ std\+::endl;
+
+Display object from vector
+
+Clean up Transaction Manager from all main process associated transactions~\newline
+ tm.\+\_\+\+T\+X\+\_\+\+E\+X\+I\+T();
+
+Display all Transactions associated with the main process. It should be empty after \+\_\+\+T\+X\+\_\+\+E\+X\+I\+T() function call!!!~\newline
+ tm.\+print\+\_\+all();
+
+Definition at line 649 of file main.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+% FIG 12
+
+

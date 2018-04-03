@@ -1,38 +1,38 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \contentsline {section}{\numberline {2}Model of the application}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Library integration to the application}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.1}Library integration to the client application}{2}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Flow diagram}{3}{subsection.2.2}
-\contentsline {section}{\numberline {3}API usage}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Create transaction}{7}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Destroy transaction}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Start transaction}{7}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Commit transaction}{7}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Commit transactions}{8}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Load Transaction Object}{8}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Store transaction}{8}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Store transactions}{8}{subsection.3.8}
-\contentsline {section}{\numberline {4}Use case}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}Brief case}{9}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Create transaction}{9}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Destroy transaction}{9}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}Start transaction}{10}{subsubsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.4}Start transactions}{10}{subsubsection.4.1.4}
-\contentsline {subsubsection}{\numberline {4.1.5}Commit transaction}{10}{subsubsection.4.1.5}
-\contentsline {subsubsection}{\numberline {4.1.6}commit transactions}{11}{subsubsection.4.1.6}
-\contentsline {subsubsection}{\numberline {4.1.7}Load Transaction object}{11}{subsubsection.4.1.7}
-\contentsline {subsubsection}{\numberline {4.1.8}Store transaction}{11}{subsubsection.4.1.8}
-\contentsline {subsubsection}{\numberline {4.1.9}Store transactions}{12}{subsubsection.4.1.9}
-\contentsline {subsection}{\numberline {4.2}Detailed use case}{13}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Create transaction}{13}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Destroy transaction}{13}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Start transaction}{14}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Start transactions}{15}{subsubsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.5}Commit transaction}{16}{subsubsection.4.2.5}
-\contentsline {subsubsection}{\numberline {4.2.6}Commit transactions}{17}{subsubsection.4.2.6}
-\contentsline {subsubsection}{\numberline {4.2.7}Load transaction}{19}{subsubsection.4.2.7}
-\contentsline {subsubsection}{\numberline {4.2.8}Store transaction}{19}{subsubsection.4.2.8}
-\contentsline {subsubsection}{\numberline {4.2.9}Store transactions}{20}{subsubsection.4.2.9}
-\contentsline {section}{\numberline {5}System sequence diagram}{22}{section.5}
-\contentsline {section}{\numberline {6}Domain model}{23}{section.6}
-\contentsline {section}{\numberline {7}Testing the STM Library}{23}{section.7}
-\contentsline {section}{\numberline {8}Conclusion}{25}{section.8}
+\contentsline {section}{\numberline {3}API usage}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Create transaction}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Destroy transaction}{8}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Start transaction}{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Commit transaction}{8}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Commit transactions}{9}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Load Transaction Object}{9}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Store transaction}{9}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Store transactions}{9}{subsection.3.8}
+\contentsline {section}{\numberline {4}Use case}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Brief case}{10}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Create transaction}{10}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Destroy transaction}{10}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Start transaction}{11}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}Start transactions}{11}{subsubsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}Commit transaction}{11}{subsubsection.4.1.5}
+\contentsline {subsubsection}{\numberline {4.1.6}commit transactions}{12}{subsubsection.4.1.6}
+\contentsline {subsubsection}{\numberline {4.1.7}Load Transaction object}{12}{subsubsection.4.1.7}
+\contentsline {subsubsection}{\numberline {4.1.8}Store transaction}{12}{subsubsection.4.1.8}
+\contentsline {subsubsection}{\numberline {4.1.9}Store transactions}{13}{subsubsection.4.1.9}
+\contentsline {subsection}{\numberline {4.2}Detailed use case}{14}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Create transaction}{14}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Destroy transaction}{14}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Start transaction}{15}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Start transactions}{16}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}Commit transaction}{17}{subsubsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.6}Commit transactions}{18}{subsubsection.4.2.6}
+\contentsline {subsubsection}{\numberline {4.2.7}Load transaction}{20}{subsubsection.4.2.7}
+\contentsline {subsubsection}{\numberline {4.2.8}Store transaction}{20}{subsubsection.4.2.8}
+\contentsline {subsubsection}{\numberline {4.2.9}Store transactions}{21}{subsubsection.4.2.9}
+\contentsline {section}{\numberline {5}System sequence diagram}{23}{section.5}
+\contentsline {section}{\numberline {6}Domain model}{24}{section.6}
+\contentsline {section}{\numberline {7}Testing the STM Library}{25}{section.7}
+\contentsline {section}{\numberline {8}Conclusion}{27}{section.8}

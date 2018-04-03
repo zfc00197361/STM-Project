@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_w_a_r_e_h_o_u_s_e_8cpp" kind="file" language="C++">
+    <compoundname>WAREHOUSE.cpp</compoundname>
+    <includes refid="_w_a_r_e_h_o_u_s_e_8h" local="yes">WAREHOUSE.h</includes>
+    <incdepgraph>
+      <node id="838">
+        <label>string</label>
+      </node>
+      <node id="835">
+        <label>OSTM.h</label>
+        <link refid="_o_s_t_m_8h"/>
+        <childnode refid="836" relation="include">
+        </childnode>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="838" relation="include">
+        </childnode>
+        <childnode refid="839" relation="include">
+        </childnode>
+      </node>
+      <node id="834">
+        <label>WAREHOUSE.h</label>
+        <link refid="_w_a_r_e_h_o_u_s_e_8h"/>
+        <childnode refid="835" relation="include">
+        </childnode>
+      </node>
+      <node id="839">
+        <label>iostream</label>
+      </node>
+      <node id="833">
+        <label>WAREHOUSE.cpp</label>
+        <link refid="WAREHOUSE.cpp"/>
+        <childnode refid="834" relation="include">
+        </childnode>
+      </node>
+      <node id="836">
+        <label>mutex</label>
+      </node>
+      <node id="837">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>File:<sp/><sp/><sp/>WAREHOUSE.cpp</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Zoltan<sp/>Fuzesi</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>IT<sp/>Carlow<sp/>:<sp/>C00197361</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Created<sp/>on<sp/>January<sp/>17,<sp/>2018,<sp/>8:02<sp/>PM</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_w_a_r_e_h_o_u_s_e_8h" kindref="compound">WAREHOUSE.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_w_a_r_e_h_o_u_s_e_1a4782d251d2203377f8e9f331ba3b0a7e" refkind="member"><highlight class="normal"><ref refid="class_w_a_r_e_h_o_u_s_e_1a7a924d389af91f54ed0e1d1d8d56ec57" kindref="member">WAREHOUSE::WAREHOUSE</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_w_a_r_e_h_o_u_s_e" kindref="compound">WAREHOUSE</ref>&amp;<sp/>orig)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_w_a_r_e_h_o_u_s_e_1ad5aa686839d7be9bfea33d469c58086b" refkind="member"><highlight class="normal"><ref refid="class_w_a_r_e_h_o_u_s_e_1ad5aa686839d7be9bfea33d469c58086b" kindref="member">WAREHOUSE::~WAREHOUSE</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="WAREHOUSE.cpp"/>
+  </compounddef>
+</doxygen>

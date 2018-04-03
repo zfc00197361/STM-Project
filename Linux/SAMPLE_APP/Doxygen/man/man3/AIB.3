@@ -1,0 +1,585 @@
+.TH "AIB" 3 "Tue Mar 13 2018" "C++ Software transactional Memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+AIB \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <AIB\&.h>\fP
+.PP
+Inherits \fBBANK\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAIB\fP ()"
+.br
+.ti -1c
+.RI "\fBAIB\fP (int \fBaccountNumber\fP, double \fBbalance\fP, std::string \fBfirstName\fP, std::string \fBlastName\fP, std::string \fBaddress\fP)"
+.br
+.ti -1c
+.RI "\fBAIB\fP (std::shared_ptr< \fBBANK\fP > obj, int _version, int _unique_id)"
+.br
+.ti -1c
+.RI "\fBAIB\fP (const \fBAIB\fP &orig)"
+.br
+.ti -1c
+.RI "virtual void \fBcopy\fP (std::shared_ptr< \fBOSTM\fP > to, std::shared_ptr< \fBOSTM\fP > from)"
+.br
+.RI "\fIcopy function, make deep copy of the object/pointer \fP"
+.ti -1c
+.RI "virtual int \fBGetAccountNumber\fP () const "
+.br
+.RI "\fIGetAccountNumber getter for accountNumber private field\&. \fP"
+.ti -1c
+.RI "virtual std::string \fBGetAddress\fP () const "
+.br
+.RI "\fIGetAddress getter for address private field\&. \fP"
+.ti -1c
+.RI "virtual double \fBGetBalance\fP () const "
+.br
+.RI "\fIGetBalance getter for balance private field\&. \fP"
+.ti -1c
+.RI "virtual std::shared_ptr< \fBOSTM\fP > \fBgetBaseCopy\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fIgetBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr<BANK> type object \fP"
+.ti -1c
+.RI "virtual std::string \fBGetFirstName\fP () const "
+.br
+.RI "\fIGetFirstName getter for firstName private field\&. \fP"
+.ti -1c
+.RI "virtual std::string \fBGetFullname\fP () const "
+.br
+.RI "\fIGetFullname getter for fullname private field\&. \fP"
+.ti -1c
+.RI "virtual std::string \fBGetLastName\fP () const "
+.br
+.RI "\fIGetLastName getter for lastName private field\&. \fP"
+.ti -1c
+.RI "\fBAIB\fP \fBoperator=\fP (const \fBAIB\fP &orig)"
+.br
+.ti -1c
+.RI "virtual void \fBSetAccountNumber\fP (int \fBaccountNumber\fP)"
+.br
+.RI "\fISetAccountNumber setter for accountNumber private field\&. \fP"
+.ti -1c
+.RI "virtual void \fBSetAddress\fP (std::string \fBaddress\fP)"
+.br
+.RI "\fISetAddress setter for address private field\&. \fP"
+.ti -1c
+.RI "virtual void \fBSetBalance\fP (double \fBbalance\fP)"
+.br
+.RI "\fISetBalance setter for balance private field\&. \fP"
+.ti -1c
+.RI "virtual void \fBSetFirstName\fP (std::string \fBfirstName\fP)"
+.br
+.RI "\fISetFirstName setter for firstName private field\&. \fP"
+.ti -1c
+.RI "virtual void \fBSetFullname\fP (std::string \fBfullname\fP)"
+.br
+.RI "\fISetFullname setter for fullname private field\&. \fP"
+.ti -1c
+.RI "virtual void \fBSetLastName\fP (std::string \fBlastName\fP)"
+.br
+.RI "\fISetLastName setter for lastName private field\&. \fP"
+.ti -1c
+.RI "virtual void \fBtoString\fP ()"
+.br
+.RI "\fItoString function, displays the object values in formatted way \fP"
+.ti -1c
+.RI "virtual \fB~AIB\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBaccountNumber\fP"
+.br
+.ti -1c
+.RI "std::string \fBaddress\fP"
+.br
+.ti -1c
+.RI "double \fBbalance\fP"
+.br
+.ti -1c
+.RI "std::string \fBfirstName\fP"
+.br
+.ti -1c
+.RI "std::string \fBfullname\fP"
+.br
+.ti -1c
+.RI "std::string \fBlastName\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class \fBAIB\fP Inherit from \fBBANK\fP class 
+.PP
+Definition at line 23 of file AIB\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "AIB::AIB ()\fC [inline]\fP"
+Constructor 
+.PP
+Definition at line 28 of file AIB\&.h\&.
+.PP
+References accountNumber, address, balance, firstName, fullname, and lastName\&.
+.PP
+Referenced by AIB(), and getBaseCopy()\&.
+.PP
+.nf
+28          : BANK()
+29     {
+30         this->accountNumber = 0;
+31         this->balance = 50;
+32         this->firstName = "Joe";
+33         this->lastName = "Blog";
+34         this->address = "High street, Carlow";
+35         this->fullname = firstName + " " + lastName;
+36     
+37     };
+.fi
+.SS "AIB::AIB (int accountNumber, double balance, std::string firstName, std::string lastName, std::string address)\fC [inline]\fP"
+Custom constructor 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIaccountNumber\fP integer 
+.br
+\fIbalance\fP double 
+.br
+\fIfirstName\fP string 
+.br
+\fIlastName\fP string 
+.br
+\fIaddress\fP string 
+.RE
+.PP
+
+.PP
+Definition at line 46 of file AIB\&.h\&.
+.PP
+References accountNumber, address, balance, firstName, fullname, and lastName\&.
+.PP
+.nf
+46                                                                                                       : BANK()
+47     {
+48         this->accountNumber = accountNumber;
+49         this->balance = balance;
+50         this->firstName = firstName;
+51         this->lastName = lastName;
+52         this->address = address;
+53         this->fullname = firstName + " " + lastName;
+54     }; 
+.fi
+.SS "AIB::AIB (std::shared_ptr< \fBBANK\fP > obj, int _version, int _unique_id)\fC [inline]\fP"
+Custom constructor, used by the library for deep copying 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobj\fP std::shared_ptr<BANK> 
+.br
+\fI_version\fP integer 
+.br
+\fI_unique_id\fP integer 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file AIB\&.h\&.
+.PP
+References accountNumber, address, AIB(), balance, firstName, fullname, and lastName\&.
+.PP
+.nf
+61                                                               : BANK(_version, _unique_id)
+62     {
+63         this->accountNumber = obj->GetAccountNumber();
+64         this->balance = obj->GetBalance();
+65         this->firstName = obj->GetFirstName();
+66         this->lastName = obj->GetLastName();
+67         this->address = obj->GetAddress();
+68         this->fullname = obj->GetFirstName() + " " + obj->GetLastName(); 
+69         
+70     };
+.fi
+.SS "AIB::AIB (const \fBAIB\fP & orig)"
+Copy constructor 
+.SS "AIB::~AIB ()\fC [virtual]\fP"
+de-constructor 
+.PP
+Definition at line 19 of file AIB\&.cpp\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+19           {
+20 }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void AIB::copy (std::shared_ptr< \fBOSTM\fP > to, std::shared_ptr< \fBOSTM\fP > from)\fC [virtual]\fP"
+
+.PP
+copy function, make deep copy of the object/pointer Implement \fBOSTM\fP virtual methods in cpp class
+.PP
+\fBParameters:\fP
+.RS 4
+\fIto\fP std::shared_ptr<OSTM>, \fBBANK\fP type shared pointer used to copy into the values 
+.br
+\fIfrom\fP std::shared_ptr<OSTM>, \fBBANK\fP type shared ponter used to get object values tfrom copy 
+.RE
+.PP
+Dynamic cast from \fBOSTM\fP to \fBAIB\fP
+.PP
+Dynamic cast from \fBOSTM\fP to \fBAIB\fP
+.PP
+Set values fro object to object
+.PP
+Set values fro object to object
+.PP
+Set values fro object to object
+.PP
+Set values fro object to object 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 41 of file AIB\&.cpp\&.
+.PP
+References OSTM::Set_Unique_ID()\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+41                                                               {
+42 
+44     std::shared_ptr<AIB> objTO = std::dynamic_pointer_cast<AIB>(to);
+46     std::shared_ptr<AIB> objFROM = std::dynamic_pointer_cast<AIB>(from);
+48     objTO->Set_Unique_ID(objFROM->Get_Unique_ID());
+50     objTO->Set_Version(objFROM->Get_Version());
+52     objTO->SetAccountNumber(objFROM->GetAccountNumber());
+54     objTO->SetBalance(objFROM->GetBalance());
+55 }
+.fi
+.SS "int AIB::GetAccountNumber () const\fC [virtual]\fP"
+
+.PP
+GetAccountNumber getter for accountNumber private field\&. 
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 96 of file AIB\&.cpp\&.
+.PP
+References accountNumber\&.
+.PP
+Referenced by operator=(), and toString()\&.
+.PP
+.nf
+96                                 {
+97     return accountNumber;
+98 }
+.fi
+.SS "std::string AIB::GetAddress () const\fC [virtual]\fP"
+
+.PP
+GetAddress getter for address private field\&. 
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 72 of file AIB\&.cpp\&.
+.PP
+References address\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+72                                 {
+73     return address;
+74 }
+.fi
+.SS "double AIB::GetBalance () const\fC [virtual]\fP"
+
+.PP
+GetBalance getter for balance private field\&. 
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 84 of file AIB\&.cpp\&.
+.PP
+References balance\&.
+.PP
+Referenced by operator=(), and toString()\&.
+.PP
+.nf
+84                              {
+85     return balance;
+86 }
+.fi
+.SS "std::shared_ptr< \fBOSTM\fP > AIB::getBaseCopy (std::shared_ptr< \fBOSTM\fP > object)\fC [virtual]\fP"
+
+.PP
+getBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr<BANK> type object 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobject\fP is a \fBOSTM\fP type shared pointer use to create a new copy of the pointer 
+.RE
+.PP
+Dynamic cast from \fBOSTM\fP to \fBBANK\fP type
+.PP
+\fBBANK\fP type Instance creation shared pointer
+.PP
+Dynamic cast from \fBBANK\fP to \fBOSTM\fP type
+.PP
+Return new \fBOSTM\fP copy onject 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 25 of file AIB\&.cpp\&.
+.PP
+References AIB()\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+26 {
+28     std::shared_ptr<BANK> objTO = std::dynamic_pointer_cast<BANK>(object);
+30     std::shared_ptr<BANK> obj(new AIB(objTO, object->Get_Version(),object->Get_Unique_ID()));
+32     std::shared_ptr<OSTM> ostm_obj = std::dynamic_pointer_cast<OSTM>(obj);
+34     return ostm_obj;
+35 }
+.fi
+.SS "std::string AIB::GetFirstName () const\fC [virtual]\fP"
+
+.PP
+GetFirstName getter for firstName private field\&. 
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 120 of file AIB\&.cpp\&.
+.PP
+References firstName\&.
+.PP
+Referenced by operator=(), and toString()\&.
+.PP
+.nf
+120                                   {
+121     return firstName;
+122 }
+.fi
+.SS "std::string AIB::GetFullname () const\fC [virtual]\fP"
+
+.PP
+GetFullname getter for fullname private field\&. 
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 132 of file AIB\&.cpp\&.
+.PP
+References fullname\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+132                                  {
+133     return fullname;
+134 }
+.fi
+.SS "std::string AIB::GetLastName () const\fC [virtual]\fP"
+
+.PP
+GetLastName getter for lastName private field\&. 
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 108 of file AIB\&.cpp\&.
+.PP
+References lastName\&.
+.PP
+Referenced by operator=(), and toString()\&.
+.PP
+.nf
+108                                  {
+109     return lastName;
+110 }
+.fi
+.SS "\fBAIB\fP AIB::operator= (const \fBAIB\fP & orig)\fC [inline]\fP"
+Operator function 
+.PP
+Definition at line 78 of file AIB\&.h\&.
+.PP
+References accountNumber, address, balance, copy(), firstName, fullname, GetAccountNumber(), GetAddress(), GetBalance(), getBaseCopy(), GetFirstName(), GetFullname(), GetLastName(), lastName, SetAccountNumber(), SetAddress(), SetBalance(), SetFirstName(), SetFullname(), SetLastName(), toString(), and ~AIB()\&.
+.PP
+.nf
+78 {};
+.fi
+.SS "void AIB::SetAccountNumber (int accountNumber)\fC [virtual]\fP"
+
+.PP
+SetAccountNumber setter for accountNumber private field\&. 
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 90 of file AIB\&.cpp\&.
+.PP
+References accountNumber\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+90                                             {
+91     this->accountNumber = accountNumber;
+92 }
+.fi
+.SS "void AIB::SetAddress (std::string address)\fC [virtual]\fP"
+
+.PP
+SetAddress setter for address private field\&. 
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 66 of file AIB\&.cpp\&.
+.PP
+References address\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+66                                       {
+67     this->address = address;
+68 }
+.fi
+.SS "void AIB::SetBalance (double balance)\fC [virtual]\fP"
+
+.PP
+SetBalance setter for balance private field\&. 
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 78 of file AIB\&.cpp\&.
+.PP
+References balance\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+78                                    {
+79     this->balance = balance;
+80 }
+.fi
+.SS "void AIB::SetFirstName (std::string firstName)\fC [virtual]\fP"
+
+.PP
+SetFirstName setter for firstName private field\&. 
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 114 of file AIB\&.cpp\&.
+.PP
+References firstName\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+114                                           {
+115     this->firstName = firstName;
+116 }
+.fi
+.SS "void AIB::SetFullname (std::string fullname)\fC [virtual]\fP"
+
+.PP
+SetFullname setter for fullname private field\&. 
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 126 of file AIB\&.cpp\&.
+.PP
+References fullname\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+126                                         {
+127     this->fullname = fullname;
+128 }
+.fi
+.SS "void AIB::SetLastName (std::string lastName)\fC [virtual]\fP"
+
+.PP
+SetLastName setter for lastName private field\&. 
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 102 of file AIB\&.cpp\&.
+.PP
+References lastName\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+102                                         {
+103     this->lastName = lastName;
+104 }
+.fi
+.SS "void AIB::toString ()\fC [virtual]\fP"
+
+.PP
+toString function, displays the object values in formatted way 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 59 of file AIB\&.cpp\&.
+.PP
+References OSTM::Get_Unique_ID(), OSTM::Get_Version(), GetAccountNumber(), GetBalance(), GetFirstName(), and GetLastName()\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+60 {
+61     std::cout << "\nAIB BANK" << "\nUnique ID : " << this->Get_Unique_ID() << "\nInt account : " << this->GetAccountNumber() << "\nDouble value : " << this->GetBalance() << "\nFirst name: " << this->GetFirstName() << "\nLast name : " << this->GetLastName()  << "\nVersion number : " << this->Get_Version() << std::endl;
+62 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "int AIB::accountNumber\fC [private]\fP"
+accountNumber int object private filed 
+.PP
+Definition at line 123 of file AIB\&.h\&.
+.PP
+Referenced by AIB(), GetAccountNumber(), operator=(), and SetAccountNumber()\&.
+.SS "std::string AIB::address\fC [private]\fP"
+address string object private filed 
+.PP
+Definition at line 131 of file AIB\&.h\&.
+.PP
+Referenced by AIB(), GetAddress(), operator=(), and SetAddress()\&.
+.SS "double AIB::balance\fC [private]\fP"
+balance double object private filed 
+.PP
+Definition at line 127 of file AIB\&.h\&.
+.PP
+Referenced by AIB(), GetBalance(), operator=(), and SetBalance()\&.
+.SS "std::string AIB::firstName\fC [private]\fP"
+firstName string object private filed 
+.PP
+Definition at line 115 of file AIB\&.h\&.
+.PP
+Referenced by AIB(), GetFirstName(), operator=(), and SetFirstName()\&.
+.SS "std::string AIB::fullname\fC [private]\fP"
+fullname string object private filed 
+.PP
+Definition at line 111 of file AIB\&.h\&.
+.PP
+Referenced by AIB(), GetFullname(), operator=(), and SetFullname()\&.
+.SS "std::string AIB::lastName\fC [private]\fP"
+lastName string object private filed 
+.PP
+Definition at line 119 of file AIB\&.h\&.
+.PP
+Referenced by AIB(), GetLastName(), operator=(), and SetLastName()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software transactional Memory from the source code\&.

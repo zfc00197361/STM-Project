@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_b_a_n_k_8h" kind="file" language="C++">
+    <compoundname>BANK.h</compoundname>
+    <includes refid="_o_s_t_m_8h" local="yes">OSTM.h</includes>
+    <includedby refid="_a_i_b_8h" local="yes">AIB.h</includedby>
+    <includedby refid="_b_a_n_k_8cpp" local="yes">BANK.cpp</includedby>
+    <includedby refid="_b_o_a_8h" local="yes">BOA.h</includedby>
+    <includedby refid="_b_o_i_8h" local="yes">BOI.h</includedby>
+    <includedby refid="_s_w_b_p_l_c_8h" local="yes">SWBPLC.h</includedby>
+    <includedby refid="_u_l_s_t_e_r_8h" local="yes">ULSTER.h</includedby>
+    <includedby refid="_u_n_b_l_8h" local="yes">UNBL.h</includedby>
+    <incdepgraph>
+      <node id="463">
+        <label>string</label>
+      </node>
+      <node id="460">
+        <label>OSTM.h</label>
+        <link refid="_o_s_t_m_8h"/>
+        <childnode refid="461" relation="include">
+        </childnode>
+        <childnode refid="462" relation="include">
+        </childnode>
+        <childnode refid="463" relation="include">
+        </childnode>
+        <childnode refid="464" relation="include">
+        </childnode>
+      </node>
+      <node id="464">
+        <label>iostream</label>
+      </node>
+      <node id="461">
+        <label>mutex</label>
+      </node>
+      <node id="459">
+        <label>BANK.h</label>
+        <link refid="BANK.h"/>
+        <childnode refid="460" relation="include">
+        </childnode>
+      </node>
+      <node id="462">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="474">
+        <label>SWBPLC.h</label>
+        <link refid="_s_w_b_p_l_c_8h"/>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="475" relation="include">
+        </childnode>
+      </node>
+      <node id="479">
+        <label>UNBL.cpp</label>
+        <link refid="_u_n_b_l_8cpp"/>
+      </node>
+      <node id="470">
+        <label>BOA.h</label>
+        <link refid="_b_o_a_8h"/>
+        <childnode refid="471" relation="include">
+        </childnode>
+        <childnode refid="468" relation="include">
+        </childnode>
+      </node>
+      <node id="472">
+        <label>BOI.h</label>
+        <link refid="_b_o_i_8h"/>
+        <childnode refid="473" relation="include">
+        </childnode>
+        <childnode refid="468" relation="include">
+        </childnode>
+      </node>
+      <node id="466">
+        <label>AIB.h</label>
+        <link refid="_a_i_b_8h"/>
+        <childnode refid="467" relation="include">
+        </childnode>
+        <childnode refid="468" relation="include">
+        </childnode>
+      </node>
+      <node id="467">
+        <label>AIB.cpp</label>
+        <link refid="_a_i_b_8cpp"/>
+      </node>
+      <node id="477">
+        <label>ULSTER.cpp</label>
+        <link refid="_u_l_s_t_e_r_8cpp"/>
+      </node>
+      <node id="473">
+        <label>BOI.cpp</label>
+        <link refid="_b_o_i_8cpp"/>
+      </node>
+      <node id="469">
+        <label>BANK.cpp</label>
+        <link refid="_b_a_n_k_8cpp"/>
+      </node>
+      <node id="478">
+        <label>UNBL.h</label>
+        <link refid="_u_n_b_l_8h"/>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="479" relation="include">
+        </childnode>
+      </node>
+      <node id="475">
+        <label>SWBPLC.cpp</label>
+        <link refid="_s_w_b_p_l_c_8cpp"/>
+      </node>
+      <node id="476">
+        <label>ULSTER.h</label>
+        <link refid="_u_l_s_t_e_r_8h"/>
+        <childnode refid="468" relation="include">
+        </childnode>
+        <childnode refid="477" relation="include">
+        </childnode>
+      </node>
+      <node id="471">
+        <label>BOA.cpp</label>
+        <link refid="_b_o_a_8cpp"/>
+      </node>
+      <node id="465">
+        <label>BANK.h</label>
+        <link refid="BANK.h"/>
+        <childnode refid="466" relation="include">
+        </childnode>
+        <childnode refid="469" relation="include">
+        </childnode>
+        <childnode refid="470" relation="include">
+        </childnode>
+        <childnode refid="472" relation="include">
+        </childnode>
+        <childnode refid="474" relation="include">
+        </childnode>
+        <childnode refid="476" relation="include">
+        </childnode>
+        <childnode refid="478" relation="include">
+        </childnode>
+      </node>
+      <node id="468">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_b_a_n_k" prot="public">BANK</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>File:<sp/><sp/><sp/>BANK.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Zoltan<sp/>Fuzesi</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>IT<sp/>Carlow<sp/>:<sp/>C00197361</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Created<sp/>on<sp/>January<sp/>17,<sp/>2018,<sp/>8:02<sp/>PM</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BANK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BANK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_o_s_t_m_8h" kindref="compound">OSTM.h</ref>&quot;</highlight></codeline>
+<codeline lineno="16" refid="class_b_a_n_k" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_b_a_n_k" kindref="compound">BANK</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m" kindref="compound">OSTM</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23" refid="class_b_a_n_k_1a0bc938356cebff14fb0560264abe5a34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_b_a_n_k_1a0bc938356cebff14fb0560264abe5a34" kindref="member">BANK</ref>():<sp/><ref refid="class_o_s_t_m" kindref="compound">OSTM</ref>(){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29" refid="class_b_a_n_k_1a7382dd275d8f4f10a8b53ccbc93e1e87" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_b_a_n_k_1a7382dd275d8f4f10a8b53ccbc93e1e87" kindref="member">BANK</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_version,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_unique_id)<sp/>:<sp/><ref refid="class_o_s_t_m" kindref="compound">OSTM</ref>(_version,<sp/>_unique_id){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_b_a_n_k_1a0bc938356cebff14fb0560264abe5a34" kindref="member">BANK</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_b_a_n_k" kindref="compound">BANK</ref>&amp;<sp/>orig);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_b_a_n_k_1ad609a1e004efdebab6495d95eced2346" kindref="member">~BANK</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Bank<sp/>specific<sp/>virtual<sp/>functions</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_b_a_n_k_1a52ad99454b2059d44967868157208393" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_b_a_n_k_1a52ad99454b2059d44967868157208393" kindref="member">SetAddress</ref>(std::string<sp/>address){};</highlight></codeline>
+<codeline lineno="45" refid="class_b_a_n_k_1a358741f647f9494026e02fd3fd27cde6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_b_a_n_k_1a358741f647f9494026e02fd3fd27cde6" kindref="member">GetAddress</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{};</highlight></codeline>
+<codeline lineno="46" refid="class_b_a_n_k_1ae3e45b407bf8ec7175662442ea24b7c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_b_a_n_k_1ae3e45b407bf8ec7175662442ea24b7c0" kindref="member">SetBalance</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>balance){};</highlight></codeline>
+<codeline lineno="47" refid="class_b_a_n_k_1a7ac46c74859cebdc933cb27e148d18b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_b_a_n_k_1a7ac46c74859cebdc933cb27e148d18b1" kindref="member">GetBalance</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{};</highlight></codeline>
+<codeline lineno="48" refid="class_b_a_n_k_1a9d8fb8bde35d63eca7e9f87d22b45752" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_b_a_n_k_1a9d8fb8bde35d63eca7e9f87d22b45752" kindref="member">SetAccountNumber</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>accountNumber){};</highlight></codeline>
+<codeline lineno="49" refid="class_b_a_n_k_1a62adf3cea60d863a4a10eeee485fa1aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_b_a_n_k_1a62adf3cea60d863a4a10eeee485fa1aa" kindref="member">GetAccountNumber</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{};</highlight></codeline>
+<codeline lineno="50" refid="class_b_a_n_k_1a2dc1b7664f9e3b005cb33e71b2ba42ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_b_a_n_k_1a2dc1b7664f9e3b005cb33e71b2ba42ee" kindref="member">SetLastName</ref>(std::string<sp/>lastName){};</highlight></codeline>
+<codeline lineno="51" refid="class_b_a_n_k_1a4612063ec2bfd6d883a77a0d3697af90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_b_a_n_k_1a4612063ec2bfd6d883a77a0d3697af90" kindref="member">GetLastName</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{};</highlight></codeline>
+<codeline lineno="52" refid="class_b_a_n_k_1a547cb9f21be894f045bb3cec6b12525c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_b_a_n_k_1a547cb9f21be894f045bb3cec6b12525c" kindref="member">SetFirstName</ref>(std::string<sp/>firstName){};</highlight></codeline>
+<codeline lineno="53" refid="class_b_a_n_k_1ad0ba1c785c67e7d4760dc8776f3d4bca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_b_a_n_k_1ad0ba1c785c67e7d4760dc8776f3d4bca" kindref="member">GetFirstName</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{};</highlight></codeline>
+<codeline lineno="54" refid="class_b_a_n_k_1a8845dbfc7ddfbc2e0c0efda561a70ec3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_b_a_n_k_1a8845dbfc7ddfbc2e0c0efda561a70ec3" kindref="member">SetFullname</ref>(std::string<sp/>fullname){};</highlight></codeline>
+<codeline lineno="55" refid="class_b_a_n_k_1aa1528c533bf6389bc8d7f3eeca114bab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_b_a_n_k_1aa1528c533bf6389bc8d7f3eeca114bab" kindref="member">GetFullname</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BANK_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="BANK.h"/>
+  </compounddef>
+</doxygen>

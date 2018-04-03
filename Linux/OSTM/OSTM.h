@@ -34,6 +34,11 @@ public:
      * De-constructor
      */
     virtual ~OSTM();
+     /**
+     * \brief The toString function displaying/representing the object on the terminal is string format.
+     * @see toString function implementation in child class
+     */
+    virtual void toString(){};
     /**
      * \brief The copy virtual method required for deep copy between objetcs within the transaction.
      * @see copy function implementation in inherited class class
@@ -43,12 +48,7 @@ public:
      * \brief The getbasecopy virtual method required for create a copy of the origin object/pointer and returning a copy of the object/pointer.
      * @see getBaseCopy function implementation in child class
      */
-    virtual std::shared_ptr<OSTM> getBaseCopy(std::shared_ptr<OSTM> object){};//std::cout << "[OSTM GETBASECOPY]" << std::endl;};
-     /**
-     * \brief The toString function displaying/representing the object on the terminal is string format.
-     * @see toString function implementation in child class
-     */
-    virtual void toString(){};
+    virtual std::shared_ptr<OSTM> getBaseCopy(std::shared_ptr<OSTM> object){};
     /*
      * Setter for object unique id
      * @param uniqueID Integer to set the uniqueId
@@ -100,7 +100,7 @@ public:
     /*
      * Function to try lock the object itself if it is not locked. Return boolean value TRUE/FALSE depending if it is can lock or not.
      */
-    bool is_Locked();
+    bool try_lock();
 
 private:
     /**
@@ -120,12 +120,12 @@ private:
      */
     bool canCommit;
     /**
-     * Boolean value <abort_Transaction> to determine the object can or cannot commit
+     * Boolean value <abort_Transaction> to determine the object need to abort the transaction
      */
     bool abort_Transaction;
     /**
      * Unique object number start at ZERO
-     * The value stored in the static class level <global_Unique_ID_Number> increase every OSTM type object creation.
+     * The value stored in class level <global_Unique_ID_Number> increase every OSTM type object creation.
      */
     static int global_Unique_ID_Number;
     /**

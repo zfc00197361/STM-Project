@@ -1,0 +1,893 @@
+\hypertarget{_my_test_c_ase_8cpp_source}{}\subsection{My\+Test\+C\+Ase.\+cpp}
+
+\begin{DoxyCode}
+00001 
+00002 
+00003 \textcolor{preprocessor}{#include "\hyperlink{_my_test_c_ase_8h}{MyTestCAse.h}"}
+00004 \textcolor{preprocessor}{#include <iostream>}
+00005 \textcolor{preprocessor}{#include <memory>}
+00006 \textcolor{preprocessor}{#include <condition\_variable>}
+00007 \textcolor{preprocessor}{#include <vector>}
+00008 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00009}{}\hyperlink{class_my_test_c_ase_a742539c4ae7c357cc96295641d2c604d_a742539c4ae7c357cc96295641d2c604d}{00009} \hyperlink{class_my_test_c_ase_a17e7a9246f54f74dacf88f8d6556aa92_a17e7a9246f54f74dacf88f8d6556aa92}{MyTestCAse::MyTestCAse}(\textcolor{keyword}{const} \hyperlink{class_my_test_c_ase}{MyTestCAse}& orig) \{
+00010 \}
+00011 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00012}{}\hyperlink{class_my_test_c_ase_a6e57067745a7e72a8073c945e0266c56_a6e57067745a7e72a8073c945e0266c56}{00012} \hyperlink{class_my_test_c_ase_a6e57067745a7e72a8073c945e0266c56_a6e57067745a7e72a8073c945e0266c56}{MyTestCAse::~MyTestCAse}() \{
+00013 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00020}{}\hyperlink{class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_a9ec1ddfc6e7f727446e1a8355086c2dd}{00020} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_a9ec1ddfc6e7f727446e1a8355086c2dd}{MyTestCAse::\_collection\_bject\_}(std::vector<std::shared\_ptr<OSTM> > 
+      \_customer\_vec, \hyperlink{class_t_m}{TM}& \_tm, \textcolor{keywordtype}{double} \_amount, \textcolor{keywordtype}{int} loop)\{
+00021     
+00022      std::shared\_ptr<TX> tx = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00023 
+00027     std::shared\_ptr<OSTM> \_TO\_OSTM\_;
+00028     std::shared\_ptr<BANK>  \_TO\_;
+00029 
+00030     \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00031     \textcolor{keywordflow}{try} \{
+00032         \textcolor{keywordflow}{while} (!done) \{
+00033             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < loop; ++i) \{
+00034                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}&& obj : \_customer\_vec) \{
+00038                     \textcolor{comment}{// auto&& obj = \_customer\_vec.at(i);}
+00039                     tx->\_register(obj);
+00043                     \_TO\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(obj));
+00047                     \_TO\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_TO\_->GetBalance() + (\_amount));
+00051                     \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_);
+00055                     tx->store(\_TO\_OSTM\_);
+00056                 \}
+00057             \}
+00061             done = tx->commit();
+00062         \}
+00063     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00064         std::cout << e.what() << std::endl;
+00065     \}
+00066 \}
+00067 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00074}{}\hyperlink{class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_afe25c2ed3a8ab035f472fff6575f0e48}{00074} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_afe25c2ed3a8ab035f472fff6575f0e48}{MyTestCAse::\_one\_account\_transfer\_}(std::shared\_ptr<OSTM> \_to\_, 
+      \hyperlink{class_t_m}{TM}& \_tm, \textcolor{keywordtype}{double} \_amount)\{
+00075      std::shared\_ptr<TX> tx = \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00079     tx->\_register(\_to\_);
+00080     
+00081     std::shared\_ptr<OSTM> \_TO\_OSTM\_;
+00082     std::shared\_ptr<BANK> \_TO\_;
+00083     
+00084     \textcolor{keywordflow}{try} \{
+00085         \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00086         \textcolor{keywordflow}{while} (!done) \{
+00090             \_TO\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_to\_));
+00094             \_TO\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_TO\_->GetBalance() + (\_amount ));
+00095 
+00099             \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_);
+00103             tx->store(\_TO\_OSTM\_);
+00104 
+00108             done = tx->commit();
+00109         \}
+00110     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00111         std::cout << e.what() << std::endl;
+00112     \}
+00113     
+00114     
+00115     
+00116 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00126}{}\hyperlink{class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_a2367b87338c4f61cc3ac3193651580d4}{00126} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_a2367b87338c4f61cc3ac3193651580d4}{MyTestCAse::\_complex\_transfer\_}(std::shared\_ptr<OSTM> \_from\_, 
+      std::shared\_ptr<OSTM> \_from\_two\_, std::vector<std::shared\_ptr<OSTM>> \_customer\_vec, \hyperlink{class_t_m}{TM}& \_tm, \textcolor{keywordtype}{double} \_amount) \{
+00127     std::shared\_ptr<TX> tx = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00131     tx->\_register(\_from\_);
+00132     tx->\_register(\_from\_two\_);
+00136     std::shared\_ptr<OSTM> \_FROM\_OSTM\_ONE\_, \_FROM\_OSTM\_TWO\_, \_TO\_OSTM\_;
+00137     std::shared\_ptr<BANK> \_FROM\_, \_FROM\_TWO\_, \_TO\_;
+00138 
+00139     \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00140     \textcolor{keywordflow}{try} \{
+00141         \textcolor{keywordflow}{while} (!done) \{
+00142             \textcolor{comment}{// for (int i = 0; i < vector\_number; ++i) \{}
+00143             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}&& obj : \_customer\_vec) \{
+00147                 \textcolor{comment}{// auto&& obj = \_customer\_vec.at(i);}
+00148                 tx->\_register(obj);
+00152                 \_FROM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_));
+00153                 \_FROM\_TWO\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_two\_));
+00154                 \_TO\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(obj));
+00158                 \_FROM\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_FROM\_->GetBalance() - \_amount);
+00159                 \_FROM\_TWO\_->SetBalance(\_FROM\_TWO\_->GetBalance() - \_amount);
+00160                 \_TO\_->SetBalance(\_TO\_->GetBalance() + (\_amount * 2));
+00164                 \_FROM\_OSTM\_ONE\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_);
+00165                 \_FROM\_OSTM\_TWO\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_TWO\_);
+00166                 \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_);
+00170                 tx->store(\_FROM\_OSTM\_ONE\_);
+00171                 tx->store(\_FROM\_OSTM\_TWO\_);
+00172                 tx->store(\_TO\_OSTM\_);
+00173             \}
+00177             done = tx->commit();
+00178         \}
+00179     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00180         std::cout << e.what() << std::endl;
+00181     \}
+00182 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00194}{}\hyperlink{class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_a72ce436fb3c78c3d76b6c48a5a2e6a76}{00194} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_a72ce436fb3c78c3d76b6c48a5a2e6a76}{MyTestCAse::\_six\_account\_transfer\_}(std::shared\_ptr<OSTM> \_to\_, 
+      std::shared\_ptr<OSTM> \_from\_one\_, std::shared\_ptr<OSTM> \_from\_two\_, std::shared\_ptr<OSTM> \_from\_three\_, 
+      std::shared\_ptr<OSTM> \_from\_four\_, std::shared\_ptr<OSTM> \_from\_five\_, \hyperlink{class_t_m}{TM}& \_tm, \textcolor{keywordtype}{double} \_amount) \{
+00195     std::shared\_ptr<TX> tx = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00199     tx->\_register(\_to\_);
+00200     tx->\_register(\_from\_one\_);
+00201     tx->\_register(\_from\_two\_);
+00202     tx->\_register(\_from\_three\_);
+00203     tx->\_register(\_from\_four\_);
+00204     tx->\_register(\_from\_five\_);
+00205 
+00209     std::shared\_ptr<OSTM> \_TO\_OSTM, \_FROM\_ONE\_OSTM, \_FROM\_TWO\_OSTM, \_FROM\_THREE\_OSTM, \_FROM\_FOUR\_OSTM, 
+      \_FROM\_FIVE\_OSTM;
+00210     std::shared\_ptr<BANK> \_TO\_, \_FROM\_ONE\_, \_FROM\_TWO\_, \_FROM\_THREE\_, \_FROM\_FOUR\_, \_FROM\_FIVE\_;
+00211     \textcolor{keywordflow}{try} \{
+00212         \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00213         \textcolor{keywordflow}{while} (!done) \{
+00217             \_TO\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_to\_));
+00218             \_FROM\_ONE\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_one\_));
+00219             \_FROM\_TWO\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_two\_));
+00220             \_FROM\_THREE\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_three\_));
+00221             \_FROM\_FOUR\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_four\_));
+00222             \_FROM\_FIVE\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_five\_));
+00226             \_TO\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_TO\_->GetBalance() + (\_amount * 5));
+00227             \_FROM\_ONE\_->SetBalance(\_FROM\_ONE\_->GetBalance() - \_amount);
+00228             \_FROM\_TWO\_->SetBalance(\_FROM\_TWO\_->GetBalance() - \_amount);
+00229             \_FROM\_THREE\_->SetBalance(\_FROM\_THREE\_->GetBalance() - \_amount);
+00230             \_FROM\_FOUR\_->SetBalance(\_FROM\_FOUR\_->GetBalance() - \_amount);
+00231             \_FROM\_FIVE\_->SetBalance(\_FROM\_FIVE\_->GetBalance() - \_amount);
+00235             \_TO\_OSTM = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_);
+00236             \_FROM\_ONE\_OSTM = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_ONE\_);
+00237             \_FROM\_TWO\_OSTM = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_TWO\_);
+00238             \_FROM\_THREE\_OSTM = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_THREE\_);
+00239             \_FROM\_FOUR\_OSTM = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_FOUR\_);
+00240             \_FROM\_FIVE\_OSTM = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_FIVE\_);
+00244             tx->store(\_TO\_OSTM);
+00245             tx->store(\_FROM\_ONE\_OSTM);
+00246             tx->store(\_FROM\_TWO\_OSTM);
+00247             tx->store(\_FROM\_THREE\_OSTM);
+00248             tx->store(\_FROM\_FOUR\_OSTM);
+00249             tx->store(\_FROM\_FIVE\_OSTM);
+00253             done = tx->commit();
+00254         \}
+00255     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00256         std::cout << e.what() << std::endl;
+00257     \}
+00258 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00266}{}\hyperlink{class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_af0cc86421d281cc4a583a394ae86dbdd}{00266}  \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_af0cc86421d281cc4a583a394ae86dbdd}{MyTestCAse::\_two\_account\_transfer\_}(std::shared\_ptr<OSTM> \_to\_, 
+      std::shared\_ptr<OSTM> \_from\_, \hyperlink{class_t_m}{TM}& \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}, \textcolor{keywordtype}{double} \_amount) \{
+00267 
+00268     std::shared\_ptr<TX> tx = tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00272     tx->\_register(\_to\_);
+00273     tx->\_register(\_from\_);
+00277     std::shared\_ptr<BANK> \_TO\_BANK\_, \_FROM\_BANK\_;
+00278     std::shared\_ptr<OSTM> \_TO\_OSTM\_, \_FROM\_OSTM\_;
+00279 
+00280     \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00281     \textcolor{keywordflow}{try} \{
+00282         \textcolor{keywordflow}{while} (!done) \{
+00286             \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_to\_));
+00287             \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_));
+00291             \_TO\_BANK\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_TO\_BANK\_->GetBalance() + \_amount);
+00292             \_FROM\_BANK\_->SetBalance(\_FROM\_BANK\_->GetBalance() - \_amount);
+00296             \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_BANK\_);
+00297             \_FROM\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_BANK\_);
+00301             tx->store(\_TO\_OSTM\_);
+00302             tx->store(\_FROM\_OSTM\_);
+00303 
+00307             done = tx->commit();
+00308         \}
+00309     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00310         std::cout << e.what() << std::endl;
+00311     \}
+00312 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00320}{}\hyperlink{class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_abb973a1396c1083891d76845e2cfaf64}{00320} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_abb973a1396c1083891d76845e2cfaf64}{MyTestCAse::\_nesting\_}(std::shared\_ptr<OSTM> \_to\_, std::shared\_ptr<OSTM> \_from\_, 
+      \hyperlink{class_t_m}{TM}& \_tm, \textcolor{keywordtype}{double} \_amount) \{
+00321     std::shared\_ptr<TX> tx = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00325     tx->\_register(\_to\_);
+00326     tx->\_register(\_from\_);
+00330     std::shared\_ptr<BANK> \_TO\_BANK\_, \_FROM\_BANK\_;
+00331     std::shared\_ptr<OSTM> \_TO\_OSTM\_, \_FROM\_OSTM\_;
+00332 
+00333 
+00334     \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00335     \textcolor{keywordflow}{try} \{
+00336         \textcolor{keywordflow}{while} (!done) \{
+00340             \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_to\_));
+00341             \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_));
+00345             \_TO\_BANK\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_TO\_BANK\_->GetBalance() + \_amount);
+00346             \_FROM\_BANK\_->SetBalance(\_FROM\_BANK\_->GetBalance() - \_amount);
+00350             \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_BANK\_);
+00351             \_FROM\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_BANK\_);
+00355             tx->store(\_TO\_OSTM\_);
+00356             tx->store(\_FROM\_OSTM\_);
+00357 
+00361             std::shared\_ptr<TX> txTwo = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00362 
+00363             \textcolor{keywordtype}{bool} nestedDone = \textcolor{keyword}{false};
+00364             \textcolor{keywordflow}{while} (!nestedDone) \{
+00365                 \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (txTwo->load(\_to\_));
+00366                 \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (txTwo->load(\_from\_));
+00370                 \_TO\_BANK\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_TO\_BANK\_->GetBalance() + \_amount);
+00371                 \_FROM\_BANK\_->SetBalance(\_FROM\_BANK\_->GetBalance() - \_amount);
+00375                 \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_BANK\_);
+00376                 \_FROM\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_BANK\_);
+00380                 txTwo->store(\_TO\_OSTM\_);
+00381                 txTwo->store(\_FROM\_OSTM\_);
+00386                 \hyperlink{class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_af0cc86421d281cc4a583a394ae86dbdd}{\_two\_account\_transfer\_}(\_to\_, \_from\_, \_tm, \_amount);
+00387 
+00388                 nestedDone = txTwo->commit();
+00389             \}
+00390 
+00394             done = tx->commit();
+00395         \}
+00396     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00397         std::cout << e.what() << std::endl;
+00398     \}
+00399 \}
+00400 
+00401 \textcolor{comment}{/*}
+00402 \textcolor{comment}{ * TEST DECLARATION FROM HERE *****************************************************}
+00403 \textcolor{comment}{ */}
+00404 
+00405 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00412}{}\hyperlink{class_my_test_c_ase_a8a198d6ef96a8a07ea7fa839ad068ffb_a8a198d6ef96a8a07ea7fa839ad068ffb}{00412} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a8a198d6ef96a8a07ea7fa839ad068ffb_a8a198d6ef96a8a07ea7fa839ad068ffb}{MyTestCAse::complex\_threaded\_functionality\_hundred\_threads}
+      ()\{
+00413     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00414      std::vector<std::shared\_ptr < OSTM>>\_customer\_vec; 
+00415      \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 600; ++i) \{
+00416         \textcolor{keywordflow}{if} (i % 6 == 0) \{
+00417             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00418             \_customer\_vec.push\_back(std::move(sharedptr));
+00419         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 5 == 0) \{
+00420             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00421             \_customer\_vec.push\_back(std::move(sharedptr));
+00422         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 4 == 0) \{
+00423             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_b_o_a}{BOA}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00424             \_customer\_vec.push\_back(std::move(sharedptr));
+00425         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 3 == 0) \{
+00426             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_s_w_b_p_l_c}{SWBPLC}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00427             \_customer\_vec.push\_back(std::move(sharedptr));
+00428         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 2 == 0) \{
+00429             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_u_l_s_t_e_r}{ULSTER}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00430             \_customer\_vec.push\_back(std::move(sharedptr));
+00431         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 1 == 0) \{
+00432             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_u_n_b_l}{UNBL}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00433             \_customer\_vec.push\_back(std::move(sharedptr));
+00434         \}
+00435     \}
+00436     std::shared\_ptr<BANK> \_FROM\_BANK\_;
+00437     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00438     
+00439     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr}(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00440     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00441     
+00442     \textcolor{keywordtype}{int} transferAmount = 1;
+00443     \textcolor{keywordtype}{int} threadArraySize = 100; 
+00444     std::thread thArray[threadArraySize];
+00445    
+00446     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00447         thArray[i] = std::thread(&\hyperlink{class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_a2367b87338c4f61cc3ac3193651580d4}{MyTestCAse::\_complex\_transfer\_}, \textcolor{keyword}{this}, 
+      aib\_ptr, boi\_ptr, std::ref(\_customer\_vec),  std::ref(\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}), transferAmount);
+00448     \}
+00449     
+00450     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00451         thArray[i].join();
+00452     \}
+00453     
+00454     \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr});
+00455     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr});
+00456     
+00457     CPPUNIT\_ASSERT(\_FROM\_BANK\_->GetBalance() == -59500);
+00458     CPPUNIT\_ASSERT(\_TO\_BANK\_->GetBalance() == -59500);
+00459     
+00460 \}
+00461 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00467}{}\hyperlink{class_my_test_c_ase_ad91f8c37cd32055b834c84f10edeb979_ad91f8c37cd32055b834c84f10edeb979}{00467} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_ad91f8c37cd32055b834c84f10edeb979_ad91f8c37cd32055b834c84f10edeb979}{MyTestCAse::complex\_threaded\_functionality\_ten\_threads}
+      ()\{
+00468     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00469     std::vector<std::shared\_ptr < OSTM>>\_customer\_vec; 
+00470      \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 600; ++i) \{
+00471         \textcolor{keywordflow}{if} (i % 6 == 0) \{
+00472             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00473             \_customer\_vec.push\_back(std::move(sharedptr));
+00474         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 5 == 0) \{
+00475             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00476             \_customer\_vec.push\_back(std::move(sharedptr));
+00477         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 4 == 0) \{
+00478             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_b_o_a}{BOA}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00479             \_customer\_vec.push\_back(std::move(sharedptr));
+00480         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 3 == 0) \{
+00481             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_s_w_b_p_l_c}{SWBPLC}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00482             \_customer\_vec.push\_back(std::move(sharedptr));
+00483         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 2 == 0) \{
+00484             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_u_l_s_t_e_r}{ULSTER}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00485             \_customer\_vec.push\_back(std::move(sharedptr));
+00486         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 1 == 0) \{
+00487             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_u_n_b_l}{UNBL}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00488             \_customer\_vec.push\_back(std::move(sharedptr));
+00489         \}
+00490     \}
+00491     std::shared\_ptr<BANK> \_FROM\_BANK\_;
+00492     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00493     
+00494     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr}(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00495     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00496     
+00497     \textcolor{keywordtype}{int} transferAmount = 1;
+00498     \textcolor{keywordtype}{int} threadArraySize = 10; 
+00499     std::thread thArray[threadArraySize];
+00500 
+00501     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00502         thArray[i] = std::thread(&\hyperlink{class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_a2367b87338c4f61cc3ac3193651580d4}{MyTestCAse::\_complex\_transfer\_}, \textcolor{keyword}{this}, 
+      aib\_ptr, boi\_ptr, std::ref(\_customer\_vec),  std::ref(\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}), transferAmount);
+00503     \}
+00504     
+00505     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00506         thArray[i].join();
+00507     \}
+00508     
+00509     \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr});
+00510     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr});
+00511     
+00512     CPPUNIT\_ASSERT(\_FROM\_BANK\_->GetBalance() == -5500);
+00513     CPPUNIT\_ASSERT(\_TO\_BANK\_->GetBalance() == -5500);
+00514     
+00515 \}
+00516 
+00517 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00523}{}\hyperlink{class_my_test_c_ase_afdb39bda80c1305ac1c4cc0e5ce022f4_afdb39bda80c1305ac1c4cc0e5ce022f4}{00523} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_afdb39bda80c1305ac1c4cc0e5ce022f4_afdb39bda80c1305ac1c4cc0e5ce022f4}{MyTestCAse::threaded\_functionality\_hundred\_threads}()
+      \{
+00524     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00525     std::shared\_ptr<BANK> \_FROM\_BANK\_;
+00526     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00527     
+00528     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr}(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00529     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00530     
+00531     \textcolor{keywordtype}{int} transferAmount = 1;
+00532     \textcolor{keywordtype}{int} threadArraySize = 100; 
+00533     std::thread thArray[threadArraySize];
+00534 
+00535     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00536         thArray[i] = std::thread(&\hyperlink{class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_af0cc86421d281cc4a583a394ae86dbdd}{MyTestCAse::\_two\_account\_transfer\_}, \textcolor{keyword}{
+      this}, aib\_ptr, boi\_ptr, std::ref(\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}), transferAmount);
+00537     \}
+00538     
+00539     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00540         thArray[i].join();
+00541     \}
+00542     
+00543     \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr});
+00544     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr});
+00545     
+00546     CPPUNIT\_ASSERT(\_FROM\_BANK\_->GetBalance() == 400);
+00547     CPPUNIT\_ASSERT(\_TO\_BANK\_->GetBalance() == 600);
+00548     
+00549 \}
+00550 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00556}{}\hyperlink{class_my_test_c_ase_a03f867cf5e2295e4055fe88d825b1710_a03f867cf5e2295e4055fe88d825b1710}{00556} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a03f867cf5e2295e4055fe88d825b1710_a03f867cf5e2295e4055fe88d825b1710}{MyTestCAse::threaded\_functionality\_thousand\_threads}
+      ()\{
+00557     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00558     std::shared\_ptr<BANK> \_FROM\_BANK\_;
+00559     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00560     
+00561     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr}(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00562     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00563     
+00564     \textcolor{keywordtype}{int} transferAmount = 1;
+00565     \textcolor{keywordtype}{int} threadArraySize = 1000; 
+00566     std::thread thArray[threadArraySize];
+00567 
+00568     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00569         thArray[i] = std::thread(&\hyperlink{class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_af0cc86421d281cc4a583a394ae86dbdd}{MyTestCAse::\_two\_account\_transfer\_}, \textcolor{keyword}{
+      this}, aib\_ptr, boi\_ptr, std::ref(\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}), transferAmount);
+00570     \}
+00571     
+00572     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00573         thArray[i].join();
+00574     \}
+00575     
+00576     \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr});
+00577     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr});
+00578 
+00579     CPPUNIT\_ASSERT(\_FROM\_BANK\_->GetBalance() == -500);
+00580     CPPUNIT\_ASSERT(\_TO\_BANK\_->GetBalance() == 1500);
+00581     
+00582 \}
+00583 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00589}{}\hyperlink{class_my_test_c_ase_acdc0278b6fa7c0102b9e5cdfb68a41a1_acdc0278b6fa7c0102b9e5cdfb68a41a1}{00589} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_acdc0278b6fa7c0102b9e5cdfb68a41a1_acdc0278b6fa7c0102b9e5cdfb68a41a1}{MyTestCAse::threaded\_functionality\_hundred\_threads\_six\_account}
+      ()\{
+00590     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00591     std::shared\_ptr<BANK> \_FROM\_BANK\_ONE,\_FROM\_BANK\_TWO,\_FROM\_BANK\_THREE, \_FROM\_BANK\_FOUR, \_FROM\_BANK\_FIVE;
+00592     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00593     
+00594     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr}(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00595     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00596     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_ae0b2db5d35e25b3139beeda0705494f0}{boa\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_a}{BOA}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00597     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_a4f9f72374d3d15be7cdf16412c4d7ed3}{ulster\_ptr}(\textcolor{keyword}{new} \hyperlink{class_u_l_s_t_e_r}{ULSTER}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street,
+       Kilkenny, Co.Kilkenny"}));
+00598     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_a0ca634b597d6c0e136d632268853d5a7}{unbl\_ptr}(\textcolor{keyword}{new} \hyperlink{class_u_n_b_l}{UNBL}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00599     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_aa8ccae9a5a7feb5bc47591c55a82d0cd}{swplc\_ptr}(\textcolor{keyword}{new} \hyperlink{class_s_w_b_p_l_c}{SWBPLC}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street,
+       Kilkenny, Co.Kilkenny"}));
+00600     
+00601     \textcolor{keywordtype}{int} transferAmount = 1;
+00602     \textcolor{keywordtype}{int} threadArraySize = 100; 
+00603     std::thread thArray[threadArraySize];
+00604 
+00605     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00606         thArray[i] = std::thread(&\hyperlink{class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_a72ce436fb3c78c3d76b6c48a5a2e6a76}{MyTestCAse::\_six\_account\_transfer\_}, \textcolor{keyword}{
+      this}, aib\_ptr, boi\_ptr, boa\_ptr, ulster\_ptr, unbl\_ptr, swplc\_ptr, std::ref(\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}), transferAmount);
+00607     \}
+00608     
+00609     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00610         thArray[i].join();
+00611     \}
+00612     
+00613     \_FROM\_BANK\_ONE = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr});
+00614     \_FROM\_BANK\_TWO = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_ae0b2db5d35e25b3139beeda0705494f0}{boa\_ptr});
+00615     \_FROM\_BANK\_THREE = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_a4f9f72374d3d15be7cdf16412c4d7ed3}{ulster\_ptr});
+00616     \_FROM\_BANK\_FOUR = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_a0ca634b597d6c0e136d632268853d5a7}{unbl\_ptr});
+00617     \_FROM\_BANK\_FIVE = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_aa8ccae9a5a7feb5bc47591c55a82d0cd}{swplc\_ptr});
+00618     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr});
+00619     
+00620     CPPUNIT\_ASSERT(\_FROM\_BANK\_ONE->GetBalance() == 400);
+00621     CPPUNIT\_ASSERT(\_FROM\_BANK\_TWO->GetBalance() == 400);
+00622     CPPUNIT\_ASSERT(\_FROM\_BANK\_THREE->GetBalance() == 400);
+00623     CPPUNIT\_ASSERT(\_FROM\_BANK\_FOUR->GetBalance() == 400);
+00624     CPPUNIT\_ASSERT(\_FROM\_BANK\_FIVE->GetBalance() == 400);
+00625     CPPUNIT\_ASSERT(\_TO\_BANK\_->GetBalance() == 1000);
+00626     
+00627 \}
+00628 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00634}{}\hyperlink{class_my_test_c_ase_ab7d15a71958588c6402f234e106668b1_ab7d15a71958588c6402f234e106668b1}{00634} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_ab7d15a71958588c6402f234e106668b1_ab7d15a71958588c6402f234e106668b1}{MyTestCAse::threaded\_functionality\_thousand\_threads\_six\_account}
+      ()\{
+00635     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00636     std::shared\_ptr<BANK> \_FROM\_BANK\_ONE,\_FROM\_BANK\_TWO,\_FROM\_BANK\_THREE, \_FROM\_BANK\_FOUR, \_FROM\_BANK\_FIVE;
+00637     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00638     
+00639     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr}(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00640     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00641     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_ae0b2db5d35e25b3139beeda0705494f0}{boa\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_a}{BOA}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00642     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_a4f9f72374d3d15be7cdf16412c4d7ed3}{ulster\_ptr}(\textcolor{keyword}{new} \hyperlink{class_u_l_s_t_e_r}{ULSTER}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street,
+       Kilkenny, Co.Kilkenny"}));
+00643     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_a0ca634b597d6c0e136d632268853d5a7}{unbl\_ptr}(\textcolor{keyword}{new} \hyperlink{class_u_n_b_l}{UNBL}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00644     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_aa8ccae9a5a7feb5bc47591c55a82d0cd}{swplc\_ptr}(\textcolor{keyword}{new} \hyperlink{class_s_w_b_p_l_c}{SWBPLC}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street,
+       Kilkenny, Co.Kilkenny"}));
+00645     
+00646     \textcolor{keywordtype}{int} transferAmount = 1;
+00647     \textcolor{keywordtype}{int} threadArraySize = 1000; 
+00648     std::thread thArray[threadArraySize];
+00649 
+00650     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00651         thArray[i] = std::thread(&\hyperlink{class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_a72ce436fb3c78c3d76b6c48a5a2e6a76}{MyTestCAse::\_six\_account\_transfer\_}, \textcolor{keyword}{
+      this}, aib\_ptr, boi\_ptr, boa\_ptr, ulster\_ptr, unbl\_ptr, swplc\_ptr, std::ref(\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}), transferAmount);
+00652     \}
+00653     
+00654     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00655         thArray[i].join();
+00656     \}
+00657     
+00658     \_FROM\_BANK\_ONE = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr});
+00659     \_FROM\_BANK\_TWO = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_ae0b2db5d35e25b3139beeda0705494f0}{boa\_ptr});
+00660     \_FROM\_BANK\_THREE = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_a4f9f72374d3d15be7cdf16412c4d7ed3}{ulster\_ptr});
+00661     \_FROM\_BANK\_FOUR = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_a0ca634b597d6c0e136d632268853d5a7}{unbl\_ptr});
+00662     \_FROM\_BANK\_FIVE = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_aa8ccae9a5a7feb5bc47591c55a82d0cd}{swplc\_ptr});
+00663     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr});
+00664     
+00665     CPPUNIT\_ASSERT(\_FROM\_BANK\_ONE->GetBalance() == -500);
+00666     CPPUNIT\_ASSERT(\_FROM\_BANK\_TWO->GetBalance() == -500);
+00667     CPPUNIT\_ASSERT(\_FROM\_BANK\_THREE->GetBalance() == -500);
+00668     CPPUNIT\_ASSERT(\_FROM\_BANK\_FOUR->GetBalance() == -500);
+00669     CPPUNIT\_ASSERT(\_FROM\_BANK\_FIVE->GetBalance() == -500);
+00670     CPPUNIT\_ASSERT(\_TO\_BANK\_->GetBalance() == 5500);
+00671     
+00672 \}
+00673 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00680}{}\hyperlink{class_my_test_c_ase_a13635e729bf660619c7f6a75b414bc3f_a13635e729bf660619c7f6a75b414bc3f}{00680} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a13635e729bf660619c7f6a75b414bc3f_a13635e729bf660619c7f6a75b414bc3f}{MyTestCAse::nested\_hundred\_thread\_functionality}()\{
+00681     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00682     std::shared\_ptr<BANK> \_FROM\_BANK\_;
+00683     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00684     
+00685     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr}(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00686     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00687     
+00688     \textcolor{keywordtype}{int} transferAmount = 1;
+00689     \textcolor{keywordtype}{int} threadArraySize = 100; 
+00690     std::thread thArray[threadArraySize];
+00691 
+00692     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00693         thArray[i] = std::thread(&\hyperlink{class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_abb973a1396c1083891d76845e2cfaf64}{MyTestCAse::\_nesting\_}, \textcolor{keyword}{this}, aib\_ptr, boi\_ptr, 
+      std::ref(\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}), transferAmount);
+00694     \}
+00695     
+00696     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00697         thArray[i].join();
+00698     \}
+00699     
+00700     \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr});
+00701     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr});
+00702     
+00703     CPPUNIT\_ASSERT(\_FROM\_BANK\_->GetBalance() == 200);
+00704     CPPUNIT\_ASSERT(\_TO\_BANK\_->GetBalance() == 800);
+00705     
+00706 \}
+00707 
+00708 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00715}{}\hyperlink{class_my_test_c_ase_a3937532fe2a85f7e61518b8abffdb09a_a3937532fe2a85f7e61518b8abffdb09a}{00715} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a3937532fe2a85f7e61518b8abffdb09a_a3937532fe2a85f7e61518b8abffdb09a}{MyTestCAse::nested\_thousand\_thread\_functionality}()\{
+00716     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00717     std::shared\_ptr<BANK> \_FROM\_BANK\_;
+00718     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00719     
+00720     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr}(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00721     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00722     
+00723     \textcolor{keywordtype}{int} transferAmount = 1;
+00724     \textcolor{keywordtype}{int} threadArraySize = 1000; 
+00725     std::thread thArray[threadArraySize];
+00726 
+00727     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00728         thArray[i] = std::thread(&\hyperlink{class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_abb973a1396c1083891d76845e2cfaf64}{MyTestCAse::\_nesting\_}, \textcolor{keyword}{this}, aib\_ptr, boi\_ptr, 
+      std::ref(\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}), transferAmount);
+00729     \}
+00730     
+00731     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00732         thArray[i].join();
+00733     \}
+00734     
+00735     \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr});
+00736     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr});
+00737     
+00738     CPPUNIT\_ASSERT(\_FROM\_BANK\_->GetBalance() == -2500);
+00739     CPPUNIT\_ASSERT(\_TO\_BANK\_->GetBalance() == 3500);
+00740     
+00741 \}
+00742 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00748}{}\hyperlink{class_my_test_c_ase_a6399ca8bca3f10a0f114a070d3e3a570_a6399ca8bca3f10a0f114a070d3e3a570}{00748} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a6399ca8bca3f10a0f114a070d3e3a570_a6399ca8bca3f10a0f114a070d3e3a570}{MyTestCAse::two\_object\_transfer\_complete}()\{
+00749     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00750     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr}(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00751     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00752     std::shared\_ptr<BANK> \_FROM\_BANK\_;
+00753     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00754     \hyperlink{class_my_test_c_ase_a08f3a55850ffce171406f81f2f6c9c74_a08f3a55850ffce171406f81f2f6c9c74}{a}->\hyperlink{classclient_a71edd1265ba9ae03f71b5dbf54548696_a71edd1265ba9ae03f71b5dbf54548696}{\_two\_account\_transfer\_}(aib\_ptr, boi\_ptr, \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}, 20);
+00755     \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr});
+00756     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr});
+00757     
+00758     CPPUNIT\_ASSERT(\_FROM\_BANK\_->GetBalance() == 480);
+00759     CPPUNIT\_ASSERT(\_TO\_BANK\_->GetBalance() == 520);
+00760     
+00761 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00765}{}\hyperlink{class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_ab9c76eb2dfd565a353ae9a5f604b36d9}{00765} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_ab9c76eb2dfd565a353ae9a5f604b36d9}{MyTestCAse::two\_object\_transfer\_state\_change}()\{
+00766     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00767     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_ae0b2db5d35e25b3139beeda0705494f0}{boa\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_a}{BOA}(300, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00768     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_aa8ccae9a5a7feb5bc47591c55a82d0cd}{swplc\_ptr}(\textcolor{keyword}{new} \hyperlink{class_s_w_b_p_l_c}{SWBPLC}(400, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street,
+       Kilkenny, Co.Kilkenny"}));
+00769     std::shared\_ptr<BANK> \_FROM\_BANK\_;
+00770     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00771     \hyperlink{class_my_test_c_ase_a08f3a55850ffce171406f81f2f6c9c74_a08f3a55850ffce171406f81f2f6c9c74}{a}->\hyperlink{classclient_a71edd1265ba9ae03f71b5dbf54548696_a71edd1265ba9ae03f71b5dbf54548696}{\_two\_account\_transfer\_}(swplc\_ptr, boa\_ptr, \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}, 20);
+00772     \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_ae0b2db5d35e25b3139beeda0705494f0}{boa\_ptr});
+00773     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_aa8ccae9a5a7feb5bc47591c55a82d0cd}{swplc\_ptr});
+00774 
+00775    
+00776     CPPUNIT\_ASSERT(!(\_FROM\_BANK\_->GetBalance() == 500));
+00777     CPPUNIT\_ASSERT(!(\_TO\_BANK\_->GetBalance() == 500));
+00778     
+00779 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00787}{}\hyperlink{class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d6defd62_ad5d3718a6ed5ef68ad711456d6defd62}{00787} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d6defd62_ad5d3718a6ed5ef68ad711456d6defd62}{MyTestCAse::nested\_transaction\_object\_test}()\{
+00788     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00789     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_a4f9f72374d3d15be7cdf16412c4d7ed3}{ulster\_ptr}(\textcolor{keyword}{new} \hyperlink{class_u_l_s_t_e_r}{ULSTER}(500, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street,
+       Kilkenny, Co.Kilkenny"}));
+00790     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_a0ca634b597d6c0e136d632268853d5a7}{unbl\_ptr}(\textcolor{keyword}{new} \hyperlink{class_u_n_b_l}{UNBL}(600, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00791     std::shared\_ptr<BANK> \_FROM\_BANK\_;
+00792     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00793     \hyperlink{class_my_test_c_ase_a08f3a55850ffce171406f81f2f6c9c74_a08f3a55850ffce171406f81f2f6c9c74}{a}->\hyperlink{classclient_ac0ebebd379895869c22f8919ad3bd37f_ac0ebebd379895869c22f8919ad3bd37f}{\_nesting\_}(ulster\_ptr, unbl\_ptr, \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}, 20);
+00794     \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_a0ca634b597d6c0e136d632268853d5a7}{unbl\_ptr});
+00795     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_a4f9f72374d3d15be7cdf16412c4d7ed3}{ulster\_ptr});
+00796     
+00797     CPPUNIT\_ASSERT(\_FROM\_BANK\_->GetBalance() == 440);
+00798     CPPUNIT\_ASSERT(\_TO\_BANK\_->GetBalance() == 560);
+00799     
+00800 \}
+00801 \textcolor{comment}{/*}
+00802 \textcolor{comment}{ * \(\backslash\)brief The library function throws runtime error if the client application tries to }
+00803 \textcolor{comment}{ * register null pointer in the library. Runtime error should be thrown}
+00804 \textcolor{comment}{ */}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00805}{}\hyperlink{class_my_test_c_ase_a80f9123880a0b79e4119f2f4699847ec_a80f9123880a0b79e4119f2f4699847ec}{00805} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a80f9123880a0b79e4119f2f4699847ec_a80f9123880a0b79e4119f2f4699847ec}{MyTestCAse::register\_null\_pointer\_throw\_runtime\_error}
+      ()\{
+00806     
+00807     std::shared\_ptr<OSTM> null\_ptr; 
+00808     std::shared\_ptr<TX> tx = \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00809 
+00810     tx->\_register(null\_ptr);
+00811 \}
+00812 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00818}{}\hyperlink{class_my_test_c_ase_aa3a8c942db63dcf082f85013b7a09ee1_aa3a8c942db63dcf082f85013b7a09ee1}{00818} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_aa3a8c942db63dcf082f85013b7a09ee1_aa3a8c942db63dcf082f85013b7a09ee1}{MyTestCAse::object\_not\_registered\_throw\_runtime\_error}
+      ()\{
+00819     
+00820     std::shared\_ptr<OSTM> not\_registered\_object(\textcolor{keyword}{new} \hyperlink{class_b_o_a}{BOA}(300, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00821     std::shared\_ptr<TX> tx = \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00822 
+00823     tx->load(not\_registered\_object);
+00824 \}
+00825 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00831}{}\hyperlink{class_my_test_c_ase_aae8eeb07dfdc5411255b064bc57b855d_aae8eeb07dfdc5411255b064bc57b855d}{00831} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_aae8eeb07dfdc5411255b064bc57b855d_aae8eeb07dfdc5411255b064bc57b855d}{MyTestCAse::store\_null\_pointer\_throw\_runtime\_error}()
+      \{
+00832     
+00833     std::shared\_ptr<OSTM> null\_ptr; 
+00834     std::shared\_ptr<TX> tx = \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00835 
+00836     tx->store(null\_ptr);
+00837 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00841}{}\hyperlink{class_my_test_c_ase_aadf771b5eefc5f32984cb6c177d217d0_aadf771b5eefc5f32984cb6c177d217d0}{00841} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_aadf771b5eefc5f32984cb6c177d217d0_aadf771b5eefc5f32984cb6c177d217d0}{MyTestCAse::increase\_nesting}()\{
+00842     std::shared\_ptr<TX> tx = \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00843     tx->setTx\_nesting\_level(0);
+00844     tx->\_increase\_tx\_nesting();
+00845     tx->\_increase\_tx\_nesting();
+00846     tx->\_increase\_tx\_nesting();
+00847 
+00848     CPPUNIT\_ASSERT( tx->getTx\_nesting\_level() == 3);
+00849 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00853}{}\hyperlink{class_my_test_c_ase_a2da7267d6799893e898032f5ae54c1e1_a2da7267d6799893e898032f5ae54c1e1}{00853} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a2da7267d6799893e898032f5ae54c1e1_a2da7267d6799893e898032f5ae54c1e1}{MyTestCAse::decrease\_nesting}()\{
+00854     
+00855     std::shared\_ptr<TX> tx = \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00856     tx->setTx\_nesting\_level(10);
+00857     tx->\_decrease\_tx\_nesting();
+00858     tx->\_decrease\_tx\_nesting();
+00859     tx->\_decrease\_tx\_nesting();
+00860     
+00861     CPPUNIT\_ASSERT( tx->getTx\_nesting\_level() == 7);
+00862     tx->\_decrease\_tx\_nesting();
+00863     CPPUNIT\_ASSERT( tx->getTx\_nesting\_level() == 6);
+00864 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00868}{}\hyperlink{class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc5181dae7_af72ca0f6e19543b2bc80f8fc5181dae7}{00868} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc5181dae7_af72ca0f6e19543b2bc80f8fc5181dae7}{MyTestCAse::increase\_nesting\_fail}()\{
+00869     std::shared\_ptr<TX> tx = \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00870     tx->setTx\_nesting\_level(0);
+00871     tx->\_increase\_tx\_nesting();
+00872     tx->\_increase\_tx\_nesting();
+00873     tx->\_increase\_tx\_nesting();
+00874 
+00875     CPPUNIT\_ASSERT( !(tx->getTx\_nesting\_level() == 0));
+00876 
+00877 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00881}{}\hyperlink{class_my_test_c_ase_ad2bec86c60b7992f24c4d59a00a1433b_ad2bec86c60b7992f24c4d59a00a1433b}{00881} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_ad2bec86c60b7992f24c4d59a00a1433b_ad2bec86c60b7992f24c4d59a00a1433b}{MyTestCAse::decrease\_nesting\_fail}()\{
+00882     
+00883     std::shared\_ptr<TX> tx = \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00884     tx->setTx\_nesting\_level(10);
+00885     tx->\_decrease\_tx\_nesting();
+00886     tx->\_decrease\_tx\_nesting();
+00887     tx->\_decrease\_tx\_nesting();
+00888     
+00889     CPPUNIT\_ASSERT( !(tx->getTx\_nesting\_level() == 10));
+00890     tx->\_decrease\_tx\_nesting();
+00891     CPPUNIT\_ASSERT( !(tx->getTx\_nesting\_level() == 12));
+00892 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00896}{}\hyperlink{class_my_test_c_ase_a124c2540c72219b92c477a1fbda21409_a124c2540c72219b92c477a1fbda21409}{00896} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a124c2540c72219b92c477a1fbda21409_a124c2540c72219b92c477a1fbda21409}{MyTestCAse::compare\_Transaction\_Manager\_singleton\_instance}
+      ()\{
+00897     \hyperlink{class_t_m}{TM}& tm\_copy = \hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_a7ce5f35e0dae76df4fe116cf905bbe60}{TM::Instance}();
+00898     CPPUNIT\_ASSERT( \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm} == tm\_copy );
+00899 \}
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00903}{}\hyperlink{class_my_test_c_ase_abbb762450dffd3be8bf9d1b6ec757466_abbb762450dffd3be8bf9d1b6ec757466}{00903} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_abbb762450dffd3be8bf9d1b6ec757466_abbb762450dffd3be8bf9d1b6ec757466}{MyTestCAse::TM\_get\_thread\_map}()\{
+00904     
+00905     std::map< std::thread::id, int > localMap;
+00906     std::map< std::thread::id, int > tmMap = \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46915c}{get\_thread\_Map}();
+00907     
+00908     CPPUNIT\_ASSERT(localMap == tmMap);
+00909 \}
+00910 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00922}{}\hyperlink{class_my_test_c_ase_a41c93b64fb95fa83809b6457b608e2da_a41c93b64fb95fa83809b6457b608e2da}{00922} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a41c93b64fb95fa83809b6457b608e2da_a41c93b64fb95fa83809b6457b608e2da}{MyTestCAse::multi\_threaded\_multiple\_object\_exchange\_test}
+      ()\{
+00923     \textcolor{comment}{//ten threads using same objects}
+00924     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00925     std::shared\_ptr<BANK> \_FROM\_BANK\_;
+00926     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00927     
+00928     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr}(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(100, 100, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00929     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr}(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(200, 100, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00930     
+00931     \textcolor{keywordtype}{int} transferAmount = 5;
+00932     \textcolor{keywordtype}{int} threadArraySize = 10; 
+00933     std::thread thArray[threadArraySize];
+00934 
+00935     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00936         thArray[i] = std::thread(&\hyperlink{class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_af0cc86421d281cc4a583a394ae86dbdd}{MyTestCAse::\_two\_account\_transfer\_}, \textcolor{keyword}{
+      this}, aib\_ptr, boi\_ptr, std::ref(\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}), transferAmount);
+00937     \}
+00938     
+00939     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00940         thArray[i].join();
+00941     \}
+00942     
+00943     \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr});
+00944     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr});
+00945 
+00946     CPPUNIT\_ASSERT(\_FROM\_BANK\_->GetBalance() == 50);
+00947     CPPUNIT\_ASSERT(\_TO\_BANK\_->GetBalance() == 150);
+00948     
+00949 \}
+00950 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00954}{}\hyperlink{class_my_test_c_ase_afea0c5983bf1fcc38d8962cfa6277da4_afea0c5983bf1fcc38d8962cfa6277da4}{00954} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_afea0c5983bf1fcc38d8962cfa6277da4_afea0c5983bf1fcc38d8962cfa6277da4}{MyTestCAse::multi\_threaded\_single\_object\_test\_with\_ten\_threads}
+      ()\{
+00955     \textcolor{comment}{//one object ten threads}
+00956     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00957     std::shared\_ptr<BANK> \_TO\_BANK\_;
+00958     
+00959     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr}(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(100, 100, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00960     
+00961     \textcolor{keywordtype}{int} transferAmount = 1;
+00962     \textcolor{keywordtype}{int} threadArraySize = 10; 
+00963     std::thread thArray[threadArraySize];
+00964 
+00965     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00966         thArray[i] = std::thread(&\hyperlink{class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_afe25c2ed3a8ab035f472fff6575f0e48}{MyTestCAse::\_one\_account\_transfer\_}, \textcolor{keyword}{
+      this}, aib\_ptr, std::ref(\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}), transferAmount);
+00967     \}
+00968     
+00969     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00970         thArray[i].join();
+00971     \}
+00972     
+00973 
+00974     \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr});
+00975     
+00976     CPPUNIT\_ASSERT(\_TO\_BANK\_->GetBalance() == 110);
+00977 
+00978 \}
+00979 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l00983}{}\hyperlink{class_my_test_c_ase_a2f75b781b07bdbc3649c10d6845cb3cc_a2f75b781b07bdbc3649c10d6845cb3cc}{00983} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a2f75b781b07bdbc3649c10d6845cb3cc_a2f75b781b07bdbc3649c10d6845cb3cc}{MyTestCAse::single\_threaded\_multiple\_object\_test}()\{
+00984     \textcolor{comment}{//one transaction multiple objects six object function}
+00985     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+00986     std::vector<std::shared\_ptr < OSTM>>\_customer\_vec; 
+00987      \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 10; ++i) \{
+00988         \textcolor{keywordflow}{if} (i % 6 == 0) \{
+00989             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(i, 10, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00990             \_customer\_vec.push\_back(std::move(sharedptr));
+00991         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 5 == 0) \{
+00992             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(i, 10, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00993             \_customer\_vec.push\_back(std::move(sharedptr));
+00994         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 4 == 0) \{
+00995             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_b_o_a}{BOA}(i, 10, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00996             \_customer\_vec.push\_back(std::move(sharedptr));
+00997         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 3 == 0) \{
+00998             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_s_w_b_p_l_c}{SWBPLC}(i, 10, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00999             \_customer\_vec.push\_back(std::move(sharedptr));
+01000         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 2 == 0) \{
+01001             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_u_l_s_t_e_r}{ULSTER}(i, 10, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+01002             \_customer\_vec.push\_back(std::move(sharedptr));
+01003         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 1 == 0) \{
+01004             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_u_n_b_l}{UNBL}(i, 10, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+01005             \_customer\_vec.push\_back(std::move(sharedptr));
+01006         \}
+01007     \}
+01008     std::shared\_ptr<BANK> \_one\_, \_two\_, \_three\_, \_four\_, \_five\_, \_six\_;
+01009     \textcolor{keywordtype}{int} loop = 5;
+01010     \textcolor{keywordtype}{int} transferAmount = 1;
+01011     \textcolor{keywordtype}{int} threadArraySize = 1; 
+01012     std::thread thArray[threadArraySize];
+01013 
+01014     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{ 
+01015         thArray[i] = std::thread(&\hyperlink{class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_a9ec1ddfc6e7f727446e1a8355086c2dd}{MyTestCAse::\_collection\_bject\_}, \textcolor{keyword}{this}, 
+      std::ref(\_customer\_vec),  std::ref(\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}), transferAmount , loop);
+01016     \}
+01017     
+01018     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+01019         thArray[i].join();
+01020     \}
+01021     
+01022     \_one\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\_customer\_vec[0]);
+01023     \_two\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\_customer\_vec[1]);
+01024     \_three\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\_customer\_vec[2]);
+01025     \_four\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\_customer\_vec[3]);
+01026     \_five\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\_customer\_vec[4]);
+01027     \_six\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\_customer\_vec[5]);
+01028     
+01029     CPPUNIT\_ASSERT(\_one\_->GetBalance() == 15);
+01030     CPPUNIT\_ASSERT(\_two\_->GetBalance() == 15);
+01031     CPPUNIT\_ASSERT(\_three\_->GetBalance() == 15);
+01032     CPPUNIT\_ASSERT(\_four\_->GetBalance() == 15);
+01033     CPPUNIT\_ASSERT(\_five\_->GetBalance() == 15);
+01034     CPPUNIT\_ASSERT(\_six\_->GetBalance() == 15);
+01035 \}
+01036 
+\hypertarget{_my_test_c_ase_8cpp_source.tex_l01040}{}\hyperlink{class_my_test_c_ase_ae49b83ddf0fa297dbb8639001644fa5c_ae49b83ddf0fa297dbb8639001644fa5c}{01040} \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_ae49b83ddf0fa297dbb8639001644fa5c_ae49b83ddf0fa297dbb8639001644fa5c}{MyTestCAse::multi\_threaded\_multiple\_objects\_test}()\{
+01041     \textcolor{comment}{//three threads all thread use different objects }
+01042 
+01043     \hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+01044     std::vector<std::shared\_ptr < OSTM>>\_customer\_vec; 
+01045      \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 10; ++i) \{
+01046         \textcolor{keywordflow}{if} (i % 6 == 0) \{
+01047             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(i, 10, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+01048             \_customer\_vec.push\_back(std::move(sharedptr));
+01049         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 5 == 0) \{
+01050             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(i, 10, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+01051             \_customer\_vec.push\_back(std::move(sharedptr));
+01052         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 4 == 0) \{
+01053             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_b_o_a}{BOA}(i, 10, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+01054             \_customer\_vec.push\_back(std::move(sharedptr));
+01055         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 3 == 0) \{
+01056             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_s_w_b_p_l_c}{SWBPLC}(i, 10, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+01057             \_customer\_vec.push\_back(std::move(sharedptr));
+01058         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 2 == 0) \{
+01059             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_u_l_s_t_e_r}{ULSTER}(i, 10, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+01060             \_customer\_vec.push\_back(std::move(sharedptr));
+01061         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 1 == 0) \{
+01062             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_u_n_b_l}{UNBL}(i, 10, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+01063             \_customer\_vec.push\_back(std::move(sharedptr));
+01064         \}
+01065     \}
+01066     std::shared\_ptr<BANK> \_one\_, \_two\_, \_three\_, \_four\_, \_five\_, \_six\_;
+01067     \textcolor{keywordtype}{int} loop = 1;
+01068     \textcolor{keywordtype}{int} transferAmount = 1;
+01069     \textcolor{keywordtype}{int} threadArraySize = 10; 
+01070     std::thread thArray[threadArraySize];
+01071 
+01072     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{ 
+01073         thArray[i] = std::thread(&\hyperlink{class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_a9ec1ddfc6e7f727446e1a8355086c2dd}{MyTestCAse::\_collection\_bject\_}, \textcolor{keyword}{this}, 
+      std::ref(\_customer\_vec),  std::ref(\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{tm}), transferAmount , loop);
+01074     \}
+01075     
+01076     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+01077         thArray[i].join();
+01078     \}
+01079     
+01080     \_one\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\_customer\_vec[0]);
+01081     \_two\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\_customer\_vec[1]);
+01082     \_three\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\_customer\_vec[2]);
+01083     \_four\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\_customer\_vec[3]);
+01084     \_five\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\_customer\_vec[4]);
+01085     \_six\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (\_customer\_vec[5]);
+01086  
+01087     CPPUNIT\_ASSERT(\_one\_->GetBalance() == 20);
+01088     CPPUNIT\_ASSERT(\_two\_->GetBalance() == 20);
+01089     CPPUNIT\_ASSERT(\_three\_->GetBalance() == 20);
+01090     CPPUNIT\_ASSERT(\_four\_->GetBalance() == 20);
+01091     CPPUNIT\_ASSERT(\_five\_->GetBalance() == 20);
+01092     CPPUNIT\_ASSERT(\_six\_->GetBalance() == 20);
+01093 \}
+\end{DoxyCode}

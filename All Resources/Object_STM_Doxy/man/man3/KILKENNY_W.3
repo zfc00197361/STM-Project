@@ -1,0 +1,269 @@
+.TH "KILKENNY_W" 3 "Sun Apr 1 2018" "Version v 0.0.1" "C++ Software Transactional Memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+KILKENNY_W \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <KILKENNY_W\&.h>\fP
+.PP
+Inherits \fBWAREHOUSE\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBKILKENNY_W\fP ()"
+.br
+.ti -1c
+.RI "\fBKILKENNY_W\fP (std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)"
+.br
+.ti -1c
+.RI "\fBKILKENNY_W\fP (std::shared_ptr< \fBWAREHOUSE\fP > obj, int _version, int _unique_id)"
+.br
+.ti -1c
+.RI "\fBKILKENNY_W\fP (const \fBKILKENNY_W\fP &orig)"
+.br
+.ti -1c
+.RI "\fBKILKENNY_W\fP \fBoperator=\fP (const \fBKILKENNY_W\fP &orig)"
+.br
+.ti -1c
+.RI "virtual \fB~KILKENNY_W\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBcopy\fP (std::shared_ptr< \fBOSTM\fP > to, std::shared_ptr< \fBOSTM\fP > from)"
+.br
+.RI "\fIcopy function, make deep copy of the object/pointer \fP"
+.ti -1c
+.RI "virtual std::shared_ptr< \fBOSTM\fP > \fBgetBaseCopy\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fIgetBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object \fP"
+.ti -1c
+.RI "virtual void \fBtoString\fP ()"
+.br
+.RI "\fI_cast, is use to cast bak the std::shared_ptr<OSTM> to the required type \fP"
+.ti -1c
+.RI "virtual void \fBSetNumber_of_alcatel\fP (int _number_of_alcatel)"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_alcatel\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_nokia\fP (int _number_of_nokia)"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_nokia\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_huawei\fP (int _number_of_huawei)"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_huawei\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_sony\fP (int _number_of_sony)"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_sony\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_samsung\fP (int _number_of_samsung)"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_samsung\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetNumber_of_iphones\fP (int _number_of_iphones)"
+.br
+.ti -1c
+.RI "virtual int \fBGetNumber_of_iphones\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetShop_name\fP (std::string _shop_name)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetShop_name\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBSetShop_address\fP (std::string _shop_address)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetShop_address\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Inherit from \fBWAREHOUSE\fP 
+.PP
+Definition at line 19 of file KILKENNY_W\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "KILKENNY_W::KILKENNY_W ()\fC [inline]\fP"
+Constructor 
+.PP
+Definition at line 24 of file KILKENNY_W\&.h\&.
+.SS "KILKENNY_W::KILKENNY_W (std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)\fC [inline]\fP"
+Custom constructor 
+.PP
+Definition at line 38 of file KILKENNY_W\&.h\&.
+.SS "KILKENNY_W::KILKENNY_W (std::shared_ptr< \fBWAREHOUSE\fP > obj, int _version, int _unique_id)\fC [inline]\fP"
+Custom constructor, used by the library for deep copying 
+.PP
+Definition at line 55 of file KILKENNY_W\&.h\&.
+.SS "KILKENNY_W::KILKENNY_W (const \fBKILKENNY_W\fP & orig)"
+Copy constructor 
+.PP
+Definition at line 15 of file KILKENNY_W\&.cpp\&.
+.SS "KILKENNY_W::~KILKENNY_W ()\fC [virtual]\fP"
+de-constructor 
+.PP
+Definition at line 12 of file KILKENNY_W\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void KILKENNY_W::copy (std::shared_ptr< \fBOSTM\fP > to, std::shared_ptr< \fBOSTM\fP > from)\fC [virtual]\fP"
+
+.PP
+copy function, make deep copy of the object/pointer 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobjTO\fP is a BANK* type object casted back from std::shared_ptr<OSTM> 
+.br
+\fIobjFROM\fP is a BANK* type object casted back from std::shared_ptr<OSTM> 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 35 of file KILKENNY_W\&.cpp\&.
+.SS "std::shared_ptr< \fBOSTM\fP > KILKENNY_W::getBaseCopy (std::shared_ptr< \fBOSTM\fP > object)\fC [virtual]\fP"
+
+.PP
+getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobjTO\fP is a \fBBANK\fP type pointer for casting 
+.br
+\fIobj\fP is a BANK* return type 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 22 of file KILKENNY_W\&.cpp\&.
+.SS "int KILKENNY_W::GetNumber_of_alcatel ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 73 of file KILKENNY_W\&.cpp\&.
+.SS "int KILKENNY_W::GetNumber_of_huawei ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 89 of file KILKENNY_W\&.cpp\&.
+.SS "int KILKENNY_W::GetNumber_of_iphones ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 113 of file KILKENNY_W\&.cpp\&.
+.SS "int KILKENNY_W::GetNumber_of_nokia ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 81 of file KILKENNY_W\&.cpp\&.
+.SS "int KILKENNY_W::GetNumber_of_samsung ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 105 of file KILKENNY_W\&.cpp\&.
+.SS "int KILKENNY_W::GetNumber_of_sony ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 97 of file KILKENNY_W\&.cpp\&.
+.SS "std::string KILKENNY_W::GetShop_address ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 129 of file KILKENNY_W\&.cpp\&.
+.SS "std::string KILKENNY_W::GetShop_name ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 121 of file KILKENNY_W\&.cpp\&.
+.SS "\fBKILKENNY_W\fP KILKENNY_W::operator= (const \fBKILKENNY_W\fP & orig)\fC [inline]\fP"
+Operator 
+.PP
+Definition at line 75 of file KILKENNY_W\&.h\&.
+.SS "void KILKENNY_W::SetNumber_of_alcatel (int _number_of_alcatel)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 69 of file KILKENNY_W\&.cpp\&.
+.SS "void KILKENNY_W::SetNumber_of_huawei (int _number_of_huawei)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 85 of file KILKENNY_W\&.cpp\&.
+.SS "void KILKENNY_W::SetNumber_of_iphones (int _number_of_iphones)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 109 of file KILKENNY_W\&.cpp\&.
+.SS "void KILKENNY_W::SetNumber_of_nokia (int _number_of_nokia)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 77 of file KILKENNY_W\&.cpp\&.
+.SS "void KILKENNY_W::SetNumber_of_samsung (int _number_of_samsung)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 101 of file KILKENNY_W\&.cpp\&.
+.SS "void KILKENNY_W::SetNumber_of_sony (int _number_of_sony)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 93 of file KILKENNY_W\&.cpp\&.
+.SS "void KILKENNY_W::SetShop_address (std::string _shop_address)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 125 of file KILKENNY_W\&.cpp\&.
+.SS "void KILKENNY_W::SetShop_name (std::string _shop_name)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBWAREHOUSE\fP\&.
+.PP
+Definition at line 117 of file KILKENNY_W\&.cpp\&.
+.SS "void KILKENNY_W::toString ()\fC [virtual]\fP"
+
+.PP
+_cast, is use to cast bak the std::shared_ptr<OSTM> to the required type toString function, displays the object values in formatted way 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 62 of file KILKENNY_W\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software Transactional Memory from the source code\&.

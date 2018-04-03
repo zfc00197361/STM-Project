@@ -46,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -124,20 +123,16 @@ $(document).ready(function(){initNavTree('class_o_s_t_m_a2314f55a127b94aa8a51d19
 <p>@39 Custom Constructor Used to copying objects </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">&lt;em&gt;version_number&lt;/em&gt;</td><td>Integer value used to create a copy of the object with the actual version </td></tr>
-    <tr><td class="paramname">&lt;em&gt;unique_id&lt;/em&gt;</td><td>Integer value used to create a copy of the object with the original unique ID </td></tr>
+    <tr><td class="paramname">version_number</td><td>Integer value used to create a copy of the object with the actual version </td></tr>
+    <tr><td class="paramname">unique_id</td><td>Integer value used to create a copy of the object with the original unique ID </td></tr>
   </table>
   </dd>
 </dl>
-<p>@42 Integer field &lt;version&gt; indicates the version number of the inherited child object</p>
-<p>@44 Integer field &lt;uniqueID&gt; is a unique identifier assigned to every object registered in <a class="el" href="class_o_s_t_m.html">OSTM</a> library</p>
-<p>@46 Boolean value &lt;canCommit&gt; to determine the object can or cannot commit</p>
-<p>@48 Boolean value &lt;abort_Transaction&gt; to determine the object can or cannot commit </p>
 
 <p>Definition at line <a class="el" href="_o_s_t_m_8cpp_source.html#l00039">39</a> of file <a class="el" href="_o_s_t_m_8cpp_source.html">OSTM.cpp</a>.</p>
 
 <p>References <a class="el" href="_o_s_t_m_8h_source.html#l00125">abort_Transaction</a>, <a class="el" href="_o_s_t_m_8h_source.html#l00121">canCommit</a>, <a class="el" href="_o_s_t_m_8h_source.html#l00117">uniqueID</a>, and <a class="el" href="_o_s_t_m_8h_source.html#l00111">version</a>.</p>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    this-&gt;<a class="code" href="class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a.html#aa9fe59368b701af7f70befa23bd6901a">uniqueID</a> = _unique_id_;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    this-&gt;<a class="code" href="class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7.html#a9a6ea36181be2db7f9082d77956511d7">version</a> = _version_number_;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    this-&gt;<a class="code" href="class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6.html#a2a5b89641af274ddc69bdf8c1c1a07d6">canCommit</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    this-&gt;<a class="code" href="class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a.html#a5121d9c4b08320b26beca82ba2f85c4a">abort_Transaction</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div><div class="ttc" id="class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_html_aa9fe59368b701af7f70befa23bd6901a"><div class="ttname"><a href="class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a.html#aa9fe59368b701af7f70befa23bd6901a">OSTM::uniqueID</a></div><div class="ttdeci">int uniqueID</div><div class="ttdef"><b>Definition:</b> <a href="_o_s_t_m_8h_source.html#l00117">OSTM.h:117</a></div></div>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">/* @42 Integer field &lt;version&gt; indicates the version number of the inherited child object */</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    this-&gt;<a class="code" href="class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a.html#aa9fe59368b701af7f70befa23bd6901a">uniqueID</a> = _unique_id_;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">/* @44 Integer field &lt;uniqueID&gt; is a unique identifier assigned to every object registered in OSTM library */</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    this-&gt;<a class="code" href="class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7.html#a9a6ea36181be2db7f9082d77956511d7">version</a> = _version_number_;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">/* @46 Boolean value &lt;canCommit&gt; to determine the object can or cannot commit */</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    this-&gt;<a class="code" href="class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6.html#a2a5b89641af274ddc69bdf8c1c1a07d6">canCommit</a> = <span class="keyword">true</span>;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/* @48 Boolean value &lt;abort_Transaction&gt; to determine the object can or cannot commit */</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    this-&gt;<a class="code" href="class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a.html#a5121d9c4b08320b26beca82ba2f85c4a">abort_Transaction</a> = <span class="keyword">false</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div><div class="ttc" id="class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_html_aa9fe59368b701af7f70befa23bd6901a"><div class="ttname"><a href="class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a.html#aa9fe59368b701af7f70befa23bd6901a">OSTM::uniqueID</a></div><div class="ttdeci">int uniqueID</div><div class="ttdef"><b>Definition:</b> <a href="_o_s_t_m_8h_source.html#l00117">OSTM.h:117</a></div></div>
 <div class="ttc" id="class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a_html_a5121d9c4b08320b26beca82ba2f85c4a"><div class="ttname"><a href="class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a.html#a5121d9c4b08320b26beca82ba2f85c4a">OSTM::abort_Transaction</a></div><div class="ttdeci">bool abort_Transaction</div><div class="ttdef"><b>Definition:</b> <a href="_o_s_t_m_8h_source.html#l00125">OSTM.h:125</a></div></div>
 <div class="ttc" id="class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_html_a2a5b89641af274ddc69bdf8c1c1a07d6"><div class="ttname"><a href="class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6.html#a2a5b89641af274ddc69bdf8c1c1a07d6">OSTM::canCommit</a></div><div class="ttdeci">bool canCommit</div><div class="ttdef"><b>Definition:</b> <a href="_o_s_t_m_8h_source.html#l00121">OSTM.h:121</a></div></div>
 <div class="ttc" id="class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_html_a9a6ea36181be2db7f9082d77956511d7"><div class="ttname"><a href="class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7.html#a9a6ea36181be2db7f9082d77956511d7">OSTM::version</a></div><div class="ttdeci">int version</div><div class="ttdef"><b>Definition:</b> <a href="_o_s_t_m_8h_source.html#l00111">OSTM.h:111</a></div></div>
@@ -150,7 +145,7 @@ $(document).ready(function(){initNavTree('class_o_s_t_m_a2314f55a127b94aa8a51d19
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_s_t_m.html">OSTM</a></li>
-    <li class="footer">Generated on Sun Mar 11 2018 15:50:35 for C++ Software transactional Memory by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

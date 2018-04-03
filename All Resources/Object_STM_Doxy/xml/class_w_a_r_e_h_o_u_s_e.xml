@@ -1,0 +1,528 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_w_a_r_e_h_o_u_s_e" kind="class" language="C++" prot="public">
+    <compoundname>WAREHOUSE</compoundname>
+    <basecompoundref refid="class_o_s_t_m" prot="public" virt="non-virtual">OSTM</basecompoundref>
+    <derivedcompoundref refid="class_c_a_r_l_o_w___w" prot="public" virt="non-virtual">CARLOW_W</derivedcompoundref>
+    <derivedcompoundref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e" prot="public" virt="non-virtual">CARPHONE_WAREHOUSE</derivedcompoundref>
+    <derivedcompoundref refid="class_d_u_n_d_a_l_k___w" prot="public" virt="non-virtual">DUNDALK_W</derivedcompoundref>
+    <derivedcompoundref refid="class_k_i_l_k_e_n_n_y___w" prot="public" virt="non-virtual">KILKENNY_W</derivedcompoundref>
+    <derivedcompoundref refid="class_s_l_i_g_o___w" prot="public" virt="non-virtual">SLIGO_W</derivedcompoundref>
+    <derivedcompoundref refid="class_t_a_l_l_a_g_h___w" prot="public" virt="non-virtual">TALLAGH_W</derivedcompoundref>
+    <includes refid="_w_a_r_e_h_o_u_s_e_8h" local="no">WAREHOUSE.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a7a924d389af91f54ed0e1d1d8d56ec57" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WAREHOUSE::WAREHOUSE</definition>
+        <argsstring>()</argsstring>
+        <name>WAREHOUSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="21" column="1" bodyfile="WAREHOUSE.h" bodystart="21" bodyend="23"/>
+        <referencedby refid="class_w_a_r_e_h_o_u_s_e_1a91a50ed8f6eeb344b1785f750532b18a" compoundref="_w_a_r_e_h_o_u_s_e_8h" startline="27" endline="29">WAREHOUSE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a91a50ed8f6eeb344b1785f750532b18a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WAREHOUSE::WAREHOUSE</definition>
+        <argsstring>(int _version, int _unique_id)</argsstring>
+        <name>WAREHOUSE</name>
+        <param>
+          <type>int</type>
+          <declname>_version</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_unique_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom Constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="27" column="1" bodyfile="WAREHOUSE.h" bodystart="27" bodyend="29"/>
+        <references refid="class_w_a_r_e_h_o_u_s_e_1a7a924d389af91f54ed0e1d1d8d56ec57" compoundref="_w_a_r_e_h_o_u_s_e_8h" startline="21" endline="23">WAREHOUSE</references>
+        <references refid="class_w_a_r_e_h_o_u_s_e_1ad5aa686839d7be9bfea33d469c58086b" compoundref="_w_a_r_e_h_o_u_s_e_8cpp" startline="15" endline="16">~WAREHOUSE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a4782d251d2203377f8e9f331ba3b0a7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WAREHOUSE::WAREHOUSE</definition>
+        <argsstring>(const WAREHOUSE &amp;orig)</argsstring>
+        <name>WAREHOUSE</name>
+        <param>
+          <type>const <ref refid="class_w_a_r_e_h_o_u_s_e" kindref="compound">WAREHOUSE</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="33" column="1" bodyfile="WAREHOUSE.cpp" bodystart="12" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1ad5aa686839d7be9bfea33d469c58086b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>WAREHOUSE::~WAREHOUSE</definition>
+        <argsstring>()</argsstring>
+        <name>~WAREHOUSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>de-constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="37" column="1" bodyfile="WAREHOUSE.cpp" bodystart="15" bodyend="16"/>
+        <referencedby refid="class_w_a_r_e_h_o_u_s_e_1a91a50ed8f6eeb344b1785f750532b18a" compoundref="_w_a_r_e_h_o_u_s_e_8h" startline="27" endline="29">WAREHOUSE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a91b45d7d40a154308644a9f2b1767d28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void WAREHOUSE::SetNumber_of_alcatel</definition>
+        <argsstring>(int _number_of_alcatel)</argsstring>
+        <name>SetNumber_of_alcatel</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1ac4c3dbc9e74a4ae6c0a7e88d7a8f80a2">SetNumber_of_alcatel</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1a7cc39880414729ad260abb46c6b320d0">SetNumber_of_alcatel</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1ad264954806d7fd6c418650a5c7c7defb">SetNumber_of_alcatel</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1ad4a8e9cab71ab1b742298e630b6c32da">SetNumber_of_alcatel</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1abbd14fe78b2f5881020630842194aa5b">SetNumber_of_alcatel</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a84d8d820016c7eb50323c2dcbb4d73f3">SetNumber_of_alcatel</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>_number_of_alcatel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="43" column="1" bodyfile="WAREHOUSE.h" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a9d9d5bc37ddd3763ea633d07785b6020" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int WAREHOUSE::GetNumber_of_alcatel</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_alcatel</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1a8f23cfd2feb57a5b67f16d49c137820f">GetNumber_of_alcatel</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1ab7d0fcf5ec24a2c554e44caf50c325a3">GetNumber_of_alcatel</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1ae7ab8852e5eeff1c2cd397126fbac0e7">GetNumber_of_alcatel</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1a548597d48b3bbb35ffa2035eee3b645d">GetNumber_of_alcatel</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1a5afed1018d0629a1e08fc266d05a94d9">GetNumber_of_alcatel</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d278005b2ba46869f6787681ad05704">GetNumber_of_alcatel</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="44" column="1" bodyfile="WAREHOUSE.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a300d1fe21a47e45c0d5d27e25add346f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void WAREHOUSE::SetNumber_of_nokia</definition>
+        <argsstring>(int _number_of_nokia)</argsstring>
+        <name>SetNumber_of_nokia</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1a3306af7f7a306f5198c6d78e6a54bf8f">SetNumber_of_nokia</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1a9ea7d9efdcbb7f39c111442b68604ee4">SetNumber_of_nokia</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1af0f395409df02a42b3e9448d027d0776">SetNumber_of_nokia</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1ae60d0ca1392d87afa206f98d5f1c59d1">SetNumber_of_nokia</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1a2b748e4d815e0f2bdb8fb1b0e85b2636">SetNumber_of_nokia</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a5f2abf60f6fa8a614fadb1419bf1de83">SetNumber_of_nokia</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>_number_of_nokia</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="45" column="1" bodyfile="WAREHOUSE.h" bodystart="45" bodyend="45"/>
+        <referencedby refid="main_8cpp_1a1c170f18aac9dbb8aba1ad2f7e4619cc" compoundref="main_8cpp" startline="358" endline="411">_warehouse_transfer_</referencedby>
+        <referencedby refid="main_8cpp_1a52fcb0d50c67be8cd20f2aca338683c7" compoundref="main_8cpp" startline="419" endline="516">_nested_warehouse_transfer_</referencedby>
+        <referencedby refid="main_8cpp_1a12500f2bcc3c3bb8ad7dd9d74c1637d1" compoundref="main_8cpp" startline="518" endline="644">_complex_warehouse_transfer_</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a1a0f7539989c00290934e8b671f2fb1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int WAREHOUSE::GetNumber_of_nokia</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_nokia</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1ad1e54597be8ac03021520caf851981e4">GetNumber_of_nokia</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1aaba4f04cd24ca7ac1d37f6d0ec76a3c7">GetNumber_of_nokia</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1a4e3a644ee69bc4bc4ab3feac1493192b">GetNumber_of_nokia</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1a20a127a379a2ebed2bd7ee89ca5661fb">GetNumber_of_nokia</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1a1aa9c9f001b37f3fdcdffae009319298">GetNumber_of_nokia</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1aac1959dee51204439fc0721403d23447">GetNumber_of_nokia</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="46" column="1" bodyfile="WAREHOUSE.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1ad29bd0333bd7f17178dc107a00e23954" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void WAREHOUSE::SetNumber_of_huawei</definition>
+        <argsstring>(int _number_of_huawei)</argsstring>
+        <name>SetNumber_of_huawei</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1a2b89e05ada24ce0b7055f2b7cfb76e52">SetNumber_of_huawei</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1ae97581138541d975b6d1f49eb1dfb5ac">SetNumber_of_huawei</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1a016d1d51b091fc1732c2923a3baa2f58">SetNumber_of_huawei</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1a94b6a0ce95c1edc5cd0bc195cbedc74f">SetNumber_of_huawei</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1a3f770536e7ae43cba203b36b452bca76">SetNumber_of_huawei</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a87ba00e49e5b201548c57ef4b8beaeff">SetNumber_of_huawei</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>_number_of_huawei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="47" column="1" bodyfile="WAREHOUSE.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1acacc58d1ceea41e968a6d245007ea127" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int WAREHOUSE::GetNumber_of_huawei</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_huawei</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1a0b0689da37856045c9325e6723f78d4b">GetNumber_of_huawei</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1ab52fec6b8e051fc3aa064822d9c76d7e">GetNumber_of_huawei</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1aea38b51a44cda35a01beb7d45fa7a2a4">GetNumber_of_huawei</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1a0ac4137af5b2aa2e4157c7e85629f064">GetNumber_of_huawei</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1a5804f623f4eb290df4f6b3aba59230d6">GetNumber_of_huawei</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a9200c484f288fce0246008e5d683507f">GetNumber_of_huawei</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="48" column="1" bodyfile="WAREHOUSE.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a709e5a9f4b439d0507fe74cc1a362ee1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void WAREHOUSE::SetNumber_of_sony</definition>
+        <argsstring>(int _number_of_sony)</argsstring>
+        <name>SetNumber_of_sony</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1a6edadc355823944f30b94039abed1c9a">SetNumber_of_sony</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1ab08434d18efd64e98600e34f27e0b753">SetNumber_of_sony</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1ab255132fb2ef5678d00c74f90acdf2dd">SetNumber_of_sony</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1a700cbcd6355556eeaa33955e50010641">SetNumber_of_sony</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1abbfe7001333b8c0b57a22f09ec4c3c1d">SetNumber_of_sony</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ac59a3e67850e4ce6db9f0f0d5a72d8df">SetNumber_of_sony</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>_number_of_sony</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="49" column="1" bodyfile="WAREHOUSE.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1abb7da1fee113e81fbb06190606fddb4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int WAREHOUSE::GetNumber_of_sony</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_sony</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1a804254083a84b05b320e5723c0568e6f">GetNumber_of_sony</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1af9830770e23fa88a55fc39c5638763b8">GetNumber_of_sony</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1a6d31219dac9b4d8842e14b7414ed286e">GetNumber_of_sony</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1a161417e8ef4952c560182735de51a44f">GetNumber_of_sony</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1a62822c4fb80f739bee61767238a29e14">GetNumber_of_sony</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a955e5b413e1f41a36dcc12837664f364">GetNumber_of_sony</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="50" column="1" bodyfile="WAREHOUSE.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a5564efbb5f54f663208a17c6f7f440e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void WAREHOUSE::SetNumber_of_samsung</definition>
+        <argsstring>(int _number_of_samsung)</argsstring>
+        <name>SetNumber_of_samsung</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1ac9ba94018b97ae9be58bde2690965612">SetNumber_of_samsung</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1a55cb57ef915fac44c82570f6d41a023f">SetNumber_of_samsung</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1a6e629d8043c4c4266ecafa9f6a3e6447">SetNumber_of_samsung</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1aec915c88a9cce504e58bf9481d897e7e">SetNumber_of_samsung</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1ace5a2d4fae4c84710a648062e60022d2">SetNumber_of_samsung</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a179265eb31e367a082eb4048f38e602d">SetNumber_of_samsung</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>_number_of_samsung</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="51" column="1" bodyfile="WAREHOUSE.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a817b030450f48bc24e3cc6de5dadefec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int WAREHOUSE::GetNumber_of_samsung</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_samsung</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1ac73e56bbdb3915546b8774f260edc30e">GetNumber_of_samsung</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1a619751e08d43b1915f191e1de6b53e30">GetNumber_of_samsung</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1aecc697b6d017d88f2bdbe3cea2bf3496">GetNumber_of_samsung</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1ad400c7b40f8605f5419b09e946677bbb">GetNumber_of_samsung</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1aa4b6200a00c2a14924b7ff1ae3896b61">GetNumber_of_samsung</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0cd9d93b5b145846627d3005dff71f6f">GetNumber_of_samsung</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="52" column="1" bodyfile="WAREHOUSE.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a05e7450e1f1e711a53a4d9d40fb9dfa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void WAREHOUSE::SetNumber_of_iphones</definition>
+        <argsstring>(int _number_of_iphones)</argsstring>
+        <name>SetNumber_of_iphones</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1abdea4a1698ad841e4d758e6b3e3bef62">SetNumber_of_iphones</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1a93b3677db13a4f469f8488d45a62ec74">SetNumber_of_iphones</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1ad58af9d68450f4fc70e0e1ecd4b1b498">SetNumber_of_iphones</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1aba9c1573606adb336fd5e94969f2f8e8">SetNumber_of_iphones</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1ad2f09386c9305c63a94ab171861eb3a9">SetNumber_of_iphones</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a167a9f9ac25b17395e5964b57099b462">SetNumber_of_iphones</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>_number_of_iphones</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="53" column="1" bodyfile="WAREHOUSE.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a08312d1a68ff48d459ad637df6aaf2f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>virtual int WAREHOUSE::GetNumber_of_iphones</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_iphones</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1aa8eb9ca20372744a05ab64def268a940">GetNumber_of_iphones</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1a8fe67b0cea3e113beaf88917768fafc9">GetNumber_of_iphones</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1a50395c707116ea1176743ed98c6b1f76">GetNumber_of_iphones</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1ad82b0c59cba2cb442520e35ab6011d17">GetNumber_of_iphones</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1a780b3a690f5cbbf7593ffc6612b3d743">GetNumber_of_iphones</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a640af469d055cb8836c42ac4ce135e6f">GetNumber_of_iphones</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="54" column="1" bodyfile="WAREHOUSE.h" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1ae5cb8c03a4ef0d2e84bbe34312bb01e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void WAREHOUSE::SetShop_name</definition>
+        <argsstring>(std::string _shop_name)</argsstring>
+        <name>SetShop_name</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1a8670e50802ffeb6a8b4c148c4f5183aa">SetShop_name</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1ace86d535779fc3f953e9654e21ba5c40">SetShop_name</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1a9d0dcf25c0a9eb8be530c27bd2cf8933">SetShop_name</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1a3ab6212769f348c15cd2d242af70ea02">SetShop_name</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1ad2a9668f07e63bed2bb5da576cbb55b7">SetShop_name</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a832266a32b6ee4be5e531aaacb83610c">SetShop_name</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>_shop_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="55" column="1" bodyfile="WAREHOUSE.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a4d39386ec25ec71b513eb7382e5cd869" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string WAREHOUSE::GetShop_name</definition>
+        <argsstring>()</argsstring>
+        <name>GetShop_name</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1a93dac05f03edc97797f89501aa2af73a">GetShop_name</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1a1b0a9008ea26cf2181eca0dfb93acc9f">GetShop_name</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1a68235a63964645c525620053a33de863">GetShop_name</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1a3baca7e101bfde39d7a1bf91d99c4f51">GetShop_name</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1ae788518e30d9d311eb28f37da932367a">GetShop_name</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4932d1483f97e12e01be200951c572df">GetShop_name</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="56" column="1" bodyfile="WAREHOUSE.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a1accf4c214a11a532cad88729d44b91d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void WAREHOUSE::SetShop_address</definition>
+        <argsstring>(std::string _shop_address)</argsstring>
+        <name>SetShop_address</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1ac4ec867027aed72ff28bfe667da084cd">SetShop_address</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1a2aa44fd4b48eeb979fbd167f2aea3811">SetShop_address</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1a6f66cd4c060b2b1ac6640768ad5c56e4">SetShop_address</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1a45bd91f41ac4d384b4281e6572bc2f8a">SetShop_address</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1af442340c69e1f50622014d459320f003">SetShop_address</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1af26abc216ad013f1cb8ea2b3f788e048">SetShop_address</reimplementedby>
+        <param>
+          <type>std::string</type>
+          <declname>_shop_address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="57" column="1" bodyfile="WAREHOUSE.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_w_a_r_e_h_o_u_s_e_1a50c29c2f95d148239e8b43b8a0046a31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::string</type>
+        <definition>virtual std::string WAREHOUSE::GetShop_address</definition>
+        <argsstring>()</argsstring>
+        <name>GetShop_address</name>
+        <reimplementedby refid="class_k_i_l_k_e_n_n_y___w_1ad35a9d60fff2a3c1088f93ff04e6d9d4">GetShop_address</reimplementedby>
+        <reimplementedby refid="class_d_u_n_d_a_l_k___w_1af9c0a573ae5d8b388a46652621224002">GetShop_address</reimplementedby>
+        <reimplementedby refid="class_c_a_r_l_o_w___w_1af48a2f69706be684115758820ce79ddd">GetShop_address</reimplementedby>
+        <reimplementedby refid="class_t_a_l_l_a_g_h___w_1a591b5f445be4f3b636b415e7b614b82c">GetShop_address</reimplementedby>
+        <reimplementedby refid="class_s_l_i_g_o___w_1a66a2315d531231e34c5056e9bc917797">GetShop_address</reimplementedby>
+        <reimplementedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a90c80d52aa860d00c3fb9c165646637b">GetShop_address</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="WAREHOUSE.h" line="58" column="1" bodyfile="WAREHOUSE.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_w_a_r_e_h_o_u_s_e" kindref="compound">WAREHOUSE</ref> inherit from <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> library </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="214">
+        <label>WAREHOUSE</label>
+        <link refid="class_w_a_r_e_h_o_u_s_e"/>
+        <childnode refid="215" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="215">
+        <label>OSTM</label>
+        <link refid="class_o_s_t_m"/>
+      </node>
+      <node id="217">
+        <label>CARPHONE_WAREHOUSE</label>
+        <link refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="219">
+        <label>KILKENNY_W</label>
+        <link refid="class_k_i_l_k_e_n_n_y___w"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>CARLOW_W</label>
+        <link refid="class_c_a_r_l_o_w___w"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>DUNDALK_W</label>
+        <link refid="class_d_u_n_d_a_l_k___w"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="221">
+        <label>TALLAGH_W</label>
+        <link refid="class_t_a_l_l_a_g_h___w"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>SLIGO_W</label>
+        <link refid="class_s_l_i_g_o___w"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="222">
+        <label>WAREHOUSE</label>
+        <link refid="class_w_a_r_e_h_o_u_s_e"/>
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>OSTM</label>
+        <link refid="class_o_s_t_m"/>
+      </node>
+    </collaborationgraph>
+    <location file="WAREHOUSE.h" line="16" column="1" bodyfile="WAREHOUSE.h" bodystart="16" bodyend="62"/>
+    <listofallmembers>
+      <member refid="class_o_s_t_m_1a535d90fced5adbb70312c92f3778e08d" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>copy</name></member>
+      <member refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>Get_Unique_ID</name></member>
+      <member refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>Get_Version</name></member>
+      <member refid="class_o_s_t_m_1a0bfa3763bd441407dd6365f42714f94c" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>getBaseCopy</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a9d9d5bc37ddd3763ea633d07785b6020" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>GetNumber_of_alcatel</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1acacc58d1ceea41e968a6d245007ea127" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>GetNumber_of_huawei</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a08312d1a68ff48d459ad637df6aaf2f1" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>GetNumber_of_iphones</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a1a0f7539989c00290934e8b671f2fb1c" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>GetNumber_of_nokia</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a817b030450f48bc24e3cc6de5dadefec" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>GetNumber_of_samsung</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1abb7da1fee113e81fbb06190606fddb4d" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>GetNumber_of_sony</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a50c29c2f95d148239e8b43b8a0046a31" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>GetShop_address</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a4d39386ec25ec71b513eb7382e5cd869" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>GetShop_name</name></member>
+      <member refid="class_o_s_t_m_1a5f90caa4384d371c16b7cac860d9f89a" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>increase_VersionNumber</name></member>
+      <member refid="class_o_s_t_m_1afc2851abf5342c3c67342c2c14820115" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>Is_Abort_Transaction</name></member>
+      <member refid="class_o_s_t_m_1a8df39ced3b401aa466df97e26d14b1b7" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>Is_Can_Commit</name></member>
+      <member refid="class_o_s_t_m_1afb6520023ed2c4a6188b688c46f192d0" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>is_Locked</name></member>
+      <member refid="class_o_s_t_m_1af192c598a3c647f37aaba5757e60240f" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>lock_Mutex</name></member>
+      <member refid="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>OSTM</name></member>
+      <member refid="class_o_s_t_m_1a2314f55a127b94aa8a51d19ba798401e" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>OSTM</name></member>
+      <member refid="class_o_s_t_m_1aba384cf65c5f56f5b86833730c3c6ea4" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>Set_Abort_Transaction</name></member>
+      <member refid="class_o_s_t_m_1a813ee61c9d1c83c6a6ae30d12aca8a5d" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>Set_Can_Commit</name></member>
+      <member refid="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>Set_Unique_ID</name></member>
+      <member refid="class_o_s_t_m_1a9529ad8d6d28c1f0cc9b86ed91df1ae1" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>Set_Version</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a91b45d7d40a154308644a9f2b1767d28" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>SetNumber_of_alcatel</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1ad29bd0333bd7f17178dc107a00e23954" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>SetNumber_of_huawei</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a05e7450e1f1e711a53a4d9d40fb9dfa3" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>SetNumber_of_iphones</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a300d1fe21a47e45c0d5d27e25add346f" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>SetNumber_of_nokia</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a5564efbb5f54f663208a17c6f7f440e2" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>SetNumber_of_samsung</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a709e5a9f4b439d0507fe74cc1a362ee1" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>SetNumber_of_sony</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a1accf4c214a11a532cad88729d44b91d" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>SetShop_address</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1ae5cb8c03a4ef0d2e84bbe34312bb01e4" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>SetShop_name</name></member>
+      <member refid="class_o_s_t_m_1a513396a115f2987fd07c203309ae8a59" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>toString</name></member>
+      <member refid="class_o_s_t_m_1a6cd703bc26c719fd95b4f5362d050762" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>unlock_Mutex</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a7a924d389af91f54ed0e1d1d8d56ec57" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>WAREHOUSE</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a91a50ed8f6eeb344b1785f750532b18a" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>WAREHOUSE</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a4782d251d2203377f8e9f331ba3b0a7e" prot="public" virt="non-virtual"><scope>WAREHOUSE</scope><name>WAREHOUSE</name></member>
+      <member refid="class_o_s_t_m_1a30a17d73d0259c60eeab72d6dfa9ceb1" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>~OSTM</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1ad5aa686839d7be9bfea33d469c58086b" prot="public" virt="virtual"><scope>WAREHOUSE</scope><name>~WAREHOUSE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

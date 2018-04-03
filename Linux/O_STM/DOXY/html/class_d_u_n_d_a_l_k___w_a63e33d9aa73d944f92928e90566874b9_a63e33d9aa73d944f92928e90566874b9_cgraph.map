@@ -1,0 +1,25 @@
+<map id="DUNDALK_W::operator=" name="DUNDALK_W::operator=">
+<area shape="rect" id="node2" href="$class_d_u_n_d_a_l_k___w_a850117e656ee2961317f758e70e5d143.html#a850117e656ee2961317f758e70e5d143" title="copy function, make deep copy of the object/pointer " alt="" coords="257,59,399,85"/>
+<area shape="rect" id="node3" href="$class_d_u_n_d_a_l_k___w_a06cbcac20829906b710962967795d4e6.html#a06cbcac20829906b710962967795d4e6" title="getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object ..." alt="" coords="231,109,425,136"/>
+<area shape="rect" id="node5" href="$class_d_u_n_d_a_l_k___w_ab7d0fcf5ec24a2c554e44caf50c325a3.html#ab7d0fcf5ec24a2c554e44caf50c325a3" title="DUNDALK_W::GetNumber\l_of_alcatel" alt="" coords="491,57,674,98"/>
+<area shape="rect" id="node6" href="$class_d_u_n_d_a_l_k___w_ab52fec6b8e051fc3aa064822d9c76d7e.html#ab52fec6b8e051fc3aa064822d9c76d7e" title="DUNDALK_W::GetNumber\l_of_huawei" alt="" coords="491,122,674,163"/>
+<area shape="rect" id="node7" href="$class_d_u_n_d_a_l_k___w_a8fe67b0cea3e113beaf88917768fafc9.html#a8fe67b0cea3e113beaf88917768fafc9" title="DUNDALK_W::GetNumber\l_of_iphones" alt="" coords="491,187,674,229"/>
+<area shape="rect" id="node8" href="$class_d_u_n_d_a_l_k___w_aaba4f04cd24ca7ac1d37f6d0ec76a3c7.html#aaba4f04cd24ca7ac1d37f6d0ec76a3c7" title="DUNDALK_W::GetNumber\l_of_nokia" alt="" coords="491,355,674,397"/>
+<area shape="rect" id="node9" href="$class_d_u_n_d_a_l_k___w_a619751e08d43b1915f191e1de6b53e30.html#a619751e08d43b1915f191e1de6b53e30" title="DUNDALK_W::GetNumber\l_of_samsung" alt="" coords="491,421,674,462"/>
+<area shape="rect" id="node10" href="$class_d_u_n_d_a_l_k___w_af9830770e23fa88a55fc39c5638763b8.html#af9830770e23fa88a55fc39c5638763b8" title="DUNDALK_W::GetNumber\l_of_sony" alt="" coords="491,486,674,527"/>
+<area shape="rect" id="node11" href="$class_d_u_n_d_a_l_k___w_af9c0a573ae5d8b388a46652621224002.html#af9c0a573ae5d8b388a46652621224002" title="DUNDALK_W::GetShop\l_address" alt="" coords="499,551,666,593"/>
+<area shape="rect" id="node12" href="$class_d_u_n_d_a_l_k___w_a1b0a9008ea26cf2181eca0dfb93acc9f.html#a1b0a9008ea26cf2181eca0dfb93acc9f" title="DUNDALK_W::GetShop_name" alt="" coords="480,617,685,644"/>
+<area shape="rect" id="node13" href="$class_d_u_n_d_a_l_k___w_a7cc39880414729ad260abb46c6b320d0.html#a7cc39880414729ad260abb46c6b320d0" title="DUNDALK_W::SetNumber\l_of_alcatel" alt="" coords="237,617,419,658"/>
+<area shape="rect" id="node14" href="$class_d_u_n_d_a_l_k___w_ae97581138541d975b6d1f49eb1dfb5ac.html#ae97581138541d975b6d1f49eb1dfb5ac" title="DUNDALK_W::SetNumber\l_of_huawei" alt="" coords="237,682,419,723"/>
+<area shape="rect" id="node15" href="$class_d_u_n_d_a_l_k___w_a93b3677db13a4f469f8488d45a62ec74.html#a93b3677db13a4f469f8488d45a62ec74" title="DUNDALK_W::SetNumber\l_of_iphones" alt="" coords="237,747,419,789"/>
+<area shape="rect" id="node16" href="$class_d_u_n_d_a_l_k___w_a9ea7d9efdcbb7f39c111442b68604ee4.html#a9ea7d9efdcbb7f39c111442b68604ee4" title="DUNDALK_W::SetNumber\l_of_nokia" alt="" coords="237,813,419,854"/>
+<area shape="rect" id="node17" href="$class_d_u_n_d_a_l_k___w_a55cb57ef915fac44c82570f6d41a023f.html#a55cb57ef915fac44c82570f6d41a023f" title="DUNDALK_W::SetNumber\l_of_samsung" alt="" coords="237,878,419,919"/>
+<area shape="rect" id="node18" href="$class_d_u_n_d_a_l_k___w_ab08434d18efd64e98600e34f27e0b753.html#ab08434d18efd64e98600e34f27e0b753" title="DUNDALK_W::SetNumber\l_of_sony" alt="" coords="237,943,419,985"/>
+<area shape="rect" id="node19" href="$class_d_u_n_d_a_l_k___w_a2aa44fd4b48eeb979fbd167f2aea3811.html#a2aa44fd4b48eeb979fbd167f2aea3811" title="DUNDALK_W::SetShop\l_address" alt="" coords="245,1009,411,1050"/>
+<area shape="rect" id="node20" href="$class_d_u_n_d_a_l_k___w_ace86d535779fc3f953e9654e21ba5c40.html#ace86d535779fc3f953e9654e21ba5c40" title="DUNDALK_W::SetShop_name" alt="" coords="226,1075,430,1101"/>
+<area shape="rect" id="node21" href="$class_d_u_n_d_a_l_k___w_aef2a8301835c60c21f9f3199259fed87.html#aef2a8301835c60c21f9f3199259fed87" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="248,312,408,339"/>
+<area shape="rect" id="node24" href="$class_d_u_n_d_a_l_k___w_a91d26f413bf5bc2d089b77036f7fbfa9.html#a91d26f413bf5bc2d089b77036f7fbfa9" title="DUNDALK_W::~DUNDALK_W" alt="" coords="224,1125,432,1152"/>
+<area shape="rect" id="node4" href="$class_d_u_n_d_a_l_k___w_ad459a77b4f3e0aaebb3d178eb014a77f.html#ad459a77b4f3e0aaebb3d178eb014a77f" title="DUNDALK_W::DUNDALK_W" alt="" coords="483,5,683,32"/>
+<area shape="rect" id="node22" href="$class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="503,304,662,331"/>
+<area shape="rect" id="node23" href="$class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="513,253,653,280"/>
+</map>

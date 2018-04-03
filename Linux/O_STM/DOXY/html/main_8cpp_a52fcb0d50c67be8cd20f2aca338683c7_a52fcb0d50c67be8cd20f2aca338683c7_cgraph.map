@@ -1,0 +1,7 @@
+<map id="_nested_warehouse_transfer_" name="_nested_warehouse_transfer_">
+<area shape="rect" id="node2" href="$class_t_m_a41cb0226cc4080c931651b13f74a0075.html#a41cb0226cc4080c931651b13f74a0075" title="_get_tx std::shared_ptr&lt;TX&gt;, returning a shared pointer with the transaction " alt="" coords="495,5,587,32"/>
+<area shape="rect" id="node5" href="$main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc.html#a1c170f18aac9dbb8aba1ad2f7e4619cc" title="warehouse_transfer function, takes two std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manager..." alt="" coords="249,45,400,72"/>
+<area shape="rect" id="node6" href="$class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f.html#a300d1fe21a47e45c0d5d27e25add346f" title="WAREHOUSE::SetNumber\l_of_nokia" alt="" coords="448,67,633,109"/>
+<area shape="rect" id="node3" href="$class_t_m_a26ea481c24d9aa3aebd6dafb7253376e.html#a26ea481c24d9aa3aebd6dafb7253376e" title="registerTX void, register transaction into txMap " alt="" coords="681,5,791,32"/>
+<area shape="rect" id="node4" href="$class_t_m_afb8bc9f42fe06c52747beb7f4c46915c.html#afb8bc9f42fe06c52747beb7f4c46915c" title="get_thread_Map returning and map to insert to the process_map_collection as an inner value ..." alt="" coords="839,5,981,32"/>
+</map>

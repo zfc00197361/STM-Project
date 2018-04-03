@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_d_u_n_d_a_l_k___w_8cpp" kind="file" language="C++">
+    <compoundname>DUNDALK_W.cpp</compoundname>
+    <includes refid="_d_u_n_d_a_l_k___w_8h" local="yes">DUNDALK_W.h</includes>
+    <incdepgraph>
+      <node id="556">
+        <label>DUNDALK_W.cpp</label>
+        <link refid="DUNDALK_W.cpp"/>
+        <childnode refid="557" relation="include">
+        </childnode>
+      </node>
+      <node id="562">
+        <label>string</label>
+      </node>
+      <node id="559">
+        <label>OSTM.h</label>
+        <link refid="_o_s_t_m_8h"/>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="561" relation="include">
+        </childnode>
+        <childnode refid="562" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+      </node>
+      <node id="558">
+        <label>WAREHOUSE.h</label>
+        <link refid="_w_a_r_e_h_o_u_s_e_8h"/>
+        <childnode refid="559" relation="include">
+        </childnode>
+      </node>
+      <node id="563">
+        <label>iostream</label>
+      </node>
+      <node id="560">
+        <label>mutex</label>
+      </node>
+      <node id="557">
+        <label>DUNDALK_W.h</label>
+        <link refid="_d_u_n_d_a_l_k___w_8h"/>
+        <childnode refid="558" relation="include">
+        </childnode>
+        <childnode refid="562" relation="include">
+        </childnode>
+        <childnode refid="561" relation="include">
+        </childnode>
+        <childnode refid="563" relation="include">
+        </childnode>
+      </node>
+      <node id="561">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>File:<sp/><sp/><sp/>DUNDALK_W.cpp</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Zoltan<sp/>Fuzesi</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>IT<sp/>Carlow<sp/>:<sp/>C00197361</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Created<sp/>on<sp/>January<sp/>17,<sp/>2018,<sp/>8:02<sp/>PM</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_d_u_n_d_a_l_k___w_8h" kindref="compound">DUNDALK_W.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_d_u_n_d_a_l_k___w_1a91d26f413bf5bc2d089b77036f7fbfa9" refkind="member"><highlight class="normal"><ref refid="class_d_u_n_d_a_l_k___w_1a91d26f413bf5bc2d089b77036f7fbfa9" kindref="member">DUNDALK_W::~DUNDALK_W</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_d_u_n_d_a_l_k___w_1a0ee6950b4b6cb12b73595e805be8ba64" refkind="member"><highlight class="normal"><ref refid="class_d_u_n_d_a_l_k___w_1ad459a77b4f3e0aaebb3d178eb014a77f" kindref="member">DUNDALK_W::DUNDALK_W</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w" kindref="compound">DUNDALK_W</ref>&amp;<sp/>orig)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22" refid="class_d_u_n_d_a_l_k___w_1a06cbcac20829906b710962967795d4e6" refkind="member"><highlight class="normal">std::shared_ptr&lt;OSTM&gt;<sp/><ref refid="class_d_u_n_d_a_l_k___w_1a06cbcac20829906b710962967795d4e6" kindref="member">DUNDALK_W::getBaseCopy</ref>(std::shared_ptr&lt;OSTM&gt;<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;WAREHOUSE&gt;<sp/>objTO<sp/>=<sp/>std::dynamic_pointer_cast&lt;<ref refid="class_w_a_r_e_h_o_u_s_e" kindref="compound">WAREHOUSE</ref>&gt;(object);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;WAREHOUSE&gt;<sp/>obj(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1ad459a77b4f3e0aaebb3d178eb014a77f" kindref="member">DUNDALK_W</ref>(objTO,<sp/>object-&gt;Get_Version(),</highlight><highlight class="keywordtype">object</highlight><highlight class="normal">-&gt;Get_Unique_ID()));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;OSTM&gt;<sp/>ostm_obj<sp/>=<sp/>std::dynamic_pointer_cast&lt;<ref refid="class_o_s_t_m" kindref="compound">OSTM</ref>&gt;(obj);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ostm_obj;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35" refid="class_d_u_n_d_a_l_k___w_1a850117e656ee2961317f758e70e5d143" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1a850117e656ee2961317f758e70e5d143" kindref="member">DUNDALK_W::copy</ref>(std::shared_ptr&lt;OSTM&gt;<sp/>to,<sp/>std::shared_ptr&lt;OSTM&gt;<sp/>from){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;DUNDALK_W&gt;<sp/>objTO<sp/>=<sp/>std::dynamic_pointer_cast&lt;<ref refid="class_d_u_n_d_a_l_k___w" kindref="compound">DUNDALK_W</ref>&gt;(to);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;DUNDALK_W&gt;<sp/>objFROM<sp/>=<sp/>std::dynamic_pointer_cast&lt;<ref refid="class_d_u_n_d_a_l_k___w" kindref="compound">DUNDALK_W</ref>&gt;(from);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>objTO-&gt;_shop_address<sp/>=<sp/>objFROM-&gt;GetShop_address();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>objTO-&gt;_shop_name<sp/>=<sp/>objFROM-&gt;GetShop_name();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>objTO-&gt;_number_of_iphones<sp/>=<sp/>objFROM-&gt;GetNumber_of_iphones();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>objTO-&gt;_number_of_samsung<sp/>=<sp/>objFROM-&gt;GetNumber_of_samsung();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>objTO-&gt;_number_of_sony<sp/>=<sp/>objFROM-&gt;GetNumber_of_sony();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>objTO-&gt;_number_of_huawei<sp/>=<sp/>objFROM-&gt;GetNumber_of_huawei();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>objTO-&gt;_number_of_nokia<sp/>=<sp/>objFROM-&gt;GetNumber_of_nokia();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>objTO-&gt;_number_of_alcatel<sp/>=<sp/>objFROM-&gt;GetNumber_of_alcatel();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>objTO-&gt;Set_Unique_ID(objFROM-&gt;Get_Unique_ID());</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>objTO-&gt;Set_Version(objFROM-&gt;Get_Version());</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="comment">//std::shared_ptr&lt;DUNDALK_W&gt;<sp/>DUNDALK_W::_cast(std::shared_ptr&lt;OSTM&gt;<sp/>_object){</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>std::static_pointer_cast&lt;DUNDALK_W&gt;(_object);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//}</highlight></codeline>
+<codeline lineno="62" refid="class_d_u_n_d_a_l_k___w_1aef2a8301835c60c21f9f3199259fed87" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1aef2a8301835c60c21f9f3199259fed87" kindref="member">DUNDALK_W::toString</ref>()</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><sp/>this-&gt;<ref refid="class_d_u_n_d_a_l_k___w_1a1b0a9008ea26cf2181eca0dfb93acc9f" kindref="member">GetShop_name</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nUnique<sp/>ID<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" kindref="member">Get_Unique_ID</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nShop<sp/>Name<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_d_u_n_d_a_l_k___w_1a1b0a9008ea26cf2181eca0dfb93acc9f" kindref="member">GetShop_name</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nShop<sp/>Address<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_d_u_n_d_a_l_k___w_1af9c0a573ae5d8b388a46652621224002" kindref="member">GetShop_address</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nNo.<sp/>Iphones<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_d_u_n_d_a_l_k___w_1a8fe67b0cea3e113beaf88917768fafc9" kindref="member">GetNumber_of_iphones</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nNo.<sp/>Samsung<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_d_u_n_d_a_l_k___w_1a619751e08d43b1915f191e1de6b53e30" kindref="member">GetNumber_of_samsung</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nNo.<sp/>Sony<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_d_u_n_d_a_l_k___w_1af9830770e23fa88a55fc39c5638763b8" kindref="member">GetNumber_of_sony</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nNo.<sp/>Huawei<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_d_u_n_d_a_l_k___w_1ab52fec6b8e051fc3aa064822d9c76d7e" kindref="member">GetNumber_of_huawei</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nNo.<sp/>Nokia<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_d_u_n_d_a_l_k___w_1aaba4f04cd24ca7ac1d37f6d0ec76a3c7" kindref="member">GetNumber_of_nokia</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nNo.<sp/>Alcatel<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_d_u_n_d_a_l_k___w_1ab7d0fcf5ec24a2c554e44caf50c325a3" kindref="member">GetNumber_of_alcatel</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\nVersion<sp/>number<sp/>:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>this-&gt;<ref refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" kindref="member">Get_Version</ref>()<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_d_u_n_d_a_l_k___w_1a7cc39880414729ad260abb46c6b320d0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1a7cc39880414729ad260abb46c6b320d0" kindref="member">DUNDALK_W::SetNumber_of_alcatel</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_alcatel)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;_number_of_alcatel<sp/>=<sp/>_number_of_alcatel;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_d_u_n_d_a_l_k___w_1ab7d0fcf5ec24a2c554e44caf50c325a3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1ab7d0fcf5ec24a2c554e44caf50c325a3" kindref="member">DUNDALK_W::GetNumber_of_alcatel</ref>(){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_number_of_alcatel;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_d_u_n_d_a_l_k___w_1a9ea7d9efdcbb7f39c111442b68604ee4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1a9ea7d9efdcbb7f39c111442b68604ee4" kindref="member">DUNDALK_W::SetNumber_of_nokia</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_nokia)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;_number_of_nokia<sp/>=<sp/>_number_of_nokia;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="class_d_u_n_d_a_l_k___w_1aaba4f04cd24ca7ac1d37f6d0ec76a3c7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1aaba4f04cd24ca7ac1d37f6d0ec76a3c7" kindref="member">DUNDALK_W::GetNumber_of_nokia</ref>(){</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_number_of_nokia;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_d_u_n_d_a_l_k___w_1ae97581138541d975b6d1f49eb1dfb5ac" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1ae97581138541d975b6d1f49eb1dfb5ac" kindref="member">DUNDALK_W::SetNumber_of_huawei</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_huawei)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;_number_of_huawei<sp/>=<sp/>_number_of_huawei;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="class_d_u_n_d_a_l_k___w_1ab52fec6b8e051fc3aa064822d9c76d7e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1ab52fec6b8e051fc3aa064822d9c76d7e" kindref="member">DUNDALK_W::GetNumber_of_huawei</ref>(){</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_number_of_huawei;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="class_d_u_n_d_a_l_k___w_1ab08434d18efd64e98600e34f27e0b753" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1ab08434d18efd64e98600e34f27e0b753" kindref="member">DUNDALK_W::SetNumber_of_sony</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_sony)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;_number_of_sony<sp/>=<sp/>_number_of_sony;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="class_d_u_n_d_a_l_k___w_1af9830770e23fa88a55fc39c5638763b8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1af9830770e23fa88a55fc39c5638763b8" kindref="member">DUNDALK_W::GetNumber_of_sony</ref>(){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_number_of_sony;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_d_u_n_d_a_l_k___w_1a55cb57ef915fac44c82570f6d41a023f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1a55cb57ef915fac44c82570f6d41a023f" kindref="member">DUNDALK_W::SetNumber_of_samsung</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_samsung)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;_number_of_samsung<sp/>=<sp/>_number_of_samsung;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="class_d_u_n_d_a_l_k___w_1a619751e08d43b1915f191e1de6b53e30" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1a619751e08d43b1915f191e1de6b53e30" kindref="member">DUNDALK_W::GetNumber_of_samsung</ref>(){</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_number_of_samsung;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="class_d_u_n_d_a_l_k___w_1a93b3677db13a4f469f8488d45a62ec74" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1a93b3677db13a4f469f8488d45a62ec74" kindref="member">DUNDALK_W::SetNumber_of_iphones</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_iphones)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;_number_of_iphones<sp/>=<sp/>_number_of_iphones;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="class_d_u_n_d_a_l_k___w_1a8fe67b0cea3e113beaf88917768fafc9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1a8fe67b0cea3e113beaf88917768fafc9" kindref="member">DUNDALK_W::GetNumber_of_iphones</ref>(){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_number_of_iphones;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="class_d_u_n_d_a_l_k___w_1ace86d535779fc3f953e9654e21ba5c40" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1ace86d535779fc3f953e9654e21ba5c40" kindref="member">DUNDALK_W::SetShop_name</ref>(std::string<sp/>_shop_name)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;_shop_name<sp/>=<sp/>_shop_name;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="class_d_u_n_d_a_l_k___w_1a1b0a9008ea26cf2181eca0dfb93acc9f" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_d_u_n_d_a_l_k___w_1a1b0a9008ea26cf2181eca0dfb93acc9f" kindref="member">DUNDALK_W::GetShop_name</ref>(){</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_shop_name;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="class_d_u_n_d_a_l_k___w_1a2aa44fd4b48eeb979fbd167f2aea3811" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_u_n_d_a_l_k___w_1a2aa44fd4b48eeb979fbd167f2aea3811" kindref="member">DUNDALK_W::SetShop_address</ref>(std::string<sp/>_shop_address)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;_shop_address<sp/>=<sp/>_shop_address;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="class_d_u_n_d_a_l_k___w_1af9c0a573ae5d8b388a46652621224002" refkind="member"><highlight class="normal">std::string<sp/><ref refid="class_d_u_n_d_a_l_k___w_1af9c0a573ae5d8b388a46652621224002" kindref="member">DUNDALK_W::GetShop_address</ref>(){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_shop_address;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="DUNDALK_W.cpp"/>
+  </compounddef>
+</doxygen>

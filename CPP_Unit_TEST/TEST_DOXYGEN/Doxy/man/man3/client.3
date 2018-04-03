@@ -1,0 +1,336 @@
+.TH "client" 3 "Sun Apr 1 2018" "CppUnit test STM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+client \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <client\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fB_complex_transfer_\fP (std::shared_ptr< \fBOSTM\fP > _from_, std::shared_ptr< \fBOSTM\fP > _from_two_, std::vector< std::shared_ptr< \fBOSTM\fP >> _customer_vec, \fBTM\fP &_tm, double _amount)"
+.br
+.ti -1c
+.RI "void \fB_nesting_\fP (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP &tm, double _amount)"
+.br
+.ti -1c
+.RI "void \fB_six_account_transfer_\fP (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_one_, std::shared_ptr< \fBOSTM\fP > _from_two_, std::shared_ptr< \fBOSTM\fP > _from_three_, std::shared_ptr< \fBOSTM\fP > _from_four_, std::shared_ptr< \fBOSTM\fP > _from_five_, \fBTM\fP &_tm, double _amount)"
+.br
+.ti -1c
+.RI "void \fB_two_account_transfer_\fP (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP &tm, double _amount)"
+.br
+.ti -1c
+.RI "\fBclient\fP (int \fBvalue\fP)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBvalue\fP = 0"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 34 of file client\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "client::client (int value)\fC [inline]\fP"
+
+.PP
+Definition at line 39 of file client\&.h\&.
+.PP
+References value\&.
+.PP
+.nf
+39 { this->value = value; };
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void client::_complex_transfer_ (std::shared_ptr< \fBOSTM\fP > _from_, std::shared_ptr< \fBOSTM\fP > _from_two_, std::vector< std::shared_ptr< \fBOSTM\fP >> _customer_vec, \fBTM\fP & _tm, double _amount)\fC [inline]\fP"
+
+.PP
+Definition at line 236 of file client\&.h\&.
+.PP
+References TM::_get_tx(), and BANK::SetBalance()\&.
+.PP
+.nf
+236                                                                                                                                                            {
+237     std::shared_ptr<TX> tx = _tm\&._get_tx();
+238     /* Register the two single account*/
+239     tx->_register(_from_);
+240     tx->_register(_from_two_);
+241     /* Declare required pointers */
+242     std::shared_ptr<OSTM> _FROM_OSTM_ONE_, _FROM_OSTM_TWO_, _TO_OSTM_;
+243     std::shared_ptr<BANK> _FROM_, _FROM_TWO_, _TO_;
+244 
+245     bool done = false;
+246     try {
+247         while (!done) {
+248             for (auto&& obj : _customer_vec) {
+249                 /* Register customers accounts from the collection (vector) */
+250                 tx->_register(obj);
+251                 /* From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods  */
+252                 _FROM_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_));
+253                 _FROM_TWO_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_two_));
+254                 _TO_ = std::dynamic_pointer_cast<BANK> (tx->load(obj));
+255                 /* Make changes with the objects */
+256                 _FROM_->SetBalance(_FROM_->GetBalance() - _amount);
+257                 _FROM_TWO_->SetBalance(_FROM_TWO_->GetBalance() - _amount);
+258                 _TO_->SetBalance(_TO_->GetBalance() + (_amount * 2));
+259                 /* From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces */
+260                 _FROM_OSTM_ONE_ = std::dynamic_pointer_cast<OSTM> (_FROM_);
+261                 _FROM_OSTM_TWO_ = std::dynamic_pointer_cast<OSTM> (_FROM_TWO_);
+262                 _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_);
+263                 /* Store changes */
+264                 tx->store(_FROM_OSTM_ONE_);
+265                 tx->store(_FROM_OSTM_TWO_);
+266                 tx->store(_TO_OSTM_);
+267             }
+268             /* Commit changes */
+269             done = tx->commit();
+270         }
+271     } catch (std::runtime_error& e) {
+272         std::cout << e\&.what() << std::endl;
+273     }
+274 }
+.fi
+.SS "void client::_nesting_ (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP & tm, double _amount)\fC [inline]\fP"
+
+.PP
+Definition at line 89 of file client\&.h\&.
+.PP
+References TM::_get_tx(), _two_account_transfer_(), and BANK::SetBalance()\&.
+.PP
+Referenced by MyTestCAse::nested_transaction_object_test()\&.
+.PP
+.nf
+89                                                                                              {
+90     std::shared_ptr<TX> tx = tm\&._get_tx();
+91     /*
+92      * Register the two single account
+93      */
+94     tx->_register(_to_);
+95     tx->_register(_from_);
+96     /*
+97      * Declare required pointers 
+98      */
+99     std::shared_ptr<BANK> _TO_BANK_, _FROM_BANK_;
+100     std::shared_ptr<OSTM> _TO_OSTM_, _FROM_OSTM_;
+101 
+102 
+103     bool done = false;
+104     try {
+105         while (!done) {
+106             /*
+107              * From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+108              */
+109             _TO_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_to_));
+110             _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_));
+111             /*
+112              * Make changes with the objects
+113              */
+114             _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+115             _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+116             /*
+117              * From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+118              */
+119             _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+120             _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+121             /*
+122              * Store changes
+123              */
+124             tx->store(_TO_OSTM_);
+125             tx->store(_FROM_OSTM_);
+126 
+127             /*
+128              * NESTED TRANSACTION
+129              */
+130             std::shared_ptr<TX> txTwo = tm\&._get_tx();
+131 
+132             bool nestedDone = false;
+133             while (!nestedDone) {
+134                 _TO_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_to_));
+135                 _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_from_));
+136                 /*
+137                  * Make changes with the objects
+138                  */
+139                 _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+140                 _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+141                 /*
+142                  * From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+143                  */
+144                 _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+145                 _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+146                 /*
+147                  * Store changes
+148                  */
+149                 txTwo->store(_TO_OSTM_);
+150                 txTwo->store(_FROM_OSTM_);
+151                 /*
+152                  * NESTED TRANSACTION IN THE NESTED TRANSACTION
+153                  * _two_account_transfer_ function call
+154                  */
+155                 _two_account_transfer_(_to_, _from_, tm, _amount);
+156 
+157                 nestedDone = txTwo->commit();
+158             }
+159 
+160             /*
+161              * Commit changes
+162              */
+163             done = tx->commit();
+164         }
+165     } catch (std::runtime_error& e) {
+166         std::cout << e\&.what() << std::endl;
+167     }
+168 }
+.fi
+.SS "void client::_six_account_transfer_ (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_one_, std::shared_ptr< \fBOSTM\fP > _from_two_, std::shared_ptr< \fBOSTM\fP > _from_three_, std::shared_ptr< \fBOSTM\fP > _from_four_, std::shared_ptr< \fBOSTM\fP > _from_five_, \fBTM\fP & _tm, double _amount)\fC [inline]\fP"
+
+.PP
+Definition at line 170 of file client\&.h\&.
+.PP
+References TM::_get_tx(), and BANK::SetBalance()\&.
+.PP
+.nf
+170                                                                                                                                                                                                                                                    {
+171     std::shared_ptr<TX> tx = _tm\&._get_tx();
+172     /*
+173      * Register the two single account
+174      */
+175     tx->_register(_to_);
+176     tx->_register(_from_one_);
+177     tx->_register(_from_two_);
+178     tx->_register(_from_three_);
+179     tx->_register(_from_four_);
+180     tx->_register(_from_five_);
+181 
+182     /*
+183      * Required pointers to use in transaction
+184      */
+185     std::shared_ptr<OSTM> _TO_OSTM, _FROM_ONE_OSTM, _FROM_TWO_OSTM, _FROM_THREE_OSTM, _FROM_FOUR_OSTM, _FROM_FIVE_OSTM;
+186     std::shared_ptr<BANK> _TO_, _FROM_ONE_, _FROM_TWO_, _FROM_THREE_, _FROM_FOUR_, _FROM_FIVE_;
+187     try {
+188         bool done = false;
+189         while (!done) {
+190             /*
+191              * From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+192              */
+193             _TO_ = std::dynamic_pointer_cast<BANK> (tx->load(_to_));
+194             _FROM_ONE_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_one_));
+195             _FROM_TWO_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_two_));
+196             _FROM_THREE_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_three_));
+197             _FROM_FOUR_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_four_));
+198             _FROM_FIVE_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_five_));
+199             /*
+200              * Make changes with the objects
+201              */
+202             _TO_->SetBalance(_TO_->GetBalance() + (_amount * 5));
+203             _FROM_ONE_->SetBalance(_FROM_ONE_->GetBalance() - _amount);
+204             _FROM_TWO_->SetBalance(_FROM_TWO_->GetBalance() - _amount);
+205             _FROM_THREE_->SetBalance(_FROM_THREE_->GetBalance() - _amount);
+206             _FROM_FOUR_->SetBalance(_FROM_FOUR_->GetBalance() - _amount);
+207             _FROM_FIVE_->SetBalance(_FROM_FIVE_->GetBalance() - _amount);
+208             /*
+209              * From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+210              */
+211             _TO_OSTM = std::dynamic_pointer_cast<OSTM> (_TO_);
+212             _FROM_ONE_OSTM = std::dynamic_pointer_cast<OSTM> (_FROM_ONE_);
+213             _FROM_TWO_OSTM = std::dynamic_pointer_cast<OSTM> (_FROM_TWO_);
+214             _FROM_THREE_OSTM = std::dynamic_pointer_cast<OSTM> (_FROM_THREE_);
+215             _FROM_FOUR_OSTM = std::dynamic_pointer_cast<OSTM> (_FROM_FOUR_);
+216             _FROM_FIVE_OSTM = std::dynamic_pointer_cast<OSTM> (_FROM_FIVE_);
+217             /*
+218              * Store changes
+219              */
+220             tx->store(_TO_OSTM);
+221             tx->store(_FROM_ONE_OSTM);
+222             tx->store(_FROM_TWO_OSTM);
+223             tx->store(_FROM_THREE_OSTM);
+224             tx->store(_FROM_FOUR_OSTM);
+225             tx->store(_FROM_FIVE_OSTM);
+226             /*
+227              * Commit changes
+228              */
+229             done = tx->commit();
+230         }
+231     } catch (std::runtime_error& e) {
+232         std::cout << e\&.what() << std::endl;
+233     }
+234 }
+.fi
+.SS "void client::_two_account_transfer_ (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP & tm, double _amount)\fC [inline]\fP"
+
+.PP
+Definition at line 41 of file client\&.h\&.
+.PP
+References TM::_get_tx(), and BANK::SetBalance()\&.
+.PP
+Referenced by _nesting_(), MyTestCAse::two_object_transfer_complete(), and MyTestCAse::two_object_transfer_state_change()\&.
+.PP
+.nf
+41                                                                                                               {
+42 
+43     std::shared_ptr<TX> tx = tm\&._get_tx();
+44     /*
+45      * Register the two single account
+46      */
+47     tx->_register(_to_);
+48     tx->_register(_from_);
+49     /*
+50      * Declare required pointers 
+51      */
+52     std::shared_ptr<BANK> _TO_BANK_, _FROM_BANK_;
+53     std::shared_ptr<OSTM> _TO_OSTM_, _FROM_OSTM_;
+54 
+55     bool done = false;
+56     try {
+57         while (!done) {
+58             /*
+59              * From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+60              */
+61             _TO_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_to_));
+62             _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_));
+63             /*
+64              * Make changes with the objects
+65              */
+66             _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+67             _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+68             /*
+69              * From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+70              */
+71             _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+72             _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+73             /*
+74              * Store changes
+75              */
+76             tx->store(_TO_OSTM_);
+77             tx->store(_FROM_OSTM_);
+78 
+79             /*
+80              * Commit changes
+81              */
+82             done = tx->commit();
+83         }
+84     } catch (std::runtime_error& e) {
+85         std::cout << e\&.what() << std::endl;
+86     }
+87 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "int client::value = 0"
+
+.PP
+Definition at line 38 of file client\&.h\&.
+.PP
+Referenced by client()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CppUnit test STM from the source code\&.

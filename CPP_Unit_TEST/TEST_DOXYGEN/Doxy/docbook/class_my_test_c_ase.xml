@@ -1,0 +1,1210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_my_test_c_ase">
+<title>MyTestCAse class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_my_test_c_ase_8h">&lt;MyTestCAse.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for MyTestCAse</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_my_test_c_ase__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for MyTestCAse</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_my_test_c_ase__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; OSTM &gt; aib_ptr</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; OSTM &gt; boa_ptr</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; OSTM &gt; boi_ptr</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; OSTM &gt; swplc_ptr</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>TM &amp; tm</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; OSTM &gt; ulster_ptr</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::shared_ptr&lt; OSTM &gt; unbl_ptr</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>client * a</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>client * b</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>client * c</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_ab20fea05727a78fe4c6663032df5f910_1ab20fea05727a78fe4c6663032df5f910">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_afdb39bda80c1305ac1c4cc0e5ce022f4_1afdb39bda80c1305ac1c4cc0e5ce022f4">threaded_functionality_hundred_threads</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_aa7230b64f391ddc9d42787d6710fe564_1aa7230b64f391ddc9d42787d6710fe564">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_a03f867cf5e2295e4055fe88d825b1710_1a03f867cf5e2295e4055fe88d825b1710">threaded_functionality_thousand_threads</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a4e110dab660b4b63ec89ee58d1e44c09_1a4e110dab660b4b63ec89ee58d1e44c09">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_acdc0278b6fa7c0102b9e5cdfb68a41a1_1acdc0278b6fa7c0102b9e5cdfb68a41a1">threaded_functionality_hundred_threads_six_account</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_aa0173ddb3fd4951247cfaaade0c9548b_1aa0173ddb3fd4951247cfaaade0c9548b">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_ab7d15a71958588c6402f234e106668b1_1ab7d15a71958588c6402f234e106668b1">threaded_functionality_thousand_threads_six_account</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a5419a4e3fdf581d37e740631d24f339f_1a5419a4e3fdf581d37e740631d24f339f">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_a13635e729bf660619c7f6a75b414bc3f_1a13635e729bf660619c7f6a75b414bc3f">nested_hundred_thread_functionality</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_ab31dd163acdbc4b7592872ee9c658517_1ab31dd163acdbc4b7592872ee9c658517">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_a3937532fe2a85f7e61518b8abffdb09a_1a3937532fe2a85f7e61518b8abffdb09a">nested_thousand_thread_functionality</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_aff9753ab243b154152b9a2a5e9521ac5_1aff9753ab243b154152b9a2a5e9521ac5">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_a8a198d6ef96a8a07ea7fa839ad068ffb_1a8a198d6ef96a8a07ea7fa839ad068ffb">complex_threaded_functionality_hundred_threads</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a584ea0c3da69c7533b9bf6d30c747f5c_1a584ea0c3da69c7533b9bf6d30c747f5c">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_ad91f8c37cd32055b834c84f10edeb979_1ad91f8c37cd32055b834c84f10edeb979">complex_threaded_functionality_ten_threads</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a3f3a97080a6553264e15c414c70faa44_1a3f3a97080a6553264e15c414c70faa44">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_a6399ca8bca3f10a0f114a070d3e3a570_1a6399ca8bca3f10a0f114a070d3e3a570">two_object_transfer_complete</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a74ba217b63d4a21ff11575b136bc5c67_1a74ba217b63d4a21ff11575b136bc5c67">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_1ab9c76eb2dfd565a353ae9a5f604b36d9">two_object_transfer_state_change</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a7f076df702b7b2b857b662140cf8b93d_1a7f076df702b7b2b857b662140cf8b93d">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d6defd62_1ad5d3718a6ed5ef68ad711456d6defd62">nested_transaction_object_test</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a0e32aa7667d827d00324260a5f7d977b_1a0e32aa7667d827d00324260a5f7d977b">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_a41c93b64fb95fa83809b6457b608e2da_1a41c93b64fb95fa83809b6457b608e2da">multi_threaded_multiple_object_exchange_test</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a94e17267727e26bc7eafcff1c21daf02_1a94e17267727e26bc7eafcff1c21daf02">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_afea0c5983bf1fcc38d8962cfa6277da4_1afea0c5983bf1fcc38d8962cfa6277da4">multi_threaded_single_object_test_with_ten_threads</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a20a2a3fb557870c30b7d61aa99a5da7b_1a20a2a3fb557870c30b7d61aa99a5da7b">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_a2f75b781b07bdbc3649c10d6845cb3cc_1a2f75b781b07bdbc3649c10d6845cb3cc">single_threaded_multiple_object_test</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a2ecaeaada1bd14eab53bdd4d35d64b31_1a2ecaeaada1bd14eab53bdd4d35d64b31">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_ae49b83ddf0fa297dbb8639001644fa5c_1ae49b83ddf0fa297dbb8639001644fa5c">multi_threaded_multiple_objects_test</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_ac1ca5590a2f11b04c0021e48109f2a39_1ac1ca5590a2f11b04c0021e48109f2a39">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_aadf771b5eefc5f32984cb6c177d217d0_1aadf771b5eefc5f32984cb6c177d217d0">increase_nesting</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_afca90d71ebf3e266df30e28f75b37756_1afca90d71ebf3e266df30e28f75b37756">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc5181dae7_1af72ca0f6e19543b2bc80f8fc5181dae7">increase_nesting_fail</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_acef5c7ba4b93a1a85a654fefaccb4c72_1acef5c7ba4b93a1a85a654fefaccb4c72">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_a2da7267d6799893e898032f5ae54c1e1_1a2da7267d6799893e898032f5ae54c1e1">decrease_nesting</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a5ad6974a949d62985da268f0f8842420_1a5ad6974a949d62985da268f0f8842420">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_ad2bec86c60b7992f24c4d59a00a1433b_1ad2bec86c60b7992f24c4d59a00a1433b">decrease_nesting_fail</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a74ba217b63d4a21ff11575b136bc5c67_1a74ba217b63d4a21ff11575b136bc5c67">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_1ab9c76eb2dfd565a353ae9a5f604b36d9">two_object_transfer_state_change</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_ad47d929e89186d8863484d07346d7d58_1ad47d929e89186d8863484d07346d7d58">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_a124c2540c72219b92c477a1fbda21409_1a124c2540c72219b92c477a1fbda21409">compare_Transaction_Manager_singleton_instance</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a0400857ee37161bb9cf89c7a78e430cf_1a0400857ee37161bb9cf89c7a78e430cf">CPPUNIT_TEST</link> (
+<link linkend="class_my_test_c_ase_abbb762450dffd3be8bf9d1b6ec757466_1abbb762450dffd3be8bf9d1b6ec757466">TM_get_thread_map</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a83102af0b30f86266f143148ebb0b730_1a83102af0b30f86266f143148ebb0b730">CPPUNIT_TEST_EXCEPTION</link> (
+<link linkend="class_my_test_c_ase_a80f9123880a0b79e4119f2f4699847ec_1a80f9123880a0b79e4119f2f4699847ec">register_null_pointer_throw_runtime_error</link> , std::runtime_error )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a859adfd9c5b8837b2a5a5acc49a6feae_1a859adfd9c5b8837b2a5a5acc49a6feae">CPPUNIT_TEST_EXCEPTION</link> (
+<link linkend="class_my_test_c_ase_aa3a8c942db63dcf082f85013b7a09ee1_1aa3a8c942db63dcf082f85013b7a09ee1">object_not_registered_throw_runtime_error</link> , std::runtime_error )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_ac738d6c87d7816318eb66d21adddba1a_1ac738d6c87d7816318eb66d21adddba1a">CPPUNIT_TEST_EXCEPTION</link> (
+<link linkend="class_my_test_c_ase_aae8eeb07dfdc5411255b064bc57b855d_1aae8eeb07dfdc5411255b064bc57b855d">store_null_pointer_throw_runtime_error</link> , std::runtime_error )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a58a546b24e4fb77be2a7b277efa40dc4_1a58a546b24e4fb77be2a7b277efa40dc4">CPPUNIT_TEST_SUITE</link> (
+<link linkend="class_my_test_c_ase">MyTestCAse</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_adccb5bad07847e68427e9fd919cb45b6_1adccb5bad07847e68427e9fd919cb45b6">CPPUNIT_TEST_SUITE_END</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_1a9ec1ddfc6e7f727446e1a8355086c2dd">_collection_bject_</link> (
+std::vector&lt; std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt;&gt; _customer_vec, <link linkend="class_t_m">TM</link> &amp; _tm, double _amount, int loop)<para><emphasis>Test with a vector collection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_1a2367b87338c4f61cc3ac3193651580d4">_complex_transfer_</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_two_, std::vector&lt; std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt;&gt; _customer_vec, <link linkend="class_t_m">TM</link> &amp; _tm, double _amount)<para><emphasis>This function use two single objects and a collection of objects in the transaction.
+The two single object transfer 1 - 1 (2) unit to every object in the collection.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_1abb973a1396c1083891d76845e2cfaf64">_nesting_</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_, <link linkend="class_t_m">TM</link> &amp; _tm, double _amount)<para><emphasis>Testing nested transaction.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_1afe25c2ed3a8ab035f472fff6575f0e48">_one_account_transfer_</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_, <link linkend="class_t_m">TM</link> &amp; _tm, double _amount)<para><emphasis>one object in the trasaction</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_1a72ce436fb3c78c3d76b6c48a5a2e6a76">_six_account_transfer_</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_one_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_two_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_three_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_four_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_five_, <link linkend="class_t_m">TM</link> &amp; _tm, double _amount)<para><emphasis>Testing the transactions between six object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_1af0cc86421d281cc4a583a394ae86dbdd">_two_account_transfer_</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _to_, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; _from_, <link linkend="class_t_m">TM</link> &amp; tm, double _amount)<para><emphasis>Testin transaction between two pointer.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a124c2540c72219b92c477a1fbda21409_1a124c2540c72219b92c477a1fbda21409">compare_Transaction_Manager_singleton_instance</link> (
+)<para><emphasis>This testing function comparing the Transaction Manager to make sure the application using a Singleton object.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a8a198d6ef96a8a07ea7fa839ad068ffb_1a8a198d6ef96a8a07ea7fa839ad068ffb">complex_threaded_functionality_hundred_threads</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_ad91f8c37cd32055b834c84f10edeb979_1ad91f8c37cd32055b834c84f10edeb979">complex_threaded_functionality_ten_threads</link> (
+)<para><emphasis>Testing the library consistent behavior 
+This test transfer 1 - 1  unit by 10 threads = 10 * 1 = 10 to evey object in the collection (-600) by single objects
+After transfer from account has -10 * 600 for both single objects and + 2 unit * 10 to every objects.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a2da7267d6799893e898032f5ae54c1e1_1a2da7267d6799893e898032f5ae54c1e1">decrease_nesting</link> (
+)<para><emphasis>Testing the nesting decrease function.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_ad2bec86c60b7992f24c4d59a00a1433b_1ad2bec86c60b7992f24c4d59a00a1433b">decrease_nesting_fail</link> (
+)<para><emphasis>Testing the nesting decrease function to make sure the variable state changing.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_aadf771b5eefc5f32984cb6c177d217d0_1aadf771b5eefc5f32984cb6c177d217d0">increase_nesting</link> (
+)<para><emphasis>Testing the nesting increase function.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc5181dae7_1af72ca0f6e19543b2bc80f8fc5181dae7">increase_nesting_fail</link> (
+)<para><emphasis>Testing the nesting increase function to make sure the variable state changing.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a41c93b64fb95fa83809b6457b608e2da_1a41c93b64fb95fa83809b6457b608e2da">multi_threaded_multiple_object_exchange_test</link> (
+)<para><emphasis>Design Manual document based tests Implementations.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_ae49b83ddf0fa297dbb8639001644fa5c_1ae49b83ddf0fa297dbb8639001644fa5c">multi_threaded_multiple_objects_test</link> (
+)<para><emphasis>4. Multi-threaded multiple Objects test.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_afea0c5983bf1fcc38d8962cfa6277da4_1afea0c5983bf1fcc38d8962cfa6277da4">multi_threaded_single_object_test_with_ten_threads</link> (
+)<para><emphasis>2. Multi-threaded single Object test with 10 threads.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a17e7a9246f54f74dacf88f8d6556aa92_1a17e7a9246f54f74dacf88f8d6556aa92">MyTestCAse</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_my_test_c_ase_a742539c4ae7c357cc96295641d2c604d_1a742539c4ae7c357cc96295641d2c604d">MyTestCAse</link> (
+const <link linkend="class_my_test_c_ase">MyTestCAse</link> &amp; orig)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a13635e729bf660619c7f6a75b414bc3f_1a13635e729bf660619c7f6a75b414bc3f">nested_hundred_thread_functionality</link> (
+)<para><emphasis>Testing the library consistent behavior 
+Nested threaded function : 3 level of nesting, every thread transfer 3 unit from one object to the another object
+so, at end of the 100 thransaction the from object transfer 100 * 3 (300) to the another object 
+500 - 300 = 200 AND 500 + 300 = 800.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a3937532fe2a85f7e61518b8abffdb09a_1a3937532fe2a85f7e61518b8abffdb09a">nested_thousand_thread_functionality</link> (
+)<para><emphasis>Testing the library consistent behavior 
+Nested threaded function : 3 level of nesting, every thread transfer 3 unit from one object to the another object
+so, at end of the 100 thransaction the from object transfer 1000 * 3 (3000) to the another object 
+500 - 3000 = -2500 AND 500 + 3000 = 3500.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d6defd62_1ad5d3718a6ed5ef68ad711456d6defd62">nested_transaction_object_test</link> (
+)<para><emphasis>Testing the library consistent behavior 
+This test calls the nested function, where every thread transfer 3 unit in the nested transactions.
+Because this test in not threaded, the 3 level deep nesting transfer 3*20 = 60 from one 
+object to the another object.
+500 - 60 = 440 AND 500 + 60 = 560.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_aa3a8c942db63dcf082f85013b7a09ee1_1aa3a8c942db63dcf082f85013b7a09ee1">object_not_registered_throw_runtime_error</link> (
+)<para><emphasis>The library function throws runtime error if the client application tries to 
+load a working pointer from the library of a not registered pointer by the client application.
+Runtime error should be thrown.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a80f9123880a0b79e4119f2f4699847ec_1a80f9123880a0b79e4119f2f4699847ec">register_null_pointer_throw_runtime_error</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a387cf3ea316c793a7b5f34418a2ee3d4_1a387cf3ea316c793a7b5f34418a2ee3d4">setUp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a2f75b781b07bdbc3649c10d6845cb3cc_1a2f75b781b07bdbc3649c10d6845cb3cc">single_threaded_multiple_object_test</link> (
+)<para><emphasis>3. Single-threaded multiple object test.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_aae8eeb07dfdc5411255b064bc57b855d_1aae8eeb07dfdc5411255b064bc57b855d">store_null_pointer_throw_runtime_error</link> (
+)<para><emphasis>The test function throws runtime error if the client application tries to 
+store the changed working pointer as a null pointer.
+Runtime error should be thrown.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_aeb24ab2614834b9c3b02fd15d288ea0c_1aeb24ab2614834b9c3b02fd15d288ea0c">tearDown</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_afdb39bda80c1305ac1c4cc0e5ce022f4_1afdb39bda80c1305ac1c4cc0e5ce022f4">threaded_functionality_hundred_threads</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_acdc0278b6fa7c0102b9e5cdfb68a41a1_1acdc0278b6fa7c0102b9e5cdfb68a41a1">threaded_functionality_hundred_threads_six_account</link> (
+)<para><emphasis>Testing the library consistent behavior 
+This test transfer 1 unit by 100 threads from five account to one account 
+After transfer from account has - 100*1 from the accounts, and to account has +100*5.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a03f867cf5e2295e4055fe88d825b1710_1a03f867cf5e2295e4055fe88d825b1710">threaded_functionality_thousand_threads</link> (
+)<para><emphasis>Testing the library consistent behavior 
+This test transfer 1 unit by 1000 threads = 1000 *1 = 100 
+After transfer from account has -1000, and to account has +1000.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_ab7d15a71958588c6402f234e106668b1_1ab7d15a71958588c6402f234e106668b1">threaded_functionality_thousand_threads_six_account</link> (
+)<para><emphasis>Testing the library consistent behavior 
+This test transfer 1 unit by 1000 threads from five account to one account 
+After transfer from account has - 1000*1 from the accounts, and to account has +1000*5.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_abbb762450dffd3be8bf9d1b6ec757466_1abbb762450dffd3be8bf9d1b6ec757466">TM_get_thread_map</link> (
+)<para><emphasis>This function testing the returned map from the Transaction Manager class.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_a6399ca8bca3f10a0f114a070d3e3a570_1a6399ca8bca3f10a0f114a070d3e3a570">two_object_transfer_complete</link> (
+)<para><emphasis>Testing the library consistent behavior 
+Transfer between two objects : the from object transfer 20 to the another object
+500 - 20 = 480 AND 500 + 20 = 520.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_1ab9c76eb2dfd565a353ae9a5f604b36d9">two_object_transfer_state_change</link> (
+)<para><emphasis>This function proves the objects states must change from the base values.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_my_test_c_ase_a6e57067745a7e72a8073c945e0266c56_1a6e57067745a7e72a8073c945e0266c56">~MyTestCAse</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_my_test_c_ase_ab20fea05727a78fe4c6663032df5f910_1ab20fea05727a78fe4c6663032df5f910">
+                <title>MyTestCAse::CPPUNIT_TEST (threaded_functionality_hundred_threads)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_aa7230b64f391ddc9d42787d6710fe564_1aa7230b64f391ddc9d42787d6710fe564">
+                <title>MyTestCAse::CPPUNIT_TEST (threaded_functionality_thousand_threads)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a4e110dab660b4b63ec89ee58d1e44c09_1a4e110dab660b4b63ec89ee58d1e44c09">
+                <title>MyTestCAse::CPPUNIT_TEST (threaded_functionality_hundred_threads_six_account)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_aa0173ddb3fd4951247cfaaade0c9548b_1aa0173ddb3fd4951247cfaaade0c9548b">
+                <title>MyTestCAse::CPPUNIT_TEST (threaded_functionality_thousand_threads_six_account)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a5419a4e3fdf581d37e740631d24f339f_1a5419a4e3fdf581d37e740631d24f339f">
+                <title>MyTestCAse::CPPUNIT_TEST (nested_hundred_thread_functionality)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_ab31dd163acdbc4b7592872ee9c658517_1ab31dd163acdbc4b7592872ee9c658517">
+                <title>MyTestCAse::CPPUNIT_TEST (nested_thousand_thread_functionality)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_aff9753ab243b154152b9a2a5e9521ac5_1aff9753ab243b154152b9a2a5e9521ac5">
+                <title>MyTestCAse::CPPUNIT_TEST (complex_threaded_functionality_hundred_threads)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a584ea0c3da69c7533b9bf6d30c747f5c_1a584ea0c3da69c7533b9bf6d30c747f5c">
+                <title>MyTestCAse::CPPUNIT_TEST (complex_threaded_functionality_ten_threads)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a3f3a97080a6553264e15c414c70faa44_1a3f3a97080a6553264e15c414c70faa44">
+                <title>MyTestCAse::CPPUNIT_TEST (two_object_transfer_complete)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a74ba217b63d4a21ff11575b136bc5c67_1a74ba217b63d4a21ff11575b136bc5c67">
+                <title>MyTestCAse::CPPUNIT_TEST (two_object_transfer_state_change)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a7f076df702b7b2b857b662140cf8b93d_1a7f076df702b7b2b857b662140cf8b93d">
+                <title>MyTestCAse::CPPUNIT_TEST (nested_transaction_object_test)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a0e32aa7667d827d00324260a5f7d977b_1a0e32aa7667d827d00324260a5f7d977b">
+                <title>MyTestCAse::CPPUNIT_TEST (multi_threaded_multiple_object_exchange_test)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a94e17267727e26bc7eafcff1c21daf02_1a94e17267727e26bc7eafcff1c21daf02">
+                <title>MyTestCAse::CPPUNIT_TEST (multi_threaded_single_object_test_with_ten_threads)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a20a2a3fb557870c30b7d61aa99a5da7b_1a20a2a3fb557870c30b7d61aa99a5da7b">
+                <title>MyTestCAse::CPPUNIT_TEST (single_threaded_multiple_object_test)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a2ecaeaada1bd14eab53bdd4d35d64b31_1a2ecaeaada1bd14eab53bdd4d35d64b31">
+                <title>MyTestCAse::CPPUNIT_TEST (multi_threaded_multiple_objects_test)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_ac1ca5590a2f11b04c0021e48109f2a39_1ac1ca5590a2f11b04c0021e48109f2a39">
+                <title>MyTestCAse::CPPUNIT_TEST (increase_nesting)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_afca90d71ebf3e266df30e28f75b37756_1afca90d71ebf3e266df30e28f75b37756">
+                <title>MyTestCAse::CPPUNIT_TEST (increase_nesting_fail)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_acef5c7ba4b93a1a85a654fefaccb4c72_1acef5c7ba4b93a1a85a654fefaccb4c72">
+                <title>MyTestCAse::CPPUNIT_TEST (decrease_nesting)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a5ad6974a949d62985da268f0f8842420_1a5ad6974a949d62985da268f0f8842420">
+                <title>MyTestCAse::CPPUNIT_TEST (decrease_nesting_fail)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a74ba217b63d4a21ff11575b136bc5c67_1a74ba217b63d4a21ff11575b136bc5c67">
+                <title>MyTestCAse::CPPUNIT_TEST (two_object_transfer_state_change)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_ad47d929e89186d8863484d07346d7d58_1ad47d929e89186d8863484d07346d7d58">
+                <title>MyTestCAse::CPPUNIT_TEST (compare_Transaction_Manager_singleton_instance)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a0400857ee37161bb9cf89c7a78e430cf_1a0400857ee37161bb9cf89c7a78e430cf">
+                <title>MyTestCAse::CPPUNIT_TEST (TM_get_thread_map)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a83102af0b30f86266f143148ebb0b730_1a83102af0b30f86266f143148ebb0b730">
+                <title>MyTestCAse::CPPUNIT_TEST_EXCEPTION (register_null_pointer_throw_runtime_error, std::runtime_error)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a859adfd9c5b8837b2a5a5acc49a6feae_1a859adfd9c5b8837b2a5a5acc49a6feae">
+                <title>MyTestCAse::CPPUNIT_TEST_EXCEPTION (object_not_registered_throw_runtime_error, std::runtime_error)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_ac738d6c87d7816318eb66d21adddba1a_1ac738d6c87d7816318eb66d21adddba1a">
+                <title>MyTestCAse::CPPUNIT_TEST_EXCEPTION (store_null_pointer_throw_runtime_error, std::runtime_error)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a58a546b24e4fb77be2a7b277efa40dc4_1a58a546b24e4fb77be2a7b277efa40dc4">
+                <title>MyTestCAse::CPPUNIT_TEST_SUITE (MyTestCAse)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_adccb5bad07847e68427e9fd919cb45b6_1adccb5bad07847e68427e9fd919cb45b6">
+                <title>MyTestCAse::CPPUNIT_TEST_SUITE_END ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_1a9ec1ddfc6e7f727446e1a8355086c2dd">
+                <title>void MyTestCAse::_collection_bject_ (std::vector&lt; std::shared_ptr&lt; OSTM &gt;&gt; _customer_vec, TM &amp;_tm, double _amount, int loop)</title> <emphasis>Test with a vector collection.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>_customer_vec</entry>
+                                <entry>
+<para>collection of <link linkend="class_o_s_t_m">OSTM</link> type objects </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_tm</entry>
+                                <entry>
+<para>TRansaction Manager </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_amount</entry>
+                                <entry>
+<para>value used in the transaction </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_1a2367b87338c4f61cc3ac3193651580d4">
+                <title>void MyTestCAse::_complex_transfer_ (std::shared_ptr&lt; OSTM &gt; _from_, std::shared_ptr&lt; OSTM &gt; _from_two_, std::vector&lt; std::shared_ptr&lt; OSTM &gt;&gt; _customer_vec, TM &amp;_tm, double _amount)</title> <emphasis>This function use two single objects and a collection of objects in the transaction.
+The two single object transfer 1 - 1 (2) unit to every object in the collection.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>&lt;em&gt;from&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>&lt;em&gt;from_two&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_customer_vec</entry>
+                                <entry>
+<para>collection of pointer </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_tm</entry>
+                                <entry>
+<para>TRansaction Manager </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_amount</entry>
+                                <entry>
+<para>value used in the transaction </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_1abb973a1396c1083891d76845e2cfaf64">
+                <title>void MyTestCAse::_nesting_ (std::shared_ptr&lt; OSTM &gt; _to_, std::shared_ptr&lt; OSTM &gt; _from_, TM &amp;_tm, double _amount)</title> <emphasis>Testing nested transaction.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>&lt;em&gt;to&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>&lt;em&gt;from&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_tm</entry>
+                                <entry>
+<para>Transaction Manager </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_amount</entry>
+                                <entry>
+<para>value used in the transaction </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_1afe25c2ed3a8ab035f472fff6575f0e48">
+                <title>void MyTestCAse::_one_account_transfer_ (std::shared_ptr&lt; OSTM &gt; _to_, TM &amp;_tm, double _amount)</title> <emphasis>one object in the trasaction</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>&lt;em&gt;to&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_tm</entry>
+                                <entry>
+<para>TRansaction Manager </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_amount</entry>
+                                <entry>
+<para>value used in the transaction </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_1a72ce436fb3c78c3d76b6c48a5a2e6a76">
+                <title>void MyTestCAse::_six_account_transfer_ (std::shared_ptr&lt; OSTM &gt; _to_, std::shared_ptr&lt; OSTM &gt; _from_one_, std::shared_ptr&lt; OSTM &gt; _from_two_, std::shared_ptr&lt; OSTM &gt; _from_three_, std::shared_ptr&lt; OSTM &gt; _from_four_, std::shared_ptr&lt; OSTM &gt; _from_five_, TM &amp;_tm, double _amount)</title> <emphasis>Testing the transactions between six object.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>&lt;em&gt;to&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>&lt;em&gt;from_one&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>&lt;em&gt;from_two&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>&lt;em&gt;from_three&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>&lt;em&gt;from_four&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>&lt;em&gt;from_five&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_tm</entry>
+                                <entry>
+<para>Transaction Manager </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_amount</entry>
+                                <entry>
+<para>value used in the transaction </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_1af0cc86421d281cc4a583a394ae86dbdd">
+                <title>void MyTestCAse::_two_account_transfer_ (std::shared_ptr&lt; OSTM &gt; _to_, std::shared_ptr&lt; OSTM &gt; _from_, TM &amp;tm, double _amount)</title> <emphasis>Testin transaction between two pointer.</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>&lt;em&gt;to&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>&lt;em&gt;from&lt;/em&gt;</entry>
+                                <entry>
+<para>pointer used in transaction </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>tm</entry>
+                                <entry>
+<para>TRansaction Manager </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>_amount</entry>
+                                <entry>
+<para>value used in the transaction </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_my_test_c_ase_a124c2540c72219b92c477a1fbda21409_1a124c2540c72219b92c477a1fbda21409">
+                <title>void MyTestCAse::compare_Transaction_Manager_singleton_instance ()</title> <emphasis>This testing function comparing the Transaction Manager to make sure the application using a Singleton object.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a8a198d6ef96a8a07ea7fa839ad068ffb_1a8a198d6ef96a8a07ea7fa839ad068ffb">
+                <title>void MyTestCAse::complex_threaded_functionality_hundred_threads ()</title> <emphasis></emphasis>
+                
+<para>\ brief Testing the library consistent behavior LONG RUNNING PROCESS !!!! 1.5 - 2 Minutes !!! This test transfer 1 - 1 unit by 100 threads = 100 * 1 = 100 to every object in the collection (-6000) by single objects After transfer from account has -100 * 600 for both single objects and + 2 unit * 100 to every objects </para>
+
+            </section>
+            <section xml:id="class_my_test_c_ase_ad91f8c37cd32055b834c84f10edeb979_1ad91f8c37cd32055b834c84f10edeb979">
+                <title>void MyTestCAse::complex_threaded_functionality_ten_threads ()</title> <emphasis>Testing the library consistent behavior 
+This test transfer 1 - 1  unit by 10 threads = 10 * 1 = 10 to evey object in the collection (-600) by single objects
+After transfer from account has -10 * 600 for both single objects and + 2 unit * 10 to every objects.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a2da7267d6799893e898032f5ae54c1e1_1a2da7267d6799893e898032f5ae54c1e1">
+                <title>void MyTestCAse::decrease_nesting ()</title> <emphasis>Testing the nesting decrease function.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_ad2bec86c60b7992f24c4d59a00a1433b_1ad2bec86c60b7992f24c4d59a00a1433b">
+                <title>void MyTestCAse::decrease_nesting_fail ()</title> <emphasis>Testing the nesting decrease function to make sure the variable state changing.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_aadf771b5eefc5f32984cb6c177d217d0_1aadf771b5eefc5f32984cb6c177d217d0">
+                <title>void MyTestCAse::increase_nesting ()</title> <emphasis>Testing the nesting increase function.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc5181dae7_1af72ca0f6e19543b2bc80f8fc5181dae7">
+                <title>void MyTestCAse::increase_nesting_fail ()</title> <emphasis>Testing the nesting increase function to make sure the variable state changing.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a41c93b64fb95fa83809b6457b608e2da_1a41c93b64fb95fa83809b6457b608e2da">
+                <title>void MyTestCAse::multi_threaded_multiple_object_exchange_test ()</title> <emphasis>Design Manual document based tests Implementations.</emphasis>
+                
+<para><orderedlist>
+<listitem>
+<para>Single thread multiple transactional object exchange test</para>
+</listitem><listitem>
+<para>Multi-threaded single Object test with 10 threads.</para>
+</listitem><listitem>
+<para>Single-threaded multiple object test.</para>
+</listitem><listitem>
+<para>Multi-threaded multiple Objects test.</para>
+</listitem></orderedlist>
+<orderedlist>
+<listitem>
+<para>Single thread multiple transactional object exchange test </para>
+</listitem></orderedlist>
+</para>
+
+            </section>
+            <section xml:id="class_my_test_c_ase_ae49b83ddf0fa297dbb8639001644fa5c_1ae49b83ddf0fa297dbb8639001644fa5c">
+                <title>void MyTestCAse::multi_threaded_multiple_objects_test ()</title> <emphasis>4. Multi-threaded multiple Objects test.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_afea0c5983bf1fcc38d8962cfa6277da4_1afea0c5983bf1fcc38d8962cfa6277da4">
+                <title>void MyTestCAse::multi_threaded_single_object_test_with_ten_threads ()</title> <emphasis>2. Multi-threaded single Object test with 10 threads.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a17e7a9246f54f74dacf88f8d6556aa92_1a17e7a9246f54f74dacf88f8d6556aa92">
+                <title>MyTestCAse::MyTestCAse ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a742539c4ae7c357cc96295641d2c604d_1a742539c4ae7c357cc96295641d2c604d">
+                <title>MyTestCAse::MyTestCAse (const MyTestCAse &amp;orig)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a13635e729bf660619c7f6a75b414bc3f_1a13635e729bf660619c7f6a75b414bc3f">
+                <title>void MyTestCAse::nested_hundred_thread_functionality ()</title> <emphasis>Testing the library consistent behavior 
+Nested threaded function : 3 level of nesting, every thread transfer 3 unit from one object to the another object
+so, at end of the 100 thransaction the from object transfer 100 * 3 (300) to the another object 
+500 - 300 = 200 AND 500 + 300 = 800.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a3937532fe2a85f7e61518b8abffdb09a_1a3937532fe2a85f7e61518b8abffdb09a">
+                <title>void MyTestCAse::nested_thousand_thread_functionality ()</title> <emphasis>Testing the library consistent behavior 
+Nested threaded function : 3 level of nesting, every thread transfer 3 unit from one object to the another object
+so, at end of the 100 thransaction the from object transfer 1000 * 3 (3000) to the another object 
+500 - 3000 = -2500 AND 500 + 3000 = 3500.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d6defd62_1ad5d3718a6ed5ef68ad711456d6defd62">
+                <title>void MyTestCAse::nested_transaction_object_test ()</title> <emphasis>Testing the library consistent behavior 
+This test calls the nested function, where every thread transfer 3 unit in the nested transactions.
+Because this test in not threaded, the 3 level deep nesting transfer 3*20 = 60 from one 
+object to the another object.
+500 - 60 = 440 AND 500 + 60 = 560.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_aa3a8c942db63dcf082f85013b7a09ee1_1aa3a8c942db63dcf082f85013b7a09ee1">
+                <title>void MyTestCAse::object_not_registered_throw_runtime_error ()</title> <emphasis>The library function throws runtime error if the client application tries to 
+load a working pointer from the library of a not registered pointer by the client application.
+Runtime error should be thrown.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a80f9123880a0b79e4119f2f4699847ec_1a80f9123880a0b79e4119f2f4699847ec">
+                <title>void MyTestCAse::register_null_pointer_throw_runtime_error ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a387cf3ea316c793a7b5f34418a2ee3d4_1a387cf3ea316c793a7b5f34418a2ee3d4">
+                <title>void MyTestCAse::setUp ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a2f75b781b07bdbc3649c10d6845cb3cc_1a2f75b781b07bdbc3649c10d6845cb3cc">
+                <title>void MyTestCAse::single_threaded_multiple_object_test ()</title> <emphasis>3. Single-threaded multiple object test.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_aae8eeb07dfdc5411255b064bc57b855d_1aae8eeb07dfdc5411255b064bc57b855d">
+                <title>void MyTestCAse::store_null_pointer_throw_runtime_error ()</title> <emphasis>The test function throws runtime error if the client application tries to 
+store the changed working pointer as a null pointer.
+Runtime error should be thrown.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_aeb24ab2614834b9c3b02fd15d288ea0c_1aeb24ab2614834b9c3b02fd15d288ea0c">
+                <title>void MyTestCAse::tearDown ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_afdb39bda80c1305ac1c4cc0e5ce022f4_1afdb39bda80c1305ac1c4cc0e5ce022f4">
+                <title>void MyTestCAse::threaded_functionality_hundred_threads ()</title> <emphasis></emphasis>
+                
+<para>Testing the library consistent behavior This test transfer 1 unit by 100 threads = 100 *1 = 100 After transfer from account has -100, and to account has +100 </para>
+
+            </section>
+            <section xml:id="class_my_test_c_ase_acdc0278b6fa7c0102b9e5cdfb68a41a1_1acdc0278b6fa7c0102b9e5cdfb68a41a1">
+                <title>void MyTestCAse::threaded_functionality_hundred_threads_six_account ()</title> <emphasis>Testing the library consistent behavior 
+This test transfer 1 unit by 100 threads from five account to one account 
+After transfer from account has - 100*1 from the accounts, and to account has +100*5.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a03f867cf5e2295e4055fe88d825b1710_1a03f867cf5e2295e4055fe88d825b1710">
+                <title>void MyTestCAse::threaded_functionality_thousand_threads ()</title> <emphasis>Testing the library consistent behavior 
+This test transfer 1 unit by 1000 threads = 1000 *1 = 100 
+After transfer from account has -1000, and to account has +1000.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_ab7d15a71958588c6402f234e106668b1_1ab7d15a71958588c6402f234e106668b1">
+                <title>void MyTestCAse::threaded_functionality_thousand_threads_six_account ()</title> <emphasis>Testing the library consistent behavior 
+This test transfer 1 unit by 1000 threads from five account to one account 
+After transfer from account has - 1000*1 from the accounts, and to account has +1000*5.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_abbb762450dffd3be8bf9d1b6ec757466_1abbb762450dffd3be8bf9d1b6ec757466">
+                <title>void MyTestCAse::TM_get_thread_map ()</title> <emphasis>This function testing the returned map from the Transaction Manager class.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a6399ca8bca3f10a0f114a070d3e3a570_1a6399ca8bca3f10a0f114a070d3e3a570">
+                <title>void MyTestCAse::two_object_transfer_complete ()</title> <emphasis>Testing the library consistent behavior 
+Transfer between two objects : the from object transfer 20 to the another object
+500 - 20 = 480 AND 500 + 20 = 520.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_1ab9c76eb2dfd565a353ae9a5f604b36d9">
+                <title>void MyTestCAse::two_object_transfer_state_change ()</title> <emphasis>This function proves the objects states must change from the base values.</emphasis>
+                
+            </section>
+            <section xml:id="class_my_test_c_ase_a6e57067745a7e72a8073c945e0266c56_1a6e57067745a7e72a8073c945e0266c56">
+                <title>MyTestCAse::~MyTestCAse ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

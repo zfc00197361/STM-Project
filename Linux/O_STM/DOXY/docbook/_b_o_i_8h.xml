@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_b_o_i_8h">
+    <title>BOI.h File Reference</title>
+    <programlisting>#include &quot;BANK.h&quot;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+<para>Include dependency diagram for BOI.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_b_o_i_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for BOI.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_b_o_i_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_b_o_i">BOI</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file BOI.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 <emphasis class="comment">/*&#32;</emphasis>
+3 <emphasis class="comment">&#32;*&#32;File:&#32;&#32;&#32;BOI.h</emphasis>
+4 <emphasis class="comment">&#32;*&#32;Author:&#32;Zoltan&#32;Fuzesi</emphasis>
+5 <emphasis class="comment">&#32;*&#32;IT&#32;Carlow&#32;:&#32;C00197361</emphasis>
+6 <emphasis class="comment">&#32;*</emphasis>
+7 <emphasis class="comment">&#32;*&#32;Created&#32;on&#32;January&#32;17,&#32;2018,&#32;8:02&#32;PM</emphasis>
+8 <emphasis class="comment">&#32;*/</emphasis>
+9 
+10 <emphasis class="preprocessor">#ifndef&#32;BOI_H</emphasis>
+11 <emphasis class="preprocessor">#define&#32;BOI_H</emphasis>
+12 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_b_a_n_k_8h">BANK.h</link>&quot;</emphasis>
+13 <emphasis class="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+14 <emphasis class="preprocessor">#include&#32;&lt;memory&gt;</emphasis>
+15 <emphasis class="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+<link linkend="class_b_o_i">19 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="class_b_o_i">BOI</link>:&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="class_b_a_n_k">BANK</link>&#32;{
+20 <emphasis class="keyword">public</emphasis>:
+<link linkend="class_b_o_i_a6af682a5f199a029681f0cb2b8658706_1a6af682a5f199a029681f0cb2b8658706">24 </link>&#32;&#32;&#32;&#32;<link linkend="class_b_o_i_a6af682a5f199a029681f0cb2b8658706_1a6af682a5f199a029681f0cb2b8658706">BOI</link>():&#32;<link linkend="class_b_a_n_k">BANK</link>()
+25 &#32;&#32;&#32;&#32;{
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_1a35c9fd6e938eb44ad4e076bc6a736851">accountNumber</link>&#32;=&#32;0;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_1aa00a3d8baf3420647c40119b7fa4ed6f">balance</link>&#32;=&#32;50;
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_1a12872fd8c15dbf833f78862b00579ed1">firstName</link>&#32;=&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>;
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_1ad51bfa6f28816c7f5036447ff809cecf">lastName</link>&#32;=&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>;
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_1ab9315fe76fd9f07551f5ae7899d33516">address</link>&#32;=&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Carlow&quot;</emphasis>;
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_1a6d7c892a54bb6f7327cdc777081ab5f4">fullname</link>&#32;=&#32;<link linkend="class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_1a12872fd8c15dbf833f78862b00579ed1">firstName</link>&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;<link linkend="class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_1ad51bfa6f28816c7f5036447ff809cecf">lastName</link>;
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+33 &#32;&#32;&#32;&#32;}
+<link linkend="class_b_o_i_a1807bd07cad08109c974edbb2c32591c_1a1807bd07cad08109c974edbb2c32591c">37 </link>&#32;&#32;&#32;&#32;<link linkend="class_b_o_i_a1807bd07cad08109c974edbb2c32591c_1a1807bd07cad08109c974edbb2c32591c">BOI</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_1a35c9fd6e938eb44ad4e076bc6a736851">accountNumber</link>,&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_1aa00a3d8baf3420647c40119b7fa4ed6f">balance</link>,&#32;std::string&#32;<link linkend="class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_1a12872fd8c15dbf833f78862b00579ed1">firstName</link>,&#32;std::string&#32;<link linkend="class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_1ad51bfa6f28816c7f5036447ff809cecf">lastName</link>,&#32;std::string&#32;<link linkend="class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_1ab9315fe76fd9f07551f5ae7899d33516">address</link>):&#32;<link linkend="class_b_a_n_k">BANK</link>()
+38 &#32;&#32;&#32;&#32;{
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;accountNumber&#32;=&#32;<link linkend="class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_1a35c9fd6e938eb44ad4e076bc6a736851">accountNumber</link>;
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;balance&#32;=&#32;<link linkend="class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_1aa00a3d8baf3420647c40119b7fa4ed6f">balance</link>;
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;firstName&#32;=&#32;<link linkend="class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_1a12872fd8c15dbf833f78862b00579ed1">firstName</link>;
+42 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;lastName&#32;=&#32;<link linkend="class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_1ad51bfa6f28816c7f5036447ff809cecf">lastName</link>;
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;address&#32;=&#32;<link linkend="class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_1ab9315fe76fd9f07551f5ae7899d33516">address</link>;
+44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_1a6d7c892a54bb6f7327cdc777081ab5f4">fullname</link>&#32;=&#32;firstName&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;<link linkend="class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_1ad51bfa6f28816c7f5036447ff809cecf">lastName</link>;
+45 &#32;&#32;&#32;&#32;};
+<link linkend="class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_1ae4263940f8ffdd40d5f01a714b20f791">49 </link>&#32;&#32;&#32;&#32;<link linkend="class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_1ae4263940f8ffdd40d5f01a714b20f791">BOI</link>(std::shared_ptr&lt;BOI&gt;&#32;obj,&#32;<emphasis class="keywordtype">int</emphasis>&#32;_version,&#32;<emphasis class="keywordtype">int</emphasis>&#32;_unique_id):&#32;<link linkend="class_b_a_n_k">BANK</link>(_version,&#32;_unique_id)
+50 &#32;&#32;&#32;&#32;{
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_1a35c9fd6e938eb44ad4e076bc6a736851">accountNumber</link>&#32;=&#32;obj-&gt;GetAccountNumber();
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_1aa00a3d8baf3420647c40119b7fa4ed6f">balance</link>&#32;=&#32;obj-&gt;GetBalance();
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_1a12872fd8c15dbf833f78862b00579ed1">firstName</link>&#32;=&#32;obj-&gt;GetFirstName();
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_1ad51bfa6f28816c7f5036447ff809cecf">lastName</link>&#32;=&#32;obj-&gt;GetLastName();
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_1ab9315fe76fd9f07551f5ae7899d33516">address</link>&#32;=&#32;obj-&gt;GetAddress();
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_1a6d7c892a54bb6f7327cdc777081ab5f4">fullname</link>&#32;=&#32;obj-&gt;GetFirstName()&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;obj-&gt;GetLastName();&#32;
+57 &#32;&#32;&#32;&#32;};
+61 &#32;&#32;&#32;&#32;<link linkend="class_b_o_i_a6af682a5f199a029681f0cb2b8658706_1a6af682a5f199a029681f0cb2b8658706">BOI</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>&amp;&#32;orig);
+<link linkend="class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_1a4b4a3976cc13c4d3de0d7ff8882a7af3">65 </link>&#32;&#32;&#32;&#32;<link linkend="class_b_o_i">BOI</link>&#32;<link linkend="class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_1a4b4a3976cc13c4d3de0d7ff8882a7af3">operator=</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>&amp;&#32;orig){};
+69 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<link linkend="class_b_o_i_a617f46a599129178c6b11b4846759a6c_1a617f46a599129178c6b11b4846759a6c">~BOI</link>();
+70 
+71 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+72 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Implement&#32;OSTM&#32;virtual&#32;methods</emphasis>
+73 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+74 &#32;&#32;&#32;<emphasis class="comment">//&#32;virtual&#32;std::shared_ptr&lt;BOI&gt;&#32;_cast(std::shared_ptr&lt;OSTM&gt;&#32;_object);</emphasis>
+75 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_1ad53ae2918a656793b9d7a670d35ecfa3">getBaseCopy</link>(std::shared_ptr&lt;OSTM&gt;&#32;<emphasis class="keywordtype">object</emphasis>);
+76 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_1a9ff2d32c25c23a1bea6316f50c3bf677">copy</link>(std::shared_ptr&lt;OSTM&gt;&#32;to,&#32;std::shared_ptr&lt;OSTM&gt;&#32;from);
+77 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_1ab02a4dd4ebcc5b2abfaca19f2dff2006">toString</link>();
+78 &#32;&#32;&#32;&#32;
+79 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+80 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Implement&#32;BANK&#32;virtual&#32;methods</emphasis>
+81 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+82 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_a00c9386c862cf2442968bf7fc30102b3_1a00c9386c862cf2442968bf7fc30102b3">SetAddress</link>(std::string&#32;<link linkend="class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_1ab9315fe76fd9f07551f5ae7899d33516">address</link>);
+83 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="class_b_o_i_a8920e1f47b22445ba954e86012207462_1a8920e1f47b22445ba954e86012207462">GetAddress</link>()&#32;<emphasis class="keyword">const</emphasis>;
+84 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_a416667693c10f5e4120eec97a9269348_1a416667693c10f5e4120eec97a9269348">SetBalance</link>(<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_1aa00a3d8baf3420647c40119b7fa4ed6f">balance</link>);
+85 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_b_o_i_a25b289dece2a1685bb9d1a9332c9be0b_1a25b289dece2a1685bb9d1a9332c9be0b">GetBalance</link>()&#32;<emphasis class="keyword">const</emphasis>;
+86 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_affc9e7e2a36214b3790f250b7108bb65_1affc9e7e2a36214b3790f250b7108bb65">SetAccountNumber</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_1a35c9fd6e938eb44ad4e076bc6a736851">accountNumber</link>);
+87 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_b_o_i_a5b18e1538f3d37835234946cdf9f240f_1a5b18e1538f3d37835234946cdf9f240f">GetAccountNumber</link>()&#32;<emphasis class="keyword">const</emphasis>;
+88 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_a663906e9a59ffa970fb928746c01e8af_1a663906e9a59ffa970fb928746c01e8af">SetLastName</link>(std::string&#32;<link linkend="class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_1ad51bfa6f28816c7f5036447ff809cecf">lastName</link>);
+89 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="class_b_o_i_a37828f3fa4a32f522966e2cad90eaab2_1a37828f3fa4a32f522966e2cad90eaab2">GetLastName</link>()&#32;<emphasis class="keyword">const</emphasis>;
+90 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_ae9042f87be085c2cec799981c30d7d19_1ae9042f87be085c2cec799981c30d7d19">SetFirstName</link>(std::string&#32;<link linkend="class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_1a12872fd8c15dbf833f78862b00579ed1">firstName</link>);
+91 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="class_b_o_i_ab4b9d50c6008a666aa4382def580e7d1_1ab4b9d50c6008a666aa4382def580e7d1">GetFirstName</link>()&#32;<emphasis class="keyword">const</emphasis>;
+92 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_a93091f16610f1a1474aea31fd5f81ffd_1a93091f16610f1a1474aea31fd5f81ffd">SetFullname</link>(std::string&#32;<link linkend="class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_1a6d7c892a54bb6f7327cdc777081ab5f4">fullname</link>);
+93 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="class_b_o_i_af56446a377068cd65526e40e8b31b878_1af56446a377068cd65526e40e8b31b878">GetFullname</link>()&#32;<emphasis class="keyword">const</emphasis>;
+94 &#32;&#32;&#32;&#32;
+95 <emphasis class="keyword">private</emphasis>:
+<link linkend="class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_1a6d7c892a54bb6f7327cdc777081ab5f4">96 </link>&#32;&#32;&#32;&#32;std::string&#32;<link linkend="class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_1a6d7c892a54bb6f7327cdc777081ab5f4">fullname</link>;
+<link linkend="class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_1a12872fd8c15dbf833f78862b00579ed1">97 </link>&#32;&#32;&#32;&#32;std::string&#32;<link linkend="class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_1a12872fd8c15dbf833f78862b00579ed1">firstName</link>;
+<link linkend="class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_1ad51bfa6f28816c7f5036447ff809cecf">98 </link>&#32;&#32;&#32;&#32;std::string&#32;<link linkend="class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_1ad51bfa6f28816c7f5036447ff809cecf">lastName</link>;
+<link linkend="class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_1a35c9fd6e938eb44ad4e076bc6a736851">99 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_1a35c9fd6e938eb44ad4e076bc6a736851">accountNumber</link>;
+<link linkend="class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_1aa00a3d8baf3420647c40119b7fa4ed6f">100 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_1aa00a3d8baf3420647c40119b7fa4ed6f">balance</link>;
+<link linkend="class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_1ab9315fe76fd9f07551f5ae7899d33516">101 </link>&#32;&#32;&#32;&#32;std::string&#32;<link linkend="class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_1ab9315fe76fd9f07551f5ae7899d33516">address</link>;
+102 
+103 };
+104 
+105 <emphasis class="preprocessor">#endif&#32;</emphasis><emphasis class="comment">/*&#32;BOI_H&#32;*/</emphasis><emphasis class="preprocessor"></emphasis>
+106 
+107 &#32;
+108 &#32;&#32;&#32;&#32;<emphasis class="comment">//virtual&#32;std::string&#32;get_class();</emphasis>
+109 &#32;&#32;&#32;&#32;
+110 &#32;&#32;&#32;<emphasis class="comment">//&#32;</emphasis>
+111 &#32;&#32;&#32;&#32;<emphasis class="comment">//virtual&#32;bool&#32;get(std::shared_ptr&lt;OSTM&gt;&#32;object);</emphasis>
+112 &#32;
+114 <emphasis class="comment">//&#32;*&#32;To&#32;change&#32;this&#32;license&#32;header,&#32;choose&#32;License&#32;Headers&#32;in&#32;Project&#32;Properties.</emphasis>
+115 <emphasis class="comment">//&#32;*&#32;To&#32;change&#32;this&#32;template&#32;file,&#32;choose&#32;Tools&#32;|&#32;Templates</emphasis>
+116 <emphasis class="comment">//&#32;*&#32;and&#32;open&#32;the&#32;template&#32;in&#32;the&#32;editor.</emphasis>
+117 <emphasis class="comment">//&#32;*/</emphasis>
+118 <emphasis class="comment">//</emphasis>
+120 <emphasis class="comment"></emphasis><emphasis class="comment">//&#32;*&#32;File:&#32;&#32;&#32;BOI.h</emphasis>
+121 <emphasis class="comment">//&#32;*&#32;Author:&#32;zoltan</emphasis>
+122 <emphasis class="comment">//&#32;*</emphasis>
+123 <emphasis class="comment">//&#32;*&#32;Created&#32;on&#32;January&#32;19,&#32;2018,&#32;6:37&#32;PM</emphasis>
+124 <emphasis class="comment">//&#32;*/</emphasis>
+125 <emphasis class="comment">//</emphasis>
+126 <emphasis class="comment">//#ifndef&#32;BOI_H</emphasis>
+127 <emphasis class="comment">//#define&#32;BOI_H</emphasis>
+128 <emphasis class="comment">//#include&#32;&quot;OSTM.h&quot;</emphasis>
+129 <emphasis class="comment">//#include&#32;&lt;string&gt;</emphasis>
+130 <emphasis class="comment">//#include&#32;&lt;memory&gt;</emphasis>
+131 <emphasis class="comment">//#include&#32;&lt;iostream&gt;</emphasis>
+132 <emphasis class="comment">//</emphasis>
+133 <emphasis class="comment">//class&#32;BOI:&#32;public&#32;OSTM&#32;{</emphasis>
+134 <emphasis class="comment">//public:</emphasis>
+135 <emphasis class="comment">//&#32;&#32;&#32;&#32;BOI():&#32;OSTM()</emphasis>
+136 <emphasis class="comment">//&#32;&#32;&#32;&#32;{</emphasis>
+137 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;accountNumber&#32;=&#32;0;</emphasis>
+138 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;balance&#32;=&#32;50;</emphasis>
+139 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;firstName&#32;=&#32;&quot;Joe&quot;;</emphasis>
+140 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;lastName&#32;=&#32;&quot;Blog&quot;;</emphasis>
+141 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;address&#32;=&#32;&quot;High&#32;street,&#32;Carlow&quot;;</emphasis>
+142 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;fullname&#32;=&#32;firstName&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;lastName;</emphasis>
+143 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
+144 <emphasis class="comment">//&#32;&#32;&#32;&#32;}</emphasis>
+145 <emphasis class="comment">//&#32;&#32;&#32;&#32;BOI(int&#32;accountNumber,&#32;double&#32;balance,&#32;std::string&#32;firstName,&#32;std::string&#32;lastName,&#32;std::string&#32;address):&#32;OSTM()</emphasis>
+146 <emphasis class="comment">//&#32;&#32;&#32;&#32;{</emphasis>
+147 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;accountNumber&#32;=&#32;accountNumber;</emphasis>
+148 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;balance&#32;=&#32;balance;</emphasis>
+149 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;firstName&#32;=&#32;firstName;</emphasis>
+150 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;lastName&#32;=&#32;lastName;</emphasis>
+151 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;address&#32;=&#32;address;</emphasis>
+152 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;fullname&#32;=&#32;firstName&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;lastName;</emphasis>
+153 <emphasis class="comment">//&#32;&#32;&#32;&#32;};</emphasis>
+154 <emphasis class="comment">//&#32;&#32;&#32;&#32;</emphasis>
+155 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;BOI(OSTM&amp;&#32;obj,&#32;int&#32;_version,&#32;int&#32;_unique_id):&#32;OSTM(_version,&#32;_unique_id)</emphasis>
+156 <emphasis class="comment">//&#32;&#32;&#32;&#32;{</emphasis>
+163 <emphasis class="comment"></emphasis><emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;accountNumber&#32;=&#32;obj.GetAccountNumber();</emphasis>
+164 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;balance&#32;=&#32;obj.GetBalance();</emphasis>
+165 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;firstName&#32;=&#32;obj.GetFirstName();</emphasis>
+166 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;lastName&#32;=&#32;obj.GetLastName();</emphasis>
+167 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;address&#32;=&#32;obj.GetAddress();</emphasis>
+168 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;fullname&#32;=&#32;obj.GetFirstName()&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;obj.GetLastName();&#32;</emphasis>
+175 <emphasis class="comment"></emphasis><emphasis class="comment">//&#32;&#32;&#32;&#32;};</emphasis>
+176 <emphasis class="comment">//&#32;&#32;&#32;&#32;</emphasis>
+177 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;BOI(std::shared_ptr&lt;OSTM&gt;&#32;obj,&#32;int&#32;_version,&#32;int&#32;_unique_id):&#32;OSTM(_version,&#32;_unique_id)</emphasis>
+178 <emphasis class="comment">//&#32;&#32;&#32;&#32;{</emphasis>
+179 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;accountNumber&#32;=&#32;obj-&gt;GetAccountNumber();</emphasis>
+180 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;balance&#32;=&#32;obj-&gt;GetBalance();</emphasis>
+181 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;firstName&#32;=&#32;obj-&gt;GetFirstName();</emphasis>
+182 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;lastName&#32;=&#32;obj-&gt;GetLastName();</emphasis>
+183 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;address&#32;=&#32;obj-&gt;GetAddress();</emphasis>
+184 <emphasis class="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;fullname&#32;=&#32;obj-&gt;GetFirstName()&#32;+&#32;&quot;&#32;&quot;&#32;+&#32;obj-&gt;GetLastName();&#32;</emphasis>
+185 <emphasis class="comment">//&#32;&#32;&#32;&#32;};</emphasis>
+186 <emphasis class="comment">//&#32;&#32;&#32;&#32;</emphasis>
+187 <emphasis class="comment">//</emphasis>
+188 <emphasis class="comment">//&#32;&#32;&#32;&#32;BOI(const&#32;BOI&amp;&#32;orig);</emphasis>
+189 <emphasis class="comment">//&#32;&#32;&#32;&#32;BOI&#32;operator=(const&#32;BOI&amp;&#32;orig){};</emphasis>
+190 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;~BOI();</emphasis>
+191 <emphasis class="comment">//</emphasis>
+192 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;std::shared_ptr&lt;BOI&gt;&#32;_cast(std::shared_ptr&lt;OSTM&gt;&#32;_object);</emphasis>
+193 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;std::shared_ptr&lt;BOI&gt;&#32;getBaseCopy(OSTM&amp;&#32;object);</emphasis>
+194 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;std::shared_ptr&lt;BOI&gt;&#32;getBaseCopy(std::shared_ptr&lt;OSTM&gt;&#32;object);</emphasis>
+195 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;void&#32;copy(std::shared_ptr&lt;OSTM&gt;&#32;to,&#32;std::shared_ptr&lt;OSTM&gt;&#32;from);</emphasis>
+196 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;void&#32;toString();</emphasis>
+197 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;void&#32;SetAddress(std::string&#32;address);</emphasis>
+198 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;std::string&#32;GetAddress()&#32;const;</emphasis>
+199 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;void&#32;SetBalance(double&#32;balance);</emphasis>
+200 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;double&#32;GetBalance()&#32;const;</emphasis>
+201 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;void&#32;SetAccountNumber(int&#32;accountNumber);</emphasis>
+202 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;int&#32;GetAccountNumber()&#32;const;</emphasis>
+203 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;void&#32;SetLastName(std::string&#32;lastName);</emphasis>
+204 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;std::string&#32;GetLastName()&#32;const;</emphasis>
+205 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;void&#32;SetFirstName(std::string&#32;firstName);</emphasis>
+206 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;std::string&#32;GetFirstName()&#32;const;</emphasis>
+207 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;void&#32;SetFullname(std::string&#32;fullname);</emphasis>
+208 <emphasis class="comment">//&#32;&#32;&#32;&#32;virtual&#32;std::string&#32;GetFullname()&#32;const;</emphasis>
+209 <emphasis class="comment">//&#32;&#32;&#32;&#32;</emphasis>
+210 <emphasis class="comment">//private:</emphasis>
+211 <emphasis class="comment">//&#32;&#32;&#32;&#32;std::string&#32;fullname;</emphasis>
+212 <emphasis class="comment">//&#32;&#32;&#32;&#32;std::string&#32;firstName;</emphasis>
+213 <emphasis class="comment">//&#32;&#32;&#32;&#32;std::string&#32;lastName;</emphasis>
+214 <emphasis class="comment">//&#32;&#32;&#32;&#32;int&#32;accountNumber;</emphasis>
+215 <emphasis class="comment">//&#32;&#32;&#32;&#32;double&#32;balance;</emphasis>
+216 <emphasis class="comment">//&#32;&#32;&#32;&#32;std::string&#32;address;</emphasis>
+217 <emphasis class="comment">//</emphasis>
+218 <emphasis class="comment">//};</emphasis>
+219 <emphasis class="comment">//</emphasis>
+220 <emphasis class="comment">//#endif&#32;/*&#32;BOI_H&#32;*/</emphasis>
+221 <emphasis class="comment">//</emphasis>
+222 <emphasis class="comment">//&#32;</emphasis>
+223 <emphasis class="comment">//&#32;&#32;&#32;&#32;//virtual&#32;std::string&#32;get_class();</emphasis>
+224 <emphasis class="comment">//&#32;&#32;&#32;&#32;</emphasis>
+225 <emphasis class="comment">//&#32;&#32;&#32;//&#32;</emphasis>
+226 <emphasis class="comment">//&#32;&#32;&#32;&#32;//virtual&#32;bool&#32;get(std::shared_ptr&lt;OSTM&gt;&#32;object);</emphasis>
+227 <emphasis class="comment">//&#32;</emphasis>
+    </computeroutput></literallayout>
+</section>

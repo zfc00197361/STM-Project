@@ -1,4 +1,4 @@
-.TH "TM" 3 "Sun Mar 11 2018" "C++ Software transactional Memory" \" -*- nroff -*-
+.TH "TM" 3 "Sun Apr 1 2018" "C++ Software transactional Memory" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -83,7 +83,7 @@ TM \-
 .in -1c
 .SH "Detailed Description"
 .PP 
-Definition at line 57 of file TM\&.h\&.
+Definition at line 70 of file TM\&.h\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "TM::TM ()\fC [private]\fP, \fC [default]\fP"
@@ -99,21 +99,7 @@ Definition at line 57 of file TM\&.h\&.
 .SS "std::shared_ptr< \fBTX\fP > const TM::_get_tx ()"
 
 .PP
-@81 _get_tx std::shared_ptr<TX>, return an trtansaction Object as a shared_ptr, if \fBTX\fP not exists then create and register\&.# If the transaction Object exists then increasing the nesting level within the Transaction Object\&. _get_tx std::shared_ptr<TX>, returning a shared pointer transaction object @85 guard std::lock_guard, locks the get_Lock mutex, unlock automatically when goes out of the scope
-.PP
-@85 get_Lock std::mutex, used by the lock_guard to protect txMap from race conditions
-.PP
-@87 txMap try to find the \fBTX\fP Transaction object by it's actual thread ID if registred in the txMap
-.PP
-@89 Check if iterator pointing to the end of the txMap then insert
-.PP
-@92 If cannot find then call the register function to register the thread with a transaction
-.PP
-@94 If it's registered first time then we need to find it after registration
-.PP
-@98 If transaction already registered, it means the thread participating in nested transactions, and increase the nesting
-.PP
-@101 Returning back the transaction (\fBTX\fP) object to the thread 
+@81 _get_tx std::shared_ptr<TX>, return an trtansaction Object as a shared_ptr, if \fBTX\fP not exists then create and register\&.# If the transaction Object exists then increasing the nesting level within the Transaction Object\&. _get_tx std::shared_ptr<TX>, returning a shared pointer transaction object 
 .PP
 Definition at line 81 of file TM\&.cpp\&.
 .PP
@@ -121,16 +107,24 @@ References get_Lock, registerTX(), and txMap\&.
 .PP
 .nf
 82 {
+83    
+84     /* @85 guard std::lock_guard, locks the get_Lock mutex, unlock automatically when goes out of the scope get_Lock std::mutex, used by the lock_guard to protect txMap from race conditions */
 85     std::lock_guard<std::mutex> guard(get_Lock);
+86     /* @87 txMap try to find the TX Transaction object by it's actual thread ID if registred in the txMap */
 87     std::map<std::thread::id, std::shared_ptr<TX>>::iterator it = txMap\&.find(std::this_thread::get_id());
+88     /* @89 Check if iterator pointing to the end of the txMap then insert */
 89     if(it == txMap\&.end())
 90     {
+91       /* @92 If cannot find then call the register function to register the thread with a transaction */
 92        registerTX();
+93        /* @94 If it's registered first time then we need to find it after registration */
 94        it = txMap\&.find(std::this_thread::get_id());
 95        
 96     } else {
+97         /* @98 If transaction already registered, it means the thread participating in nested transactions, and increase the nesting */
 98         it->second->_increase_tx_nesting();
 99     }
+100     /* @101 Returning back the transaction (TX) object to the thread */
 101     return it->second;
 102 
 103 }
@@ -138,21 +132,7 @@ References get_Lock, registerTX(), and txMap\&.
 .SS "void TM::_TX_EXIT ()"
 
 .PP
-@108 _TX_EXIT void, when the thread calls the ostm_exit function in the transaction, and it will clear all elements from the shared global collection associated with the main process _TX_EXIT void function, the thread (\fBTX\fP object) calls the ostm_exit function from the transaction, and clear all elements from the shared global collection associated with the main process @110 Transaction manger create a local Transaction Object to access the \fBTX\fP class function without nesting any transaction
-.PP
-@112 getppid() return the actual main process thread id, I used it to associate the Transactionas with the main processes
-.PP
-@114 process_map_collection try to find the main process by it's ppid if registred in the library
-.PP
-@116 Check if iterator NOT pointing to the end of the process map then register
-.PP
-@118 Iterate through the process_map_collection to find all transaction associated with main process
-.PP
-@120 Delete all transaction associated with the actual main process
-.PP
-@123 When all transaction deleted, delete the main process from the Transacion Manager
-.PP
-@126 \fBTX\fP class delete all Global Object shared between the transaction\&. This function calls only when the main process exists to clear out memory 
+@108 _TX_EXIT void, when the thread calls the ostm_exit function in the transaction, and it will clear all elements from the shared global collection associated with the main process _TX_EXIT void function, the thread (\fBTX\fP object) calls the ostm_exit function from the transaction, and clear all elements from the shared global collection associated with the main process 
 .PP
 Definition at line 108 of file TM\&.cpp\&.
 .PP
@@ -160,43 +140,47 @@ References TX::ostm_exit(), process_map_collection, and txMap\&.
 .PP
 .nf
 108                  {
+109     /*  @110 Transaction manger create a local Transaction Object to access the TX class function without nesting any transaction */
 110     TX tx(std::this_thread::get_id());
+111     /* @112 getppid() return the actual main process thread id, I used it to associate the Transactionas with the main processes */
 112     pid_t ppid = getppid();
+113     /* @114 process_map_collection try to find the main process by it's ppid if registred in the library */
 114     std::map<pid_t, std::map< std::thread::id, int >>::iterator process_map_collection_Iterator = TM::process_map_collection\&.find(ppid);
+115     /* @116 Check if iterator NOT pointing to the end of the process map then register */
 116     if (process_map_collection_Iterator != TM::process_map_collection\&.end()) {
+117         /* @118 Iterate through the process_map_collection to find all transaction associated with main process */
 118         for (auto current = process_map_collection_Iterator->second\&.begin(); current != process_map_collection_Iterator->second\&.end(); ++current) {
+119             /* @120 Delete all transaction associated with the actual main process */
 120             txMap\&.erase(current->first);
 121         }
+122         /* @123 When all transaction deleted, delete the main process from the Transacion Manager */
 123         TM::process_map_collection\&.erase(ppid);
 124     }
+125     /* @126 TX class delete all Global Object shared between the transaction\&. This function calls only when the main process exists to clear out memory */
 126     tx\&.ostm_exit();
 127 }
 .fi
 .SS "std::map< std::thread::id, int > TM::get_thread_Map ()\fC [private]\fP"
 
 .PP
-@148 get_thread_Map std::map, returning a map to store all unique ID from all objects from all transactions within the main processes @150 thread_Map std::map< int, int > create a map to store int key and int value
-.PP
-@152 return the map 
+@148 get_thread_Map std::map, returning a map to store all unique ID from all objects from all transactions within the main processes 
 .PP
 Definition at line 148 of file TM\&.cpp\&.
 .PP
 Referenced by registerTX()\&.
 .PP
 .nf
-148                                               { 
+148                                               {
+149     /*  @150 thread_Map std::map< int, int > create a map to store int key and int value */ 
 150     std::map< std::thread::id, int > thread_Map;
+151     /* @152 return the map */
 152     return thread_Map;
 153 }
 .fi
 .SS "\fBTM\fP & TM::Instance ()\fC [static]\fP"
 
 .PP
-@31 Instance \fBTM\fP, Scott Meyer's Singleton creation, thread safe Transaction Manager instance creation\&. Scott Meyer's Singleton creation, thread safe Transaction Manager instance creation\&. @33 _instance \fBTM\fP, static class reference to the instance of the Transaction Manager class
-.PP
-@35 _instance ppid, assigning the process id whoever created the Singleton instance
-.PP
-@37 return Singleton instance 
+@31 Instance \fBTM\fP, Scott Meyer's Singleton creation, thread safe Transaction Manager instance creation\&. Scott Meyer's Singleton creation, thread safe Transaction Manager instance creation\&. 
 .PP
 Definition at line 31 of file TM\&.cpp\&.
 .PP
@@ -204,8 +188,11 @@ References _tm_id\&.
 .PP
 .nf
 31                  {
+32    /* @33 _instance TM, static class reference to the instance of the Transaction Manager class */
 33     static TM _instance;
+34     /* @35 _instance ppid, assigning the process id whoever created the Singleton instance */
 35     _instance\&._tm_id = getpid();
+36     /* @37 return Singleton instance */
 37     return _instance;
 38 }
 .fi
@@ -216,13 +203,7 @@ References _tm_id\&.
 .SS "void TM::print_all ()"
 
 .PP
-@132 ONLY FOR TESTING print_all void function , print out all object key from txMAP collection associated with the main process\&. ONLY FOR TESTING! print_all void function, prints all object in the txMap @134 Locking the print function
-.PP
-@136 Iterate through the txMap to print out the thread id's
-.PP
-@138 Print key (thread number)
-.PP
-@140 Unlocking the print function 
+@132 ONLY FOR TESTING print_all void function , print out all object key from txMAP collection associated with the main process\&. ONLY FOR TESTING! print_all void function, prints all object in the txMap 
 .PP
 Definition at line 132 of file TM\&.cpp\&.
 .PP
@@ -230,41 +211,21 @@ References get_Lock, and txMap\&.
 .PP
 .nf
 132                   {
+133     /* @134 Locking the print function */
 134     get_Lock\&.lock();
+135     /* @136 Iterate through the txMap to print out the thread id's*/
 136     for (auto current = txMap\&.begin(); current != txMap\&.end(); ++current) {
+137         /* @138 Print key (thread number)*/
 138         std::cout << "KEY : " << current->first << std::endl;
 139     }
+140     /* @140 Unlocking the print function*/
 141     get_Lock\&.unlock();
 142 }
 .fi
 .SS "void TM::registerTX ()\fC [private]\fP"
 
 .PP
-@45 registerTX void function, register a new \fBTX\fP Transaction object into ythe txMap/Transaction Map to manage all the transactions within the shared library\&. \fBTM\fP Transaction managger checking the Process ID existence in the process map collection, If not in the map then register\&. @49 guard std::lock_guard, locks the register_Lock mutex, unlock automatically when goes out of the scope
-.PP
-@49 register_Lock std::mutex, used by the lock_guard to protect shared map from race conditions
-.PP
-@51 getppid() return the actual main process thread id, I used it to associate the Transactionas with the main processes
-.PP
-@53 process_map_collection try to find the main process by it's ppid if registred in the library
-.PP
-@55 Check if iterator pointing to the end of the process map then register
-.PP
-@57 Require new map to insert to the process map as a value by the ppid key
-.PP
-@59 Register main process/application to the global map
-.PP
-@63 txMap std::map, collection to store all transaction created by the Transaction Manager
-.PP
-@65 Check if iterator pointing to the end of the txMap then insert
-.PP
-@67 Create a new Transaction Object as a shared pointer
-.PP
-@69 txMap insert the new transaction into the txMap by the threadID key
-.PP
-@71 Get the map if the transaction registered first time
-.PP
-@73 Insert to the GLOBAL MAP as a helper to clean up at end of main process\&. The value 1 is not used yet 
+@45 registerTX void function, register a new \fBTX\fP Transaction object into ythe txMap/Transaction Map to manage all the transactions within the shared library\&. \fBTM\fP Transaction managger checking the Process ID existence in the process map collection, If not in the map then register\&. 
 .PP
 Definition at line 45 of file TM\&.cpp\&.
 .PP
@@ -274,19 +235,32 @@ Referenced by _get_tx()\&.
 .PP
 .nf
 46 {
-49     std::lock_guard<std::mutex> guard(register_Lock);
-51     pid_t ppid = getppid();
+47   /* @49 guard std::lock_guard, locks the register_Lock mutex, unlock automatically when goes out of the scope register_Lock std::mutex, used by the lock_guard to protect shared map from race conditions */
+48     std::lock_guard<std::mutex> guard(register_Lock);
+49     /* @51 getppid() return the actual main process thread id, I used it to associate the Transactionas with the main processes */
+50     pid_t ppid = getppid();
+51 
+52     /* @53 process_map_collection try to find the main process by it's ppid if registred in the library */
 53     std::map<pid_t, std::map< std::thread::id, int >>::iterator process_map_collection_Iterator = TM::process_map_collection\&.find(ppid);
+54     /* @55 Check if iterator pointing to the end of the process map then register */
 55     if (process_map_collection_Iterator == TM::process_map_collection\&.end()) {
+56         /* @57 Require new map to insert to the process map as a value by the ppid key  */
 57         std::map< std::thread::id, int >map = get_thread_Map();
+58         /* @59 Register main process/application to the global map  */
 59         TM::process_map_collection\&.insert({ppid, map});
 60 
 61     }
+62     /* @63 txMap std::map, collection to store all transaction created by the Transaction Manager */
 63     std::map<std::thread::id, std::shared_ptr < TX>>::iterator it = txMap\&.find(std::this_thread::get_id());
+64     /* @65 Check if iterator pointing to the end of the txMap then insert */
 65     if (it == txMap\&.end()) {
+66         /* @67 Create a new Transaction Object as a shared pointer */
 67         std::shared_ptr<TX> _transaction_object(new TX(std::this_thread::get_id()));
+68         /* @69 txMap insert the new transaction into the txMap by the threadID key */
 69         txMap\&.insert({std::this_thread::get_id(), _transaction_object});
+70         /* @71 Get the map if the transaction registered first time */
 71         process_map_collection_Iterator = TM::process_map_collection\&.find(ppid);
+72         /* @73 Insert to the GLOBAL MAP as a helper to clean up at end of main process\&. The value 1 is not used yet */
 73         process_map_collection_Iterator->second\&.insert({std::this_thread::get_id(), 1});
 74     }
 75 }
@@ -296,31 +270,31 @@ Referenced by _get_tx()\&.
 .SS "pid_t TM::_tm_id\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 102 of file TM\&.h\&.
+Definition at line 115 of file TM\&.h\&.
 .PP
 Referenced by Instance()\&.
 .SS "std::mutex TM::get_Lock\fC [private]\fP"
 
 .PP
-Definition at line 98 of file TM\&.h\&.
+Definition at line 111 of file TM\&.h\&.
 .PP
 Referenced by _get_tx(), and print_all()\&.
 .SS "std::map< pid_t, std::map< std::thread::id, int > > TM::process_map_collection\fC [static]\fP, \fC [private]\fP"
 
 .PP
-Definition at line 82 of file TM\&.h\&.
+Definition at line 95 of file TM\&.h\&.
 .PP
 Referenced by _TX_EXIT(), and registerTX()\&.
 .SS "std::mutex TM::register_Lock\fC [private]\fP"
 
 .PP
-Definition at line 94 of file TM\&.h\&.
+Definition at line 107 of file TM\&.h\&.
 .PP
 Referenced by registerTX()\&.
 .SS "std::map<std::thread::id, std::shared_ptr<\fBTX\fP> > TM::txMap\fC [private]\fP"
 
 .PP
-Definition at line 78 of file TM\&.h\&.
+Definition at line 91 of file TM\&.h\&.
 .PP
 Referenced by _get_tx(), _TX_EXIT(), print_all(), and registerTX()\&.
 

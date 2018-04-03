@@ -8,7 +8,7 @@
 \usepackage{indentfirst}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
-
+\usepackage{enumitem}
 \usepackage{listings}
 \usepackage{color}
 \usepackage[hyphens,spaces,obeyspaces]{url}
@@ -57,6 +57,7 @@
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.7]{Pictures/carlow.png}
+
 \end{figure}
 		
 	\end{center}
@@ -71,7 +72,7 @@
 \section{Introduction}
 Since the modern computers has more the one core embedded into the CPU, the concurrent and parallel programming is the way to keep the CPU throughput as high as possible and create faster applications. The concurrent and parallel programming requires to sharing memory spaces between processes, cores associated with a running application.\\
 
-The purpose of this project to implement a Software Transactional Memory library in C++14 programming language, to enable other programs to include and use this library as a lock free solution, to use for concurrent programming to protect shared memory spaces, which are used by an application. Because the STM library implementation does not require graphical user interface, database connection and network connectivities, the implementation is limited only for logical C++ code solution, that can be used and tested by an external application. The library itself will be a file with '*.a' extension, that need to be placed into the file system in the Linux operating system. So, as the part of the project, it is require to create a test application to illustrate and test the library usage.\\
+The purpose of this project to implement a Software Transactional Memory library in C++14 programming language, to enable other programs to include and use this library as a lock free solution, to use for concurrent programming to protect shared memory spaces, which are used by an application. Because the STM library implementation does not require graphical user interface, database connection and network connectivities, the implementation is limited only for logical C++ code solution, that can be used and tested by an external application. The library itself will be a file with '*.a' or '*.so' extension on Linux , that need to be placed into the file system in the Linux operating (shared *so file) system or placed to the C++ project folder structure (static *.a) to link together with the application. So, as the part of the project, it is require to create a test application to illustrate and test the library usage.\\
 
 As the mandatory requirements, the project will be fully documented by the Doxygen document generator tool, to provide the description of the available interface functions to other programmers, if they intend to use the library. Create a test application to demonstrate the library usage.\\
 
@@ -79,10 +80,10 @@ To make it available on different operating systems, or at least on Linux and Wi
 
 \clearpage
 \section{What the product can do}
-The STM library will be developed in C++14 language syntax to provide lock free solution to other programs to protect shared memory within a process. It will support interface to the programs to enable library call(s) after a transaction object has created. It will allows to the transaction object to pass values to  the library, to process them. As the part of the transaction process, the library will create a transaction, make shared local data structure to store values involved in the transaction, and when finish with the changes, try to end the transaction and only write changes in the memory spaces if the transaction not fail. When the transaction fails, then restart the transaction. Because the STM library look after all of the shared memory locking process, the programmers don't need to worry about to use mutex, semaphore and can avoid of deadlock and livelock.
+The STM library will be developed in C++14 language syntax to provide lock free solution to client applications to protect shared memory within a transactional process. It will support an API interface to the applications to enable library call(s) after a transaction object has created. It will allows to the transaction object to pass objects to  the library, to process them. As the part of the transaction process, the library will create a transaction, make shared local data structure to store values involved in the transaction, and when finish with the changes, try to end the transaction and only write changes in the memory spaces if the transaction not fail. When the transaction fails, then restart the transaction. Because the STM library provide transactional environment to the client applications, the programmers don't need to worry about to use mutex, semaphore and can avoid of deadlock and livelock situations.
 
 \section{Functional description}
-Software Transactional Memory allows to create several actions, that all can be compose together and run as a single transaction. There will be numerous function in the library, such as create a transaction and receive values/pointers to work with, and these functions will working together to achieve the transactional function. When the transaction library receive the data to work with, then will create and start the transaction. In the next step try to commit the changes, that need to carry out on the shared data. It is involves in few inner steps such as compare the version numbers and update the changes. If the version number are different then it suppose to be, then restart the transaction. The transaction steps are detailed in below.
+Software Transactional Memory allows to compose several actions, that all can be execute together and run as a single transaction. There will be numerous function in the library, such as create a transaction and receive values/pointers to work with, and these functions will working together to achieve the transactional function. When the transaction library receive the data to work with, then will create and start the transaction. In the next step try to commit the changes, that need to carry out on the shared data. It is involves in few inner steps such as compare the version numbers and update the changes. If the version number are different between the working object and the global object, then the transaction will restart. The transaction steps are detailed in below.
 
 \begin{figure}[h!]
 \centering
@@ -123,7 +124,7 @@ When the transaction start, the library check the version number associated with
 This phase of the transaction, the library locks the used shared memory spaces in an atomic block, and hide from the other processes to write changes in to the local data set. After the changes has made on the local data set, before finalize the write process to the destination shared memory spaces, must to determine if any other process had accessed the same data set, and made changes on it. It is happening with compare the transaction version number associated with the shared memory space version number. The transaction commits the changes if no conflict detected between version numbers. When changes make then release the lock on the data/object and the transaction has finished.\\ 
 
 \subsubsection{Version checking}
-The version number representing the changes associated with destination data by the transactions. The transaction can detect the conflict early when first time accessing the value or when the transaction attempts to commit. When a transaction commit the changes, write the new values to the shared memory space, and the same time increasing the global version number to indicate the other transactions, that some changes happened with the value. At commit time or when accessing the value, the transaction compare the version numbers. The version number in the actual transaction and the global version number associated with the data must match. If the values are not the same the transaction will be cancelled, updating the local version number and rolling back the changes before writing the new value to the shared memory space and restart the transaction.
+The version number representing the changes associated with the object accessed by the transactions. The transaction can detect the conflict early when first time accessing the value or when the transaction attempts to commit. When a transaction commit the changes, write the new values to the shared memory space, and the same time increasing the global version number to indicate to the other transactions, that some changes happened with the object. At commit time the transaction compare the local object version numbers against the global object version number. The version number in the actual transaction and the global version number associated with the object must match. If the values are not the same the transaction will be cancelled and rolling back the changes before writing the new value to the shared memory space and restart the transaction.
 
 \begin{figure}[h!]
 \centering
@@ -133,7 +134,7 @@ The version number representing the changes associated with destination data by 
 
 
 \subsubsection{Roll-back transaction}
-The roll-back part of the transaction, simply goes back to the begging of the transaction and restart the process. The library should implement some sort of checking logic, that the roll-back process must be cancelled at some stage, otherwise it can create an infinite or very long looping time and cause starvation in the software application.
+The roll-back part of the transaction, simply goes back to the begging of the transaction and restart the process. The library should implement some sort of checking logic, that the roll-back process must be cancelled at some stage, otherwise it can create an infinite or very long looping time in the client application.
 
 \subsubsection{Updating}
 At commit time, if the compared versions are holding same values, then the transaction updating the shared memory space on the target data set and closing the transaction. \\
@@ -152,8 +153,10 @@ The potential target users can be any programmer, how planning to use concurrent
 {\setlength{\parindent}{0cm}
 The potential target users can be who:
 \begin{enumerate}
-\item Want to avoid of mutex and semaphore.
-\item Want to use concurrent programming features.
+\item Individual programmers, software companies. 
+\item Want to use transactional environment.
+\item Want to avoid of lock based programming.
+\item Want to use concurrent programming features in safe environment.
 \item Want to avoid deadlock and livelock.
 \end{enumerate}
 }
@@ -202,7 +205,7 @@ As part of the metrics, the library should implement not functional requirements
 testability, adaptability, maintainability, scalability and portability between platforms. 
 \end{enumerate}
 
-`
+\newpage
 \section{Other STM libraries}
 The Software Transactional Memory was implemented in C/C++ language many time before. However, this project must produce a fully implemented STM library to support lock free transactions, possibly the library functionalities will be a bit restricted compare with the other C/C++ library implementations available. Why? Because those libraries are available years ago and developed over the time.\\
 
@@ -229,7 +232,61 @@ The Software Transactional Memory was implemented in many different languages as
 \item Commit and release the locks.
 \end{enumerate}
 
+\section{Project Iterations / Updated}
+\begin{center}
+\includegraphics[angle=90,width=\textwidth,height=\textheight, height=18cm, keepaspectratio]{Pictures/gant_chart.png}
+\end{center}
+\newpage
+\subsection{Detailed Iterations description / Updated}
 
+\textbf{2017/2018 }
+\begin{enumerate}[label*=\arabic*.]
+\item October
+\begin{enumerate}[label*=\arabic*.]
+	\item Project assigned.
+\end{enumerate}
+\item November
+\begin{enumerate}[label*=\arabic*.]
+	\item Writing Research Document .
+	\item Writing Functional Specification.
+	\item Writing Design Document.
+	\item \textbf{Begin Iteration 1 :} Research to find a C++ collection type to store any type of object. Try out boost-any C++ library.
+\end{enumerate}
+\item December 
+\begin{enumerate}[label*=\arabic*.]
+	\item Implementing template some functions and collections in the transaction class to store objects within the library. 
+	\item Implementing the OSTM base class (blueprint of the class) virtual methods and the required unique identifier generation processes to provide unique identifier to inherited objects the intend to use with the library.
+	\item First time testing the base functions with a client application, using the library files only.
+	\item Implementation of the Transaction Manager to control the transactions.
+\end{enumerate}
+\item January 2018
+\begin{enumerate}[label*=\arabic*.]
+	\item First presentation.
+	\item Replacing Boost any library with c++ built in std::map.
+	\item Replacing template functions with non template functions using the OSTM polymorphic objects.
+	\item Testing the library functionalities with the new polymorphic objects and with the Transaction Manager, memory checking.
+\end{enumerate}
+\item February
+\begin{enumerate}[label*=\arabic*.]
+	\item Replacing RAW pointers with smart pointers, because the RAW pointer can not be deleted from the child class methods.
+	\item Testing library with the smart pointer implementation, memory checking.
+	\item Code re-factoring.
+	\item Implementation of the Shared and the Static libraries in Linux system, testing libraries.
+\end{enumerate}
+\item March
+\begin{enumerate}[label*=\arabic*.]
+	\item MAC OSX Static and Shared libraries implementation, testing.
+	\item Windows Static and Shared libraries implementation, testing using Visual Studio.
+	\item Second presentation.
+	\item API documentation, full library documentation using Doxygen.
+\end{enumerate}
+\item April
+\begin{enumerate}[label*=\arabic*.]
+	\item Website, tutorials, video tutorials, description implementation.
+	\item Final Testing.
+	\item Project Demo.
+\end{enumerate}
+\end{enumerate}
 
 \newpage
 \section{Bibliography}

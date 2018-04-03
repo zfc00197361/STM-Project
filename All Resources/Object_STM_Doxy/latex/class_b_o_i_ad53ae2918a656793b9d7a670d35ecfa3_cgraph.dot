@@ -1,0 +1,9 @@
+digraph "BOI::getBaseCopy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="BOI::getBaseCopy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="BOI::BOI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_b_o_i.html#a6af682a5f199a029681f0cb2b8658706"];
+}

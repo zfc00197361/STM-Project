@@ -1,0 +1,496 @@
+.TH "BOI" 3 "Sun Apr 1 2018" "CppUnit test STM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BOI \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <BOI\&.h>\fP
+.PP
+Inherits \fBBANK\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBOI\fP ()"
+.br
+.ti -1c
+.RI "\fBBOI\fP (int \fBaccountNumber\fP, double \fBbalance\fP, std::string \fBfirstName\fP, std::string \fBlastName\fP, std::string \fBaddress\fP)"
+.br
+.ti -1c
+.RI "\fBBOI\fP (std::shared_ptr< \fBBOI\fP > obj, int _version, int _unique_id)"
+.br
+.ti -1c
+.RI "\fBBOI\fP (const \fBBOI\fP &orig)"
+.br
+.ti -1c
+.RI "virtual void \fBcopy\fP (std::shared_ptr< \fBOSTM\fP > to, std::shared_ptr< \fBOSTM\fP > from)"
+.br
+.RI "\fI\fBOSTM\fP required virtual method for deep copy\&. \fP"
+.ti -1c
+.RI "virtual int \fBGetAccountNumber\fP () const "
+.br
+.ti -1c
+.RI "virtual std::string \fBGetAddress\fP () const "
+.br
+.ti -1c
+.RI "virtual double \fBGetBalance\fP () const "
+.br
+.ti -1c
+.RI "virtual std::shared_ptr< \fBOSTM\fP > \fBgetBaseCopy\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fI\fBOSTM\fP required virtual method for returning a pointer that is copy of the original pointer\&. \fP"
+.ti -1c
+.RI "virtual std::string \fBGetFirstName\fP () const "
+.br
+.ti -1c
+.RI "virtual std::string \fBGetFullname\fP () const "
+.br
+.ti -1c
+.RI "virtual std::string \fBGetLastName\fP () const "
+.br
+.ti -1c
+.RI "\fBBOI\fP \fBoperator=\fP (const \fBBOI\fP &orig)"
+.br
+.ti -1c
+.RI "virtual void \fBSetAccountNumber\fP (int \fBaccountNumber\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBSetAddress\fP (std::string \fBaddress\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBSetBalance\fP (double \fBbalance\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBSetFirstName\fP (std::string \fBfirstName\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBSetFullname\fP (std::string \fBfullname\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBSetLastName\fP (std::string \fBlastName\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBtoString\fP ()"
+.br
+.RI "\fI\fBOSTM\fP required virtual method for display object\&. \fP"
+.ti -1c
+.RI "virtual \fB~BOI\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBaccountNumber\fP"
+.br
+.ti -1c
+.RI "std::string \fBaddress\fP"
+.br
+.ti -1c
+.RI "double \fBbalance\fP"
+.br
+.ti -1c
+.RI "std::string \fBfirstName\fP"
+.br
+.ti -1c
+.RI "std::string \fBfullname\fP"
+.br
+.ti -1c
+.RI "std::string \fBlastName\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 19 of file BOI\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "BOI::BOI ()\fC [inline]\fP"
+
+.PP
+Definition at line 24 of file BOI\&.h\&.
+.PP
+References accountNumber, address, balance, firstName, fullname, and lastName\&.
+.PP
+Referenced by BOI(), and getBaseCopy()\&.
+.PP
+.nf
+24          : BANK()
+25     {
+26         this->accountNumber = 0;
+27         this->balance = 50;
+28         this->firstName = "Joe";
+29         this->lastName = "Blog";
+30         this->address = "High street, Carlow";
+31         this->fullname = firstName + " " + lastName;
+32         
+33     }
+.fi
+.SS "BOI::BOI (int accountNumber, double balance, std::string firstName, std::string lastName, std::string address)\fC [inline]\fP"
+
+.PP
+Definition at line 37 of file BOI\&.h\&.
+.PP
+References accountNumber, address, balance, firstName, fullname, and lastName\&.
+.PP
+.nf
+37                                                                                                       : BANK()
+38     {
+39         this->accountNumber = accountNumber;
+40         this->balance = balance;
+41         this->firstName = firstName;
+42         this->lastName = lastName;
+43         this->address = address;
+44         this->fullname = firstName + " " + lastName;
+45     };
+.fi
+.SS "BOI::BOI (std::shared_ptr< \fBBOI\fP > obj, int _version, int _unique_id)\fC [inline]\fP"
+
+.PP
+Definition at line 49 of file BOI\&.h\&.
+.PP
+References accountNumber, address, balance, BOI(), firstName, fullname, and lastName\&.
+.PP
+.nf
+49                                                              : BANK(_version, _unique_id)
+50     {
+51         this->accountNumber = obj->GetAccountNumber();
+52         this->balance = obj->GetBalance();
+53         this->firstName = obj->GetFirstName();
+54         this->lastName = obj->GetLastName();
+55         this->address = obj->GetAddress();
+56         this->fullname = obj->GetFirstName() + " " + obj->GetLastName(); 
+57     };
+.fi
+.SS "BOI::BOI (const \fBBOI\fP & orig)"
+
+.PP
+Definition at line 15 of file BOI\&.cpp\&.
+.PP
+.nf
+15                         {
+16 }
+.fi
+.SS "BOI::~BOI ()\fC [virtual]\fP"
+
+.PP
+Definition at line 12 of file BOI\&.cpp\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+12           {
+13 }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void BOI::copy (std::shared_ptr< \fBOSTM\fP > from, std::shared_ptr< \fBOSTM\fP > to)\fC [virtual]\fP"
+
+.PP
+\fBOSTM\fP required virtual method for deep copy\&. 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 35 of file BOI\&.cpp\&.
+.PP
+References OSTM::Set_Unique_ID()\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+35                                                               {
+36 
+37     std::shared_ptr<BOI> objTO = std::dynamic_pointer_cast<BOI>(to);
+38     std::shared_ptr<BOI> objFROM = std::dynamic_pointer_cast<BOI>(from);
+39     objTO->Set_Unique_ID(objFROM->Get_Unique_ID());
+40     objTO->Set_Version(objFROM->Get_Version());
+41     objTO->SetAccountNumber(objFROM->GetAccountNumber());
+42     objTO->SetBalance(objFROM->GetBalance());
+43 }
+.fi
+.SS "int BOI::GetAccountNumber () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 73 of file BOI\&.cpp\&.
+.PP
+References accountNumber\&.
+.PP
+Referenced by operator=(), and toString()\&.
+.PP
+.nf
+73                                 {
+74     return accountNumber;
+75 }
+.fi
+.SS "std::string BOI::GetAddress () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 57 of file BOI\&.cpp\&.
+.PP
+References address\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+57                                 {
+58     return address;
+59 }
+.fi
+.SS "double BOI::GetBalance () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 65 of file BOI\&.cpp\&.
+.PP
+References balance\&.
+.PP
+Referenced by operator=(), and toString()\&.
+.PP
+.nf
+65                              {
+66     return balance;
+67 }
+.fi
+.SS "std::shared_ptr< \fBOSTM\fP > BOI::getBaseCopy (std::shared_ptr< \fBOSTM\fP > object)\fC [virtual]\fP"
+
+.PP
+\fBOSTM\fP required virtual method for returning a pointer that is copy of the original pointer\&. 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 22 of file BOI\&.cpp\&.
+.PP
+References BOI()\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+23 {
+24 
+25     std::shared_ptr<BOI> objTO = std::dynamic_pointer_cast<BOI>(object);
+26     std::shared_ptr<BOI> obj(new BOI(objTO,object->Get_Version(),object->Get_Unique_ID())); 
+27     std::shared_ptr<OSTM> ostm_obj = std::dynamic_pointer_cast<OSTM>(obj);
+28     return ostm_obj;
+29 }
+.fi
+.SS "std::string BOI::GetFirstName () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 89 of file BOI\&.cpp\&.
+.PP
+References firstName\&.
+.PP
+Referenced by operator=(), and toString()\&.
+.PP
+.nf
+89                                   {
+90     return firstName;
+91 }
+.fi
+.SS "std::string BOI::GetFullname () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 97 of file BOI\&.cpp\&.
+.PP
+References fullname\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+97                                  {
+98     return fullname;
+99 }
+.fi
+.SS "std::string BOI::GetLastName () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 81 of file BOI\&.cpp\&.
+.PP
+References lastName\&.
+.PP
+Referenced by operator=(), and toString()\&.
+.PP
+.nf
+81                                  {
+82     return lastName;
+83 }
+.fi
+.SS "\fBBOI\fP BOI::operator= (const \fBBOI\fP & orig)\fC [inline]\fP"
+
+.PP
+Definition at line 65 of file BOI\&.h\&.
+.PP
+References accountNumber, address, balance, copy(), firstName, fullname, GetAccountNumber(), GetAddress(), GetBalance(), getBaseCopy(), GetFirstName(), GetFullname(), GetLastName(), lastName, SetAccountNumber(), SetAddress(), SetBalance(), SetFirstName(), SetFullname(), SetLastName(), toString(), and ~BOI()\&.
+.PP
+.nf
+65 {};
+.fi
+.SS "void BOI::SetAccountNumber (int accountNumber)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 69 of file BOI\&.cpp\&.
+.PP
+References accountNumber\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+69                                             {
+70     this->accountNumber = accountNumber;
+71 }
+.fi
+.SS "void BOI::SetAddress (std::string address)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 53 of file BOI\&.cpp\&.
+.PP
+References address\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+53                                       {
+54     this->address = address;
+55 }
+.fi
+.SS "void BOI::SetBalance (double balance)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 61 of file BOI\&.cpp\&.
+.PP
+References balance\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+61                                    {
+62     this->balance = balance;
+63 }
+.fi
+.SS "void BOI::SetFirstName (std::string firstName)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 85 of file BOI\&.cpp\&.
+.PP
+References firstName\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+85                                           {
+86     this->firstName = firstName;
+87 }
+.fi
+.SS "void BOI::SetFullname (std::string fullname)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 93 of file BOI\&.cpp\&.
+.PP
+References fullname\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+93                                         {
+94     this->fullname = fullname;
+95 }
+.fi
+.SS "void BOI::SetLastName (std::string lastName)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 77 of file BOI\&.cpp\&.
+.PP
+References lastName\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+77                                         {
+78     this->lastName = lastName;
+79 }
+.fi
+.SS "void BOI::toString ()\fC [virtual]\fP"
+
+.PP
+\fBOSTM\fP required virtual method for display object\&. 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 49 of file BOI\&.cpp\&.
+.PP
+References OSTM::Get_Unique_ID(), OSTM::Get_Version(), GetAccountNumber(), GetBalance(), GetFirstName(), and GetLastName()\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+50 {
+51    std::cout << "\nBOI BANK" << "\nUnique ID : " << this->Get_Unique_ID() << "\nInt account : " << this->GetAccountNumber() << "\nDouble value : " << this->GetBalance() << "\nFirst name: " << this->GetFirstName() << "\nLast name : " << this->GetLastName()  << "\nVersion number : " << this->Get_Version() << std::endl;
+52 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "int BOI::accountNumber\fC [private]\fP"
+
+.PP
+Definition at line 99 of file BOI\&.h\&.
+.PP
+Referenced by BOI(), GetAccountNumber(), operator=(), and SetAccountNumber()\&.
+.SS "std::string BOI::address\fC [private]\fP"
+
+.PP
+Definition at line 101 of file BOI\&.h\&.
+.PP
+Referenced by BOI(), GetAddress(), operator=(), and SetAddress()\&.
+.SS "double BOI::balance\fC [private]\fP"
+
+.PP
+Definition at line 100 of file BOI\&.h\&.
+.PP
+Referenced by BOI(), GetBalance(), operator=(), and SetBalance()\&.
+.SS "std::string BOI::firstName\fC [private]\fP"
+
+.PP
+Definition at line 97 of file BOI\&.h\&.
+.PP
+Referenced by BOI(), GetFirstName(), operator=(), and SetFirstName()\&.
+.SS "std::string BOI::fullname\fC [private]\fP"
+
+.PP
+Definition at line 96 of file BOI\&.h\&.
+.PP
+Referenced by BOI(), GetFullname(), operator=(), and SetFullname()\&.
+.SS "std::string BOI::lastName\fC [private]\fP"
+
+.PP
+Definition at line 98 of file BOI\&.h\&.
+.PP
+Referenced by BOI(), GetLastName(), operator=(), and SetLastName()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CppUnit test STM from the source code\&.

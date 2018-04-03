@@ -7,8 +7,8 @@
  */
 #include "TM.h"
 #include <thread>
-//#include <unistd.h>
-#include <process.h>
+#include <unistd.h>
+//#include <process.h>
 #include <sys/types.h>
 #include <iostream>
 
@@ -43,7 +43,7 @@ TM& TM::Instance() {
 void TM::registerTX()
 {
     std::lock_guard<std::mutex> guard(register_Lock);
-    int ppid = _getpid();
+    int ppid = getpid();
     std::map<int, std::map< std::thread::id, int >>::iterator process_map_collection_Iterator = TM::process_map_collection.find(ppid);
     if (process_map_collection_Iterator == TM::process_map_collection.end()) {
         /*
@@ -100,7 +100,7 @@ std::shared_ptr<TX>const TM::_get_tx()
   */
 void TM::_TX_EXIT(){
     TX tx(std::this_thread::get_id());
-    int ppid = _getpid();
+    int ppid = getpid();
     std::map<int, std::map< std::thread::id, int >>::iterator process_map_collection_Iterator = TM::process_map_collection.find(ppid);
     if (process_map_collection_Iterator != TM::process_map_collection.end()) {
 

@@ -1,0 +1,476 @@
+.TH "main.cpp" 3 "Sun Apr 1 2018" "Version v 0.0.1" "C++ Software Transactional Memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cstdlib>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <thread>\fP
+.br
+\fC#include 'TM\&.h'\fP
+.br
+\fC#include 'AIB\&.h'\fP
+.br
+\fC#include 'BOI\&.h'\fP
+.br
+\fC#include 'BOA\&.h'\fP
+.br
+\fC#include 'SWBPLC\&.h'\fP
+.br
+\fC#include 'ULSTER\&.h'\fP
+.br
+\fC#include 'UNBL\&.h'\fP
+.br
+\fC#include 'WAREHOUSE\&.h'\fP
+.br
+\fC#include 'CARPHONE_WAREHOUSE\&.h'\fP
+.br
+\fC#include 'CARLOW_W\&.h'\fP
+.br
+\fC#include 'KILKENNY_W\&.h'\fP
+.br
+\fC#include 'TALLAGH_W\&.h'\fP
+.br
+\fC#include 'DUNDALK_W\&.h'\fP
+.br
+\fC#include 'SLIGO_W\&.h'\fP
+.br
+\fC#include <mutex>\fP
+.br
+\fC#include <memory>\fP
+.br
+\fC#include <condition_variable>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fB_six_account_transfer_\fP (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_one_, std::shared_ptr< \fBOSTM\fP > _from_two_, std::shared_ptr< \fBOSTM\fP > _from_three_, std::shared_ptr< \fBOSTM\fP > _from_four_, std::shared_ptr< \fBOSTM\fP > _from_five_, \fBTM\fP &_tm, double _amount)"
+.br
+.RI "\fI\fIsix_account_transfer\fP function, takes six std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from five account to one account \fP"
+.ti -1c
+.RI "void \fB_two_account_transfer_\fP (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP &_tm, double _amount)"
+.br
+.RI "\fI\fItwo_account_transfer\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account \fP"
+.ti -1c
+.RI "void \fB_nesting_\fP (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP &_tm, double _amount)"
+.br
+.RI "\fI\fInesting\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well \fP"
+.ti -1c
+.RI "void \fB_complex_transfer_\fP (std::shared_ptr< \fBOSTM\fP > _from_, std::shared_ptr< \fBOSTM\fP > _from_two_, std::vector< std::shared_ptr< \fBOSTM\fP >> _customer_vec, \fBTM\fP &_tm, double _amount)"
+.br
+.RI "\fI\fIcomplex_transfer\fP function, takes two std::shared_ptr<OSTM> pointer, a vector of std::shared_ptr<OSTM> pointers, the Transaction manager, and the amount to use in the transaction, and transfer the _amount value from booth single objects to the objects to the vector collection \fP"
+.ti -1c
+.RI "void \fB_warehouse_transfer_\fP (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP &_tm, double _amount)"
+.br
+.RI "\fI\fIwarehouse_transfer\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account \fP"
+.ti -1c
+.RI "void \fB_nested_warehouse_transfer_\fP (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _to_two, std::shared_ptr< \fBOSTM\fP > _to_three, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP &_tm, double _amount)"
+.br
+.RI "\fI\fInested_warehouse_transfer\fP function, takes three std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account \fP"
+.ti -1c
+.RI "void \fB_complex_warehouse_transfer_\fP (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _to_two, std::shared_ptr< \fBOSTM\fP > _to_three, std::vector< std::shared_ptr< \fBOSTM\fP >> _warehouse_vec, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP &_tm, double _amount)"
+.br
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void _complex_transfer_ (std::shared_ptr< \fBOSTM\fP > _from_, std::shared_ptr< \fBOSTM\fP > _from_two_, std::vector< std::shared_ptr< \fBOSTM\fP >> _customer_vec, \fBTM\fP & _tm, double _amount)"
+
+.PP
+\fIcomplex_transfer\fP function, takes two std::shared_ptr<OSTM> pointer, a vector of std::shared_ptr<OSTM> pointers, the Transaction manager, and the amount to use in the transaction, and transfer the _amount value from booth single objects to the objects to the vector collection 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::shared_ptr<TX>\fP tx, Transaction Object 
+.br
+\fIstd::shared_ptr<BANK>\fP type, \fIFROM\fP & \fIFROM_TWO\fP & \fITO\fP 
+.br
+\fIstd::shared_ptr<OSTM>\fP type, \fIFROM_OSTM_ONE\fP & \fIFROM_OSTM_TWO\fP & \fITO_OSTM\fP 
+.RE
+.PP
+Register the two single account
+.PP
+Declare required pointers
+.PP
+Register customers accounts from the collection (vector)
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+Commit changes
+.PP
+Definition at line 294 of file main\&.cpp\&.
+.SS "void _complex_warehouse_transfer_ (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _to_two, std::shared_ptr< \fBOSTM\fP > _to_three, std::vector< std::shared_ptr< \fBOSTM\fP >> _warehouse_vec, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP & _tm, double _amount)"
+Register the two single account
+.PP
+Declare required pointers
+.PP
+Register customers accounts from the collection (vector)
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<WAREHOUSE> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+NESTED \fBWAREHOUSE\fP TEST _to_two
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+Commit changes
+.PP
+Definition at line 518 of file main\&.cpp\&.
+.SS "void _nested_warehouse_transfer_ (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _to_two, std::shared_ptr< \fBOSTM\fP > _to_three, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP & _tm, double _amount)"
+
+.PP
+\fInested_warehouse_transfer\fP function, takes three std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::shared_ptr<TX>\fP tx, Transaction Object 
+.br
+\fIstd::shared_ptr<WAREHOUSE>\fP type, \fITO_SHOP\fP & \fIFROM_DIST\fP 
+.br
+\fIstd::shared_ptr<OSTM>\fP type, \fITO_OSTM\fP & \fIFROM_OSTM\fP 
+.RE
+.PP
+Register the two single account
+.PP
+Declare required pointers
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+NESTED \fBWAREHOUSE\fP TEST _to_two
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+Commit changes
+.PP
+Definition at line 419 of file main\&.cpp\&.
+.SS "void _nesting_ (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP & _tm, double _amount)"
+
+.PP
+\fInesting\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::shared_ptr<TX>\fP tx, Transaction Object 
+.br
+\fIstd::shared_ptr<BANK>\fP type, \fITO_BANK\fP & \fIFROM_BANK\fP 
+.br
+\fIstd::shared_ptr<OSTM>\fP type, \fITO_OSTM\fP & \fIFROM_OSTM\fP 
+.RE
+.PP
+Register the two single account
+.PP
+Declare required pointers
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+NESTED TRANSACTION
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+NESTED TRANSACTION IN THE NESTED TRANSACTION \fItwo_account_transfer\fP function call
+.PP
+Commit changes
+.PP
+Definition at line 206 of file main\&.cpp\&.
+.SS "void _six_account_transfer_ (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_one_, std::shared_ptr< \fBOSTM\fP > _from_two_, std::shared_ptr< \fBOSTM\fP > _from_three_, std::shared_ptr< \fBOSTM\fP > _from_four_, std::shared_ptr< \fBOSTM\fP > _from_five_, \fBTM\fP & _tm, double _amount)"
+
+.PP
+\fIsix_account_transfer\fP function, takes six std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from five account to one account 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::shared_ptr<TX>\fP tx, Transaction Object 
+.br
+\fIstd::shared_ptr<BANK>\fP type, \fITO\fP & \fIFROM_ONE\fP & \fIFROM_TWO\fP & \fIFROM_THREE\fP & \fIFROM_FOUR\fP & \fIFROM_FIVE\fP 
+.br
+\fIstd::shared_ptr<OSTM>\fP type, _TO_OSTM & _FROM_ONE_OSTM & _FROM_TWO_OSTM & _FROM_THREE_OSTM & _FROM_FOUR_OSTM & _FROM_FIVE_OSTM 
+.RE
+.PP
+Register the two single account
+.PP
+Required pointers to use in transaction
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+Commit changes
+.PP
+Definition at line 51 of file main\&.cpp\&.
+.SS "void _two_account_transfer_ (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP & _tm, double _amount)"
+
+.PP
+\fItwo_account_transfer\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::shared_ptr<TX>\fP tx, Transaction Object 
+.br
+\fIstd::shared_ptr<BANK>\fP type, \fITO_BANK\fP & \fIFROM_BANK\fP 
+.br
+\fIstd::shared_ptr<OSTM>\fP type, \fITO_OSTM\fP & \fIFROM_OSTM\fP 
+.RE
+.PP
+Register the two single account
+.PP
+Declare required pointers
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+NESTED TRANSACTION
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+Commit changes
+.PP
+Commit changes
+.PP
+Definition at line 123 of file main\&.cpp\&.
+.SS "void _warehouse_transfer_ (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP & _tm, double _amount)"
+
+.PP
+\fIwarehouse_transfer\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIstd::shared_ptr<TX>\fP tx, Transaction Object 
+.br
+\fIstd::shared_ptr<WAREHOUSE>\fP type, \fITO_SHOP\fP & \fIFROM_DIST\fP 
+.br
+\fIstd::shared_ptr<OSTM>\fP type, \fITO_OSTM\fP & \fIFROM_OSTM\fP 
+.RE
+.PP
+Register the two single account
+.PP
+Declare required pointers
+.PP
+From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
+.PP
+Make changes with the objects
+.PP
+From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+.PP
+Store changes
+.PP
+Commit changes
+.PP
+Definition at line 358 of file main\&.cpp\&.
+.SS "int main (void)"
+main method to run test Get the Transaction Manager
+.br
+ \fBTM\fP& tm = \fBTM::Instance()\fP;
+.br
+.PP
+Create vector to store std::shared_ptr<OSTM> pointers\&. All object will have unique ID by default
+.br
+ std::vector<std::shared_ptr<OSTM>> _customer_vec(vector_number);
+.br
+ std::vector<std::shared_ptr<OSTM>> _warehouse_vec(vector_number);
+.br
+.PP
+Create objects type of \fBBANK\fP\&. All object will have unique ID by default
+.br
+ std::shared_ptr<OSTM> aib_ptr = new \fBAIB\fP(100, 500, 'Joe', 'Blog', 'High street, Kilkenny, Co\&.Kilkenny');
+.br
+ std::shared_ptr<OSTM> boi_ptr = new \fBBOI\fP(200, 500, 'Joe', 'Blog', 'High street, Kilkenny, Co\&.Kilkenny');
+.br
+ std::shared_ptr<OSTM> boa_ptr = new \fBBOA\fP(300, 500, 'Joe', 'Blog', 'High street, Kilkenny, Co\&.Kilkenny');
+.br
+ std::shared_ptr<OSTM> swplc_ptr = new \fBSWBPLC\fP(400, 500, 'Joe', 'Blog', 'High street, Kilkenny, Co\&.Kilkenny');
+.br
+ std::shared_ptr<OSTM> ulster_ptr = new \fBULSTER\fP(500, 500, 'Joe', 'Blog', 'High street, Kilkenny, Co\&.Kilkenny');
+.br
+ std::shared_ptr<OSTM> unbl_ptr = new \fBUNBL\fP(600, 500, 'Joe', 'Blog', 'High street, Kilkenny, Co\&.Kilkenny');
+.br
+.PP
+Create objects type of \fBWAREHOUSE\fP\&. All object will have unique ID by default
+.br
+ std::shared_ptr<OSTM> w_dist = new \fBCARPHONE_WAREHOUSE()\fP;
+.br
+ std::shared_ptr<OSTM> c_shop = new \fBCARLOW_W()\fP;
+.br
+ std::shared_ptr<OSTM> k_shop = new \fBKILKENNY_W()\fP;
+.br
+ std::shared_ptr<OSTM> t_shop = new \fBTALLAGH_W()\fP;
+.br
+ std::shared_ptr<OSTM> d_shop = new \fBDUNDALK_W()\fP;
+.br
+ std::shared_ptr<OSTM> s_shop = new \fBSLIGO_W()\fP;
+.br
+.PP
+Create vector of std::shared_ptr<OSTM> \fBBANK\fP pointers
+.br
+ vector_number is 100 at the moment
+.br
+ for(int i=0;i<vector_number;++i)
+.PP
+Create vector of std::shared_ptr<OSTM> \fBWAREHOUSE\fP pointers
+.br
+ vector_number is 100 at the moment
+.br
+ for(int i=0;i<vector_number;++i)
+.PP
+Display \fBWAREHOUSE\fP objects before transaction
+.br
+ w_dist->toString();
+.br
+ c_shop->toString();
+.br
+ k_shop->toString();
+.br
+ t_shop->toString();
+.br
+ d_shop->toString();
+.br
+ s_shop->toString();
+.br
+.PP
+Display \fBBANK\fP objects before transaction
+.br
+ aib_ptr->toString();
+.br
+ boi_ptr->toString();
+.br
+ boa_ptr->toString();
+.br
+ swplc_ptr->toString();
+.br
+ ulster_ptr->toString();
+.br
+ unbl_ptr->toString();
+.br
+.PP
+\fBParameters:\fP
+.RS 4
+\fItransferAmount\fP in the transaction, control the value in the transaction between objetcs
+.br
+\fIthreadArraySize\fP control number of threads 
+.br
+ The logic in the IF ELSE statement distribute the threads between three different thread creating option\&.
+.br
+ If the threadArraySize is divisible with three, the threads will be distributed between function\&.
+.br
+ However, you can creates any number of threads, but to follow the correct output should increase the IF ELSE statement to distribute the threads in equal number\&.
+.RE
+.PP
+Creating threads^n -> threadArraySize
+.br
+ for (int i = 0; i < threadArraySize; ++i)
+.br
+.PP
+TEST 1 : Nested transaction Test
+.br
+ thArray[i] = std::thread(\fInesting\fP, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+.PP
+TEST 2 :Three different type of function call where the objects are participating in multiple type of transactions
+.br
+ thArray[i] = std::thread(\fItwo_account_transfer\fP, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+.br
+ thArray[i] = std::thread(\fIsix_account_transfer\fP, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount)
+.br
+ thArray[i] = std::thread(\fIcomplex_transfer\fP, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
+.PP
+TEST 3 : Testing \fBWAREHOUSE\fP type pointers within transactions
+.br
+ thArray[i] = std::thread(\fIphone_transfer\fP, c_shop, w_dist, std::ref(tm), transferAmount);
+.PP
+TEST 4 : Testing \fBWAREHOUSE\fP type pointers within nested transactions
+.br
+ thArray[i] = std::thread(\fInested_warehouse_transfer\fP, c_shop, d_shop, k_shop, w_dist, std::ref(tm), transferAmount);
+.PP
+TEST 5 : Testing \fBWAREHOUSE\fP type pointers within mixed and nested transactions
+.br
+ thArray[i] = std::thread(\fIwarehouse_transfer\fP, c_shop, w_dist, std::ref(tm), transferAmount);
+.br
+ thArray[i] = std::thread(\fInested_warehouse_transfer\fP, c_shop, d_shop, k_shop, w_dist, std::ref(tm), transferAmount);
+.br
+ thArray[i] = std::thread(\fIcomplex_warehouse_transfer\fP, d_shop, c_shop, std::ref(_warehouse_vec), w_dist, std::ref(tm), transferAmount);
+.br
+.PP
+Display objects after all transactions are finished
+.br
+ Uncomment the required corresponding TEST to display results
+.PP
+Extra tx to call and display ROLLBACK value
+.br
+ std::shared_ptr<TX> tx = tm\&._get_tx();
+.br
+.PP
+Display the number of ROLLBACK by all the threads 
+.br
+ std::cout << 'Rollback counter is : ' << tx->getTest_counter() << std::endl;
+.PP
+Display object from vector
+.PP
+Clean up Transaction Manager from all main process associated transactions
+.br
+ tm\&._TX_EXIT();
+.PP
+Display all Transactions associated with the main process\&. It should be empty after _TX_EXIT() function call!!!
+.br
+ tm\&.print_all();
+.PP
+Definition at line 649 of file main\&.cpp\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software Transactional Memory from the source code\&.

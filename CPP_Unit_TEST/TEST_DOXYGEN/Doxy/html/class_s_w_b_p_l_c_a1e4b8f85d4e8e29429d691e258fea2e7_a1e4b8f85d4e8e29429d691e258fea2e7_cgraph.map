@@ -1,0 +1,22 @@
+<map id="SWBPLC::operator=" name="SWBPLC::operator=">
+<area shape="rect" id="node2" href="$class_s_w_b_p_l_c_a9468640482a6cfb9bfb4115fc59191d5.html#a9468640482a6cfb9bfb4115fc59191d5" title="OSTM required virtual method for deep copy. " alt="" coords="239,5,354,32"/>
+<area shape="rect" id="node4" href="$class_s_w_b_p_l_c_a1a997f6d333e5021970e50605431d7df.html#a1a997f6d333e5021970e50605431d7df" title="SWBPLC::GetAccountNumber" alt="" coords="445,56,648,83"/>
+<area shape="rect" id="node5" href="$class_s_w_b_p_l_c_a3a62a57b3ecdd06ed977ef372dab89ad.html#a3a62a57b3ecdd06ed977ef372dab89ad" title="SWBPLC::GetAddress" alt="" coords="219,309,375,336"/>
+<area shape="rect" id="node6" href="$class_s_w_b_p_l_c_af7f5f662ab926bfb9c0c1c7156cde24c.html#af7f5f662ab926bfb9c0c1c7156cde24c" title="SWBPLC::GetBalance" alt="" coords="469,107,624,133"/>
+<area shape="rect" id="node7" href="$class_s_w_b_p_l_c_a77f0e0d6c08a95066d277bf6b2073a5c.html#a77f0e0d6c08a95066d277bf6b2073a5c" title="OSTM required virtual method for returning a pointer that is copy of the original pointer..." alt="" coords="213,360,380,387"/>
+<area shape="rect" id="node9" href="$class_s_w_b_p_l_c_ace6bbcd6546896e581e3a2ee9504d090.html#ace6bbcd6546896e581e3a2ee9504d090" title="SWBPLC::GetFirstName" alt="" coords="462,259,631,285"/>
+<area shape="rect" id="node10" href="$class_s_w_b_p_l_c_adb74b3cbc40a401bf7ca4dfb5269c336.html#adb74b3cbc40a401bf7ca4dfb5269c336" title="SWBPLC::GetFullname" alt="" coords="216,411,377,437"/>
+<area shape="rect" id="node11" href="$class_s_w_b_p_l_c_a72b2595acea28dae9e4f5816dd3c4652.html#a72b2595acea28dae9e4f5816dd3c4652" title="SWBPLC::GetLastName" alt="" coords="463,309,631,336"/>
+<area shape="rect" id="node12" href="$class_s_w_b_p_l_c_a45eb1e6a73fde0dc00824319d4e0b81a.html#a45eb1e6a73fde0dc00824319d4e0b81a" title="SWBPLC::SetAccountNumber" alt="" coords="196,461,397,488"/>
+<area shape="rect" id="node13" href="$class_s_w_b_p_l_c_a99590e47dda8361b2d5869fd315f92f8.html#a99590e47dda8361b2d5869fd315f92f8" title="SWBPLC::SetAddress" alt="" coords="219,512,374,539"/>
+<area shape="rect" id="node14" href="$class_s_w_b_p_l_c_a9a0d94da8922f00ca4a3e5fa774e8b3f.html#a9a0d94da8922f00ca4a3e5fa774e8b3f" title="SWBPLC::SetBalance" alt="" coords="219,563,374,589"/>
+<area shape="rect" id="node15" href="$class_s_w_b_p_l_c_a8146eabca4648ef679188904f677df9d.html#a8146eabca4648ef679188904f677df9d" title="SWBPLC::SetFirstName" alt="" coords="213,613,381,640"/>
+<area shape="rect" id="node16" href="$class_s_w_b_p_l_c_a09376d46475bbceda897948714ff1e72.html#a09376d46475bbceda897948714ff1e72" title="SWBPLC::SetFullname" alt="" coords="217,664,377,691"/>
+<area shape="rect" id="node17" href="$class_s_w_b_p_l_c_aa5581ea5d2e0315b816876737e887f09.html#aa5581ea5d2e0315b816876737e887f09" title="SWBPLC::SetLastName" alt="" coords="213,715,380,741"/>
+<area shape="rect" id="node18" href="$class_s_w_b_p_l_c_a761c77b5a204b4ae05ffb01bd602c3c2.html#a761c77b5a204b4ae05ffb01bd602c3c2" title="OSTM required virtual method for display object. " alt="" coords="231,157,363,184"/>
+<area shape="rect" id="node21" href="$class_s_w_b_p_l_c_a5d6f00a76145f32424ff6db9ac23c6fe.html#a5d6f00a76145f32424ff6db9ac23c6fe" title="SWBPLC::~SWBPLC" alt="" coords="221,765,373,792"/>
+<area shape="rect" id="node3" href="$class_o_s_t_m_ab5019a32185631c08abbf826422f2d93.html#ab5019a32185631c08abbf826422f2d93" title="setter for unique id " alt="" coords="468,5,625,32"/>
+<area shape="rect" id="node8" href="$class_s_w_b_p_l_c_a320f4e2b023038668d941ce5d0c46aeb.html#a320f4e2b023038668d941ce5d0c46aeb" title="SWBPLC::SWBPLC" alt="" coords="475,360,619,387"/>
+<area shape="rect" id="node19" href="$class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="467,157,626,184"/>
+<area shape="rect" id="node20" href="$class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="477,208,617,235"/>
+</map>

@@ -1,0 +1,140 @@
+\hypertarget{_my_test_c_ase_8h_source}{}\subsection{My\+Test\+C\+Ase.\+h}
+
+\begin{DoxyCode}
+00001 
+00002 
+00003 \textcolor{preprocessor}{#ifndef MYTESTCASE\_H}
+00004 \textcolor{preprocessor}{#define MYTESTCASE\_H}
+00005 
+00006 \textcolor{comment}{//Connection between the library and the classes}
+00007 \textcolor{preprocessor}{#include "\hyperlink{client_8h}{client.h}"}
+00008 \textcolor{preprocessor}{#include "\hyperlink{_t_m_8h}{TM.h}"}
+00009 \textcolor{preprocessor}{#include <thread>}
+00010 
+00011 \textcolor{comment}{//#include "TestClient.cpp"}
+00012 
+00013 \textcolor{preprocessor}{#include <cppunit/TestCase.h>}
+00014 \textcolor{preprocessor}{#include <cppunit/extensions/HelperMacros.h>}
+00015 
+00016 \textcolor{keyword}{using namespace }\hyperlink{namespace_cpp_unit}{CppUnit};
+00017 
+\hypertarget{_my_test_c_ase_8h_source.tex_l00018}{}\hyperlink{class_my_test_c_ase}{00018} \textcolor{keyword}{class }\hyperlink{class_my_test_c_ase}{MyTestCAse} : \textcolor{keyword}{public} TestCase\{
+00019     CPPUNIT\_TEST\_SUITE(\hyperlink{class_my_test_c_ase}{MyTestCAse});
+00020     \textcolor{comment}{/*}
+00021 \textcolor{comment}{     * Complex library tests.}
+00022 \textcolor{comment}{     */}
+00023     CPPUNIT\_TEST(threaded\_functionality\_hundred\_threads);
+00024     CPPUNIT\_TEST(threaded\_functionality\_thousand\_threads);
+00025     CPPUNIT\_TEST(threaded\_functionality\_hundred\_threads\_six\_account);
+00026     CPPUNIT\_TEST(threaded\_functionality\_thousand\_threads\_six\_account);
+00027     CPPUNIT\_TEST(nested\_hundred\_thread\_functionality); 
+00028     CPPUNIT\_TEST(nested\_thousand\_thread\_functionality);
+00029     CPPUNIT\_TEST(complex\_threaded\_functionality\_hundred\_threads);
+00030     CPPUNIT\_TEST(complex\_threaded\_functionality\_ten\_threads);
+00031     CPPUNIT\_TEST(two\_object\_transfer\_complete);
+00032     CPPUNIT\_TEST(two\_object\_transfer\_state\_change);
+00033     CPPUNIT\_TEST(nested\_transaction\_object\_test);
+00034     \textcolor{comment}{/*}
+00035 \textcolor{comment}{     * Design Manual document based tests}
+00036 \textcolor{comment}{     */}
+00037     CPPUNIT\_TEST(multi\_threaded\_multiple\_object\_exchange\_test);
+00038     CPPUNIT\_TEST(multi\_threaded\_single\_object\_test\_with\_ten\_threads);
+00039     CPPUNIT\_TEST(single\_threaded\_multiple\_object\_test);
+00040     CPPUNIT\_TEST(multi\_threaded\_multiple\_objects\_test);
+00041     \textcolor{comment}{/*}
+00042 \textcolor{comment}{     * OSTM library-API functions tests, private & public methods}
+00043 \textcolor{comment}{     */}
+00044     CPPUNIT\_TEST(increase\_nesting);
+00045     CPPUNIT\_TEST(increase\_nesting\_fail);
+00046     CPPUNIT\_TEST(decrease\_nesting);
+00047     CPPUNIT\_TEST(decrease\_nesting\_fail);
+00048     CPPUNIT\_TEST(two\_object\_transfer\_state\_change);
+00049     CPPUNIT\_TEST\_EXCEPTION(register\_null\_pointer\_throw\_runtime\_error, std::runtime\_error);
+00050     CPPUNIT\_TEST\_EXCEPTION(object\_not\_registered\_throw\_runtime\_error, std::runtime\_error);
+00051     CPPUNIT\_TEST\_EXCEPTION(store\_null\_pointer\_throw\_runtime\_error, std::runtime\_error);
+00052     CPPUNIT\_TEST(compare\_Transaction\_Manager\_singleton\_instance);
+00053     CPPUNIT\_TEST(TM\_get\_thread\_map);
+00054    
+00055     
+00056     
+00057             
+00058 
+00059     CPPUNIT\_TEST\_SUITE\_END();
+00060 \textcolor{keyword}{public}:
+\hypertarget{_my_test_c_ase_8h_source.tex_l00061}{}\hyperlink{class_my_test_c_ase_a17e7a9246f54f74dacf88f8d6556aa92_a17e7a9246f54f74dacf88f8d6556aa92}{00061}     \hyperlink{class_my_test_c_ase_a17e7a9246f54f74dacf88f8d6556aa92_a17e7a9246f54f74dacf88f8d6556aa92}{MyTestCAse}()\{\};
+00062     \hyperlink{class_my_test_c_ase}{MyTestCAse}(\textcolor{keyword}{const} \hyperlink{class_my_test_c_ase}{MyTestCAse}& orig);
+00063     \textcolor{keyword}{virtual} ~\hyperlink{class_my_test_c_ase}{MyTestCAse}();
+00064 
+\hypertarget{_my_test_c_ase_8h_source.tex_l00065}{}\hyperlink{class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_a422e6e5d4ddedea384be96031c89b72b}{00065}     \hyperlink{class_t_m}{TM}& tm = \hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_a7ce5f35e0dae76df4fe116cf905bbe60}{TM::Instance}();
+\hypertarget{_my_test_c_ase_8h_source.tex_l00066}{}\hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{00066}     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_adad50e8278b64aa0321000b528e5362c}{aib\_ptr};
+\hypertarget{_my_test_c_ase_8h_source.tex_l00067}{}\hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{00067}     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_a5554de9e3e6393a89c66c036c529720b}{boi\_ptr};
+\hypertarget{_my_test_c_ase_8h_source.tex_l00068}{}\hyperlink{class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_ae0b2db5d35e25b3139beeda0705494f0}{00068}     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_ae0b2db5d35e25b3139beeda0705494f0}{boa\_ptr};
+\hypertarget{_my_test_c_ase_8h_source.tex_l00069}{}\hyperlink{class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_aa8ccae9a5a7feb5bc47591c55a82d0cd}{00069}     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_aa8ccae9a5a7feb5bc47591c55a82d0cd}{swplc\_ptr};
+\hypertarget{_my_test_c_ase_8h_source.tex_l00070}{}\hyperlink{class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_a4f9f72374d3d15be7cdf16412c4d7ed3}{00070}     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_a4f9f72374d3d15be7cdf16412c4d7ed3}{ulster\_ptr};
+\hypertarget{_my_test_c_ase_8h_source.tex_l00071}{}\hyperlink{class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_a0ca634b597d6c0e136d632268853d5a7}{00071}     std::shared\_ptr<OSTM> \hyperlink{class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_a0ca634b597d6c0e136d632268853d5a7}{unbl\_ptr};
+00072     
+00073     \textcolor{keywordtype}{void} complex\_threaded\_functionality\_hundred\_threads();
+00074     \textcolor{keywordtype}{void} complex\_threaded\_functionality\_ten\_threads();
+00075     \textcolor{keywordtype}{void} threaded\_functionality\_hundred\_threads();
+00076     \textcolor{keywordtype}{void} threaded\_functionality\_thousand\_threads();
+00077     \textcolor{keywordtype}{void} threaded\_functionality\_hundred\_threads\_six\_account();
+00078     \textcolor{keywordtype}{void} threaded\_functionality\_thousand\_threads\_six\_account();
+00079     \textcolor{keywordtype}{void} nested\_hundred\_thread\_functionality();
+00080     \textcolor{keywordtype}{void} nested\_thousand\_thread\_functionality();
+00081     \textcolor{keywordtype}{void} two\_object\_transfer\_complete();
+00082     \textcolor{keywordtype}{void} two\_object\_transfer\_state\_change();
+00083     
+00084     \textcolor{keywordtype}{void} multi\_threaded\_multiple\_object\_exchange\_test();
+00085     \textcolor{keywordtype}{void} multi\_threaded\_single\_object\_test\_with\_ten\_threads();
+00086     \textcolor{keywordtype}{void} single\_threaded\_multiple\_object\_test();
+00087     \textcolor{keywordtype}{void} multi\_threaded\_multiple\_objects\_test();
+00088     
+00089     \textcolor{keywordtype}{void} register\_null\_pointer\_throw\_runtime\_error();
+00090     \textcolor{keywordtype}{void} object\_not\_registered\_throw\_runtime\_error();
+00091     \textcolor{keywordtype}{void} store\_null\_pointer\_throw\_runtime\_error();
+00092     \textcolor{keywordtype}{void} increase\_nesting();
+00093     \textcolor{keywordtype}{void} decrease\_nesting();
+00094     \textcolor{keywordtype}{void} increase\_nesting\_fail();
+00095     \textcolor{keywordtype}{void} decrease\_nesting\_fail();
+00096     \textcolor{keywordtype}{void} compare\_Transaction\_Manager\_singleton\_instance();
+00097     \textcolor{keywordtype}{void} TM\_get\_thread\_map();
+00098     \textcolor{keywordtype}{void} nested\_transaction\_object\_test();
+00099     
+00100     
+00101     \textcolor{keywordtype}{void} \_two\_account\_transfer\_(std::shared\_ptr<OSTM> \_to\_, std::shared\_ptr<OSTM> \_from\_, 
+      \hyperlink{class_t_m}{TM}& tm, \textcolor{keywordtype}{double} \_amount);
+00102     \textcolor{keywordtype}{void} \_nesting\_(std::shared\_ptr<OSTM> \_to\_, std::shared\_ptr<OSTM> \_from\_, \hyperlink{class_t_m}{TM}& \_tm, \textcolor{keywordtype}{double} \_amount);
+00103     \textcolor{keywordtype}{void} \_six\_account\_transfer\_(std::shared\_ptr<OSTM> \_to\_, std::shared\_ptr<OSTM> \_from\_one\_, 
+      std::shared\_ptr<OSTM> \_from\_two\_, std::shared\_ptr<OSTM> \_from\_three\_, std::shared\_ptr<OSTM> \_from\_four\_, 
+      std::shared\_ptr<OSTM> \_from\_five\_, \hyperlink{class_t_m}{TM}& \_tm, \textcolor{keywordtype}{double} \_amount); 
+00104     \textcolor{keywordtype}{void} \_complex\_transfer\_(std::shared\_ptr<OSTM> \_from\_, std::shared\_ptr<OSTM> \_from\_two\_, std::vector<
+      std::shared\_ptr<OSTM>> \_customer\_vec, \hyperlink{class_t_m}{TM}& \_tm, \textcolor{keywordtype}{double} \_amount);
+00105     \textcolor{keywordtype}{void} \_one\_account\_transfer\_(std::shared\_ptr<OSTM> \_to\_, \hyperlink{class_t_m}{TM}& \_tm, \textcolor{keywordtype}{double} \_amount);
+00106     \textcolor{keywordtype}{void} \_collection\_bject\_(std::vector<std::shared\_ptr<OSTM>> \_customer\_vec, \hyperlink{class_t_m}{TM}& \_tm, \textcolor{keywordtype}{double} \_amount, \textcolor{keywordtype}{
+      int} loop);
+00107     
+\hypertarget{_my_test_c_ase_8h_source.tex_l00108}{}\hyperlink{class_my_test_c_ase_a387cf3ea316c793a7b5f34418a2ee3d4_a387cf3ea316c793a7b5f34418a2ee3d4}{00108}   \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_a387cf3ea316c793a7b5f34418a2ee3d4_a387cf3ea316c793a7b5f34418a2ee3d4}{setUp}()
+00109   \{
+00110       a = \textcolor{keyword}{new} \hyperlink{classclient}{client}(1);
+00111       b = \textcolor{keyword}{new} \hyperlink{classclient}{client}(1);
+00112       c = \textcolor{keyword}{new} \hyperlink{classclient}{client}(1);
+00113 
+00114   \}
+00115 
+\hypertarget{_my_test_c_ase_8h_source.tex_l00116}{}\hyperlink{class_my_test_c_ase_aeb24ab2614834b9c3b02fd15d288ea0c_aeb24ab2614834b9c3b02fd15d288ea0c}{00116}   \textcolor{keywordtype}{void} \hyperlink{class_my_test_c_ase_aeb24ab2614834b9c3b02fd15d288ea0c_aeb24ab2614834b9c3b02fd15d288ea0c}{tearDown}() 
+00117   \{
+00118       \textcolor{keyword}{delete} a;
+00119       \textcolor{keyword}{delete} b;
+00120       \textcolor{keyword}{delete} c;
+00121   \}
+00122 
+00123     
+00124 \textcolor{keyword}{private}:
+00125     \textcolor{comment}{//Private pointer to use in the library}
+\hypertarget{_my_test_c_ase_8h_source.tex_l00126}{}\hyperlink{class_my_test_c_ase_a9b2a4413041a47316ddc140e862e3bcc_a9b2a4413041a47316ddc140e862e3bcc}{00126}     \hyperlink{classclient}{client} *a,*b,*\hyperlink{class_my_test_c_ase_a9b2a4413041a47316ddc140e862e3bcc_a9b2a4413041a47316ddc140e862e3bcc}{c};
+00127     
+00128 \};
+00129 
+00130 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* MYTESTCASE\_H */}\textcolor{preprocessor}{}
+00131 
+\end{DoxyCode}

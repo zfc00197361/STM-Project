@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e" kind="class" language="C++" prot="public">
+    <compoundname>CARPHONE_WAREHOUSE</compoundname>
+    <basecompoundref refid="class_w_a_r_e_h_o_u_s_e" prot="public" virt="non-virtual">WAREHOUSE</basecompoundref>
+    <includes refid="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" local="no">CARPHONE_WAREHOUSE.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a085b59da7d9f351043de6398b98898a7" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CARPHONE_WAREHOUSE::_shop_address</definition>
+        <argsstring></argsstring>
+        <name>_shop_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="111" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4ac330ca32a05ae4391a00db62ca6128" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string CARPHONE_WAREHOUSE::_shop_name</definition>
+        <argsstring></argsstring>
+        <name>_shop_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="112" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1af8f016cde9df0070da24fb8804f3d6ca" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CARPHONE_WAREHOUSE::_number_of_iphones</definition>
+        <argsstring></argsstring>
+        <name>_number_of_iphones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="113" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a6ee4003dc7303c7df17f67a26556bdf0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CARPHONE_WAREHOUSE::_number_of_samsung</definition>
+        <argsstring></argsstring>
+        <name>_number_of_samsung</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="114" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1acf5bfebe1b5427a0b932f0cdc3b1ccdb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CARPHONE_WAREHOUSE::_number_of_sony</definition>
+        <argsstring></argsstring>
+        <name>_number_of_sony</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="115" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4bf36b969e0873142ecac780d6f240bf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CARPHONE_WAREHOUSE::_number_of_huawei</definition>
+        <argsstring></argsstring>
+        <name>_number_of_huawei</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="116" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a05e0c6f134857e06bdf9e6ae71eb9b4e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CARPHONE_WAREHOUSE::_number_of_nokia</definition>
+        <argsstring></argsstring>
+        <name>_number_of_nokia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="117" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a7e089af48a2a409a8d348d81f65d9193" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CARPHONE_WAREHOUSE::_number_of_alcatel</definition>
+        <argsstring></argsstring>
+        <name>_number_of_alcatel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="118" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0acec1e20e236b4debf1e0d26334a868" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CARPHONE_WAREHOUSE::CARPHONE_WAREHOUSE</definition>
+        <argsstring>()</argsstring>
+        <name>CARPHONE_WAREHOUSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="24" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="24" bodyend="34"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a1d3b2f023c0d6e715416f1e87e7245bb" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="21" endline="28">getBaseCopy</referencedby>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a131eb8df5342de81022b166f40f94d92" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="55" endline="67">CARPHONE_WAREHOUSE</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a1e61584abd37ed2189143f0c0d4d2e40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CARPHONE_WAREHOUSE::CARPHONE_WAREHOUSE</definition>
+        <argsstring>(std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)</argsstring>
+        <name>CARPHONE_WAREHOUSE</name>
+        <param>
+          <type>std::string</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>shop_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iphone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>samsung</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sony</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>huawei</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nokia</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>alcatel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="38" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="38" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a131eb8df5342de81022b166f40f94d92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CARPHONE_WAREHOUSE::CARPHONE_WAREHOUSE</definition>
+        <argsstring>(std::shared_ptr&lt; WAREHOUSE &gt; obj, int _version, int _unique_id)</argsstring>
+        <name>CARPHONE_WAREHOUSE</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_w_a_r_e_h_o_u_s_e" kindref="compound">WAREHOUSE</ref> &gt;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_version</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_unique_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom constructor, used by the library for deep copying </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="55" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="55" bodyend="67"/>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0acec1e20e236b4debf1e0d26334a868" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="24" endline="34">CARPHONE_WAREHOUSE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a7b2446d35d557bdfaa8dbd769f845abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>CARPHONE_WAREHOUSE::CARPHONE_WAREHOUSE</definition>
+        <argsstring>(const CARPHONE_WAREHOUSE &amp;orig)</argsstring>
+        <name>CARPHONE_WAREHOUSE</name>
+        <param>
+          <type>const <ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e" kindref="compound">CARPHONE_WAREHOUSE</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="71" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="11" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e" kindref="compound">CARPHONE_WAREHOUSE</ref></type>
+        <definition>CARPHONE_WAREHOUSE CARPHONE_WAREHOUSE::operator=</definition>
+        <argsstring>(const CARPHONE_WAREHOUSE &amp;orig)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e" kindref="compound">CARPHONE_WAREHOUSE</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="75" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="75" bodyend="75"/>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ad125d83e519b6c7ca025a7e2b705c2a8" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="14" endline="15">~CARPHONE_WAREHOUSE</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ab9ecf71cd2728f348a5b61df698e054c" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="34" endline="49">copy</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a1d3b2f023c0d6e715416f1e87e7245bb" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="21" endline="28">getBaseCopy</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4d96bb512ffcd1e0b13f632cb7fd242b" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="60" endline="63">toString</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a84d8d820016c7eb50323c2dcbb4d73f3" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="67" endline="69">SetNumber_of_alcatel</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d278005b2ba46869f6787681ad05704" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="71" endline="73">GetNumber_of_alcatel</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a5f2abf60f6fa8a614fadb1419bf1de83" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="75" endline="77">SetNumber_of_nokia</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1aac1959dee51204439fc0721403d23447" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="79" endline="81">GetNumber_of_nokia</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a87ba00e49e5b201548c57ef4b8beaeff" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="83" endline="85">SetNumber_of_huawei</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a9200c484f288fce0246008e5d683507f" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="87" endline="89">GetNumber_of_huawei</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ac59a3e67850e4ce6db9f0f0d5a72d8df" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="91" endline="93">SetNumber_of_sony</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a955e5b413e1f41a36dcc12837664f364" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="95" endline="97">GetNumber_of_sony</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a179265eb31e367a082eb4048f38e602d" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="99" endline="101">SetNumber_of_samsung</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0cd9d93b5b145846627d3005dff71f6f" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="103" endline="105">GetNumber_of_samsung</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a167a9f9ac25b17395e5964b57099b462" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="107" endline="109">SetNumber_of_iphones</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a640af469d055cb8836c42ac4ce135e6f" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="111" endline="113">GetNumber_of_iphones</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a832266a32b6ee4be5e531aaacb83610c" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="115" endline="117">SetShop_name</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4932d1483f97e12e01be200951c572df" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="119" endline="121">GetShop_name</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1af26abc216ad013f1cb8ea2b3f788e048" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="123" endline="125">SetShop_address</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a90c80d52aa860d00c3fb9c165646637b" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="127" endline="129">GetShop_address</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ad125d83e519b6c7ca025a7e2b705c2a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>CARPHONE_WAREHOUSE::~CARPHONE_WAREHOUSE</definition>
+        <argsstring>()</argsstring>
+        <name>~CARPHONE_WAREHOUSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>de-constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="79" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="14" bodyend="15"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ab9ecf71cd2728f348a5b61df698e054c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CARPHONE_WAREHOUSE::copy</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; to, std::shared_ptr&lt; OSTM &gt; from)</argsstring>
+        <name>copy</name>
+        <reimplements refid="class_o_s_t_m_1a535d90fced5adbb70312c92f3778e08d">copy</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+<para>copy function, make deep copy of the object/pointer </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objTO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a BANK* type object casted back from std::shared_ptr&lt;OSTM&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>objFROM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a BANK* type object casted back from std::shared_ptr&lt;OSTM&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="84" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="34" bodyend="49"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a1d3b2f023c0d6e715416f1e87e7245bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; OSTM &gt; CARPHONE_WAREHOUSE::getBaseCopy</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; object)</argsstring>
+        <name>getBaseCopy</name>
+        <reimplements refid="class_o_s_t_m_1a0bfa3763bd441407dd6365f42714f94c">getBaseCopy</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objTO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a <ref refid="class_b_a_n_k" kindref="compound">BANK</ref> type pointer for casting </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a BANK* return type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="85" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="21" bodyend="28"/>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0acec1e20e236b4debf1e0d26334a868" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="24" endline="34">CARPHONE_WAREHOUSE</references>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4d96bb512ffcd1e0b13f632cb7fd242b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CARPHONE_WAREHOUSE::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_o_s_t_m_1a513396a115f2987fd07c203309ae8a59">toString</reimplements>
+        <briefdescription>
+<para>_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type </para>        </briefdescription>
+        <detaileddescription>
+<para>toString function, displays the object values in formatted way </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="89" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="60" bodyend="63"/>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4932d1483f97e12e01be200951c572df" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="119" endline="121">GetShop_name</references>
+        <references refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" compoundref="_o_s_t_m_8cpp" startline="73" endline="76">OSTM::Get_Unique_ID</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a90c80d52aa860d00c3fb9c165646637b" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="127" endline="129">GetShop_address</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a640af469d055cb8836c42ac4ce135e6f" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="111" endline="113">GetNumber_of_iphones</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0cd9d93b5b145846627d3005dff71f6f" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="103" endline="105">GetNumber_of_samsung</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a955e5b413e1f41a36dcc12837664f364" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="95" endline="97">GetNumber_of_sony</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a9200c484f288fce0246008e5d683507f" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="87" endline="89">GetNumber_of_huawei</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1aac1959dee51204439fc0721403d23447" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="79" endline="81">GetNumber_of_nokia</references>
+        <references refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d278005b2ba46869f6787681ad05704" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="71" endline="73">GetNumber_of_alcatel</references>
+        <references refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" compoundref="_o_s_t_m_8cpp" startline="89" endline="92">OSTM::Get_Version</references>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a84d8d820016c7eb50323c2dcbb4d73f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CARPHONE_WAREHOUSE::SetNumber_of_alcatel</definition>
+        <argsstring>(int _number_of_alcatel)</argsstring>
+        <name>SetNumber_of_alcatel</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a91b45d7d40a154308644a9f2b1767d28">SetNumber_of_alcatel</reimplements>
+        <param>
+          <type>int</type>
+          <declname>_number_of_alcatel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="93" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="67" bodyend="69"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d278005b2ba46869f6787681ad05704" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int CARPHONE_WAREHOUSE::GetNumber_of_alcatel</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_alcatel</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a9d9d5bc37ddd3763ea633d07785b6020">GetNumber_of_alcatel</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="94" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="71" bodyend="73"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4d96bb512ffcd1e0b13f632cb7fd242b" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="60" endline="63">toString</referencedby>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a5f2abf60f6fa8a614fadb1419bf1de83" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CARPHONE_WAREHOUSE::SetNumber_of_nokia</definition>
+        <argsstring>(int _number_of_nokia)</argsstring>
+        <name>SetNumber_of_nokia</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a300d1fe21a47e45c0d5d27e25add346f">SetNumber_of_nokia</reimplements>
+        <param>
+          <type>int</type>
+          <declname>_number_of_nokia</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="95" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="75" bodyend="77"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1aac1959dee51204439fc0721403d23447" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int CARPHONE_WAREHOUSE::GetNumber_of_nokia</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_nokia</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a1a0f7539989c00290934e8b671f2fb1c">GetNumber_of_nokia</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="96" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="79" bodyend="81"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4d96bb512ffcd1e0b13f632cb7fd242b" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="60" endline="63">toString</referencedby>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a87ba00e49e5b201548c57ef4b8beaeff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CARPHONE_WAREHOUSE::SetNumber_of_huawei</definition>
+        <argsstring>(int _number_of_huawei)</argsstring>
+        <name>SetNumber_of_huawei</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1ad29bd0333bd7f17178dc107a00e23954">SetNumber_of_huawei</reimplements>
+        <param>
+          <type>int</type>
+          <declname>_number_of_huawei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="97" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="83" bodyend="85"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a9200c484f288fce0246008e5d683507f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int CARPHONE_WAREHOUSE::GetNumber_of_huawei</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_huawei</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1acacc58d1ceea41e968a6d245007ea127">GetNumber_of_huawei</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="98" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="87" bodyend="89"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4d96bb512ffcd1e0b13f632cb7fd242b" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="60" endline="63">toString</referencedby>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ac59a3e67850e4ce6db9f0f0d5a72d8df" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CARPHONE_WAREHOUSE::SetNumber_of_sony</definition>
+        <argsstring>(int _number_of_sony)</argsstring>
+        <name>SetNumber_of_sony</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a709e5a9f4b439d0507fe74cc1a362ee1">SetNumber_of_sony</reimplements>
+        <param>
+          <type>int</type>
+          <declname>_number_of_sony</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="99" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="91" bodyend="93"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a955e5b413e1f41a36dcc12837664f364" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int CARPHONE_WAREHOUSE::GetNumber_of_sony</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_sony</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1abb7da1fee113e81fbb06190606fddb4d">GetNumber_of_sony</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="100" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="95" bodyend="97"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4d96bb512ffcd1e0b13f632cb7fd242b" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="60" endline="63">toString</referencedby>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a179265eb31e367a082eb4048f38e602d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CARPHONE_WAREHOUSE::SetNumber_of_samsung</definition>
+        <argsstring>(int _number_of_samsung)</argsstring>
+        <name>SetNumber_of_samsung</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a5564efbb5f54f663208a17c6f7f440e2">SetNumber_of_samsung</reimplements>
+        <param>
+          <type>int</type>
+          <declname>_number_of_samsung</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="101" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="99" bodyend="101"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0cd9d93b5b145846627d3005dff71f6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int CARPHONE_WAREHOUSE::GetNumber_of_samsung</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_samsung</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a817b030450f48bc24e3cc6de5dadefec">GetNumber_of_samsung</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="102" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="103" bodyend="105"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4d96bb512ffcd1e0b13f632cb7fd242b" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="60" endline="63">toString</referencedby>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a167a9f9ac25b17395e5964b57099b462" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CARPHONE_WAREHOUSE::SetNumber_of_iphones</definition>
+        <argsstring>(int _number_of_iphones)</argsstring>
+        <name>SetNumber_of_iphones</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a05e7450e1f1e711a53a4d9d40fb9dfa3">SetNumber_of_iphones</reimplements>
+        <param>
+          <type>int</type>
+          <declname>_number_of_iphones</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="103" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="107" bodyend="109"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a640af469d055cb8836c42ac4ce135e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int CARPHONE_WAREHOUSE::GetNumber_of_iphones</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_iphones</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a08312d1a68ff48d459ad637df6aaf2f1">GetNumber_of_iphones</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="104" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="111" bodyend="113"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4d96bb512ffcd1e0b13f632cb7fd242b" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="60" endline="63">toString</referencedby>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a832266a32b6ee4be5e531aaacb83610c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CARPHONE_WAREHOUSE::SetShop_name</definition>
+        <argsstring>(std::string _shop_name)</argsstring>
+        <name>SetShop_name</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1ae5cb8c03a4ef0d2e84bbe34312bb01e4">SetShop_name</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>_shop_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="105" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="115" bodyend="117"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4932d1483f97e12e01be200951c572df" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string CARPHONE_WAREHOUSE::GetShop_name</definition>
+        <argsstring>()</argsstring>
+        <name>GetShop_name</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a4d39386ec25ec71b513eb7382e5cd869">GetShop_name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="106" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="119" bodyend="121"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4d96bb512ffcd1e0b13f632cb7fd242b" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="60" endline="63">toString</referencedby>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1af26abc216ad013f1cb8ea2b3f788e048" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void CARPHONE_WAREHOUSE::SetShop_address</definition>
+        <argsstring>(std::string _shop_address)</argsstring>
+        <name>SetShop_address</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a1accf4c214a11a532cad88729d44b91d">SetShop_address</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>_shop_address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="107" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="123" bodyend="125"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a90c80d52aa860d00c3fb9c165646637b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string CARPHONE_WAREHOUSE::GetShop_address</definition>
+        <argsstring>()</argsstring>
+        <name>GetShop_address</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a50c29c2f95d148239e8b43b8a0046a31">GetShop_address</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CARPHONE_WAREHOUSE.h" line="108" column="1" bodyfile="CARPHONE_WAREHOUSE.cpp" bodystart="127" bodyend="129"/>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4d96bb512ffcd1e0b13f632cb7fd242b" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" startline="60" endline="63">toString</referencedby>
+        <referencedby refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" compoundref="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Inherit from <ref refid="class_w_a_r_e_h_o_u_s_e" kindref="compound">WAREHOUSE</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="147">
+        <label>WAREHOUSE</label>
+        <link refid="class_w_a_r_e_h_o_u_s_e"/>
+        <childnode refid="148" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>OSTM</label>
+        <link refid="class_o_s_t_m"/>
+      </node>
+      <node id="146">
+        <label>CARPHONE_WAREHOUSE</label>
+        <link refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e"/>
+        <childnode refid="147" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="150">
+        <label>WAREHOUSE</label>
+        <link refid="class_w_a_r_e_h_o_u_s_e"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>OSTM</label>
+        <link refid="class_o_s_t_m"/>
+      </node>
+      <node id="149">
+        <label>CARPHONE_WAREHOUSE</label>
+        <link refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e"/>
+        <childnode refid="150" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="CARPHONE_WAREHOUSE.h" line="19" column="1" bodyfile="CARPHONE_WAREHOUSE.h" bodystart="19" bodyend="120"/>
+    <listofallmembers>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a7e089af48a2a409a8d348d81f65d9193" prot="private" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>_number_of_alcatel</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4bf36b969e0873142ecac780d6f240bf" prot="private" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>_number_of_huawei</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1af8f016cde9df0070da24fb8804f3d6ca" prot="private" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>_number_of_iphones</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a05e0c6f134857e06bdf9e6ae71eb9b4e" prot="private" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>_number_of_nokia</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a6ee4003dc7303c7df17f67a26556bdf0" prot="private" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>_number_of_samsung</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1acf5bfebe1b5427a0b932f0cdc3b1ccdb" prot="private" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>_number_of_sony</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a085b59da7d9f351043de6398b98898a7" prot="private" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>_shop_address</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4ac330ca32a05ae4391a00db62ca6128" prot="private" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>_shop_name</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0acec1e20e236b4debf1e0d26334a868" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>CARPHONE_WAREHOUSE</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a1e61584abd37ed2189143f0c0d4d2e40" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>CARPHONE_WAREHOUSE</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a131eb8df5342de81022b166f40f94d92" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>CARPHONE_WAREHOUSE</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a7b2446d35d557bdfaa8dbd769f845abb" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>CARPHONE_WAREHOUSE</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ab9ecf71cd2728f348a5b61df698e054c" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>copy</name></member>
+      <member refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>Get_Unique_ID</name></member>
+      <member refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>Get_Version</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a1d3b2f023c0d6e715416f1e87e7245bb" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>getBaseCopy</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d278005b2ba46869f6787681ad05704" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>GetNumber_of_alcatel</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a9200c484f288fce0246008e5d683507f" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>GetNumber_of_huawei</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a640af469d055cb8836c42ac4ce135e6f" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>GetNumber_of_iphones</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1aac1959dee51204439fc0721403d23447" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>GetNumber_of_nokia</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0cd9d93b5b145846627d3005dff71f6f" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>GetNumber_of_samsung</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a955e5b413e1f41a36dcc12837664f364" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>GetNumber_of_sony</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a90c80d52aa860d00c3fb9c165646637b" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>GetShop_address</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4932d1483f97e12e01be200951c572df" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>GetShop_name</name></member>
+      <member refid="class_o_s_t_m_1a5f90caa4384d371c16b7cac860d9f89a" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>increase_VersionNumber</name></member>
+      <member refid="class_o_s_t_m_1afc2851abf5342c3c67342c2c14820115" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>Is_Abort_Transaction</name></member>
+      <member refid="class_o_s_t_m_1a8df39ced3b401aa466df97e26d14b1b7" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>Is_Can_Commit</name></member>
+      <member refid="class_o_s_t_m_1afb6520023ed2c4a6188b688c46f192d0" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>is_Locked</name></member>
+      <member refid="class_o_s_t_m_1af192c598a3c647f37aaba5757e60240f" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>lock_Mutex</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>operator=</name></member>
+      <member refid="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>OSTM</name></member>
+      <member refid="class_o_s_t_m_1a2314f55a127b94aa8a51d19ba798401e" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>OSTM</name></member>
+      <member refid="class_o_s_t_m_1aba384cf65c5f56f5b86833730c3c6ea4" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>Set_Abort_Transaction</name></member>
+      <member refid="class_o_s_t_m_1a813ee61c9d1c83c6a6ae30d12aca8a5d" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>Set_Can_Commit</name></member>
+      <member refid="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>Set_Unique_ID</name></member>
+      <member refid="class_o_s_t_m_1a9529ad8d6d28c1f0cc9b86ed91df1ae1" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>Set_Version</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a84d8d820016c7eb50323c2dcbb4d73f3" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>SetNumber_of_alcatel</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a87ba00e49e5b201548c57ef4b8beaeff" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>SetNumber_of_huawei</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a167a9f9ac25b17395e5964b57099b462" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>SetNumber_of_iphones</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a5f2abf60f6fa8a614fadb1419bf1de83" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>SetNumber_of_nokia</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a179265eb31e367a082eb4048f38e602d" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>SetNumber_of_samsung</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ac59a3e67850e4ce6db9f0f0d5a72d8df" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>SetNumber_of_sony</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1af26abc216ad013f1cb8ea2b3f788e048" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>SetShop_address</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a832266a32b6ee4be5e531aaacb83610c" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>SetShop_name</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4d96bb512ffcd1e0b13f632cb7fd242b" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>toString</name></member>
+      <member refid="class_o_s_t_m_1a6cd703bc26c719fd95b4f5362d050762" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>unlock_Mutex</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a7a924d389af91f54ed0e1d1d8d56ec57" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>WAREHOUSE</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a91a50ed8f6eeb344b1785f750532b18a" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>WAREHOUSE</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a4782d251d2203377f8e9f331ba3b0a7e" prot="public" virt="non-virtual"><scope>CARPHONE_WAREHOUSE</scope><name>WAREHOUSE</name></member>
+      <member refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ad125d83e519b6c7ca025a7e2b705c2a8" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>~CARPHONE_WAREHOUSE</name></member>
+      <member refid="class_o_s_t_m_1a30a17d73d0259c60eeab72d6dfa9ceb1" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>~OSTM</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1ad5aa686839d7be9bfea33d469c58086b" prot="public" virt="virtual"><scope>CARPHONE_WAREHOUSE</scope><name>~WAREHOUSE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

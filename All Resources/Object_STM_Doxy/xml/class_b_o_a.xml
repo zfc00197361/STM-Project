@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_b_o_a" kind="class" language="C++" prot="public">
+    <compoundname>BOA</compoundname>
+    <basecompoundref refid="class_b_a_n_k" prot="public" virt="non-virtual">BANK</basecompoundref>
+    <includes refid="_b_o_a_8h" local="no">BOA.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_b_o_a_1aed3225e383c08b1b7c962a0e43b180d1" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string BOA::fullname</definition>
+        <argsstring></argsstring>
+        <name>fullname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="95" column="1" bodyfile="BOA.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_o_a_1acb1b3b2a69e403c4e0e3fb08fdbb52a0" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string BOA::firstName</definition>
+        <argsstring></argsstring>
+        <name>firstName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="96" column="1" bodyfile="BOA.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_o_a_1ab7749e6e945beaca57a3ef01259c6fea" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string BOA::lastName</definition>
+        <argsstring></argsstring>
+        <name>lastName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="97" column="1" bodyfile="BOA.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_o_a_1a86ca4ad716db205f04c337b39b34d9ba" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BOA::accountNumber</definition>
+        <argsstring></argsstring>
+        <name>accountNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="98" column="1" bodyfile="BOA.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_o_a_1a2061c36a15924de9186ec5c83dc7da2f" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double BOA::balance</definition>
+        <argsstring></argsstring>
+        <name>balance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="99" column="1" bodyfile="BOA.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_o_a_1afb2d7d0c5c05169a72bbc6f1d2cc737f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string BOA::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="100" column="1" bodyfile="BOA.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_b_o_a_1ad42dc670d422172c9bcf9b3d354c8a3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BOA::BOA</definition>
+        <argsstring>()</argsstring>
+        <name>BOA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="24" column="1" bodyfile="BOA.h" bodystart="24" bodyend="31"/>
+        <referencedby refid="class_b_o_a_1a46ace5d3c945a423e93912673cadfad5" compoundref="_b_o_a_8cpp" startline="22" endline="28">getBaseCopy</referencedby>
+        <referencedby refid="class_b_o_a_1ab87192ed986e601c2eb682ea3745daf0" compoundref="_b_o_a_8h" startline="46" endline="54">BOA</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a898c8627b8976bbe1a7d0fc780642b25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BOA::BOA</definition>
+        <argsstring>(int accountNumber, double balance, std::string firstName, std::string lastName, std::string address)</argsstring>
+        <name>BOA</name>
+        <param>
+          <type>int</type>
+          <declname>accountNumber</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>balance</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>firstName</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>lastName</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="35" column="1" bodyfile="BOA.h" bodystart="35" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1ab87192ed986e601c2eb682ea3745daf0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BOA::BOA</definition>
+        <argsstring>(std::shared_ptr&lt; BANK &gt; obj, int _version, int _unique_id)</argsstring>
+        <name>BOA</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_b_a_n_k" kindref="compound">BANK</ref> &gt;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_version</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_unique_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom constructor, used by the library for deep copying </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="46" column="1" bodyfile="BOA.h" bodystart="46" bodyend="54"/>
+        <references refid="class_b_o_a_1ad42dc670d422172c9bcf9b3d354c8a3c" compoundref="_b_o_a_8h" startline="24" endline="31">BOA</references>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a99ebf22a8d824761dc82e7e191e6f173" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BOA::BOA</definition>
+        <argsstring>(const BOA &amp;orig)</argsstring>
+        <name>BOA</name>
+        <param>
+          <type>const <ref refid="class_b_o_a" kindref="compound">BOA</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="60" column="1" bodyfile="BOA.cpp" bodystart="12" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_b_o_a" kindref="compound">BOA</ref></type>
+        <definition>BOA BOA::operator=</definition>
+        <argsstring>(const BOA &amp;orig)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_b_o_a" kindref="compound">BOA</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="64" column="1" bodyfile="BOA.h" bodystart="64" bodyend="65"/>
+        <references refid="class_b_o_a_1abe27b17a23ceffc6269dbe6d81de5212" compoundref="_b_o_a_8cpp" startline="15" endline="16">~BOA</references>
+        <references refid="class_b_o_a_1a54fbcabb55b22fb72f45986768974403" compoundref="_b_o_a_8cpp" startline="34" endline="43">copy</references>
+        <references refid="class_b_o_a_1a46ace5d3c945a423e93912673cadfad5" compoundref="_b_o_a_8cpp" startline="22" endline="28">getBaseCopy</references>
+        <references refid="class_b_o_a_1a348df0299997f81bcad0ec034dab0b8d" compoundref="_b_o_a_8cpp" startline="54" endline="58">toString</references>
+        <references refid="class_b_o_a_1a2568c0027af6534bd08dde882e892caf" compoundref="_b_o_a_8cpp" startline="60" endline="62">SetAddress</references>
+        <references refid="class_b_o_a_1aa4aa2cf1ef0e876bb7911c00b5374493" compoundref="_b_o_a_8cpp" startline="64" endline="66">GetAddress</references>
+        <references refid="class_b_o_a_1a0e06a7b7669b6a26a41b37d68f0a87b8" compoundref="_b_o_a_8cpp" startline="68" endline="70">SetBalance</references>
+        <references refid="class_b_o_a_1a07e30b7e5f5f20392b94af7344fd550c" compoundref="_b_o_a_8cpp" startline="72" endline="74">GetBalance</references>
+        <references refid="class_b_o_a_1a6b85963680344bd719ab862a50a09588" compoundref="_b_o_a_8cpp" startline="76" endline="78">SetAccountNumber</references>
+        <references refid="class_b_o_a_1ad64bd63675f8902153aa6767994f05dc" compoundref="_b_o_a_8cpp" startline="80" endline="82">GetAccountNumber</references>
+        <references refid="class_b_o_a_1a7ea44308c05532cd11ff3ce8f14ea4c2" compoundref="_b_o_a_8cpp" startline="84" endline="86">SetLastName</references>
+        <references refid="class_b_o_a_1a081383edefc1f66b80c3fb8862ab070b" compoundref="_b_o_a_8cpp" startline="88" endline="90">GetLastName</references>
+        <references refid="class_b_o_a_1a32fabc2b3acde832f3749696b302a0fe" compoundref="_b_o_a_8cpp" startline="92" endline="94">SetFirstName</references>
+        <references refid="class_b_o_a_1ae6bb3df4e1fb210610325ffd1985c7c0" compoundref="_b_o_a_8cpp" startline="96" endline="98">GetFirstName</references>
+        <references refid="class_b_o_a_1a7ff134d56805088f46df8eb6f21a0a45" compoundref="_b_o_a_8cpp" startline="100" endline="102">SetFullname</references>
+        <references refid="class_b_o_a_1afafa24a20fda93382782cab66a3079ee" compoundref="_b_o_a_8cpp" startline="104" endline="106">GetFullname</references>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1abe27b17a23ceffc6269dbe6d81de5212" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>BOA::~BOA</definition>
+        <argsstring>()</argsstring>
+        <name>~BOA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>de-constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="69" column="1" bodyfile="BOA.cpp" bodystart="15" bodyend="16"/>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a54fbcabb55b22fb72f45986768974403" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BOA::copy</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; to, std::shared_ptr&lt; OSTM &gt; from)</argsstring>
+        <name>copy</name>
+        <reimplements refid="class_o_s_t_m_1a535d90fced5adbb70312c92f3778e08d">copy</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+<para>copy function, make deep copy of the object/pointer </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objTO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a std::shared_ptr&lt;BANK&gt; type object casted back from std::shared_ptr&lt;OSTM&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>objFROM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a std::shared_ptr&lt;BANK&gt; type object casted back from std::shared_ptr&lt;OSTM&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="75" column="1" bodyfile="BOA.cpp" bodystart="34" bodyend="43"/>
+        <references refid="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93" compoundref="_o_s_t_m_8cpp" startline="66" endline="68">OSTM::Set_Unique_ID</references>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a46ace5d3c945a423e93912673cadfad5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; OSTM &gt; BOA::getBaseCopy</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; object)</argsstring>
+        <name>getBaseCopy</name>
+        <reimplements refid="class_o_s_t_m_1a0bfa3763bd441407dd6365f42714f94c">getBaseCopy</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>getBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr&lt;BANK&gt; type object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objTO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a <ref refid="class_b_a_n_k" kindref="compound">BANK</ref> type pointer for casting </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a std::shared_ptr&lt;BANK&gt; return type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="76" column="1" bodyfile="BOA.cpp" bodystart="22" bodyend="28"/>
+        <references refid="class_b_o_a_1ad42dc670d422172c9bcf9b3d354c8a3c" compoundref="_b_o_a_8h" startline="24" endline="31">BOA</references>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a348df0299997f81bcad0ec034dab0b8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BOA::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_o_s_t_m_1a513396a115f2987fd07c203309ae8a59">toString</reimplements>
+        <briefdescription>
+<para>_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type </para>        </briefdescription>
+        <detaileddescription>
+<para>toString function, displays the object values in formatted way </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="77" column="1" bodyfile="BOA.cpp" bodystart="54" bodyend="58"/>
+        <references refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" compoundref="_o_s_t_m_8cpp" startline="73" endline="76">OSTM::Get_Unique_ID</references>
+        <references refid="class_b_o_a_1ad64bd63675f8902153aa6767994f05dc" compoundref="_b_o_a_8cpp" startline="80" endline="82">GetAccountNumber</references>
+        <references refid="class_b_o_a_1a07e30b7e5f5f20392b94af7344fd550c" compoundref="_b_o_a_8cpp" startline="72" endline="74">GetBalance</references>
+        <references refid="class_b_o_a_1ae6bb3df4e1fb210610325ffd1985c7c0" compoundref="_b_o_a_8cpp" startline="96" endline="98">GetFirstName</references>
+        <references refid="class_b_o_a_1a081383edefc1f66b80c3fb8862ab070b" compoundref="_b_o_a_8cpp" startline="88" endline="90">GetLastName</references>
+        <references refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" compoundref="_o_s_t_m_8cpp" startline="89" endline="92">OSTM::Get_Version</references>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a2568c0027af6534bd08dde882e892caf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BOA::SetAddress</definition>
+        <argsstring>(std::string address)</argsstring>
+        <name>SetAddress</name>
+        <reimplements refid="class_b_a_n_k_1a52ad99454b2059d44967868157208393">SetAddress</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="82" column="1" bodyfile="BOA.cpp" bodystart="60" bodyend="62"/>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1aa4aa2cf1ef0e876bb7911c00b5374493" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string BOA::GetAddress</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAddress</name>
+        <reimplements refid="class_b_a_n_k_1a358741f647f9494026e02fd3fd27cde6">GetAddress</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="83" column="1" bodyfile="BOA.cpp" bodystart="64" bodyend="66"/>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a0e06a7b7669b6a26a41b37d68f0a87b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BOA::SetBalance</definition>
+        <argsstring>(double balance)</argsstring>
+        <name>SetBalance</name>
+        <reimplements refid="class_b_a_n_k_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</reimplements>
+        <param>
+          <type>double</type>
+          <declname>balance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="84" column="1" bodyfile="BOA.cpp" bodystart="68" bodyend="70"/>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a07e30b7e5f5f20392b94af7344fd550c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double BOA::GetBalance</definition>
+        <argsstring>() const </argsstring>
+        <name>GetBalance</name>
+        <reimplements refid="class_b_a_n_k_1a7ac46c74859cebdc933cb27e148d18b1">GetBalance</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="85" column="1" bodyfile="BOA.cpp" bodystart="72" bodyend="74"/>
+        <referencedby refid="class_b_o_a_1a348df0299997f81bcad0ec034dab0b8d" compoundref="_b_o_a_8cpp" startline="54" endline="58">toString</referencedby>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a6b85963680344bd719ab862a50a09588" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BOA::SetAccountNumber</definition>
+        <argsstring>(int accountNumber)</argsstring>
+        <name>SetAccountNumber</name>
+        <reimplements refid="class_b_a_n_k_1a9d8fb8bde35d63eca7e9f87d22b45752">SetAccountNumber</reimplements>
+        <param>
+          <type>int</type>
+          <declname>accountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="86" column="1" bodyfile="BOA.cpp" bodystart="76" bodyend="78"/>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1ad64bd63675f8902153aa6767994f05dc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int BOA::GetAccountNumber</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAccountNumber</name>
+        <reimplements refid="class_b_a_n_k_1a62adf3cea60d863a4a10eeee485fa1aa">GetAccountNumber</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="87" column="1" bodyfile="BOA.cpp" bodystart="80" bodyend="82"/>
+        <referencedby refid="class_b_o_a_1a348df0299997f81bcad0ec034dab0b8d" compoundref="_b_o_a_8cpp" startline="54" endline="58">toString</referencedby>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a7ea44308c05532cd11ff3ce8f14ea4c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BOA::SetLastName</definition>
+        <argsstring>(std::string lastName)</argsstring>
+        <name>SetLastName</name>
+        <reimplements refid="class_b_a_n_k_1a2dc1b7664f9e3b005cb33e71b2ba42ee">SetLastName</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>lastName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="88" column="1" bodyfile="BOA.cpp" bodystart="84" bodyend="86"/>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a081383edefc1f66b80c3fb8862ab070b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string BOA::GetLastName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLastName</name>
+        <reimplements refid="class_b_a_n_k_1a4612063ec2bfd6d883a77a0d3697af90">GetLastName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="89" column="1" bodyfile="BOA.cpp" bodystart="88" bodyend="90"/>
+        <referencedby refid="class_b_o_a_1a348df0299997f81bcad0ec034dab0b8d" compoundref="_b_o_a_8cpp" startline="54" endline="58">toString</referencedby>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a32fabc2b3acde832f3749696b302a0fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BOA::SetFirstName</definition>
+        <argsstring>(std::string firstName)</argsstring>
+        <name>SetFirstName</name>
+        <reimplements refid="class_b_a_n_k_1a547cb9f21be894f045bb3cec6b12525c">SetFirstName</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>firstName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="90" column="1" bodyfile="BOA.cpp" bodystart="92" bodyend="94"/>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1ae6bb3df4e1fb210610325ffd1985c7c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string BOA::GetFirstName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFirstName</name>
+        <reimplements refid="class_b_a_n_k_1ad0ba1c785c67e7d4760dc8776f3d4bca">GetFirstName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="91" column="1" bodyfile="BOA.cpp" bodystart="96" bodyend="98"/>
+        <referencedby refid="class_b_o_a_1a348df0299997f81bcad0ec034dab0b8d" compoundref="_b_o_a_8cpp" startline="54" endline="58">toString</referencedby>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1a7ff134d56805088f46df8eb6f21a0a45" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BOA::SetFullname</definition>
+        <argsstring>(std::string fullname)</argsstring>
+        <name>SetFullname</name>
+        <reimplements refid="class_b_a_n_k_1a8845dbfc7ddfbc2e0c0efda561a70ec3">SetFullname</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>fullname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="92" column="1" bodyfile="BOA.cpp" bodystart="100" bodyend="102"/>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_o_a_1afafa24a20fda93382782cab66a3079ee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string BOA::GetFullname</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFullname</name>
+        <reimplements refid="class_b_a_n_k_1aa1528c533bf6389bc8d7f3eeca114bab">GetFullname</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="BOA.h" line="93" column="1" bodyfile="BOA.cpp" bodystart="104" bodyend="106"/>
+        <referencedby refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" compoundref="_b_o_a_8h" startline="64" endline="65">operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Inherit from <ref refid="class_b_a_n_k" kindref="compound">BANK</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="128">
+        <label>BOA</label>
+        <link refid="class_b_o_a"/>
+        <childnode refid="129" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>OSTM</label>
+        <link refid="class_o_s_t_m"/>
+      </node>
+      <node id="129">
+        <label>BANK</label>
+        <link refid="class_b_a_n_k"/>
+        <childnode refid="130" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="131">
+        <label>BOA</label>
+        <link refid="class_b_o_a"/>
+        <childnode refid="132" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>OSTM</label>
+        <link refid="class_o_s_t_m"/>
+      </node>
+      <node id="132">
+        <label>BANK</label>
+        <link refid="class_b_a_n_k"/>
+        <childnode refid="133" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="BOA.h" line="18" column="1" bodyfile="BOA.h" bodystart="18" bodyend="102"/>
+    <listofallmembers>
+      <member refid="class_b_o_a_1a86ca4ad716db205f04c337b39b34d9ba" prot="private" virt="non-virtual"><scope>BOA</scope><name>accountNumber</name></member>
+      <member refid="class_b_o_a_1afb2d7d0c5c05169a72bbc6f1d2cc737f" prot="private" virt="non-virtual"><scope>BOA</scope><name>address</name></member>
+      <member refid="class_b_o_a_1a2061c36a15924de9186ec5c83dc7da2f" prot="private" virt="non-virtual"><scope>BOA</scope><name>balance</name></member>
+      <member refid="class_b_a_n_k_1a0bc938356cebff14fb0560264abe5a34" prot="public" virt="non-virtual"><scope>BOA</scope><name>BANK</name></member>
+      <member refid="class_b_a_n_k_1a7382dd275d8f4f10a8b53ccbc93e1e87" prot="public" virt="non-virtual"><scope>BOA</scope><name>BANK</name></member>
+      <member refid="class_b_a_n_k_1a4dd657c30039ea00a040e6226c23ccd4" prot="public" virt="non-virtual"><scope>BOA</scope><name>BANK</name></member>
+      <member refid="class_b_o_a_1ad42dc670d422172c9bcf9b3d354c8a3c" prot="public" virt="non-virtual"><scope>BOA</scope><name>BOA</name></member>
+      <member refid="class_b_o_a_1a898c8627b8976bbe1a7d0fc780642b25" prot="public" virt="non-virtual"><scope>BOA</scope><name>BOA</name></member>
+      <member refid="class_b_o_a_1ab87192ed986e601c2eb682ea3745daf0" prot="public" virt="non-virtual"><scope>BOA</scope><name>BOA</name></member>
+      <member refid="class_b_o_a_1a99ebf22a8d824761dc82e7e191e6f173" prot="public" virt="non-virtual"><scope>BOA</scope><name>BOA</name></member>
+      <member refid="class_b_o_a_1a54fbcabb55b22fb72f45986768974403" prot="public" virt="virtual"><scope>BOA</scope><name>copy</name></member>
+      <member refid="class_b_o_a_1acb1b3b2a69e403c4e0e3fb08fdbb52a0" prot="private" virt="non-virtual"><scope>BOA</scope><name>firstName</name></member>
+      <member refid="class_b_o_a_1aed3225e383c08b1b7c962a0e43b180d1" prot="private" virt="non-virtual"><scope>BOA</scope><name>fullname</name></member>
+      <member refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" prot="public" virt="non-virtual"><scope>BOA</scope><name>Get_Unique_ID</name></member>
+      <member refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" prot="public" virt="non-virtual"><scope>BOA</scope><name>Get_Version</name></member>
+      <member refid="class_b_o_a_1ad64bd63675f8902153aa6767994f05dc" prot="public" virt="virtual"><scope>BOA</scope><name>GetAccountNumber</name></member>
+      <member refid="class_b_o_a_1aa4aa2cf1ef0e876bb7911c00b5374493" prot="public" virt="virtual"><scope>BOA</scope><name>GetAddress</name></member>
+      <member refid="class_b_o_a_1a07e30b7e5f5f20392b94af7344fd550c" prot="public" virt="virtual"><scope>BOA</scope><name>GetBalance</name></member>
+      <member refid="class_b_o_a_1a46ace5d3c945a423e93912673cadfad5" prot="public" virt="virtual"><scope>BOA</scope><name>getBaseCopy</name></member>
+      <member refid="class_b_o_a_1ae6bb3df4e1fb210610325ffd1985c7c0" prot="public" virt="virtual"><scope>BOA</scope><name>GetFirstName</name></member>
+      <member refid="class_b_o_a_1afafa24a20fda93382782cab66a3079ee" prot="public" virt="virtual"><scope>BOA</scope><name>GetFullname</name></member>
+      <member refid="class_b_o_a_1a081383edefc1f66b80c3fb8862ab070b" prot="public" virt="virtual"><scope>BOA</scope><name>GetLastName</name></member>
+      <member refid="class_o_s_t_m_1a5f90caa4384d371c16b7cac860d9f89a" prot="public" virt="non-virtual"><scope>BOA</scope><name>increase_VersionNumber</name></member>
+      <member refid="class_o_s_t_m_1afc2851abf5342c3c67342c2c14820115" prot="public" virt="non-virtual"><scope>BOA</scope><name>Is_Abort_Transaction</name></member>
+      <member refid="class_o_s_t_m_1a8df39ced3b401aa466df97e26d14b1b7" prot="public" virt="non-virtual"><scope>BOA</scope><name>Is_Can_Commit</name></member>
+      <member refid="class_o_s_t_m_1afb6520023ed2c4a6188b688c46f192d0" prot="public" virt="non-virtual"><scope>BOA</scope><name>is_Locked</name></member>
+      <member refid="class_b_o_a_1ab7749e6e945beaca57a3ef01259c6fea" prot="private" virt="non-virtual"><scope>BOA</scope><name>lastName</name></member>
+      <member refid="class_o_s_t_m_1af192c598a3c647f37aaba5757e60240f" prot="public" virt="non-virtual"><scope>BOA</scope><name>lock_Mutex</name></member>
+      <member refid="class_b_o_a_1af24b66f0e072b29abbbe5812cab48369" prot="public" virt="non-virtual"><scope>BOA</scope><name>operator=</name></member>
+      <member refid="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196" prot="public" virt="non-virtual"><scope>BOA</scope><name>OSTM</name></member>
+      <member refid="class_o_s_t_m_1a2314f55a127b94aa8a51d19ba798401e" prot="public" virt="non-virtual"><scope>BOA</scope><name>OSTM</name></member>
+      <member refid="class_o_s_t_m_1aba384cf65c5f56f5b86833730c3c6ea4" prot="public" virt="non-virtual"><scope>BOA</scope><name>Set_Abort_Transaction</name></member>
+      <member refid="class_o_s_t_m_1a813ee61c9d1c83c6a6ae30d12aca8a5d" prot="public" virt="non-virtual"><scope>BOA</scope><name>Set_Can_Commit</name></member>
+      <member refid="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93" prot="public" virt="non-virtual"><scope>BOA</scope><name>Set_Unique_ID</name></member>
+      <member refid="class_o_s_t_m_1a9529ad8d6d28c1f0cc9b86ed91df1ae1" prot="public" virt="non-virtual"><scope>BOA</scope><name>Set_Version</name></member>
+      <member refid="class_b_o_a_1a6b85963680344bd719ab862a50a09588" prot="public" virt="virtual"><scope>BOA</scope><name>SetAccountNumber</name></member>
+      <member refid="class_b_o_a_1a2568c0027af6534bd08dde882e892caf" prot="public" virt="virtual"><scope>BOA</scope><name>SetAddress</name></member>
+      <member refid="class_b_o_a_1a0e06a7b7669b6a26a41b37d68f0a87b8" prot="public" virt="virtual"><scope>BOA</scope><name>SetBalance</name></member>
+      <member refid="class_b_o_a_1a32fabc2b3acde832f3749696b302a0fe" prot="public" virt="virtual"><scope>BOA</scope><name>SetFirstName</name></member>
+      <member refid="class_b_o_a_1a7ff134d56805088f46df8eb6f21a0a45" prot="public" virt="virtual"><scope>BOA</scope><name>SetFullname</name></member>
+      <member refid="class_b_o_a_1a7ea44308c05532cd11ff3ce8f14ea4c2" prot="public" virt="virtual"><scope>BOA</scope><name>SetLastName</name></member>
+      <member refid="class_b_o_a_1a348df0299997f81bcad0ec034dab0b8d" prot="public" virt="virtual"><scope>BOA</scope><name>toString</name></member>
+      <member refid="class_o_s_t_m_1a6cd703bc26c719fd95b4f5362d050762" prot="public" virt="non-virtual"><scope>BOA</scope><name>unlock_Mutex</name></member>
+      <member refid="class_b_a_n_k_1ad609a1e004efdebab6495d95eced2346" prot="public" virt="virtual"><scope>BOA</scope><name>~BANK</name></member>
+      <member refid="class_b_o_a_1abe27b17a23ceffc6269dbe6d81de5212" prot="public" virt="virtual"><scope>BOA</scope><name>~BOA</name></member>
+      <member refid="class_o_s_t_m_1a30a17d73d0259c60eeab72d6dfa9ceb1" prot="public" virt="virtual"><scope>BOA</scope><name>~OSTM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

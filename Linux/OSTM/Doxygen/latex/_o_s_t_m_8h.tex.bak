@@ -4,14 +4,16 @@
 {\ttfamily \#include $<$memory$>$}\\*
 {\ttfamily \#include $<$string$>$}\\*
 {\ttfamily \#include $<$iostream$>$}\\*
-Include dependency graph for O\+S\+T\+M.\+h\+:\nopagebreak
+Include dependency graph for O\+S\+T\+M.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=326pt]{_o_s_t_m_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\+:\nopagebreak
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

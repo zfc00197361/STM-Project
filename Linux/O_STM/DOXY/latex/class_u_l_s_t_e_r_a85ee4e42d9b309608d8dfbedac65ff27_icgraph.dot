@@ -1,0 +1,12 @@
+digraph "ULSTER::GetFirstName"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ULSTER::GetFirstName",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="ULSTER::toString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_u_l_s_t_e_r.html#a341bbcb3f7d6ef10f30d4734ceed10ee",tooltip="_cast, is use to cast bak the std::shared_ptr<OSTM> to the required type "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="ULSTER::operator=",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_u_l_s_t_e_r.html#aa096fc13a27cf4c4238af3aad8382a13"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

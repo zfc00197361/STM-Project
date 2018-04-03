@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_s_w_b_p_l_c_8h">
+    <title>SWBPLC.h File Reference</title>
+    <programlisting>#include &quot;BANK.h&quot;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+<para>Include dependency diagram for SWBPLC.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_s_w_b_p_l_c_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for SWBPLC.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_s_w_b_p_l_c_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_s_w_b_p_l_c">SWBPLC</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file SWBPLC.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 <emphasis class="comment">/*&#32;</emphasis>
+3 <emphasis class="comment">&#32;*&#32;File:&#32;&#32;&#32;SWBPLC.h</emphasis>
+4 <emphasis class="comment">&#32;*&#32;Author:&#32;Zoltan&#32;Fuzesi</emphasis>
+5 <emphasis class="comment">&#32;*&#32;IT&#32;Carlow&#32;:&#32;C00197361</emphasis>
+6 <emphasis class="comment">&#32;*</emphasis>
+7 <emphasis class="comment">&#32;*&#32;Created&#32;on&#32;January&#32;17,&#32;2018,&#32;8:02&#32;PM</emphasis>
+8 <emphasis class="comment">&#32;*/</emphasis>
+9 
+10 <emphasis class="preprocessor">#ifndef&#32;SWBPLC_H</emphasis>
+11 <emphasis class="preprocessor">#define&#32;SWBPLC_H</emphasis>
+12 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_b_a_n_k_8h">BANK.h</link>&quot;</emphasis>
+13 <emphasis class="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+14 <emphasis class="preprocessor">#include&#32;&lt;memory&gt;</emphasis>
+15 <emphasis class="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+16 <emphasis class="comment">/*</emphasis>
+17 <emphasis class="comment">&#32;*&#32;Inherit&#32;from&#32;BANK</emphasis>
+18 <emphasis class="comment">&#32;*/</emphasis>
+<link linkend="class_s_w_b_p_l_c">19 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="class_s_w_b_p_l_c">SWBPLC</link>&#32;:&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="class_b_a_n_k">BANK</link>&#32;{
+20 <emphasis class="keyword">public</emphasis>:
+21 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+22 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Constructor</emphasis>
+23 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_s_w_b_p_l_c_a320f4e2b023038668d941ce5d0c46aeb_1a320f4e2b023038668d941ce5d0c46aeb">24 </link>&#32;&#32;&#32;&#32;<link linkend="class_s_w_b_p_l_c_a320f4e2b023038668d941ce5d0c46aeb_1a320f4e2b023038668d941ce5d0c46aeb">SWBPLC</link>()&#32;:&#32;<link linkend="class_b_a_n_k">BANK</link>()&#32;{
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_a5d03f989254b88bdb7eb3deeec7e4217_1a5d03f989254b88bdb7eb3deeec7e4217">accountNumber</link>&#32;=&#32;0;
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_a34365efdc6dde37a4da9a6222dcde389_1a34365efdc6dde37a4da9a6222dcde389">balance</link>&#32;=&#32;50;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_a38fd4817afe4aaac4993b0b4c7074b9c_1a38fd4817afe4aaac4993b0b4c7074b9c">firstName</link>&#32;=&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>;
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_aa06b2e569dd1fef8e43dfda1b34d67f3_1aa06b2e569dd1fef8e43dfda1b34d67f3">lastName</link>&#32;=&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>;
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_a86edad3cbbc5903c8ab8a45b22c0dd15_1a86edad3cbbc5903c8ab8a45b22c0dd15">address</link>&#32;=&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Carlow&quot;</emphasis>;
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_a5de90ba5cac0107fa5361458a0df839e_1a5de90ba5cac0107fa5361458a0df839e">fullname</link>&#32;=&#32;<link linkend="class_s_w_b_p_l_c_a38fd4817afe4aaac4993b0b4c7074b9c_1a38fd4817afe4aaac4993b0b4c7074b9c">firstName</link>&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;<link linkend="class_s_w_b_p_l_c_aa06b2e569dd1fef8e43dfda1b34d67f3_1aa06b2e569dd1fef8e43dfda1b34d67f3">lastName</link>;
+31 &#32;&#32;&#32;&#32;};
+32 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+33 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Custom&#32;constructor</emphasis>
+34 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_s_w_b_p_l_c_a29c408f7ccb7c5962dab8ac858758a89_1a29c408f7ccb7c5962dab8ac858758a89">35 </link>&#32;&#32;&#32;&#32;<link linkend="class_s_w_b_p_l_c_a29c408f7ccb7c5962dab8ac858758a89_1a29c408f7ccb7c5962dab8ac858758a89">SWBPLC</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a5d03f989254b88bdb7eb3deeec7e4217_1a5d03f989254b88bdb7eb3deeec7e4217">accountNumber</link>,&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a34365efdc6dde37a4da9a6222dcde389_1a34365efdc6dde37a4da9a6222dcde389">balance</link>,&#32;std::string&#32;<link linkend="class_s_w_b_p_l_c_a38fd4817afe4aaac4993b0b4c7074b9c_1a38fd4817afe4aaac4993b0b4c7074b9c">firstName</link>,&#32;std::string&#32;<link linkend="class_s_w_b_p_l_c_aa06b2e569dd1fef8e43dfda1b34d67f3_1aa06b2e569dd1fef8e43dfda1b34d67f3">lastName</link>,&#32;std::string&#32;<link linkend="class_s_w_b_p_l_c_a86edad3cbbc5903c8ab8a45b22c0dd15_1a86edad3cbbc5903c8ab8a45b22c0dd15">address</link>)&#32;:&#32;<link linkend="class_b_a_n_k">BANK</link>()&#32;{
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;accountNumber&#32;=&#32;<link linkend="class_s_w_b_p_l_c_a5d03f989254b88bdb7eb3deeec7e4217_1a5d03f989254b88bdb7eb3deeec7e4217">accountNumber</link>;
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;balance&#32;=&#32;<link linkend="class_s_w_b_p_l_c_a34365efdc6dde37a4da9a6222dcde389_1a34365efdc6dde37a4da9a6222dcde389">balance</link>;
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;firstName&#32;=&#32;<link linkend="class_s_w_b_p_l_c_a38fd4817afe4aaac4993b0b4c7074b9c_1a38fd4817afe4aaac4993b0b4c7074b9c">firstName</link>;
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;lastName&#32;=&#32;<link linkend="class_s_w_b_p_l_c_aa06b2e569dd1fef8e43dfda1b34d67f3_1aa06b2e569dd1fef8e43dfda1b34d67f3">lastName</link>;
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;address&#32;=&#32;<link linkend="class_s_w_b_p_l_c_a86edad3cbbc5903c8ab8a45b22c0dd15_1a86edad3cbbc5903c8ab8a45b22c0dd15">address</link>;
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_a5de90ba5cac0107fa5361458a0df839e_1a5de90ba5cac0107fa5361458a0df839e">fullname</link>&#32;=&#32;firstName&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;<link linkend="class_s_w_b_p_l_c_aa06b2e569dd1fef8e43dfda1b34d67f3_1aa06b2e569dd1fef8e43dfda1b34d67f3">lastName</link>;
+42 &#32;&#32;&#32;&#32;};
+43 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+44 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Custom&#32;constructor,&#32;used&#32;by&#32;the&#32;library&#32;for&#32;deep&#32;copying</emphasis>
+45 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_s_w_b_p_l_c_a33e460bff6f51b30209a6f5a25a24d7d_1a33e460bff6f51b30209a6f5a25a24d7d">46 </link>&#32;&#32;&#32;&#32;<link linkend="class_s_w_b_p_l_c_a33e460bff6f51b30209a6f5a25a24d7d_1a33e460bff6f51b30209a6f5a25a24d7d">SWBPLC</link>(std::shared_ptr&lt;BANK&gt;&#32;obj,&#32;<emphasis class="keywordtype">int</emphasis>&#32;_version,&#32;<emphasis class="keywordtype">int</emphasis>&#32;_unique_id)&#32;:&#32;<link linkend="class_b_a_n_k">BANK</link>(_version,&#32;_unique_id)&#32;{
+47 
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_a5d03f989254b88bdb7eb3deeec7e4217_1a5d03f989254b88bdb7eb3deeec7e4217">accountNumber</link>&#32;=&#32;obj-&gt;GetAccountNumber();
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_a34365efdc6dde37a4da9a6222dcde389_1a34365efdc6dde37a4da9a6222dcde389">balance</link>&#32;=&#32;obj-&gt;GetBalance();
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_a38fd4817afe4aaac4993b0b4c7074b9c_1a38fd4817afe4aaac4993b0b4c7074b9c">firstName</link>&#32;=&#32;obj-&gt;GetFirstName();
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_aa06b2e569dd1fef8e43dfda1b34d67f3_1aa06b2e569dd1fef8e43dfda1b34d67f3">lastName</link>&#32;=&#32;obj-&gt;GetLastName();
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_a86edad3cbbc5903c8ab8a45b22c0dd15_1a86edad3cbbc5903c8ab8a45b22c0dd15">address</link>&#32;=&#32;obj-&gt;GetAddress();
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_s_w_b_p_l_c_a5de90ba5cac0107fa5361458a0df839e_1a5de90ba5cac0107fa5361458a0df839e">fullname</link>&#32;=&#32;obj-&gt;GetFirstName()&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;obj-&gt;GetLastName();
+54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+55 &#32;&#32;&#32;&#32;};
+56 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+57 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Copy&#32;constructor</emphasis>
+58 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+59 &#32;&#32;&#32;&#32;<link linkend="class_s_w_b_p_l_c_a320f4e2b023038668d941ce5d0c46aeb_1a320f4e2b023038668d941ce5d0c46aeb">SWBPLC</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_s_w_b_p_l_c">SWBPLC</link>&amp;&#32;orig);
+60 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+61 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Operator</emphasis>
+62 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_s_w_b_p_l_c_a1e4b8f85d4e8e29429d691e258fea2e7_1a1e4b8f85d4e8e29429d691e258fea2e7">63 </link>&#32;&#32;&#32;&#32;<link linkend="class_s_w_b_p_l_c">SWBPLC</link>&#32;<link linkend="class_s_w_b_p_l_c_a1e4b8f85d4e8e29429d691e258fea2e7_1a1e4b8f85d4e8e29429d691e258fea2e7">operator=</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_s_w_b_p_l_c">SWBPLC</link>&amp;&#32;orig)&#32;{};
+64 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+65 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;de-constructor</emphasis>
+66 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+67 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a5d6f00a76145f32424ff6db9ac23c6fe_1a5d6f00a76145f32424ff6db9ac23c6fe">~SWBPLC</link>();
+68 &#32;&#32;&#32;&#32;
+69 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+70 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Implement&#32;OSTM&#32;virtual&#32;methods</emphasis>
+71 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+72 &#32;&#32;&#32;&#32;<emphasis class="comment">//virtual&#32;std::shared_ptr&lt;SWBPLC&gt;&#32;_cast(std::shared_ptr&lt;OSTM&gt;&#32;_object);</emphasis>
+73 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a9468640482a6cfb9bfb4115fc59191d5_1a9468640482a6cfb9bfb4115fc59191d5">copy</link>(std::shared_ptr&lt;OSTM&gt;&#32;to,&#32;std::shared_ptr&lt;OSTM&gt;&#32;from);
+74 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_s_w_b_p_l_c_a77f0e0d6c08a95066d277bf6b2073a5c_1a77f0e0d6c08a95066d277bf6b2073a5c">getBaseCopy</link>(std::shared_ptr&lt;OSTM&gt;&#32;<emphasis class="keywordtype">object</emphasis>);
+75 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a761c77b5a204b4ae05ffb01bd602c3c2_1a761c77b5a204b4ae05ffb01bd602c3c2">toString</link>();
+76 &#32;&#32;&#32;&#32;
+77 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+78 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Implement&#32;BANK&#32;virtual&#32;methods</emphasis>
+79 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+80 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a99590e47dda8361b2d5869fd315f92f8_1a99590e47dda8361b2d5869fd315f92f8">SetAddress</link>(std::string&#32;<link linkend="class_s_w_b_p_l_c_a86edad3cbbc5903c8ab8a45b22c0dd15_1a86edad3cbbc5903c8ab8a45b22c0dd15">address</link>);
+81 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="class_s_w_b_p_l_c_a3a62a57b3ecdd06ed977ef372dab89ad_1a3a62a57b3ecdd06ed977ef372dab89ad">GetAddress</link>()&#32;<emphasis class="keyword">const</emphasis>;
+82 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a9a0d94da8922f00ca4a3e5fa774e8b3f_1a9a0d94da8922f00ca4a3e5fa774e8b3f">SetBalance</link>(<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a34365efdc6dde37a4da9a6222dcde389_1a34365efdc6dde37a4da9a6222dcde389">balance</link>);
+83 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_af7f5f662ab926bfb9c0c1c7156cde24c_1af7f5f662ab926bfb9c0c1c7156cde24c">GetBalance</link>()&#32;<emphasis class="keyword">const</emphasis>;
+84 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a45eb1e6a73fde0dc00824319d4e0b81a_1a45eb1e6a73fde0dc00824319d4e0b81a">SetAccountNumber</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a5d03f989254b88bdb7eb3deeec7e4217_1a5d03f989254b88bdb7eb3deeec7e4217">accountNumber</link>);
+85 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a1a997f6d333e5021970e50605431d7df_1a1a997f6d333e5021970e50605431d7df">GetAccountNumber</link>()&#32;<emphasis class="keyword">const</emphasis>;
+86 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_aa5581ea5d2e0315b816876737e887f09_1aa5581ea5d2e0315b816876737e887f09">SetLastName</link>(std::string&#32;<link linkend="class_s_w_b_p_l_c_aa06b2e569dd1fef8e43dfda1b34d67f3_1aa06b2e569dd1fef8e43dfda1b34d67f3">lastName</link>);
+87 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="class_s_w_b_p_l_c_a72b2595acea28dae9e4f5816dd3c4652_1a72b2595acea28dae9e4f5816dd3c4652">GetLastName</link>()&#32;<emphasis class="keyword">const</emphasis>;
+88 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a8146eabca4648ef679188904f677df9d_1a8146eabca4648ef679188904f677df9d">SetFirstName</link>(std::string&#32;<link linkend="class_s_w_b_p_l_c_a38fd4817afe4aaac4993b0b4c7074b9c_1a38fd4817afe4aaac4993b0b4c7074b9c">firstName</link>);
+89 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="class_s_w_b_p_l_c_ace6bbcd6546896e581e3a2ee9504d090_1ace6bbcd6546896e581e3a2ee9504d090">GetFirstName</link>()&#32;<emphasis class="keyword">const</emphasis>;
+90 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a09376d46475bbceda897948714ff1e72_1a09376d46475bbceda897948714ff1e72">SetFullname</link>(std::string&#32;<link linkend="class_s_w_b_p_l_c_a5de90ba5cac0107fa5361458a0df839e_1a5de90ba5cac0107fa5361458a0df839e">fullname</link>);
+91 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="class_s_w_b_p_l_c_adb74b3cbc40a401bf7ca4dfb5269c336_1adb74b3cbc40a401bf7ca4dfb5269c336">GetFullname</link>()&#32;<emphasis class="keyword">const</emphasis>;
+92 <emphasis class="keyword">private</emphasis>:
+<link linkend="class_s_w_b_p_l_c_a5de90ba5cac0107fa5361458a0df839e_1a5de90ba5cac0107fa5361458a0df839e">93 </link>&#32;&#32;&#32;&#32;std::string&#32;<link linkend="class_s_w_b_p_l_c_a5de90ba5cac0107fa5361458a0df839e_1a5de90ba5cac0107fa5361458a0df839e">fullname</link>;
+<link linkend="class_s_w_b_p_l_c_a38fd4817afe4aaac4993b0b4c7074b9c_1a38fd4817afe4aaac4993b0b4c7074b9c">94 </link>&#32;&#32;&#32;&#32;std::string&#32;<link linkend="class_s_w_b_p_l_c_a38fd4817afe4aaac4993b0b4c7074b9c_1a38fd4817afe4aaac4993b0b4c7074b9c">firstName</link>;
+<link linkend="class_s_w_b_p_l_c_aa06b2e569dd1fef8e43dfda1b34d67f3_1aa06b2e569dd1fef8e43dfda1b34d67f3">95 </link>&#32;&#32;&#32;&#32;std::string&#32;<link linkend="class_s_w_b_p_l_c_aa06b2e569dd1fef8e43dfda1b34d67f3_1aa06b2e569dd1fef8e43dfda1b34d67f3">lastName</link>;
+<link linkend="class_s_w_b_p_l_c_a5d03f989254b88bdb7eb3deeec7e4217_1a5d03f989254b88bdb7eb3deeec7e4217">96 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a5d03f989254b88bdb7eb3deeec7e4217_1a5d03f989254b88bdb7eb3deeec7e4217">accountNumber</link>;
+<link linkend="class_s_w_b_p_l_c_a34365efdc6dde37a4da9a6222dcde389_1a34365efdc6dde37a4da9a6222dcde389">97 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_s_w_b_p_l_c_a34365efdc6dde37a4da9a6222dcde389_1a34365efdc6dde37a4da9a6222dcde389">balance</link>;
+<link linkend="class_s_w_b_p_l_c_a86edad3cbbc5903c8ab8a45b22c0dd15_1a86edad3cbbc5903c8ab8a45b22c0dd15">98 </link>&#32;&#32;&#32;&#32;std::string&#32;<link linkend="class_s_w_b_p_l_c_a86edad3cbbc5903c8ab8a45b22c0dd15_1a86edad3cbbc5903c8ab8a45b22c0dd15">address</link>;
+99 
+100 };
+101 
+102 <emphasis class="preprocessor">#endif&#32;</emphasis><emphasis class="comment">/*&#32;SWBPLC_H&#32;*/</emphasis><emphasis class="preprocessor"></emphasis>
+103 
+    </computeroutput></literallayout>
+</section>

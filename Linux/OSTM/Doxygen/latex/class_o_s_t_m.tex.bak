@@ -6,7 +6,8 @@
 
 
 
-Collaboration diagram for O\+S\+TM\+:\nopagebreak
+Collaboration diagram for O\+S\+TM\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -30,8 +31,6 @@ bool \hyperlink{class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_afc2851abf5342c3
 \begin{DoxyCompactList}\small\item\em @140 Function $<$\+Is\+\_\+\+Abort\+\_\+\+Transaction$>$ return boolean value stored in the $<$abort\+Transaction$>$ private filed \end{DoxyCompactList}\item 
 bool \hyperlink{class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_a8df39ced3b401aa466df97e26d14b1b7}{Is\+\_\+\+Can\+\_\+\+Commit} () const 
 \begin{DoxyCompactList}\small\item\em @124 Function $<$\+Is\+\_\+\+Can\+\_\+\+Commit$>$ boolean function to determin the object can comit or need to roolback. \end{DoxyCompactList}\item 
-bool \hyperlink{class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_afb6520023ed2c4a6188b688c46f192d0}{is\+\_\+\+Locked} ()
-\begin{DoxyCompactList}\small\item\em @162 Function $<$is\+\_\+\+Locked$>$ Boolean function to try lock the object. If the object not locked then locks and return True it otherwise return False. \end{DoxyCompactList}\item 
 void \hyperlink{class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_af192c598a3c647f37aaba5757e60240f}{lock\+\_\+\+Mutex} ()
 \begin{DoxyCompactList}\small\item\em @145 Function $<$lock\+\_\+\+Mutex$>$ setter for mutex to lock the object \end{DoxyCompactList}\item 
 \hyperlink{class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f0571619196}{O\+S\+TM} ()
@@ -48,6 +47,8 @@ void \hyperlink{class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_a9529ad8d6d28c1f
 \begin{DoxyCompactList}\small\item\em @92 Function $<$\+Set\+\_\+\+Version$>$ setter for version private filed \end{DoxyCompactList}\item 
 virtual void \hyperlink{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203309ae8a59}{to\+String} ()
 \begin{DoxyCompactList}\small\item\em The to\+String function displaying/representing the object on the terminal is string format. \end{DoxyCompactList}\item 
+bool \hyperlink{class_o_s_t_m_af3dd41488087b678c95b2f5c16486947_af3dd41488087b678c95b2f5c16486947}{try\+\_\+lock} ()
+\begin{DoxyCompactList}\small\item\em @162 Function $<$is\+\_\+\+Locked$>$ Boolean function to try lock the object. If the object not locked then locks and return True it otherwise return False. \end{DoxyCompactList}\item 
 void \hyperlink{class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_a6cd703bc26c719fd95b4f5362d050762}{unlock\+\_\+\+Mutex} ()
 \begin{DoxyCompactList}\small\item\em @154 Function $<$unlock\+\_\+\+Mutex$>$ setter for mutex to unlock the object \end{DoxyCompactList}\item 
 virtual \hyperlink{class_o_s_t_m_a30a17d73d0259c60eeab72d6dfa9ceb1_a30a17d73d0259c60eeab72d6dfa9ceb1}{$\sim$\+O\+S\+TM} ()
@@ -104,13 +105,7 @@ Definition at line \hyperlink{_o_s_t_m_8h_source_l00023}{23} of file \hyperlink{
 
 @21 Default constructor 
 
-@24 Integer field $<$version$>$ indicates the version number of the inherited child object
 
-@26 Integer field $<$unique\+I\+D$>$ is a unique identifier assigned to every object registered in \hyperlink{class_o_s_t_m}{O\+S\+TM} library
-
-@28 Boolean value $<$can\+Commit$>$ to determine the object can or cannot commit
-
-@30 Boolean field $<$abort\+\_\+\+Transaction$>$ to determine the object can or cannot commit 
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00021}{21} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -121,15 +116,21 @@ References \hyperlink{_o_s_t_m_8h_source_l00125}{abort\+\_\+\+Transaction}, \hyp
 
 \begin{DoxyCode}
 00022 \{
+00023     \textcolor{comment}{/* @24 Integer field <version> indicates the version number of the inherited child object */}
 00024     this->\hyperlink{class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_a9a6ea36181be2db7f9082d77956511d7}{version} = \hyperlink{class_o_s_t_m_a0bb6ae8411d25f8e7b82d0a61729ea89_a0bb6ae8411d25f8e7b82d0a61729ea89}{ZERO};
+00025     \textcolor{comment}{/* @26 Integer field <uniqueID> is a unique identifier assigned to every object registered in OSTM
+       library */}
 00026     this->\hyperlink{class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_aa9fe59368b701af7f70befa23bd6901a}{uniqueID} = \hyperlink{class_o_s_t_m_adee6903c1100e0d78640bd4b85e5d7df_adee6903c1100e0d78640bd4b85e5d7df}{Get\_global\_Unique\_ID\_Number}();
+00027     \textcolor{comment}{/* @28 Boolean value <canCommit> to determine the object can or cannot commit */}
 00028     this->\hyperlink{class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_a2a5b89641af274ddc69bdf8c1c1a07d6}{canCommit} = \textcolor{keyword}{true};
+00029     \textcolor{comment}{/* @30 Boolean field <abort\_Transaction> to determine the object can or cannot commit */}
 00030     this->\hyperlink{class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a_a5121d9c4b08320b26beca82ba2f85c4a}{abort\_Transaction} = \textcolor{keyword}{false};
 00031 \}
 \end{DoxyCode}
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -152,18 +153,12 @@ Here is the call graph for this function\+:\nopagebreak
 
 
 \begin{DoxyParams}{Parameters}
-{\em $<$em$>$version\+\_\+number$<$/em$>$} & Integer value used to create a copy of the object with the actual version \\
+{\em version\+\_\+number} & Integer value used to create a copy of the object with the actual version \\
 \hline
-{\em $<$em$>$unique\+\_\+id$<$/em$>$} & Integer value used to create a copy of the object with the original unique ID \\
+{\em unique\+\_\+id} & Integer value used to create a copy of the object with the original unique ID \\
 \hline
 \end{DoxyParams}
-@42 Integer field $<$version$>$ indicates the version number of the inherited child object
 
-@44 Integer field $<$unique\+I\+D$>$ is a unique identifier assigned to every object registered in \hyperlink{class_o_s_t_m}{O\+S\+TM} library
-
-@46 Boolean value $<$can\+Commit$>$ to determine the object can or cannot commit
-
-@48 Boolean value $<$abort\+\_\+\+Transaction$>$ to determine the object can or cannot commit 
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00039}{39} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -174,9 +169,14 @@ References \hyperlink{_o_s_t_m_8h_source_l00125}{abort\+\_\+\+Transaction}, \hyp
 
 \begin{DoxyCode}
 00040 \{
+00041     \textcolor{comment}{/* @42 Integer field <version> indicates the version number of the inherited child object */}
 00042     this->\hyperlink{class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_aa9fe59368b701af7f70befa23bd6901a}{uniqueID} = \_unique\_id\_;
+00043     \textcolor{comment}{/* @44 Integer field <uniqueID> is a unique identifier assigned to every object registered in OSTM
+       library */}
 00044     this->\hyperlink{class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_a9a6ea36181be2db7f9082d77956511d7}{version} = \_version\_number\_;
+00045     \textcolor{comment}{/* @46 Boolean value <canCommit> to determine the object can or cannot commit */}
 00046     this->\hyperlink{class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_a2a5b89641af274ddc69bdf8c1c1a07d6}{canCommit} = \textcolor{keyword}{true};
+00047     \textcolor{comment}{/* @48 Boolean value <abort\_Transaction> to determine the object can or cannot commit */}
 00048     this->\hyperlink{class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a_a5121d9c4b08320b26beca82ba2f85c4a}{abort\_Transaction} = \textcolor{keyword}{false};
 00049 \}
 \end{DoxyCode}
@@ -187,13 +187,14 @@ References \hyperlink{_o_s_t_m_8h_source_l00125}{abort\+\_\+\+Transaction}, \hyp
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_o_s_t_m_a30a17d73d0259c60eeab72d6dfa9ceb1_a30a17d73d0259c60eeab72d6dfa9ceb1}{}\label{class_o_s_t_m_a30a17d73d0259c60eeab72d6dfa9ceb1_a30a17d73d0259c60eeab72d6dfa9ceb1}
-@54 Default De-\/constructor Delete the object. 
+@54 Default De-\/constructor 
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00054}{54} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
 
 \begin{DoxyCode}
 00054             \{
+00055     \textcolor{comment}{/* Destroy the object. */}
 00056 \}
 \end{DoxyCode}
 
@@ -216,11 +217,11 @@ The copy virtual method required for deep copy between objetcs within the transa
 \end{DoxySeeAlso}
 
 
-Definition at line \hyperlink{_o_s_t_m_8h_source_l00041}{41} of file \hyperlink{_o_s_t_m_8h_source}{O\+S\+T\+M.\+h}.
+Definition at line \hyperlink{_o_s_t_m_8h_source_l00046}{46} of file \hyperlink{_o_s_t_m_8h_source}{O\+S\+T\+M.\+h}.
 
 
 \begin{DoxyCode}
-00041 \{\};  
+00046 \{\};  
 \end{DoxyCode}
 \index{O\+S\+TM@{O\+S\+TM}!Get\+\_\+global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number@{Get\+\_\+global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number}}
 \index{Get\+\_\+global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number@{Get\+\_\+global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number}!O\+S\+TM@{O\+S\+TM}}
@@ -233,11 +234,7 @@ Definition at line \hyperlink{_o_s_t_m_8h_source_l00041}{41} of file \hyperlink{
 
 @61 Get\+\_\+global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number function, If $<$global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number$>$ equals to 10000000 then reset back to Z\+E\+RO, to make sure the value of global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number never exceed the M\+A\+X\+\_\+\+I\+NT value 
 
-Returning global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number to the constructor @64 Checking the global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number
-
-@65 Reset global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number to Z\+E\+RO
-
-@67 return static global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number 
+Returning global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number to the constructor 
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00061}{61} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -252,22 +249,14 @@ Referenced by \hyperlink{_o_s_t_m_8cpp_source_l00021}{O\+S\+T\+M()}.
 
 \begin{DoxyCode}
 00061                                       \{
+00062     \textcolor{comment}{/* @64 Checking the global\_Unique\_ID\_Number */}
 00063     \textcolor{keywordflow}{if}(\hyperlink{class_o_s_t_m_acb617b9666d198c0de333c8613df0d4b_acb617b9666d198c0de333c8613df0d4b}{global\_Unique\_ID\_Number} > 10000000)
+00064         \textcolor{comment}{/* @65 Reset global\_Unique\_ID\_Number to ZERO*/}
 00065         \hyperlink{class_o_s_t_m_acb617b9666d198c0de333c8613df0d4b_acb617b9666d198c0de333c8613df0d4b}{global\_Unique\_ID\_Number} = 0;
+00066     \textcolor{comment}{/* @67 return static global\_Unique\_ID\_Number */}
 00067     \textcolor{keywordflow}{return} ++\hyperlink{class_o_s_t_m_acb617b9666d198c0de333c8613df0d4b_acb617b9666d198c0de333c8613df0d4b}{global\_Unique\_ID\_Number};
 00068 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=330pt]{class_o_s_t_m_adee6903c1100e0d78640bd4b85e5d7df_adee6903c1100e0d78640bd4b85e5d7df_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{O\+S\+TM@{O\+S\+TM}!Get\+\_\+\+Unique\+\_\+\+ID@{Get\+\_\+\+Unique\+\_\+\+ID}}
 \index{Get\+\_\+\+Unique\+\_\+\+ID@{Get\+\_\+\+Unique\+\_\+\+ID}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{Get\+\_\+\+Unique\+\_\+\+I\+D() const }{Get_Unique_ID() const }}]{\setlength{\rightskip}{0pt plus 5cm}int O\+S\+T\+M\+::\+Get\+\_\+\+Unique\+\_\+\+ID (
@@ -279,7 +268,7 @@ Here is the caller graph for this function\+:\nopagebreak
 
 @82 Function $<$\+Get\+\_\+\+Unique\+\_\+\+I\+D$>$ getter for unique\+ID private field 
 
-@85 return Object unique\+ID 
+
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00082}{82} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -289,25 +278,15 @@ References \hyperlink{_o_s_t_m_8h_source_l00117}{unique\+ID}.
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}.
 
 
 \begin{DoxyCode}
 00083 \{
+00084     \textcolor{comment}{/* @85 return Object uniqueID */}
 00085     \textcolor{keywordflow}{return} \hyperlink{class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_aa9fe59368b701af7f70befa23bd6901a}{uniqueID};
 00086 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=320pt]{class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_a5a01a8b98d16b1d1904ecf9356e7b71d_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{O\+S\+TM@{O\+S\+TM}!Get\+\_\+\+Version@{Get\+\_\+\+Version}}
 \index{Get\+\_\+\+Version@{Get\+\_\+\+Version}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{Get\+\_\+\+Version() const }{Get_Version() const }}]{\setlength{\rightskip}{0pt plus 5cm}int O\+S\+T\+M\+::\+Get\+\_\+\+Version (
@@ -319,7 +298,7 @@ Here is the caller graph for this function\+:\nopagebreak
 
 @100 Function $<$\+Get\+\_\+\+Version$>$ setter for version private filed 
 
-return object version number 
+
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00100}{100} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -329,25 +308,15 @@ References \hyperlink{_o_s_t_m_8h_source_l00111}{version}.
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}.
 
 
 \begin{DoxyCode}
 00101 \{
+00102     \textcolor{comment}{/* return object version number */}
 00103     \textcolor{keywordflow}{return} \hyperlink{class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_a9a6ea36181be2db7f9082d77956511d7}{version};
 00104 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=306pt]{class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_a1f1db9d482f22c8e7caa17dfb340626b_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{O\+S\+TM@{O\+S\+TM}!get\+Base\+Copy@{get\+Base\+Copy}}
 \index{get\+Base\+Copy@{get\+Base\+Copy}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{get\+Base\+Copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ object)}{getBaseCopy(std::shared_ptr< OSTM > object)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::shared\+\_\+ptr$<${\bf O\+S\+TM}$>$ O\+S\+T\+M\+::get\+Base\+Copy (
@@ -364,12 +333,28 @@ The getbasecopy virtual method required for create a copy of the origin object/p
 \end{DoxySeeAlso}
 
 
-Definition at line \hyperlink{_o_s_t_m_8h_source_l00046}{46} of file \hyperlink{_o_s_t_m_8h_source}{O\+S\+T\+M.\+h}.
+Definition at line \hyperlink{_o_s_t_m_8h_source_l00051}{51} of file \hyperlink{_o_s_t_m_8h_source}{O\+S\+T\+M.\+h}.
+
+
+
+References \hyperlink{_o_s_t_m_8h_source_l00121}{can\+Commit}, \hyperlink{_o_s_t_m_8cpp_source_l00082}{Get\+\_\+\+Unique\+\_\+\+I\+D()}, \hyperlink{_o_s_t_m_8cpp_source_l00100}{Get\+\_\+\+Version()}, \hyperlink{_o_s_t_m_8cpp_source_l00108}{increase\+\_\+\+Version\+Number()}, \hyperlink{_o_s_t_m_8cpp_source_l00140}{Is\+\_\+\+Abort\+\_\+\+Transaction()}, \hyperlink{_o_s_t_m_8cpp_source_l00124}{Is\+\_\+\+Can\+\_\+\+Commit()}, \hyperlink{_o_s_t_m_8cpp_source_l00147}{lock\+\_\+\+Mutex()}, \hyperlink{_o_s_t_m_8cpp_source_l00132}{Set\+\_\+\+Abort\+\_\+\+Transaction()}, \hyperlink{_o_s_t_m_8cpp_source_l00117}{Set\+\_\+\+Can\+\_\+\+Commit()}, \hyperlink{_o_s_t_m_8cpp_source_l00075}{Set\+\_\+\+Unique\+\_\+\+I\+D()}, \hyperlink{_o_s_t_m_8cpp_source_l00092}{Set\+\_\+\+Version()}, \hyperlink{_o_s_t_m_8cpp_source_l00162}{try\+\_\+lock()}, \hyperlink{_o_s_t_m_8h_source_l00117}{unique\+ID}, \hyperlink{_o_s_t_m_8cpp_source_l00154}{unlock\+\_\+\+Mutex()}, and \hyperlink{_o_s_t_m_8h_source_l00111}{version}.
 
 
 \begin{DoxyCode}
-00046 \{\};\textcolor{comment}{//std::cout << "[OSTM GETBASECOPY]" << std::endl;\};}
+00051 \{\};
 \end{DoxyCode}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f42714f94c_cgraph}
+\end{center}
+\end{figure}
+
+
 \index{O\+S\+TM@{O\+S\+TM}!increase\+\_\+\+Version\+Number@{increase\+\_\+\+Version\+Number}}
 \index{increase\+\_\+\+Version\+Number@{increase\+\_\+\+Version\+Number}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{increase\+\_\+\+Version\+Number()}{increase_VersionNumber()}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::increase\+\_\+\+Version\+Number (
@@ -381,7 +366,7 @@ Definition at line \hyperlink{_o_s_t_m_8h_source_l00046}{46} of file \hyperlink{
 
 @108 Function $<$increase\+\_\+\+Version\+Number$>$ commit time increase the version number associated with the object 
 
-@111 increase object version number 
+
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00108}{108} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -391,25 +376,15 @@ References \hyperlink{_o_s_t_m_8h_source_l00111}{version}.
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}.
 
 
 \begin{DoxyCode}
 00109 \{
+00110     \textcolor{comment}{/* @111 increase object version number */}
 00111     this->\hyperlink{class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_a9a6ea36181be2db7f9082d77956511d7}{version} += 1;
 00112 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_a5f90caa4384d371c16b7cac860d9f89a_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{O\+S\+TM@{O\+S\+TM}!Is\+\_\+\+Abort\+\_\+\+Transaction@{Is\+\_\+\+Abort\+\_\+\+Transaction}}
 \index{Is\+\_\+\+Abort\+\_\+\+Transaction@{Is\+\_\+\+Abort\+\_\+\+Transaction}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{Is\+\_\+\+Abort\+\_\+\+Transaction() const }{Is_Abort_Transaction() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+T\+M\+::\+Is\+\_\+\+Abort\+\_\+\+Transaction (
@@ -426,7 +401,7 @@ Here is the caller graph for this function\+:\nopagebreak
 {\em abort\+\_\+\+Transaction} & Boolean to determine the object can or cannot commit \\
 \hline
 \end{DoxyParams}
-@142 return abort\+\_\+\+Transaction object boolean value 
+
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00140}{140} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -436,25 +411,15 @@ References \hyperlink{_o_s_t_m_8h_source_l00125}{abort\+\_\+\+Transaction}.
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}.
 
 
 \begin{DoxyCode}
 00140                                       \{
+00141     \textcolor{comment}{/* @142 return abort\_Transaction object boolean value */}
 00142     \textcolor{keywordflow}{return} \hyperlink{class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a_a5121d9c4b08320b26beca82ba2f85c4a}{abort\_Transaction};
 00143 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=345pt]{class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_afc2851abf5342c3c67342c2c14820115_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{O\+S\+TM@{O\+S\+TM}!Is\+\_\+\+Can\+\_\+\+Commit@{Is\+\_\+\+Can\+\_\+\+Commit}}
 \index{Is\+\_\+\+Can\+\_\+\+Commit@{Is\+\_\+\+Can\+\_\+\+Commit}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{Is\+\_\+\+Can\+\_\+\+Commit() const }{Is_Can_Commit() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+T\+M\+::\+Is\+\_\+\+Can\+\_\+\+Commit (
@@ -466,7 +431,7 @@ Here is the caller graph for this function\+:\nopagebreak
 
 @124 Function $<$\+Is\+\_\+\+Can\+\_\+\+Commit$>$ boolean function to determin the object can comit or need to roolback. 
 
-@126 return can\+Commit boolean value T\+R\+U\+E/\+F\+A\+L\+SE 
+
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00124}{124} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -476,64 +441,15 @@ References \hyperlink{_o_s_t_m_8h_source_l00121}{can\+Commit}.
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}.
 
 
 \begin{DoxyCode}
 00124                                \{
+00125     \textcolor{comment}{/* @126 return canCommit boolean value TRUE/FALSE */}
 00126     \textcolor{keywordflow}{return} \hyperlink{class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_a2a5b89641af274ddc69bdf8c1c1a07d6}{canCommit};
 00127 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=323pt]{class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_a8df39ced3b401aa466df97e26d14b1b7_icgraph}
-\end{center}
-\end{figure}
-
-
-\index{O\+S\+TM@{O\+S\+TM}!is\+\_\+\+Locked@{is\+\_\+\+Locked}}
-\index{is\+\_\+\+Locked@{is\+\_\+\+Locked}!O\+S\+TM@{O\+S\+TM}}
-\paragraph[{\texorpdfstring{is\+\_\+\+Locked()}{is_Locked()}}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+T\+M\+::is\+\_\+\+Locked (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}\hypertarget{class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_afb6520023ed2c4a6188b688c46f192d0}{}\label{class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_afb6520023ed2c4a6188b688c46f192d0}
-
-
-@162 Function $<$is\+\_\+\+Locked$>$ Boolean function to try lock the object. If the object not locked then locks and return True it otherwise return False. 
-
-@164 Try to unlock the mutex, return T\+R\+UE if the lock was acquired successfully, otherwise return F\+A\+L\+SE 
-
-Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00162}{162} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
-
-
-
-References \hyperlink{_o_s_t_m_8h_source_l00139}{mutex}.
-
-
-
-Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
-
-
-\begin{DoxyCode}
-00162                     \{
-00164     \textcolor{keywordflow}{return} this->\hyperlink{class_o_s_t_m_aaab0921fd1564b793f882a5002ec7106_aaab0921fd1564b793f882a5002ec7106}{mutex}.try\_lock();
-00165 \}\end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=296pt]{class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_afb6520023ed2c4a6188b688c46f192d0_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{O\+S\+TM@{O\+S\+TM}!lock\+\_\+\+Mutex@{lock\+\_\+\+Mutex}}
 \index{lock\+\_\+\+Mutex@{lock\+\_\+\+Mutex}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{lock\+\_\+\+Mutex()}{lock_Mutex()}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::lock\+\_\+\+Mutex (
@@ -545,7 +461,7 @@ Here is the caller graph for this function\+:\nopagebreak
 
 @145 Function $<$lock\+\_\+\+Mutex$>$ setter for mutex to lock the object 
 
-@149 Locking the mutex 
+
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00147}{147} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -555,25 +471,15 @@ References \hyperlink{_o_s_t_m_8h_source_l00139}{mutex}.
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}.
 
 
 \begin{DoxyCode}
 00147                       \{
+00148     \textcolor{comment}{/* @149 Locking the mutex*/}
 00149     this->\hyperlink{class_o_s_t_m_aaab0921fd1564b793f882a5002ec7106_aaab0921fd1564b793f882a5002ec7106}{mutex}.lock();
 00150 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=302pt]{class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_af192c598a3c647f37aaba5757e60240f_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{O\+S\+TM@{O\+S\+TM}!Set\+\_\+\+Abort\+\_\+\+Transaction@{Set\+\_\+\+Abort\+\_\+\+Transaction}}
 \index{Set\+\_\+\+Abort\+\_\+\+Transaction@{Set\+\_\+\+Abort\+\_\+\+Transaction}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{Set\+\_\+\+Abort\+\_\+\+Transaction(bool abort\+Transaction)}{Set_Abort_Transaction(bool abortTransaction)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::\+Set\+\_\+\+Abort\+\_\+\+Transaction (
@@ -590,7 +496,7 @@ Here is the caller graph for this function\+:\nopagebreak
 {\em abort\+Transaction} & Boolean to determine the object can or cannot commit \\
 \hline
 \end{DoxyParams}
-@134 set abort\+\_\+\+Transaction object variable to parameter boolean value 
+
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00132}{132} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -600,25 +506,15 @@ References \hyperlink{_o_s_t_m_8h_source_l00125}{abort\+\_\+\+Transaction}.
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}.
 
 
 \begin{DoxyCode}
 00132                                                       \{
+00133     \textcolor{comment}{/* @134 set abort\_Transaction object variable to parameter boolean value  */}
 00134     this->\hyperlink{class_o_s_t_m_a5121d9c4b08320b26beca82ba2f85c4a_a5121d9c4b08320b26beca82ba2f85c4a}{abort\_Transaction} = abortTransaction;
 00135 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_aba384cf65c5f56f5b86833730c3c6ea4_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{O\+S\+TM@{O\+S\+TM}!Set\+\_\+\+Can\+\_\+\+Commit@{Set\+\_\+\+Can\+\_\+\+Commit}}
 \index{Set\+\_\+\+Can\+\_\+\+Commit@{Set\+\_\+\+Can\+\_\+\+Commit}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{Set\+\_\+\+Can\+\_\+\+Commit(bool can\+Commit)}{Set_Can_Commit(bool canCommit)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::\+Set\+\_\+\+Can\+\_\+\+Commit (
@@ -635,7 +531,7 @@ Here is the caller graph for this function\+:\nopagebreak
 {\em can\+Commit} & Boolean value to determine the object can or cannot commit \\
 \hline
 \end{DoxyParams}
-@119 set can\+Commit object variable to parameter boolean value 
+
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00117}{117} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -645,25 +541,15 @@ References \hyperlink{_o_s_t_m_8h_source_l00121}{can\+Commit}.
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}.
 
 
 \begin{DoxyCode}
 00117                                         \{
+00118     \textcolor{comment}{/* @119 set canCommit object variable to parameter boolean value*/}
 00119     this->\hyperlink{class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_a2a5b89641af274ddc69bdf8c1c1a07d6}{canCommit} = \hyperlink{class_o_s_t_m_a2a5b89641af274ddc69bdf8c1c1a07d6_a2a5b89641af274ddc69bdf8c1c1a07d6}{canCommit};
 00120 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=330pt]{class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_a813ee61c9d1c83c6a6ae30d12aca8a5d_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{O\+S\+TM@{O\+S\+TM}!Set\+\_\+\+Unique\+\_\+\+ID@{Set\+\_\+\+Unique\+\_\+\+ID}}
 \index{Set\+\_\+\+Unique\+\_\+\+ID@{Set\+\_\+\+Unique\+\_\+\+ID}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{Set\+\_\+\+Unique\+\_\+\+I\+D(int unique\+I\+D)}{Set_Unique_ID(int uniqueID)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::\+Set\+\_\+\+Unique\+\_\+\+ID (
@@ -680,7 +566,7 @@ Here is the caller graph for this function\+:\nopagebreak
 {\em unique\+ID} & int Every object inherit from \hyperlink{class_o_s_t_m}{O\+S\+TM} class will include a version number that is unique for every object. The S\+TM library used this value to find object within the transaction to make changes or comparism ith them. \\
 \hline
 \end{DoxyParams}
-@77 set object unique\+ID to parameter integer value 
+
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00075}{75} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -690,25 +576,15 @@ References \hyperlink{_o_s_t_m_8h_source_l00117}{unique\+ID}.
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}.
 
 
 \begin{DoxyCode}
 00075                                      \{
+00076     \textcolor{comment}{/* @77 set object uniqueID to parameter integer value */}
 00077     this->\hyperlink{class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_aa9fe59368b701af7f70befa23bd6901a}{uniqueID} = \hyperlink{class_o_s_t_m_aa9fe59368b701af7f70befa23bd6901a_aa9fe59368b701af7f70befa23bd6901a}{uniqueID};
 00078 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=319pt]{class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_ab5019a32185631c08abbf826422f2d93_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{O\+S\+TM@{O\+S\+TM}!Set\+\_\+\+Version@{Set\+\_\+\+Version}}
 \index{Set\+\_\+\+Version@{Set\+\_\+\+Version}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{Set\+\_\+\+Version(int version)}{Set_Version(int version)}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::\+Set\+\_\+\+Version (
@@ -725,7 +601,7 @@ Here is the caller graph for this function\+:\nopagebreak
 {\em version} & integer The verion number Z\+E\+RO by default when the object created. When a transaction make changes with the object, then the version number will be increased, to indicate the changes on the object. \\
 \hline
 \end{DoxyParams}
-@95 set object version to parameter integer value 
+
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00092}{92} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -735,25 +611,15 @@ References \hyperlink{_o_s_t_m_8h_source_l00111}{version}.
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}.
 
 
 \begin{DoxyCode}
 00093 \{
+00094     \textcolor{comment}{/* @95 set object version to parameter integer value */}
 00095     this->\hyperlink{class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_a9a6ea36181be2db7f9082d77956511d7}{version} = \hyperlink{class_o_s_t_m_a9a6ea36181be2db7f9082d77956511d7_a9a6ea36181be2db7f9082d77956511d7}{version};
 00096 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=305pt]{class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_a9529ad8d6d28c1f0cc9b86ed91df1ae1_icgraph}
-\end{center}
-\end{figure}
-
-
 \index{O\+S\+TM@{O\+S\+TM}!to\+String@{to\+String}}
 \index{to\+String@{to\+String}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{to\+String()}{toString()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void O\+S\+T\+M\+::to\+String (
@@ -770,27 +636,42 @@ The to\+String function displaying/representing the object on the terminal is st
 \end{DoxySeeAlso}
 
 
-Definition at line \hyperlink{_o_s_t_m_8h_source_l00051}{51} of file \hyperlink{_o_s_t_m_8h_source}{O\+S\+T\+M.\+h}.
-
-
-
-References \hyperlink{_o_s_t_m_8h_source_l00121}{can\+Commit}, \hyperlink{_o_s_t_m_8cpp_source_l00082}{Get\+\_\+\+Unique\+\_\+\+I\+D()}, \hyperlink{_o_s_t_m_8cpp_source_l00100}{Get\+\_\+\+Version()}, \hyperlink{_o_s_t_m_8cpp_source_l00108}{increase\+\_\+\+Version\+Number()}, \hyperlink{_o_s_t_m_8cpp_source_l00140}{Is\+\_\+\+Abort\+\_\+\+Transaction()}, \hyperlink{_o_s_t_m_8cpp_source_l00124}{Is\+\_\+\+Can\+\_\+\+Commit()}, \hyperlink{_o_s_t_m_8cpp_source_l00162}{is\+\_\+\+Locked()}, \hyperlink{_o_s_t_m_8cpp_source_l00147}{lock\+\_\+\+Mutex()}, \hyperlink{_o_s_t_m_8cpp_source_l00132}{Set\+\_\+\+Abort\+\_\+\+Transaction()}, \hyperlink{_o_s_t_m_8cpp_source_l00117}{Set\+\_\+\+Can\+\_\+\+Commit()}, \hyperlink{_o_s_t_m_8cpp_source_l00075}{Set\+\_\+\+Unique\+\_\+\+I\+D()}, \hyperlink{_o_s_t_m_8cpp_source_l00092}{Set\+\_\+\+Version()}, \hyperlink{_o_s_t_m_8h_source_l00117}{unique\+ID}, \hyperlink{_o_s_t_m_8cpp_source_l00154}{unlock\+\_\+\+Mutex()}, and \hyperlink{_o_s_t_m_8h_source_l00111}{version}.
+Definition at line \hyperlink{_o_s_t_m_8h_source_l00041}{41} of file \hyperlink{_o_s_t_m_8h_source}{O\+S\+T\+M.\+h}.
 
 
 \begin{DoxyCode}
-00051 \{\};
+00041 \{\};
 \end{DoxyCode}
+\index{O\+S\+TM@{O\+S\+TM}!try\+\_\+lock@{try\+\_\+lock}}
+\index{try\+\_\+lock@{try\+\_\+lock}!O\+S\+TM@{O\+S\+TM}}
+\paragraph[{\texorpdfstring{try\+\_\+lock()}{try_lock()}}]{\setlength{\rightskip}{0pt plus 5cm}bool O\+S\+T\+M\+::try\+\_\+lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_o_s_t_m_af3dd41488087b678c95b2f5c16486947_af3dd41488087b678c95b2f5c16486947}{}\label{class_o_s_t_m_af3dd41488087b678c95b2f5c16486947_af3dd41488087b678c95b2f5c16486947}
 
 
-Here is the call graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203309ae8a59_cgraph}
-\end{center}
-\end{figure}
+@162 Function $<$is\+\_\+\+Locked$>$ Boolean function to try lock the object. If the object not locked then locks and return True it otherwise return False. 
 
 
+
+Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00162}{162} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
+
+
+
+References \hyperlink{_o_s_t_m_8h_source_l00139}{mutex}.
+
+
+
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}.
+
+
+\begin{DoxyCode}
+00162                    \{
+00163     \textcolor{comment}{/* @164 Try to unlock the mutex, return TRUE if the lock was acquired successfully, otherwise return
+       FALSE */}
+00164     \textcolor{keywordflow}{return} this->\hyperlink{class_o_s_t_m_aaab0921fd1564b793f882a5002ec7106_aaab0921fd1564b793f882a5002ec7106}{mutex}.try\_lock();
+00165 \}\end{DoxyCode}
 \index{O\+S\+TM@{O\+S\+TM}!unlock\+\_\+\+Mutex@{unlock\+\_\+\+Mutex}}
 \index{unlock\+\_\+\+Mutex@{unlock\+\_\+\+Mutex}!O\+S\+TM@{O\+S\+TM}}
 \paragraph[{\texorpdfstring{unlock\+\_\+\+Mutex()}{unlock_Mutex()}}]{\setlength{\rightskip}{0pt plus 5cm}void O\+S\+T\+M\+::unlock\+\_\+\+Mutex (
@@ -802,7 +683,7 @@ Here is the call graph for this function\+:\nopagebreak
 
 @154 Function $<$unlock\+\_\+\+Mutex$>$ setter for mutex to unlock the object 
 
-@156 Locking the mutex 
+
 
 Definition at line \hyperlink{_o_s_t_m_8cpp_source_l00154}{154} of file \hyperlink{_o_s_t_m_8cpp_source}{O\+S\+T\+M.\+cpp}.
 
@@ -812,25 +693,15 @@ References \hyperlink{_o_s_t_m_8h_source_l00139}{mutex}.
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}.
 
 
 \begin{DoxyCode}
 00154                         \{
+00155     \textcolor{comment}{/* @156 Locking the mutex */}
 00156     this->\hyperlink{class_o_s_t_m_aaab0921fd1564b793f882a5002ec7106_aaab0921fd1564b793f882a5002ec7106}{mutex}.unlock();
 00157 \}
 \end{DoxyCode}
-
-
-Here is the caller graph for this function\+:\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=313pt]{class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_a6cd703bc26c719fd95b4f5362d050762_icgraph}
-\end{center}
-\end{figure}
-
-
 
 
 \subsubsection{Member Data Documentation}
@@ -854,7 +725,7 @@ Definition at line \hyperlink{_o_s_t_m_8h_source_l00121}{121} of file \hyperlink
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8cpp_source_l00124}{Is\+\_\+\+Can\+\_\+\+Commit()}, \hyperlink{_o_s_t_m_8cpp_source_l00021}{O\+S\+T\+M()}, \hyperlink{_o_s_t_m_8cpp_source_l00117}{Set\+\_\+\+Can\+\_\+\+Commit()}, and \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}, \hyperlink{_o_s_t_m_8cpp_source_l00124}{Is\+\_\+\+Can\+\_\+\+Commit()}, \hyperlink{_o_s_t_m_8cpp_source_l00021}{O\+S\+T\+M()}, and \hyperlink{_o_s_t_m_8cpp_source_l00117}{Set\+\_\+\+Can\+\_\+\+Commit()}.
 
 \index{O\+S\+TM@{O\+S\+TM}!global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number@{global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number}}
 \index{global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number@{global\+\_\+\+Unique\+\_\+\+I\+D\+\_\+\+Number}!O\+S\+TM@{O\+S\+TM}}
@@ -876,7 +747,7 @@ Definition at line \hyperlink{_o_s_t_m_8h_source_l00139}{139} of file \hyperlink
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8cpp_source_l00162}{is\+\_\+\+Locked()}, \hyperlink{_o_s_t_m_8cpp_source_l00147}{lock\+\_\+\+Mutex()}, and \hyperlink{_o_s_t_m_8cpp_source_l00154}{unlock\+\_\+\+Mutex()}.
+Referenced by \hyperlink{_o_s_t_m_8cpp_source_l00147}{lock\+\_\+\+Mutex()}, \hyperlink{_o_s_t_m_8cpp_source_l00162}{try\+\_\+lock()}, and \hyperlink{_o_s_t_m_8cpp_source_l00154}{unlock\+\_\+\+Mutex()}.
 
 \index{O\+S\+TM@{O\+S\+TM}!unique\+ID@{unique\+ID}}
 \index{unique\+ID@{unique\+ID}!O\+S\+TM@{O\+S\+TM}}
@@ -887,7 +758,7 @@ Definition at line \hyperlink{_o_s_t_m_8h_source_l00117}{117} of file \hyperlink
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8cpp_source_l00082}{Get\+\_\+\+Unique\+\_\+\+I\+D()}, \hyperlink{_o_s_t_m_8cpp_source_l00021}{O\+S\+T\+M()}, \hyperlink{_o_s_t_m_8cpp_source_l00075}{Set\+\_\+\+Unique\+\_\+\+I\+D()}, and \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8cpp_source_l00082}{Get\+\_\+\+Unique\+\_\+\+I\+D()}, \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}, \hyperlink{_o_s_t_m_8cpp_source_l00021}{O\+S\+T\+M()}, and \hyperlink{_o_s_t_m_8cpp_source_l00075}{Set\+\_\+\+Unique\+\_\+\+I\+D()}.
 
 \index{O\+S\+TM@{O\+S\+TM}!version@{version}}
 \index{version@{version}!O\+S\+TM@{O\+S\+TM}}
@@ -898,7 +769,7 @@ Definition at line \hyperlink{_o_s_t_m_8h_source_l00111}{111} of file \hyperlink
 
 
 
-Referenced by \hyperlink{_o_s_t_m_8cpp_source_l00100}{Get\+\_\+\+Version()}, \hyperlink{_o_s_t_m_8cpp_source_l00108}{increase\+\_\+\+Version\+Number()}, \hyperlink{_o_s_t_m_8cpp_source_l00021}{O\+S\+T\+M()}, \hyperlink{_o_s_t_m_8cpp_source_l00092}{Set\+\_\+\+Version()}, and \hyperlink{_o_s_t_m_8h_source_l00051}{to\+String()}.
+Referenced by \hyperlink{_o_s_t_m_8cpp_source_l00100}{Get\+\_\+\+Version()}, \hyperlink{_o_s_t_m_8h_source_l00051}{get\+Base\+Copy()}, \hyperlink{_o_s_t_m_8cpp_source_l00108}{increase\+\_\+\+Version\+Number()}, \hyperlink{_o_s_t_m_8cpp_source_l00021}{O\+S\+T\+M()}, and \hyperlink{_o_s_t_m_8cpp_source_l00092}{Set\+\_\+\+Version()}.
 
 \index{O\+S\+TM@{O\+S\+TM}!Z\+E\+RO@{Z\+E\+RO}}
 \index{Z\+E\+RO@{Z\+E\+RO}!O\+S\+TM@{O\+S\+TM}}

@@ -1,0 +1,12 @@
+<map id="CARPHONE_WAREHOUSE::toString" name="CARPHONE_WAREHOUSE::toString">
+<area shape="rect" id="node2" href="$class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="266,5,425,32"/>
+<area shape="rect" id="node3" href="$class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="275,56,415,83"/>
+<area shape="rect" id="node4" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a8d278005b2ba46869f6787681ad05704.html#a8d278005b2ba46869f6787681ad05704" title="CARPHONE_WAREHOUSE\l::GetNumber_of_alcatel" alt="" coords="248,107,443,149"/>
+<area shape="rect" id="node5" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a9200c484f288fce0246008e5d683507f.html#a9200c484f288fce0246008e5d683507f" title="CARPHONE_WAREHOUSE\l::GetNumber_of_huawei" alt="" coords="248,173,443,214"/>
+<area shape="rect" id="node6" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a640af469d055cb8836c42ac4ce135e6f.html#a640af469d055cb8836c42ac4ce135e6f" title="CARPHONE_WAREHOUSE\l::GetNumber_of_iphones" alt="" coords="248,238,443,279"/>
+<area shape="rect" id="node7" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_aac1959dee51204439fc0721403d23447.html#aac1959dee51204439fc0721403d23447" title="CARPHONE_WAREHOUSE\l::GetNumber_of_nokia" alt="" coords="248,303,443,345"/>
+<area shape="rect" id="node8" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a0cd9d93b5b145846627d3005dff71f6f.html#a0cd9d93b5b145846627d3005dff71f6f" title="CARPHONE_WAREHOUSE\l::GetNumber_of_samsung" alt="" coords="248,369,443,410"/>
+<area shape="rect" id="node9" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a955e5b413e1f41a36dcc12837664f364.html#a955e5b413e1f41a36dcc12837664f364" title="CARPHONE_WAREHOUSE\l::GetNumber_of_sony" alt="" coords="248,434,443,475"/>
+<area shape="rect" id="node10" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a90c80d52aa860d00c3fb9c165646637b.html#a90c80d52aa860d00c3fb9c165646637b" title="CARPHONE_WAREHOUSE\l::GetShop_address" alt="" coords="248,499,443,541"/>
+<area shape="rect" id="node11" href="$class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_a4932d1483f97e12e01be200951c572df.html#a4932d1483f97e12e01be200951c572df" title="CARPHONE_WAREHOUSE\l::GetShop_name" alt="" coords="248,565,443,606"/>
+</map>

@@ -1,0 +1,633 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_t_x" kind="class" language="C++" prot="public">
+    <compoundname>TX</compoundname>
+    <includes refid="_t_x_8h" local="no">TX.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_t_x_1adf1ccda799ef5c419cb43b8ae55eb45c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TM</definition>
+        <argsstring></argsstring>
+        <name>TM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Only <ref refid="class_t_m" kindref="compound">TM</ref> Transaction Manager can create instance of <ref refid="class_t_x" kindref="compound">TX</ref> Transaction </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="72" column="1" bodyfile="TX.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_t_x_1a25838234aab99ae891a90eb8623a8b3c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int TX::test_counter</definition>
+        <argsstring></argsstring>
+        <name>test_counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>test_counter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int ONLY FOR TESTING!!!</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>static</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global counter for rollback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="80" column="1" bodyfile="TX.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="class_t_x_1a9dde5d356b35e557448e58d260087356" compoundref="_t_x_8cpp" startline="202" endline="279">commit</referencedby>
+        <referencedby refid="class_t_x_1ae9bf97930c4670f59d334b345353a71e" compoundref="_t_x_8cpp" startline="324" endline="326">getTest_counter</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_t_x_1a81aafda16e2f20e36ec6c68e584668ff" prot="private" static="no" mutable="no">
+        <type>std::map&lt; int, std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt; &gt;</type>
+        <definition>std::map&lt; int, std::shared_ptr&lt;OSTM&gt; &gt; TX::working_Map_collection</definition>
+        <argsstring></argsstring>
+        <name>working_Map_collection</name>
+        <briefdescription>
+<para>MAP Collection to store OSTM* parent based pointers to make invisible changes during isolated transaction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>working_Map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="92" column="1" bodyfile="TX.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_x_1a145a1c74b521f277fe481971a930b249" prot="private" static="no" mutable="no">
+        <type>std::thread::id</type>
+        <definition>std::thread::id TX::transaction_Number</definition>
+        <argsstring></argsstring>
+        <name>transaction_Number</name>
+        <briefdescription>
+<para>Returning the transaction number. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transaction_Number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::thread::id NOT USED YET </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="98" column="1" bodyfile="TX.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_x_1ae8f413fd7f4fea322e7ad3c668f9898e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TX::_tx_nesting_level</definition>
+        <argsstring></argsstring>
+        <name>_tx_nesting_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_tx_nesting_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="102" column="1" bodyfile="TX.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_t_x_1a1a45d726894190695314464d7cd97c29" prot="private" static="yes" mutable="no">
+        <type>std::map&lt; int, std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt; &gt;</type>
+        <definition>std::map&lt; int, std::shared_ptr&lt; OSTM &gt; &gt; TX::main_Process_Map_collection</definition>
+        <argsstring></argsstring>
+        <name>main_Process_Map_collection</name>
+        <briefdescription>
+<para>STATIC GLOBAL MAP Collection to store OSTM* parent based pointers to control/lock and compare objects version number within transactions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>main_Process_Map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>static</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global std::map main_Process_Map_collection store all transactional objects/pointers </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="108" column="1" bodyfile="TX.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_x_1aea5b8eedcd5059384155576b3979a5f6" prot="private" static="yes" mutable="no">
+        <type>std::map&lt; int, std::map&lt; int, int &gt; &gt;</type>
+        <definition>std::map&lt; int, std::map&lt; int, int &gt; &gt; TX::process_map_collection</definition>
+        <argsstring></argsstring>
+        <name>process_map_collection</name>
+        <briefdescription>
+<para>STATIC GLOBAL MAP Collection to store all process associated keys to find when deleting transactions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>process_map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>static</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Global std::map process_map_collection store all transactional objects/pointers </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="113" column="1" bodyfile="TX.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_t_x_1aa688a8c96fa3cdf8cd92e267463536dc" prot="private" static="yes" mutable="no">
+        <type>std::mutex</type>
+        <definition>std::mutex TX::register_Lock</definition>
+        <argsstring></argsstring>
+        <name>register_Lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>register_Lock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::mutex to control shared access on MAIN MAP</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>static</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>shared std:mutex register_Lock to protect writes into shared global collection </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="122" column="1" bodyfile="TX.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_t_x_1a8a4b83eab0171ae834bfa92bbced1094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TX::TX</definition>
+        <argsstring>(std::thread::id id)</argsstring>
+        <name>TX</name>
+        <param>
+          <type>std::thread::id</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transaction_Number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int, to store associated thread </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_tx_nesting_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int, to store and indicate nesting level of transactions within transaction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="31" column="1" bodyfile="TX.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1abecf854cc3228ab6dd51175b3cd1c70a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TX::~TX</definition>
+        <argsstring>()</argsstring>
+        <name>~TX</name>
+        <briefdescription>
+<para>De-constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="35" column="1" bodyfile="TX.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1ab96b3dd2bfd621b47307f0af3ec4f35c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TX::TX</definition>
+        <argsstring>(const TX &amp;orig)</argsstring>
+        <name>TX</name>
+        <param>
+          <type>const <ref refid="class_t_x" kindref="compound">TX</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+<para>Default copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="39" column="1" bodyfile="TX.cpp" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1aa9739c5c2077454c779098db7baefc2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TX::ostm_exit</definition>
+        <argsstring>()</argsstring>
+        <name>ostm_exit</name>
+        <briefdescription>
+<para>Delete all map entries associated with the main process. </para>        </briefdescription>
+        <detaileddescription>
+<para>ostm_exit void, clear all elements from the shared global collections associated with the main process</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>main_Process_Map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map, store all std::shared_ptr&lt;OSTM&gt; from all transaction shared between multiple processes </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>process_map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map, store all unique id from all transaction within main process DO NOT CALL THIS METHOD EXPLICITLY!!!!!! WILL DELETE ALL PROCESS ASSOCIATED ELEMENTS!!!! </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="43" column="1" bodyfile="TX.cpp" bodystart="72" bodyend="94"/>
+        <referencedby refid="class_t_m_1a5e2d1127f2429f2f524d25f430eade06" compoundref="_t_m_8cpp" startline="101" endline="117">TM::_TX_EXIT</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1abc32af2f51df97ac483e5bfe7db6ca6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TX::_register</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; object)</argsstring>
+        <name>_register</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Register <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> pointer into STM library. </para>        </briefdescription>
+        <detaileddescription>
+<para>register void, receives an std::shared_ptr&lt;OSTM&gt; that point to the original memory space to protect from reca conditions</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>working_Map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map, store all the std::shared_ptr&lt;OSTM&gt; pointer in the transaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>main_Process_Map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map, store all std::shared_ptr&lt;OSTM&gt; from all transaction, used to lock and compare the objects </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>process_map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map, store all std::shared_ptr&lt;OSTM&gt; unique ID from all transaction, used to delete all pointers used by the main process, from all transaction before the program exit. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>std::lock_guard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>use register_Lock(mutex) shared lock between all transaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ppid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int, store main process number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="48" column="1" bodyfile="TX.cpp" bodystart="104" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1a1d78262b8831ddd042ed491f2e600e24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; OSTM &gt; TX::load</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; object)</argsstring>
+        <name>load</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>load std::shared_ptr&lt;OSTM&gt;, returning an std::shared_ptr&lt;OSTM&gt; copy of the original pointer, to work with during transaction life time </para>        </briefdescription>
+        <detaileddescription>
+<para>Register <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> pointer into STM library</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>working_Map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map, store all the std::shared_ptr&lt;OSTM&gt; pointer in the transaction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="52" column="1" bodyfile="TX.cpp" bodystart="155" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1a7dbcb369aa4a3370b6c6829d278ece5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TX::store</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; object)</argsstring>
+        <name>store</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>Store transactional changes. </para>        </briefdescription>
+        <detaileddescription>
+<para>store void, receive an std::shared_ptr&lt;OSTM&gt; object to store the changes within the transaction, depends the user action</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>working_Map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map, store all the std::shared_ptr&lt;OSTM&gt; pointer in the transaction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="56" column="1" bodyfile="TX.cpp" bodystart="178" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1a9dde5d356b35e557448e58d260087356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TX::commit</definition>
+        <argsstring>()</argsstring>
+        <name>commit</name>
+        <briefdescription>
+<para>Commit transactional changes. </para>        </briefdescription>
+        <detaileddescription>
+<para>commit bool, returns boolean value TRUE/FALSE depends on the action taken within the function</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>working_Map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map, store all the std::shared_ptr&lt;OSTM&gt; pointer in the transaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>main_Process_Map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map, store all std::shared_ptr&lt;OSTM&gt; from all transaction, used to lock and compare the objects </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>can_Commit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool, helps to make decision that the transaction can commit or rollback </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="60" column="1" bodyfile="TX.cpp" bodystart="202" bodyend="279"/>
+        <references refid="class_t_x_1aa3ac499f576326588628ade96b27b4b1" compoundref="_t_x_8cpp" startline="316" endline="320">_decrease_tx_nesting</references>
+        <references refid="class_t_x_1a25838234aab99ae891a90eb8623a8b3c" compoundref="_t_x_8h" startline="80">test_counter</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1a1384bdf12d795854b5d32e7f61ffbdb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TX::_increase_tx_nesting</definition>
+        <argsstring>()</argsstring>
+        <name>_increase_tx_nesting</name>
+        <briefdescription>
+<para>Add <ref refid="class_t_x" kindref="compound">TX</ref> nesting level by one. </para>        </briefdescription>
+        <detaileddescription>
+<para>_increase_tx_nesting increase the value stored in _tx_nesting_level by one, indicate that the transaction nested</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_tx_nesting_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="64" column="1" bodyfile="TX.cpp" bodystart="307" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1aa3ac499f576326588628ade96b27b4b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TX::_decrease_tx_nesting</definition>
+        <argsstring>()</argsstring>
+        <name>_decrease_tx_nesting</name>
+        <briefdescription>
+<para>Remove <ref refid="class_t_x" kindref="compound">TX</ref> nesting level by one. </para>        </briefdescription>
+        <detaileddescription>
+<para>_decrease_tx_nesting decrease the value stored in _tx_nesting_level by one, when outer transactions commiting</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_tx_nesting_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="68" column="1" bodyfile="TX.cpp" bodystart="316" bodyend="320"/>
+        <referencedby refid="class_t_x_1a9dde5d356b35e557448e58d260087356" compoundref="_t_x_8cpp" startline="202" endline="279">commit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1ae9bf97930c4670f59d334b345353a71e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int TX::getTest_counter</definition>
+        <argsstring>()</argsstring>
+        <name>getTest_counter</name>
+        <briefdescription>
+<para>getTest_counter TESTING ONLY!!! returning the value of the test_counter stored, number of rollbacks </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="76" column="1" bodyfile="TX.cpp" bodystart="324" bodyend="326"/>
+        <references refid="class_t_x_1a25838234aab99ae891a90eb8623a8b3c" compoundref="_t_x_8h" startline="80">test_counter</references>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1a3d96ed91eb9ec73e16589f705661c5a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TX::_print_all_tx</definition>
+        <argsstring>()</argsstring>
+        <name>_print_all_tx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ONLY FOR TESTING CHECK THE MAP AFTER THREAD EXIT AND ALL SHOULD BE DELETED!!!!!!! </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="84" column="1" bodyfile="TX.cpp" bodystart="346" bodyend="367"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_t_x_1a3f5671423cb7b9f9c98f8a25f2a4b545" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt; int, int &gt; TX::get_thread_Map</definition>
+        <argsstring>()</argsstring>
+        <name>get_thread_Map</name>
+        <briefdescription>
+<para>get_thread_Map returning and map to insert to the process_map_collection as an inner value </para>        </briefdescription>
+        <detaileddescription>
+<para>get_thread_Map std::map, returning a map to store all unique ID from all objects from all transactions within the main process</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>thread_Map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map&lt; int, int &gt;, </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="118" column="1" bodyfile="TX.cpp" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1a9eba04944d449285905b60ec47223cff" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::thread::id</type>
+        <definition>const std::thread::id TX::_get_tx_number</definition>
+        <argsstring>() const </argsstring>
+        <name>_get_tx_number</name>
+        <briefdescription>
+<para>_get_tx_number returning the transaction uniqe identifier </para>        </briefdescription>
+        <detaileddescription>
+<para>_get_tx_number std::thread::id, returning the thread id that has assigned the given transaction</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transaction_Number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="126" column="1" bodyfile="TX.cpp" bodystart="331" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1a4c13d2015dc15d0f788fa9a1413f0463" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TX::_release_object_lock</definition>
+        <argsstring>()</argsstring>
+        <name>_release_object_lock</name>
+        <briefdescription>
+<para>_release_object_lock void, is get called from commit function, with the purpose to release the locks on all the objects participating in the transaction </para>        </briefdescription>
+        <detaileddescription>
+<para>Release the locks in objects with transaction associated collection</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>working_Map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map, store all the std::shared_ptr&lt;OSTM&gt; pointer in the transaction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>main_Process_Map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map, store all std::shared_ptr&lt;OSTM&gt; from all transaction, used to release the lock on object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="131" column="1" bodyfile="TX.cpp" bodystart="286" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="class_t_x_1ae045534c4a9d39bd5c6ea2a39a372a79" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TX::th_exit</definition>
+        <argsstring>()</argsstring>
+        <name>th_exit</name>
+        <briefdescription>
+<para>Clean up all associated values by the thread delete from working_Map_collection, it is an automated function. </para>        </briefdescription>
+        <detaileddescription>
+<para>th_exit void, delete all std::shared_ptr&lt;OSTM&gt; elements from working_Map_collection, that store pointers to working objects</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>working_Map_collection</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>std::map, store std::shared_ptr&lt;OSTM&gt; transaction pointers </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TX.h" line="135" column="1" bodyfile="TX.cpp" bodystart="52" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="TX.h" line="26" column="1" bodyfile="TX.h" bodystart="26" bodyend="139"/>
+    <listofallmembers>
+      <member refid="class_t_x_1aa3ac499f576326588628ade96b27b4b1" prot="public" virt="non-virtual"><scope>TX</scope><name>_decrease_tx_nesting</name></member>
+      <member refid="class_t_x_1a9eba04944d449285905b60ec47223cff" prot="private" virt="non-virtual"><scope>TX</scope><name>_get_tx_number</name></member>
+      <member refid="class_t_x_1a1384bdf12d795854b5d32e7f61ffbdb8" prot="public" virt="non-virtual"><scope>TX</scope><name>_increase_tx_nesting</name></member>
+      <member refid="class_t_x_1a3d96ed91eb9ec73e16589f705661c5a7" prot="public" virt="non-virtual"><scope>TX</scope><name>_print_all_tx</name></member>
+      <member refid="class_t_x_1abc32af2f51df97ac483e5bfe7db6ca6e" prot="public" virt="non-virtual"><scope>TX</scope><name>_register</name></member>
+      <member refid="class_t_x_1a4c13d2015dc15d0f788fa9a1413f0463" prot="private" virt="non-virtual"><scope>TX</scope><name>_release_object_lock</name></member>
+      <member refid="class_t_x_1ae8f413fd7f4fea322e7ad3c668f9898e" prot="private" virt="non-virtual"><scope>TX</scope><name>_tx_nesting_level</name></member>
+      <member refid="class_t_x_1a9dde5d356b35e557448e58d260087356" prot="public" virt="non-virtual"><scope>TX</scope><name>commit</name></member>
+      <member refid="class_t_x_1a3f5671423cb7b9f9c98f8a25f2a4b545" prot="private" virt="non-virtual"><scope>TX</scope><name>get_thread_Map</name></member>
+      <member refid="class_t_x_1ae9bf97930c4670f59d334b345353a71e" prot="public" virt="non-virtual"><scope>TX</scope><name>getTest_counter</name></member>
+      <member refid="class_t_x_1a1d78262b8831ddd042ed491f2e600e24" prot="public" virt="non-virtual"><scope>TX</scope><name>load</name></member>
+      <member refid="class_t_x_1a1a45d726894190695314464d7cd97c29" prot="private" virt="non-virtual"><scope>TX</scope><name>main_Process_Map_collection</name></member>
+      <member refid="class_t_x_1aa9739c5c2077454c779098db7baefc2b" prot="public" virt="non-virtual"><scope>TX</scope><name>ostm_exit</name></member>
+      <member refid="class_t_x_1aea5b8eedcd5059384155576b3979a5f6" prot="private" virt="non-virtual"><scope>TX</scope><name>process_map_collection</name></member>
+      <member refid="class_t_x_1aa688a8c96fa3cdf8cd92e267463536dc" prot="private" virt="non-virtual"><scope>TX</scope><name>register_Lock</name></member>
+      <member refid="class_t_x_1a7dbcb369aa4a3370b6c6829d278ece5d" prot="public" virt="non-virtual"><scope>TX</scope><name>store</name></member>
+      <member refid="class_t_x_1a25838234aab99ae891a90eb8623a8b3c" prot="public" virt="non-virtual"><scope>TX</scope><name>test_counter</name></member>
+      <member refid="class_t_x_1ae045534c4a9d39bd5c6ea2a39a372a79" prot="private" virt="non-virtual"><scope>TX</scope><name>th_exit</name></member>
+      <member refid="class_t_x_1adf1ccda799ef5c419cb43b8ae55eb45c" prot="public" virt="non-virtual"><scope>TX</scope><name>TM</name></member>
+      <member refid="class_t_x_1a145a1c74b521f277fe481971a930b249" prot="private" virt="non-virtual"><scope>TX</scope><name>transaction_Number</name></member>
+      <member refid="class_t_x_1a8a4b83eab0171ae834bfa92bbced1094" prot="public" virt="non-virtual"><scope>TX</scope><name>TX</name></member>
+      <member refid="class_t_x_1ab96b3dd2bfd621b47307f0af3ec4f35c" prot="public" virt="non-virtual"><scope>TX</scope><name>TX</name></member>
+      <member refid="class_t_x_1a81aafda16e2f20e36ec6c68e584668ff" prot="private" virt="non-virtual"><scope>TX</scope><name>working_Map_collection</name></member>
+      <member refid="class_t_x_1abecf854cc3228ab6dd51175b3cd1c70a" prot="public" virt="non-virtual"><scope>TX</scope><name>~TX</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

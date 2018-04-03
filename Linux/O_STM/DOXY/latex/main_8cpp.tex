@@ -1,0 +1,1301 @@
+\hypertarget{main_8cpp}{}\subsection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$thread$>$}\\*
+{\ttfamily \#include \char`\"{}T\+M.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}A\+I\+B.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}B\+O\+I.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}B\+O\+A.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\+W\+B\+P\+L\+C.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\+L\+S\+T\+E\+R.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\+N\+B\+L.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}W\+A\+R\+E\+H\+O\+U\+S\+E.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}C\+A\+R\+L\+O\+W\+\_\+\+W.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}K\+I\+L\+K\+E\+N\+N\+Y\+\_\+\+W.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\+A\+L\+L\+A\+G\+H\+\_\+\+W.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\+U\+N\+D\+A\+L\+K\+\_\+\+W.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\+L\+I\+G\+O\+\_\+\+W.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$mutex$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$condition\+\_\+variable$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_a0099d241c74532abfb1baae50a52da52_a0099d241c74532abfb1baae50a52da52}{\+\_\+complex\+\_\+transfer\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+two\+\_\+, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$$>$ \+\_\+customer\+\_\+vec, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\begin{DoxyCompactList}\small\item\em {\itshape complex\+\_\+transfer} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, a vector of std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointers, the Transaction manager, and the amount to use in the transaction, and transfer the \+\_\+amount value from booth single objects to the objects to the vector collection \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a12500f2bcc3c3bb8ad7dd9d74c1637d1_a12500f2bcc3c3bb8ad7dd9d74c1637d1}{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+two, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+three, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$$>$ \+\_\+warehouse\+\_\+vec, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\item 
+void \hyperlink{main_8cpp_a52fcb0d50c67be8cd20f2aca338683c7_a52fcb0d50c67be8cd20f2aca338683c7}{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+two, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+three, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\begin{DoxyCompactList}\small\item\em {\itshape nested\+\_\+warehouse\+\_\+transfer} function, takes three std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_a5675cb594d74aa1bf5e80233370ffd81}{\+\_\+nesting\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\begin{DoxyCompactList}\small\item\em {\itshape nesting} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a944b67b9489cc68c8eac66d42f4515ec_a944b67b9489cc68c8eac66d42f4515ec}{\+\_\+six\+\_\+account\+\_\+transfer\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+one\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+two\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+three\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+four\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+five\+\_\+, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\begin{DoxyCompactList}\small\item\em {\itshape six\+\_\+account\+\_\+transfer} function, takes six std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from five account to one account \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3_a83aef8c5b69afef4e38d14c17fe782b3}{\+\_\+two\+\_\+account\+\_\+transfer\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\begin{DoxyCompactList}\small\item\em {\itshape two\+\_\+account\+\_\+transfer} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc_a1c170f18aac9dbb8aba1ad2f7e4619cc}{\+\_\+warehouse\+\_\+transfer\+\_\+} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \+\_\+from\+\_\+, \hyperlink{class_t_m}{TM} \&\+\_\+tm, double \+\_\+amount)
+\begin{DoxyCompactList}\small\item\em {\itshape warehouse\+\_\+transfer} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account \end{DoxyCompactList}\item 
+int \hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
+\end{DoxyCompactItemize}
+\subsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{main_8cpp_a988177ecdd12249ecd3a1cdc75546c44_a988177ecdd12249ecd3a1cdc75546c44}{vector\+\_\+number} = 600
+\end{DoxyCompactItemize}
+
+
+\subsubsection{Function Documentation}
+\index{main.\+cpp@{main.\+cpp}!\+\_\+complex\+\_\+transfer\+\_\+@{\+\_\+complex\+\_\+transfer\+\_\+}}
+\index{\+\_\+complex\+\_\+transfer\+\_\+@{\+\_\+complex\+\_\+transfer\+\_\+}!main.\+cpp@{main.\+cpp}}
+\paragraph[{\texorpdfstring{\+\_\+complex\+\_\+transfer\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+two\+\_\+, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$$>$ \+\_\+customer\+\_\+vec, T\+M \&\+\_\+tm, double \+\_\+amount)}{_complex_transfer_(std::shared_ptr< OSTM > _from_, std::shared_ptr< OSTM > _from_two_, std::vector< std::shared_ptr< OSTM >> _customer_vec, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+complex\+\_\+transfer\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+two\+\_\+, }
+\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$$>$}]{\+\_\+customer\+\_\+vec, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a0099d241c74532abfb1baae50a52da52_a0099d241c74532abfb1baae50a52da52}{}\label{main_8cpp_a0099d241c74532abfb1baae50a52da52_a0099d241c74532abfb1baae50a52da52}
+
+
+{\itshape complex\+\_\+transfer} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, a vector of std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointers, the Transaction manager, and the amount to use in the transaction, and transfer the \+\_\+amount value from booth single objects to the objects to the vector collection 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::shared\+\_\+ptr$<$\+T\+X$>$} & tx, Transaction Object \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$} & type, {\itshape F\+R\+OM} \& {\itshape F\+R\+O\+M\+\_\+\+T\+WO} \& {\itshape TO} \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$} & type, {\itshape F\+R\+O\+M\+\_\+\+O\+S\+T\+M\+\_\+\+O\+NE} \& {\itshape F\+R\+O\+M\+\_\+\+O\+S\+T\+M\+\_\+\+T\+WO} \& {\itshape T\+O\+\_\+\+O\+S\+TM} \\
+\hline
+\end{DoxyParams}
+Register the two single account
+
+Declare required pointers
+
+Register customers accounts from the collection (vector)
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+Commit changes
+
+Definition at line \hyperlink{main_8cpp_source_l00294}{294} of file \hyperlink{main_8cpp_source}{main.\+cpp}.
+
+
+
+References \hyperlink{_t_m_8cpp_source_l00078}{T\+M\+::\+\_\+get\+\_\+tx()}, and \hyperlink{_b_a_n_k_8h_source_l00046}{B\+A\+N\+K\+::\+Set\+Balance()}.
+
+
+\begin{DoxyCode}
+00294                                                                                                            
+                                                      \{
+00295     std::shared\_ptr<TX> tx = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00299     tx->\_register(\_from\_);
+00300     tx->\_register(\_from\_two\_);
+00304     std::shared\_ptr<OSTM> \_FROM\_OSTM\_ONE\_, \_FROM\_OSTM\_TWO\_, \_TO\_OSTM\_;
+00305     std::shared\_ptr<BANK> \_FROM\_, \_FROM\_TWO\_, \_TO\_;
+00306 
+00307     \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00308     \textcolor{keywordflow}{try} \{
+00309         \textcolor{keywordflow}{while} (!done) \{
+00310             \textcolor{comment}{// for (int i = 0; i < vector\_number; ++i) \{}
+00311             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}&& obj : \_customer\_vec) \{
+00315                 \textcolor{comment}{// auto&& obj = \_customer\_vec.at(i);}
+00316                 tx->\_register(obj);
+00320                 \_FROM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_));
+00321                 \_FROM\_TWO\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_two\_));
+00322                 \_TO\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(obj));
+00326                 \_FROM\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_FROM\_->GetBalance() - \_amount);
+00327                 \_FROM\_TWO\_->SetBalance(\_FROM\_TWO\_->GetBalance() - \_amount);
+00328                 \_TO\_->SetBalance(\_TO\_->GetBalance() + (\_amount * 2));
+00332                 \_FROM\_OSTM\_ONE\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_);
+00333                 \_FROM\_OSTM\_TWO\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_TWO\_);
+00334                 \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_);
+00338                 tx->store(\_FROM\_OSTM\_ONE\_);
+00339                 tx->store(\_FROM\_OSTM\_TWO\_);
+00340                 tx->store(\_TO\_OSTM\_);
+00341             \}
+00345             done = tx->commit();
+00346         \}
+00347     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00348         std::cout << e.what() << std::endl;
+00349     \}
+00350 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a0099d241c74532abfb1baae50a52da52_a0099d241c74532abfb1baae50a52da52_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+@{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+}}
+\index{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+@{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+}!main.\+cpp@{main.\+cpp}}
+\paragraph[{\texorpdfstring{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+two, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+three, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$$>$ \+\_\+warehouse\+\_\+vec, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+, T\+M \&\+\_\+tm, double \+\_\+amount)}{_complex_warehouse_transfer_(std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _to_two, std::shared_ptr< OSTM > _to_three, std::vector< std::shared_ptr< OSTM >> _warehouse_vec, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+two, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+three, }
+\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$$>$}]{\+\_\+warehouse\+\_\+vec, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a12500f2bcc3c3bb8ad7dd9d74c1637d1_a12500f2bcc3c3bb8ad7dd9d74c1637d1}{}\label{main_8cpp_a12500f2bcc3c3bb8ad7dd9d74c1637d1_a12500f2bcc3c3bb8ad7dd9d74c1637d1}
+Register the two single account
+
+Declare required pointers
+
+Register customers accounts from the collection (vector)
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+W\+A\+R\+E\+H\+O\+U\+S\+E$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+N\+E\+S\+T\+ED \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} T\+E\+ST \+\_\+to\+\_\+two
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+Commit changes
+
+Definition at line \hyperlink{main_8cpp_source_l00518}{518} of file \hyperlink{main_8cpp_source}{main.\+cpp}.
+
+
+
+References \hyperlink{_t_m_8cpp_source_l00078}{T\+M\+::\+\_\+get\+\_\+tx()}, \hyperlink{main_8cpp_source_l00419}{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+()}, \hyperlink{main_8cpp_source_l00358}{\+\_\+warehouse\+\_\+transfer\+\_\+()}, and \hyperlink{_w_a_r_e_h_o_u_s_e_8h_source_l00045}{W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Set\+Number\+\_\+of\+\_\+nokia()}.
+
+
+\begin{DoxyCode}
+00518                                                                                                            
+                                                                                                                  
+           \{
+00519     std::shared\_ptr<TX> tx = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00523     tx->\_register(\_to\_);
+00524     tx->\_register(\_to\_two);
+00525     tx->\_register(\_to\_three);
+00526     tx->\_register(\_from\_);
+00530     std::shared\_ptr<WAREHOUSE> \_TO\_SHOP\_, \_TO\_SHOP\_TWO, \_TO\_SHOP\_VEC, \_FROM\_DIST\_;
+00531     std::shared\_ptr<OSTM> \_TO\_OSTM\_, \_TO\_OSTM\_TWO, \_TO\_OSTM\_VEC, \_FROM\_OSTM\_;
+00532 
+00533     \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00534     \textcolor{keywordflow}{try} \{
+00535         \textcolor{keywordflow}{while} (!done) \{
+00536 
+00537             \textcolor{comment}{// for (int i = 0; i < vector\_number; ++i) \{}
+00538             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}&& obj : \_warehouse\_vec) \{
+00542                 \textcolor{comment}{//auto&& obj = \_warehouse\_vec.at(i);}
+00543                 tx->\_register(obj);
+00547                 \_TO\_SHOP\_ = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}> (tx->load(\_to\_));
+00548                 \_TO\_SHOP\_TWO = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}> (tx->load(\_to\_two));
+00549                 \_TO\_SHOP\_VEC = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}> (tx->load(obj));
+00550                 \_FROM\_DIST\_ = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}> (tx->load(\_from\_));
+00551 
+00555                 \_TO\_SHOP\_->\hyperlink{class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f_a300d1fe21a47e45c0d5d27e25add346f}{SetNumber\_of\_nokia}(\_TO\_SHOP\_->GetNumber\_of\_nokia() + \_amount);
+00556                 \_TO\_SHOP\_TWO->SetNumber\_of\_nokia(\_TO\_SHOP\_TWO->GetNumber\_of\_nokia() + \_amount);
+00557                 \_TO\_SHOP\_VEC->SetNumber\_of\_nokia(\_TO\_SHOP\_VEC->GetNumber\_of\_nokia() + \_amount);
+00558                 \_FROM\_DIST\_->SetNumber\_of\_nokia(\_FROM\_DIST\_->GetNumber\_of\_nokia() - (\_amount * 3));
+00559 
+00560                 \_TO\_SHOP\_->SetNumber\_of\_samsung(\_TO\_SHOP\_->GetNumber\_of\_samsung() + \_amount);
+00561                 \_TO\_SHOP\_TWO->SetNumber\_of\_samsung(\_TO\_SHOP\_TWO->GetNumber\_of\_samsung() + \_amount);
+00562                 \_TO\_SHOP\_VEC->SetNumber\_of\_samsung(\_TO\_SHOP\_VEC->GetNumber\_of\_samsung() + \_amount);
+00563                 \_FROM\_DIST\_->SetNumber\_of\_samsung(\_FROM\_DIST\_->GetNumber\_of\_samsung() - (\_amount * 3));
+00564 
+00565                 \_TO\_SHOP\_->SetNumber\_of\_iphones(\_TO\_SHOP\_->GetNumber\_of\_iphones() + \_amount);
+00566                 \_TO\_SHOP\_TWO->SetNumber\_of\_iphones(\_TO\_SHOP\_TWO->GetNumber\_of\_iphones() + \_amount);
+00567                 \_TO\_SHOP\_VEC->SetNumber\_of\_iphones(\_TO\_SHOP\_VEC->GetNumber\_of\_iphones() + \_amount);
+00568                 \_FROM\_DIST\_->SetNumber\_of\_iphones(\_FROM\_DIST\_->GetNumber\_of\_iphones() - (\_amount * 3));
+00569 
+00570                 \_TO\_SHOP\_->SetNumber\_of\_sony(\_TO\_SHOP\_->GetNumber\_of\_sony() + \_amount);
+00571                 \_TO\_SHOP\_TWO->SetNumber\_of\_sony(\_TO\_SHOP\_TWO->GetNumber\_of\_sony() + \_amount);
+00572                 \_TO\_SHOP\_VEC->SetNumber\_of\_sony(\_TO\_SHOP\_VEC->GetNumber\_of\_sony() + \_amount);
+00573                 \_FROM\_DIST\_->SetNumber\_of\_sony(\_FROM\_DIST\_->GetNumber\_of\_sony() - (\_amount * 3));
+00574 
+00578                 \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_SHOP\_);
+00579                 \_TO\_OSTM\_TWO = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_SHOP\_TWO);
+00580                 \_TO\_OSTM\_VEC = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_SHOP\_VEC);
+00581                 \_FROM\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_DIST\_);
+00585                 tx->store(\_TO\_OSTM\_);
+00586                 tx->store(\_TO\_SHOP\_TWO);
+00587                 tx->store(\_TO\_SHOP\_VEC);
+00588                 tx->store(\_FROM\_OSTM\_);
+00589 
+00590 
+00591 
+00592             \}
+00596             std::shared\_ptr<TX> txTwo = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00597             \textcolor{keywordtype}{bool} nestedDone = \textcolor{keyword}{false};
+00598             \textcolor{keywordflow}{while} (!nestedDone) \{
+00599                 \_TO\_SHOP\_ = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}> (txTwo->load(\_to\_two));
+00600                 \_FROM\_DIST\_ = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}> (txTwo->load(\_from\_));
+00604                 \_TO\_SHOP\_->\hyperlink{class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f_a300d1fe21a47e45c0d5d27e25add346f}{SetNumber\_of\_nokia}(\_TO\_SHOP\_->GetNumber\_of\_nokia() + \_amount);
+00605                 \_FROM\_DIST\_->SetNumber\_of\_nokia(\_FROM\_DIST\_->GetNumber\_of\_nokia() - \_amount);
+00606 
+00607                 \_TO\_SHOP\_->SetNumber\_of\_samsung(\_TO\_SHOP\_->GetNumber\_of\_samsung() + \_amount);
+00608                 \_FROM\_DIST\_->SetNumber\_of\_samsung(\_FROM\_DIST\_->GetNumber\_of\_samsung() - \_amount);
+00609 
+00610                 \_TO\_SHOP\_->SetNumber\_of\_iphones(\_TO\_SHOP\_->GetNumber\_of\_iphones() + \_amount);
+00611                 \_FROM\_DIST\_->SetNumber\_of\_iphones(\_FROM\_DIST\_->GetNumber\_of\_iphones() - \_amount);
+00612 
+00613                 \_TO\_SHOP\_->SetNumber\_of\_sony(\_TO\_SHOP\_->GetNumber\_of\_sony() + \_amount);
+00614                 \_FROM\_DIST\_->SetNumber\_of\_sony(\_FROM\_DIST\_->GetNumber\_of\_sony() - \_amount);
+00618                 \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_SHOP\_);
+00619                 \_FROM\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_DIST\_);
+00623                 txTwo->store(\_TO\_OSTM\_);
+00624                 txTwo->store(\_FROM\_OSTM\_);
+00625 
+00626                 \textcolor{comment}{/*}
+00627 \textcolor{comment}{                 * NESTED TRANSACTION TEST \_to\_three}
+00628 \textcolor{comment}{                 */}
+00629                 \hyperlink{main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc_a1c170f18aac9dbb8aba1ad2f7e4619cc}{\_warehouse\_transfer\_}(\_to\_three, \_from\_, \_tm, \_amount);
+00630                 \hyperlink{main_8cpp_a52fcb0d50c67be8cd20f2aca338683c7_a52fcb0d50c67be8cd20f2aca338683c7}{\_nested\_warehouse\_transfer\_}(\_to\_, \_to\_two, \_to\_three, \_from\_, 
+      \_tm, \_amount);
+00631 
+00632                 nestedDone = tx->commit();
+00633             \}
+00634 
+00638             done = tx->commit();
+00639 
+00640         \}
+00641     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00642         std::cout << e.what() << std::endl;
+00643     \}
+00644 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a12500f2bcc3c3bb8ad7dd9d74c1637d1_a12500f2bcc3c3bb8ad7dd9d74c1637d1_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+@{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+}}
+\index{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+@{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+}!main.\+cpp@{main.\+cpp}}
+\paragraph[{\texorpdfstring{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+two, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+three, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+, T\+M \&\+\_\+tm, double \+\_\+amount)}{_nested_warehouse_transfer_(std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _to_two, std::shared_ptr< OSTM > _to_three, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+two, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+three, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a52fcb0d50c67be8cd20f2aca338683c7_a52fcb0d50c67be8cd20f2aca338683c7}{}\label{main_8cpp_a52fcb0d50c67be8cd20f2aca338683c7_a52fcb0d50c67be8cd20f2aca338683c7}
+
+
+{\itshape nested\+\_\+warehouse\+\_\+transfer} function, takes three std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::shared\+\_\+ptr$<$\+T\+X$>$} & tx, Transaction Object \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+W\+A\+R\+E\+H\+O\+U\+S\+E$>$} & type, {\itshape T\+O\+\_\+\+S\+H\+OP} \& {\itshape F\+R\+O\+M\+\_\+\+D\+I\+ST} \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$} & type, {\itshape T\+O\+\_\+\+O\+S\+TM} \& {\itshape F\+R\+O\+M\+\_\+\+O\+S\+TM} \\
+\hline
+\end{DoxyParams}
+Register the two single account
+
+Declare required pointers
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+N\+E\+S\+T\+ED \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} T\+E\+ST \+\_\+to\+\_\+two
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+Commit changes
+
+Definition at line \hyperlink{main_8cpp_source_l00419}{419} of file \hyperlink{main_8cpp_source}{main.\+cpp}.
+
+
+
+References \hyperlink{_t_m_8cpp_source_l00078}{T\+M\+::\+\_\+get\+\_\+tx()}, \hyperlink{main_8cpp_source_l00358}{\+\_\+warehouse\+\_\+transfer\+\_\+()}, and \hyperlink{_w_a_r_e_h_o_u_s_e_8h_source_l00045}{W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Set\+Number\+\_\+of\+\_\+nokia()}.
+
+
+
+Referenced by \hyperlink{main_8cpp_source_l00518}{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+()}.
+
+
+\begin{DoxyCode}
+00419                                                                                                            
+                                                                       \{
+00420     std::shared\_ptr<TX> tx = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00424     tx->\_register(\_to\_);
+00425     tx->\_register(\_to\_two);
+00426     tx->\_register(\_to\_three);
+00427     tx->\_register(\_from\_);
+00431     std::shared\_ptr<WAREHOUSE> \_TO\_SHOP\_, \_FROM\_DIST\_;
+00432     std::shared\_ptr<OSTM> \_TO\_OSTM\_, \_FROM\_OSTM\_;
+00433 
+00434     \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00435     \textcolor{keywordflow}{try} \{
+00436         \textcolor{keywordflow}{while} (!done) \{
+00440             \_TO\_SHOP\_ = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}> (tx->load(\_to\_));
+00441             \_FROM\_DIST\_ = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}> (tx->load(\_from\_));
+00445             \_TO\_SHOP\_->\hyperlink{class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f_a300d1fe21a47e45c0d5d27e25add346f}{SetNumber\_of\_nokia}(\_TO\_SHOP\_->GetNumber\_of\_nokia() + \_amount);
+00446             \_FROM\_DIST\_->SetNumber\_of\_nokia(\_FROM\_DIST\_->GetNumber\_of\_nokia() - \_amount);
+00447 
+00448             \_TO\_SHOP\_->SetNumber\_of\_samsung(\_TO\_SHOP\_->GetNumber\_of\_samsung() + \_amount);
+00449             \_FROM\_DIST\_->SetNumber\_of\_samsung(\_FROM\_DIST\_->GetNumber\_of\_samsung() - \_amount);
+00450 
+00451             \_TO\_SHOP\_->SetNumber\_of\_iphones(\_TO\_SHOP\_->GetNumber\_of\_iphones() + \_amount);
+00452             \_FROM\_DIST\_->SetNumber\_of\_iphones(\_FROM\_DIST\_->GetNumber\_of\_iphones() - \_amount);
+00453 
+00454             \_TO\_SHOP\_->SetNumber\_of\_sony(\_TO\_SHOP\_->GetNumber\_of\_sony() + \_amount);
+00455             \_FROM\_DIST\_->SetNumber\_of\_sony(\_FROM\_DIST\_->GetNumber\_of\_sony() - \_amount);
+00459             \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_SHOP\_);
+00460             \_FROM\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_DIST\_);
+00464             tx->store(\_TO\_OSTM\_);
+00465             tx->store(\_FROM\_OSTM\_);
+00466 
+00470             std::shared\_ptr<TX> txTwo = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00471             \textcolor{keywordtype}{bool} nestedDone = \textcolor{keyword}{false};
+00472             \textcolor{keywordflow}{while} (!nestedDone) \{
+00473                 \_TO\_SHOP\_ = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}> (txTwo->load(\_to\_two));
+00474                 \_FROM\_DIST\_ = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}> (txTwo->load(\_from\_));
+00478                 \_TO\_SHOP\_->\hyperlink{class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f_a300d1fe21a47e45c0d5d27e25add346f}{SetNumber\_of\_nokia}(\_TO\_SHOP\_->GetNumber\_of\_nokia() + \_amount);
+00479                 \_FROM\_DIST\_->SetNumber\_of\_nokia(\_FROM\_DIST\_->GetNumber\_of\_nokia() - \_amount);
+00480 
+00481                 \_TO\_SHOP\_->SetNumber\_of\_samsung(\_TO\_SHOP\_->GetNumber\_of\_samsung() + \_amount);
+00482                 \_FROM\_DIST\_->SetNumber\_of\_samsung(\_FROM\_DIST\_->GetNumber\_of\_samsung() - \_amount);
+00483 
+00484                 \_TO\_SHOP\_->SetNumber\_of\_iphones(\_TO\_SHOP\_->GetNumber\_of\_iphones() + \_amount);
+00485                 \_FROM\_DIST\_->SetNumber\_of\_iphones(\_FROM\_DIST\_->GetNumber\_of\_iphones() - \_amount);
+00486 
+00487                 \_TO\_SHOP\_->SetNumber\_of\_sony(\_TO\_SHOP\_->GetNumber\_of\_sony() + \_amount);
+00488                 \_FROM\_DIST\_->SetNumber\_of\_sony(\_FROM\_DIST\_->GetNumber\_of\_sony() - \_amount);
+00492                 \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_SHOP\_);
+00493                 \_FROM\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_DIST\_);
+00497                 txTwo->store(\_TO\_OSTM\_);
+00498                 txTwo->store(\_FROM\_OSTM\_);
+00499 
+00500                 \textcolor{comment}{/*}
+00501 \textcolor{comment}{                 * NESTED TRANSACTION TEST \_to\_three}
+00502 \textcolor{comment}{                 */}
+00503                 \hyperlink{main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc_a1c170f18aac9dbb8aba1ad2f7e4619cc}{\_warehouse\_transfer\_}(\_to\_three, \_from\_, \_tm, \_amount);
+00504 
+00505 
+00506                 nestedDone = tx->commit();
+00507             \}
+00511             done = tx->commit();
+00512         \}
+00513     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00514         std::cout << e.what() << std::endl;
+00515     \}
+00516 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a52fcb0d50c67be8cd20f2aca338683c7_a52fcb0d50c67be8cd20f2aca338683c7_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!\+\_\+nesting\+\_\+@{\+\_\+nesting\+\_\+}}
+\index{\+\_\+nesting\+\_\+@{\+\_\+nesting\+\_\+}!main.\+cpp@{main.\+cpp}}
+\paragraph[{\texorpdfstring{\+\_\+nesting\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+, T\+M \&\+\_\+tm, double \+\_\+amount)}{_nesting_(std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+nesting\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_a5675cb594d74aa1bf5e80233370ffd81}{}\label{main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_a5675cb594d74aa1bf5e80233370ffd81}
+
+
+{\itshape nesting} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::shared\+\_\+ptr$<$\+T\+X$>$} & tx, Transaction Object \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$} & type, {\itshape T\+O\+\_\+\+B\+A\+NK} \& {\itshape F\+R\+O\+M\+\_\+\+B\+A\+NK} \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$} & type, {\itshape T\+O\+\_\+\+O\+S\+TM} \& {\itshape F\+R\+O\+M\+\_\+\+O\+S\+TM} \\
+\hline
+\end{DoxyParams}
+Register the two single account
+
+Declare required pointers
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+N\+E\+S\+T\+ED T\+R\+A\+N\+S\+A\+C\+T\+I\+ON
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+N\+E\+S\+T\+ED T\+R\+A\+N\+S\+A\+C\+T\+I\+ON IN T\+HE N\+E\+S\+T\+ED T\+R\+A\+N\+S\+A\+C\+T\+I\+ON {\itshape two\+\_\+account\+\_\+transfer} function call
+
+Commit changes
+
+Definition at line \hyperlink{main_8cpp_source_l00206}{206} of file \hyperlink{main_8cpp_source}{main.\+cpp}.
+
+
+
+References \hyperlink{_t_m_8cpp_source_l00078}{T\+M\+::\+\_\+get\+\_\+tx()}, \hyperlink{main_8cpp_source_l00123}{\+\_\+two\+\_\+account\+\_\+transfer\+\_\+()}, and \hyperlink{_b_a_n_k_8h_source_l00046}{B\+A\+N\+K\+::\+Set\+Balance()}.
+
+
+
+Referenced by \hyperlink{main_8cpp_source_l00649}{main()}.
+
+
+\begin{DoxyCode}
+00206                                                                                               \{
+00207     std::shared\_ptr<TX> tx = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00211     tx->\_register(\_to\_);
+00212     tx->\_register(\_from\_);
+00216     std::shared\_ptr<BANK> \_TO\_BANK\_, \_FROM\_BANK\_;
+00217     std::shared\_ptr<OSTM> \_TO\_OSTM\_, \_FROM\_OSTM\_;
+00218 
+00219 
+00220     \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00221     \textcolor{keywordflow}{try} \{
+00222         \textcolor{keywordflow}{while} (!done) \{
+00226             \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_to\_));
+00227             \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_));
+00231             \_TO\_BANK\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_TO\_BANK\_->GetBalance() + \_amount);
+00232             \_FROM\_BANK\_->SetBalance(\_FROM\_BANK\_->GetBalance() - \_amount);
+00236             \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_BANK\_);
+00237             \_FROM\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_BANK\_);
+00241             tx->store(\_TO\_OSTM\_);
+00242             tx->store(\_FROM\_OSTM\_);
+00243 
+00247             std::shared\_ptr<TX> txTwo = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00248 
+00249             \textcolor{keywordtype}{bool} nestedDone = \textcolor{keyword}{false};
+00250             \textcolor{keywordflow}{while} (!nestedDone) \{
+00251                 \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (txTwo->load(\_to\_));
+00252                 \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (txTwo->load(\_from\_));
+00256                 \_TO\_BANK\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_TO\_BANK\_->GetBalance() + \_amount);
+00257                 \_FROM\_BANK\_->SetBalance(\_FROM\_BANK\_->GetBalance() - \_amount);
+00261                 \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_BANK\_);
+00262                 \_FROM\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_BANK\_);
+00266                 txTwo->store(\_TO\_OSTM\_);
+00267                 txTwo->store(\_FROM\_OSTM\_);
+00272                 \hyperlink{main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3_a83aef8c5b69afef4e38d14c17fe782b3}{\_two\_account\_transfer\_}(\_to\_, \_from\_, \_tm, \_amount);
+00273 
+00274                 nestedDone = txTwo->commit();
+00275             \}
+00276 
+00280             done = tx->commit();
+00281         \}
+00282     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00283         std::cout << e.what() << std::endl;
+00284     \}
+00285 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_a5675cb594d74aa1bf5e80233370ffd81_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!\+\_\+six\+\_\+account\+\_\+transfer\+\_\+@{\+\_\+six\+\_\+account\+\_\+transfer\+\_\+}}
+\index{\+\_\+six\+\_\+account\+\_\+transfer\+\_\+@{\+\_\+six\+\_\+account\+\_\+transfer\+\_\+}!main.\+cpp@{main.\+cpp}}
+\paragraph[{\texorpdfstring{\+\_\+six\+\_\+account\+\_\+transfer\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+one\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+two\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+three\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+four\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+five\+\_\+, T\+M \&\+\_\+tm, double \+\_\+amount)}{_six_account_transfer_(std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_one_, std::shared_ptr< OSTM > _from_two_, std::shared_ptr< OSTM > _from_three_, std::shared_ptr< OSTM > _from_four_, std::shared_ptr< OSTM > _from_five_, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+six\+\_\+account\+\_\+transfer\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+one\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+two\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+three\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+four\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+five\+\_\+, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a944b67b9489cc68c8eac66d42f4515ec_a944b67b9489cc68c8eac66d42f4515ec}{}\label{main_8cpp_a944b67b9489cc68c8eac66d42f4515ec_a944b67b9489cc68c8eac66d42f4515ec}
+
+
+{\itshape six\+\_\+account\+\_\+transfer} function, takes six std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from five account to one account 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::shared\+\_\+ptr$<$\+T\+X$>$} & tx, Transaction Object \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$} & type, {\itshape TO} \& {\itshape F\+R\+O\+M\+\_\+\+O\+NE} \& {\itshape F\+R\+O\+M\+\_\+\+T\+WO} \& {\itshape F\+R\+O\+M\+\_\+\+T\+H\+R\+EE} \& {\itshape F\+R\+O\+M\+\_\+\+F\+O\+UR} \& {\itshape F\+R\+O\+M\+\_\+\+F\+I\+VE} \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$} & type, \+\_\+\+T\+O\+\_\+\+O\+S\+TM \& \+\_\+\+F\+R\+O\+M\+\_\+\+O\+N\+E\+\_\+\+O\+S\+TM \& \+\_\+\+F\+R\+O\+M\+\_\+\+T\+W\+O\+\_\+\+O\+S\+TM \& \+\_\+\+F\+R\+O\+M\+\_\+\+T\+H\+R\+E\+E\+\_\+\+O\+S\+TM \& \+\_\+\+F\+R\+O\+M\+\_\+\+F\+O\+U\+R\+\_\+\+O\+S\+TM \& \+\_\+\+F\+R\+O\+M\+\_\+\+F\+I\+V\+E\+\_\+\+O\+S\+TM \\
+\hline
+\end{DoxyParams}
+Register the two single account
+
+Required pointers to use in transaction
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+Commit changes
+
+Definition at line \hyperlink{main_8cpp_source_l00051}{51} of file \hyperlink{main_8cpp_source}{main.\+cpp}.
+
+
+
+References \hyperlink{_t_m_8cpp_source_l00078}{T\+M\+::\+\_\+get\+\_\+tx()}, and \hyperlink{_b_a_n_k_8h_source_l00046}{B\+A\+N\+K\+::\+Set\+Balance()}.
+
+
+\begin{DoxyCode}
+00051                                                                                                            
+                                                                                                                  
+                                  \{
+00052     std::shared\_ptr<TX> tx = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00056     tx->\_register(\_to\_);
+00057     tx->\_register(\_from\_one\_);
+00058     tx->\_register(\_from\_two\_);
+00059     tx->\_register(\_from\_three\_);
+00060     tx->\_register(\_from\_four\_);
+00061     tx->\_register(\_from\_five\_);
+00062 
+00066     std::shared\_ptr<OSTM> \_TO\_OSTM, \_FROM\_ONE\_OSTM, \_FROM\_TWO\_OSTM, \_FROM\_THREE\_OSTM, \_FROM\_FOUR\_OSTM, 
+      \_FROM\_FIVE\_OSTM;
+00067     std::shared\_ptr<BANK> \_TO\_, \_FROM\_ONE\_, \_FROM\_TWO\_, \_FROM\_THREE\_, \_FROM\_FOUR\_, \_FROM\_FIVE\_;
+00068     \textcolor{keywordflow}{try} \{
+00069         \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00070         \textcolor{keywordflow}{while} (!done) \{
+00074             \_TO\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_to\_));
+00075             \_FROM\_ONE\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_one\_));
+00076             \_FROM\_TWO\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_two\_));
+00077             \_FROM\_THREE\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_three\_));
+00078             \_FROM\_FOUR\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_four\_));
+00079             \_FROM\_FIVE\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_five\_));
+00083             \_TO\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_TO\_->GetBalance() + (\_amount * 5));
+00084             \_FROM\_ONE\_->SetBalance(\_FROM\_ONE\_->GetBalance() - \_amount);
+00085             \_FROM\_TWO\_->SetBalance(\_FROM\_TWO\_->GetBalance() - \_amount);
+00086             \_FROM\_THREE\_->SetBalance(\_FROM\_THREE\_->GetBalance() - \_amount);
+00087             \_FROM\_FOUR\_->SetBalance(\_FROM\_FOUR\_->GetBalance() - \_amount);
+00088             \_FROM\_FIVE\_->SetBalance(\_FROM\_FIVE\_->GetBalance() - \_amount);
+00092             \_TO\_OSTM = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_);
+00093             \_FROM\_ONE\_OSTM = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_ONE\_);
+00094             \_FROM\_TWO\_OSTM = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_TWO\_);
+00095             \_FROM\_THREE\_OSTM = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_THREE\_);
+00096             \_FROM\_FOUR\_OSTM = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_FOUR\_);
+00097             \_FROM\_FIVE\_OSTM = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_FIVE\_);
+00101             tx->store(\_TO\_OSTM);
+00102             tx->store(\_FROM\_ONE\_OSTM);
+00103             tx->store(\_FROM\_TWO\_OSTM);
+00104             tx->store(\_FROM\_THREE\_OSTM);
+00105             tx->store(\_FROM\_FOUR\_OSTM);
+00106             tx->store(\_FROM\_FIVE\_OSTM);
+00110             done = tx->commit();
+00111         \}
+00112     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00113         std::cout << e.what() << std::endl;
+00114     \}
+00115 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a944b67b9489cc68c8eac66d42f4515ec_a944b67b9489cc68c8eac66d42f4515ec_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!\+\_\+two\+\_\+account\+\_\+transfer\+\_\+@{\+\_\+two\+\_\+account\+\_\+transfer\+\_\+}}
+\index{\+\_\+two\+\_\+account\+\_\+transfer\+\_\+@{\+\_\+two\+\_\+account\+\_\+transfer\+\_\+}!main.\+cpp@{main.\+cpp}}
+\paragraph[{\texorpdfstring{\+\_\+two\+\_\+account\+\_\+transfer\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+, T\+M \&\+\_\+tm, double \+\_\+amount)}{_two_account_transfer_(std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+two\+\_\+account\+\_\+transfer\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3_a83aef8c5b69afef4e38d14c17fe782b3}{}\label{main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3_a83aef8c5b69afef4e38d14c17fe782b3}
+
+
+{\itshape two\+\_\+account\+\_\+transfer} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::shared\+\_\+ptr$<$\+T\+X$>$} & tx, Transaction Object \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$} & type, {\itshape T\+O\+\_\+\+B\+A\+NK} \& {\itshape F\+R\+O\+M\+\_\+\+B\+A\+NK} \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$} & type, {\itshape T\+O\+\_\+\+O\+S\+TM} \& {\itshape F\+R\+O\+M\+\_\+\+O\+S\+TM} \\
+\hline
+\end{DoxyParams}
+Register the two single account
+
+Declare required pointers
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+N\+E\+S\+T\+ED T\+R\+A\+N\+S\+A\+C\+T\+I\+ON
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+Commit changes
+
+Commit changes
+
+Definition at line \hyperlink{main_8cpp_source_l00123}{123} of file \hyperlink{main_8cpp_source}{main.\+cpp}.
+
+
+
+References \hyperlink{_t_m_8cpp_source_l00078}{T\+M\+::\+\_\+get\+\_\+tx()}, and \hyperlink{_b_a_n_k_8h_source_l00046}{B\+A\+N\+K\+::\+Set\+Balance()}.
+
+
+
+Referenced by \hyperlink{main_8cpp_source_l00206}{\+\_\+nesting\+\_\+()}.
+
+
+\begin{DoxyCode}
+00123                                                                                                            
+      \{
+00124     std::shared\_ptr<TX> tx = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00128     tx->\_register(\_to\_);
+00129     tx->\_register(\_from\_);
+00133     std::shared\_ptr<BANK> \_TO\_BANK\_, \_FROM\_BANK\_;
+00134     std::shared\_ptr<OSTM> \_TO\_OSTM\_, \_FROM\_OSTM\_;
+00135 
+00136     \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00137     \textcolor{keywordflow}{try} \{
+00138         \textcolor{keywordflow}{while} (!done) \{
+00142             \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_to\_));
+00143             \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (tx->load(\_from\_));
+00147             \_TO\_BANK\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_TO\_BANK\_->GetBalance() + \_amount);
+00148             \_FROM\_BANK\_->SetBalance(\_FROM\_BANK\_->GetBalance() - \_amount);
+00152             \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_BANK\_);
+00153             \_FROM\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_BANK\_);
+00157             tx->store(\_TO\_OSTM\_);
+00158             tx->store(\_FROM\_OSTM\_);
+00159 
+00163             std::shared\_ptr<TX> txTwo = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00164 
+00165             \textcolor{keywordtype}{bool} nestedDone = \textcolor{keyword}{false};
+00166             \textcolor{keywordflow}{while} (!nestedDone) \{
+00167                 \_TO\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (txTwo->load(\_to\_));
+00168                 \_FROM\_BANK\_ = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}> (txTwo->load(\_from\_));
+00172                 \_TO\_BANK\_->\hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_ae3e45b407bf8ec7175662442ea24b7c0}{SetBalance}(\_TO\_BANK\_->GetBalance() + \_amount);
+00173                 \_FROM\_BANK\_->SetBalance(\_FROM\_BANK\_->GetBalance() - \_amount);
+00177                 \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_BANK\_);
+00178                 \_FROM\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_BANK\_);
+00182                 txTwo->store(\_TO\_OSTM\_);
+00183                 txTwo->store(\_FROM\_OSTM\_);
+00187                 nestedDone = txTwo->commit();
+00188             \}
+00192             done = tx->commit();
+00193         \}
+00194     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00195         std::cout << e.what() << std::endl;
+00196     \}
+00197 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3_a83aef8c5b69afef4e38d14c17fe782b3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!\+\_\+warehouse\+\_\+transfer\+\_\+@{\+\_\+warehouse\+\_\+transfer\+\_\+}}
+\index{\+\_\+warehouse\+\_\+transfer\+\_\+@{\+\_\+warehouse\+\_\+transfer\+\_\+}!main.\+cpp@{main.\+cpp}}
+\paragraph[{\texorpdfstring{\+\_\+warehouse\+\_\+transfer\+\_\+(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+to\+\_\+, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ \+\_\+from\+\_\+, T\+M \&\+\_\+tm, double \+\_\+amount)}{_warehouse_transfer_(std::shared_ptr< OSTM > _to_, std::shared_ptr< OSTM > _from_, TM &_tm, double _amount)}}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+warehouse\+\_\+transfer\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+to\+\_\+, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{\+\_\+from\+\_\+, }
+\item[{{\bf TM} \&}]{\+\_\+tm, }
+\item[{double}]{\+\_\+amount}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc_a1c170f18aac9dbb8aba1ad2f7e4619cc}{}\label{main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc_a1c170f18aac9dbb8aba1ad2f7e4619cc}
+
+
+{\itshape warehouse\+\_\+transfer} function, takes two std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer, the Transaction manager, and the amount to use in the transaction and transfer the \+\_\+amount value from one account to the another account 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::shared\+\_\+ptr$<$\+T\+X$>$} & tx, Transaction Object \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+W\+A\+R\+E\+H\+O\+U\+S\+E$>$} & type, {\itshape T\+O\+\_\+\+S\+H\+OP} \& {\itshape F\+R\+O\+M\+\_\+\+D\+I\+ST} \\
+\hline
+{\em std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$} & type, {\itshape T\+O\+\_\+\+O\+S\+TM} \& {\itshape F\+R\+O\+M\+\_\+\+O\+S\+TM} \\
+\hline
+\end{DoxyParams}
+Register the two single account
+
+Declare required pointers
+
+From std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to access the virtual methods
+
+Make changes with the objects
+
+From std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ to std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to store the memory spaces
+
+Store changes
+
+Commit changes
+
+Definition at line \hyperlink{main_8cpp_source_l00358}{358} of file \hyperlink{main_8cpp_source}{main.\+cpp}.
+
+
+
+References \hyperlink{_t_m_8cpp_source_l00078}{T\+M\+::\+\_\+get\+\_\+tx()}, and \hyperlink{_w_a_r_e_h_o_u_s_e_8h_source_l00045}{W\+A\+R\+E\+H\+O\+U\+S\+E\+::\+Set\+Number\+\_\+of\+\_\+nokia()}.
+
+
+
+Referenced by \hyperlink{main_8cpp_source_l00518}{\+\_\+complex\+\_\+warehouse\+\_\+transfer\+\_\+()}, and \hyperlink{main_8cpp_source_l00419}{\+\_\+nested\+\_\+warehouse\+\_\+transfer\+\_\+()}.
+
+
+\begin{DoxyCode}
+00358                                                                                                          \{
+00359     std::shared\_ptr<TX> tx = \_tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00363     tx->\_register(\_to\_);
+00364     tx->\_register(\_from\_);
+00368     std::shared\_ptr<WAREHOUSE> \_TO\_SHOP\_, \_FROM\_DIST\_;
+00369     std::shared\_ptr<OSTM> \_TO\_OSTM\_, \_FROM\_OSTM\_;
+00370 
+00371     \textcolor{keywordtype}{bool} done = \textcolor{keyword}{false};
+00372     \textcolor{keywordflow}{try} \{
+00373         \textcolor{keywordflow}{while} (!done) \{
+00377             \_TO\_SHOP\_ = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}> (tx->load(\_to\_));
+00378             \_FROM\_DIST\_ = std::dynamic\_pointer\_cast<\hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}> (tx->load(\_from\_));
+00382             \_TO\_SHOP\_->\hyperlink{class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f_a300d1fe21a47e45c0d5d27e25add346f}{SetNumber\_of\_nokia}(\_TO\_SHOP\_->GetNumber\_of\_nokia() + \_amount);
+00383             \_FROM\_DIST\_->SetNumber\_of\_nokia(\_FROM\_DIST\_->GetNumber\_of\_nokia() - \_amount);
+00384 
+00385             \_TO\_SHOP\_->SetNumber\_of\_samsung(\_TO\_SHOP\_->GetNumber\_of\_samsung() + \_amount);
+00386             \_FROM\_DIST\_->SetNumber\_of\_samsung(\_FROM\_DIST\_->GetNumber\_of\_samsung() - \_amount);
+00387 
+00388             \_TO\_SHOP\_->SetNumber\_of\_iphones(\_TO\_SHOP\_->GetNumber\_of\_iphones() + \_amount);
+00389             \_FROM\_DIST\_->SetNumber\_of\_iphones(\_FROM\_DIST\_->GetNumber\_of\_iphones() - \_amount);
+00390 
+00391             \_TO\_SHOP\_->SetNumber\_of\_sony(\_TO\_SHOP\_->GetNumber\_of\_sony() + \_amount);
+00392             \_FROM\_DIST\_->SetNumber\_of\_sony(\_FROM\_DIST\_->GetNumber\_of\_sony() - \_amount);
+00396             \_TO\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_TO\_SHOP\_);
+00397             \_FROM\_OSTM\_ = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}> (\_FROM\_DIST\_);
+00401             tx->store(\_TO\_OSTM\_);
+00402             tx->store(\_FROM\_OSTM\_);
+00406             done = tx->commit();
+00407         \}
+00408     \} \textcolor{keywordflow}{catch} (std::runtime\_error& e) \{
+00409         std::cout << e.what() << std::endl;
+00410     \}
+00411 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a1c170f18aac9dbb8aba1ad2f7e4619cc_a1c170f18aac9dbb8aba1ad2f7e4619cc_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\paragraph[{\texorpdfstring{main(void)}{main(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_a840291bc02cba5474a4cb46a9b9566fe}{}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_a840291bc02cba5474a4cb46a9b9566fe}
+main method to run test Get the Transaction Manager~\newline
+ \hyperlink{class_t_m}{TM}\& tm = \hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_a7ce5f35e0dae76df4fe116cf905bbe60}{T\+M\+::\+Instance()};~\newline
+
+
+Create vector to store std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointers. All object will have unique ID by default~\newline
+ std\+::vector$<$std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$$>$ \+\_\+customer\+\_\+vec(vector\+\_\+number);~\newline
+ std\+::vector$<$std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$$>$ \+\_\+warehouse\+\_\+vec(vector\+\_\+number);~\newline
+
+
+Create objects type of \hyperlink{class_b_a_n_k}{B\+A\+NK}. All object will have unique ID by default~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ aib\+\_\+ptr = new \hyperlink{class_a_i_b}{A\+IB}(100, 500, \char`\"{}\+Joe\char`\"{}, \char`\"{}\+Blog\char`\"{}, \char`\"{}\+High street, Kilkenny, Co.\+Kilkenny\char`\"{});~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ boi\+\_\+ptr = new \hyperlink{class_b_o_i}{B\+OI}(200, 500, \char`\"{}\+Joe\char`\"{}, \char`\"{}\+Blog\char`\"{}, \char`\"{}\+High street, Kilkenny, Co.\+Kilkenny\char`\"{});~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ boa\+\_\+ptr = new \hyperlink{class_b_o_a}{B\+OA}(300, 500, \char`\"{}\+Joe\char`\"{}, \char`\"{}\+Blog\char`\"{}, \char`\"{}\+High street, Kilkenny, Co.\+Kilkenny\char`\"{});~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ swplc\+\_\+ptr = new \hyperlink{class_s_w_b_p_l_c}{S\+W\+B\+P\+LC}(400, 500, \char`\"{}\+Joe\char`\"{}, \char`\"{}\+Blog\char`\"{}, \char`\"{}\+High street, Kilkenny, Co.\+Kilkenny\char`\"{});~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ ulster\+\_\+ptr = new \hyperlink{class_u_l_s_t_e_r}{U\+L\+S\+T\+ER}(500, 500, \char`\"{}\+Joe\char`\"{}, \char`\"{}\+Blog\char`\"{}, \char`\"{}\+High street, Kilkenny, Co.\+Kilkenny\char`\"{});~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ unbl\+\_\+ptr = new \hyperlink{class_u_n_b_l}{U\+N\+BL}(600, 500, \char`\"{}\+Joe\char`\"{}, \char`\"{}\+Blog\char`\"{}, \char`\"{}\+High street, Kilkenny, Co.\+Kilkenny\char`\"{});~\newline
+
+
+Create objects type of \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE}. All object will have unique ID by default~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ w\+\_\+dist = new \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e}{C\+A\+R\+P\+H\+O\+N\+E\+\_\+\+W\+A\+R\+E\+H\+O\+U\+S\+E()};~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ c\+\_\+shop = new \hyperlink{class_c_a_r_l_o_w___w}{C\+A\+R\+L\+O\+W\+\_\+\+W()};~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ k\+\_\+shop = new \hyperlink{class_k_i_l_k_e_n_n_y___w}{K\+I\+L\+K\+E\+N\+N\+Y\+\_\+\+W()};~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ t\+\_\+shop = new \hyperlink{class_t_a_l_l_a_g_h___w}{T\+A\+L\+L\+A\+G\+H\+\_\+\+W()};~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ d\+\_\+shop = new \hyperlink{class_d_u_n_d_a_l_k___w}{D\+U\+N\+D\+A\+L\+K\+\_\+\+W()};~\newline
+ std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ s\+\_\+shop = new \hyperlink{class_s_l_i_g_o___w}{S\+L\+I\+G\+O\+\_\+\+W()};~\newline
+
+
+Create vector of std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ \hyperlink{class_b_a_n_k}{B\+A\+NK} pointers~\newline
+ vector\+\_\+number is 100 at the moment~\newline
+ for(int i=0;i$<$vector\+\_\+number;++i)
+
+Create vector of std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} pointers~\newline
+ vector\+\_\+number is 100 at the moment~\newline
+ for(int i=0;i$<$vector\+\_\+number;++i)
+
+Display \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} objects before transaction~\newline
+ w\+\_\+dist-\/$>$to\+String();~\newline
+ c\+\_\+shop-\/$>$to\+String();~\newline
+ k\+\_\+shop-\/$>$to\+String();~\newline
+ t\+\_\+shop-\/$>$to\+String();~\newline
+ d\+\_\+shop-\/$>$to\+String();~\newline
+ s\+\_\+shop-\/$>$to\+String();~\newline
+
+
+Display \hyperlink{class_b_a_n_k}{B\+A\+NK} objects before transaction~\newline
+ aib\+\_\+ptr-\/$>$to\+String();~\newline
+ boi\+\_\+ptr-\/$>$to\+String();~\newline
+ boa\+\_\+ptr-\/$>$to\+String();~\newline
+ swplc\+\_\+ptr-\/$>$to\+String();~\newline
+ ulster\+\_\+ptr-\/$>$to\+String();~\newline
+ unbl\+\_\+ptr-\/$>$to\+String();~\newline
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em transfer\+Amount} & in the transaction, control the value in the transaction between objetcs\\
+\hline
+{\em thread\+Array\+Size} & control number of threads ~\newline
+ The logic in the IF E\+L\+SE statement distribute the threads between three different thread creating option.~\newline
+ If the thread\+Array\+Size is divisible with three, the threads will be distributed between function.~\newline
+ However, you can creates any number of threads, but to follow the correct output should increase the IF E\+L\+SE statement to distribute the threads in equal number.\\
+\hline
+\end{DoxyParams}
+Creating threads$^\wedge$n -\/$>$ thread\+Array\+Size~\newline
+ for (int i = 0; i $<$ thread\+Array\+Size; ++i)~\newline
+
+
+T\+E\+ST 1 \+: Nested transaction Test~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape nesting}, aib\+\_\+ptr, boi\+\_\+ptr, std\+::ref(tm), transfer\+Amount);
+
+T\+E\+ST 2 \+:Three different type of function call where the objects are participating in multiple type of transactions~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape two\+\_\+account\+\_\+transfer}, aib\+\_\+ptr, boi\+\_\+ptr, std\+::ref(tm), transfer\+Amount);~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape six\+\_\+account\+\_\+transfer}, boi\+\_\+ptr, boa\+\_\+ptr, swplc\+\_\+ptr, ulster\+\_\+ptr, aib\+\_\+ptr, unbl\+\_\+ptr, std\+::ref(tm), transfer\+Amount)~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape complex\+\_\+transfer}, aib\+\_\+ptr, boi\+\_\+ptr, std\+::ref(\+\_\+customer\+\_\+vec), std\+::ref(tm), transfer\+Amount);
+
+T\+E\+ST 3 \+: Testing \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} type pointers within transactions~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape phone\+\_\+transfer}, c\+\_\+shop, w\+\_\+dist, std\+::ref(tm), transfer\+Amount);
+
+T\+E\+ST 4 \+: Testing \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} type pointers within nested transactions~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape nested\+\_\+warehouse\+\_\+transfer}, c\+\_\+shop, d\+\_\+shop, k\+\_\+shop, w\+\_\+dist, std\+::ref(tm), transfer\+Amount);
+
+T\+E\+ST 5 \+: Testing \hyperlink{class_w_a_r_e_h_o_u_s_e}{W\+A\+R\+E\+H\+O\+U\+SE} type pointers within mixed and nested transactions~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape warehouse\+\_\+transfer}, c\+\_\+shop, w\+\_\+dist, std\+::ref(tm), transfer\+Amount);~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape nested\+\_\+warehouse\+\_\+transfer}, c\+\_\+shop, d\+\_\+shop, k\+\_\+shop, w\+\_\+dist, std\+::ref(tm), transfer\+Amount);~\newline
+ th\+Array\mbox{[}i\mbox{]} = std\+::thread({\itshape complex\+\_\+warehouse\+\_\+transfer}, d\+\_\+shop, c\+\_\+shop, std\+::ref(\+\_\+warehouse\+\_\+vec), w\+\_\+dist, std\+::ref(tm), transfer\+Amount);~\newline
+
+
+Display objects after all transactions are finished~\newline
+ Uncomment the required corresponding T\+E\+ST to display results
+
+Extra tx to call and display R\+O\+L\+L\+B\+A\+CK value~\newline
+ std\+::shared\+\_\+ptr$<$\+T\+X$>$ tx = tm.\+\_\+get\+\_\+tx();~\newline
+
+
+Display the number of R\+O\+L\+L\+B\+A\+CK by all the threads ~\newline
+ std\+::cout $<$$<$ \char`\"{}\+Rollback counter is \+: \char`\"{} $<$$<$ tx-\/$>$get\+Test\+\_\+counter() $<$$<$ std\+::endl;
+
+Display object from vector
+
+Clean up Transaction Manager from all main process associated transactions~\newline
+ tm.\+\_\+\+T\+X\+\_\+\+E\+X\+I\+T();
+
+Display all Transactions associated with the main process. It should be empty after \+\_\+\+T\+X\+\_\+\+E\+X\+I\+T() function call!!!~\newline
+ tm.\+print\+\_\+all();
+
+Definition at line \hyperlink{main_8cpp_source_l00649}{649} of file \hyperlink{main_8cpp_source}{main.\+cpp}.
+
+
+
+References \hyperlink{_t_m_8cpp_source_l00078}{T\+M\+::\+\_\+get\+\_\+tx()}, \hyperlink{main_8cpp_source_l00206}{\+\_\+nesting\+\_\+()}, \hyperlink{_t_m_8cpp_source_l00101}{T\+M\+::\+\_\+\+T\+X\+\_\+\+E\+X\+I\+T()}, \hyperlink{_t_m_8cpp_source_l00028}{T\+M\+::\+Instance()}, \hyperlink{_t_m_8cpp_source_l00121}{T\+M\+::print\+\_\+all()}, and \hyperlink{main_8cpp_source_l00043}{vector\+\_\+number}.
+
+
+\begin{DoxyCode}
+00649                \{
+00654     \hyperlink{class_t_m}{TM}& tm = \hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_a7ce5f35e0dae76df4fe116cf905bbe60}{TM::Instance}();
+00655 
+00661 
+00662     std::vector<std::shared\_ptr < OSTM>>\_customer\_vec; \textcolor{comment}{//(vector\_number);}
+00663     std::vector<std::shared\_ptr < OSTM>>\_warehouse\_vec; \textcolor{comment}{//(vector\_number);}
+00664 
+00674     std::shared\_ptr<OSTM> aib\_ptr(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(100, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny, Co.Kilkenny"})
+      );
+00675     std::shared\_ptr<OSTM> boi\_ptr(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(200, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny, Co.Kilkenny"})
+      );
+00676     std::shared\_ptr<OSTM> boa\_ptr(\textcolor{keyword}{new} \hyperlink{class_b_o_a}{BOA}(300, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny, Co.Kilkenny"})
+      );
+00677     std::shared\_ptr<OSTM> swplc\_ptr(\textcolor{keyword}{new} \hyperlink{class_s_w_b_p_l_c}{SWBPLC}(400, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00678     std::shared\_ptr<OSTM> ulster\_ptr(\textcolor{keyword}{new} \hyperlink{class_u_l_s_t_e_r}{ULSTER}(500, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00679     std::shared\_ptr<OSTM> unbl\_ptr(\textcolor{keyword}{new} \hyperlink{class_u_n_b_l}{UNBL}(600, 500, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00680 
+00690 
+00691     std::shared\_ptr<OSTM> w\_dist(\textcolor{keyword}{new} \hyperlink{class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e}{CARPHONE\_WAREHOUSE}());
+00692     std::shared\_ptr<OSTM> c\_shop(\textcolor{keyword}{new} \hyperlink{class_c_a_r_l_o_w___w}{CARLOW\_W}());
+00693     std::shared\_ptr<OSTM> k\_shop(\textcolor{keyword}{new} \hyperlink{class_k_i_l_k_e_n_n_y___w}{KILKENNY\_W}());
+00694     std::shared\_ptr<OSTM> t\_shop(\textcolor{keyword}{new} \hyperlink{class_t_a_l_l_a_g_h___w}{TALLAGH\_W}());
+00695     std::shared\_ptr<OSTM> d\_shop(\textcolor{keyword}{new} \hyperlink{class_d_u_n_d_a_l_k___w}{DUNDALK\_W}());
+00696     std::shared\_ptr<OSTM> s\_shop(\textcolor{keyword}{new} \hyperlink{class_s_l_i_g_o___w}{SLIGO\_W}());
+00697 
+00703     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{main_8cpp_a988177ecdd12249ecd3a1cdc75546c44_a988177ecdd12249ecd3a1cdc75546c44}{vector\_number}; ++i) \{
+00704         \textcolor{keywordflow}{if} (i % 5 == 0) \{
+00705             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_c_a_r_l_o_w___w}{CARLOW\_W}());
+00706             \_warehouse\_vec.push\_back(std::move(sharedptr));
+00707         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 4 == 0) \{
+00708             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_k_i_l_k_e_n_n_y___w}{KILKENNY\_W}());
+00709             \_warehouse\_vec.push\_back(std::move(sharedptr));
+00710         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 3 == 0) \{
+00711             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_t_a_l_l_a_g_h___w}{TALLAGH\_W}());
+00712             \_warehouse\_vec.push\_back(std::move(sharedptr));
+00713         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 2 == 0) \{
+00714             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_d_u_n_d_a_l_k___w}{DUNDALK\_W}());
+00715             \_warehouse\_vec.push\_back(std::move(sharedptr));
+00716         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 1 == 0) \{
+00717             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_s_l_i_g_o___w}{SLIGO\_W}());
+00718             \_warehouse\_vec.push\_back(std::move(sharedptr));
+00719         \}
+00720     \}
+00721 
+00727     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{main_8cpp_a988177ecdd12249ecd3a1cdc75546c44_a988177ecdd12249ecd3a1cdc75546c44}{vector\_number}; ++i) \{
+00728         \textcolor{keywordflow}{if} (i % 6 == 0) \{
+00729             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_a_i_b}{AIB}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00730             \_customer\_vec.push\_back(std::move(sharedptr));
+00731         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 5 == 0) \{
+00732             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_b_o_i}{BOI}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00733             \_customer\_vec.push\_back(std::move(sharedptr));
+00734         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 4 == 0) \{
+00735             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_b_o_a}{BOA}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00736             \_customer\_vec.push\_back(std::move(sharedptr));
+00737         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 3 == 0) \{
+00738             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_s_w_b_p_l_c}{SWBPLC}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00739             \_customer\_vec.push\_back(std::move(sharedptr));
+00740         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 2 == 0) \{
+00741             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_u_l_s_t_e_r}{ULSTER}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00742             \_customer\_vec.push\_back(std::move(sharedptr));
+00743         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 1 == 0) \{
+00744             std::shared\_ptr<OSTM> sharedptr(\textcolor{keyword}{new} \hyperlink{class_u_n_b_l}{UNBL}(i, 50, \textcolor{stringliteral}{"Joe"}, \textcolor{stringliteral}{"Blog"}, \textcolor{stringliteral}{"High street, Kilkenny,
+       Co.Kilkenny"}));
+00745             \_customer\_vec.push\_back(std::move(sharedptr));
+00746         \}
+00747     \}
+00748 
+00758     \textcolor{comment}{//    w\_dist->toString();}
+00759     \textcolor{comment}{//    c\_shop->toString();}
+00760     \textcolor{comment}{//    k\_shop->toString();}
+00761     \textcolor{comment}{//    t\_shop->toString();}
+00762     \textcolor{comment}{//    d\_shop->toString();}
+00763     \textcolor{comment}{//    s\_shop->toString();}
+00764 
+00774 
+00775     \textcolor{comment}{/*}
+00776 \textcolor{comment}{     * TEST 1 : object requirements}
+00777 \textcolor{comment}{     */}
+00778     aib\_ptr->toString();
+00779     boi\_ptr->toString();
+00780 
+00781     \textcolor{comment}{/*}
+00782 \textcolor{comment}{     * TEST 2 : object requirements }
+00783 \textcolor{comment}{     */}
+00784     \textcolor{comment}{//    aib\_ptr->toString();}
+00785     \textcolor{comment}{//    boi\_ptr->toString();}
+00786     \textcolor{comment}{//    boa\_ptr->toString();}
+00787     \textcolor{comment}{//    swplc\_ptr->toString();}
+00788     \textcolor{comment}{//    ulster\_ptr->toString();}
+00789     \textcolor{comment}{//    unbl\_ptr->toString();}
+00790     \textcolor{comment}{//    for(int i=0; i<vector\_number; ++i)\{}
+00791     \textcolor{comment}{//        \_customer\_vec[i]->toString();}
+00792     \textcolor{comment}{//    \}}
+00793 
+00794     \textcolor{comment}{/*}
+00795 \textcolor{comment}{     * TEST 3 : object requirements}
+00796 \textcolor{comment}{     */}
+00797     \textcolor{comment}{//    w\_dist->toString();}
+00798     \textcolor{comment}{//    c\_shop->toString();}
+00799     \textcolor{comment}{//    k\_shop->toString();}
+00800     \textcolor{comment}{//    t\_shop->toString();}
+00801 
+00802     \textcolor{comment}{/*}
+00803 \textcolor{comment}{     * TEST 4 : objects requirements}
+00804 \textcolor{comment}{     */}
+00805     \textcolor{comment}{//        w\_dist->toString();}
+00806     \textcolor{comment}{//        c\_shop->toString();}
+00807     \textcolor{comment}{//        k\_shop->toString();}
+00808     \textcolor{comment}{//        t\_shop->toString();}
+00809     \textcolor{comment}{//        d\_shop->toString();}
+00810     \textcolor{comment}{//        s\_shop->toString();}
+00811 
+00812 
+00813     \textcolor{comment}{/*}
+00814 \textcolor{comment}{     * TEST 5 : objects requirements}
+00815 \textcolor{comment}{     */}
+00816     \textcolor{comment}{//        w\_dist->toString();}
+00817     \textcolor{comment}{//        c\_shop->toString();}
+00818     \textcolor{comment}{//        k\_shop->toString();}
+00819     \textcolor{comment}{//        t\_shop->toString();}
+00820     \textcolor{comment}{//        d\_shop->toString();}
+00821     \textcolor{comment}{//        s\_shop->toString();}
+00822 
+00823     \textcolor{comment}{//        for(auto&& elem: \_warehouse\_vec)\{}
+00824     \textcolor{comment}{//            elem->toString(); // virtual dispatch}
+00825     \textcolor{comment}{//            }
+00826     \textcolor{comment}{//        \}}
+00827 
+00828 
+00829 
+00833     \textcolor{keywordtype}{int} transferAmount = 1;
+00840     \textcolor{keywordtype}{int} threadArraySize = 99;
+00841     std::thread thArray[threadArraySize];
+00842 
+00847     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00848 
+00853         \textcolor{keywordflow}{if} (i % 3 == 0)
+00854             thArray[i] = std::thread(\hyperlink{main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_a5675cb594d74aa1bf5e80233370ffd81}{\_nesting\_}, aib\_ptr, boi\_ptr, std::ref(tm), transferAmount);
+00855         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 2 == 0)
+00856             thArray[i] = std::thread(\hyperlink{main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_a5675cb594d74aa1bf5e80233370ffd81}{\_nesting\_}, aib\_ptr, boi\_ptr, std::ref(tm), transferAmount);
+00857         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (i % 1 == 0)
+00858             thArray[i] = std::thread(\hyperlink{main_8cpp_a5675cb594d74aa1bf5e80233370ffd81_a5675cb594d74aa1bf5e80233370ffd81}{\_nesting\_}, aib\_ptr, boi\_ptr, std::ref(tm), transferAmount);
+00859 
+00866         \textcolor{comment}{//    if (i % 3 == 0) }
+00867         \textcolor{comment}{//        thArray[i] = std::thread(\_two\_account\_transfer\_, aib\_ptr, boi\_ptr, std::ref(tm),
+       transferAmount);}
+00868         \textcolor{comment}{//    else if (i % 2 == 0)}
+00869         \textcolor{comment}{//        thArray[i] = std::thread(\_six\_account\_transfer\_, boi\_ptr, boa\_ptr, swplc\_ptr, ulster\_ptr,
+       aib\_ptr, unbl\_ptr, std::ref(tm), transferAmount);}
+00870         \textcolor{comment}{//    else if (i % 1 == 0)}
+00871         \textcolor{comment}{//        thArray[i] = std::thread(\_complex\_transfer\_, aib\_ptr, boi\_ptr, std::ref(\_customer\_vec),
+       std::ref(tm), transferAmount);}
+00872 
+00873 
+00878         \textcolor{comment}{//        if (i % 3 == 0)}
+00879         \textcolor{comment}{//            thArray[i] = std::thread(\_warehouse\_transfer\_, c\_shop, w\_dist, std::ref(tm),
+       transferAmount);}
+00880         \textcolor{comment}{//        else if (i % 2 == 0)}
+00881         \textcolor{comment}{//            thArray[i] = std::thread(\_warehouse\_transfer\_, k\_shop, w\_dist, std::ref(tm),
+       transferAmount);}
+00882         \textcolor{comment}{//        else if (i % 1 == 0)}
+00883         \textcolor{comment}{//            thArray[i] = std::thread(\_warehouse\_transfer\_, t\_shop, w\_dist, std::ref(tm),
+       transferAmount);}
+00884 
+00889         \textcolor{comment}{//        if (i % 3 == 0)}
+00890         \textcolor{comment}{//            thArray[i] = std::thread(\_nested\_warehouse\_transfer\_, c\_shop, d\_shop, k\_shop, w\_dist,
+       std::ref(tm), transferAmount);}
+00891         \textcolor{comment}{//        else if (i % 2 == 0)}
+00892         \textcolor{comment}{//            thArray[i] = std::thread(\_nested\_warehouse\_transfer\_, k\_shop, s\_shop, t\_shop, w\_dist,
+       std::ref(tm), transferAmount);}
+00893         \textcolor{comment}{//        else if (i % 1 == 0)}
+00894         \textcolor{comment}{//            thArray[i] = std::thread(\_nested\_warehouse\_transfer\_, t\_shop, c\_shop, s\_shop, w\_dist,
+       std::ref(tm), transferAmount);}
+00895 
+00903 
+00904         \textcolor{comment}{//        if (i % 3 == 0)}
+00905         \textcolor{comment}{//            thArray[i] = std::thread(\_warehouse\_transfer\_, c\_shop, w\_dist, std::ref(tm),
+       transferAmount);}
+00906         \textcolor{comment}{//        else if (i % 2 == 0)}
+00907         \textcolor{comment}{//            thArray[i] = std::thread(\_nested\_warehouse\_transfer\_, k\_shop, s\_shop, t\_shop, w\_dist,
+       std::ref(tm), transferAmount);}
+00908         \textcolor{comment}{//        else if (i % 1 == 0)}
+00909         \textcolor{comment}{//            thArray[i] = std::thread(\_complex\_warehouse\_transfer\_, d\_shop, s\_shop, c\_shop,
+       std::ref(\_warehouse\_vec), w\_dist, std::ref(tm), transferAmount);}
+00910 
+00911 
+00912     \}
+00913     \textcolor{comment}{/*}
+00914 \textcolor{comment}{     * Join threads^n -> threadArraySize<br>}
+00915 \textcolor{comment}{     * thArray[i].join();}
+00916 \textcolor{comment}{     */}
+00917     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < threadArraySize; ++i) \{
+00918         thArray[i].join();
+00919     \}
+00920 
+00921 
+00922     std::cout << \textcolor{stringliteral}{"\(\backslash\)nMain process print "} << std::endl;
+00927 
+00928     \textcolor{comment}{/*}
+00929 \textcolor{comment}{     * TEST 1 : object requirements}
+00930 \textcolor{comment}{     */}
+00931     aib\_ptr->toString();
+00932     boi\_ptr->toString();
+00933 
+00934     \textcolor{comment}{/*}
+00935 \textcolor{comment}{     * TEST 2 : object requirements }
+00936 \textcolor{comment}{     */}
+00937     \textcolor{comment}{//    aib\_ptr->toString();}
+00938     \textcolor{comment}{//    boi\_ptr->toString();}
+00939     \textcolor{comment}{//    boa\_ptr->toString();}
+00940     \textcolor{comment}{//    swplc\_ptr->toString();}
+00941     \textcolor{comment}{//    ulster\_ptr->toString();}
+00942     \textcolor{comment}{//    unbl\_ptr->toString();}
+00943     \textcolor{comment}{//    for(int i=0; i<vector\_number; ++i)\{}
+00944     \textcolor{comment}{//        \_customer\_vec[i]->toString();}
+00945     \textcolor{comment}{//    \}}
+00946 
+00947     \textcolor{comment}{/*}
+00948 \textcolor{comment}{     * TEST 3 : object requirements}
+00949 \textcolor{comment}{     */}
+00950     \textcolor{comment}{//            w\_dist->toString();}
+00951     \textcolor{comment}{//            c\_shop->toString();}
+00952     \textcolor{comment}{//            k\_shop->toString();}
+00953     \textcolor{comment}{//            t\_shop->toString();}
+00954 
+00955     \textcolor{comment}{/*}
+00956 \textcolor{comment}{     * TEST 4 : objects requirements}
+00957 \textcolor{comment}{     */}
+00958     \textcolor{comment}{//        w\_dist->toString();}
+00959     \textcolor{comment}{//        c\_shop->toString();}
+00960     \textcolor{comment}{//        k\_shop->toString();}
+00961     \textcolor{comment}{//        t\_shop->toString();}
+00962     \textcolor{comment}{//        d\_shop->toString();}
+00963     \textcolor{comment}{//        s\_shop->toString();}
+00964 
+00965     \textcolor{comment}{/*}
+00966 \textcolor{comment}{     * TEST 5 : objects requirements}
+00967 \textcolor{comment}{     */}
+00968     \textcolor{comment}{//        w\_dist->toString();}
+00969     \textcolor{comment}{//        c\_shop->toString();}
+00970     \textcolor{comment}{//        k\_shop->toString();}
+00971     \textcolor{comment}{//        t\_shop->toString();}
+00972     \textcolor{comment}{//        d\_shop->toString();}
+00973     \textcolor{comment}{//        s\_shop->toString();}
+00974 
+00975     \textcolor{comment}{//        for(auto&& elem: \_warehouse\_vec)\{}
+00976     \textcolor{comment}{//            elem->toString(); // virtual dispatch}
+00977     \textcolor{comment}{//            }
+00978     \textcolor{comment}{//        \}}
+00979 
+00980     \textcolor{comment}{/* TEST 5 FINISH */}
+00981 
+00982 
+00983     std::cout << \textcolor{stringliteral}{"\(\backslash\)nMAIN PROCESS EXIT !!!! "} << std::endl;
+00988     std::shared\_ptr<TX> tx = tm.\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{\_get\_tx}();
+00989 
+00994     std::cout << \textcolor{stringliteral}{"Rollback counter is : "} << tx->getTest\_counter() << std::endl;
+00998     \textcolor{comment}{//    std::cout << "[vector\_number]" << std::endl;}
+00999     \textcolor{comment}{//    for (int i = 0; i < vector\_number; ++i) \{}
+01000     \textcolor{comment}{//        //\_customer\_vec[i]->toString();}
+01001     \textcolor{comment}{//        auto&& os = \_customer\_vec.at(i);}
+01002     \textcolor{comment}{//        os->toString();}
+01003     \textcolor{comment}{//    \}}
+01004     \textcolor{comment}{//    std::cout << "[\_warehouse\_vec]" << std::endl;}
+01005     \textcolor{comment}{//    for(auto&& elem: \_warehouse\_vec)\{}
+01006     \textcolor{comment}{//        elem->toString(); // virtual dispatch}
+01007     \textcolor{comment}{//        }
+01008     \textcolor{comment}{//    \}}
+01009     \textcolor{comment}{//\_customer\_vec[10]->toString();}
+01010 
+01015     tm.\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{\_TX\_EXIT}();
+01016     std::cout << \textcolor{stringliteral}{"\(\backslash\)nPRINT ALL FROM TM !!!! SHOULD BE EMPTY AFTER \_TX\_EXIT() !!"} << std::endl;
+01021     tm.\hyperlink{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_a1d6891b1d3e71cc0acef54e7afe71c09}{print\_all}();
+01022 
+01023     \textcolor{keywordflow}{return} 0;
+01024 \}
+\end{DoxyCode}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_a840291bc02cba5474a4cb46a9b9566fe_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsubsection{Variable Documentation}
+\index{main.\+cpp@{main.\+cpp}!vector\+\_\+number@{vector\+\_\+number}}
+\index{vector\+\_\+number@{vector\+\_\+number}!main.\+cpp@{main.\+cpp}}
+\paragraph[{\texorpdfstring{vector\+\_\+number}{vector_number}}]{\setlength{\rightskip}{0pt plus 5cm}int vector\+\_\+number = 600\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{main_8cpp_a988177ecdd12249ecd3a1cdc75546c44_a988177ecdd12249ecd3a1cdc75546c44}{}\label{main_8cpp_a988177ecdd12249ecd3a1cdc75546c44_a988177ecdd12249ecd3a1cdc75546c44}
+
+\begin{DoxyParams}{Parameters}
+{\em vector\+\_\+number} & control the size of the vector to store std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ pointer \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \hyperlink{main_8cpp_source_l00043}{43} of file \hyperlink{main_8cpp_source}{main.\+cpp}.
+
+
+
+Referenced by \hyperlink{main_8cpp_source_l00649}{main()}.
+

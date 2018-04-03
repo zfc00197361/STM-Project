@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8h" kind="file" language="C++">
+    <compoundname>CARPHONE_WAREHOUSE.h</compoundname>
+    <includes refid="_w_a_r_e_h_o_u_s_e_8h" local="yes">WAREHOUSE.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp" local="yes">CARPHONE_WAREHOUSE.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <incdepgraph>
+      <node id="551">
+        <label>string</label>
+      </node>
+      <node id="546">
+        <label>CARPHONE_WAREHOUSE.h</label>
+        <link refid="CARPHONE_WAREHOUSE.h"/>
+        <childnode refid="547" relation="include">
+        </childnode>
+        <childnode refid="551" relation="include">
+        </childnode>
+        <childnode refid="550" relation="include">
+        </childnode>
+        <childnode refid="552" relation="include">
+        </childnode>
+      </node>
+      <node id="548">
+        <label>OSTM.h</label>
+        <link refid="_o_s_t_m_8h"/>
+        <childnode refid="549" relation="include">
+        </childnode>
+        <childnode refid="550" relation="include">
+        </childnode>
+        <childnode refid="551" relation="include">
+        </childnode>
+        <childnode refid="552" relation="include">
+        </childnode>
+      </node>
+      <node id="547">
+        <label>WAREHOUSE.h</label>
+        <link refid="_w_a_r_e_h_o_u_s_e_8h"/>
+        <childnode refid="548" relation="include">
+        </childnode>
+      </node>
+      <node id="552">
+        <label>iostream</label>
+      </node>
+      <node id="549">
+        <label>mutex</label>
+      </node>
+      <node id="550">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="553">
+        <label>CARPHONE_WAREHOUSE.h</label>
+        <link refid="CARPHONE_WAREHOUSE.h"/>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+      </node>
+      <node id="554">
+        <label>CARPHONE_WAREHOUSE.cpp</label>
+        <link refid="_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_8cpp"/>
+      </node>
+      <node id="555">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e" prot="public">CARPHONE_WAREHOUSE</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>File:<sp/><sp/><sp/>CARPHONE_WAREHOUSE.h</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Zoltan<sp/>Fuzesi</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>IT<sp/>Carlow<sp/>:<sp/>C00197361</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Created<sp/>on<sp/>January<sp/>17,<sp/>2018,<sp/>8:02<sp/>PM</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CARPHONE_WAREHOUSE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CARPHONE_WAREHOUSE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_w_a_r_e_h_o_u_s_e_8h" kindref="compound">WAREHOUSE.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight></codeline>
+<codeline lineno="19" refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e" kindref="compound">CARPHONE_WAREHOUSE</ref><sp/>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_w_a_r_e_h_o_u_s_e" kindref="compound">WAREHOUSE</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0acec1e20e236b4debf1e0d26334a868" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0acec1e20e236b4debf1e0d26334a868" kindref="member">CARPHONE_WAREHOUSE</ref>():<sp/><ref refid="class_w_a_r_e_h_o_u_s_e" kindref="compound">WAREHOUSE</ref>(){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_shop_address<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;DUBLIN<sp/>XII&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_shop_name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;DISTRIBUTION<sp/>CENTER&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_iphones<sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_samsung<sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_sony<sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_huawei<sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_nokia<sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_alcatel<sp/>=<sp/>10000;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="38" refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a1e61584abd37ed2189143f0c0d4d2e40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a1e61584abd37ed2189143f0c0d4d2e40" kindref="member">CARPHONE_WAREHOUSE</ref>(std::string<sp/>address,<sp/>std::string<sp/>shop_name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iphone,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>samsung,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sony,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>huawei,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nokia,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>alcatel):<sp/><ref refid="class_w_a_r_e_h_o_u_s_e" kindref="compound">WAREHOUSE</ref>(){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>copy<sp/>over<sp/>values</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_shop_address<sp/>=<sp/>address;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_shop_name<sp/>=<sp/>shop_name;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_iphones<sp/>=<sp/>iphone;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_samsung<sp/>=<sp/>samsung;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_sony<sp/>=<sp/>sony;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_huawei<sp/>=<sp/>huawei;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_nokia<sp/>=<sp/>nokia;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_alcatel<sp/>=<sp/>alcatel;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>};<sp/></highlight></codeline>
+<codeline lineno="55" refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a131eb8df5342de81022b166f40f94d92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a131eb8df5342de81022b166f40f94d92" kindref="member">CARPHONE_WAREHOUSE</ref>(std::shared_ptr&lt;WAREHOUSE&gt;<sp/>obj,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_version,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_unique_id):<sp/><ref refid="class_w_a_r_e_h_o_u_s_e" kindref="compound">WAREHOUSE</ref>(_version,<sp/>_unique_id){</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>copy<sp/>over<sp/>values</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_shop_address<sp/>=<sp/>obj-&gt;GetShop_address();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_shop_name<sp/>=<sp/>obj-&gt;GetShop_name();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_iphones<sp/>=<sp/>obj-&gt;GetNumber_of_iphones();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_samsung<sp/>=<sp/>obj-&gt;GetNumber_of_samsung();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_sony<sp/>=<sp/>obj-&gt;GetNumber_of_sony();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_huawei<sp/>=<sp/>obj-&gt;GetNumber_of_huawei();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_nokia<sp/>=<sp/>obj-&gt;GetNumber_of_nokia();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;_number_of_alcatel<sp/>=<sp/>obj-&gt;GetNumber_of_alcatel();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0acec1e20e236b4debf1e0d26334a868" kindref="member">CARPHONE_WAREHOUSE</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e" kindref="compound">CARPHONE_WAREHOUSE</ref>&amp;<sp/>orig);</highlight></codeline>
+<codeline lineno="75" refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e" kindref="compound">CARPHONE_WAREHOUSE</ref><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d5661ef7c79d7527967c61654ebb612" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e" kindref="compound">CARPHONE_WAREHOUSE</ref>&amp;<sp/>orig){};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ad125d83e519b6c7ca025a7e2b705c2a8" kindref="member">~CARPHONE_WAREHOUSE</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Implement<sp/>OSTM<sp/>virtual<sp/>methods</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//virtual<sp/>std::shared_ptr&lt;CARPHONE_WAREHOUSE&gt;<sp/>_cast(std::shared_ptr&lt;OSTM&gt;<sp/>_object);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ab9ecf71cd2728f348a5b61df698e054c" kindref="member">copy</ref>(std::shared_ptr&lt;OSTM&gt;<sp/>to,<sp/>std::shared_ptr&lt;OSTM&gt;<sp/>from);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::shared_ptr&lt;OSTM&gt;<sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a1d3b2f023c0d6e715416f1e87e7245bb" kindref="member">getBaseCopy</ref>(std::shared_ptr&lt;OSTM&gt;<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4d96bb512ffcd1e0b13f632cb7fd242b" kindref="member">toString</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Implement<sp/>Warehouse<sp/>methods</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a84d8d820016c7eb50323c2dcbb4d73f3" kindref="member">SetNumber_of_alcatel</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_alcatel);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a8d278005b2ba46869f6787681ad05704" kindref="member">GetNumber_of_alcatel</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a5f2abf60f6fa8a614fadb1419bf1de83" kindref="member">SetNumber_of_nokia</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_nokia);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1aac1959dee51204439fc0721403d23447" kindref="member">GetNumber_of_nokia</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a87ba00e49e5b201548c57ef4b8beaeff" kindref="member">SetNumber_of_huawei</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_huawei);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a9200c484f288fce0246008e5d683507f" kindref="member">GetNumber_of_huawei</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1ac59a3e67850e4ce6db9f0f0d5a72d8df" kindref="member">SetNumber_of_sony</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_sony);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a955e5b413e1f41a36dcc12837664f364" kindref="member">GetNumber_of_sony</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a179265eb31e367a082eb4048f38e602d" kindref="member">SetNumber_of_samsung</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_samsung);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a0cd9d93b5b145846627d3005dff71f6f" kindref="member">GetNumber_of_samsung</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a167a9f9ac25b17395e5964b57099b462" kindref="member">SetNumber_of_iphones</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_iphones);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a640af469d055cb8836c42ac4ce135e6f" kindref="member">GetNumber_of_iphones</ref>();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a832266a32b6ee4be5e531aaacb83610c" kindref="member">SetShop_name</ref>(std::string<sp/>_shop_name);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a4932d1483f97e12e01be200951c572df" kindref="member">GetShop_name</ref>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1af26abc216ad013f1cb8ea2b3f788e048" kindref="member">SetShop_address</ref>(std::string<sp/>_shop_address);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="class_c_a_r_p_h_o_n_e___w_a_r_e_h_o_u_s_e_1a90c80d52aa860d00c3fb9c165646637b" kindref="member">GetShop_address</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>_shop_address;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>_shop_name;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_iphones;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_samsung;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_sony;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_huawei;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_nokia;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_number_of_alcatel;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CARPHONE_WAREHOUSE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="CARPHONE_WAREHOUSE.h"/>
+  </compounddef>
+</doxygen>

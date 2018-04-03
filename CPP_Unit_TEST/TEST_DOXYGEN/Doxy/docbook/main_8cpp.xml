@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="main_8cpp">
+    <title>main.cpp File Reference</title>
+    <programlisting>#include &lt;cstdlib&gt;</programlisting>
+    <programlisting>#include &lt;cppunit/extensions/TestFactoryRegistry.h&gt;</programlisting>
+    <programlisting>#include &lt;cppunit/extensions/HelperMacros.h&gt;</programlisting>
+    <programlisting>#include &lt;cppunit/ui/text/TestRunner.h&gt;</programlisting>
+    <programlisting>#include &quot;MyTestCAse.h&quot;</programlisting>
+<para>Include dependency diagram for main.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="main_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for main.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="main_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespace_cpp_unit">CppUnit</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespacestd">std</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="main_8cpp_ae3c11e07cb88d99e84a6deb3ca988152_1ae3c11e07cb88d99e84a6deb3ca988152">CPPUNIT_TEST_SUITE_REGISTRATION</link> (
+<link linkend="class_my_test_c_ase">MyTestCAse</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_1a3c04138a5bfe5d72780bb7e82a18e627">main</link> (
+int argc, char ** argv)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file main.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="preprocessor">#include&#32;&lt;cstdlib&gt;</emphasis>
+2 <emphasis class="preprocessor">#include&#32;&lt;cppunit/extensions/TestFactoryRegistry.h&gt;</emphasis>
+3 <emphasis class="preprocessor">#include&#32;&lt;cppunit/extensions/HelperMacros.h&gt;</emphasis>
+4 <emphasis class="preprocessor">#include&#32;&lt;cppunit/ui/text/TestRunner.h&gt;</emphasis>
+5 
+6 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_my_test_c_ase_8h">MyTestCAse.h</link>&quot;</emphasis>
+7 
+8 <emphasis class="keyword">using&#32;namespace&#32;</emphasis><link linkend="namespacestd">std</link>;
+9 <emphasis class="keyword">using&#32;namespace&#32;</emphasis><link linkend="namespace_cpp_unit">CppUnit</link>;
+10 
+11 <link linkend="main_8cpp_ae3c11e07cb88d99e84a6deb3ca988152_1ae3c11e07cb88d99e84a6deb3ca988152">CPPUNIT_TEST_SUITE_REGISTRATION</link>(<link linkend="class_my_test_c_ase">MyTestCAse</link>);
+12 
+<link linkend="main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_1a3c04138a5bfe5d72780bb7e82a18e627">13 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_1a3c04138a5bfe5d72780bb7e82a18e627">main</link>(<emphasis class="keywordtype">int</emphasis>&#32;argc,&#32;<emphasis class="keywordtype">char</emphasis>**&#32;argv)&#32;{
+14 &#32;&#32;&#32;&#32;TextUi::TestRunner&#32;runner;
+15 &#32;&#32;&#32;&#32;TestFactoryRegistry&#32;&#32;&amp;registry&#32;=&#32;TestFactoryRegistry::getRegistry();
+16 &#32;&#32;&#32;&#32;runner.addTest(registry.makeTest());
+17 &#32;&#32;&#32;&#32;runner.run();
+18 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;(EXIT_SUCCESS);
+19 }
+20 
+    </computeroutput></literallayout>
+</section>

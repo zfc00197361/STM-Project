@@ -1,0 +1,258 @@
+.TH "main.cpp" 3 "Tue Mar 13 2018" "C++ Software transactional Memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cstdlib>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <thread>\fP
+.br
+\fC#include 'TM\&.h'\fP
+.br
+\fC#include 'AIB\&.h'\fP
+.br
+\fC#include 'BOI\&.h'\fP
+.br
+\fC#include <mutex>\fP
+.br
+\fC#include <memory>\fP
+.br
+\fC#include <condition_variable>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fB_nesting_\fP (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP &_tm, double _amount)"
+.br
+.RI "\fI\fInesting\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well \fP"
+.ti -1c
+.RI "void \fB_two_account_transfer_\fP (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP &_tm, double _amount)"
+.br
+.RI "\fI\fItwo_account_transfer\fP function, takes two \fBOSTM\fP type shared pointer, the Transaction manager, and the amount to use in the transaction \fP"
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void _nesting_ (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP & _tm, double _amount)"
+
+.PP
+\fInesting\fP function, takes two std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI_tm\fP \fBTM\fP, transaction Manager 
+.br
+\fI_to\fP std::shared_ptr<BANK> 
+.br
+\fI_from\fP std::shared_ptr<OSTM> 
+.br
+\fI_amount\fP double value 
+.RE
+.PP
+
+.PP
+Definition at line 77 of file main\&.cpp\&.
+.PP
+References TM::_get_tx(), _two_account_transfer_(), and BANK::SetBalance()\&.
+.PP
+Referenced by main()\&.
+.PP
+.nf
+77                                                                                               {
+78     /* @79 Request fro transaction object with the transaction manager*/
+79     std::shared_ptr<TX> tx = _tm\&._get_tx();
+80     /* @81-82 Register the two OSTM type shared pointer to the library : _to_ and _from_ */
+81     tx->_register(_to_);
+82     tx->_register(_from_);
+83     /*  @84-85 We need to create local pointers to use the temporary pointers in the transaction */
+84     std::shared_ptr<BANK> _TO_BANK_, _FROM_BANK_;
+85     std::shared_ptr<OSTM> _TO_OSTM_, _FROM_OSTM_;
+86     /* @87 Declare boolean variable to control the transaction with the while loop*/
+87     bool done = false;
+88      /* @89 Use try catch blocks ! If you try to use exidantly any nullpointer to register,save or load in the libaray, then the library wil throw a runtime execption*/
+89     try {
+90         /* @91 Declare the WHILE loop with the boolean variable */
+91         while (!done) {
+92             /* @93-94 Retrieve the copy OSTM type pointers you registered (_to_ and _from_) from the library, and cast it back to BANK type\&. In this way you can used the BANK virtual methods to access the AIB and BOI objects values*/
+93             _TO_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_to_));
+94             _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_));
+95             
+96             /* @97-98 make changes with the local pointers */
+97             _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+98             _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+99             /* @100-101 Cast back the BANK type pointers to OSTM type before try to store the changes with the objetcs */
+100             _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+101             _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+102             /* @103-104 Store changes has made with the local pointers */
+103             tx->store(_TO_OSTM_);
+104             tx->store(_FROM_OSTM_);
+105             
+106             /* @107 Retrieve a Transaction object to used in the NESTED TRANSACTION\&. Because the same thread request the transaction object the transaction manager will return back the same transaction object, and increase the nesting associated with the transaction */
+107             std::shared_ptr<TX> txTwo = _tm\&._get_tx();
+108              /* @109 Declare boolean variable to control the nested transaction with the while loop*/
+109             bool nestedDone = false;
+110             /* @111 Declare the WHILE loop with the boolean variable */
+111             while (!nestedDone) {
+112             
+113                 /* @114-115Retrieve the copy OSTM type pointers you registered (_to_ and _from_) from the library, and cast it back to BANK type\&. In this way you can used the BANK virtual methods to access the AIB and BOI objects values*/
+114                 _TO_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_to_));
+115                 _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_from_));
+116                 /* @117-118 make changes with the local pointers */
+117                 _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+118                 _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+119                 /* @120-121 Cast back the BANK type pointers to OSTM type before try to store the changes with the objetcs */
+120                 _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+121                 _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+122                 /* @123-124 Store changes has made with the local pointers */
+123                 txTwo->store(_TO_OSTM_);
+124                 txTwo->store(_FROM_OSTM_);
+125                 /* @126 Call other function that will nesting the transaction to the next level */
+126                 _two_account_transfer_(_to_, _from_, _tm, _amount);
+127                 /* @128 Commit changes with the nested transaction*/
+128                 nestedDone = txTwo->commit();
+129             }
+130             /* @131 Commit changes with the outer transaction*/
+131             done = tx->commit();
+132         }
+133     /* @134-135 Catch block to catch runtime errors\&. Print error to console*/
+134     } catch (std::runtime_error& e) {
+135         std::cout << e\&.what() << std::endl;
+136     }
+137 }
+.fi
+.SS "void _two_account_transfer_ (std::shared_ptr< \fBOSTM\fP > _to_, std::shared_ptr< \fBOSTM\fP > _from_, \fBTM\fP & _tm, double _amount)"
+
+.PP
+\fItwo_account_transfer\fP function, takes two \fBOSTM\fP type shared pointer, the Transaction manager, and the amount to use in the transaction 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI_tm\fP \fBTM\fP, transaction Manager 
+.br
+\fI_to\fP std::shared_ptr<BANK> 
+.br
+\fI_from\fP std::shared_ptr<OSTM> 
+.br
+\fI_amount\fP double value 
+.RE
+.PP
+
+.PP
+Definition at line 32 of file main\&.cpp\&.
+.PP
+References TM::_get_tx(), and BANK::SetBalance()\&.
+.PP
+Referenced by _nesting_(), and main()\&.
+.PP
+.nf
+32                                                                                                            {
+33     /* @34 Request for transaction object with the transaction manager*/
+34     std::shared_ptr<TX> tx = _tm\&._get_tx();
+35     /* @36-37 Register the two OSTM type shared pointer to the library : _to_ and _from_ */
+36     tx->_register(_to_);
+37     tx->_register(_from_);
+38     /*  @39-40 We need to create local pointers to use the temporary pointers in the transaction */
+39     std::shared_ptr<BANK> _TO_BANK_, _FROM_BANK_;
+40     std::shared_ptr<OSTM> _TO_OSTM_, _FROM_OSTM_;
+41     /* @42 Declare boolean variable to control the transaction with the while loop*/
+42     bool done = false;
+43     /* @44 Use try catch blocks ! If you try to use exidantly any nullpointer to register,save or load in the libaray, then the library wil throw a runtime execption*/
+44     try {
+45         /* @46 Declare the WHILE loop with the boolean variable */
+46         while (!done) {
+47             /* @48-49 Retrieve the copy OSTM type pointers you registered (_to_ and _from_) from the library, and cast it back to BANK type\&. In this way you can used the BANK virtual methods to access the AIB and BOI objects values*/
+48             _TO_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_to_));
+49             _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_));
+50           
+51             /* @52-53 Makes changes with the local pointers\&. Remove value from the first object and add to the second object ! TRANSFER ! */
+52             _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+53             _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+54             /* @55-56 Cast back the BANK type pointers to OSTM type before try to store the changes with the objetcs */
+55             _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+56             _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+57             /* @58-59 Store changes has made with the local pointers */
+58             tx->store(_TO_OSTM_);
+59             tx->store(_FROM_OSTM_);
+60             /* @62 Commit changes with the nested transaction*/
+61             done = tx->commit();
+62         }
+63     /* @64-65 Catch block to catch runtime errors\&. Print error to console*/
+64     } catch (std::runtime_error& e) {
+65         std::cout << e\&.what() << std::endl;
+66     }
+67 }
+.fi
+.SS "int main (void)"
+@162 threadArraySize control number of threads will be created in the main function 
+.PP
+Definition at line 142 of file main\&.cpp\&.
+.PP
+References TM::_get_tx(), _nesting_(), _two_account_transfer_(), TM::_TX_EXIT(), TM::Instance(), and TM::print_all()\&.
+.PP
+.nf
+142                {
+143     
+144      /* @146 Get the Transaction Manager */
+145      
+146     TM& tm = TM::Instance();
+147     
+148      /* @151-152 Create BANK object OSTM type\&. All object will get the unique ID generated by default*/
+149      
+150     std::shared_ptr<OSTM> aib_ptr(new AIB(100, 500, "Joe", "Blog", "High street, Kilkenny, Co\&.Kilkenny"));
+151     std::shared_ptr<OSTM> boi_ptr(new BOI(200, 500, "Mark", "darcy", "Main street, CArlow, Co\&.Carlow"));
+152 
+153      
+154      /* @155-156 Display BANK objects before transaction*/
+155     aib_ptr->toString();
+156     boi_ptr->toString();
+157     
+158      
+159      /* @160 transferAmount in the transaction, control the value in the transaction between objetcs*/
+160     int transferAmount = 1;
+162     int threadArraySize = 300;
+163     /* @164 Create a thread array with the threadArraySize declared before  */
+164     std::thread thArray[threadArraySize];
+165     /* @166 Creating the threads with the loop */
+166     for (int i = 0; i < threadArraySize; ++i) {
+167             /* @168 with the new thread created call the function _nesting_*/
+168             thArray[i] = std::thread(_nesting_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+169             /* @170 with the new thread created call the function _two_account_transfer_*/
+170             thArray[i] = std::thread(_two_account_transfer_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+171     }
+172     /* @173-175 Join all the threads created */
+173     for (int i = 0; i < threadArraySize; ++i) {
+174         thArray[i]\&.join();
+175     }
+176 
+177     /* @178-179 Display objects after all transactions are finished */
+178     aib_ptr->toString();
+179     boi_ptr->toString();
+180 
+181     /* @182 For testing purpose create a new transaction object to print out the rollback counter */
+182     std::shared_ptr<TX> tx = tm\&._get_tx();
+183 
+184     /* @185 Display the rollback number from the transaction class*/
+185     std::cout << "Rollback counter is : " << tx->getTest_counter() << std::endl;
+186 
+187     /* @188 Clean up Transaction Manager from all main process associated transactions */
+188     tm\&._TX_EXIT();
+189     /* @190 Display all Transactions associated with the main process\&. It should be empty after _TX_EXIT() function call!!! */
+190     tm\&.print_all();
+191 
+192     return 0;
+193 }
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software transactional Memory from the source code\&.

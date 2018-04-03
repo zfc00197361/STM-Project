@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_s_l_i_g_o___w_8cpp">
+    <title>SLIGO_W.cpp File Reference</title>
+    <programlisting>#include &quot;SLIGO_W.h&quot;</programlisting>
+<para>Include dependency diagram for SLIGO_W.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_s_l_i_g_o___w_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for SLIGO_W.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_s_l_i_g_o___w_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file SLIGO_W.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 <emphasis class="comment">/*&#32;</emphasis>
+3 <emphasis class="comment">&#32;*&#32;File:&#32;&#32;&#32;SLIGO_W.cpp</emphasis>
+4 <emphasis class="comment">&#32;*&#32;Author:&#32;Zoltan&#32;Fuzesi</emphasis>
+5 <emphasis class="comment">&#32;*&#32;IT&#32;Carlow&#32;:&#32;C00197361</emphasis>
+6 <emphasis class="comment">&#32;*</emphasis>
+7 <emphasis class="comment">&#32;*&#32;Created&#32;on&#32;January&#32;17,&#32;2018,&#32;8:02&#32;PM</emphasis>
+8 <emphasis class="comment">&#32;*/</emphasis>
+9 
+10 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_s_l_i_g_o___w_8h">SLIGO_W.h</link>&quot;</emphasis>
+11 
+<link linkend="class_s_l_i_g_o___w_aa6cc833af07309dee5eb2493cddf443c_1aa6cc833af07309dee5eb2493cddf443c">12 </link><link linkend="class_s_l_i_g_o___w_aa6cc833af07309dee5eb2493cddf443c_1aa6cc833af07309dee5eb2493cddf443c">SLIGO_W::~SLIGO_W</link>()&#32;{
+13 }
+14 
+<link linkend="class_s_l_i_g_o___w_abd92acb0451fe449fbdb7c3c2a6701b7_1abd92acb0451fe449fbdb7c3c2a6701b7">15 </link><link linkend="class_s_l_i_g_o___w_a9b669809dc7cf8d9982181ac7997b0da_1a9b669809dc7cf8d9982181ac7997b0da">SLIGO_W::SLIGO_W</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_s_l_i_g_o___w">SLIGO_W</link>&amp;&#32;orig)&#32;{
+16 }
+<link linkend="class_s_l_i_g_o___w_a37ead49afd27bfe7e404d1d7626f09fe_1a37ead49afd27bfe7e404d1d7626f09fe">22 </link>std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_s_l_i_g_o___w_a37ead49afd27bfe7e404d1d7626f09fe_1a37ead49afd27bfe7e404d1d7626f09fe">SLIGO_W::getBaseCopy</link>(std::shared_ptr&lt;OSTM&gt;&#32;<emphasis class="keywordtype">object</emphasis>)
+23 {
+24 
+25 &#32;&#32;&#32;&#32;std::shared_ptr&lt;WAREHOUSE&gt;&#32;objTO&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;(object);
+26 &#32;&#32;&#32;&#32;std::shared_ptr&lt;WAREHOUSE&gt;&#32;obj(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a9b669809dc7cf8d9982181ac7997b0da_1a9b669809dc7cf8d9982181ac7997b0da">SLIGO_W</link>(objTO,&#32;object-&gt;Get_Version(),<emphasis class="keywordtype">object</emphasis>-&gt;Get_Unique_ID()));
+27 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;ostm_obj&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;(obj);&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+28 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;ostm_obj;
+29 }
+<link linkend="class_s_l_i_g_o___w_acd5ae7347e6ca94c52eb013e07a66116_1acd5ae7347e6ca94c52eb013e07a66116">35 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_acd5ae7347e6ca94c52eb013e07a66116_1acd5ae7347e6ca94c52eb013e07a66116">SLIGO_W::copy</link>(std::shared_ptr&lt;OSTM&gt;&#32;to,&#32;std::shared_ptr&lt;OSTM&gt;&#32;from){
+36 
+37 &#32;&#32;&#32;&#32;std::shared_ptr&lt;SLIGO_W&gt;&#32;objTO&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_s_l_i_g_o___w">SLIGO_W</link>&gt;(to);
+38 &#32;&#32;&#32;&#32;std::shared_ptr&lt;SLIGO_W&gt;&#32;objFROM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_s_l_i_g_o___w">SLIGO_W</link>&gt;(from);
+39 &#32;&#32;&#32;&#32;objTO-&gt;<link linkend="class_s_l_i_g_o___w_ade08b79101c67997dde54515f2088b9d_1ade08b79101c67997dde54515f2088b9d">_shop_address</link>&#32;=&#32;objFROM-&gt;GetShop_address();
+40 &#32;&#32;&#32;&#32;objTO-&gt;_shop_name&#32;=&#32;objFROM-&gt;GetShop_name();
+41 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_iphones&#32;=&#32;objFROM-&gt;GetNumber_of_iphones();
+42 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_samsung&#32;=&#32;objFROM-&gt;GetNumber_of_samsung();
+43 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_sony&#32;=&#32;objFROM-&gt;GetNumber_of_sony();
+44 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_huawei&#32;=&#32;objFROM-&gt;GetNumber_of_huawei();
+45 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_nokia&#32;=&#32;objFROM-&gt;GetNumber_of_nokia();
+46 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_alcatel&#32;=&#32;objFROM-&gt;GetNumber_of_alcatel();
+47 &#32;&#32;&#32;&#32;objTO-&gt;Set_Unique_ID(objFROM-&gt;Get_Unique_ID());
+48 &#32;&#32;&#32;&#32;objTO-&gt;Set_Version(objFROM-&gt;Get_Version());
+49 &#32;&#32;&#32;&#32;
+50 &#32;&#32;&#32;
+51 }
+55 <emphasis class="comment">//std::shared_ptr&lt;SLIGO_W&gt;&#32;SLIGO_W::_cast(std::shared_ptr&lt;OSTM&gt;&#32;_object){</emphasis>
+56 <emphasis class="comment">//&#32;&#32;&#32;&#32;</emphasis>
+57 <emphasis class="comment">//&#32;&#32;&#32;&#32;return&#32;static_cast&lt;std::shared_ptr&lt;SLIGO_W&gt;&gt;(_object);</emphasis>
+58 <emphasis class="comment">//}</emphasis>
+<link linkend="class_s_l_i_g_o___w_a8f49deaa85f48ff29dd8cdeb7c9dda56_1a8f49deaa85f48ff29dd8cdeb7c9dda56">62 </link><emphasis class="comment"></emphasis><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a8f49deaa85f48ff29dd8cdeb7c9dda56_1a8f49deaa85f48ff29dd8cdeb7c9dda56">SLIGO_W::toString</link>()
+63 {
+64 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\n&quot;</emphasis>&#32;&lt;&lt;&#32;&#32;this-&gt;<link linkend="class_s_l_i_g_o___w_ae788518e30d9d311eb28f37da932367a_1ae788518e30d9d311eb28f37da932367a">GetShop_name</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nUnique&#32;ID&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_1a5a01a8b98d16b1d1904ecf9356e7b71d">Get_Unique_ID</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nShop&#32;Name&#32;:&#32;&quot;</emphasis>&#32;&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_s_l_i_g_o___w_ae788518e30d9d311eb28f37da932367a_1ae788518e30d9d311eb28f37da932367a">GetShop_name</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nShop&#32;Address&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_s_l_i_g_o___w_a66a2315d531231e34c5056e9bc917797_1a66a2315d531231e34c5056e9bc917797">GetShop_address</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Iphones&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_s_l_i_g_o___w_a780b3a690f5cbbf7593ffc6612b3d743_1a780b3a690f5cbbf7593ffc6612b3d743">GetNumber_of_iphones</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Samsung&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_s_l_i_g_o___w_aa4b6200a00c2a14924b7ff1ae3896b61_1aa4b6200a00c2a14924b7ff1ae3896b61">GetNumber_of_samsung</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Sony&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_s_l_i_g_o___w_a62822c4fb80f739bee61767238a29e14_1a62822c4fb80f739bee61767238a29e14">GetNumber_of_sony</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Huawei&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_s_l_i_g_o___w_a5804f623f4eb290df4f6b3aba59230d6_1a5804f623f4eb290df4f6b3aba59230d6">GetNumber_of_huawei</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Nokia&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_s_l_i_g_o___w_a1aa9c9f001b37f3fdcdffae009319298_1a1aa9c9f001b37f3fdcdffae009319298">GetNumber_of_nokia</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Alcatel&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_s_l_i_g_o___w_a5afed1018d0629a1e08fc266d05a94d9_1a5afed1018d0629a1e08fc266d05a94d9">GetNumber_of_alcatel</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nVersion&#32;number&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_1a1f1db9d482f22c8e7caa17dfb340626b">Get_Version</link>()&#32;&lt;&lt;&#32;std::endl;
+65 }
+66 
+67 
+68 
+<link linkend="class_s_l_i_g_o___w_abbd14fe78b2f5881020630842194aa5b_1abbd14fe78b2f5881020630842194aa5b">69 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_abbd14fe78b2f5881020630842194aa5b_1abbd14fe78b2f5881020630842194aa5b">SLIGO_W::SetNumber_of_alcatel</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_acbf32331901a3fc710c5c97d286b6fcf_1acbf32331901a3fc710c5c97d286b6fcf">_number_of_alcatel</link>)&#32;{
+70 &#32;&#32;&#32;&#32;this-&gt;_number_of_alcatel&#32;=&#32;<link linkend="class_s_l_i_g_o___w_acbf32331901a3fc710c5c97d286b6fcf_1acbf32331901a3fc710c5c97d286b6fcf">_number_of_alcatel</link>;
+71 }
+72 
+<link linkend="class_s_l_i_g_o___w_a5afed1018d0629a1e08fc266d05a94d9_1a5afed1018d0629a1e08fc266d05a94d9">73 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a5afed1018d0629a1e08fc266d05a94d9_1a5afed1018d0629a1e08fc266d05a94d9">SLIGO_W::GetNumber_of_alcatel</link>(){
+74 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_acbf32331901a3fc710c5c97d286b6fcf_1acbf32331901a3fc710c5c97d286b6fcf">_number_of_alcatel</link>;
+75 }
+76 
+<link linkend="class_s_l_i_g_o___w_a2b748e4d815e0f2bdb8fb1b0e85b2636_1a2b748e4d815e0f2bdb8fb1b0e85b2636">77 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a2b748e4d815e0f2bdb8fb1b0e85b2636_1a2b748e4d815e0f2bdb8fb1b0e85b2636">SLIGO_W::SetNumber_of_nokia</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a9fe78b9365c145432d58cb947b01111a_1a9fe78b9365c145432d58cb947b01111a">_number_of_nokia</link>)&#32;{
+78 &#32;&#32;&#32;&#32;this-&gt;_number_of_nokia&#32;=&#32;<link linkend="class_s_l_i_g_o___w_a9fe78b9365c145432d58cb947b01111a_1a9fe78b9365c145432d58cb947b01111a">_number_of_nokia</link>;
+79 }
+80 
+<link linkend="class_s_l_i_g_o___w_a1aa9c9f001b37f3fdcdffae009319298_1a1aa9c9f001b37f3fdcdffae009319298">81 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a1aa9c9f001b37f3fdcdffae009319298_1a1aa9c9f001b37f3fdcdffae009319298">SLIGO_W::GetNumber_of_nokia</link>(){
+82 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a9fe78b9365c145432d58cb947b01111a_1a9fe78b9365c145432d58cb947b01111a">_number_of_nokia</link>;
+83 }
+84 
+<link linkend="class_s_l_i_g_o___w_a3f770536e7ae43cba203b36b452bca76_1a3f770536e7ae43cba203b36b452bca76">85 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a3f770536e7ae43cba203b36b452bca76_1a3f770536e7ae43cba203b36b452bca76">SLIGO_W::SetNumber_of_huawei</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_af9ca2fb509b7b8ca9f1860ece827501f_1af9ca2fb509b7b8ca9f1860ece827501f">_number_of_huawei</link>)&#32;{
+86 &#32;&#32;&#32;&#32;this-&gt;_number_of_huawei&#32;=&#32;<link linkend="class_s_l_i_g_o___w_af9ca2fb509b7b8ca9f1860ece827501f_1af9ca2fb509b7b8ca9f1860ece827501f">_number_of_huawei</link>;
+87 }
+88 
+<link linkend="class_s_l_i_g_o___w_a5804f623f4eb290df4f6b3aba59230d6_1a5804f623f4eb290df4f6b3aba59230d6">89 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a5804f623f4eb290df4f6b3aba59230d6_1a5804f623f4eb290df4f6b3aba59230d6">SLIGO_W::GetNumber_of_huawei</link>(){
+90 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_af9ca2fb509b7b8ca9f1860ece827501f_1af9ca2fb509b7b8ca9f1860ece827501f">_number_of_huawei</link>;
+91 }
+92 
+<link linkend="class_s_l_i_g_o___w_abbfe7001333b8c0b57a22f09ec4c3c1d_1abbfe7001333b8c0b57a22f09ec4c3c1d">93 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_abbfe7001333b8c0b57a22f09ec4c3c1d_1abbfe7001333b8c0b57a22f09ec4c3c1d">SLIGO_W::SetNumber_of_sony</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a0ccf87fe78352e1eac98ed3c85810caa_1a0ccf87fe78352e1eac98ed3c85810caa">_number_of_sony</link>)&#32;{
+94 &#32;&#32;&#32;&#32;this-&gt;_number_of_sony&#32;=&#32;<link linkend="class_s_l_i_g_o___w_a0ccf87fe78352e1eac98ed3c85810caa_1a0ccf87fe78352e1eac98ed3c85810caa">_number_of_sony</link>;
+95 }
+96 
+<link linkend="class_s_l_i_g_o___w_a62822c4fb80f739bee61767238a29e14_1a62822c4fb80f739bee61767238a29e14">97 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a62822c4fb80f739bee61767238a29e14_1a62822c4fb80f739bee61767238a29e14">SLIGO_W::GetNumber_of_sony</link>(){
+98 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a0ccf87fe78352e1eac98ed3c85810caa_1a0ccf87fe78352e1eac98ed3c85810caa">_number_of_sony</link>;
+99 }
+100 
+<link linkend="class_s_l_i_g_o___w_ace5a2d4fae4c84710a648062e60022d2_1ace5a2d4fae4c84710a648062e60022d2">101 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_ace5a2d4fae4c84710a648062e60022d2_1ace5a2d4fae4c84710a648062e60022d2">SLIGO_W::SetNumber_of_samsung</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a2c7845560ec14452132d659eb54f2cec_1a2c7845560ec14452132d659eb54f2cec">_number_of_samsung</link>)&#32;{
+102 &#32;&#32;&#32;&#32;this-&gt;_number_of_samsung&#32;=&#32;<link linkend="class_s_l_i_g_o___w_a2c7845560ec14452132d659eb54f2cec_1a2c7845560ec14452132d659eb54f2cec">_number_of_samsung</link>;
+103 }
+104 
+<link linkend="class_s_l_i_g_o___w_aa4b6200a00c2a14924b7ff1ae3896b61_1aa4b6200a00c2a14924b7ff1ae3896b61">105 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_aa4b6200a00c2a14924b7ff1ae3896b61_1aa4b6200a00c2a14924b7ff1ae3896b61">SLIGO_W::GetNumber_of_samsung</link>(){
+106 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a2c7845560ec14452132d659eb54f2cec_1a2c7845560ec14452132d659eb54f2cec">_number_of_samsung</link>;
+107 }
+108 
+<link linkend="class_s_l_i_g_o___w_ad2f09386c9305c63a94ab171861eb3a9_1ad2f09386c9305c63a94ab171861eb3a9">109 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_ad2f09386c9305c63a94ab171861eb3a9_1ad2f09386c9305c63a94ab171861eb3a9">SLIGO_W::SetNumber_of_iphones</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_aa958eed564796bb349d15bf2b2e3208d_1aa958eed564796bb349d15bf2b2e3208d">_number_of_iphones</link>)&#32;{
+110 &#32;&#32;&#32;&#32;this-&gt;_number_of_iphones&#32;=&#32;<link linkend="class_s_l_i_g_o___w_aa958eed564796bb349d15bf2b2e3208d_1aa958eed564796bb349d15bf2b2e3208d">_number_of_iphones</link>;
+111 }
+112 
+<link linkend="class_s_l_i_g_o___w_a780b3a690f5cbbf7593ffc6612b3d743_1a780b3a690f5cbbf7593ffc6612b3d743">113 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a780b3a690f5cbbf7593ffc6612b3d743_1a780b3a690f5cbbf7593ffc6612b3d743">SLIGO_W::GetNumber_of_iphones</link>(){
+114 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_aa958eed564796bb349d15bf2b2e3208d_1aa958eed564796bb349d15bf2b2e3208d">_number_of_iphones</link>;
+115 }
+116 
+<link linkend="class_s_l_i_g_o___w_ad2a9668f07e63bed2bb5da576cbb55b7_1ad2a9668f07e63bed2bb5da576cbb55b7">117 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_ad2a9668f07e63bed2bb5da576cbb55b7_1ad2a9668f07e63bed2bb5da576cbb55b7">SLIGO_W::SetShop_name</link>(std::string&#32;<link linkend="class_s_l_i_g_o___w_a01bebef43ff4b4d9d728489f05b94d86_1a01bebef43ff4b4d9d728489f05b94d86">_shop_name</link>)&#32;{
+118 &#32;&#32;&#32;&#32;this-&gt;_shop_name&#32;=&#32;<link linkend="class_s_l_i_g_o___w_a01bebef43ff4b4d9d728489f05b94d86_1a01bebef43ff4b4d9d728489f05b94d86">_shop_name</link>;
+119 }
+120 
+<link linkend="class_s_l_i_g_o___w_ae788518e30d9d311eb28f37da932367a_1ae788518e30d9d311eb28f37da932367a">121 </link>std::string&#32;<link linkend="class_s_l_i_g_o___w_ae788518e30d9d311eb28f37da932367a_1ae788518e30d9d311eb28f37da932367a">SLIGO_W::GetShop_name</link>(){
+122 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_a01bebef43ff4b4d9d728489f05b94d86_1a01bebef43ff4b4d9d728489f05b94d86">_shop_name</link>;
+123 }
+124 
+<link linkend="class_s_l_i_g_o___w_af442340c69e1f50622014d459320f003_1af442340c69e1f50622014d459320f003">125 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_af442340c69e1f50622014d459320f003_1af442340c69e1f50622014d459320f003">SLIGO_W::SetShop_address</link>(std::string&#32;<link linkend="class_s_l_i_g_o___w_ade08b79101c67997dde54515f2088b9d_1ade08b79101c67997dde54515f2088b9d">_shop_address</link>)&#32;{
+126 &#32;&#32;&#32;&#32;this-&gt;_shop_address&#32;=&#32;<link linkend="class_s_l_i_g_o___w_ade08b79101c67997dde54515f2088b9d_1ade08b79101c67997dde54515f2088b9d">_shop_address</link>;
+127 }
+128 
+<link linkend="class_s_l_i_g_o___w_a66a2315d531231e34c5056e9bc917797_1a66a2315d531231e34c5056e9bc917797">129 </link>std::string&#32;<link linkend="class_s_l_i_g_o___w_a66a2315d531231e34c5056e9bc917797_1a66a2315d531231e34c5056e9bc917797">SLIGO_W::GetShop_address</link>(){
+130 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_s_l_i_g_o___w_ade08b79101c67997dde54515f2088b9d_1ade08b79101c67997dde54515f2088b9d">_shop_address</link>;
+131 }
+132 
+133 
+134 
+    </computeroutput></literallayout>
+</section>

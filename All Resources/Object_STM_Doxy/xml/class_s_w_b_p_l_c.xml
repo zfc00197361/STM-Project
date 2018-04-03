@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_s_w_b_p_l_c" kind="class" language="C++" prot="public">
+    <compoundname>SWBPLC</compoundname>
+    <basecompoundref refid="class_b_a_n_k" prot="public" virt="non-virtual">BANK</basecompoundref>
+    <includes refid="_s_w_b_p_l_c_8h" local="no">SWBPLC.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_w_b_p_l_c_1a5de90ba5cac0107fa5361458a0df839e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SWBPLC::fullname</definition>
+        <argsstring></argsstring>
+        <name>fullname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="93" column="1" bodyfile="SWBPLC.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_w_b_p_l_c_1a38fd4817afe4aaac4993b0b4c7074b9c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SWBPLC::firstName</definition>
+        <argsstring></argsstring>
+        <name>firstName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="94" column="1" bodyfile="SWBPLC.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_w_b_p_l_c_1aa06b2e569dd1fef8e43dfda1b34d67f3" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SWBPLC::lastName</definition>
+        <argsstring></argsstring>
+        <name>lastName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="95" column="1" bodyfile="SWBPLC.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_w_b_p_l_c_1a5d03f989254b88bdb7eb3deeec7e4217" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SWBPLC::accountNumber</definition>
+        <argsstring></argsstring>
+        <name>accountNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="96" column="1" bodyfile="SWBPLC.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_w_b_p_l_c_1a34365efdc6dde37a4da9a6222dcde389" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double SWBPLC::balance</definition>
+        <argsstring></argsstring>
+        <name>balance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="97" column="1" bodyfile="SWBPLC.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_w_b_p_l_c_1a86edad3cbbc5903c8ab8a45b22c0dd15" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SWBPLC::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="98" column="1" bodyfile="SWBPLC.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a320f4e2b023038668d941ce5d0c46aeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SWBPLC::SWBPLC</definition>
+        <argsstring>()</argsstring>
+        <name>SWBPLC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="24" column="1" bodyfile="SWBPLC.h" bodystart="24" bodyend="31"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a77f0e0d6c08a95066d277bf6b2073a5c" compoundref="_s_w_b_p_l_c_8cpp" startline="22" endline="28">getBaseCopy</referencedby>
+        <referencedby refid="class_s_w_b_p_l_c_1a33e460bff6f51b30209a6f5a25a24d7d" compoundref="_s_w_b_p_l_c_8h" startline="46" endline="55">SWBPLC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a29c408f7ccb7c5962dab8ac858758a89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SWBPLC::SWBPLC</definition>
+        <argsstring>(int accountNumber, double balance, std::string firstName, std::string lastName, std::string address)</argsstring>
+        <name>SWBPLC</name>
+        <param>
+          <type>int</type>
+          <declname>accountNumber</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>balance</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>firstName</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>lastName</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="35" column="1" bodyfile="SWBPLC.h" bodystart="35" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a33e460bff6f51b30209a6f5a25a24d7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SWBPLC::SWBPLC</definition>
+        <argsstring>(std::shared_ptr&lt; BANK &gt; obj, int _version, int _unique_id)</argsstring>
+        <name>SWBPLC</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_b_a_n_k" kindref="compound">BANK</ref> &gt;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_version</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_unique_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom constructor, used by the library for deep copying </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="46" column="1" bodyfile="SWBPLC.h" bodystart="46" bodyend="55"/>
+        <references refid="class_s_w_b_p_l_c_1a320f4e2b023038668d941ce5d0c46aeb" compoundref="_s_w_b_p_l_c_8h" startline="24" endline="31">SWBPLC</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a767c6ae2b15f523b5ec6e35e137dcc96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SWBPLC::SWBPLC</definition>
+        <argsstring>(const SWBPLC &amp;orig)</argsstring>
+        <name>SWBPLC</name>
+        <param>
+          <type>const <ref refid="class_s_w_b_p_l_c" kindref="compound">SWBPLC</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="59" column="1" bodyfile="SWBPLC.cpp" bodystart="12" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_w_b_p_l_c" kindref="compound">SWBPLC</ref></type>
+        <definition>SWBPLC SWBPLC::operator=</definition>
+        <argsstring>(const SWBPLC &amp;orig)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_s_w_b_p_l_c" kindref="compound">SWBPLC</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="63" column="1" bodyfile="SWBPLC.h" bodystart="63" bodyend="63"/>
+        <references refid="class_s_w_b_p_l_c_1a5d6f00a76145f32424ff6db9ac23c6fe" compoundref="_s_w_b_p_l_c_8cpp" startline="15" endline="16">~SWBPLC</references>
+        <references refid="class_s_w_b_p_l_c_1a9468640482a6cfb9bfb4115fc59191d5" compoundref="_s_w_b_p_l_c_8cpp" startline="34" endline="44">copy</references>
+        <references refid="class_s_w_b_p_l_c_1a77f0e0d6c08a95066d277bf6b2073a5c" compoundref="_s_w_b_p_l_c_8cpp" startline="22" endline="28">getBaseCopy</references>
+        <references refid="class_s_w_b_p_l_c_1a761c77b5a204b4ae05ffb01bd602c3c2" compoundref="_s_w_b_p_l_c_8cpp" startline="55" endline="58">toString</references>
+        <references refid="class_s_w_b_p_l_c_1a99590e47dda8361b2d5869fd315f92f8" compoundref="_s_w_b_p_l_c_8cpp" startline="60" endline="62">SetAddress</references>
+        <references refid="class_s_w_b_p_l_c_1a3a62a57b3ecdd06ed977ef372dab89ad" compoundref="_s_w_b_p_l_c_8cpp" startline="64" endline="66">GetAddress</references>
+        <references refid="class_s_w_b_p_l_c_1a9a0d94da8922f00ca4a3e5fa774e8b3f" compoundref="_s_w_b_p_l_c_8cpp" startline="68" endline="70">SetBalance</references>
+        <references refid="class_s_w_b_p_l_c_1af7f5f662ab926bfb9c0c1c7156cde24c" compoundref="_s_w_b_p_l_c_8cpp" startline="72" endline="74">GetBalance</references>
+        <references refid="class_s_w_b_p_l_c_1a45eb1e6a73fde0dc00824319d4e0b81a" compoundref="_s_w_b_p_l_c_8cpp" startline="76" endline="78">SetAccountNumber</references>
+        <references refid="class_s_w_b_p_l_c_1a1a997f6d333e5021970e50605431d7df" compoundref="_s_w_b_p_l_c_8cpp" startline="80" endline="82">GetAccountNumber</references>
+        <references refid="class_s_w_b_p_l_c_1aa5581ea5d2e0315b816876737e887f09" compoundref="_s_w_b_p_l_c_8cpp" startline="84" endline="86">SetLastName</references>
+        <references refid="class_s_w_b_p_l_c_1a72b2595acea28dae9e4f5816dd3c4652" compoundref="_s_w_b_p_l_c_8cpp" startline="88" endline="90">GetLastName</references>
+        <references refid="class_s_w_b_p_l_c_1a8146eabca4648ef679188904f677df9d" compoundref="_s_w_b_p_l_c_8cpp" startline="92" endline="94">SetFirstName</references>
+        <references refid="class_s_w_b_p_l_c_1ace6bbcd6546896e581e3a2ee9504d090" compoundref="_s_w_b_p_l_c_8cpp" startline="96" endline="98">GetFirstName</references>
+        <references refid="class_s_w_b_p_l_c_1a09376d46475bbceda897948714ff1e72" compoundref="_s_w_b_p_l_c_8cpp" startline="100" endline="102">SetFullname</references>
+        <references refid="class_s_w_b_p_l_c_1adb74b3cbc40a401bf7ca4dfb5269c336" compoundref="_s_w_b_p_l_c_8cpp" startline="104" endline="106">GetFullname</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a5d6f00a76145f32424ff6db9ac23c6fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>SWBPLC::~SWBPLC</definition>
+        <argsstring>()</argsstring>
+        <name>~SWBPLC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>de-constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="67" column="1" bodyfile="SWBPLC.cpp" bodystart="15" bodyend="16"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a9468640482a6cfb9bfb4115fc59191d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SWBPLC::copy</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; to, std::shared_ptr&lt; OSTM &gt; from)</argsstring>
+        <name>copy</name>
+        <reimplements refid="class_o_s_t_m_1a535d90fced5adbb70312c92f3778e08d">copy</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+<para>copy function, make deep copy of the object/pointer </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objTO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a std::shared_ptr&lt;BANK&gt; type object casted back from std::shared_ptr&lt;OSTM&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>objFROM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a std::shared_ptr&lt;BANK&gt; type object casted back from std::shared_ptr&lt;OSTM&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="73" column="1" bodyfile="SWBPLC.cpp" bodystart="34" bodyend="44"/>
+        <references refid="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93" compoundref="_o_s_t_m_8cpp" startline="66" endline="68">OSTM::Set_Unique_ID</references>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a77f0e0d6c08a95066d277bf6b2073a5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; OSTM &gt; SWBPLC::getBaseCopy</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; object)</argsstring>
+        <name>getBaseCopy</name>
+        <reimplements refid="class_o_s_t_m_1a0bfa3763bd441407dd6365f42714f94c">getBaseCopy</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>getBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr&lt;BANK&gt; type object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objTO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a <ref refid="class_b_a_n_k" kindref="compound">BANK</ref> type pointer for casting </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a std::shared_ptr&lt;BANK&gt; return type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="74" column="1" bodyfile="SWBPLC.cpp" bodystart="22" bodyend="28"/>
+        <references refid="class_s_w_b_p_l_c_1a320f4e2b023038668d941ce5d0c46aeb" compoundref="_s_w_b_p_l_c_8h" startline="24" endline="31">SWBPLC</references>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a761c77b5a204b4ae05ffb01bd602c3c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SWBPLC::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_o_s_t_m_1a513396a115f2987fd07c203309ae8a59">toString</reimplements>
+        <briefdescription>
+<para>_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type </para>        </briefdescription>
+        <detaileddescription>
+<para>toString function, displays the object values in formatted way </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="75" column="1" bodyfile="SWBPLC.cpp" bodystart="55" bodyend="58"/>
+        <references refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" compoundref="_o_s_t_m_8cpp" startline="73" endline="76">OSTM::Get_Unique_ID</references>
+        <references refid="class_s_w_b_p_l_c_1a1a997f6d333e5021970e50605431d7df" compoundref="_s_w_b_p_l_c_8cpp" startline="80" endline="82">GetAccountNumber</references>
+        <references refid="class_s_w_b_p_l_c_1af7f5f662ab926bfb9c0c1c7156cde24c" compoundref="_s_w_b_p_l_c_8cpp" startline="72" endline="74">GetBalance</references>
+        <references refid="class_s_w_b_p_l_c_1ace6bbcd6546896e581e3a2ee9504d090" compoundref="_s_w_b_p_l_c_8cpp" startline="96" endline="98">GetFirstName</references>
+        <references refid="class_s_w_b_p_l_c_1a72b2595acea28dae9e4f5816dd3c4652" compoundref="_s_w_b_p_l_c_8cpp" startline="88" endline="90">GetLastName</references>
+        <references refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" compoundref="_o_s_t_m_8cpp" startline="89" endline="92">OSTM::Get_Version</references>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a99590e47dda8361b2d5869fd315f92f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SWBPLC::SetAddress</definition>
+        <argsstring>(std::string address)</argsstring>
+        <name>SetAddress</name>
+        <reimplements refid="class_b_a_n_k_1a52ad99454b2059d44967868157208393">SetAddress</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="80" column="1" bodyfile="SWBPLC.cpp" bodystart="60" bodyend="62"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a3a62a57b3ecdd06ed977ef372dab89ad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string SWBPLC::GetAddress</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAddress</name>
+        <reimplements refid="class_b_a_n_k_1a358741f647f9494026e02fd3fd27cde6">GetAddress</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="81" column="1" bodyfile="SWBPLC.cpp" bodystart="64" bodyend="66"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a9a0d94da8922f00ca4a3e5fa774e8b3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SWBPLC::SetBalance</definition>
+        <argsstring>(double balance)</argsstring>
+        <name>SetBalance</name>
+        <reimplements refid="class_b_a_n_k_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</reimplements>
+        <param>
+          <type>double</type>
+          <declname>balance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="82" column="1" bodyfile="SWBPLC.cpp" bodystart="68" bodyend="70"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1af7f5f662ab926bfb9c0c1c7156cde24c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double SWBPLC::GetBalance</definition>
+        <argsstring>() const </argsstring>
+        <name>GetBalance</name>
+        <reimplements refid="class_b_a_n_k_1a7ac46c74859cebdc933cb27e148d18b1">GetBalance</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="83" column="1" bodyfile="SWBPLC.cpp" bodystart="72" bodyend="74"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a761c77b5a204b4ae05ffb01bd602c3c2" compoundref="_s_w_b_p_l_c_8cpp" startline="55" endline="58">toString</referencedby>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a45eb1e6a73fde0dc00824319d4e0b81a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SWBPLC::SetAccountNumber</definition>
+        <argsstring>(int accountNumber)</argsstring>
+        <name>SetAccountNumber</name>
+        <reimplements refid="class_b_a_n_k_1a9d8fb8bde35d63eca7e9f87d22b45752">SetAccountNumber</reimplements>
+        <param>
+          <type>int</type>
+          <declname>accountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="84" column="1" bodyfile="SWBPLC.cpp" bodystart="76" bodyend="78"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a1a997f6d333e5021970e50605431d7df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int SWBPLC::GetAccountNumber</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAccountNumber</name>
+        <reimplements refid="class_b_a_n_k_1a62adf3cea60d863a4a10eeee485fa1aa">GetAccountNumber</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="85" column="1" bodyfile="SWBPLC.cpp" bodystart="80" bodyend="82"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a761c77b5a204b4ae05ffb01bd602c3c2" compoundref="_s_w_b_p_l_c_8cpp" startline="55" endline="58">toString</referencedby>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1aa5581ea5d2e0315b816876737e887f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SWBPLC::SetLastName</definition>
+        <argsstring>(std::string lastName)</argsstring>
+        <name>SetLastName</name>
+        <reimplements refid="class_b_a_n_k_1a2dc1b7664f9e3b005cb33e71b2ba42ee">SetLastName</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>lastName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="86" column="1" bodyfile="SWBPLC.cpp" bodystart="84" bodyend="86"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a72b2595acea28dae9e4f5816dd3c4652" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string SWBPLC::GetLastName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLastName</name>
+        <reimplements refid="class_b_a_n_k_1a4612063ec2bfd6d883a77a0d3697af90">GetLastName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="87" column="1" bodyfile="SWBPLC.cpp" bodystart="88" bodyend="90"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a761c77b5a204b4ae05ffb01bd602c3c2" compoundref="_s_w_b_p_l_c_8cpp" startline="55" endline="58">toString</referencedby>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a8146eabca4648ef679188904f677df9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SWBPLC::SetFirstName</definition>
+        <argsstring>(std::string firstName)</argsstring>
+        <name>SetFirstName</name>
+        <reimplements refid="class_b_a_n_k_1a547cb9f21be894f045bb3cec6b12525c">SetFirstName</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>firstName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="88" column="1" bodyfile="SWBPLC.cpp" bodystart="92" bodyend="94"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1ace6bbcd6546896e581e3a2ee9504d090" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string SWBPLC::GetFirstName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFirstName</name>
+        <reimplements refid="class_b_a_n_k_1ad0ba1c785c67e7d4760dc8776f3d4bca">GetFirstName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="89" column="1" bodyfile="SWBPLC.cpp" bodystart="96" bodyend="98"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a761c77b5a204b4ae05ffb01bd602c3c2" compoundref="_s_w_b_p_l_c_8cpp" startline="55" endline="58">toString</referencedby>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1a09376d46475bbceda897948714ff1e72" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SWBPLC::SetFullname</definition>
+        <argsstring>(std::string fullname)</argsstring>
+        <name>SetFullname</name>
+        <reimplements refid="class_b_a_n_k_1a8845dbfc7ddfbc2e0c0efda561a70ec3">SetFullname</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>fullname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="90" column="1" bodyfile="SWBPLC.cpp" bodystart="100" bodyend="102"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_w_b_p_l_c_1adb74b3cbc40a401bf7ca4dfb5269c336" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string SWBPLC::GetFullname</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFullname</name>
+        <reimplements refid="class_b_a_n_k_1aa1528c533bf6389bc8d7f3eeca114bab">GetFullname</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SWBPLC.h" line="91" column="1" bodyfile="SWBPLC.cpp" bodystart="104" bodyend="106"/>
+        <referencedby refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" compoundref="_s_w_b_p_l_c_8h" startline="63" endline="63">operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Inherit from <ref refid="class_b_a_n_k" kindref="compound">BANK</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="188">
+        <label>OSTM</label>
+        <link refid="class_o_s_t_m"/>
+      </node>
+      <node id="187">
+        <label>BANK</label>
+        <link refid="class_b_a_n_k"/>
+        <childnode refid="188" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>SWBPLC</label>
+        <link refid="class_s_w_b_p_l_c"/>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="191">
+        <label>OSTM</label>
+        <link refid="class_o_s_t_m"/>
+      </node>
+      <node id="190">
+        <label>BANK</label>
+        <link refid="class_b_a_n_k"/>
+        <childnode refid="191" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>SWBPLC</label>
+        <link refid="class_s_w_b_p_l_c"/>
+        <childnode refid="190" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="SWBPLC.h" line="19" column="1" bodyfile="SWBPLC.h" bodystart="19" bodyend="100"/>
+    <listofallmembers>
+      <member refid="class_s_w_b_p_l_c_1a5d03f989254b88bdb7eb3deeec7e4217" prot="private" virt="non-virtual"><scope>SWBPLC</scope><name>accountNumber</name></member>
+      <member refid="class_s_w_b_p_l_c_1a86edad3cbbc5903c8ab8a45b22c0dd15" prot="private" virt="non-virtual"><scope>SWBPLC</scope><name>address</name></member>
+      <member refid="class_s_w_b_p_l_c_1a34365efdc6dde37a4da9a6222dcde389" prot="private" virt="non-virtual"><scope>SWBPLC</scope><name>balance</name></member>
+      <member refid="class_b_a_n_k_1a0bc938356cebff14fb0560264abe5a34" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>BANK</name></member>
+      <member refid="class_b_a_n_k_1a7382dd275d8f4f10a8b53ccbc93e1e87" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>BANK</name></member>
+      <member refid="class_b_a_n_k_1a4dd657c30039ea00a040e6226c23ccd4" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>BANK</name></member>
+      <member refid="class_s_w_b_p_l_c_1a9468640482a6cfb9bfb4115fc59191d5" prot="public" virt="virtual"><scope>SWBPLC</scope><name>copy</name></member>
+      <member refid="class_s_w_b_p_l_c_1a38fd4817afe4aaac4993b0b4c7074b9c" prot="private" virt="non-virtual"><scope>SWBPLC</scope><name>firstName</name></member>
+      <member refid="class_s_w_b_p_l_c_1a5de90ba5cac0107fa5361458a0df839e" prot="private" virt="non-virtual"><scope>SWBPLC</scope><name>fullname</name></member>
+      <member refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>Get_Unique_ID</name></member>
+      <member refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>Get_Version</name></member>
+      <member refid="class_s_w_b_p_l_c_1a1a997f6d333e5021970e50605431d7df" prot="public" virt="virtual"><scope>SWBPLC</scope><name>GetAccountNumber</name></member>
+      <member refid="class_s_w_b_p_l_c_1a3a62a57b3ecdd06ed977ef372dab89ad" prot="public" virt="virtual"><scope>SWBPLC</scope><name>GetAddress</name></member>
+      <member refid="class_s_w_b_p_l_c_1af7f5f662ab926bfb9c0c1c7156cde24c" prot="public" virt="virtual"><scope>SWBPLC</scope><name>GetBalance</name></member>
+      <member refid="class_s_w_b_p_l_c_1a77f0e0d6c08a95066d277bf6b2073a5c" prot="public" virt="virtual"><scope>SWBPLC</scope><name>getBaseCopy</name></member>
+      <member refid="class_s_w_b_p_l_c_1ace6bbcd6546896e581e3a2ee9504d090" prot="public" virt="virtual"><scope>SWBPLC</scope><name>GetFirstName</name></member>
+      <member refid="class_s_w_b_p_l_c_1adb74b3cbc40a401bf7ca4dfb5269c336" prot="public" virt="virtual"><scope>SWBPLC</scope><name>GetFullname</name></member>
+      <member refid="class_s_w_b_p_l_c_1a72b2595acea28dae9e4f5816dd3c4652" prot="public" virt="virtual"><scope>SWBPLC</scope><name>GetLastName</name></member>
+      <member refid="class_o_s_t_m_1a5f90caa4384d371c16b7cac860d9f89a" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>increase_VersionNumber</name></member>
+      <member refid="class_o_s_t_m_1afc2851abf5342c3c67342c2c14820115" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>Is_Abort_Transaction</name></member>
+      <member refid="class_o_s_t_m_1a8df39ced3b401aa466df97e26d14b1b7" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>Is_Can_Commit</name></member>
+      <member refid="class_o_s_t_m_1afb6520023ed2c4a6188b688c46f192d0" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>is_Locked</name></member>
+      <member refid="class_s_w_b_p_l_c_1aa06b2e569dd1fef8e43dfda1b34d67f3" prot="private" virt="non-virtual"><scope>SWBPLC</scope><name>lastName</name></member>
+      <member refid="class_o_s_t_m_1af192c598a3c647f37aaba5757e60240f" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>lock_Mutex</name></member>
+      <member refid="class_s_w_b_p_l_c_1a1e4b8f85d4e8e29429d691e258fea2e7" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>operator=</name></member>
+      <member refid="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>OSTM</name></member>
+      <member refid="class_o_s_t_m_1a2314f55a127b94aa8a51d19ba798401e" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>OSTM</name></member>
+      <member refid="class_o_s_t_m_1aba384cf65c5f56f5b86833730c3c6ea4" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>Set_Abort_Transaction</name></member>
+      <member refid="class_o_s_t_m_1a813ee61c9d1c83c6a6ae30d12aca8a5d" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>Set_Can_Commit</name></member>
+      <member refid="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>Set_Unique_ID</name></member>
+      <member refid="class_o_s_t_m_1a9529ad8d6d28c1f0cc9b86ed91df1ae1" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>Set_Version</name></member>
+      <member refid="class_s_w_b_p_l_c_1a45eb1e6a73fde0dc00824319d4e0b81a" prot="public" virt="virtual"><scope>SWBPLC</scope><name>SetAccountNumber</name></member>
+      <member refid="class_s_w_b_p_l_c_1a99590e47dda8361b2d5869fd315f92f8" prot="public" virt="virtual"><scope>SWBPLC</scope><name>SetAddress</name></member>
+      <member refid="class_s_w_b_p_l_c_1a9a0d94da8922f00ca4a3e5fa774e8b3f" prot="public" virt="virtual"><scope>SWBPLC</scope><name>SetBalance</name></member>
+      <member refid="class_s_w_b_p_l_c_1a8146eabca4648ef679188904f677df9d" prot="public" virt="virtual"><scope>SWBPLC</scope><name>SetFirstName</name></member>
+      <member refid="class_s_w_b_p_l_c_1a09376d46475bbceda897948714ff1e72" prot="public" virt="virtual"><scope>SWBPLC</scope><name>SetFullname</name></member>
+      <member refid="class_s_w_b_p_l_c_1aa5581ea5d2e0315b816876737e887f09" prot="public" virt="virtual"><scope>SWBPLC</scope><name>SetLastName</name></member>
+      <member refid="class_s_w_b_p_l_c_1a320f4e2b023038668d941ce5d0c46aeb" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>SWBPLC</name></member>
+      <member refid="class_s_w_b_p_l_c_1a29c408f7ccb7c5962dab8ac858758a89" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>SWBPLC</name></member>
+      <member refid="class_s_w_b_p_l_c_1a33e460bff6f51b30209a6f5a25a24d7d" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>SWBPLC</name></member>
+      <member refid="class_s_w_b_p_l_c_1a767c6ae2b15f523b5ec6e35e137dcc96" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>SWBPLC</name></member>
+      <member refid="class_s_w_b_p_l_c_1a761c77b5a204b4ae05ffb01bd602c3c2" prot="public" virt="virtual"><scope>SWBPLC</scope><name>toString</name></member>
+      <member refid="class_o_s_t_m_1a6cd703bc26c719fd95b4f5362d050762" prot="public" virt="non-virtual"><scope>SWBPLC</scope><name>unlock_Mutex</name></member>
+      <member refid="class_b_a_n_k_1ad609a1e004efdebab6495d95eced2346" prot="public" virt="virtual"><scope>SWBPLC</scope><name>~BANK</name></member>
+      <member refid="class_o_s_t_m_1a30a17d73d0259c60eeab72d6dfa9ceb1" prot="public" virt="virtual"><scope>SWBPLC</scope><name>~OSTM</name></member>
+      <member refid="class_s_w_b_p_l_c_1a5d6f00a76145f32424ff6db9ac23c6fe" prot="public" virt="virtual"><scope>SWBPLC</scope><name>~SWBPLC</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

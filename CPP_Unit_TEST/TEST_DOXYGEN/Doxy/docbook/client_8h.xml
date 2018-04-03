@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="client_8h">
+    <title>client.h File Reference</title>
+    <programlisting>#include &lt;cstdlib&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;thread&gt;</programlisting>
+    <programlisting>#include &quot;TM.h&quot;</programlisting>
+    <programlisting>#include &quot;AIB.h&quot;</programlisting>
+    <programlisting>#include &quot;BOI.h&quot;</programlisting>
+    <programlisting>#include &quot;BOA.h&quot;</programlisting>
+    <programlisting>#include &quot;SWBPLC.h&quot;</programlisting>
+    <programlisting>#include &quot;ULSTER.h&quot;</programlisting>
+    <programlisting>#include &quot;UNBL.h&quot;</programlisting>
+    <programlisting>#include &lt;mutex&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &lt;condition_variable&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+<para>Include dependency diagram for client.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="client_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for client.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="client_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classclient">client</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="client_8h_a1fa906461dbe27288865313d90234ec2_1a1fa906461dbe27288865313d90234ec2">CLIENT_H</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file client.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">/*</emphasis>
+2 <emphasis class="comment">&#32;*&#32;To&#32;change&#32;this&#32;license&#32;header,&#32;choose&#32;License&#32;Headers&#32;in&#32;Project&#32;Properties.</emphasis>
+3 <emphasis class="comment">&#32;*&#32;To&#32;change&#32;this&#32;template&#32;file,&#32;choose&#32;Tools&#32;|&#32;Templates</emphasis>
+4 <emphasis class="comment">&#32;*&#32;and&#32;open&#32;the&#32;template&#32;in&#32;the&#32;editor.</emphasis>
+5 <emphasis class="comment">&#32;*/</emphasis>
+6 
+7 <emphasis class="comment">/*</emphasis>
+8 <emphasis class="comment">&#32;*&#32;File:&#32;&#32;&#32;main.cpp</emphasis>
+9 <emphasis class="comment">&#32;*&#32;Author:&#32;zoltan</emphasis>
+10 <emphasis class="comment">&#32;*</emphasis>
+11 <emphasis class="comment">&#32;*&#32;Created&#32;on&#32;November&#32;27,&#32;2017,&#32;9:26&#32;PM</emphasis>
+12 <emphasis class="comment">&#32;*/</emphasis>
+13 
+14 <emphasis class="preprocessor">#include&#32;&lt;cstdlib&gt;</emphasis>
+15 <emphasis class="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+16 <emphasis class="preprocessor">#include&#32;&lt;thread&gt;</emphasis>
+17 
+18 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_t_m_8h">TM.h</link>&quot;</emphasis>
+19 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_a_i_b_8h">AIB.h</link>&quot;</emphasis>&#32;&#32;&#32;&#32;<emphasis class="comment">//Bank&#32;Account</emphasis>
+20 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_b_o_i_8h">BOI.h</link>&quot;</emphasis>&#32;&#32;&#32;&#32;<emphasis class="comment">//Bank&#32;Account</emphasis>
+21 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_b_o_a_8h">BOA.h</link>&quot;</emphasis>&#32;&#32;&#32;&#32;<emphasis class="comment">//Bank&#32;Account</emphasis>
+22 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_s_w_b_p_l_c_8h">SWBPLC.h</link>&quot;</emphasis>&#32;<emphasis class="comment">//Bank&#32;Account</emphasis>
+23 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_u_l_s_t_e_r_8h">ULSTER.h</link>&quot;</emphasis>&#32;<emphasis class="comment">//Bank&#32;Account</emphasis>
+24 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_u_n_b_l_8h">UNBL.h</link>&quot;</emphasis>&#32;&#32;&#32;<emphasis class="comment">//Bank&#32;Account</emphasis>
+25 <emphasis class="preprocessor">#include&#32;&lt;mutex&gt;</emphasis>
+26 <emphasis class="preprocessor">#include&#32;&lt;memory&gt;</emphasis>
+27 <emphasis class="preprocessor">#include&#32;&lt;condition_variable&gt;</emphasis>
+28 <emphasis class="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+29 
+30 
+31 <emphasis class="preprocessor">#ifndef&#32;CLIENT_H</emphasis>
+<link linkend="client_8h_a1fa906461dbe27288865313d90234ec2_1a1fa906461dbe27288865313d90234ec2">32 </link><emphasis class="preprocessor">#define&#32;CLIENT_H</emphasis>
+33 
+<link linkend="classclient">34 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="classclient">client</link>&#32;{
+35 <emphasis class="keyword">private</emphasis>:
+36 &#32;&#32;&#32;&#32;&#32;&#32;
+37 <emphasis class="keyword">public</emphasis>:
+<link linkend="classclient_a30e2070077d9ba875bfa6616a43d879c_1a30e2070077d9ba875bfa6616a43d879c">38 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="classclient_a30e2070077d9ba875bfa6616a43d879c_1a30e2070077d9ba875bfa6616a43d879c">value</link>&#32;=&#32;0;
+<link linkend="classclient_a62e0309db8390260d05d8c3084c6fdd4_1a62e0309db8390260d05d8c3084c6fdd4">39 </link>&#32;&#32;&#32;&#32;<link linkend="classclient_a62e0309db8390260d05d8c3084c6fdd4_1a62e0309db8390260d05d8c3084c6fdd4">client</link>(<emphasis class="keywordtype">int</emphasis>&#32;value){&#32;this-&gt;value&#32;=&#32;<link linkend="classclient_a30e2070077d9ba875bfa6616a43d879c_1a30e2070077d9ba875bfa6616a43d879c">value</link>;&#32;};
+40 
+<link linkend="classclient_a71edd1265ba9ae03f71b5dbf54548696_1a71edd1265ba9ae03f71b5dbf54548696">41 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="classclient_a71edd1265ba9ae03f71b5dbf54548696_1a71edd1265ba9ae03f71b5dbf54548696">_two_account_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+42 
+43 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+44 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+45 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Register&#32;the&#32;two&#32;single&#32;account</emphasis>
+46 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+47 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+48 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_);
+49 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+50 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Declare&#32;required&#32;pointers&#32;</emphasis>
+51 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+52 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_,&#32;_FROM_BANK_;
+53 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM_,&#32;_FROM_OSTM_;
+54 
+55 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+56 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+59 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;From&#32;std::shared_ptr&lt;OSTM&gt;&#32;to&#32;std::shared_ptr&lt;BANK&gt;&#32;to&#32;access&#32;the&#32;virtual&#32;methods</emphasis>
+60 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_to_));
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_));
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+64 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Make&#32;changes&#32;with&#32;the&#32;objects</emphasis>
+65 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_BANK_-&gt;GetBalance()&#32;+&#32;_amount);
+67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_-&gt;SetBalance(_FROM_BANK_-&gt;GetBalance()&#32;-&#32;_amount);
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+69 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;From&#32;std::shared_ptr&lt;BANK&gt;&#32;to&#32;std::shared_ptr&lt;OSTM&gt;&#32;to&#32;store&#32;the&#32;memory&#32;spaces</emphasis>
+70 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+71 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_BANK_);
+72 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_BANK_);
+73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+74 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Store&#32;changes</emphasis>
+75 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_);
+78 
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+80 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Commit&#32;changes</emphasis>
+81 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+84 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+86 &#32;&#32;&#32;&#32;}
+87 }
+88 
+<link linkend="classclient_ac0ebebd379895869c22f8919ad3bd37f_1ac0ebebd379895869c22f8919ad3bd37f">89 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="classclient_ac0ebebd379895869c22f8919ad3bd37f_1ac0ebebd379895869c22f8919ad3bd37f">_nesting_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+90 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+91 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+92 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Register&#32;the&#32;two&#32;single&#32;account</emphasis>
+93 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+94 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+95 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_);
+96 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+97 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Declare&#32;required&#32;pointers&#32;</emphasis>
+98 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+99 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_,&#32;_FROM_BANK_;
+100 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM_,&#32;_FROM_OSTM_;
+101 
+102 
+103 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+104 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+107 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;From&#32;std::shared_ptr&lt;OSTM&gt;&#32;to&#32;std::shared_ptr&lt;BANK&gt;&#32;to&#32;access&#32;the&#32;virtual&#32;methods</emphasis>
+108 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_to_));
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_));
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+112 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Make&#32;changes&#32;with&#32;the&#32;objects</emphasis>
+113 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_BANK_-&gt;GetBalance()&#32;+&#32;_amount);
+115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_-&gt;SetBalance(_FROM_BANK_-&gt;GetBalance()&#32;-&#32;_amount);
+116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+117 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;From&#32;std::shared_ptr&lt;BANK&gt;&#32;to&#32;std::shared_ptr&lt;OSTM&gt;&#32;to&#32;store&#32;the&#32;memory&#32;spaces</emphasis>
+118 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_BANK_);
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_BANK_);
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+122 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Store&#32;changes</emphasis>
+123 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_);
+126 
+127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+128 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;NESTED&#32;TRANSACTION</emphasis>
+129 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;txTwo&#32;=&#32;tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+131 
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;nestedDone&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!nestedDone)&#32;{
+134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(txTwo-&gt;load(_to_));
+135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(txTwo-&gt;load(_from_));
+136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+137 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Make&#32;changes&#32;with&#32;the&#32;objects</emphasis>
+138 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_BANK_-&gt;GetBalance()&#32;+&#32;_amount);
+140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_-&gt;SetBalance(_FROM_BANK_-&gt;GetBalance()&#32;-&#32;_amount);
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+142 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;From&#32;std::shared_ptr&lt;BANK&gt;&#32;to&#32;std::shared_ptr&lt;OSTM&gt;&#32;to&#32;store&#32;the&#32;memory&#32;spaces</emphasis>
+143 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_BANK_);
+145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_BANK_);
+146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+147 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Store&#32;changes</emphasis>
+148 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;txTwo-&gt;store(_TO_OSTM_);
+150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;txTwo-&gt;store(_FROM_OSTM_);
+151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+152 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;NESTED&#32;TRANSACTION&#32;IN&#32;THE&#32;NESTED&#32;TRANSACTION</emphasis>
+153 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;_two_account_transfer_&#32;function&#32;call</emphasis>
+154 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="classclient_a71edd1265ba9ae03f71b5dbf54548696_1a71edd1265ba9ae03f71b5dbf54548696">_two_account_transfer_</link>(_to_,&#32;_from_,&#32;tm,&#32;_amount);
+156 
+157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nestedDone&#32;=&#32;txTwo-&gt;commit();
+158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+159 
+160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+161 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Commit&#32;changes</emphasis>
+162 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+165 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+167 &#32;&#32;&#32;&#32;}
+168 }
+169 
+<link linkend="classclient_a94fb0b42124860568a011ed94f8bc9d5_1a94fb0b42124860568a011ed94f8bc9d5">170 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="classclient_a94fb0b42124860568a011ed94f8bc9d5_1a94fb0b42124860568a011ed94f8bc9d5">_six_account_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_one_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_two_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_three_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_four_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_five_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+171 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+172 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+173 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Register&#32;the&#32;two&#32;single&#32;account</emphasis>
+174 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+175 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+176 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_one_);
+177 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_two_);
+178 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_three_);
+179 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_four_);
+180 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_five_);
+181 
+182 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+183 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Required&#32;pointers&#32;to&#32;use&#32;in&#32;transaction</emphasis>
+184 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+185 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM,&#32;_FROM_ONE_OSTM,&#32;_FROM_TWO_OSTM,&#32;_FROM_THREE_OSTM,&#32;_FROM_FOUR_OSTM,&#32;_FROM_FIVE_OSTM;
+186 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_,&#32;_FROM_ONE_,&#32;_FROM_TWO_,&#32;_FROM_THREE_,&#32;_FROM_FOUR_,&#32;_FROM_FIVE_;
+187 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+189 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+190 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+191 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;From&#32;std::shared_ptr&lt;OSTM&gt;&#32;to&#32;std::shared_ptr&lt;BANK&gt;&#32;to&#32;access&#32;the&#32;virtual&#32;methods</emphasis>
+192 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_to_));
+194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_ONE_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_one_));
+195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_two_));
+196 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_THREE_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_three_));
+197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FOUR_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_four_));
+198 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FIVE_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_five_));
+199 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+200 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Make&#32;changes&#32;with&#32;the&#32;objects</emphasis>
+201 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_-&gt;GetBalance()&#32;+&#32;(_amount&#32;*&#32;5));
+203 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_ONE_-&gt;SetBalance(_FROM_ONE_-&gt;GetBalance()&#32;-&#32;_amount);
+204 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_-&gt;SetBalance(_FROM_TWO_-&gt;GetBalance()&#32;-&#32;_amount);
+205 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_THREE_-&gt;SetBalance(_FROM_THREE_-&gt;GetBalance()&#32;-&#32;_amount);
+206 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FOUR_-&gt;SetBalance(_FROM_FOUR_-&gt;GetBalance()&#32;-&#32;_amount);
+207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FIVE_-&gt;SetBalance(_FROM_FIVE_-&gt;GetBalance()&#32;-&#32;_amount);
+208 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+209 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;From&#32;std::shared_ptr&lt;BANK&gt;&#32;to&#32;std::shared_ptr&lt;OSTM&gt;&#32;to&#32;store&#32;the&#32;memory&#32;spaces</emphasis>
+210 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+211 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_);
+212 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_ONE_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_ONE_);
+213 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_TWO_);
+214 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_THREE_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_THREE_);
+215 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FOUR_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_FOUR_);
+216 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FIVE_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_FIVE_);
+217 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+218 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Store&#32;changes</emphasis>
+219 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM);
+221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_ONE_OSTM);
+222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_TWO_OSTM);
+223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_THREE_OSTM);
+224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_FOUR_OSTM);
+225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_FIVE_OSTM);
+226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+227 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*&#32;Commit&#32;changes</emphasis>
+228 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+229 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+231 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+232 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+233 &#32;&#32;&#32;&#32;}
+234 }
+235 
+<link linkend="classclient_a3c5e378b6df49d2d2eea4a073da5a594_1a3c5e378b6df49d2d2eea4a073da5a594">236 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="classclient_a3c5e378b6df49d2d2eea4a073da5a594_1a3c5e378b6df49d2d2eea4a073da5a594">_complex_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_two_,&#32;std::vector&lt;std::shared_ptr&lt;OSTM&gt;&gt;&#32;_customer_vec,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+237 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+238 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;Register&#32;the&#32;two&#32;single&#32;account*/</emphasis>
+239 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_);
+240 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_two_);
+241 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;Declare&#32;required&#32;pointers&#32;*/</emphasis>
+242 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_FROM_OSTM_ONE_,&#32;_FROM_OSTM_TWO_,&#32;_TO_OSTM_;
+243 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_,&#32;_FROM_TWO_,&#32;_TO_;
+244 
+245 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+246 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+247 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+248 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keyword">auto</emphasis>&amp;&amp;&#32;obj&#32;:&#32;_customer_vec)&#32;{
+249 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;Register&#32;customers&#32;accounts&#32;from&#32;the&#32;collection&#32;(vector)&#32;*/</emphasis>
+250 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;_register(obj);
+251 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;From&#32;std::shared_ptr&lt;OSTM&gt;&#32;to&#32;std::shared_ptr&lt;BANK&gt;&#32;to&#32;access&#32;the&#32;virtual&#32;methods&#32;&#32;*/</emphasis>
+252 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_));
+253 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_two_));
+254 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(obj));
+255 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;Make&#32;changes&#32;with&#32;the&#32;objects&#32;*/</emphasis>
+256 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_FROM_-&gt;GetBalance()&#32;-&#32;_amount);
+257 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_-&gt;SetBalance(_FROM_TWO_-&gt;GetBalance()&#32;-&#32;_amount);
+258 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_-&gt;SetBalance(_TO_-&gt;GetBalance()&#32;+&#32;(_amount&#32;*&#32;2));
+259 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;From&#32;std::shared_ptr&lt;BANK&gt;&#32;to&#32;std::shared_ptr&lt;OSTM&gt;&#32;to&#32;store&#32;the&#32;memory&#32;spaces&#32;*/</emphasis>
+260 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_ONE_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_);
+261 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_TWO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_TWO_);
+262 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_);
+263 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;Store&#32;changes&#32;*/</emphasis>
+264 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_ONE_);
+265 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_TWO_);
+266 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+267 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+268 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;Commit&#32;changes&#32;*/</emphasis>
+269 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+270 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+271 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+272 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+273 &#32;&#32;&#32;&#32;}
+274 }
+275 
+276 
+277 };
+278 
+279 <emphasis class="preprocessor">#endif&#32;</emphasis><emphasis class="comment">/*&#32;CLIENT_H&#32;*/</emphasis><emphasis class="preprocessor"></emphasis>
+280 
+    </computeroutput></literallayout>
+</section>

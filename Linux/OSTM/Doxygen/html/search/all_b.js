@@ -7,6 +7,7 @@ var searchData=
   ['tm_2eh',['TM.h',['../_t_m_8h.html',1,'']]],
   ['tostring',['toString',['../class_o_s_t_m_a513396a115f2987fd07c203309ae8a59.html#a513396a115f2987fd07c203309ae8a59',1,'OSTM']]],
   ['transaction_5fnumber',['transaction_Number',['../class_t_x_a145a1c74b521f277fe481971a930b249.html#a145a1c74b521f277fe481971a930b249',1,'TX']]],
+  ['try_5flock',['try_lock',['../class_o_s_t_m_af3dd41488087b678c95b2f5c16486947.html#af3dd41488087b678c95b2f5c16486947',1,'OSTM']]],
   ['tx',['TX',['../class_t_x.html',1,'TX'],['../class_t_x_a8a4b83eab0171ae834bfa92bbced1094.html#a8a4b83eab0171ae834bfa92bbced1094',1,'TX::TX(std::thread::id id)'],['../class_t_x_ab96b3dd2bfd621b47307f0af3ec4f35c.html#ab96b3dd2bfd621b47307f0af3ec4f35c',1,'TX::TX(const TX &amp;orig)']]],
   ['tx_2ecpp',['TX.cpp',['../_t_x_8cpp.html',1,'']]],
   ['tx_2eh',['TX.h',['../_t_x_8h.html',1,'']]],

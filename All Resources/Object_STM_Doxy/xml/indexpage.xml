@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>OSTM C++ Software Transactional Memory</title>
+    <detaileddescription>
+<sect1 id="index_1OSTM">
+<title>Object Based Software Transactional Memory.</title>
+<para><ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> is a polymorphic solution to store and manage shared memory spaces within c++ programming context.<linebreak/>
+ You can store and managed any kind of object in transactional environment as a shared and protected memory space.</para><sect2 id="index_1install_sec">
+<title>Brief. Download the zip file from the provided link in the web-site, that contains the libostm.so, TM.h, TX.h, OSTM.h files.</title>
+<para>Unzip the archive file to the desired destination possibly where in you program is stored.</para></sect2>
+<sect2 id="index_1step1">
+<title>Step 1: Download the archive file.</title>
+</sect2>
+<sect2 id="index_1step2">
+<title>Step 2: Unzip in the target destination.</title>
+</sect2>
+<sect2 id="index_1step3">
+<title>Step 3: Copy the shared library (libostm.so) to the operating system folder where the other shared library are stored.</title>
+<para>It will be different destination folder on different platforms. (Linux, Windows, Mac OS) <ulink url="http://serversite.info/ostm/#tutorial">More Information</ulink></para></sect2>
+<sect2 id="index_1step4">
+<title>Step 4: Achieve the required class hierarchy between the OSTM library and your own class structure.</title>
+<para>Details and instruction of class hierarchy requirements can be found on the web-site. www.serversite.info/ostm</para></sect2>
+<sect2 id="index_1step5">
+<title>Step 5: Create an executable file as you linking together the TM.h, TX.h, OSTM.h files with your own files.</title>
+</sect2>
+<sect2 id="index_1step6">
+<title>Step 6: Now your application use transactional environment, that guarantees the consistency between object transactions.</title>
+</sect2>
+<sect2 id="index_1step7">
+<title>Step 7: Run the application.</title>
+<para>Abbreviation for bank names used in the test cases:<linebreak/>
+ <ref refid="class_b_o_a" kindref="compound">BOA</ref> - Bank of America<linebreak/>
+ <ref refid="class_u_l_s_t_e_r" kindref="compound">ULSTER</ref> - Ulster Bank<linebreak/>
+ <ref refid="class_u_n_b_l" kindref="compound">UNBL</ref> - United National Bank Limited<linebreak/>
+ <ref refid="class_s_w_b_p_l_c" kindref="compound">SWBPLC</ref> - Scottish Windows Bank PLC<linebreak/>
+ <ref refid="class_a_i_b" kindref="compound">AIB</ref> - Allied Irish Bank<linebreak/>
+ <ref refid="class_b_o_i" kindref="compound">BOI</ref> - Bank of Ireland<linebreak/>
+ </para></sect2>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

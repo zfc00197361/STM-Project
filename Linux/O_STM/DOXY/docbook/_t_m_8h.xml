@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_t_m_8h">
+    <title>TM.h File Reference</title>
+    <programlisting>#include &lt;thread&gt;</programlisting>
+    <programlisting>#include &lt;mutex&gt;</programlisting>
+    <programlisting>#include &lt;unordered_map&gt;</programlisting>
+    <programlisting>#include &lt;utility&gt;</programlisting>
+    <programlisting>#include &lt;map&gt;</programlisting>
+    <programlisting>#include &quot;TX.h&quot;</programlisting>
+<para>Include dependency diagram for TM.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_t_m_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for TM.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_t_m_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_t_m">TM</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file TM.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+67 <emphasis class="preprocessor">#ifndef&#32;TM_H</emphasis>
+68 <emphasis class="preprocessor">#define&#32;TM_H</emphasis>
+69 
+70 <emphasis class="preprocessor">#include&#32;&lt;thread&gt;</emphasis>
+71 <emphasis class="comment">//#include&#32;&lt;unistd.h&gt;//used&#32;for&#32;pid_t</emphasis>
+72 <emphasis class="comment">//#include&#32;&lt;io.h&gt;</emphasis>
+73 <emphasis class="preprocessor">#include&#32;&lt;mutex&gt;</emphasis>
+74 <emphasis class="preprocessor">#include&#32;&lt;unordered_map&gt;</emphasis>
+75 <emphasis class="preprocessor">#include&#32;&lt;utility&gt;</emphasis>
+76 <emphasis class="comment">//#include&#32;&lt;process.h&gt;</emphasis>
+77 <emphasis class="preprocessor">#include&#32;&lt;map&gt;</emphasis>
+78 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_t_x_8h">TX.h</link>&quot;</emphasis>
+79 
+<link linkend="class_t_m">80 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="class_t_m">TM</link>&#32;{
+81 <emphasis class="keyword">private</emphasis>:
+85 &#32;&#32;&#32;&#32;<link linkend="class_t_m_a9b5afb6b9d7c5925ab5cc5c65078ac23_1a9b5afb6b9d7c5925ab5cc5c65078ac23">TM</link>()&#32;=&#32;<emphasis class="keywordflow">default</emphasis>;&#32;
+89 &#32;&#32;&#32;&#32;<link linkend="class_t_m_a985f8cb24f685925ddd637c7030cd2b3_1a985f8cb24f685925ddd637c7030cd2b3">~TM</link>()&#32;=&#32;<emphasis class="keywordflow">default</emphasis>;
+93 &#32;&#32;&#32;&#32;<link linkend="class_t_m_a9b5afb6b9d7c5925ab5cc5c65078ac23_1a9b5afb6b9d7c5925ab5cc5c65078ac23">TM</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_t_m">TM</link>&amp;)&#32;=&#32;<emphasis class="keyword">delete</emphasis>;&#32;
+97 &#32;&#32;&#32;&#32;<link linkend="class_t_m">TM</link>&amp;&#32;<link linkend="class_t_m_a85a6b783f0566f0877bab6a7de977c0a_1a85a6b783f0566f0877bab6a7de977c0a">operator=</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_t_m">TM</link>&amp;)&#32;=&#32;<emphasis class="keyword">delete</emphasis>;&#32;
+<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">101 </link>&#32;&#32;&#32;&#32;std::map&lt;std::thread::id,&#32;std::shared_ptr&lt;TX&gt;&gt;<link linkend="class_t_m_a0333dfa193ea99d7626de74a2b932e9b_1a0333dfa193ea99d7626de74a2b932e9b">txMap</link>;
+<link linkend="class_t_m_a81c3bd28ad2343a620fa070f8ac186ca_1a81c3bd28ad2343a620fa070f8ac186ca">106 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">static</emphasis>&#32;std::map&lt;int,&#32;std::map&lt;&#32;std::thread::id,&#32;int&#32;&gt;&gt;&#32;<link linkend="class_t_m_a81c3bd28ad2343a620fa070f8ac186ca_1a81c3bd28ad2343a620fa070f8ac186ca">process_map_collection</link>;
+110 &#32;&#32;&#32;&#32;std::map&lt;&#32;std::thread::id,&#32;int&#32;&gt;&#32;<link linkend="class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_1afb8bc9f42fe06c52747beb7f4c46915c">get_thread_Map</link>();
+114 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_1a26ea481c24d9aa3aebd6dafb7253376e">registerTX</link>();&#32;
+<link linkend="class_t_m_aeb26546681bfe64e21606b8c012bb8c3_1aeb26546681bfe64e21606b8c012bb8c3">118 </link>&#32;&#32;&#32;&#32;std::mutex&#32;<link linkend="class_t_m_aeb26546681bfe64e21606b8c012bb8c3_1aeb26546681bfe64e21606b8c012bb8c3">register_Lock</link>;
+<link linkend="class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_1a123bc5aa0766a7b909bebc54a429e5b0">122 </link>&#32;&#32;&#32;&#32;std::mutex&#32;<link linkend="class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_1a123bc5aa0766a7b909bebc54a429e5b0">get_Lock</link>;
+<link linkend="class_t_m_a6fb90615393f9205838e302c714bbd60_1a6fb90615393f9205838e302c714bbd60">126 </link>&#32;&#32;&#32;&#32;<emphasis class="keyword">static</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_m_a6fb90615393f9205838e302c714bbd60_1a6fb90615393f9205838e302c714bbd60">_tm_id</link>;
+127 
+128 
+129 <emphasis class="keyword">public</emphasis>:
+130 
+134 &#32;&#32;&#32;&#32;<emphasis class="keyword">static</emphasis>&#32;<link linkend="class_t_m">TM</link>&amp;&#32;<link linkend="class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_1a7ce5f35e0dae76df4fe116cf905bbe60">Instance</link>();
+138 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();&#32;
+142 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+146 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_1a1d6891b1d3e71cc0acef54e7afe71c09">print_all</link>();
+147 &#32;&#32;&#32;&#32;
+148 
+149 };
+150 
+151 
+152 <emphasis class="preprocessor">#endif&#32;//&#32;TM_H</emphasis>
+    </computeroutput></literallayout>
+</section>

@@ -4,7 +4,6 @@
     <title>C++ Software transactional Memory</title>
     </info>
         <xi:include href="mainpage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="md__media_zoltan_Data_00_2018_ITCarlow_00_Modules_06_Project_Documents_Git_Sync_Linux_OSTM_README.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <chapter>
         <title>Class Documentation</title>
         <xi:include href="class_o_s_t_m.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -15,7 +14,6 @@
         <title>File Documentation</title>
         <xi:include href="_o_s_t_m_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_o_s_t_m_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="_r_e_a_d_m_e_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_t_m_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_t_m_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="_t_x_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_b_o_i_8cpp">
+    <title>BOI.cpp File Reference</title>
+    <programlisting>#include &quot;BOI.h&quot;</programlisting>
+<para>Include dependency diagram for BOI.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_b_o_i_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for BOI.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_b_o_i_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file BOI.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 <emphasis class="comment">/*&#32;</emphasis>
+3 <emphasis class="comment">&#32;*&#32;File:&#32;&#32;&#32;BOI.cpp</emphasis>
+4 <emphasis class="comment">&#32;*&#32;Author:&#32;Zoltan&#32;Fuzesi</emphasis>
+5 <emphasis class="comment">&#32;*&#32;IT&#32;Carlow&#32;:&#32;C00197361</emphasis>
+6 <emphasis class="comment">&#32;*</emphasis>
+7 <emphasis class="comment">&#32;*&#32;Created&#32;on&#32;January&#32;17,&#32;2018,&#32;8:02&#32;PM</emphasis>
+8 <emphasis class="comment">&#32;*/</emphasis>
+9 
+10 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_b_o_i_8h">BOI.h</link>&quot;</emphasis>
+11 
+<link linkend="class_b_o_i_a617f46a599129178c6b11b4846759a6c_1a617f46a599129178c6b11b4846759a6c">12 </link><link linkend="class_b_o_i_a617f46a599129178c6b11b4846759a6c_1a617f46a599129178c6b11b4846759a6c">BOI::~BOI</link>()&#32;{
+13 }
+14 
+<link linkend="class_b_o_i_a7757de8d3ac656871bed4b07d77457ff_1a7757de8d3ac656871bed4b07d77457ff">15 </link><link linkend="class_b_o_i_a6af682a5f199a029681f0cb2b8658706_1a6af682a5f199a029681f0cb2b8658706">BOI::BOI</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>&amp;&#32;orig)&#32;{
+16 }
+<link linkend="class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_1ad53ae2918a656793b9d7a670d35ecfa3">22 </link>std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_1ad53ae2918a656793b9d7a670d35ecfa3">BOI::getBaseCopy</link>(std::shared_ptr&lt;OSTM&gt;&#32;<emphasis class="keywordtype">object</emphasis>)
+23 {
+24 
+25 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BOI&gt;&#32;objTO&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_o_i">BOI</link>&gt;(object);
+26 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BOI&gt;&#32;obj(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i_a6af682a5f199a029681f0cb2b8658706_1a6af682a5f199a029681f0cb2b8658706">BOI</link>(objTO,object-&gt;Get_Version(),<emphasis class="keywordtype">object</emphasis>-&gt;Get_Unique_ID()));&#32;
+27 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;ostm_obj&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;(obj);
+28 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;ostm_obj;
+29 }
+<link linkend="class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_1a9ff2d32c25c23a1bea6316f50c3bf677">35 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_1a9ff2d32c25c23a1bea6316f50c3bf677">BOI::copy</link>(std::shared_ptr&lt;OSTM&gt;&#32;to,&#32;std::shared_ptr&lt;OSTM&gt;&#32;from){
+36 
+37 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BOI&gt;&#32;objTO&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_o_i">BOI</link>&gt;(to);
+38 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BOI&gt;&#32;objFROM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_o_i">BOI</link>&gt;(from);
+39 &#32;&#32;&#32;&#32;objTO-&gt;<link linkend="class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_1ab5019a32185631c08abbf826422f2d93">Set_Unique_ID</link>(objFROM-&gt;Get_Unique_ID());
+40 &#32;&#32;&#32;&#32;objTO-&gt;Set_Version(objFROM-&gt;Get_Version());
+41 &#32;&#32;&#32;&#32;objTO-&gt;SetAccountNumber(objFROM-&gt;GetAccountNumber());
+42 &#32;&#32;&#32;&#32;objTO-&gt;SetBalance(objFROM-&gt;GetBalance());
+43 }
+47 <emphasis class="comment">//std::shared_ptr&lt;BOI&gt;&#32;BOI::_cast(std::shared_ptr&lt;OSTM&gt;&#32;_object){</emphasis>
+48 <emphasis class="comment">//</emphasis>
+49 <emphasis class="comment">//&#32;&#32;&#32;&#32;return&#32;std::static_pointer_cast&lt;BOI&gt;(_object);</emphasis>
+50 <emphasis class="comment">//}</emphasis>
+<link linkend="class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_1ab02a4dd4ebcc5b2abfaca19f2dff2006">54 </link><emphasis class="comment"></emphasis><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_1ab02a4dd4ebcc5b2abfaca19f2dff2006">BOI::toString</link>()
+55 {
+56 &#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nBOI&#32;BANK&quot;</emphasis>&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nUnique&#32;ID&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_1a5a01a8b98d16b1d1904ecf9356e7b71d">Get_Unique_ID</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nInt&#32;account&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_b_o_i_a5b18e1538f3d37835234946cdf9f240f_1a5b18e1538f3d37835234946cdf9f240f">GetAccountNumber</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nDouble&#32;value&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_b_o_i_a25b289dece2a1685bb9d1a9332c9be0b_1a25b289dece2a1685bb9d1a9332c9be0b">GetBalance</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nFirst&#32;name:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_b_o_i_ab4b9d50c6008a666aa4382def580e7d1_1ab4b9d50c6008a666aa4382def580e7d1">GetFirstName</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nLast&#32;name&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_b_o_i_a37828f3fa4a32f522966e2cad90eaab2_1a37828f3fa4a32f522966e2cad90eaab2">GetLastName</link>()&#32;&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nVersion&#32;number&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_1a1f1db9d482f22c8e7caa17dfb340626b">Get_Version</link>()&#32;&lt;&lt;&#32;std::endl;
+57 }
+<link linkend="class_b_o_i_a00c9386c862cf2442968bf7fc30102b3_1a00c9386c862cf2442968bf7fc30102b3">58 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_a00c9386c862cf2442968bf7fc30102b3_1a00c9386c862cf2442968bf7fc30102b3">BOI::SetAddress</link>(std::string&#32;<link linkend="class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_1ab9315fe76fd9f07551f5ae7899d33516">address</link>)&#32;{
+59 &#32;&#32;&#32;&#32;this-&gt;address&#32;=&#32;<link linkend="class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_1ab9315fe76fd9f07551f5ae7899d33516">address</link>;
+60 }
+61 
+<link linkend="class_b_o_i_a8920e1f47b22445ba954e86012207462_1a8920e1f47b22445ba954e86012207462">62 </link>std::string&#32;<link linkend="class_b_o_i_a8920e1f47b22445ba954e86012207462_1a8920e1f47b22445ba954e86012207462">BOI::GetAddress</link>()<emphasis class="keyword">&#32;const&#32;</emphasis>{
+63 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_1ab9315fe76fd9f07551f5ae7899d33516">address</link>;
+64 }
+65 
+<link linkend="class_b_o_i_a416667693c10f5e4120eec97a9269348_1a416667693c10f5e4120eec97a9269348">66 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_a416667693c10f5e4120eec97a9269348_1a416667693c10f5e4120eec97a9269348">BOI::SetBalance</link>(<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_1aa00a3d8baf3420647c40119b7fa4ed6f">balance</link>)&#32;{
+67 &#32;&#32;&#32;&#32;this-&gt;balance&#32;=&#32;<link linkend="class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_1aa00a3d8baf3420647c40119b7fa4ed6f">balance</link>;
+68 }
+69 
+<link linkend="class_b_o_i_a25b289dece2a1685bb9d1a9332c9be0b_1a25b289dece2a1685bb9d1a9332c9be0b">70 </link><emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_b_o_i_a25b289dece2a1685bb9d1a9332c9be0b_1a25b289dece2a1685bb9d1a9332c9be0b">BOI::GetBalance</link>()<emphasis class="keyword">&#32;const&#32;</emphasis>{
+71 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_1aa00a3d8baf3420647c40119b7fa4ed6f">balance</link>;
+72 }
+73 
+<link linkend="class_b_o_i_affc9e7e2a36214b3790f250b7108bb65_1affc9e7e2a36214b3790f250b7108bb65">74 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_affc9e7e2a36214b3790f250b7108bb65_1affc9e7e2a36214b3790f250b7108bb65">BOI::SetAccountNumber</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_1a35c9fd6e938eb44ad4e076bc6a736851">accountNumber</link>)&#32;{
+75 &#32;&#32;&#32;&#32;this-&gt;accountNumber&#32;=&#32;<link linkend="class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_1a35c9fd6e938eb44ad4e076bc6a736851">accountNumber</link>;
+76 }
+77 
+<link linkend="class_b_o_i_a5b18e1538f3d37835234946cdf9f240f_1a5b18e1538f3d37835234946cdf9f240f">78 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_b_o_i_a5b18e1538f3d37835234946cdf9f240f_1a5b18e1538f3d37835234946cdf9f240f">BOI::GetAccountNumber</link>()<emphasis class="keyword">&#32;const&#32;</emphasis>{
+79 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_1a35c9fd6e938eb44ad4e076bc6a736851">accountNumber</link>;
+80 }
+81 
+<link linkend="class_b_o_i_a663906e9a59ffa970fb928746c01e8af_1a663906e9a59ffa970fb928746c01e8af">82 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_a663906e9a59ffa970fb928746c01e8af_1a663906e9a59ffa970fb928746c01e8af">BOI::SetLastName</link>(std::string&#32;<link linkend="class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_1ad51bfa6f28816c7f5036447ff809cecf">lastName</link>)&#32;{
+83 &#32;&#32;&#32;&#32;this-&gt;lastName&#32;=&#32;<link linkend="class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_1ad51bfa6f28816c7f5036447ff809cecf">lastName</link>;
+84 }
+85 
+<link linkend="class_b_o_i_a37828f3fa4a32f522966e2cad90eaab2_1a37828f3fa4a32f522966e2cad90eaab2">86 </link>std::string&#32;<link linkend="class_b_o_i_a37828f3fa4a32f522966e2cad90eaab2_1a37828f3fa4a32f522966e2cad90eaab2">BOI::GetLastName</link>()<emphasis class="keyword">&#32;const&#32;</emphasis>{
+87 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_1ad51bfa6f28816c7f5036447ff809cecf">lastName</link>;
+88 }
+89 
+<link linkend="class_b_o_i_ae9042f87be085c2cec799981c30d7d19_1ae9042f87be085c2cec799981c30d7d19">90 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_ae9042f87be085c2cec799981c30d7d19_1ae9042f87be085c2cec799981c30d7d19">BOI::SetFirstName</link>(std::string&#32;<link linkend="class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_1a12872fd8c15dbf833f78862b00579ed1">firstName</link>)&#32;{
+91 &#32;&#32;&#32;&#32;this-&gt;firstName&#32;=&#32;<link linkend="class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_1a12872fd8c15dbf833f78862b00579ed1">firstName</link>;
+92 }
+93 
+<link linkend="class_b_o_i_ab4b9d50c6008a666aa4382def580e7d1_1ab4b9d50c6008a666aa4382def580e7d1">94 </link>std::string&#32;<link linkend="class_b_o_i_ab4b9d50c6008a666aa4382def580e7d1_1ab4b9d50c6008a666aa4382def580e7d1">BOI::GetFirstName</link>()<emphasis class="keyword">&#32;const&#32;</emphasis>{
+95 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_1a12872fd8c15dbf833f78862b00579ed1">firstName</link>;
+96 }
+97 
+<link linkend="class_b_o_i_a93091f16610f1a1474aea31fd5f81ffd_1a93091f16610f1a1474aea31fd5f81ffd">98 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_b_o_i_a93091f16610f1a1474aea31fd5f81ffd_1a93091f16610f1a1474aea31fd5f81ffd">BOI::SetFullname</link>(std::string&#32;<link linkend="class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_1a6d7c892a54bb6f7327cdc777081ab5f4">fullname</link>)&#32;{
+99 &#32;&#32;&#32;&#32;this-&gt;fullname&#32;=&#32;<link linkend="class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_1a6d7c892a54bb6f7327cdc777081ab5f4">fullname</link>;
+100 }
+101 
+<link linkend="class_b_o_i_af56446a377068cd65526e40e8b31b878_1af56446a377068cd65526e40e8b31b878">102 </link>std::string&#32;<link linkend="class_b_o_i_af56446a377068cd65526e40e8b31b878_1af56446a377068cd65526e40e8b31b878">BOI::GetFullname</link>()<emphasis class="keyword">&#32;const&#32;</emphasis>{
+103 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_1a6d7c892a54bb6f7327cdc777081ab5f4">fullname</link>;
+104 }
+105 
+    </computeroutput></literallayout>
+</section>

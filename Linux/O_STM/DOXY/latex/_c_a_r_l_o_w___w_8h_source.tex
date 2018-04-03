@@ -1,0 +1,106 @@
+\hypertarget{_c_a_r_l_o_w___w_8h_source}{}\subsection{C\+A\+R\+L\+O\+W\+\_\+\+W.\+h}
+
+\begin{DoxyCode}
+00001 
+00002 \textcolor{comment}{/* }
+00003 \textcolor{comment}{ * File:   CARLOW\_W.h}
+00004 \textcolor{comment}{ * Author: Zoltan Fuzesi}
+00005 \textcolor{comment}{ * IT Carlow : C00197361}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * Created on January 17, 2018, 8:02 PM}
+00008 \textcolor{comment}{ */}
+00009 
+00010 \textcolor{preprocessor}{#ifndef CARLOW\_W\_H}
+00011 \textcolor{preprocessor}{#define CARLOW\_W\_H}
+00012 \textcolor{preprocessor}{#include "\hyperlink{_w_a_r_e_h_o_u_s_e_8h}{WAREHOUSE.h}"}
+00013 \textcolor{preprocessor}{#include <string>}
+00014 \textcolor{preprocessor}{#include <memory>}
+00015 \textcolor{preprocessor}{#include <iostream>}
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00019}{}\hyperlink{class_c_a_r_l_o_w___w}{00019} \textcolor{keyword}{class }\hyperlink{class_c_a_r_l_o_w___w}{CARLOW\_W} :\textcolor{keyword}{public} \hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE} \{
+00020 \textcolor{keyword}{public}:
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00024}{}\hyperlink{class_c_a_r_l_o_w___w_a8ae6ca6f4db7ea5240322fd27824c55a_a8ae6ca6f4db7ea5240322fd27824c55a}{00024}     \hyperlink{class_c_a_r_l_o_w___w_a8ae6ca6f4db7ea5240322fd27824c55a_a8ae6ca6f4db7ea5240322fd27824c55a}{CARLOW\_W}() : \hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}()\{
+00025         
+00026         this->\hyperlink{class_c_a_r_l_o_w___w_acaa886b26f5a60d500f13709340d34cf_acaa886b26f5a60d500f13709340d34cf}{\_shop\_address} = \textcolor{stringliteral}{"Carlow potato street"};
+00027         this->\hyperlink{class_c_a_r_l_o_w___w_ad3ae4ca82f06287d8ad5bec07a43561a_ad3ae4ca82f06287d8ad5bec07a43561a}{\_shop\_name} = \textcolor{stringliteral}{"CARLOW C\_WAREHOUSE"};
+00028         this->\hyperlink{class_c_a_r_l_o_w___w_aff9e9a986b6390d6fa51f52d43a8c0e8_aff9e9a986b6390d6fa51f52d43a8c0e8}{\_number\_of\_iphones} = 200;
+00029         this->\hyperlink{class_c_a_r_l_o_w___w_ae47f54289c630e38341ce8b2c8decf0f_ae47f54289c630e38341ce8b2c8decf0f}{\_number\_of\_samsung} = 200;
+00030         this->\hyperlink{class_c_a_r_l_o_w___w_a080de2e63290db84a0b9898682b74f6e_a080de2e63290db84a0b9898682b74f6e}{\_number\_of\_sony} = 200;
+00031         this->\hyperlink{class_c_a_r_l_o_w___w_acc2837ed943bb51134e5878e818970fd_acc2837ed943bb51134e5878e818970fd}{\_number\_of\_huawei} = 200;
+00032         this->\hyperlink{class_c_a_r_l_o_w___w_ac4c7e47711cc4c9e0bc01fc37cabe7d1_ac4c7e47711cc4c9e0bc01fc37cabe7d1}{\_number\_of\_nokia} = 200;
+00033         this->\hyperlink{class_c_a_r_l_o_w___w_acf1f9888b2ac011cd0e8bb49b10abd91_acf1f9888b2ac011cd0e8bb49b10abd91}{\_number\_of\_alcatel} = 200;
+00034     \};
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00038}{}\hyperlink{class_c_a_r_l_o_w___w_aa13cfb47255f935a3b27708b68e52129_aa13cfb47255f935a3b27708b68e52129}{00038}     \hyperlink{class_c_a_r_l_o_w___w_aa13cfb47255f935a3b27708b68e52129_aa13cfb47255f935a3b27708b68e52129}{CARLOW\_W}(std::string address, std::string shop\_name, \textcolor{keywordtype}{int} iphone, \textcolor{keywordtype}{int} samsung, \textcolor{keywordtype}{int} sony, \textcolor{keywordtype}{int} 
+      huawei, \textcolor{keywordtype}{int} nokia, \textcolor{keywordtype}{int} alcatel): \hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}()\{
+00039         \textcolor{comment}{/*}
+00040 \textcolor{comment}{         * copy over values}
+00041 \textcolor{comment}{         */}
+00042         this->\hyperlink{class_c_a_r_l_o_w___w_acaa886b26f5a60d500f13709340d34cf_acaa886b26f5a60d500f13709340d34cf}{\_shop\_address} = address;
+00043         this->\hyperlink{class_c_a_r_l_o_w___w_ad3ae4ca82f06287d8ad5bec07a43561a_ad3ae4ca82f06287d8ad5bec07a43561a}{\_shop\_name} = shop\_name;
+00044         this->\hyperlink{class_c_a_r_l_o_w___w_aff9e9a986b6390d6fa51f52d43a8c0e8_aff9e9a986b6390d6fa51f52d43a8c0e8}{\_number\_of\_iphones} = iphone;
+00045         this->\hyperlink{class_c_a_r_l_o_w___w_ae47f54289c630e38341ce8b2c8decf0f_ae47f54289c630e38341ce8b2c8decf0f}{\_number\_of\_samsung} = samsung;
+00046         this->\hyperlink{class_c_a_r_l_o_w___w_a080de2e63290db84a0b9898682b74f6e_a080de2e63290db84a0b9898682b74f6e}{\_number\_of\_sony} = sony;
+00047         this->\hyperlink{class_c_a_r_l_o_w___w_acc2837ed943bb51134e5878e818970fd_acc2837ed943bb51134e5878e818970fd}{\_number\_of\_huawei} = huawei;
+00048         this->\hyperlink{class_c_a_r_l_o_w___w_ac4c7e47711cc4c9e0bc01fc37cabe7d1_ac4c7e47711cc4c9e0bc01fc37cabe7d1}{\_number\_of\_nokia} = nokia;
+00049         this->\hyperlink{class_c_a_r_l_o_w___w_acf1f9888b2ac011cd0e8bb49b10abd91_acf1f9888b2ac011cd0e8bb49b10abd91}{\_number\_of\_alcatel} = alcatel;
+00050         
+00051     \};
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00055}{}\hyperlink{class_c_a_r_l_o_w___w_ad3b772ca2d09eba4a273cb0c7cece747_ad3b772ca2d09eba4a273cb0c7cece747}{00055}     \hyperlink{class_c_a_r_l_o_w___w_ad3b772ca2d09eba4a273cb0c7cece747_ad3b772ca2d09eba4a273cb0c7cece747}{CARLOW\_W}(std::shared\_ptr<WAREHOUSE> obj, \textcolor{keywordtype}{int} \_version, \textcolor{keywordtype}{int} \_unique\_id): 
+      \hyperlink{class_w_a_r_e_h_o_u_s_e}{WAREHOUSE}(\_version, \_unique\_id)\{
+00056         \textcolor{comment}{/*}
+00057 \textcolor{comment}{         * copy over values}
+00058 \textcolor{comment}{         */}
+00059         this->\hyperlink{class_c_a_r_l_o_w___w_acaa886b26f5a60d500f13709340d34cf_acaa886b26f5a60d500f13709340d34cf}{\_shop\_address} = obj->GetShop\_address();
+00060         this->\hyperlink{class_c_a_r_l_o_w___w_ad3ae4ca82f06287d8ad5bec07a43561a_ad3ae4ca82f06287d8ad5bec07a43561a}{\_shop\_name} = obj->GetShop\_name();
+00061         this->\hyperlink{class_c_a_r_l_o_w___w_aff9e9a986b6390d6fa51f52d43a8c0e8_aff9e9a986b6390d6fa51f52d43a8c0e8}{\_number\_of\_iphones} = obj->GetNumber\_of\_iphones();
+00062         this->\hyperlink{class_c_a_r_l_o_w___w_ae47f54289c630e38341ce8b2c8decf0f_ae47f54289c630e38341ce8b2c8decf0f}{\_number\_of\_samsung} = obj->GetNumber\_of\_samsung();
+00063         this->\hyperlink{class_c_a_r_l_o_w___w_a080de2e63290db84a0b9898682b74f6e_a080de2e63290db84a0b9898682b74f6e}{\_number\_of\_sony} = obj->GetNumber\_of\_sony();
+00064         this->\hyperlink{class_c_a_r_l_o_w___w_acc2837ed943bb51134e5878e818970fd_acc2837ed943bb51134e5878e818970fd}{\_number\_of\_huawei} = obj->GetNumber\_of\_huawei();
+00065         this->\hyperlink{class_c_a_r_l_o_w___w_ac4c7e47711cc4c9e0bc01fc37cabe7d1_ac4c7e47711cc4c9e0bc01fc37cabe7d1}{\_number\_of\_nokia} = obj->GetNumber\_of\_nokia();
+00066         this->\hyperlink{class_c_a_r_l_o_w___w_acf1f9888b2ac011cd0e8bb49b10abd91_acf1f9888b2ac011cd0e8bb49b10abd91}{\_number\_of\_alcatel} = obj->GetNumber\_of\_alcatel();
+00067     \}
+00071     \hyperlink{class_c_a_r_l_o_w___w_a8ae6ca6f4db7ea5240322fd27824c55a_a8ae6ca6f4db7ea5240322fd27824c55a}{CARLOW\_W}(\textcolor{keyword}{const} \hyperlink{class_c_a_r_l_o_w___w}{CARLOW\_W}& orig);
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00075}{}\hyperlink{class_c_a_r_l_o_w___w_a38c83795abf1751b3e122c74494f4586_a38c83795abf1751b3e122c74494f4586}{00075}     \hyperlink{class_c_a_r_l_o_w___w}{CARLOW\_W} \hyperlink{class_c_a_r_l_o_w___w_a38c83795abf1751b3e122c74494f4586_a38c83795abf1751b3e122c74494f4586}{operator=}(\textcolor{keyword}{const} \hyperlink{class_c_a_r_l_o_w___w}{CARLOW\_W}& orig)\{\};
+00079     \textcolor{keyword}{virtual} \hyperlink{class_c_a_r_l_o_w___w_aa628d46e58dfd0517f24499eca88138b_aa628d46e58dfd0517f24499eca88138b}{~CARLOW\_W}();
+00080     \textcolor{comment}{/*}
+00081 \textcolor{comment}{     * Implement OSTM virtual methods}
+00082 \textcolor{comment}{     */}
+00083    \textcolor{comment}{// virtual std::shared\_ptr<CARLOW\_W> \_cast(std::shared\_ptr<OSTM> \_object);}
+00084     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_a_r_l_o_w___w_ac91cb7cbae77752e334e273b97fb988b_ac91cb7cbae77752e334e273b97fb988b}{copy}(std::shared\_ptr<OSTM> to, std::shared\_ptr<OSTM> from);
+00085     \textcolor{keyword}{virtual} std::shared\_ptr<OSTM> \hyperlink{class_c_a_r_l_o_w___w_a1a76566c3a7c01cf469007741dac6b97_a1a76566c3a7c01cf469007741dac6b97}{getBaseCopy}(std::shared\_ptr<OSTM> \textcolor{keywordtype}{object});
+00086     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_a_r_l_o_w___w_a79e683650f861b59752fb027a5f16e5a_a79e683650f861b59752fb027a5f16e5a}{toString}();
+00087     \textcolor{comment}{/*}
+00088 \textcolor{comment}{     * Implement Warehouse methods}
+00089 \textcolor{comment}{     */}
+00090     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_a_r_l_o_w___w_ad264954806d7fd6c418650a5c7c7defb_ad264954806d7fd6c418650a5c7c7defb}{SetNumber\_of\_alcatel}(\textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_acf1f9888b2ac011cd0e8bb49b10abd91_acf1f9888b2ac011cd0e8bb49b10abd91}{\_number\_of\_alcatel});
+00091     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_ae7ab8852e5eeff1c2cd397126fbac0e7_ae7ab8852e5eeff1c2cd397126fbac0e7}{GetNumber\_of\_alcatel}();
+00092     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_a_r_l_o_w___w_af0f395409df02a42b3e9448d027d0776_af0f395409df02a42b3e9448d027d0776}{SetNumber\_of\_nokia}(\textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_ac4c7e47711cc4c9e0bc01fc37cabe7d1_ac4c7e47711cc4c9e0bc01fc37cabe7d1}{\_number\_of\_nokia});
+00093     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_a4e3a644ee69bc4bc4ab3feac1493192b_a4e3a644ee69bc4bc4ab3feac1493192b}{GetNumber\_of\_nokia}();
+00094     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_a_r_l_o_w___w_a016d1d51b091fc1732c2923a3baa2f58_a016d1d51b091fc1732c2923a3baa2f58}{SetNumber\_of\_huawei}(\textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_acc2837ed943bb51134e5878e818970fd_acc2837ed943bb51134e5878e818970fd}{\_number\_of\_huawei});
+00095     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_aea38b51a44cda35a01beb7d45fa7a2a4_aea38b51a44cda35a01beb7d45fa7a2a4}{GetNumber\_of\_huawei}();
+00096     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_a_r_l_o_w___w_ab255132fb2ef5678d00c74f90acdf2dd_ab255132fb2ef5678d00c74f90acdf2dd}{SetNumber\_of\_sony}(\textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_a080de2e63290db84a0b9898682b74f6e_a080de2e63290db84a0b9898682b74f6e}{\_number\_of\_sony});
+00097     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_a6d31219dac9b4d8842e14b7414ed286e_a6d31219dac9b4d8842e14b7414ed286e}{GetNumber\_of\_sony}();
+00098     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_a_r_l_o_w___w_a6e629d8043c4c4266ecafa9f6a3e6447_a6e629d8043c4c4266ecafa9f6a3e6447}{SetNumber\_of\_samsung}(\textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_ae47f54289c630e38341ce8b2c8decf0f_ae47f54289c630e38341ce8b2c8decf0f}{\_number\_of\_samsung});
+00099     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_aecc697b6d017d88f2bdbe3cea2bf3496_aecc697b6d017d88f2bdbe3cea2bf3496}{GetNumber\_of\_samsung}();
+00100     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_a_r_l_o_w___w_ad58af9d68450f4fc70e0e1ecd4b1b498_ad58af9d68450f4fc70e0e1ecd4b1b498}{SetNumber\_of\_iphones}(\textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_aff9e9a986b6390d6fa51f52d43a8c0e8_aff9e9a986b6390d6fa51f52d43a8c0e8}{\_number\_of\_iphones});
+00101     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_a50395c707116ea1176743ed98c6b1f76_a50395c707116ea1176743ed98c6b1f76}{GetNumber\_of\_iphones}();
+00102     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_a_r_l_o_w___w_a9d0dcf25c0a9eb8be530c27bd2cf8933_a9d0dcf25c0a9eb8be530c27bd2cf8933}{SetShop\_name}(std::string \hyperlink{class_c_a_r_l_o_w___w_ad3ae4ca82f06287d8ad5bec07a43561a_ad3ae4ca82f06287d8ad5bec07a43561a}{\_shop\_name});
+00103     \textcolor{keyword}{virtual} std::string \hyperlink{class_c_a_r_l_o_w___w_a68235a63964645c525620053a33de863_a68235a63964645c525620053a33de863}{GetShop\_name}();
+00104     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_c_a_r_l_o_w___w_a6f66cd4c060b2b1ac6640768ad5c56e4_a6f66cd4c060b2b1ac6640768ad5c56e4}{SetShop\_address}(std::string \hyperlink{class_c_a_r_l_o_w___w_acaa886b26f5a60d500f13709340d34cf_acaa886b26f5a60d500f13709340d34cf}{\_shop\_address});
+00105     \textcolor{keyword}{virtual} std::string \hyperlink{class_c_a_r_l_o_w___w_af48a2f69706be684115758820ce79ddd_af48a2f69706be684115758820ce79ddd}{GetShop\_address}();
+00106     
+00107     
+00108 \textcolor{keyword}{private}:
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00109}{}\hyperlink{class_c_a_r_l_o_w___w_acaa886b26f5a60d500f13709340d34cf_acaa886b26f5a60d500f13709340d34cf}{00109}     std::string \hyperlink{class_c_a_r_l_o_w___w_acaa886b26f5a60d500f13709340d34cf_acaa886b26f5a60d500f13709340d34cf}{\_shop\_address};
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00110}{}\hyperlink{class_c_a_r_l_o_w___w_ad3ae4ca82f06287d8ad5bec07a43561a_ad3ae4ca82f06287d8ad5bec07a43561a}{00110}     std::string \hyperlink{class_c_a_r_l_o_w___w_ad3ae4ca82f06287d8ad5bec07a43561a_ad3ae4ca82f06287d8ad5bec07a43561a}{\_shop\_name};
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00111}{}\hyperlink{class_c_a_r_l_o_w___w_aff9e9a986b6390d6fa51f52d43a8c0e8_aff9e9a986b6390d6fa51f52d43a8c0e8}{00111}     \textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_aff9e9a986b6390d6fa51f52d43a8c0e8_aff9e9a986b6390d6fa51f52d43a8c0e8}{\_number\_of\_iphones};
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00112}{}\hyperlink{class_c_a_r_l_o_w___w_ae47f54289c630e38341ce8b2c8decf0f_ae47f54289c630e38341ce8b2c8decf0f}{00112}     \textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_ae47f54289c630e38341ce8b2c8decf0f_ae47f54289c630e38341ce8b2c8decf0f}{\_number\_of\_samsung};
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00113}{}\hyperlink{class_c_a_r_l_o_w___w_a080de2e63290db84a0b9898682b74f6e_a080de2e63290db84a0b9898682b74f6e}{00113}     \textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_a080de2e63290db84a0b9898682b74f6e_a080de2e63290db84a0b9898682b74f6e}{\_number\_of\_sony};
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00114}{}\hyperlink{class_c_a_r_l_o_w___w_acc2837ed943bb51134e5878e818970fd_acc2837ed943bb51134e5878e818970fd}{00114}     \textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_acc2837ed943bb51134e5878e818970fd_acc2837ed943bb51134e5878e818970fd}{\_number\_of\_huawei};
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00115}{}\hyperlink{class_c_a_r_l_o_w___w_ac4c7e47711cc4c9e0bc01fc37cabe7d1_ac4c7e47711cc4c9e0bc01fc37cabe7d1}{00115}     \textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_ac4c7e47711cc4c9e0bc01fc37cabe7d1_ac4c7e47711cc4c9e0bc01fc37cabe7d1}{\_number\_of\_nokia};
+\hypertarget{_c_a_r_l_o_w___w_8h_source.tex_l00116}{}\hyperlink{class_c_a_r_l_o_w___w_acf1f9888b2ac011cd0e8bb49b10abd91_acf1f9888b2ac011cd0e8bb49b10abd91}{00116}     \textcolor{keywordtype}{int} \hyperlink{class_c_a_r_l_o_w___w_acf1f9888b2ac011cd0e8bb49b10abd91_acf1f9888b2ac011cd0e8bb49b10abd91}{\_number\_of\_alcatel};
+00117 
+00118 \};
+00119 
+00120 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* CARLOW\_W\_H */}\textcolor{preprocessor}{}
+00121 
+\end{DoxyCode}

@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_o_s_t_m_8cpp" kind="file" language="C++">
+    <compoundname>OSTM.cpp</compoundname>
+    <includes refid="_o_s_t_m_8h" local="yes">OSTM.h</includes>
+    <incdepgraph>
+      <node id="630">
+        <label>string</label>
+      </node>
+      <node id="627">
+        <label>OSTM.h</label>
+        <link refid="_o_s_t_m_8h"/>
+        <childnode refid="628" relation="include">
+        </childnode>
+        <childnode refid="629" relation="include">
+        </childnode>
+        <childnode refid="630" relation="include">
+        </childnode>
+        <childnode refid="631" relation="include">
+        </childnode>
+      </node>
+      <node id="626">
+        <label>OSTM.cpp</label>
+        <link refid="OSTM.cpp"/>
+        <childnode refid="627" relation="include">
+        </childnode>
+      </node>
+      <node id="631">
+        <label>iostream</label>
+      </node>
+      <node id="628">
+        <label>mutex</label>
+      </node>
+      <node id="629">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>File:<sp/><sp/><sp/>OSTM.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Author:<sp/>Zoltan<sp/>Fuzesi</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Created<sp/>on<sp/>December<sp/>18,<sp/>2017,<sp/>2:09<sp/>PM</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>OSTM<sp/>cpp<sp/>file<sp/>methods<sp/>implementations</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_o_s_t_m_8h" kindref="compound">OSTM.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OSTM::global_Unique_ID_Number<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196" refkind="member"><highlight class="normal"><ref refid="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196" kindref="member">OSTM::OSTM</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;version<sp/>=<sp/>ZERO;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;uniqueID<sp/>=<sp/>Get_global_Unique_ID_Number();<sp/></highlight><highlight class="comment">//++global_Unique_ID_Number;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;canCommit<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;abort_Transaction<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_o_s_t_m_1a2314f55a127b94aa8a51d19ba798401e" refkind="member"><highlight class="normal"><ref refid="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196" kindref="member">OSTM::OSTM</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_version_number_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_unique_id_)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::cout<sp/>&lt;&lt;<sp/>&quot;OSTM<sp/>COPY<sp/>CONSTRUCTOR&quot;<sp/>&lt;&lt;<sp/>global_Unique_ID_Number<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;uniqueID<sp/>=<sp/>_unique_id_;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;version<sp/>=<sp/>_version_number_;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;canCommit<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;abort_Transaction<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_o_s_t_m_1a30a17d73d0259c60eeab72d6dfa9ceb1" refkind="member"><highlight class="normal"><ref refid="class_o_s_t_m_1a30a17d73d0259c60eeab72d6dfa9ceb1" kindref="member">OSTM::~OSTM</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>&quot;[OSTM<sp/>DELETE]&quot;<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>OSTM::Get_global_Unique_ID_Number()<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(global_Unique_ID_Number<sp/>&gt;<sp/>10000000)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>global_Unique_ID_Number<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>++global_Unique_ID_Number;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93" kindref="member">OSTM::Set_Unique_ID</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uniqueID)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;uniqueID<sp/>=<sp/>uniqueID;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73" refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" kindref="member">OSTM::Get_Unique_ID</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="74"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>uniqueID;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81" refid="class_o_s_t_m_1a9529ad8d6d28c1f0cc9b86ed91df1ae1" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a9529ad8d6d28c1f0cc9b86ed91df1ae1" kindref="member">OSTM::Set_Version</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;version<sp/>=<sp/>version;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89" refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" kindref="member">OSTM::Get_Version</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="90"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>version;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97" refid="class_o_s_t_m_1a5f90caa4384d371c16b7cac860d9f89a" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a5f90caa4384d371c16b7cac860d9f89a" kindref="member">OSTM::increase_VersionNumber</ref>()</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;version<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105" refid="class_o_s_t_m_1a813ee61c9d1c83c6a6ae30d12aca8a5d" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a813ee61c9d1c83c6a6ae30d12aca8a5d" kindref="member">OSTM::Set_Can_Commit</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>canCommit)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;canCommit<sp/>=<sp/>canCommit;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112" refid="class_o_s_t_m_1a8df39ced3b401aa466df97e26d14b1b7" refkind="member"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a8df39ced3b401aa466df97e26d14b1b7" kindref="member">OSTM::Is_Can_Commit</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>canCommit;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119" refid="class_o_s_t_m_1aba384cf65c5f56f5b86833730c3c6ea4" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1aba384cf65c5f56f5b86833730c3c6ea4" kindref="member">OSTM::Set_Abort_Transaction</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>abortTransaction)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;abort_Transaction<sp/>=<sp/>abortTransaction;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126" refid="class_o_s_t_m_1afc2851abf5342c3c67342c2c14820115" refkind="member"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1afc2851abf5342c3c67342c2c14820115" kindref="member">OSTM::Is_Abort_Transaction</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>abort_Transaction;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133" refid="class_o_s_t_m_1af192c598a3c647f37aaba5757e60240f" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1af192c598a3c647f37aaba5757e60240f" kindref="member">OSTM::lock_Mutex</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;mutex.lock();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140" refid="class_o_s_t_m_1a6cd703bc26c719fd95b4f5362d050762" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1a6cd703bc26c719fd95b4f5362d050762" kindref="member">OSTM::unlock_Mutex</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;mutex.unlock();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147" refid="class_o_s_t_m_1afb6520023ed2c4a6188b688c46f192d0" refkind="member"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_o_s_t_m_1afb6520023ed2c4a6188b688c46f192d0" kindref="member">OSTM::is_Locked</ref>(){</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;mutex.try_lock();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="OSTM.cpp"/>
+  </compounddef>
+</doxygen>

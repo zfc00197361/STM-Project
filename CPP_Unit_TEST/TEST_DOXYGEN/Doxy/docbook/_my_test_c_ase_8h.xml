@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_my_test_c_ase_8h">
+    <title>MyTestCAse.h File Reference</title>
+    <programlisting>#include &quot;client.h&quot;</programlisting>
+    <programlisting>#include &quot;TM.h&quot;</programlisting>
+    <programlisting>#include &lt;thread&gt;</programlisting>
+    <programlisting>#include &lt;cppunit/TestCase.h&gt;</programlisting>
+    <programlisting>#include &lt;cppunit/extensions/HelperMacros.h&gt;</programlisting>
+<para>Include dependency diagram for MyTestCAse.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_my_test_c_ase_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for MyTestCAse.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_my_test_c_ase_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_my_test_c_ase">MyTestCAse</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file MyTestCAse.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 
+3 <emphasis class="preprocessor">#ifndef&#32;MYTESTCASE_H</emphasis>
+4 <emphasis class="preprocessor">#define&#32;MYTESTCASE_H</emphasis>
+5 
+6 <emphasis class="comment">//Connection&#32;between&#32;the&#32;library&#32;and&#32;the&#32;classes</emphasis>
+7 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="client_8h">client.h</link>&quot;</emphasis>
+8 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_t_m_8h">TM.h</link>&quot;</emphasis>
+9 <emphasis class="preprocessor">#include&#32;&lt;thread&gt;</emphasis>
+10 
+11 <emphasis class="comment">//#include&#32;&quot;TestClient.cpp&quot;</emphasis>
+12 
+13 <emphasis class="preprocessor">#include&#32;&lt;cppunit/TestCase.h&gt;</emphasis>
+14 <emphasis class="preprocessor">#include&#32;&lt;cppunit/extensions/HelperMacros.h&gt;</emphasis>
+15 
+16 <emphasis class="keyword">using&#32;namespace&#32;</emphasis><link linkend="namespace_cpp_unit">CppUnit</link>;
+17 
+<link linkend="class_my_test_c_ase">18 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="class_my_test_c_ase">MyTestCAse</link>&#32;:&#32;<emphasis class="keyword">public</emphasis>&#32;TestCase{
+19 &#32;&#32;&#32;&#32;CPPUNIT_TEST_SUITE(<link linkend="class_my_test_c_ase">MyTestCAse</link>);
+20 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+21 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Complex&#32;library&#32;tests.</emphasis>
+22 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+23 &#32;&#32;&#32;&#32;CPPUNIT_TEST(threaded_functionality_hundred_threads);
+24 &#32;&#32;&#32;&#32;CPPUNIT_TEST(threaded_functionality_thousand_threads);
+25 &#32;&#32;&#32;&#32;CPPUNIT_TEST(threaded_functionality_hundred_threads_six_account);
+26 &#32;&#32;&#32;&#32;CPPUNIT_TEST(threaded_functionality_thousand_threads_six_account);
+27 &#32;&#32;&#32;&#32;CPPUNIT_TEST(nested_hundred_thread_functionality);&#32;
+28 &#32;&#32;&#32;&#32;CPPUNIT_TEST(nested_thousand_thread_functionality);
+29 &#32;&#32;&#32;&#32;CPPUNIT_TEST(complex_threaded_functionality_hundred_threads);
+30 &#32;&#32;&#32;&#32;CPPUNIT_TEST(complex_threaded_functionality_ten_threads);
+31 &#32;&#32;&#32;&#32;CPPUNIT_TEST(two_object_transfer_complete);
+32 &#32;&#32;&#32;&#32;CPPUNIT_TEST(two_object_transfer_state_change);
+33 &#32;&#32;&#32;&#32;CPPUNIT_TEST(nested_transaction_object_test);
+34 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+35 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Design&#32;Manual&#32;document&#32;based&#32;tests</emphasis>
+36 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+37 &#32;&#32;&#32;&#32;CPPUNIT_TEST(multi_threaded_multiple_object_exchange_test);
+38 &#32;&#32;&#32;&#32;CPPUNIT_TEST(multi_threaded_single_object_test_with_ten_threads);
+39 &#32;&#32;&#32;&#32;CPPUNIT_TEST(single_threaded_multiple_object_test);
+40 &#32;&#32;&#32;&#32;CPPUNIT_TEST(multi_threaded_multiple_objects_test);
+41 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+42 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;OSTM&#32;library-API&#32;functions&#32;tests,&#32;private&#32;&amp;&#32;public&#32;methods</emphasis>
+43 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+44 &#32;&#32;&#32;&#32;CPPUNIT_TEST(increase_nesting);
+45 &#32;&#32;&#32;&#32;CPPUNIT_TEST(increase_nesting_fail);
+46 &#32;&#32;&#32;&#32;CPPUNIT_TEST(decrease_nesting);
+47 &#32;&#32;&#32;&#32;CPPUNIT_TEST(decrease_nesting_fail);
+48 &#32;&#32;&#32;&#32;CPPUNIT_TEST(two_object_transfer_state_change);
+49 &#32;&#32;&#32;&#32;CPPUNIT_TEST_EXCEPTION(register_null_pointer_throw_runtime_error,&#32;std::runtime_error);
+50 &#32;&#32;&#32;&#32;CPPUNIT_TEST_EXCEPTION(object_not_registered_throw_runtime_error,&#32;std::runtime_error);
+51 &#32;&#32;&#32;&#32;CPPUNIT_TEST_EXCEPTION(store_null_pointer_throw_runtime_error,&#32;std::runtime_error);
+52 &#32;&#32;&#32;&#32;CPPUNIT_TEST(compare_Transaction_Manager_singleton_instance);
+53 &#32;&#32;&#32;&#32;CPPUNIT_TEST(TM_get_thread_map);
+54 &#32;&#32;&#32;
+55 &#32;&#32;&#32;&#32;
+56 &#32;&#32;&#32;&#32;
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+58 
+59 &#32;&#32;&#32;&#32;CPPUNIT_TEST_SUITE_END();
+60 <emphasis class="keyword">public</emphasis>:
+<link linkend="class_my_test_c_ase_a17e7a9246f54f74dacf88f8d6556aa92_1a17e7a9246f54f74dacf88f8d6556aa92">61 </link>&#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a17e7a9246f54f74dacf88f8d6556aa92_1a17e7a9246f54f74dacf88f8d6556aa92">MyTestCAse</link>(){};
+62 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase">MyTestCAse</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_my_test_c_ase">MyTestCAse</link>&amp;&#32;orig);
+63 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;~<link linkend="class_my_test_c_ase">MyTestCAse</link>();
+64 
+<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">65 </link>&#32;&#32;&#32;&#32;<link linkend="class_t_m">TM</link>&amp;&#32;tm&#32;=&#32;<link linkend="class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_1a7ce5f35e0dae76df4fe116cf905bbe60">TM::Instance</link>();
+<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">66 </link>&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>;
+<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">67 </link>&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>;
+<link linkend="class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_1ae0b2db5d35e25b3139beeda0705494f0">68 </link>&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_1ae0b2db5d35e25b3139beeda0705494f0">boa_ptr</link>;
+<link linkend="class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_1aa8ccae9a5a7feb5bc47591c55a82d0cd">69 </link>&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_1aa8ccae9a5a7feb5bc47591c55a82d0cd">swplc_ptr</link>;
+<link linkend="class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_1a4f9f72374d3d15be7cdf16412c4d7ed3">70 </link>&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_1a4f9f72374d3d15be7cdf16412c4d7ed3">ulster_ptr</link>;
+<link linkend="class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_1a0ca634b597d6c0e136d632268853d5a7">71 </link>&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_1a0ca634b597d6c0e136d632268853d5a7">unbl_ptr</link>;
+72 &#32;&#32;&#32;&#32;
+73 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;complex_threaded_functionality_hundred_threads();
+74 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;complex_threaded_functionality_ten_threads();
+75 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;threaded_functionality_hundred_threads();
+76 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;threaded_functionality_thousand_threads();
+77 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;threaded_functionality_hundred_threads_six_account();
+78 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;threaded_functionality_thousand_threads_six_account();
+79 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;nested_hundred_thread_functionality();
+80 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;nested_thousand_thread_functionality();
+81 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;two_object_transfer_complete();
+82 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;two_object_transfer_state_change();
+83 &#32;&#32;&#32;&#32;
+84 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;multi_threaded_multiple_object_exchange_test();
+85 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;multi_threaded_single_object_test_with_ten_threads();
+86 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;single_threaded_multiple_object_test();
+87 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;multi_threaded_multiple_objects_test();
+88 &#32;&#32;&#32;&#32;
+89 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;register_null_pointer_throw_runtime_error();
+90 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;object_not_registered_throw_runtime_error();
+91 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;store_null_pointer_throw_runtime_error();
+92 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;increase_nesting();
+93 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;decrease_nesting();
+94 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;increase_nesting_fail();
+95 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;decrease_nesting_fail();
+96 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;compare_Transaction_Manager_singleton_instance();
+97 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;TM_get_thread_map();
+98 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;nested_transaction_object_test();
+99 &#32;&#32;&#32;&#32;
+100 &#32;&#32;&#32;&#32;
+101 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;_two_account_transfer_(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount);
+102 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;_nesting_(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount);
+103 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;_six_account_transfer_(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_one_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_two_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_three_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_four_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_five_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount);&#32;
+104 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;_complex_transfer_(std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_two_,&#32;std::vector&lt;std::shared_ptr&lt;OSTM&gt;&gt;&#32;_customer_vec,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount);
+105 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;_one_account_transfer_(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount);
+106 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;_collection_bject_(std::vector&lt;std::shared_ptr&lt;OSTM&gt;&gt;&#32;_customer_vec,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount,&#32;<emphasis class="keywordtype">int</emphasis>&#32;loop);
+107 &#32;&#32;&#32;&#32;
+<link linkend="class_my_test_c_ase_a387cf3ea316c793a7b5f34418a2ee3d4_1a387cf3ea316c793a7b5f34418a2ee3d4">108 </link>&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a387cf3ea316c793a7b5f34418a2ee3d4_1a387cf3ea316c793a7b5f34418a2ee3d4">setUp</link>()
+109 &#32;&#32;{
+110 &#32;&#32;&#32;&#32;&#32;&#32;a&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="classclient">client</link>(1);
+111 &#32;&#32;&#32;&#32;&#32;&#32;b&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="classclient">client</link>(1);
+112 &#32;&#32;&#32;&#32;&#32;&#32;c&#32;=&#32;<emphasis class="keyword">new</emphasis>&#32;<link linkend="classclient">client</link>(1);
+113 
+114 &#32;&#32;}
+115 
+<link linkend="class_my_test_c_ase_aeb24ab2614834b9c3b02fd15d288ea0c_1aeb24ab2614834b9c3b02fd15d288ea0c">116 </link>&#32;&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_aeb24ab2614834b9c3b02fd15d288ea0c_1aeb24ab2614834b9c3b02fd15d288ea0c">tearDown</link>()&#32;
+117 &#32;&#32;{
+118 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;a;
+119 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;b;
+120 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keyword">delete</emphasis>&#32;c;
+121 &#32;&#32;}
+122 
+123 &#32;&#32;&#32;&#32;
+124 <emphasis class="keyword">private</emphasis>:
+125 &#32;&#32;&#32;&#32;<emphasis class="comment">//Private&#32;pointer&#32;to&#32;use&#32;in&#32;the&#32;library</emphasis>
+<link linkend="class_my_test_c_ase_a9b2a4413041a47316ddc140e862e3bcc_1a9b2a4413041a47316ddc140e862e3bcc">126 </link>&#32;&#32;&#32;&#32;<link linkend="classclient">client</link>&#32;*a,*b,*<link linkend="class_my_test_c_ase_a9b2a4413041a47316ddc140e862e3bcc_1a9b2a4413041a47316ddc140e862e3bcc">c</link>;
+127 &#32;&#32;&#32;&#32;
+128 };
+129 
+130 <emphasis class="preprocessor">#endif&#32;</emphasis><emphasis class="comment">/*&#32;MYTESTCASE_H&#32;*/</emphasis><emphasis class="preprocessor"></emphasis>
+131 
+    </computeroutput></literallayout>
+</section>

@@ -1,0 +1,534 @@
+\hypertarget{class_s_w_b_p_l_c}{}\section{S\+W\+B\+P\+LC Class Reference}
+\label{class_s_w_b_p_l_c}\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+
+
+{\ttfamily \#include $<$S\+W\+B\+P\+L\+C.\+h$>$}
+
+
+
+Inheritance diagram for S\+W\+B\+P\+LC\+:
+% FIG 0
+
+
+Collaboration diagram for S\+W\+B\+P\+LC\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_s_w_b_p_l_c_a320f4e2b023038668d941ce5d0c46aeb}{S\+W\+B\+P\+LC} ()
+\item 
+\hyperlink{class_s_w_b_p_l_c_a29c408f7ccb7c5962dab8ac858758a89}{S\+W\+B\+P\+LC} (int account\+Number, double balance, std\+::string first\+Name, std\+::string last\+Name, std\+::string address)
+\item 
+\hyperlink{class_s_w_b_p_l_c_a33e460bff6f51b30209a6f5a25a24d7d}{S\+W\+B\+P\+LC} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_b_a_n_k}{B\+A\+NK} $>$ obj, int \+\_\+version, int \+\_\+unique\+\_\+id)
+\item 
+\hyperlink{class_s_w_b_p_l_c_a767c6ae2b15f523b5ec6e35e137dcc96}{S\+W\+B\+P\+LC} (const \hyperlink{class_s_w_b_p_l_c}{S\+W\+B\+P\+LC} \&orig)
+\item 
+\hyperlink{class_s_w_b_p_l_c}{S\+W\+B\+P\+LC} \hyperlink{class_s_w_b_p_l_c_a1e4b8f85d4e8e29429d691e258fea2e7}{operator=} (const \hyperlink{class_s_w_b_p_l_c}{S\+W\+B\+P\+LC} \&orig)
+\item 
+virtual \hyperlink{class_s_w_b_p_l_c_a5d6f00a76145f32424ff6db9ac23c6fe}{$\sim$\+S\+W\+B\+P\+LC} ()
+\item 
+virtual void \hyperlink{class_s_w_b_p_l_c_a9468640482a6cfb9bfb4115fc59191d5}{copy} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ to, std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ from)
+\begin{DoxyCompactList}\small\item\em copy function, make deep copy of the object/pointer \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ \hyperlink{class_s_w_b_p_l_c_a77f0e0d6c08a95066d277bf6b2073a5c}{get\+Base\+Copy} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_o_s_t_m}{O\+S\+TM} $>$ object)
+\begin{DoxyCompactList}\small\item\em get\+Base\+Copy function, make deep copy of the object/pointer and Return a new std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ type object \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_s_w_b_p_l_c_a761c77b5a204b4ae05ffb01bd602c3c2}{to\+String} ()
+\begin{DoxyCompactList}\small\item\em \+\_\+cast, is use to cast bak the std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to the required type \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_s_w_b_p_l_c_a99590e47dda8361b2d5869fd315f92f8}{Set\+Address} (std\+::string address)
+\item 
+virtual std\+::string \hyperlink{class_s_w_b_p_l_c_a3a62a57b3ecdd06ed977ef372dab89ad}{Get\+Address} () const 
+\item 
+virtual void \hyperlink{class_s_w_b_p_l_c_a9a0d94da8922f00ca4a3e5fa774e8b3f}{Set\+Balance} (double balance)
+\item 
+virtual double \hyperlink{class_s_w_b_p_l_c_af7f5f662ab926bfb9c0c1c7156cde24c}{Get\+Balance} () const 
+\item 
+virtual void \hyperlink{class_s_w_b_p_l_c_a45eb1e6a73fde0dc00824319d4e0b81a}{Set\+Account\+Number} (int account\+Number)
+\item 
+virtual int \hyperlink{class_s_w_b_p_l_c_a1a997f6d333e5021970e50605431d7df}{Get\+Account\+Number} () const 
+\item 
+virtual void \hyperlink{class_s_w_b_p_l_c_aa5581ea5d2e0315b816876737e887f09}{Set\+Last\+Name} (std\+::string last\+Name)
+\item 
+virtual std\+::string \hyperlink{class_s_w_b_p_l_c_a72b2595acea28dae9e4f5816dd3c4652}{Get\+Last\+Name} () const 
+\item 
+virtual void \hyperlink{class_s_w_b_p_l_c_a8146eabca4648ef679188904f677df9d}{Set\+First\+Name} (std\+::string first\+Name)
+\item 
+virtual std\+::string \hyperlink{class_s_w_b_p_l_c_ace6bbcd6546896e581e3a2ee9504d090}{Get\+First\+Name} () const 
+\item 
+virtual void \hyperlink{class_s_w_b_p_l_c_a09376d46475bbceda897948714ff1e72}{Set\+Fullname} (std\+::string fullname)
+\item 
+virtual std\+::string \hyperlink{class_s_w_b_p_l_c_adb74b3cbc40a401bf7ca4dfb5269c336}{Get\+Fullname} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Inherit from \hyperlink{class_b_a_n_k}{B\+A\+NK} 
+
+Definition at line 19 of file S\+W\+B\+P\+L\+C.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{S\+W\+B\+P\+L\+C()}{SWBPLC()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+W\+B\+P\+L\+C\+::\+S\+W\+B\+P\+LC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_s_w_b_p_l_c_a320f4e2b023038668d941ce5d0c46aeb}{}\label{class_s_w_b_p_l_c_a320f4e2b023038668d941ce5d0c46aeb}
+Constructor 
+
+Definition at line 24 of file S\+W\+B\+P\+L\+C.\+h.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 2
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{S\+W\+B\+P\+L\+C(int account\+Number, double balance, std\+::string first\+Name, std\+::string last\+Name, std\+::string address)}{SWBPLC(int accountNumber, double balance, std::string firstName, std::string lastName, std::string address)}}]{\setlength{\rightskip}{0pt plus 5cm}S\+W\+B\+P\+L\+C\+::\+S\+W\+B\+P\+LC (
+\begin{DoxyParamCaption}
+\item[{int}]{account\+Number, }
+\item[{double}]{balance, }
+\item[{std\+::string}]{first\+Name, }
+\item[{std\+::string}]{last\+Name, }
+\item[{std\+::string}]{address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_s_w_b_p_l_c_a29c408f7ccb7c5962dab8ac858758a89}{}\label{class_s_w_b_p_l_c_a29c408f7ccb7c5962dab8ac858758a89}
+Custom constructor 
+
+Definition at line 35 of file S\+W\+B\+P\+L\+C.\+h.
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{S\+W\+B\+P\+L\+C(std\+::shared\+\_\+ptr$<$ B\+A\+N\+K $>$ obj, int \+\_\+version, int \+\_\+unique\+\_\+id)}{SWBPLC(std::shared_ptr< BANK > obj, int _version, int _unique_id)}}]{\setlength{\rightskip}{0pt plus 5cm}S\+W\+B\+P\+L\+C\+::\+S\+W\+B\+P\+LC (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf B\+A\+NK} $>$}]{obj, }
+\item[{int}]{\+\_\+version, }
+\item[{int}]{\+\_\+unique\+\_\+id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_s_w_b_p_l_c_a33e460bff6f51b30209a6f5a25a24d7d}{}\label{class_s_w_b_p_l_c_a33e460bff6f51b30209a6f5a25a24d7d}
+Custom constructor, used by the library for deep copying 
+
+Definition at line 46 of file S\+W\+B\+P\+L\+C.\+h.
+
+
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{S\+W\+B\+P\+L\+C(const S\+W\+B\+P\+L\+C \&orig)}{SWBPLC(const SWBPLC &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}S\+W\+B\+P\+L\+C\+::\+S\+W\+B\+P\+LC (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+W\+B\+P\+LC} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{class_s_w_b_p_l_c_a767c6ae2b15f523b5ec6e35e137dcc96}{}\label{class_s_w_b_p_l_c_a767c6ae2b15f523b5ec6e35e137dcc96}
+Copy constructor 
+
+Definition at line 12 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!````~S\+W\+B\+P\+LC@{$\sim$\+S\+W\+B\+P\+LC}}
+\index{````~S\+W\+B\+P\+LC@{$\sim$\+S\+W\+B\+P\+LC}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{$\sim$\+S\+W\+B\+P\+L\+C()}{~SWBPLC()}}]{\setlength{\rightskip}{0pt plus 5cm}S\+W\+B\+P\+L\+C\+::$\sim$\+S\+W\+B\+P\+LC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_a5d6f00a76145f32424ff6db9ac23c6fe}{}\label{class_s_w_b_p_l_c_a5d6f00a76145f32424ff6db9ac23c6fe}
+de-\/constructor 
+
+Definition at line 15 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 4
+
+
+
+
+\subsection{Member Function Documentation}
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!copy@{copy}}
+\index{copy@{copy}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ to, std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ from)}{copy(std::shared_ptr< OSTM > to, std::shared_ptr< OSTM > from)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+W\+B\+P\+L\+C\+::copy (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{to, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{from}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_a9468640482a6cfb9bfb4115fc59191d5}{}\label{class_s_w_b_p_l_c_a9468640482a6cfb9bfb4115fc59191d5}
+
+
+copy function, make deep copy of the object/pointer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+TO} & is a std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ type object casted back from std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ \\
+\hline
+{\em obj\+F\+R\+OM} & is a std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ type object casted back from std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_o_s_t_m_a535d90fced5adbb70312c92f3778e08d}{O\+S\+TM}.
+
+
+
+Definition at line 34 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+% FIG 5
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 6
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!Get\+Account\+Number@{Get\+Account\+Number}}
+\index{Get\+Account\+Number@{Get\+Account\+Number}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{Get\+Account\+Number() const }{GetAccountNumber() const }}]{\setlength{\rightskip}{0pt plus 5cm}int S\+W\+B\+P\+L\+C\+::\+Get\+Account\+Number (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_a1a997f6d333e5021970e50605431d7df}{}\label{class_s_w_b_p_l_c_a1a997f6d333e5021970e50605431d7df}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a62adf3cea60d863a4a10eeee485fa1aa}{B\+A\+NK}.
+
+
+
+Definition at line 80 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 7
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!Get\+Address@{Get\+Address}}
+\index{Get\+Address@{Get\+Address}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{Get\+Address() const }{GetAddress() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string S\+W\+B\+P\+L\+C\+::\+Get\+Address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_a3a62a57b3ecdd06ed977ef372dab89ad}{}\label{class_s_w_b_p_l_c_a3a62a57b3ecdd06ed977ef372dab89ad}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a358741f647f9494026e02fd3fd27cde6}{B\+A\+NK}.
+
+
+
+Definition at line 64 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 8
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!Get\+Balance@{Get\+Balance}}
+\index{Get\+Balance@{Get\+Balance}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{Get\+Balance() const }{GetBalance() const }}]{\setlength{\rightskip}{0pt plus 5cm}double S\+W\+B\+P\+L\+C\+::\+Get\+Balance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_af7f5f662ab926bfb9c0c1c7156cde24c}{}\label{class_s_w_b_p_l_c_af7f5f662ab926bfb9c0c1c7156cde24c}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a7ac46c74859cebdc933cb27e148d18b1}{B\+A\+NK}.
+
+
+
+Definition at line 72 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 9
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!get\+Base\+Copy@{get\+Base\+Copy}}
+\index{get\+Base\+Copy@{get\+Base\+Copy}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{get\+Base\+Copy(std\+::shared\+\_\+ptr$<$ O\+S\+T\+M $>$ object)}{getBaseCopy(std::shared_ptr< OSTM > object)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$ S\+W\+B\+P\+L\+C\+::get\+Base\+Copy (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf O\+S\+TM} $>$}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_a77f0e0d6c08a95066d277bf6b2073a5c}{}\label{class_s_w_b_p_l_c_a77f0e0d6c08a95066d277bf6b2073a5c}
+
+
+get\+Base\+Copy function, make deep copy of the object/pointer and Return a new std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ type object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj\+TO} & is a \hyperlink{class_b_a_n_k}{B\+A\+NK} type pointer for casting \\
+\hline
+{\em obj} & is a std\+::shared\+\_\+ptr$<$\+B\+A\+N\+K$>$ return type \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c}{O\+S\+TM}.
+
+
+
+Definition at line 22 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+% FIG 10
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 11
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!Get\+First\+Name@{Get\+First\+Name}}
+\index{Get\+First\+Name@{Get\+First\+Name}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{Get\+First\+Name() const }{GetFirstName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string S\+W\+B\+P\+L\+C\+::\+Get\+First\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_ace6bbcd6546896e581e3a2ee9504d090}{}\label{class_s_w_b_p_l_c_ace6bbcd6546896e581e3a2ee9504d090}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_ad0ba1c785c67e7d4760dc8776f3d4bca}{B\+A\+NK}.
+
+
+
+Definition at line 96 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 12
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!Get\+Fullname@{Get\+Fullname}}
+\index{Get\+Fullname@{Get\+Fullname}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{Get\+Fullname() const }{GetFullname() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string S\+W\+B\+P\+L\+C\+::\+Get\+Fullname (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_adb74b3cbc40a401bf7ca4dfb5269c336}{}\label{class_s_w_b_p_l_c_adb74b3cbc40a401bf7ca4dfb5269c336}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_aa1528c533bf6389bc8d7f3eeca114bab}{B\+A\+NK}.
+
+
+
+Definition at line 104 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 13
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!Get\+Last\+Name@{Get\+Last\+Name}}
+\index{Get\+Last\+Name@{Get\+Last\+Name}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{Get\+Last\+Name() const }{GetLastName() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string S\+W\+B\+P\+L\+C\+::\+Get\+Last\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_a72b2595acea28dae9e4f5816dd3c4652}{}\label{class_s_w_b_p_l_c_a72b2595acea28dae9e4f5816dd3c4652}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a4612063ec2bfd6d883a77a0d3697af90}{B\+A\+NK}.
+
+
+
+Definition at line 88 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 14
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!operator=@{operator=}}
+\index{operator=@{operator=}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{operator=(const S\+W\+B\+P\+L\+C \&orig)}{operator=(const SWBPLC &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+W\+B\+P\+LC} S\+W\+B\+P\+L\+C\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf S\+W\+B\+P\+LC} \&}]{orig}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_s_w_b_p_l_c_a1e4b8f85d4e8e29429d691e258fea2e7}{}\label{class_s_w_b_p_l_c_a1e4b8f85d4e8e29429d691e258fea2e7}
+Operator 
+
+Definition at line 63 of file S\+W\+B\+P\+L\+C.\+h.
+
+
+
+Here is the call graph for this function\+:
+% FIG 15
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!Set\+Account\+Number@{Set\+Account\+Number}}
+\index{Set\+Account\+Number@{Set\+Account\+Number}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{Set\+Account\+Number(int account\+Number)}{SetAccountNumber(int accountNumber)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+W\+B\+P\+L\+C\+::\+Set\+Account\+Number (
+\begin{DoxyParamCaption}
+\item[{int}]{account\+Number}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_a45eb1e6a73fde0dc00824319d4e0b81a}{}\label{class_s_w_b_p_l_c_a45eb1e6a73fde0dc00824319d4e0b81a}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a9d8fb8bde35d63eca7e9f87d22b45752}{B\+A\+NK}.
+
+
+
+Definition at line 76 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 16
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!Set\+Address@{Set\+Address}}
+\index{Set\+Address@{Set\+Address}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{Set\+Address(std\+::string address)}{SetAddress(std::string address)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+W\+B\+P\+L\+C\+::\+Set\+Address (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_a99590e47dda8361b2d5869fd315f92f8}{}\label{class_s_w_b_p_l_c_a99590e47dda8361b2d5869fd315f92f8}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a52ad99454b2059d44967868157208393}{B\+A\+NK}.
+
+
+
+Definition at line 60 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 17
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!Set\+Balance@{Set\+Balance}}
+\index{Set\+Balance@{Set\+Balance}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{Set\+Balance(double balance)}{SetBalance(double balance)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+W\+B\+P\+L\+C\+::\+Set\+Balance (
+\begin{DoxyParamCaption}
+\item[{double}]{balance}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_a9a0d94da8922f00ca4a3e5fa774e8b3f}{}\label{class_s_w_b_p_l_c_a9a0d94da8922f00ca4a3e5fa774e8b3f}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0}{B\+A\+NK}.
+
+
+
+Definition at line 68 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 18
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!Set\+First\+Name@{Set\+First\+Name}}
+\index{Set\+First\+Name@{Set\+First\+Name}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{Set\+First\+Name(std\+::string first\+Name)}{SetFirstName(std::string firstName)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+W\+B\+P\+L\+C\+::\+Set\+First\+Name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{first\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_a8146eabca4648ef679188904f677df9d}{}\label{class_s_w_b_p_l_c_a8146eabca4648ef679188904f677df9d}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a547cb9f21be894f045bb3cec6b12525c}{B\+A\+NK}.
+
+
+
+Definition at line 92 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 19
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!Set\+Fullname@{Set\+Fullname}}
+\index{Set\+Fullname@{Set\+Fullname}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{Set\+Fullname(std\+::string fullname)}{SetFullname(std::string fullname)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+W\+B\+P\+L\+C\+::\+Set\+Fullname (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{fullname}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_a09376d46475bbceda897948714ff1e72}{}\label{class_s_w_b_p_l_c_a09376d46475bbceda897948714ff1e72}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a8845dbfc7ddfbc2e0c0efda561a70ec3}{B\+A\+NK}.
+
+
+
+Definition at line 100 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 20
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!Set\+Last\+Name@{Set\+Last\+Name}}
+\index{Set\+Last\+Name@{Set\+Last\+Name}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{Set\+Last\+Name(std\+::string last\+Name)}{SetLastName(std::string lastName)}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+W\+B\+P\+L\+C\+::\+Set\+Last\+Name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{last\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_aa5581ea5d2e0315b816876737e887f09}{}\label{class_s_w_b_p_l_c_aa5581ea5d2e0315b816876737e887f09}
+
+
+Reimplemented from \hyperlink{class_b_a_n_k_a2dc1b7664f9e3b005cb33e71b2ba42ee}{B\+A\+NK}.
+
+
+
+Definition at line 84 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+% FIG 21
+
+
+\index{S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!S\+W\+B\+P\+LC@{S\+W\+B\+P\+LC}}
+\subsubsection[{\texorpdfstring{to\+String()}{toString()}}]{\setlength{\rightskip}{0pt plus 5cm}void S\+W\+B\+P\+L\+C\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_s_w_b_p_l_c_a761c77b5a204b4ae05ffb01bd602c3c2}{}\label{class_s_w_b_p_l_c_a761c77b5a204b4ae05ffb01bd602c3c2}
+
+
+\+\_\+cast, is use to cast bak the std\+::shared\+\_\+ptr$<$\+O\+S\+T\+M$>$ to the required type 
+
+to\+String function, displays the object values in formatted way 
+
+Reimplemented from \hyperlink{class_o_s_t_m_a513396a115f2987fd07c203309ae8a59}{O\+S\+TM}.
+
+
+
+Definition at line 55 of file S\+W\+B\+P\+L\+C.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+% FIG 22
+
+
+
+
+Here is the caller graph for this function\+:
+% FIG 23
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_s_w_b_p_l_c_8h}{S\+W\+B\+P\+L\+C.\+h}\item 
+\hyperlink{_s_w_b_p_l_c_8cpp}{S\+W\+B\+P\+L\+C.\+cpp}\end{DoxyCompactItemize}

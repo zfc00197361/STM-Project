@@ -1,0 +1,28 @@
+var class_t_a_l_l_a_g_h___w =
+[
+    [ "TALLAGH_W", "class_t_a_l_l_a_g_h___w.html#aeafc411edee7a3e8bfcc54fa478e2104", null ],
+    [ "TALLAGH_W", "class_t_a_l_l_a_g_h___w.html#a2d61c90d6ff2f1b50f81a3ce6506e285", null ],
+    [ "TALLAGH_W", "class_t_a_l_l_a_g_h___w.html#a34d0767d7e66f28b1e9725c27f964a9c", null ],
+    [ "TALLAGH_W", "class_t_a_l_l_a_g_h___w.html#a92cfa48ee385c9299427e4fa95b57003", null ],
+    [ "~TALLAGH_W", "class_t_a_l_l_a_g_h___w.html#aad3a2ca2d942a0629716b1c9f446931f", null ],
+    [ "copy", "class_t_a_l_l_a_g_h___w.html#a7cd62cf694fbe8c6242916f26df8f6ca", null ],
+    [ "getBaseCopy", "class_t_a_l_l_a_g_h___w.html#a51957c778c31d56f98febdf294f88a4c", null ],
+    [ "GetNumber_of_alcatel", "class_t_a_l_l_a_g_h___w.html#a548597d48b3bbb35ffa2035eee3b645d", null ],
+    [ "GetNumber_of_huawei", "class_t_a_l_l_a_g_h___w.html#a0ac4137af5b2aa2e4157c7e85629f064", null ],
+    [ "GetNumber_of_iphones", "class_t_a_l_l_a_g_h___w.html#ad82b0c59cba2cb442520e35ab6011d17", null ],
+    [ "GetNumber_of_nokia", "class_t_a_l_l_a_g_h___w.html#a20a127a379a2ebed2bd7ee89ca5661fb", null ],
+    [ "GetNumber_of_samsung", "class_t_a_l_l_a_g_h___w.html#ad400c7b40f8605f5419b09e946677bbb", null ],
+    [ "GetNumber_of_sony", "class_t_a_l_l_a_g_h___w.html#a161417e8ef4952c560182735de51a44f", null ],
+    [ "GetShop_address", "class_t_a_l_l_a_g_h___w.html#a591b5f445be4f3b636b415e7b614b82c", null ],
+    [ "GetShop_name", "class_t_a_l_l_a_g_h___w.html#a3baca7e101bfde39d7a1bf91d99c4f51", null ],
+    [ "operator=", "class_t_a_l_l_a_g_h___w.html#a0ac3db0bae78cc4e59f175e90374ed50", null ],
+    [ "SetNumber_of_alcatel", "class_t_a_l_l_a_g_h___w.html#ad4a8e9cab71ab1b742298e630b6c32da", null ],
+    [ "SetNumber_of_huawei", "class_t_a_l_l_a_g_h___w.html#a94b6a0ce95c1edc5cd0bc195cbedc74f", null ],
+    [ "SetNumber_of_iphones", "class_t_a_l_l_a_g_h___w.html#aba9c1573606adb336fd5e94969f2f8e8", null ],
+    [ "SetNumber_of_nokia", "class_t_a_l_l_a_g_h___w.html#ae60d0ca1392d87afa206f98d5f1c59d1", null ],
+    [ "SetNumber_of_samsung", "class_t_a_l_l_a_g_h___w.html#aec915c88a9cce504e58bf9481d897e7e", null ],
+    [ "SetNumber_of_sony", "class_t_a_l_l_a_g_h___w.html#a700cbcd6355556eeaa33955e50010641", null ],
+    [ "SetShop_address", "class_t_a_l_l_a_g_h___w.html#a45bd91f41ac4d384b4281e6572bc2f8a", null ],
+    [ "SetShop_name", "class_t_a_l_l_a_g_h___w.html#a3ab6212769f348c15cd2d242af70ea02", null ],
+    [ "toString", "class_t_a_l_l_a_g_h___w.html#ac7a438b7511cf2931490e6b44eff4a49", null ]
+];

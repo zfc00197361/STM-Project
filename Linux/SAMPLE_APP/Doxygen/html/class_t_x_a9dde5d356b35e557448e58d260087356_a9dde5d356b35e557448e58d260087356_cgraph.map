@@ -1,0 +1,5 @@
+<map id="TX::commit" name="TX::commit">
+<area shape="rect" id="node2" href="$class_t_x_aa3ac499f576326588628ade96b27b4b1.html#aa3ac499f576326588628ade96b27b4b1" title="@279 _decrease_tx_nesting decrease the value stored in _tx_nesting_level by one, when outer transacti..." alt="" coords="144,5,319,32"/>
+<area shape="rect" id="node3" href="$class_t_x_a4c13d2015dc15d0f788fa9a1413f0463.html#a4c13d2015dc15d0f788fa9a1413f0463" title="@253 _release_object_lock void function, is get called from commit function, with the purpose to rele..." alt="" coords="147,56,316,83"/>
+<area shape="rect" id="node4" href="$class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79.html#ae045534c4a9d39bd5c6ea2a39a372a79" title="@52 th_exit void, delete all std::shared_ptr&lt;OSTM&gt; elements from working_Map_collection, that store pointers to working objects " alt="" coords="188,107,275,133"/>
+</map>

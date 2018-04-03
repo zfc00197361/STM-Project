@@ -1,0 +1,233 @@
+.TH "UNBL" 3 "Sun Apr 1 2018" "Version v 0.0.1" "C++ Software Transactional Memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UNBL \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <UNBL\&.h>\fP
+.PP
+Inherits \fBBANK\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUNBL\fP ()"
+.br
+.ti -1c
+.RI "\fBUNBL\fP (int accountNumber, double balance, std::string firstName, std::string lastName, std::string address)"
+.br
+.ti -1c
+.RI "\fBUNBL\fP (std::shared_ptr< \fBBANK\fP > obj, int _version, int _unique_id)"
+.br
+.ti -1c
+.RI "\fBUNBL\fP (const \fBUNBL\fP &orig)"
+.br
+.ti -1c
+.RI "\fBUNBL\fP \fBoperator=\fP (const \fBUNBL\fP &orig)"
+.br
+.ti -1c
+.RI "virtual \fB~UNBL\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBcopy\fP (std::shared_ptr< \fBOSTM\fP > to, std::shared_ptr< \fBOSTM\fP > from)"
+.br
+.RI "\fIcopy function, make deep copy of the object/pointer \fP"
+.ti -1c
+.RI "virtual std::shared_ptr< \fBOSTM\fP > \fBgetBaseCopy\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fIgetBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr<BANK> type object \fP"
+.ti -1c
+.RI "virtual void \fBtoString\fP ()"
+.br
+.RI "\fI_cast, is use to cast bak the std::shared_ptr<OSTM> to the required type \fP"
+.ti -1c
+.RI "virtual void \fBSetAddress\fP (std::string address)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetAddress\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetBalance\fP (double balance)"
+.br
+.ti -1c
+.RI "virtual double \fBGetBalance\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetAccountNumber\fP (int accountNumber)"
+.br
+.ti -1c
+.RI "virtual int \fBGetAccountNumber\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetLastName\fP (std::string lastName)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetLastName\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetFirstName\fP (std::string firstName)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetFirstName\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetFullname\fP (std::string fullname)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetFullname\fP () const "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Inherit from \fBBANK\fP 
+.PP
+Definition at line 19 of file UNBL\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "UNBL::UNBL ()\fC [inline]\fP"
+Constructor 
+.PP
+Definition at line 24 of file UNBL\&.h\&.
+.SS "UNBL::UNBL (int accountNumber, double balance, std::string firstName, std::string lastName, std::string address)\fC [inline]\fP"
+Custom constructor 
+.PP
+Definition at line 35 of file UNBL\&.h\&.
+.SS "UNBL::UNBL (std::shared_ptr< \fBBANK\fP > obj, int _version, int _unique_id)\fC [inline]\fP"
+Custom constructor, used by the library for deep copying 
+.PP
+Definition at line 46 of file UNBL\&.h\&.
+.SS "UNBL::UNBL (const \fBUNBL\fP & orig)"
+Copy constructor 
+.PP
+Definition at line 11 of file UNBL\&.cpp\&.
+.SS "UNBL::~UNBL ()\fC [virtual]\fP"
+de-constructor 
+.PP
+Definition at line 14 of file UNBL\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void UNBL::copy (std::shared_ptr< \fBOSTM\fP > to, std::shared_ptr< \fBOSTM\fP > from)\fC [virtual]\fP"
+
+.PP
+copy function, make deep copy of the object/pointer 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobjTO\fP is a std::shared_ptr<BANK> type object casted back from std::shared_ptr<OSTM> 
+.br
+\fIobjFROM\fP is a std::shared_ptr<BANK> type object casted back from std::shared_ptr<OSTM> 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 33 of file UNBL\&.cpp\&.
+.SS "int UNBL::GetAccountNumber () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 78 of file UNBL\&.cpp\&.
+.SS "std::string UNBL::GetAddress () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 62 of file UNBL\&.cpp\&.
+.SS "double UNBL::GetBalance () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 70 of file UNBL\&.cpp\&.
+.SS "std::shared_ptr< \fBOSTM\fP > UNBL::getBaseCopy (std::shared_ptr< \fBOSTM\fP > object)\fC [virtual]\fP"
+
+.PP
+getBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr<BANK> type object 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobjTO\fP is a \fBBANK\fP type pointer for casting 
+.br
+\fIobj\fP is a std::shared_ptr<BANK> return type 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 21 of file UNBL\&.cpp\&.
+.SS "std::string UNBL::GetFirstName () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 94 of file UNBL\&.cpp\&.
+.SS "std::string UNBL::GetFullname () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 102 of file UNBL\&.cpp\&.
+.SS "std::string UNBL::GetLastName () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 86 of file UNBL\&.cpp\&.
+.SS "\fBUNBL\fP UNBL::operator= (const \fBUNBL\fP & orig)\fC [inline]\fP"
+Operator 
+.PP
+Definition at line 62 of file UNBL\&.h\&.
+.SS "void UNBL::SetAccountNumber (int accountNumber)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 74 of file UNBL\&.cpp\&.
+.SS "void UNBL::SetAddress (std::string address)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 58 of file UNBL\&.cpp\&.
+.SS "void UNBL::SetBalance (double balance)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 66 of file UNBL\&.cpp\&.
+.SS "void UNBL::SetFirstName (std::string firstName)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 90 of file UNBL\&.cpp\&.
+.SS "void UNBL::SetFullname (std::string fullname)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 98 of file UNBL\&.cpp\&.
+.SS "void UNBL::SetLastName (std::string lastName)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 82 of file UNBL\&.cpp\&.
+.SS "void UNBL::toString ()\fC [virtual]\fP"
+
+.PP
+_cast, is use to cast bak the std::shared_ptr<OSTM> to the required type toString function, displays the object values in formatted way 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 53 of file UNBL\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software Transactional Memory from the source code\&.

@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_s_l_i_g_o___w">
+<title>SLIGO_W class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_s_l_i_g_o___w_8h">&lt;SLIGO_W.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for SLIGO_W</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_s_l_i_g_o___w__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for SLIGO_W</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_s_l_i_g_o___w__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_alcatel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_huawei</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_iphones</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_nokia</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_samsung</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_sony</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string _shop_address</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string _shop_name</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_s_l_i_g_o___w_acd5ae7347e6ca94c52eb013e07a66116_1acd5ae7347e6ca94c52eb013e07a66116">copy</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; to, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; from)<para><emphasis>copy function, make deep copy of the object/pointer</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; <link linkend="class_s_l_i_g_o___w_a37ead49afd27bfe7e404d1d7626f09fe_1a37ead49afd27bfe7e404d1d7626f09fe">getBaseCopy</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; object)<para><emphasis>getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_s_l_i_g_o___w_a5afed1018d0629a1e08fc266d05a94d9_1a5afed1018d0629a1e08fc266d05a94d9">GetNumber_of_alcatel</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_s_l_i_g_o___w_a5804f623f4eb290df4f6b3aba59230d6_1a5804f623f4eb290df4f6b3aba59230d6">GetNumber_of_huawei</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_s_l_i_g_o___w_a780b3a690f5cbbf7593ffc6612b3d743_1a780b3a690f5cbbf7593ffc6612b3d743">GetNumber_of_iphones</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_s_l_i_g_o___w_a1aa9c9f001b37f3fdcdffae009319298_1a1aa9c9f001b37f3fdcdffae009319298">GetNumber_of_nokia</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_s_l_i_g_o___w_aa4b6200a00c2a14924b7ff1ae3896b61_1aa4b6200a00c2a14924b7ff1ae3896b61">GetNumber_of_samsung</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_s_l_i_g_o___w_a62822c4fb80f739bee61767238a29e14_1a62822c4fb80f739bee61767238a29e14">GetNumber_of_sony</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="class_s_l_i_g_o___w_a66a2315d531231e34c5056e9bc917797_1a66a2315d531231e34c5056e9bc917797">GetShop_address</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="class_s_l_i_g_o___w_ae788518e30d9d311eb28f37da932367a_1ae788518e30d9d311eb28f37da932367a">GetShop_name</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_s_l_i_g_o___w">SLIGO_W</link> <link linkend="class_s_l_i_g_o___w_a64051fdd5b3ebc47b0a74b42eb092c1b_1a64051fdd5b3ebc47b0a74b42eb092c1b">operator=</link> (
+const <link linkend="class_s_l_i_g_o___w">SLIGO_W</link> &amp; orig)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_s_l_i_g_o___w_abbd14fe78b2f5881020630842194aa5b_1abbd14fe78b2f5881020630842194aa5b">SetNumber_of_alcatel</link> (
+int _number_of_alcatel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_s_l_i_g_o___w_a3f770536e7ae43cba203b36b452bca76_1a3f770536e7ae43cba203b36b452bca76">SetNumber_of_huawei</link> (
+int _number_of_huawei)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_s_l_i_g_o___w_ad2f09386c9305c63a94ab171861eb3a9_1ad2f09386c9305c63a94ab171861eb3a9">SetNumber_of_iphones</link> (
+int _number_of_iphones)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_s_l_i_g_o___w_a2b748e4d815e0f2bdb8fb1b0e85b2636_1a2b748e4d815e0f2bdb8fb1b0e85b2636">SetNumber_of_nokia</link> (
+int _number_of_nokia)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_s_l_i_g_o___w_ace5a2d4fae4c84710a648062e60022d2_1ace5a2d4fae4c84710a648062e60022d2">SetNumber_of_samsung</link> (
+int _number_of_samsung)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_s_l_i_g_o___w_abbfe7001333b8c0b57a22f09ec4c3c1d_1abbfe7001333b8c0b57a22f09ec4c3c1d">SetNumber_of_sony</link> (
+int _number_of_sony)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_s_l_i_g_o___w_af442340c69e1f50622014d459320f003_1af442340c69e1f50622014d459320f003">SetShop_address</link> (
+std::string _shop_address)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_s_l_i_g_o___w_ad2a9668f07e63bed2bb5da576cbb55b7_1ad2a9668f07e63bed2bb5da576cbb55b7">SetShop_name</link> (
+std::string _shop_name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_s_l_i_g_o___w_a9b669809dc7cf8d9982181ac7997b0da_1a9b669809dc7cf8d9982181ac7997b0da">SLIGO_W</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_s_l_i_g_o___w_aced291d99970ff1c2f2146256f400788_1aced291d99970ff1c2f2146256f400788">SLIGO_W</link> (
+std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_s_l_i_g_o___w_a5a969bbfbb08f8a5d29f766288f2f7e6_1a5a969bbfbb08f8a5d29f766288f2f7e6">SLIGO_W</link> (
+std::shared_ptr&lt; <link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link> &gt; obj, int _version, int _unique_id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_s_l_i_g_o___w_abd92acb0451fe449fbdb7c3c2a6701b7_1abd92acb0451fe449fbdb7c3c2a6701b7">SLIGO_W</link> (
+const <link linkend="class_s_l_i_g_o___w">SLIGO_W</link> &amp; orig)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_s_l_i_g_o___w_a8f49deaa85f48ff29dd8cdeb7c9dda56_1a8f49deaa85f48ff29dd8cdeb7c9dda56">toString</link> (
+)<para><emphasis>_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_s_l_i_g_o___w_aa6cc833af07309dee5eb2493cddf443c_1aa6cc833af07309dee5eb2493cddf443c">~SLIGO_W</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>Inherit from <link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link> </para>
+                <para>Definition at line 19 of file SLIGO_W.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>SLIGO_W.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_s_l_i_g_o___w_acd5ae7347e6ca94c52eb013e07a66116_1acd5ae7347e6ca94c52eb013e07a66116">
+                <title>void SLIGO_W::copy (std::shared_ptr&lt; OSTM &gt; to, std::shared_ptr&lt; OSTM &gt; from)</title> <emphasis>copy function, make deep copy of the object/pointer</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>objTO</entry>
+                                <entry>
+<para>is a BANK* type object casted back from std::shared_ptr&lt;OSTM&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>objFROM</entry>
+                                <entry>
+<para>is a BANK* type object casted back from std::shared_ptr&lt;OSTM&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a37ead49afd27bfe7e404d1d7626f09fe_1a37ead49afd27bfe7e404d1d7626f09fe">
+                <title>std::shared_ptr&lt; OSTM &gt; SLIGO_W::getBaseCopy (std::shared_ptr&lt; OSTM &gt; object)</title> <emphasis>getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>objTO</entry>
+                                <entry>
+<para>is a <link linkend="class_b_a_n_k">BANK</link> type pointer for casting </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>obj</entry>
+                                <entry>
+<para>is a BANK* return type </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a5afed1018d0629a1e08fc266d05a94d9_1a5afed1018d0629a1e08fc266d05a94d9">
+                <title>int SLIGO_W::GetNumber_of_alcatel ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a5804f623f4eb290df4f6b3aba59230d6_1a5804f623f4eb290df4f6b3aba59230d6">
+                <title>int SLIGO_W::GetNumber_of_huawei ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a780b3a690f5cbbf7593ffc6612b3d743_1a780b3a690f5cbbf7593ffc6612b3d743">
+                <title>int SLIGO_W::GetNumber_of_iphones ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a1aa9c9f001b37f3fdcdffae009319298_1a1aa9c9f001b37f3fdcdffae009319298">
+                <title>int SLIGO_W::GetNumber_of_nokia ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_aa4b6200a00c2a14924b7ff1ae3896b61_1aa4b6200a00c2a14924b7ff1ae3896b61">
+                <title>int SLIGO_W::GetNumber_of_samsung ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a62822c4fb80f739bee61767238a29e14_1a62822c4fb80f739bee61767238a29e14">
+                <title>int SLIGO_W::GetNumber_of_sony ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a66a2315d531231e34c5056e9bc917797_1a66a2315d531231e34c5056e9bc917797">
+                <title>std::string SLIGO_W::GetShop_address ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_ae788518e30d9d311eb28f37da932367a_1ae788518e30d9d311eb28f37da932367a">
+                <title>std::string SLIGO_W::GetShop_name ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a64051fdd5b3ebc47b0a74b42eb092c1b_1a64051fdd5b3ebc47b0a74b42eb092c1b">
+                <title>SLIGO_W SLIGO_W::operator= (const SLIGO_W &amp;orig)</title> <emphasis></emphasis>
+                
+<para>Operator </para>
+
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_abbd14fe78b2f5881020630842194aa5b_1abbd14fe78b2f5881020630842194aa5b">
+                <title>void SLIGO_W::SetNumber_of_alcatel (int _number_of_alcatel)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a3f770536e7ae43cba203b36b452bca76_1a3f770536e7ae43cba203b36b452bca76">
+                <title>void SLIGO_W::SetNumber_of_huawei (int _number_of_huawei)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_ad2f09386c9305c63a94ab171861eb3a9_1ad2f09386c9305c63a94ab171861eb3a9">
+                <title>void SLIGO_W::SetNumber_of_iphones (int _number_of_iphones)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a2b748e4d815e0f2bdb8fb1b0e85b2636_1a2b748e4d815e0f2bdb8fb1b0e85b2636">
+                <title>void SLIGO_W::SetNumber_of_nokia (int _number_of_nokia)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_ace5a2d4fae4c84710a648062e60022d2_1ace5a2d4fae4c84710a648062e60022d2">
+                <title>void SLIGO_W::SetNumber_of_samsung (int _number_of_samsung)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_abbfe7001333b8c0b57a22f09ec4c3c1d_1abbfe7001333b8c0b57a22f09ec4c3c1d">
+                <title>void SLIGO_W::SetNumber_of_sony (int _number_of_sony)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_af442340c69e1f50622014d459320f003_1af442340c69e1f50622014d459320f003">
+                <title>void SLIGO_W::SetShop_address (std::string _shop_address)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_ad2a9668f07e63bed2bb5da576cbb55b7_1ad2a9668f07e63bed2bb5da576cbb55b7">
+                <title>void SLIGO_W::SetShop_name (std::string _shop_name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a9b669809dc7cf8d9982181ac7997b0da_1a9b669809dc7cf8d9982181ac7997b0da">
+                <title>SLIGO_W::SLIGO_W ()</title> <emphasis></emphasis>
+                
+<para>Constructor </para>
+
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_aced291d99970ff1c2f2146256f400788_1aced291d99970ff1c2f2146256f400788">
+                <title>SLIGO_W::SLIGO_W (std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)</title> <emphasis></emphasis>
+                
+<para>Custom constructor </para>
+
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a5a969bbfbb08f8a5d29f766288f2f7e6_1a5a969bbfbb08f8a5d29f766288f2f7e6">
+                <title>SLIGO_W::SLIGO_W (std::shared_ptr&lt; WAREHOUSE &gt; obj, int _version, int _unique_id)</title> <emphasis></emphasis>
+                
+<para>Custom constructor, used by the library for deep copying </para>
+
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_abd92acb0451fe449fbdb7c3c2a6701b7_1abd92acb0451fe449fbdb7c3c2a6701b7">
+                <title>SLIGO_W::SLIGO_W (const SLIGO_W &amp;orig)</title> <emphasis></emphasis>
+                
+<para>Copy constructor </para>
+
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_a8f49deaa85f48ff29dd8cdeb7c9dda56_1a8f49deaa85f48ff29dd8cdeb7c9dda56">
+                <title>void SLIGO_W::toString ()</title> <emphasis>_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type</emphasis>
+                
+<para>toString function, displays the object values in formatted way </para>
+
+            </section>
+            <section xml:id="class_s_l_i_g_o___w_aa6cc833af07309dee5eb2493cddf443c_1aa6cc833af07309dee5eb2493cddf443c">
+                <title>SLIGO_W::~SLIGO_W ()</title> <emphasis></emphasis>
+                
+<para>de-constructor </para>
+
+            </section>
+</section>

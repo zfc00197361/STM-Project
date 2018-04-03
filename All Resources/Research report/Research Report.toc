@@ -43,17 +43,16 @@
 \contentsline {section}{\numberline {6}C++14/17}{29}{section.6}
 \contentsline {subsection}{\numberline {6.1}C++.}{29}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}New features in C++14}{29}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}New features in C++17}{30}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}C++ Libraries}{39}{subsection.6.4}
-\contentsline {section}{\numberline {7}Platforms}{44}{section.7}
-\contentsline {subsection}{\numberline {7.1}Integrated Development Environment(IDE)}{45}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Compilers}{50}{subsection.7.2}
-\contentsline {subsubsection}{\numberline {7.2.1}GCC and G++}{52}{subsubsection.7.2.1}
-\contentsline {subsubsection}{\numberline {7.2.2}MVSC}{52}{subsubsection.7.2.2}
-\contentsline {subsubsection}{\numberline {7.2.3}CLANG}{52}{subsubsection.7.2.3}
-\contentsline {subsection}{\numberline {7.3}Conclusion of platform}{53}{subsection.7.3}
-\contentsline {section}{\numberline {8}Conclusion}{54}{section.8}
-\contentsline {subsection}{\numberline {8.1}Concurrency as a base problem}{54}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Software Transactional Memory}{54}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Platform and Compilers}{54}{subsection.8.3}
-\contentsline {section}{\numberline {9}Bibliography}{56}{section.9}
+\contentsline {subsection}{\numberline {6.3}C++ Libraries}{30}{subsection.6.3}
+\contentsline {section}{\numberline {7}Platforms}{34}{section.7}
+\contentsline {subsection}{\numberline {7.1}Integrated Development Environment(IDE)}{35}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Compilers}{41}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}GCC and G++}{42}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}MVSC}{42}{subsubsection.7.2.2}
+\contentsline {subsubsection}{\numberline {7.2.3}CLANG}{43}{subsubsection.7.2.3}
+\contentsline {subsection}{\numberline {7.3}Conclusion of platform}{43}{subsection.7.3}
+\contentsline {section}{\numberline {8}Conclusion}{44}{section.8}
+\contentsline {subsection}{\numberline {8.1}Concurrency as a base problem}{44}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Software Transactional Memory}{44}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Platform and Compilers}{44}{subsection.8.3}
+\contentsline {section}{\numberline {9}Bibliography}{46}{section.9}

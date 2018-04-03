@@ -1,0 +1,99 @@
+\hypertarget{_s_w_b_p_l_c_8cpp_source}{}\subsection{S\+W\+B\+P\+L\+C.\+cpp}
+
+\begin{DoxyCode}
+00001 
+00002 \textcolor{comment}{/* }
+00003 \textcolor{comment}{ * File:   SWBPLC.cpp}
+00004 \textcolor{comment}{ * Author: Zoltan Fuzesi}
+00005 \textcolor{comment}{ * IT Carlow : C00197361}
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * Created on January 17, 2018, 8:02 PM}
+00008 \textcolor{comment}{ */}
+00009 
+00010 \textcolor{preprocessor}{#include "\hyperlink{_s_w_b_p_l_c_8h}{SWBPLC.h}"}
+00011 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00012}{}\hyperlink{class_s_w_b_p_l_c_a767c6ae2b15f523b5ec6e35e137dcc96_a767c6ae2b15f523b5ec6e35e137dcc96}{00012} \hyperlink{class_s_w_b_p_l_c_a320f4e2b023038668d941ce5d0c46aeb_a320f4e2b023038668d941ce5d0c46aeb}{SWBPLC::SWBPLC}(\textcolor{keyword}{const} \hyperlink{class_s_w_b_p_l_c}{SWBPLC}& orig) \{
+00013 \}
+00014 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00015}{}\hyperlink{class_s_w_b_p_l_c_a5d6f00a76145f32424ff6db9ac23c6fe_a5d6f00a76145f32424ff6db9ac23c6fe}{00015} \hyperlink{class_s_w_b_p_l_c_a5d6f00a76145f32424ff6db9ac23c6fe_a5d6f00a76145f32424ff6db9ac23c6fe}{SWBPLC::~SWBPLC}() \{
+00016 \}
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00022}{}\hyperlink{class_s_w_b_p_l_c_a77f0e0d6c08a95066d277bf6b2073a5c_a77f0e0d6c08a95066d277bf6b2073a5c}{00022} std::shared\_ptr<OSTM> \hyperlink{class_s_w_b_p_l_c_a77f0e0d6c08a95066d277bf6b2073a5c_a77f0e0d6c08a95066d277bf6b2073a5c}{SWBPLC::getBaseCopy}(std::shared\_ptr<OSTM> \textcolor{keywordtype}{object})
+00023 \{
+00024     std::shared\_ptr<BANK> objTO = std::dynamic\_pointer\_cast<\hyperlink{class_b_a_n_k}{BANK}>(object);
+00025     std::shared\_ptr<BANK> obj(\textcolor{keyword}{new} \hyperlink{class_s_w_b_p_l_c_a320f4e2b023038668d941ce5d0c46aeb_a320f4e2b023038668d941ce5d0c46aeb}{SWBPLC}(objTO,object->Get\_Version(),\textcolor{keywordtype}{object}->Get\_Unique\_ID())); 
+00026     std::shared\_ptr<OSTM> ostm\_obj = std::dynamic\_pointer\_cast<\hyperlink{class_o_s_t_m}{OSTM}>(obj);                             
+           
+00027     \textcolor{keywordflow}{return} ostm\_obj;
+00028 \}
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00034}{}\hyperlink{class_s_w_b_p_l_c_a9468640482a6cfb9bfb4115fc59191d5_a9468640482a6cfb9bfb4115fc59191d5}{00034} \textcolor{keywordtype}{void} \hyperlink{class_s_w_b_p_l_c_a9468640482a6cfb9bfb4115fc59191d5_a9468640482a6cfb9bfb4115fc59191d5}{SWBPLC::copy}(std::shared\_ptr<OSTM> to, std::shared\_ptr<OSTM> from)\{
+00035 
+00036     std::shared\_ptr<SWBPLC> objTO = std::dynamic\_pointer\_cast<\hyperlink{class_s_w_b_p_l_c}{SWBPLC}>(to);
+00037     std::shared\_ptr<SWBPLC> objFROM = std::dynamic\_pointer\_cast<\hyperlink{class_s_w_b_p_l_c}{SWBPLC}>(from);
+00038     objTO->\hyperlink{class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_ab5019a32185631c08abbf826422f2d93}{Set\_Unique\_ID}(objFROM->Get\_Unique\_ID());
+00039     objTO->Set\_Version(objFROM->Get\_Version());
+00040     objTO->SetAccountNumber(objFROM->GetAccountNumber());
+00041     objTO->SetBalance(objFROM->GetBalance());
+00042 
+00043     
+00044 \}
+00048 \textcolor{comment}{//std::shared\_ptr<SWBPLC> SWBPLC::\_cast(std::shared\_ptr<OSTM> \_object)\{}
+00049 \textcolor{comment}{//}
+00050 \textcolor{comment}{//    return static\_cast<std::shared\_ptr<SWBPLC>>(\_object);}
+00051 \textcolor{comment}{//\}}
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00055}{}\hyperlink{class_s_w_b_p_l_c_a761c77b5a204b4ae05ffb01bd602c3c2_a761c77b5a204b4ae05ffb01bd602c3c2}{00055} \textcolor{comment}{}\textcolor{keywordtype}{void} \hyperlink{class_s_w_b_p_l_c_a761c77b5a204b4ae05ffb01bd602c3c2_a761c77b5a204b4ae05ffb01bd602c3c2}{SWBPLC::toString}()
+00056 \{
+00057      std::cout << \textcolor{stringliteral}{"\(\backslash\)nSWBPLC BANK"} << \textcolor{stringliteral}{"\(\backslash\)nUnique ID : "} << this->\hyperlink{class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_a5a01a8b98d16b1d1904ecf9356e7b71d}{Get\_Unique\_ID}() << \textcolor{stringliteral}{"\(\backslash\)nInt
+       account : "} << this->\hyperlink{class_s_w_b_p_l_c_a1a997f6d333e5021970e50605431d7df_a1a997f6d333e5021970e50605431d7df}{GetAccountNumber}() << \textcolor{stringliteral}{"\(\backslash\)nDouble value : "} << this->
+      \hyperlink{class_s_w_b_p_l_c_af7f5f662ab926bfb9c0c1c7156cde24c_af7f5f662ab926bfb9c0c1c7156cde24c}{GetBalance}() << \textcolor{stringliteral}{"\(\backslash\)nFirst name: "} << this->\hyperlink{class_s_w_b_p_l_c_ace6bbcd6546896e581e3a2ee9504d090_ace6bbcd6546896e581e3a2ee9504d090}{GetFirstName}() << \textcolor{stringliteral}{"\(\backslash\)nLast name : "} << 
+      this->\hyperlink{class_s_w_b_p_l_c_a72b2595acea28dae9e4f5816dd3c4652_a72b2595acea28dae9e4f5816dd3c4652}{GetLastName}()  << \textcolor{stringliteral}{"\(\backslash\)nVersion number : "} << this->\hyperlink{class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_a1f1db9d482f22c8e7caa17dfb340626b}{Get\_Version}() << std::endl;
+00058 \}
+00059 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00060}{}\hyperlink{class_s_w_b_p_l_c_a99590e47dda8361b2d5869fd315f92f8_a99590e47dda8361b2d5869fd315f92f8}{00060} \textcolor{keywordtype}{void} \hyperlink{class_s_w_b_p_l_c_a99590e47dda8361b2d5869fd315f92f8_a99590e47dda8361b2d5869fd315f92f8}{SWBPLC::SetAddress}(std::string \hyperlink{class_s_w_b_p_l_c_a86edad3cbbc5903c8ab8a45b22c0dd15_a86edad3cbbc5903c8ab8a45b22c0dd15}{address}) \{
+00061     this->address = \hyperlink{class_s_w_b_p_l_c_a86edad3cbbc5903c8ab8a45b22c0dd15_a86edad3cbbc5903c8ab8a45b22c0dd15}{address};
+00062 \}
+00063 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00064}{}\hyperlink{class_s_w_b_p_l_c_a3a62a57b3ecdd06ed977ef372dab89ad_a3a62a57b3ecdd06ed977ef372dab89ad}{00064} std::string \hyperlink{class_s_w_b_p_l_c_a3a62a57b3ecdd06ed977ef372dab89ad_a3a62a57b3ecdd06ed977ef372dab89ad}{SWBPLC::GetAddress}()\textcolor{keyword}{ const }\{
+00065     \textcolor{keywordflow}{return} \hyperlink{class_s_w_b_p_l_c_a86edad3cbbc5903c8ab8a45b22c0dd15_a86edad3cbbc5903c8ab8a45b22c0dd15}{address};
+00066 \}
+00067 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00068}{}\hyperlink{class_s_w_b_p_l_c_a9a0d94da8922f00ca4a3e5fa774e8b3f_a9a0d94da8922f00ca4a3e5fa774e8b3f}{00068} \textcolor{keywordtype}{void} \hyperlink{class_s_w_b_p_l_c_a9a0d94da8922f00ca4a3e5fa774e8b3f_a9a0d94da8922f00ca4a3e5fa774e8b3f}{SWBPLC::SetBalance}(\textcolor{keywordtype}{double} \hyperlink{class_s_w_b_p_l_c_a34365efdc6dde37a4da9a6222dcde389_a34365efdc6dde37a4da9a6222dcde389}{balance}) \{
+00069     this->balance = \hyperlink{class_s_w_b_p_l_c_a34365efdc6dde37a4da9a6222dcde389_a34365efdc6dde37a4da9a6222dcde389}{balance};
+00070 \}
+00071 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00072}{}\hyperlink{class_s_w_b_p_l_c_af7f5f662ab926bfb9c0c1c7156cde24c_af7f5f662ab926bfb9c0c1c7156cde24c}{00072} \textcolor{keywordtype}{double} \hyperlink{class_s_w_b_p_l_c_af7f5f662ab926bfb9c0c1c7156cde24c_af7f5f662ab926bfb9c0c1c7156cde24c}{SWBPLC::GetBalance}()\textcolor{keyword}{ const }\{
+00073     \textcolor{keywordflow}{return} \hyperlink{class_s_w_b_p_l_c_a34365efdc6dde37a4da9a6222dcde389_a34365efdc6dde37a4da9a6222dcde389}{balance};
+00074 \}
+00075 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00076}{}\hyperlink{class_s_w_b_p_l_c_a45eb1e6a73fde0dc00824319d4e0b81a_a45eb1e6a73fde0dc00824319d4e0b81a}{00076} \textcolor{keywordtype}{void} \hyperlink{class_s_w_b_p_l_c_a45eb1e6a73fde0dc00824319d4e0b81a_a45eb1e6a73fde0dc00824319d4e0b81a}{SWBPLC::SetAccountNumber}(\textcolor{keywordtype}{int} \hyperlink{class_s_w_b_p_l_c_a5d03f989254b88bdb7eb3deeec7e4217_a5d03f989254b88bdb7eb3deeec7e4217}{accountNumber}) \{
+00077     this->accountNumber = \hyperlink{class_s_w_b_p_l_c_a5d03f989254b88bdb7eb3deeec7e4217_a5d03f989254b88bdb7eb3deeec7e4217}{accountNumber};
+00078 \}
+00079 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00080}{}\hyperlink{class_s_w_b_p_l_c_a1a997f6d333e5021970e50605431d7df_a1a997f6d333e5021970e50605431d7df}{00080} \textcolor{keywordtype}{int} \hyperlink{class_s_w_b_p_l_c_a1a997f6d333e5021970e50605431d7df_a1a997f6d333e5021970e50605431d7df}{SWBPLC::GetAccountNumber}()\textcolor{keyword}{ const }\{
+00081     \textcolor{keywordflow}{return} \hyperlink{class_s_w_b_p_l_c_a5d03f989254b88bdb7eb3deeec7e4217_a5d03f989254b88bdb7eb3deeec7e4217}{accountNumber};
+00082 \}
+00083 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00084}{}\hyperlink{class_s_w_b_p_l_c_aa5581ea5d2e0315b816876737e887f09_aa5581ea5d2e0315b816876737e887f09}{00084} \textcolor{keywordtype}{void} \hyperlink{class_s_w_b_p_l_c_aa5581ea5d2e0315b816876737e887f09_aa5581ea5d2e0315b816876737e887f09}{SWBPLC::SetLastName}(std::string \hyperlink{class_s_w_b_p_l_c_aa06b2e569dd1fef8e43dfda1b34d67f3_aa06b2e569dd1fef8e43dfda1b34d67f3}{lastName}) \{
+00085     this->lastName = \hyperlink{class_s_w_b_p_l_c_aa06b2e569dd1fef8e43dfda1b34d67f3_aa06b2e569dd1fef8e43dfda1b34d67f3}{lastName};
+00086 \}
+00087 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00088}{}\hyperlink{class_s_w_b_p_l_c_a72b2595acea28dae9e4f5816dd3c4652_a72b2595acea28dae9e4f5816dd3c4652}{00088} std::string \hyperlink{class_s_w_b_p_l_c_a72b2595acea28dae9e4f5816dd3c4652_a72b2595acea28dae9e4f5816dd3c4652}{SWBPLC::GetLastName}()\textcolor{keyword}{ const }\{
+00089     \textcolor{keywordflow}{return} \hyperlink{class_s_w_b_p_l_c_aa06b2e569dd1fef8e43dfda1b34d67f3_aa06b2e569dd1fef8e43dfda1b34d67f3}{lastName};
+00090 \}
+00091 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00092}{}\hyperlink{class_s_w_b_p_l_c_a8146eabca4648ef679188904f677df9d_a8146eabca4648ef679188904f677df9d}{00092} \textcolor{keywordtype}{void} \hyperlink{class_s_w_b_p_l_c_a8146eabca4648ef679188904f677df9d_a8146eabca4648ef679188904f677df9d}{SWBPLC::SetFirstName}(std::string \hyperlink{class_s_w_b_p_l_c_a38fd4817afe4aaac4993b0b4c7074b9c_a38fd4817afe4aaac4993b0b4c7074b9c}{firstName}) \{
+00093     this->firstName = \hyperlink{class_s_w_b_p_l_c_a38fd4817afe4aaac4993b0b4c7074b9c_a38fd4817afe4aaac4993b0b4c7074b9c}{firstName};
+00094 \}
+00095 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00096}{}\hyperlink{class_s_w_b_p_l_c_ace6bbcd6546896e581e3a2ee9504d090_ace6bbcd6546896e581e3a2ee9504d090}{00096} std::string \hyperlink{class_s_w_b_p_l_c_ace6bbcd6546896e581e3a2ee9504d090_ace6bbcd6546896e581e3a2ee9504d090}{SWBPLC::GetFirstName}()\textcolor{keyword}{ const }\{
+00097     \textcolor{keywordflow}{return} \hyperlink{class_s_w_b_p_l_c_a38fd4817afe4aaac4993b0b4c7074b9c_a38fd4817afe4aaac4993b0b4c7074b9c}{firstName};
+00098 \}
+00099 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00100}{}\hyperlink{class_s_w_b_p_l_c_a09376d46475bbceda897948714ff1e72_a09376d46475bbceda897948714ff1e72}{00100} \textcolor{keywordtype}{void} \hyperlink{class_s_w_b_p_l_c_a09376d46475bbceda897948714ff1e72_a09376d46475bbceda897948714ff1e72}{SWBPLC::SetFullname}(std::string \hyperlink{class_s_w_b_p_l_c_a5de90ba5cac0107fa5361458a0df839e_a5de90ba5cac0107fa5361458a0df839e}{fullname}) \{
+00101     this->fullname = \hyperlink{class_s_w_b_p_l_c_a5de90ba5cac0107fa5361458a0df839e_a5de90ba5cac0107fa5361458a0df839e}{fullname};
+00102 \}
+00103 
+\hypertarget{_s_w_b_p_l_c_8cpp_source.tex_l00104}{}\hyperlink{class_s_w_b_p_l_c_adb74b3cbc40a401bf7ca4dfb5269c336_adb74b3cbc40a401bf7ca4dfb5269c336}{00104} std::string \hyperlink{class_s_w_b_p_l_c_adb74b3cbc40a401bf7ca4dfb5269c336_adb74b3cbc40a401bf7ca4dfb5269c336}{SWBPLC::GetFullname}()\textcolor{keyword}{ const }\{
+00105     \textcolor{keywordflow}{return} \hyperlink{class_s_w_b_p_l_c_a5de90ba5cac0107fa5361458a0df839e_a5de90ba5cac0107fa5361458a0df839e}{fullname};
+00106 \}
+00107 
+\end{DoxyCode}

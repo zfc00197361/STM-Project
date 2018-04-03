@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_w_a_r_e_h_o_u_s_e">
+<title>WAREHOUSE class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_w_a_r_e_h_o_u_s_e_8h">&lt;WAREHOUSE.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for WAREHOUSE</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_w_a_r_e_h_o_u_s_e__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for WAREHOUSE</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_w_a_r_e_h_o_u_s_e__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_w_a_r_e_h_o_u_s_e_a9d9d5bc37ddd3763ea633d07785b6020_1a9d9d5bc37ddd3763ea633d07785b6020">GetNumber_of_alcatel</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_w_a_r_e_h_o_u_s_e_acacc58d1ceea41e968a6d245007ea127_1acacc58d1ceea41e968a6d245007ea127">GetNumber_of_huawei</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_w_a_r_e_h_o_u_s_e_a08312d1a68ff48d459ad637df6aaf2f1_1a08312d1a68ff48d459ad637df6aaf2f1">GetNumber_of_iphones</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_w_a_r_e_h_o_u_s_e_a1a0f7539989c00290934e8b671f2fb1c_1a1a0f7539989c00290934e8b671f2fb1c">GetNumber_of_nokia</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_w_a_r_e_h_o_u_s_e_a817b030450f48bc24e3cc6de5dadefec_1a817b030450f48bc24e3cc6de5dadefec">GetNumber_of_samsung</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_w_a_r_e_h_o_u_s_e_abb7da1fee113e81fbb06190606fddb4d_1abb7da1fee113e81fbb06190606fddb4d">GetNumber_of_sony</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="class_w_a_r_e_h_o_u_s_e_a50c29c2f95d148239e8b43b8a0046a31_1a50c29c2f95d148239e8b43b8a0046a31">GetShop_address</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="class_w_a_r_e_h_o_u_s_e_a4d39386ec25ec71b513eb7382e5cd869_1a4d39386ec25ec71b513eb7382e5cd869">GetShop_name</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_w_a_r_e_h_o_u_s_e_a91b45d7d40a154308644a9f2b1767d28_1a91b45d7d40a154308644a9f2b1767d28">SetNumber_of_alcatel</link> (
+int _number_of_alcatel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_w_a_r_e_h_o_u_s_e_ad29bd0333bd7f17178dc107a00e23954_1ad29bd0333bd7f17178dc107a00e23954">SetNumber_of_huawei</link> (
+int _number_of_huawei)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_w_a_r_e_h_o_u_s_e_a05e7450e1f1e711a53a4d9d40fb9dfa3_1a05e7450e1f1e711a53a4d9d40fb9dfa3">SetNumber_of_iphones</link> (
+int _number_of_iphones)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f_1a300d1fe21a47e45c0d5d27e25add346f">SetNumber_of_nokia</link> (
+int _number_of_nokia)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_w_a_r_e_h_o_u_s_e_a5564efbb5f54f663208a17c6f7f440e2_1a5564efbb5f54f663208a17c6f7f440e2">SetNumber_of_samsung</link> (
+int _number_of_samsung)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_w_a_r_e_h_o_u_s_e_a709e5a9f4b439d0507fe74cc1a362ee1_1a709e5a9f4b439d0507fe74cc1a362ee1">SetNumber_of_sony</link> (
+int _number_of_sony)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_w_a_r_e_h_o_u_s_e_a1accf4c214a11a532cad88729d44b91d_1a1accf4c214a11a532cad88729d44b91d">SetShop_address</link> (
+std::string _shop_address)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_w_a_r_e_h_o_u_s_e_ae5cb8c03a4ef0d2e84bbe34312bb01e4_1ae5cb8c03a4ef0d2e84bbe34312bb01e4">SetShop_name</link> (
+std::string _shop_name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_w_a_r_e_h_o_u_s_e_a7a924d389af91f54ed0e1d1d8d56ec57_1a7a924d389af91f54ed0e1d1d8d56ec57">WAREHOUSE</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_w_a_r_e_h_o_u_s_e_a91a50ed8f6eeb344b1785f750532b18a_1a91a50ed8f6eeb344b1785f750532b18a">WAREHOUSE</link> (
+int _version, int _unique_id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_w_a_r_e_h_o_u_s_e_a4782d251d2203377f8e9f331ba3b0a7e_1a4782d251d2203377f8e9f331ba3b0a7e">WAREHOUSE</link> (
+const <link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link> &amp; orig)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_w_a_r_e_h_o_u_s_e_ad5aa686839d7be9bfea33d469c58086b_1ad5aa686839d7be9bfea33d469c58086b">~WAREHOUSE</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para><link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link> inherit from <link linkend="class_o_s_t_m">OSTM</link> library </para>
+                <para>Definition at line 16 of file WAREHOUSE.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>WAREHOUSE.h</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a9d9d5bc37ddd3763ea633d07785b6020_1a9d9d5bc37ddd3763ea633d07785b6020">
+                <title>virtual int WAREHOUSE::GetNumber_of_alcatel ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_acacc58d1ceea41e968a6d245007ea127_1acacc58d1ceea41e968a6d245007ea127">
+                <title>virtual int WAREHOUSE::GetNumber_of_huawei ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a08312d1a68ff48d459ad637df6aaf2f1_1a08312d1a68ff48d459ad637df6aaf2f1">
+                <title>virtual int WAREHOUSE::GetNumber_of_iphones ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a1a0f7539989c00290934e8b671f2fb1c_1a1a0f7539989c00290934e8b671f2fb1c">
+                <title>virtual int WAREHOUSE::GetNumber_of_nokia ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a817b030450f48bc24e3cc6de5dadefec_1a817b030450f48bc24e3cc6de5dadefec">
+                <title>virtual int WAREHOUSE::GetNumber_of_samsung ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_abb7da1fee113e81fbb06190606fddb4d_1abb7da1fee113e81fbb06190606fddb4d">
+                <title>virtual int WAREHOUSE::GetNumber_of_sony ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a50c29c2f95d148239e8b43b8a0046a31_1a50c29c2f95d148239e8b43b8a0046a31">
+                <title>virtual std::string WAREHOUSE::GetShop_address ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a4d39386ec25ec71b513eb7382e5cd869_1a4d39386ec25ec71b513eb7382e5cd869">
+                <title>virtual std::string WAREHOUSE::GetShop_name ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a91b45d7d40a154308644a9f2b1767d28_1a91b45d7d40a154308644a9f2b1767d28">
+                <title>virtual void WAREHOUSE::SetNumber_of_alcatel (int _number_of_alcatel)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_ad29bd0333bd7f17178dc107a00e23954_1ad29bd0333bd7f17178dc107a00e23954">
+                <title>virtual void WAREHOUSE::SetNumber_of_huawei (int _number_of_huawei)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a05e7450e1f1e711a53a4d9d40fb9dfa3_1a05e7450e1f1e711a53a4d9d40fb9dfa3">
+                <title>virtual void WAREHOUSE::SetNumber_of_iphones (int _number_of_iphones)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a300d1fe21a47e45c0d5d27e25add346f_1a300d1fe21a47e45c0d5d27e25add346f">
+                <title>virtual void WAREHOUSE::SetNumber_of_nokia (int _number_of_nokia)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a5564efbb5f54f663208a17c6f7f440e2_1a5564efbb5f54f663208a17c6f7f440e2">
+                <title>virtual void WAREHOUSE::SetNumber_of_samsung (int _number_of_samsung)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a709e5a9f4b439d0507fe74cc1a362ee1_1a709e5a9f4b439d0507fe74cc1a362ee1">
+                <title>virtual void WAREHOUSE::SetNumber_of_sony (int _number_of_sony)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a1accf4c214a11a532cad88729d44b91d_1a1accf4c214a11a532cad88729d44b91d">
+                <title>virtual void WAREHOUSE::SetShop_address (std::string _shop_address)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_ae5cb8c03a4ef0d2e84bbe34312bb01e4_1ae5cb8c03a4ef0d2e84bbe34312bb01e4">
+                <title>virtual void WAREHOUSE::SetShop_name (std::string _shop_name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a7a924d389af91f54ed0e1d1d8d56ec57_1a7a924d389af91f54ed0e1d1d8d56ec57">
+                <title>WAREHOUSE::WAREHOUSE ()</title> <emphasis></emphasis>
+                
+<para>Constructor </para>
+
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a91a50ed8f6eeb344b1785f750532b18a_1a91a50ed8f6eeb344b1785f750532b18a">
+                <title>WAREHOUSE::WAREHOUSE (int _version, int _unique_id)</title> <emphasis></emphasis>
+                
+<para>Custom Constructor </para>
+
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_a4782d251d2203377f8e9f331ba3b0a7e_1a4782d251d2203377f8e9f331ba3b0a7e">
+                <title>WAREHOUSE::WAREHOUSE (const WAREHOUSE &amp;orig)</title> <emphasis></emphasis>
+                
+<para>Copy constructor </para>
+
+            </section>
+            <section xml:id="class_w_a_r_e_h_o_u_s_e_ad5aa686839d7be9bfea33d469c58086b_1ad5aa686839d7be9bfea33d469c58086b">
+                <title>WAREHOUSE::~WAREHOUSE ()</title> <emphasis></emphasis>
+                
+<para>de-constructor </para>
+
+            </section>
+</section>

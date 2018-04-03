@@ -149,16 +149,6 @@ std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; object)<para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>bool <link linkend="class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_1afb6520023ed2c4a6188b688c46f192d0">is_Locked</link> (
-)<para><emphasis>@162 Function &lt;is_Locked&gt; Boolean function to try lock the object. If the object
-not locked then locks and return True it otherwise return False.</emphasis></para>
-</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>
-                <itemizedlist>
-                    <listitem>
                         <para>void <link linkend="class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_1af192c598a3c647f37aaba5757e60240f">lock_Mutex</link> (
 )<para><emphasis>@145 Function &lt;lock_Mutex&gt; setter for mutex to lock the object</emphasis></para>
 </para>
@@ -231,6 +221,16 @@ int version)<para><emphasis>@92 Function &lt;Set_Version&gt; setter for version 
             <para>
                 <itemizedlist>
                     <listitem>
+                        <para>bool <link linkend="class_o_s_t_m_af3dd41488087b678c95b2f5c16486947_1af3dd41488087b678c95b2f5c16486947">try_lock</link> (
+)<para><emphasis>@162 Function &lt;is_Locked&gt; Boolean function to try lock the object. If the object
+not locked then locks and return True it otherwise return False.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
                         <para>void <link linkend="class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_1a6cd703bc26c719fd95b4f5362d050762">unlock_Mutex</link> (
 )<para><emphasis>@154 Function &lt;unlock_Mutex&gt; setter for mutex to unlock the object</emphasis></para>
 </para>
@@ -277,7 +277,7 @@ global_Unique_ID_Number never exceed the MAX_INT value</emphasis></para>
             <title>Member Data Documentation</title>
             <simplesect>
                 <title>bool OSTM::abort_Transaction</title>                
-<para>Boolean value &lt;abort_Transaction&gt; to determine the object can or cannot commit </para>
+<para>Boolean value &lt;abort_Transaction&gt; to determine the object need to abort the transaction </para>
 
                 <para>Definition at line 125 of file OSTM.h</para>
                 <para>The Documentation for this struct was generated from the following file: </para>
@@ -326,7 +326,7 @@ global_Unique_ID_Number never exceed the MAX_INT value</emphasis></para>
         </section>
             <simplesect>
                 <title>int OSTM::global_Unique_ID_Number</title>                
-<para>Unique object number start at ZERO The value stored in the static class level &lt;global_Unique_ID_Number&gt; increase every <link linkend="class_o_s_t_m">OSTM</link> type object creation. </para>
+<para>Unique object number start at ZERO The value stored in class level &lt;global_Unique_ID_Number&gt; increase every <link linkend="class_o_s_t_m">OSTM</link> type object creation. </para>
 
                 <para>Definition at line 130 of file OSTM.h</para>
                 <para>The Documentation for this struct was generated from the following file: </para>
@@ -393,11 +393,6 @@ global_Unique_ID_Number never exceed the MAX_INT value</emphasis></para>
                 <title>bool OSTM::Is_Can_Commit () const </title> <emphasis>@124 Function &lt;Is_Can_Commit&gt; boolean function to determin the object can comit or need to roolback.</emphasis>
                 
             </section>
-            <section xml:id="class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_1afb6520023ed2c4a6188b688c46f192d0">
-                <title>bool OSTM::is_Locked ()</title> <emphasis>@162 Function &lt;is_Locked&gt; Boolean function to try lock the object. If the object
-not locked then locks and return True it otherwise return False.</emphasis>
-                
-            </section>
             <section xml:id="class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_1af192c598a3c647f37aaba5757e60240f">
                 <title>void OSTM::lock_Mutex ()</title> <emphasis>@145 Function &lt;lock_Mutex&gt; setter for mutex to lock the object</emphasis>
                 
@@ -419,13 +414,13 @@ not locked then locks and return True it otherwise return False.</emphasis>
                         <colspec colwidth="4*"/>
                         <tbody>
                             <row>
-                                <entry>&lt;em&gt;version_number&lt;/em&gt;</entry>
+                                <entry>version_number</entry>
                                 <entry>
 <para>Integer value used to create a copy of the object with the actual version </para>
 </entry>
                             </row>
                             <row>
-                                <entry>&lt;em&gt;unique_id&lt;/em&gt;</entry>
+                                <entry>unique_id</entry>
                                 <entry>
 <para>Integer value used to create a copy of the object with the original unique ID </para>
 </entry>
@@ -546,6 +541,11 @@ not locked then locks and return True it otherwise return False.</emphasis>
 </formalpara>
 </para>
 
+            </section>
+            <section xml:id="class_o_s_t_m_af3dd41488087b678c95b2f5c16486947_1af3dd41488087b678c95b2f5c16486947">
+                <title>bool OSTM::try_lock ()</title> <emphasis>@162 Function &lt;is_Locked&gt; Boolean function to try lock the object. If the object
+not locked then locks and return True it otherwise return False.</emphasis>
+                
             </section>
             <section xml:id="class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_1a6cd703bc26c719fd95b4f5362d050762">
                 <title>void OSTM::unlock_Mutex ()</title> <emphasis>@154 Function &lt;unlock_Mutex&gt; setter for mutex to unlock the object</emphasis>

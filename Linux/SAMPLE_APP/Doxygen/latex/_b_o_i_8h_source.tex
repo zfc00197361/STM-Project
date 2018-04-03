@@ -1,0 +1,94 @@
+\hypertarget{_b_o_i_8h_source}{}\subsection{B\+O\+I.\+h}
+
+\begin{DoxyCode}
+00001 
+00002 \textcolor{comment}{/* }
+00003 \textcolor{comment}{ * File:   BOI.h}
+00004 \textcolor{comment}{ * Author: Zoltan Fuzesi C00197361, }
+00005 \textcolor{comment}{ * IT Carlow, Software Engineering, }
+00006 \textcolor{comment}{ *}
+00007 \textcolor{comment}{ * Supervisor : Joe Kehoe, }
+00008 \textcolor{comment}{ *}
+00009 \textcolor{comment}{ * C++ Software Transactional Memory, }
+00010 \textcolor{comment}{ * }
+00011 \textcolor{comment}{ * Created on December 18, 2017, 2:09 PM}
+00012 \textcolor{comment}{ * OSTM base class function declarations.}
+00013 \textcolor{comment}{ */}
+00014 
+00015 \textcolor{preprocessor}{#ifndef BOI\_H}
+00016 \textcolor{preprocessor}{#define BOI\_H}
+00017 \textcolor{preprocessor}{#include "\hyperlink{_b_a_n_k_8h}{BANK.h}"}
+00018 \textcolor{preprocessor}{#include <string>}
+00019 \textcolor{preprocessor}{#include <memory>}
+00020 \textcolor{preprocessor}{#include <iostream>}
+\hypertarget{_b_o_i_8h_source.tex_l00024}{}\hyperlink{class_b_o_i}{00024} \textcolor{keyword}{class }\hyperlink{class_b_o_i}{BOI}: \textcolor{keyword}{public} \hyperlink{class_b_a_n_k}{BANK} \{
+00025 \textcolor{keyword}{public}:
+\hypertarget{_b_o_i_8h_source.tex_l00029}{}\hyperlink{class_b_o_i_a6af682a5f199a029681f0cb2b8658706_a6af682a5f199a029681f0cb2b8658706}{00029}     \hyperlink{class_b_o_i_a6af682a5f199a029681f0cb2b8658706_a6af682a5f199a029681f0cb2b8658706}{BOI}(): \hyperlink{class_b_a_n_k}{BANK}()
+00030     \{
+00031         this->\hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber} = 0;
+00032         this->\hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance} = 50;
+00033         this->\hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName} = \textcolor{stringliteral}{"Joe"};
+00034         this->\hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName} = \textcolor{stringliteral}{"Blog"};
+00035         this->\hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address} = \textcolor{stringliteral}{"High street, Carlow"};
+00036         this->\hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname} = \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName} + \textcolor{stringliteral}{" "} + \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName};
+00037         
+00038     \}
+\hypertarget{_b_o_i_8h_source.tex_l00047}{}\hyperlink{class_b_o_i_a1807bd07cad08109c974edbb2c32591c_a1807bd07cad08109c974edbb2c32591c}{00047}     \hyperlink{class_b_o_i_a1807bd07cad08109c974edbb2c32591c_a1807bd07cad08109c974edbb2c32591c}{BOI}(\textcolor{keywordtype}{int} \hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber}, \textcolor{keywordtype}{double} \hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance}, std::string 
+      \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName}, std::string \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName}, std::string \hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address}): 
+      \hyperlink{class_b_a_n_k}{BANK}()
+00048     \{
+00049         this->accountNumber = \hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber};
+00050         this->balance = \hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance};
+00051         this->firstName = \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName};
+00052         this->lastName = \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName};
+00053         this->address = \hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address};
+00054         this->\hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname} = firstName + \textcolor{stringliteral}{" "} + \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName};
+00055     \};
+\hypertarget{_b_o_i_8h_source.tex_l00062}{}\hyperlink{class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_ae4263940f8ffdd40d5f01a714b20f791}{00062}     \hyperlink{class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_ae4263940f8ffdd40d5f01a714b20f791}{BOI}(std::shared\_ptr<BOI> obj, \textcolor{keywordtype}{int} \_version, \textcolor{keywordtype}{int} \_unique\_id): \hyperlink{class_b_a_n_k}{BANK}(\_version, \_unique\_id)
+00063     \{
+00064         this->\hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber} = obj->GetAccountNumber();
+00065         this->\hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance} = obj->GetBalance();
+00066         this->\hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName} = obj->GetFirstName();
+00067         this->\hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName} = obj->GetLastName();
+00068         this->\hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address} = obj->GetAddress();
+00069         this->\hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname} = obj->GetFirstName() + \textcolor{stringliteral}{" "} + obj->GetLastName(); 
+00070     \};
+00074     \hyperlink{class_b_o_i_a6af682a5f199a029681f0cb2b8658706_a6af682a5f199a029681f0cb2b8658706}{BOI}(\textcolor{keyword}{const} \hyperlink{class_b_o_i}{BOI}& orig);
+\hypertarget{_b_o_i_8h_source.tex_l00078}{}\hyperlink{class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_a4b4a3976cc13c4d3de0d7ff8882a7af3}{00078}     \hyperlink{class_b_o_i}{BOI} \hyperlink{class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_a4b4a3976cc13c4d3de0d7ff8882a7af3}{operator=}(\textcolor{keyword}{const} \hyperlink{class_b_o_i}{BOI}& orig)\{\};
+00082     \textcolor{keyword}{virtual} \hyperlink{class_b_o_i_a617f46a599129178c6b11b4846759a6c_a617f46a599129178c6b11b4846759a6c}{~BOI}();
+00083 
+00084     \textcolor{comment}{/*}
+00085 \textcolor{comment}{     * Implement OSTM virtual methods}
+00086 \textcolor{comment}{     */}
+00087     \textcolor{keyword}{virtual} std::shared\_ptr<OSTM> \hyperlink{class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_ad53ae2918a656793b9d7a670d35ecfa3}{getBaseCopy}(std::shared\_ptr<OSTM> \textcolor{keywordtype}{object});
+00088     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_a9ff2d32c25c23a1bea6316f50c3bf677}{copy}(std::shared\_ptr<OSTM> to, std::shared\_ptr<OSTM> from);
+00089     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_ab02a4dd4ebcc5b2abfaca19f2dff2006}{toString}();
+00090     
+00091     \textcolor{comment}{/*}
+00092 \textcolor{comment}{     * Implement BANK virtual methods}
+00093 \textcolor{comment}{     */}
+00094     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_b_o_i_a00c9386c862cf2442968bf7fc30102b3_a00c9386c862cf2442968bf7fc30102b3}{SetAddress}(std::string \hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address});
+00095     \textcolor{keyword}{virtual} std::string \hyperlink{class_b_o_i_a8920e1f47b22445ba954e86012207462_a8920e1f47b22445ba954e86012207462}{GetAddress}() \textcolor{keyword}{const};
+00096     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_b_o_i_a416667693c10f5e4120eec97a9269348_a416667693c10f5e4120eec97a9269348}{SetBalance}(\textcolor{keywordtype}{double} \hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance});
+00097     \textcolor{keyword}{virtual} \textcolor{keywordtype}{double} \hyperlink{class_b_o_i_a25b289dece2a1685bb9d1a9332c9be0b_a25b289dece2a1685bb9d1a9332c9be0b}{GetBalance}() \textcolor{keyword}{const};
+00098     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_b_o_i_affc9e7e2a36214b3790f250b7108bb65_affc9e7e2a36214b3790f250b7108bb65}{SetAccountNumber}(\textcolor{keywordtype}{int} \hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber});
+00099     \textcolor{keyword}{virtual} \textcolor{keywordtype}{int} \hyperlink{class_b_o_i_a5b18e1538f3d37835234946cdf9f240f_a5b18e1538f3d37835234946cdf9f240f}{GetAccountNumber}() \textcolor{keyword}{const};
+00100     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_b_o_i_a663906e9a59ffa970fb928746c01e8af_a663906e9a59ffa970fb928746c01e8af}{SetLastName}(std::string \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName});
+00101     \textcolor{keyword}{virtual} std::string \hyperlink{class_b_o_i_a37828f3fa4a32f522966e2cad90eaab2_a37828f3fa4a32f522966e2cad90eaab2}{GetLastName}() \textcolor{keyword}{const};
+00102     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_b_o_i_ae9042f87be085c2cec799981c30d7d19_ae9042f87be085c2cec799981c30d7d19}{SetFirstName}(std::string \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName});
+00103     \textcolor{keyword}{virtual} std::string \hyperlink{class_b_o_i_ab4b9d50c6008a666aa4382def580e7d1_ab4b9d50c6008a666aa4382def580e7d1}{GetFirstName}() \textcolor{keyword}{const};
+00104     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \hyperlink{class_b_o_i_a93091f16610f1a1474aea31fd5f81ffd_a93091f16610f1a1474aea31fd5f81ffd}{SetFullname}(std::string \hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname});
+00105     \textcolor{keyword}{virtual} std::string \hyperlink{class_b_o_i_af56446a377068cd65526e40e8b31b878_af56446a377068cd65526e40e8b31b878}{GetFullname}() \textcolor{keyword}{const};
+00106     
+00107 \textcolor{keyword}{private}:
+\hypertarget{_b_o_i_8h_source.tex_l00111}{}\hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{00111}     std::string \hyperlink{class_b_o_i_a6d7c892a54bb6f7327cdc777081ab5f4_a6d7c892a54bb6f7327cdc777081ab5f4}{fullname};
+\hypertarget{_b_o_i_8h_source.tex_l00115}{}\hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{00115}     std::string \hyperlink{class_b_o_i_a12872fd8c15dbf833f78862b00579ed1_a12872fd8c15dbf833f78862b00579ed1}{firstName};
+\hypertarget{_b_o_i_8h_source.tex_l00119}{}\hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{00119}     std::string \hyperlink{class_b_o_i_ad51bfa6f28816c7f5036447ff809cecf_ad51bfa6f28816c7f5036447ff809cecf}{lastName};
+\hypertarget{_b_o_i_8h_source.tex_l00123}{}\hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{00123}     \textcolor{keywordtype}{int} \hyperlink{class_b_o_i_a35c9fd6e938eb44ad4e076bc6a736851_a35c9fd6e938eb44ad4e076bc6a736851}{accountNumber};
+\hypertarget{_b_o_i_8h_source.tex_l00127}{}\hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{00127}     \textcolor{keywordtype}{double} \hyperlink{class_b_o_i_aa00a3d8baf3420647c40119b7fa4ed6f_aa00a3d8baf3420647c40119b7fa4ed6f}{balance};
+\hypertarget{_b_o_i_8h_source.tex_l00131}{}\hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{00131}     std::string \hyperlink{class_b_o_i_ab9315fe76fd9f07551f5ae7899d33516_ab9315fe76fd9f07551f5ae7899d33516}{address};
+00132 
+00133 \};
+00134 
+00135 \textcolor{preprocessor}{#endif }\textcolor{comment}{/* BOI\_H */}\textcolor{preprocessor}{}
+\end{DoxyCode}

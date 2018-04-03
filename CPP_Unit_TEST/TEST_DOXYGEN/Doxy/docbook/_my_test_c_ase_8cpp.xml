@@ -1,0 +1,836 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_my_test_c_ase_8cpp">
+    <title>MyTestCAse.cpp File Reference</title>
+    <programlisting>#include &quot;MyTestCAse.h&quot;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &lt;condition_variable&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+<para>Include dependency diagram for MyTestCAse.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_my_test_c_ase_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for MyTestCAse.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_my_test_c_ase_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file MyTestCAse.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 
+3 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_my_test_c_ase_8h">MyTestCAse.h</link>&quot;</emphasis>
+4 <emphasis class="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+5 <emphasis class="preprocessor">#include&#32;&lt;memory&gt;</emphasis>
+6 <emphasis class="preprocessor">#include&#32;&lt;condition_variable&gt;</emphasis>
+7 <emphasis class="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+8 
+<link linkend="class_my_test_c_ase_a742539c4ae7c357cc96295641d2c604d_1a742539c4ae7c357cc96295641d2c604d">9 </link><link linkend="class_my_test_c_ase_a17e7a9246f54f74dacf88f8d6556aa92_1a17e7a9246f54f74dacf88f8d6556aa92">MyTestCAse::MyTestCAse</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_my_test_c_ase">MyTestCAse</link>&amp;&#32;orig)&#32;{
+10 }
+11 
+<link linkend="class_my_test_c_ase_a6e57067745a7e72a8073c945e0266c56_1a6e57067745a7e72a8073c945e0266c56">12 </link><link linkend="class_my_test_c_ase_a6e57067745a7e72a8073c945e0266c56_1a6e57067745a7e72a8073c945e0266c56">MyTestCAse::~MyTestCAse</link>()&#32;{
+13 }
+<link linkend="class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_1a9ec1ddfc6e7f727446e1a8355086c2dd">20 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_1a9ec1ddfc6e7f727446e1a8355086c2dd">MyTestCAse::_collection_bject_</link>(std::vector&lt;std::shared_ptr&lt;OSTM&gt;&#32;&gt;&#32;_customer_vec,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount,&#32;<emphasis class="keywordtype">int</emphasis>&#32;loop){
+21 &#32;&#32;&#32;&#32;
+22 &#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+23 
+27 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM_;
+28 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;&#32;_TO_;
+29 
+30 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+31 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;loop;&#32;++i)&#32;{
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keyword">auto</emphasis>&amp;&amp;&#32;obj&#32;:&#32;_customer_vec)&#32;{
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;auto&amp;&amp;&#32;obj&#32;=&#32;_customer_vec.at(i);</emphasis>
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;_register(obj);
+43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(obj));
+47 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_-&gt;GetBalance()&#32;+&#32;(_amount));
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_);
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+63 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+65 &#32;&#32;&#32;&#32;}
+66 }
+67 
+<link linkend="class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_1afe25c2ed3a8ab035f472fff6575f0e48">74 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_1afe25c2ed3a8ab035f472fff6575f0e48">MyTestCAse::_one_account_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount){
+75 &#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+79 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+80 &#32;&#32;&#32;&#32;
+81 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM_;
+82 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_;
+83 &#32;&#32;&#32;&#32;
+84 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+90 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_to_));
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_-&gt;GetBalance()&#32;+&#32;(_amount&#32;));
+95 
+99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_);
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+104 
+108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+110 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+112 &#32;&#32;&#32;&#32;}
+113 &#32;&#32;&#32;&#32;
+114 &#32;&#32;&#32;&#32;
+115 &#32;&#32;&#32;&#32;
+116 }
+<link linkend="class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_1a2367b87338c4f61cc3ac3193651580d4">126 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_1a2367b87338c4f61cc3ac3193651580d4">MyTestCAse::_complex_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_two_,&#32;std::vector&lt;std::shared_ptr&lt;OSTM&gt;&gt;&#32;_customer_vec,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+127 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+131 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_);
+132 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_two_);
+136 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_FROM_OSTM_ONE_,&#32;_FROM_OSTM_TWO_,&#32;_TO_OSTM_;
+137 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_,&#32;_FROM_TWO_,&#32;_TO_;
+138 
+139 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+140 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;for&#32;(int&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;vector_number;&#32;++i)&#32;{</emphasis>
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keyword">auto</emphasis>&amp;&amp;&#32;obj&#32;:&#32;_customer_vec)&#32;{
+147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">//&#32;auto&amp;&amp;&#32;obj&#32;=&#32;_customer_vec.at(i);</emphasis>
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;_register(obj);
+152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_));
+153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_two_));
+154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(obj));
+158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_FROM_-&gt;GetBalance()&#32;-&#32;_amount);
+159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_-&gt;SetBalance(_FROM_TWO_-&gt;GetBalance()&#32;-&#32;_amount);
+160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_-&gt;SetBalance(_TO_-&gt;GetBalance()&#32;+&#32;(_amount&#32;*&#32;2));
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_ONE_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_);
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_TWO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_TWO_);
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_);
+170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_ONE_);
+171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_TWO_);
+172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+179 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+181 &#32;&#32;&#32;&#32;}
+182 }
+<link linkend="class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_1a72ce436fb3c78c3d76b6c48a5a2e6a76">194 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_1a72ce436fb3c78c3d76b6c48a5a2e6a76">MyTestCAse::_six_account_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_one_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_two_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_three_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_four_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_five_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+195 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+199 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+200 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_one_);
+201 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_two_);
+202 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_three_);
+203 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_four_);
+204 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_five_);
+205 
+209 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM,&#32;_FROM_ONE_OSTM,&#32;_FROM_TWO_OSTM,&#32;_FROM_THREE_OSTM,&#32;_FROM_FOUR_OSTM,&#32;_FROM_FIVE_OSTM;
+210 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_,&#32;_FROM_ONE_,&#32;_FROM_TWO_,&#32;_FROM_THREE_,&#32;_FROM_FOUR_,&#32;_FROM_FIVE_;
+211 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+212 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+213 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+217 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_to_));
+218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_ONE_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_one_));
+219 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_two_));
+220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_THREE_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_three_));
+221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FOUR_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_four_));
+222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FIVE_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_five_));
+226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_-&gt;GetBalance()&#32;+&#32;(_amount&#32;*&#32;5));
+227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_ONE_-&gt;SetBalance(_FROM_ONE_-&gt;GetBalance()&#32;-&#32;_amount);
+228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_-&gt;SetBalance(_FROM_TWO_-&gt;GetBalance()&#32;-&#32;_amount);
+229 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_THREE_-&gt;SetBalance(_FROM_THREE_-&gt;GetBalance()&#32;-&#32;_amount);
+230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FOUR_-&gt;SetBalance(_FROM_FOUR_-&gt;GetBalance()&#32;-&#32;_amount);
+231 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FIVE_-&gt;SetBalance(_FROM_FIVE_-&gt;GetBalance()&#32;-&#32;_amount);
+235 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_);
+236 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_ONE_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_ONE_);
+237 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_TWO_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_TWO_);
+238 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_THREE_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_THREE_);
+239 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FOUR_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_FOUR_);
+240 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_FIVE_OSTM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_FIVE_);
+244 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM);
+245 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_ONE_OSTM);
+246 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_TWO_OSTM);
+247 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_THREE_OSTM);
+248 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_FOUR_OSTM);
+249 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_FIVE_OSTM);
+253 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+254 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+255 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+256 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+257 &#32;&#32;&#32;&#32;}
+258 }
+<link linkend="class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_1af0cc86421d281cc4a583a394ae86dbdd">266 </link>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_1af0cc86421d281cc4a583a394ae86dbdd">MyTestCAse::_two_account_transfer_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+267 
+268 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+272 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+273 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_);
+277 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_,&#32;_FROM_BANK_;
+278 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM_,&#32;_FROM_OSTM_;
+279 
+280 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+281 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+282 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+286 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_to_));
+287 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_));
+291 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_BANK_-&gt;GetBalance()&#32;+&#32;_amount);
+292 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_-&gt;SetBalance(_FROM_BANK_-&gt;GetBalance()&#32;-&#32;_amount);
+296 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_BANK_);
+297 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_BANK_);
+301 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+302 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_);
+303 
+307 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+308 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+309 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+310 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+311 &#32;&#32;&#32;&#32;}
+312 }
+<link linkend="class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_1abb973a1396c1083891d76845e2cfaf64">320 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_1abb973a1396c1083891d76845e2cfaf64">MyTestCAse::_nesting_</link>(std::shared_ptr&lt;OSTM&gt;&#32;_to_,&#32;std::shared_ptr&lt;OSTM&gt;&#32;_from_,&#32;<link linkend="class_t_m">TM</link>&amp;&#32;_tm,&#32;<emphasis class="keywordtype">double</emphasis>&#32;_amount)&#32;{
+321 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+325 &#32;&#32;&#32;&#32;tx-&gt;_register(_to_);
+326 &#32;&#32;&#32;&#32;tx-&gt;_register(_from_);
+330 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_,&#32;_FROM_BANK_;
+331 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;_TO_OSTM_,&#32;_FROM_OSTM_;
+332 
+333 
+334 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;done&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+335 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">try</emphasis>&#32;{
+336 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!done)&#32;{
+340 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_to_));
+341 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(tx-&gt;load(_from_));
+345 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_BANK_-&gt;GetBalance()&#32;+&#32;_amount);
+346 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_-&gt;SetBalance(_FROM_BANK_-&gt;GetBalance()&#32;-&#32;_amount);
+350 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_BANK_);
+351 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_BANK_);
+355 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_TO_OSTM_);
+356 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;tx-&gt;store(_FROM_OSTM_);
+357 
+361 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;txTwo&#32;=&#32;_tm.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+362 
+363 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;nestedDone&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+364 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>&#32;(!nestedDone)&#32;{
+365 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(txTwo-&gt;load(_to_));
+366 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(txTwo-&gt;load(_from_));
+370 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_BANK_-&gt;<link linkend="class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</link>(_TO_BANK_-&gt;GetBalance()&#32;+&#32;_amount);
+371 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_BANK_-&gt;SetBalance(_FROM_BANK_-&gt;GetBalance()&#32;-&#32;_amount);
+375 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_TO_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_TO_BANK_);
+376 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_FROM_OSTM_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;&#32;(_FROM_BANK_);
+380 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;txTwo-&gt;store(_TO_OSTM_);
+381 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;txTwo-&gt;store(_FROM_OSTM_);
+386 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_1af0cc86421d281cc4a583a394ae86dbdd">_two_account_transfer_</link>(_to_,&#32;_from_,&#32;_tm,&#32;_amount);
+387 
+388 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;nestedDone&#32;=&#32;txTwo-&gt;commit();
+389 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+390 
+394 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;done&#32;=&#32;tx-&gt;commit();
+395 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+396 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">catch</emphasis>&#32;(std::runtime_error&amp;&#32;e)&#32;{
+397 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;e.what()&#32;&lt;&lt;&#32;std::endl;
+398 &#32;&#32;&#32;&#32;}
+399 }
+400 
+401 <emphasis class="comment">/*</emphasis>
+402 <emphasis class="comment">&#32;*&#32;TEST&#32;DECLARATION&#32;FROM&#32;HERE&#32;*****************************************************</emphasis>
+403 <emphasis class="comment">&#32;*/</emphasis>
+404 
+405 
+<link linkend="class_my_test_c_ase_a8a198d6ef96a8a07ea7fa839ad068ffb_1a8a198d6ef96a8a07ea7fa839ad068ffb">412 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a8a198d6ef96a8a07ea7fa839ad068ffb_1a8a198d6ef96a8a07ea7fa839ad068ffb">MyTestCAse::complex_threaded_functionality_hundred_threads</link>(){
+413 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+414 &#32;&#32;&#32;&#32;&#32;std::vector&lt;std::shared_ptr&#32;&lt;&#32;OSTM&gt;&gt;_customer_vec;&#32;
+415 &#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;600;&#32;++i)&#32;{
+416 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;6&#32;==&#32;0)&#32;{
+417 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+418 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+419 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;5&#32;==&#32;0)&#32;{
+420 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+421 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+422 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;4&#32;==&#32;0)&#32;{
+423 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_a">BOA</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+424 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+425 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;3&#32;==&#32;0)&#32;{
+426 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_s_w_b_p_l_c">SWBPLC</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+427 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+428 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;2&#32;==&#32;0)&#32;{
+429 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_l_s_t_e_r">ULSTER</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+430 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+431 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;1&#32;==&#32;0)&#32;{
+432 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_n_b_l">UNBL</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+433 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+434 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+435 &#32;&#32;&#32;&#32;}
+436 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_BANK_;
+437 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+438 &#32;&#32;&#32;&#32;
+439 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+440 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+441 &#32;&#32;&#32;&#32;
+442 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;1;
+443 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;100;&#32;
+444 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+445 &#32;&#32;&#32;
+446 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+447 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(&amp;<link linkend="class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_1a2367b87338c4f61cc3ac3193651580d4">MyTestCAse::_complex_transfer_</link>,&#32;<emphasis class="keyword">this</emphasis>,&#32;aib_ptr,&#32;boi_ptr,&#32;std::ref(_customer_vec),&#32;&#32;std::ref(<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>),&#32;transferAmount);
+448 &#32;&#32;&#32;&#32;}
+449 &#32;&#32;&#32;&#32;
+450 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+451 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+452 &#32;&#32;&#32;&#32;}
+453 &#32;&#32;&#32;&#32;
+454 &#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>);
+455 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>);
+456 &#32;&#32;&#32;&#32;
+457 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_-&gt;GetBalance()&#32;==&#32;-59500);
+458 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_TO_BANK_-&gt;GetBalance()&#32;==&#32;-59500);
+459 &#32;&#32;&#32;&#32;
+460 }
+461 
+<link linkend="class_my_test_c_ase_ad91f8c37cd32055b834c84f10edeb979_1ad91f8c37cd32055b834c84f10edeb979">467 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_ad91f8c37cd32055b834c84f10edeb979_1ad91f8c37cd32055b834c84f10edeb979">MyTestCAse::complex_threaded_functionality_ten_threads</link>(){
+468 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+469 &#32;&#32;&#32;&#32;std::vector&lt;std::shared_ptr&#32;&lt;&#32;OSTM&gt;&gt;_customer_vec;&#32;
+470 &#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;600;&#32;++i)&#32;{
+471 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;6&#32;==&#32;0)&#32;{
+472 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+473 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+474 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;5&#32;==&#32;0)&#32;{
+475 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+476 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+477 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;4&#32;==&#32;0)&#32;{
+478 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_a">BOA</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+479 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+480 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;3&#32;==&#32;0)&#32;{
+481 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_s_w_b_p_l_c">SWBPLC</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+482 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+483 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;2&#32;==&#32;0)&#32;{
+484 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_l_s_t_e_r">ULSTER</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+485 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+486 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;1&#32;==&#32;0)&#32;{
+487 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_n_b_l">UNBL</link>(i,&#32;50,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+488 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+489 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+490 &#32;&#32;&#32;&#32;}
+491 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_BANK_;
+492 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+493 &#32;&#32;&#32;&#32;
+494 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+495 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+496 &#32;&#32;&#32;&#32;
+497 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;1;
+498 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;10;&#32;
+499 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+500 
+501 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+502 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(&amp;<link linkend="class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_1a2367b87338c4f61cc3ac3193651580d4">MyTestCAse::_complex_transfer_</link>,&#32;<emphasis class="keyword">this</emphasis>,&#32;aib_ptr,&#32;boi_ptr,&#32;std::ref(_customer_vec),&#32;&#32;std::ref(<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>),&#32;transferAmount);
+503 &#32;&#32;&#32;&#32;}
+504 &#32;&#32;&#32;&#32;
+505 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+506 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+507 &#32;&#32;&#32;&#32;}
+508 &#32;&#32;&#32;&#32;
+509 &#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>);
+510 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>);
+511 &#32;&#32;&#32;&#32;
+512 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_-&gt;GetBalance()&#32;==&#32;-5500);
+513 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_TO_BANK_-&gt;GetBalance()&#32;==&#32;-5500);
+514 &#32;&#32;&#32;&#32;
+515 }
+516 
+517 
+<link linkend="class_my_test_c_ase_afdb39bda80c1305ac1c4cc0e5ce022f4_1afdb39bda80c1305ac1c4cc0e5ce022f4">523 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_afdb39bda80c1305ac1c4cc0e5ce022f4_1afdb39bda80c1305ac1c4cc0e5ce022f4">MyTestCAse::threaded_functionality_hundred_threads</link>(){
+524 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+525 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_BANK_;
+526 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+527 &#32;&#32;&#32;&#32;
+528 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+529 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+530 &#32;&#32;&#32;&#32;
+531 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;1;
+532 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;100;&#32;
+533 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+534 
+535 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+536 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(&amp;<link linkend="class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_1af0cc86421d281cc4a583a394ae86dbdd">MyTestCAse::_two_account_transfer_</link>,&#32;<emphasis class="keyword">this</emphasis>,&#32;aib_ptr,&#32;boi_ptr,&#32;std::ref(<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>),&#32;transferAmount);
+537 &#32;&#32;&#32;&#32;}
+538 &#32;&#32;&#32;&#32;
+539 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+540 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+541 &#32;&#32;&#32;&#32;}
+542 &#32;&#32;&#32;&#32;
+543 &#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>);
+544 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>);
+545 &#32;&#32;&#32;&#32;
+546 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_-&gt;GetBalance()&#32;==&#32;400);
+547 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_TO_BANK_-&gt;GetBalance()&#32;==&#32;600);
+548 &#32;&#32;&#32;&#32;
+549 }
+550 
+<link linkend="class_my_test_c_ase_a03f867cf5e2295e4055fe88d825b1710_1a03f867cf5e2295e4055fe88d825b1710">556 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a03f867cf5e2295e4055fe88d825b1710_1a03f867cf5e2295e4055fe88d825b1710">MyTestCAse::threaded_functionality_thousand_threads</link>(){
+557 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+558 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_BANK_;
+559 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+560 &#32;&#32;&#32;&#32;
+561 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+562 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+563 &#32;&#32;&#32;&#32;
+564 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;1;
+565 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;1000;&#32;
+566 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+567 
+568 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+569 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(&amp;<link linkend="class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_1af0cc86421d281cc4a583a394ae86dbdd">MyTestCAse::_two_account_transfer_</link>,&#32;<emphasis class="keyword">this</emphasis>,&#32;aib_ptr,&#32;boi_ptr,&#32;std::ref(<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>),&#32;transferAmount);
+570 &#32;&#32;&#32;&#32;}
+571 &#32;&#32;&#32;&#32;
+572 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+573 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+574 &#32;&#32;&#32;&#32;}
+575 &#32;&#32;&#32;&#32;
+576 &#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>);
+577 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>);
+578 
+579 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_-&gt;GetBalance()&#32;==&#32;-500);
+580 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_TO_BANK_-&gt;GetBalance()&#32;==&#32;1500);
+581 &#32;&#32;&#32;&#32;
+582 }
+583 
+<link linkend="class_my_test_c_ase_acdc0278b6fa7c0102b9e5cdfb68a41a1_1acdc0278b6fa7c0102b9e5cdfb68a41a1">589 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_acdc0278b6fa7c0102b9e5cdfb68a41a1_1acdc0278b6fa7c0102b9e5cdfb68a41a1">MyTestCAse::threaded_functionality_hundred_threads_six_account</link>(){
+590 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+591 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_BANK_ONE,_FROM_BANK_TWO,_FROM_BANK_THREE,&#32;_FROM_BANK_FOUR,&#32;_FROM_BANK_FIVE;
+592 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+593 &#32;&#32;&#32;&#32;
+594 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+595 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+596 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_1ae0b2db5d35e25b3139beeda0705494f0">boa_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_a">BOA</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+597 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_1a4f9f72374d3d15be7cdf16412c4d7ed3">ulster_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_l_s_t_e_r">ULSTER</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+598 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_1a0ca634b597d6c0e136d632268853d5a7">unbl_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_n_b_l">UNBL</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+599 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_1aa8ccae9a5a7feb5bc47591c55a82d0cd">swplc_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_s_w_b_p_l_c">SWBPLC</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+600 &#32;&#32;&#32;&#32;
+601 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;1;
+602 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;100;&#32;
+603 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+604 
+605 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+606 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(&amp;<link linkend="class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_1a72ce436fb3c78c3d76b6c48a5a2e6a76">MyTestCAse::_six_account_transfer_</link>,&#32;<emphasis class="keyword">this</emphasis>,&#32;aib_ptr,&#32;boi_ptr,&#32;boa_ptr,&#32;ulster_ptr,&#32;unbl_ptr,&#32;swplc_ptr,&#32;std::ref(<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>),&#32;transferAmount);
+607 &#32;&#32;&#32;&#32;}
+608 &#32;&#32;&#32;&#32;
+609 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+610 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+611 &#32;&#32;&#32;&#32;}
+612 &#32;&#32;&#32;&#32;
+613 &#32;&#32;&#32;&#32;_FROM_BANK_ONE&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>);
+614 &#32;&#32;&#32;&#32;_FROM_BANK_TWO&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_1ae0b2db5d35e25b3139beeda0705494f0">boa_ptr</link>);
+615 &#32;&#32;&#32;&#32;_FROM_BANK_THREE&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_1a4f9f72374d3d15be7cdf16412c4d7ed3">ulster_ptr</link>);
+616 &#32;&#32;&#32;&#32;_FROM_BANK_FOUR&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_1a0ca634b597d6c0e136d632268853d5a7">unbl_ptr</link>);
+617 &#32;&#32;&#32;&#32;_FROM_BANK_FIVE&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_1aa8ccae9a5a7feb5bc47591c55a82d0cd">swplc_ptr</link>);
+618 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>);
+619 &#32;&#32;&#32;&#32;
+620 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_ONE-&gt;GetBalance()&#32;==&#32;400);
+621 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_TWO-&gt;GetBalance()&#32;==&#32;400);
+622 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_THREE-&gt;GetBalance()&#32;==&#32;400);
+623 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_FOUR-&gt;GetBalance()&#32;==&#32;400);
+624 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_FIVE-&gt;GetBalance()&#32;==&#32;400);
+625 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_TO_BANK_-&gt;GetBalance()&#32;==&#32;1000);
+626 &#32;&#32;&#32;&#32;
+627 }
+628 
+<link linkend="class_my_test_c_ase_ab7d15a71958588c6402f234e106668b1_1ab7d15a71958588c6402f234e106668b1">634 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_ab7d15a71958588c6402f234e106668b1_1ab7d15a71958588c6402f234e106668b1">MyTestCAse::threaded_functionality_thousand_threads_six_account</link>(){
+635 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+636 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_BANK_ONE,_FROM_BANK_TWO,_FROM_BANK_THREE,&#32;_FROM_BANK_FOUR,&#32;_FROM_BANK_FIVE;
+637 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+638 &#32;&#32;&#32;&#32;
+639 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+640 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+641 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_1ae0b2db5d35e25b3139beeda0705494f0">boa_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_a">BOA</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+642 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_1a4f9f72374d3d15be7cdf16412c4d7ed3">ulster_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_l_s_t_e_r">ULSTER</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+643 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_1a0ca634b597d6c0e136d632268853d5a7">unbl_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_n_b_l">UNBL</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+644 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_1aa8ccae9a5a7feb5bc47591c55a82d0cd">swplc_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_s_w_b_p_l_c">SWBPLC</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+645 &#32;&#32;&#32;&#32;
+646 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;1;
+647 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;1000;&#32;
+648 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+649 
+650 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+651 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(&amp;<link linkend="class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_1a72ce436fb3c78c3d76b6c48a5a2e6a76">MyTestCAse::_six_account_transfer_</link>,&#32;<emphasis class="keyword">this</emphasis>,&#32;aib_ptr,&#32;boi_ptr,&#32;boa_ptr,&#32;ulster_ptr,&#32;unbl_ptr,&#32;swplc_ptr,&#32;std::ref(<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>),&#32;transferAmount);
+652 &#32;&#32;&#32;&#32;}
+653 &#32;&#32;&#32;&#32;
+654 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+655 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+656 &#32;&#32;&#32;&#32;}
+657 &#32;&#32;&#32;&#32;
+658 &#32;&#32;&#32;&#32;_FROM_BANK_ONE&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>);
+659 &#32;&#32;&#32;&#32;_FROM_BANK_TWO&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_1ae0b2db5d35e25b3139beeda0705494f0">boa_ptr</link>);
+660 &#32;&#32;&#32;&#32;_FROM_BANK_THREE&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_1a4f9f72374d3d15be7cdf16412c4d7ed3">ulster_ptr</link>);
+661 &#32;&#32;&#32;&#32;_FROM_BANK_FOUR&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_1a0ca634b597d6c0e136d632268853d5a7">unbl_ptr</link>);
+662 &#32;&#32;&#32;&#32;_FROM_BANK_FIVE&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_1aa8ccae9a5a7feb5bc47591c55a82d0cd">swplc_ptr</link>);
+663 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>);
+664 &#32;&#32;&#32;&#32;
+665 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_ONE-&gt;GetBalance()&#32;==&#32;-500);
+666 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_TWO-&gt;GetBalance()&#32;==&#32;-500);
+667 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_THREE-&gt;GetBalance()&#32;==&#32;-500);
+668 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_FOUR-&gt;GetBalance()&#32;==&#32;-500);
+669 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_FIVE-&gt;GetBalance()&#32;==&#32;-500);
+670 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_TO_BANK_-&gt;GetBalance()&#32;==&#32;5500);
+671 &#32;&#32;&#32;&#32;
+672 }
+673 
+<link linkend="class_my_test_c_ase_a13635e729bf660619c7f6a75b414bc3f_1a13635e729bf660619c7f6a75b414bc3f">680 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a13635e729bf660619c7f6a75b414bc3f_1a13635e729bf660619c7f6a75b414bc3f">MyTestCAse::nested_hundred_thread_functionality</link>(){
+681 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+682 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_BANK_;
+683 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+684 &#32;&#32;&#32;&#32;
+685 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+686 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+687 &#32;&#32;&#32;&#32;
+688 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;1;
+689 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;100;&#32;
+690 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+691 
+692 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+693 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(&amp;<link linkend="class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_1abb973a1396c1083891d76845e2cfaf64">MyTestCAse::_nesting_</link>,&#32;<emphasis class="keyword">this</emphasis>,&#32;aib_ptr,&#32;boi_ptr,&#32;std::ref(<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>),&#32;transferAmount);
+694 &#32;&#32;&#32;&#32;}
+695 &#32;&#32;&#32;&#32;
+696 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+697 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+698 &#32;&#32;&#32;&#32;}
+699 &#32;&#32;&#32;&#32;
+700 &#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>);
+701 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>);
+702 &#32;&#32;&#32;&#32;
+703 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_-&gt;GetBalance()&#32;==&#32;200);
+704 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_TO_BANK_-&gt;GetBalance()&#32;==&#32;800);
+705 &#32;&#32;&#32;&#32;
+706 }
+707 
+708 
+<link linkend="class_my_test_c_ase_a3937532fe2a85f7e61518b8abffdb09a_1a3937532fe2a85f7e61518b8abffdb09a">715 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a3937532fe2a85f7e61518b8abffdb09a_1a3937532fe2a85f7e61518b8abffdb09a">MyTestCAse::nested_thousand_thread_functionality</link>(){
+716 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+717 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_BANK_;
+718 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+719 &#32;&#32;&#32;&#32;
+720 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+721 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+722 &#32;&#32;&#32;&#32;
+723 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;1;
+724 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;1000;&#32;
+725 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+726 
+727 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+728 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(&amp;<link linkend="class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_1abb973a1396c1083891d76845e2cfaf64">MyTestCAse::_nesting_</link>,&#32;<emphasis class="keyword">this</emphasis>,&#32;aib_ptr,&#32;boi_ptr,&#32;std::ref(<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>),&#32;transferAmount);
+729 &#32;&#32;&#32;&#32;}
+730 &#32;&#32;&#32;&#32;
+731 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+732 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+733 &#32;&#32;&#32;&#32;}
+734 &#32;&#32;&#32;&#32;
+735 &#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>);
+736 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>);
+737 &#32;&#32;&#32;&#32;
+738 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_-&gt;GetBalance()&#32;==&#32;-2500);
+739 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_TO_BANK_-&gt;GetBalance()&#32;==&#32;3500);
+740 &#32;&#32;&#32;&#32;
+741 }
+742 
+<link linkend="class_my_test_c_ase_a6399ca8bca3f10a0f114a070d3e3a570_1a6399ca8bca3f10a0f114a070d3e3a570">748 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a6399ca8bca3f10a0f114a070d3e3a570_1a6399ca8bca3f10a0f114a070d3e3a570">MyTestCAse::two_object_transfer_complete</link>(){
+749 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+750 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(100,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+751 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(200,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+752 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_BANK_;
+753 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+754 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a08f3a55850ffce171406f81f2f6c9c74_1a08f3a55850ffce171406f81f2f6c9c74">a</link>-&gt;<link linkend="classclient_a71edd1265ba9ae03f71b5dbf54548696_1a71edd1265ba9ae03f71b5dbf54548696">_two_account_transfer_</link>(aib_ptr,&#32;boi_ptr,&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>,&#32;20);
+755 &#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>);
+756 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>);
+757 &#32;&#32;&#32;&#32;
+758 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_-&gt;GetBalance()&#32;==&#32;480);
+759 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_TO_BANK_-&gt;GetBalance()&#32;==&#32;520);
+760 &#32;&#32;&#32;&#32;
+761 }
+<link linkend="class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_1ab9c76eb2dfd565a353ae9a5f604b36d9">765 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_1ab9c76eb2dfd565a353ae9a5f604b36d9">MyTestCAse::two_object_transfer_state_change</link>(){
+766 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+767 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_1ae0b2db5d35e25b3139beeda0705494f0">boa_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_a">BOA</link>(300,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+768 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_1aa8ccae9a5a7feb5bc47591c55a82d0cd">swplc_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_s_w_b_p_l_c">SWBPLC</link>(400,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+769 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_BANK_;
+770 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+771 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a08f3a55850ffce171406f81f2f6c9c74_1a08f3a55850ffce171406f81f2f6c9c74">a</link>-&gt;<link linkend="classclient_a71edd1265ba9ae03f71b5dbf54548696_1a71edd1265ba9ae03f71b5dbf54548696">_two_account_transfer_</link>(swplc_ptr,&#32;boa_ptr,&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>,&#32;20);
+772 &#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_ae0b2db5d35e25b3139beeda0705494f0_1ae0b2db5d35e25b3139beeda0705494f0">boa_ptr</link>);
+773 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_aa8ccae9a5a7feb5bc47591c55a82d0cd_1aa8ccae9a5a7feb5bc47591c55a82d0cd">swplc_ptr</link>);
+774 
+775 &#32;&#32;&#32;
+776 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(!(_FROM_BANK_-&gt;GetBalance()&#32;==&#32;500));
+777 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(!(_TO_BANK_-&gt;GetBalance()&#32;==&#32;500));
+778 &#32;&#32;&#32;&#32;
+779 }
+<link linkend="class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d6defd62_1ad5d3718a6ed5ef68ad711456d6defd62">787 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d6defd62_1ad5d3718a6ed5ef68ad711456d6defd62">MyTestCAse::nested_transaction_object_test</link>(){
+788 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+789 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_1a4f9f72374d3d15be7cdf16412c4d7ed3">ulster_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_l_s_t_e_r">ULSTER</link>(500,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+790 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_1a0ca634b597d6c0e136d632268853d5a7">unbl_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_n_b_l">UNBL</link>(600,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+791 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_BANK_;
+792 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+793 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a08f3a55850ffce171406f81f2f6c9c74_1a08f3a55850ffce171406f81f2f6c9c74">a</link>-&gt;<link linkend="classclient_ac0ebebd379895869c22f8919ad3bd37f_1ac0ebebd379895869c22f8919ad3bd37f">_nesting_</link>(ulster_ptr,&#32;unbl_ptr,&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>,&#32;20);
+794 &#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a0ca634b597d6c0e136d632268853d5a7_1a0ca634b597d6c0e136d632268853d5a7">unbl_ptr</link>);
+795 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a4f9f72374d3d15be7cdf16412c4d7ed3_1a4f9f72374d3d15be7cdf16412c4d7ed3">ulster_ptr</link>);
+796 &#32;&#32;&#32;&#32;
+797 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_-&gt;GetBalance()&#32;==&#32;440);
+798 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_TO_BANK_-&gt;GetBalance()&#32;==&#32;560);
+799 &#32;&#32;&#32;&#32;
+800 }
+801 <emphasis class="comment">/*</emphasis>
+802 <emphasis class="comment">&#32;*&#32;\brief&#32;The&#32;library&#32;function&#32;throws&#32;runtime&#32;error&#32;if&#32;the&#32;client&#32;application&#32;tries&#32;to&#32;</emphasis>
+803 <emphasis class="comment">&#32;*&#32;register&#32;null&#32;pointer&#32;in&#32;the&#32;library.&#32;Runtime&#32;error&#32;should&#32;be&#32;thrown</emphasis>
+804 <emphasis class="comment">&#32;*/</emphasis>
+<link linkend="class_my_test_c_ase_a80f9123880a0b79e4119f2f4699847ec_1a80f9123880a0b79e4119f2f4699847ec">805 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a80f9123880a0b79e4119f2f4699847ec_1a80f9123880a0b79e4119f2f4699847ec">MyTestCAse::register_null_pointer_throw_runtime_error</link>(){
+806 &#32;&#32;&#32;&#32;
+807 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;null_ptr;&#32;
+808 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+809 
+810 &#32;&#32;&#32;&#32;tx-&gt;_register(null_ptr);
+811 }
+812 
+<link linkend="class_my_test_c_ase_aa3a8c942db63dcf082f85013b7a09ee1_1aa3a8c942db63dcf082f85013b7a09ee1">818 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_aa3a8c942db63dcf082f85013b7a09ee1_1aa3a8c942db63dcf082f85013b7a09ee1">MyTestCAse::object_not_registered_throw_runtime_error</link>(){
+819 &#32;&#32;&#32;&#32;
+820 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;not_registered_object(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_a">BOA</link>(300,&#32;500,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+821 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+822 
+823 &#32;&#32;&#32;&#32;tx-&gt;load(not_registered_object);
+824 }
+825 
+<link linkend="class_my_test_c_ase_aae8eeb07dfdc5411255b064bc57b855d_1aae8eeb07dfdc5411255b064bc57b855d">831 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_aae8eeb07dfdc5411255b064bc57b855d_1aae8eeb07dfdc5411255b064bc57b855d">MyTestCAse::store_null_pointer_throw_runtime_error</link>(){
+832 &#32;&#32;&#32;&#32;
+833 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;null_ptr;&#32;
+834 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+835 
+836 &#32;&#32;&#32;&#32;tx-&gt;store(null_ptr);
+837 }
+<link linkend="class_my_test_c_ase_aadf771b5eefc5f32984cb6c177d217d0_1aadf771b5eefc5f32984cb6c177d217d0">841 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_aadf771b5eefc5f32984cb6c177d217d0_1aadf771b5eefc5f32984cb6c177d217d0">MyTestCAse::increase_nesting</link>(){
+842 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+843 &#32;&#32;&#32;&#32;tx-&gt;setTx_nesting_level(0);
+844 &#32;&#32;&#32;&#32;tx-&gt;_increase_tx_nesting();
+845 &#32;&#32;&#32;&#32;tx-&gt;_increase_tx_nesting();
+846 &#32;&#32;&#32;&#32;tx-&gt;_increase_tx_nesting();
+847 
+848 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(&#32;tx-&gt;getTx_nesting_level()&#32;==&#32;3);
+849 }
+<link linkend="class_my_test_c_ase_a2da7267d6799893e898032f5ae54c1e1_1a2da7267d6799893e898032f5ae54c1e1">853 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a2da7267d6799893e898032f5ae54c1e1_1a2da7267d6799893e898032f5ae54c1e1">MyTestCAse::decrease_nesting</link>(){
+854 &#32;&#32;&#32;&#32;
+855 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+856 &#32;&#32;&#32;&#32;tx-&gt;setTx_nesting_level(10);
+857 &#32;&#32;&#32;&#32;tx-&gt;_decrease_tx_nesting();
+858 &#32;&#32;&#32;&#32;tx-&gt;_decrease_tx_nesting();
+859 &#32;&#32;&#32;&#32;tx-&gt;_decrease_tx_nesting();
+860 &#32;&#32;&#32;&#32;
+861 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(&#32;tx-&gt;getTx_nesting_level()&#32;==&#32;7);
+862 &#32;&#32;&#32;&#32;tx-&gt;_decrease_tx_nesting();
+863 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(&#32;tx-&gt;getTx_nesting_level()&#32;==&#32;6);
+864 }
+<link linkend="class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc5181dae7_1af72ca0f6e19543b2bc80f8fc5181dae7">868 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc5181dae7_1af72ca0f6e19543b2bc80f8fc5181dae7">MyTestCAse::increase_nesting_fail</link>(){
+869 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+870 &#32;&#32;&#32;&#32;tx-&gt;setTx_nesting_level(0);
+871 &#32;&#32;&#32;&#32;tx-&gt;_increase_tx_nesting();
+872 &#32;&#32;&#32;&#32;tx-&gt;_increase_tx_nesting();
+873 &#32;&#32;&#32;&#32;tx-&gt;_increase_tx_nesting();
+874 
+875 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(&#32;!(tx-&gt;getTx_nesting_level()&#32;==&#32;0));
+876 
+877 }
+<link linkend="class_my_test_c_ase_ad2bec86c60b7992f24c4d59a00a1433b_1ad2bec86c60b7992f24c4d59a00a1433b">881 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_ad2bec86c60b7992f24c4d59a00a1433b_1ad2bec86c60b7992f24c4d59a00a1433b">MyTestCAse::decrease_nesting_fail</link>(){
+882 &#32;&#32;&#32;&#32;
+883 &#32;&#32;&#32;&#32;std::shared_ptr&lt;TX&gt;&#32;tx&#32;=&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a41cb0226cc4080c931651b13f74a0075_1a41cb0226cc4080c931651b13f74a0075">_get_tx</link>();
+884 &#32;&#32;&#32;&#32;tx-&gt;setTx_nesting_level(10);
+885 &#32;&#32;&#32;&#32;tx-&gt;_decrease_tx_nesting();
+886 &#32;&#32;&#32;&#32;tx-&gt;_decrease_tx_nesting();
+887 &#32;&#32;&#32;&#32;tx-&gt;_decrease_tx_nesting();
+888 &#32;&#32;&#32;&#32;
+889 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(&#32;!(tx-&gt;getTx_nesting_level()&#32;==&#32;10));
+890 &#32;&#32;&#32;&#32;tx-&gt;_decrease_tx_nesting();
+891 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(&#32;!(tx-&gt;getTx_nesting_level()&#32;==&#32;12));
+892 }
+<link linkend="class_my_test_c_ase_a124c2540c72219b92c477a1fbda21409_1a124c2540c72219b92c477a1fbda21409">896 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a124c2540c72219b92c477a1fbda21409_1a124c2540c72219b92c477a1fbda21409">MyTestCAse::compare_Transaction_Manager_singleton_instance</link>(){
+897 &#32;&#32;&#32;&#32;<link linkend="class_t_m">TM</link>&amp;&#32;tm_copy&#32;=&#32;<link linkend="class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_1a7ce5f35e0dae76df4fe116cf905bbe60">TM::Instance</link>();
+898 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>&#32;==&#32;tm_copy&#32;);
+899 }
+<link linkend="class_my_test_c_ase_abbb762450dffd3be8bf9d1b6ec757466_1abbb762450dffd3be8bf9d1b6ec757466">903 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_abbb762450dffd3be8bf9d1b6ec757466_1abbb762450dffd3be8bf9d1b6ec757466">MyTestCAse::TM_get_thread_map</link>(){
+904 &#32;&#32;&#32;&#32;
+905 &#32;&#32;&#32;&#32;std::map&lt;&#32;std::thread::id,&#32;int&#32;&gt;&#32;localMap;
+906 &#32;&#32;&#32;&#32;std::map&lt;&#32;std::thread::id,&#32;int&#32;&gt;&#32;tmMap&#32;=&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_1afb8bc9f42fe06c52747beb7f4c46915c">get_thread_Map</link>();
+907 &#32;&#32;&#32;&#32;
+908 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(localMap&#32;==&#32;tmMap);
+909 }
+910 
+<link linkend="class_my_test_c_ase_a41c93b64fb95fa83809b6457b608e2da_1a41c93b64fb95fa83809b6457b608e2da">922 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a41c93b64fb95fa83809b6457b608e2da_1a41c93b64fb95fa83809b6457b608e2da">MyTestCAse::multi_threaded_multiple_object_exchange_test</link>(){
+923 &#32;&#32;&#32;&#32;<emphasis class="comment">//ten&#32;threads&#32;using&#32;same&#32;objects</emphasis>
+924 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+925 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_FROM_BANK_;
+926 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+927 &#32;&#32;&#32;&#32;
+928 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(100,&#32;100,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+929 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(200,&#32;100,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+930 &#32;&#32;&#32;&#32;
+931 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;5;
+932 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;10;&#32;
+933 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+934 
+935 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+936 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(&amp;<link linkend="class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_1af0cc86421d281cc4a583a394ae86dbdd">MyTestCAse::_two_account_transfer_</link>,&#32;<emphasis class="keyword">this</emphasis>,&#32;aib_ptr,&#32;boi_ptr,&#32;std::ref(<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>),&#32;transferAmount);
+937 &#32;&#32;&#32;&#32;}
+938 &#32;&#32;&#32;&#32;
+939 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+940 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+941 &#32;&#32;&#32;&#32;}
+942 &#32;&#32;&#32;&#32;
+943 &#32;&#32;&#32;&#32;_FROM_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_a5554de9e3e6393a89c66c036c529720b_1a5554de9e3e6393a89c66c036c529720b">boi_ptr</link>);
+944 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>);
+945 
+946 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_FROM_BANK_-&gt;GetBalance()&#32;==&#32;50);
+947 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_TO_BANK_-&gt;GetBalance()&#32;==&#32;150);
+948 &#32;&#32;&#32;&#32;
+949 }
+950 
+<link linkend="class_my_test_c_ase_afea0c5983bf1fcc38d8962cfa6277da4_1afea0c5983bf1fcc38d8962cfa6277da4">954 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_afea0c5983bf1fcc38d8962cfa6277da4_1afea0c5983bf1fcc38d8962cfa6277da4">MyTestCAse::multi_threaded_single_object_test_with_ten_threads</link>(){
+955 &#32;&#32;&#32;&#32;<emphasis class="comment">//one&#32;object&#32;ten&#32;threads</emphasis>
+956 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+957 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_TO_BANK_;
+958 &#32;&#32;&#32;&#32;
+959 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(100,&#32;100,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+960 &#32;&#32;&#32;&#32;
+961 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;1;
+962 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;10;&#32;
+963 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+964 
+965 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+966 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(&amp;<link linkend="class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_1afe25c2ed3a8ab035f472fff6575f0e48">MyTestCAse::_one_account_transfer_</link>,&#32;<emphasis class="keyword">this</emphasis>,&#32;aib_ptr,&#32;std::ref(<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>),&#32;transferAmount);
+967 &#32;&#32;&#32;&#32;}
+968 &#32;&#32;&#32;&#32;
+969 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+970 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+971 &#32;&#32;&#32;&#32;}
+972 &#32;&#32;&#32;&#32;
+973 
+974 &#32;&#32;&#32;&#32;_TO_BANK_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(<link linkend="class_my_test_c_ase_adad50e8278b64aa0321000b528e5362c_1adad50e8278b64aa0321000b528e5362c">aib_ptr</link>);
+975 &#32;&#32;&#32;&#32;
+976 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_TO_BANK_-&gt;GetBalance()&#32;==&#32;110);
+977 
+978 }
+979 
+<link linkend="class_my_test_c_ase_a2f75b781b07bdbc3649c10d6845cb3cc_1a2f75b781b07bdbc3649c10d6845cb3cc">983 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_a2f75b781b07bdbc3649c10d6845cb3cc_1a2f75b781b07bdbc3649c10d6845cb3cc">MyTestCAse::single_threaded_multiple_object_test</link>(){
+984 &#32;&#32;&#32;&#32;<emphasis class="comment">//one&#32;transaction&#32;multiple&#32;objects&#32;six&#32;object&#32;function</emphasis>
+985 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+986 &#32;&#32;&#32;&#32;std::vector&lt;std::shared_ptr&#32;&lt;&#32;OSTM&gt;&gt;_customer_vec;&#32;
+987 &#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;10;&#32;++i)&#32;{
+988 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;6&#32;==&#32;0)&#32;{
+989 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(i,&#32;10,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+990 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+991 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;5&#32;==&#32;0)&#32;{
+992 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(i,&#32;10,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+993 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+994 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;4&#32;==&#32;0)&#32;{
+995 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_a">BOA</link>(i,&#32;10,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+996 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+997 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;3&#32;==&#32;0)&#32;{
+998 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_s_w_b_p_l_c">SWBPLC</link>(i,&#32;10,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+999 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+1000 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;2&#32;==&#32;0)&#32;{
+1001 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_l_s_t_e_r">ULSTER</link>(i,&#32;10,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+1002 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+1003 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;1&#32;==&#32;0)&#32;{
+1004 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_n_b_l">UNBL</link>(i,&#32;10,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+1005 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+1006 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+1007 &#32;&#32;&#32;&#32;}
+1008 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_one_,&#32;_two_,&#32;_three_,&#32;_four_,&#32;_five_,&#32;_six_;
+1009 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;loop&#32;=&#32;5;
+1010 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;1;
+1011 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;1;&#32;
+1012 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+1013 
+1014 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{&#32;
+1015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(&amp;<link linkend="class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_1a9ec1ddfc6e7f727446e1a8355086c2dd">MyTestCAse::_collection_bject_</link>,&#32;<emphasis class="keyword">this</emphasis>,&#32;std::ref(_customer_vec),&#32;&#32;std::ref(<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>),&#32;transferAmount&#32;,&#32;loop);
+1016 &#32;&#32;&#32;&#32;}
+1017 &#32;&#32;&#32;&#32;
+1018 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+1019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+1020 &#32;&#32;&#32;&#32;}
+1021 &#32;&#32;&#32;&#32;
+1022 &#32;&#32;&#32;&#32;_one_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(_customer_vec[0]);
+1023 &#32;&#32;&#32;&#32;_two_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(_customer_vec[1]);
+1024 &#32;&#32;&#32;&#32;_three_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(_customer_vec[2]);
+1025 &#32;&#32;&#32;&#32;_four_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(_customer_vec[3]);
+1026 &#32;&#32;&#32;&#32;_five_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(_customer_vec[4]);
+1027 &#32;&#32;&#32;&#32;_six_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(_customer_vec[5]);
+1028 &#32;&#32;&#32;&#32;
+1029 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_one_-&gt;GetBalance()&#32;==&#32;15);
+1030 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_two_-&gt;GetBalance()&#32;==&#32;15);
+1031 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_three_-&gt;GetBalance()&#32;==&#32;15);
+1032 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_four_-&gt;GetBalance()&#32;==&#32;15);
+1033 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_five_-&gt;GetBalance()&#32;==&#32;15);
+1034 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_six_-&gt;GetBalance()&#32;==&#32;15);
+1035 }
+1036 
+<link linkend="class_my_test_c_ase_ae49b83ddf0fa297dbb8639001644fa5c_1ae49b83ddf0fa297dbb8639001644fa5c">1040 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_my_test_c_ase_ae49b83ddf0fa297dbb8639001644fa5c_1ae49b83ddf0fa297dbb8639001644fa5c">MyTestCAse::multi_threaded_multiple_objects_test</link>(){
+1041 &#32;&#32;&#32;&#32;<emphasis class="comment">//three&#32;threads&#32;all&#32;thread&#32;use&#32;different&#32;objects&#32;</emphasis>
+1042 
+1043 &#32;&#32;&#32;&#32;<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>.<link linkend="class_t_m_a5e2d1127f2429f2f524d25f430eade06_1a5e2d1127f2429f2f524d25f430eade06">_TX_EXIT</link>();
+1044 &#32;&#32;&#32;&#32;std::vector&lt;std::shared_ptr&#32;&lt;&#32;OSTM&gt;&gt;_customer_vec;&#32;
+1045 &#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;10;&#32;++i)&#32;{
+1046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;6&#32;==&#32;0)&#32;{
+1047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_a_i_b">AIB</link>(i,&#32;10,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+1048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+1049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;5&#32;==&#32;0)&#32;{
+1050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_i">BOI</link>(i,&#32;10,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+1051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+1052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;4&#32;==&#32;0)&#32;{
+1053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_b_o_a">BOA</link>(i,&#32;10,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+1054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+1055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;3&#32;==&#32;0)&#32;{
+1056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_s_w_b_p_l_c">SWBPLC</link>(i,&#32;10,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+1057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+1058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;2&#32;==&#32;0)&#32;{
+1059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_l_s_t_e_r">ULSTER</link>(i,&#32;10,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+1060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+1061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;<emphasis class="keywordflow">if</emphasis>&#32;(i&#32;%&#32;1&#32;==&#32;0)&#32;{
+1062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;sharedptr(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_u_n_b_l">UNBL</link>(i,&#32;10,&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>,&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Kilkenny,&#32;Co.Kilkenny&quot;</emphasis>));
+1063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;_customer_vec.push_back(std::move(sharedptr));
+1064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+1065 &#32;&#32;&#32;&#32;}
+1066 &#32;&#32;&#32;&#32;std::shared_ptr&lt;BANK&gt;&#32;_one_,&#32;_two_,&#32;_three_,&#32;_four_,&#32;_five_,&#32;_six_;
+1067 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;loop&#32;=&#32;1;
+1068 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;transferAmount&#32;=&#32;1;
+1069 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;threadArraySize&#32;=&#32;10;&#32;
+1070 &#32;&#32;&#32;&#32;std::thread&#32;thArray[threadArraySize];
+1071 
+1072 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{&#32;
+1073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i]&#32;=&#32;std::thread(&amp;<link linkend="class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_1a9ec1ddfc6e7f727446e1a8355086c2dd">MyTestCAse::_collection_bject_</link>,&#32;<emphasis class="keyword">this</emphasis>,&#32;std::ref(_customer_vec),&#32;&#32;std::ref(<link linkend="class_my_test_c_ase_a422e6e5d4ddedea384be96031c89b72b_1a422e6e5d4ddedea384be96031c89b72b">tm</link>),&#32;transferAmount&#32;,&#32;loop);
+1074 &#32;&#32;&#32;&#32;}
+1075 &#32;&#32;&#32;&#32;
+1076 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;threadArraySize;&#32;++i)&#32;{
+1077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;thArray[i].join();
+1078 &#32;&#32;&#32;&#32;}
+1079 &#32;&#32;&#32;&#32;
+1080 &#32;&#32;&#32;&#32;_one_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(_customer_vec[0]);
+1081 &#32;&#32;&#32;&#32;_two_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(_customer_vec[1]);
+1082 &#32;&#32;&#32;&#32;_three_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(_customer_vec[2]);
+1083 &#32;&#32;&#32;&#32;_four_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(_customer_vec[3]);
+1084 &#32;&#32;&#32;&#32;_five_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(_customer_vec[4]);
+1085 &#32;&#32;&#32;&#32;_six_&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_b_a_n_k">BANK</link>&gt;&#32;(_customer_vec[5]);
+1086 &#32;
+1087 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_one_-&gt;GetBalance()&#32;==&#32;20);
+1088 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_two_-&gt;GetBalance()&#32;==&#32;20);
+1089 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_three_-&gt;GetBalance()&#32;==&#32;20);
+1090 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_four_-&gt;GetBalance()&#32;==&#32;20);
+1091 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_five_-&gt;GetBalance()&#32;==&#32;20);
+1092 &#32;&#32;&#32;&#32;CPPUNIT_ASSERT(_six_-&gt;GetBalance()&#32;==&#32;20);
+1093 }
+    </computeroutput></literallayout>
+</section>

@@ -1,0 +1,106 @@
+\hypertarget{_t_x_8h_source}{}\subsection{T\+X.\+h}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/* }
+00002 \textcolor{comment}{ * File:   TX.h}
+00003 \textcolor{comment}{ * Author: Zoltan Fuzesi C00197361, }
+00004 \textcolor{comment}{ * IT Carlow, Software Engineering, }
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * Supervisor : Joe Kehoe, }
+00007 \textcolor{comment}{ *}
+00008 \textcolor{comment}{ * C++ Software Transactional Memory, }
+00009 \textcolor{comment}{ * }
+00010 \textcolor{comment}{ * Created on December 18, 2017, 2:09 PM}
+00011 \textcolor{comment}{ * OSTM base class function declarations.}
+00012 \textcolor{comment}{ */}
+00013 
+00014 \textcolor{preprocessor}{#ifndef TX\_H}
+00015 \textcolor{preprocessor}{#define TX\_H}
+00016 \textcolor{preprocessor}{#include <cstdlib>}
+00017 \textcolor{preprocessor}{#include <utility>}
+00018 \textcolor{preprocessor}{#include <map>}
+00019 \textcolor{preprocessor}{#include <iostream>}
+00020 \textcolor{preprocessor}{#include <mutex>}
+00021 \textcolor{preprocessor}{#include <unistd.h>}
+00022 \textcolor{preprocessor}{#include <memory>}
+00023 \textcolor{preprocessor}{#include <stdio.h>}
+00024 \textcolor{preprocessor}{#include <thread>}
+00025 \textcolor{preprocessor}{#include "\hyperlink{_o_s_t_m_8h}{OSTM.h}"}
+00026 
+00027 \textcolor{keyword}{class }\hyperlink{class_t_m}{TM};
+00028 
+\hypertarget{_t_x_8h_source.tex_l00029}{}\hyperlink{class_t_x}{00029} \textcolor{keyword}{class }\hyperlink{class_t_x}{TX} \{
+00030 \textcolor{keyword}{public}:
+00031     \textcolor{comment}{/*}
+00032 \textcolor{comment}{     * Custom Constructor}
+00033 \textcolor{comment}{     */}
+00034     \hyperlink{class_t_x_a8a4b83eab0171ae834bfa92bbced1094_a8a4b83eab0171ae834bfa92bbced1094}{TX}(std::thread::id \textcolor{keywordtype}{id});
+00035     \textcolor{comment}{/*}
+00036 \textcolor{comment}{     * De-constructor}
+00037 \textcolor{comment}{     */}
+00038     \hyperlink{class_t_x_abecf854cc3228ab6dd51175b3cd1c70a_abecf854cc3228ab6dd51175b3cd1c70a}{~TX}();
+00039     \textcolor{comment}{/*}
+00040 \textcolor{comment}{     * Default copy constructor}
+00041 \textcolor{comment}{     */}
+00042     \hyperlink{class_t_x_a8a4b83eab0171ae834bfa92bbced1094_a8a4b83eab0171ae834bfa92bbced1094}{TX}(\textcolor{keyword}{const} \hyperlink{class_t_x}{TX}& orig);
+00043     \textcolor{comment}{/*}
+00044 \textcolor{comment}{     * Delete all map entries associated with the main process}
+00045 \textcolor{comment}{     */}
+00046     \textcolor{keywordtype}{void} \hyperlink{class_t_x_aa9739c5c2077454c779098db7baefc2b_aa9739c5c2077454c779098db7baefc2b}{ostm\_exit}();
+00047     \textcolor{comment}{/*}
+00048 \textcolor{comment}{     *  Register OSTM pointer into STM library }
+00049 \textcolor{comment}{     */}
+00050     \textcolor{keywordtype}{void} \hyperlink{class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f51df97ac483e5bfe7db6ca6e}{\_register}(std::shared\_ptr<OSTM>  \textcolor{keywordtype}{object});
+00051     \textcolor{comment}{/*}
+00052 \textcolor{comment}{     * Load a copy of OSTM shared pointer to main process }
+00053 \textcolor{comment}{     */}
+00054     std::shared\_ptr<OSTM>  \hyperlink{class_t_x_a1d78262b8831ddd042ed491f2e600e24_a1d78262b8831ddd042ed491f2e600e24}{load}(std::shared\_ptr<OSTM>  \textcolor{keywordtype}{object});
+00055     \textcolor{comment}{/*}
+00056 \textcolor{comment}{     * Store transactional changes}
+00057 \textcolor{comment}{     */}
+00058     \textcolor{keywordtype}{void} \hyperlink{class_t_x_a7dbcb369aa4a3370b6c6829d278ece5d_a7dbcb369aa4a3370b6c6829d278ece5d}{store}(std::shared\_ptr<OSTM>  \textcolor{keywordtype}{object});
+00059     \textcolor{comment}{/*}
+00060 \textcolor{comment}{     * Commit transactional changes}
+00061 \textcolor{comment}{     */}
+00062     \textcolor{keywordtype}{bool} \hyperlink{class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356b35e557448e58d260087356}{commit}();
+00063     \textcolor{comment}{/*}
+00064 \textcolor{comment}{     * Increase TX (Transaction) nesting level by one}
+00065 \textcolor{comment}{     */}
+00066     \textcolor{keywordtype}{void} \hyperlink{class_t_x_a1384bdf12d795854b5d32e7f61ffbdb8_a1384bdf12d795854b5d32e7f61ffbdb8}{\_increase\_tx\_nesting}();
+00067     \textcolor{comment}{/*}
+00068 \textcolor{comment}{     * Decrease TX (transaction) nesting level by one}
+00069 \textcolor{comment}{     */}
+00070     \textcolor{keywordtype}{void} \hyperlink{class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f576326588628ade96b27b4b1}{\_decrease\_tx\_nesting}();
+00071     \textcolor{comment}{/*}
+00072 \textcolor{comment}{     * Only TM Transaction Manager can create instance of TX Transaction}
+00073 \textcolor{comment}{     */}
+\hypertarget{_t_x_8h_source.tex_l00074}{}\hyperlink{class_t_x_adf1ccda799ef5c419cb43b8ae55eb45c_adf1ccda799ef5c419cb43b8ae55eb45c}{00074}     \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{class_t_m}{TM};
+00075     \textcolor{comment}{/*}
+00076 \textcolor{comment}{     * ONLY FOR TESTING!!! returning the number of rollback happened during transactions}
+00077 \textcolor{comment}{     */}
+00078     \textcolor{keywordtype}{int} \hyperlink{class_t_x_ae9bf97930c4670f59d334b345353a71e_ae9bf97930c4670f59d334b345353a71e}{getTest\_counter}();
+00079     \textcolor{comment}{/*}
+00080 \textcolor{comment}{     * test\_counter int ONLY FOR TESTING!!! store number of rollbacks}
+00081 \textcolor{comment}{     */}
+\hypertarget{_t_x_8h_source.tex_l00082}{}\hyperlink{class_t_x_a25838234aab99ae891a90eb8623a8b3c_a25838234aab99ae891a90eb8623a8b3c}{00082}     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \hyperlink{class_t_x_a25838234aab99ae891a90eb8623a8b3c_a25838234aab99ae891a90eb8623a8b3c}{test\_counter};
+00083     \textcolor{comment}{/*}
+00084 \textcolor{comment}{     * TESTING ONLY print all transactions}
+00085 \textcolor{comment}{     */}
+00086     \textcolor{keywordtype}{void} \hyperlink{class_t_x_a3d96ed91eb9ec73e16589f705661c5a7_a3d96ed91eb9ec73e16589f705661c5a7}{\_print\_all\_tx}() ;
+00087 
+00088 
+00089 \textcolor{keyword}{private}:
+\hypertarget{_t_x_8h_source.tex_l00093}{}\hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{00093}     std::map< int, std::shared\_ptr<OSTM>  > \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection};
+\hypertarget{_t_x_8h_source.tex_l00097}{}\hyperlink{class_t_x_a145a1c74b521f277fe481971a930b249_a145a1c74b521f277fe481971a930b249}{00097}     std::thread::id \hyperlink{class_t_x_a145a1c74b521f277fe481971a930b249_a145a1c74b521f277fe481971a930b249}{transaction\_Number};
+\hypertarget{_t_x_8h_source.tex_l00101}{}\hyperlink{class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_ae8f413fd7f4fea322e7ad3c668f9898e}{00101}     \textcolor{keywordtype}{int} \hyperlink{class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_ae8f413fd7f4fea322e7ad3c668f9898e}{\_tx\_nesting\_level};
+\hypertarget{_t_x_8h_source.tex_l00105}{}\hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{00105}     \textcolor{keyword}{static} std::map<int, std::shared\_ptr<OSTM>  >\hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{main\_Process\_Map\_collection};
+\hypertarget{_t_x_8h_source.tex_l00109}{}\hyperlink{class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f}{00109}     \textcolor{keyword}{static} std::map<pid\_t, std::map< int, int >> \hyperlink{class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f}{process\_map\_collection};
+00113     std::map< int , int > \hyperlink{class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_a3f5671423cb7b9f9c98f8a25f2a4b545}{get\_thread\_Map}();
+\hypertarget{_t_x_8h_source.tex_l00117}{}\hyperlink{class_t_x_aa688a8c96fa3cdf8cd92e267463536dc_aa688a8c96fa3cdf8cd92e267463536dc}{00117}     \textcolor{keyword}{static} std::mutex \hyperlink{class_t_x_aa688a8c96fa3cdf8cd92e267463536dc_aa688a8c96fa3cdf8cd92e267463536dc}{register\_Lock};
+00121     \textcolor{keyword}{const} std::thread::id \hyperlink{class_t_x_a9eba04944d449285905b60ec47223cff_a9eba04944d449285905b60ec47223cff}{\_get\_tx\_number}() \textcolor{keyword}{const};
+00125     \textcolor{keywordtype}{void} \hyperlink{class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413f0463}{\_release\_object\_lock}();
+00129     \textcolor{keywordtype}{void} \hyperlink{class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_ae045534c4a9d39bd5c6ea2a39a372a79}{th\_exit}();
+00130     
+00131 \};
+00132 \textcolor{preprocessor}{#endif // \_TX\_H\_}
+\end{DoxyCode}

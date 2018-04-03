@@ -287,7 +287,7 @@ const <link linkend="class_t_x">TX</link> &amp; orig)</para>
             </simplesect>
             <simplesect>
                 <title>std::mutex TX::register_Lock</title>                
-<para>register_Lock, std::mutex to control shared access on MAIN MAP </para>
+<para>register_Lock, std::mutex to control shared access on shared MAIN collection </para>
 
                 <para>Definition at line 117 of file TX.h</para>
                 <para>The Documentation for this struct was generated from the following file: </para>
@@ -437,7 +437,7 @@ return TRUE, otherwise return FALSE, indicate the transaction muist restart.</em
                             <row>
                                 <entry>id</entry>
                                 <entry>
-<para>std::thread::id, represent the transaction number when to the TransactionManager </para>
+<para>std::thread::id, represent the transaction number to the Transaction Manager </para>
 </entry>
                             </row>
                         </tbody>

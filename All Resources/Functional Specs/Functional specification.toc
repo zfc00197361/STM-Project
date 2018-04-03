@@ -10,5 +10,7 @@
 \contentsline {section}{\numberline {4}Target users}{7}{section.4}
 \contentsline {section}{\numberline {5}Metrics}{8}{section.5}
 \contentsline {subsubsection}{\numberline {5.0.1}FURPS}{9}{subsubsection.5.0.1}
-\contentsline {section}{\numberline {6}Other STM libraries}{9}{section.6}
-\contentsline {section}{\numberline {7}Bibliography}{11}{section.7}
+\contentsline {section}{\numberline {6}Other STM libraries}{10}{section.6}
+\contentsline {section}{\numberline {7}Project Iterations / Updated}{11}{section.7}
+\contentsline {subsection}{\numberline {7.1}Detailed Iterations description / Updated}{12}{subsection.7.1}
+\contentsline {section}{\numberline {8}Bibliography}{14}{section.8}

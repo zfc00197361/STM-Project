@@ -1,0 +1,40 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{About the project}{}% 2
+\BOOKMARK [1][-]{section.3}{Problems encountered and resolved}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Storing unknown objects}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Template class and function}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{RAW pointers with polymorphic objects}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Segmentation fault, deadlock, live-lock}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{Synchronizing commit function without locking code segment }{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.6}{Resolved problems }{section.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.6.1}{Storing unknown objects }{subsection.3.6}% 10
+\BOOKMARK [3][-]{subsubsection.3.6.2}{Template class and function }{subsection.3.6}% 11
+\BOOKMARK [3][-]{subsubsection.3.6.3}{RAW pointers with polymorphic objects}{subsection.3.6}% 12
+\BOOKMARK [3][-]{subsubsection.3.6.4}{Segmentation fault}{subsection.3.6}% 13
+\BOOKMARK [1][-]{section.4}{Project description/achievement}{}% 14
+\BOOKMARK [2][-]{subsection.4.1}{Achieved}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.2}{Not achieved}{section.4}% 16
+\BOOKMARK [1][-]{section.5}{What learned}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{Technical learning}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.2}{Personal learning}{section.5}% 19
+\BOOKMARK [1][-]{section.6}{What I would do differently if starting it again}{}% 20
+\BOOKMARK [1][-]{section.7}{Report on document update}{}% 21
+\BOOKMARK [2][-]{subsection.7.1}{Additional research}{section.7}% 22
+\BOOKMARK [1][-]{section.8}{Module description}{}% 23
+\BOOKMARK [2][-]{subsubsection.8.0.1}{Transaction Manager}{section.8}% 24
+\BOOKMARK [3][-]{subsubsection.8.0.2}{Transaction object}{subsubsection.8.0.1}% 25
+\BOOKMARK [3][-]{subsubsection.8.0.3}{Base object}{subsubsection.8.0.1}% 26
+\BOOKMARK [2][-]{subsection.8.1}{Public API functions for transactions}{section.8}% 27
+\BOOKMARK [3][-]{subsubsection.8.1.1}{Register}{subsection.8.1}% 28
+\BOOKMARK [3][-]{subsubsection.8.1.2}{Load}{subsection.8.1}% 29
+\BOOKMARK [3][-]{subsubsection.8.1.3}{Store}{subsection.8.1}% 30
+\BOOKMARK [3][-]{subsubsection.8.1.4}{Commit}{subsection.8.1}% 31
+\BOOKMARK [2][-]{subsection.8.2}{Private API and Transaction Manager functions}{section.8}% 32
+\BOOKMARK [3][-]{subsubsection.8.2.1}{Transaction Manager}{subsection.8.2}% 33
+\BOOKMARK [3][-]{subsubsection.8.2.2}{Transaction object}{subsection.8.2}% 34
+\BOOKMARK [1][-]{section.9}{Data structure}{}% 35
+\BOOKMARK [2][-]{subsection.9.1}{Transaction Manager}{section.9}% 36
+\BOOKMARK [2][-]{subsection.9.2}{Transaction object \(TX\)}{section.9}% 37
+\BOOKMARK [1][-]{section.10}{Testing}{}% 38
+\BOOKMARK [1][-]{section.11}{Conclusion}{}% 39
+\BOOKMARK [1][-]{section.12}{Bibliography}{}% 40

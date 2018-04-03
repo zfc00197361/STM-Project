@@ -1,0 +1,3928 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.1)  1 APR 2018 17:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**refman.tex
+(./refman.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2015/06/22 v2.0b fixes to LaTeX (obsolete)
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count87
+\calc@Bcount=\count88
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count89
+\calc@Cskip=\skip45
+) (./doxygen.sty
+Package: doxygen 
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen105
+\extrarowheight=\dimen106
+\NC@list=\toks14
+\extratabsurround=\skip46
+\backup@length=\skip47
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count90
+\float@exts=\toks15
+\float@box=\box26
+\@float@everytoks=\toks16
+\@floatcapt=\box27
+) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks17
+\verbatim@line=\toks18
+\verbatim@in@stream=\read1
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+\everycr=\toks19
+\minrowclearance=\skip48
+)
+\rownum=\count92
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip49
+\LTright=\skip50
+\LTpre=\skip51
+\LTpost=\skip52
+\LTchunksize=\count93
+\LTcapwidth=\dimen107
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count94
+\LT@rows=\count95
+\c@LT@tables=\count96
+\c@LT@chunks=\count97
+\LT@p@ftn=\toks20
+) (/usr/share/texlive/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box32
+\sift@deathcycles=\count98
+\@vwid@loff=\dimen108
+\@vwid@roff=\dimen109
+)
+\c@taburow=\count99
+\tabu@nbcols=\count100
+\tabu@cnt=\count101
+\tabu@Xcol=\count102
+\tabu@alloc=\count103
+\tabu@nested=\count104
+\tabu@target=\dimen110
+\tabu@spreadtarget=\dimen111
+\tabu@naturalX=\dimen112
+\tabucolX=\dimen113
+\tabu@Xsum=\dimen114
+\extrarowdepth=\dimen115
+\abovetabulinesep=\dimen116
+\belowtabulinesep=\dimen117
+\tabustrutrule=\dimen118
+\tabu@thebody=\toks21
+\tabu@footnotes=\toks22
+\tabu@box=\box33
+\tabu@arstrutbox=\box34
+\tabu@hleads=\box35
+\tabu@vleads=\box36
+\tabu@cellskip=\skip53
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
+\TX@col@width=\dimen119
+\TX@old@table=\dimen120
+\TX@old@col=\dimen121
+\TX@target=\dimen122
+\TX@delta=\dimen123
+\TX@cols=\count105
+\TX@ftn=\toks23
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen124
+)
+\xrefbox=\box37
+\xreflength=\skip54
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texl
+ive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count106
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
+)
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
+) (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box38
+)
+\tc@llx=\dimen127
+\tc@lly=\dimen128
+\tc@urx=\dimen129
+\tc@ury=\dimen130
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen131
+\adjbox@Height=\dimen132
+\adjbox@Depth=\dimen133
+\adjbox@Totalheight=\dimen134
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count107
+)) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+01E02 (decimal 7682)
+   defining Unicode char U+01E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+)) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
+\c@tracingmulticols=\count108
+\mult@box=\box39
+\multicol@leftmargin=\dimen135
+\c@unbalance=\count109
+\c@collectmore=\count110
+\doublecol@number=\count111
+\multicoltolerance=\count112
+\multicolpretolerance=\count113
+\full@width=\dimen136
+\page@free=\dimen137
+\premulticols=\dimen138
+\postmulticols=\dimen139
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box40
+\last@line=\box41
+\maxbalancingoverflow=\dimen140
+\mult@rightbox=\box42
+\mult@grightbox=\box43
+\mult@gfirstbox=\box44
+\mult@firstbox=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\c@columnbadness=\count114
+\c@finalcolumnbadness=\count115
+\last@try=\dimen141
+\multicolovershoot=\dimen142
+\multicolundershoot=\dimen143
+\mult@nat@firstbox=\box63
+\colbreak@box=\box64
+\mc@col@check@num=\count116
+) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2015/12/03 v1.1r UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+) (/usr/share/texlive/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks28
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+) (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count117
+\Gm@cntv=\count118
+\c@Gm@tempcnt=\count119
+\Gm@bindingoffset=\dimen144
+\Gm@wd@mp=\dimen145
+\Gm@odd@mp=\dimen146
+\Gm@even@mp=\dimen147
+\Gm@layoutwidth=\dimen148
+\Gm@layoutheight=\dimen149
+\Gm@layouthoffset=\dimen150
+\Gm@layoutvoffset=\dimen151
+\Gm@dimlist=\toks29
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip57
+\f@ncyO@elh=\skip58
+\f@ncyO@erh=\skip59
+\f@ncyO@olh=\skip60
+\f@ncyO@orh=\skip61
+\f@ncyO@elf=\skip62
+\f@ncyO@erf=\skip63
+\f@ncyO@olf=\skip64
+\f@ncyO@orf=\skip65
+) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip66
+\bibsep=\skip67
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count120
+) (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 44.
+\cftparskip=\skip68
+\cftbeforetoctitleskip=\skip69
+\cftaftertoctitleskip=\skip70
+\cftbeforepartskip=\skip71
+\cftpartnumwidth=\skip72
+\cftpartindent=\skip73
+\cftbeforesecskip=\skip74
+\cftsecindent=\skip75
+\cftsecnumwidth=\skip76
+\cftbeforesubsecskip=\skip77
+\cftsubsecindent=\skip78
+\cftsubsecnumwidth=\skip79
+\cftbeforesubsubsecskip=\skip80
+\cftsubsubsecindent=\skip81
+\cftsubsubsecnumwidth=\skip82
+\cftbeforeparaskip=\skip83
+\cftparaindent=\skip84
+\cftparanumwidth=\skip85
+\cftbeforesubparaskip=\skip86
+\cftsubparaindent=\skip87
+\cftsubparanumwidth=\skip88
+\cftbeforeloftitleskip=\skip89
+\cftafterloftitleskip=\skip90
+\cftbeforefigskip=\skip91
+\cftfigindent=\skip92
+\cftfignumwidth=\skip93
+\c@lofdepth=\count121
+\c@lotdepth=\count122
+\cftbeforelottitleskip=\skip94
+\cftafterlottitleskip=\skip95
+\cftbeforetabskip=\skip96
+\cfttabindent=\skip97
+\cfttabnumwidth=\skip98
+)
+\@indexfile=\write3
+\openout3 = `refman.idx'.
+
+Writing index file refman.idx
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen152
+\Hy@linkcounter=\count123
+\Hy@pagecounter=\count124
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count125
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing ON on input line 4461.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4688.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
+Package: backref 2012/07/25 v1.38 Bibliographical back referencing
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+))
+\c@Hy@tempcnt=\count126
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen153
+\Fld@menulength=\count127
+\Field@Width=\dimen154
+\Fld@charsize=\dimen155
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing ON on input line 6308.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count128
+\c@Item=\count129
+\c@Hfootnote=\count130
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count131
+\c@bookmark@seq@number=\count132
+\Hy@SectionHShift=\skip99
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 103.
+Package hyperref Info: Option `unicode' set `true' on input line 103.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2012/11/06 v6.83m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen156
+\captionmargin@=\dimen157
+\captionwidth=\dimen158
+\caption@tempdima=\dimen159
+\caption@indent=\dimen160
+\caption@parindent=\dimen161
+\caption@hangindent=\dimen162
+)
+\c@ContinuedFloat=\count133
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)) (./refman.aux
+
+LaTeX Warning: Label `class_my_test_c_ase_a74ba217b63d4a21ff11575b136bc5c67_a74
+ba217b63d4a21ff11575b136bc5c67' multiply defined.
+
+)
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 115.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 115.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 115.
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count134
+\scratchdimen=\dimen163
+\scratchbox=\box65
+\nofMPsegments=\count135
+\nofMParguments=\count136
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count137
+\MPscratchDim=\dimen164
+\MPnumerator=\count138
+\makeMPintoPDFobject=\count139
+\everyMPtoPDFconversion=\toks31
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=121.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box66
+Package backref Info: ** backref set up for natbib ** on input line 115.
+Package hyperref Info: Link coloring ON on input line 115.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count140
+)
+LaTeX Info: Redefining \ref on input line 115.
+LaTeX Info: Redefining \pageref on input line 115.
+LaTeX Info: Redefining \nameref on input line 115.
+(./refman.out) (./refman.out)
+\@outlinefile=\write4
+\openout4 = `refman.out'.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Option `pageanchor' set `false' on input line 121.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 121.
+
+Package hyperref Info: Option `unicode' set `true' on input line 121.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 126.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 128.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 135.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 135.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 12.9599pt on input line 135.
+(./refman.toc
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 1.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 1.
+(/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 8.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 235.
+[2] [3] [4])
+\tf@toc=\write5
+\openout5 = `refman.toc'.
+
+Package hyperref Info: Option `pageanchor' set `true' on input line 137.
+(./hierarchy.tex
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 10.79993pt on input line 1.
+[1]) (./annotated.tex) (./files.tex [2]) (./class_a_i_b.tex
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 6.29996pt on input line 1.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) <class_a_i_b__inherit__graph.pdf, id=731, 221.82875pt x 1044.90375pt>
+File: class_a_i_b__inherit__graph.pdf Graphic file (type pdf)
+<use class_a_i_b__inherit__graph.pdf>
+Package pdftex.def Info: class_a_i_b__inherit__graph.pdf used on input line 14.
+
+(pdftex.def)             Requested size: 116.76308pt x 550.0pt.
+[3] <class_a_i_b__coll__graph.pdf, id=764, 221.82875pt x 1044.90375pt>
+File: class_a_i_b__coll__graph.pdf Graphic file (type pdf)
+<use class_a_i_b__coll__graph.pdf>
+Package pdftex.def Info: class_a_i_b__coll__graph.pdf used on input line 24.
+(pdftex.def)             Requested size: 116.76308pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[4 <./class_a_i_b__inherit__graph.pdf>]
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 27.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 30.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 30.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 39.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 39.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 39.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 39.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 39.
+[5 <./class_a_i_b__coll__graph.pdf>]
+
+LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
+(Font)              using `T1/pcr/m/n' instead on input line 103.
+
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 139.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 8.99994pt on input line 139.
+LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 139.
+LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
+(Font)              scaled to size 6.29996pt on input line 139.
+[6]
+<class_a_i_b_aa0faccb7aadf423d12bddb2469ff5053_aa0faccb7aadf423d12bddb2469ff505
+3_cgraph.pdf, id=946, 228.855pt x 100.375pt>
+File: class_a_i_b_aa0faccb7aadf423d12bddb2469ff5053_aa0faccb7aadf423d12bddb2469
+ff5053_cgraph.pdf Graphic file (type pdf)
+
+<use class_a_i_b_aa0faccb7aadf423d12bddb2469ff5053_aa0faccb7aadf423d12bddb2469f
+f5053_cgraph.pdf>
+Package pdftex.def Info: class_a_i_b_aa0faccb7aadf423d12bddb2469ff5053_aa0faccb
+7aadf423d12bddb2469ff5053_cgraph.pdf used on input line 199.
+(pdftex.def)             Requested size: 228.0pt x 100.00409pt.
+[7 <./class_a_i_b_aa0faccb7aadf423d12bddb2469ff5053_aa0faccb7aadf423d12bddb2469
+ff5053_cgraph.pdf>]
+<class_a_i_b_ad76f25ce86cb42028440f41c371903e0_ad76f25ce86cb42028440f41c371903e
+0_cgraph.pdf, id=980, 295.1025pt x 100.375pt>
+File: class_a_i_b_ad76f25ce86cb42028440f41c371903e0_ad76f25ce86cb42028440f41c37
+1903e0_cgraph.pdf Graphic file (type pdf)
+
+<use class_a_i_b_ad76f25ce86cb42028440f41c371903e0_ad76f25ce86cb42028440f41c371
+903e0_cgraph.pdf>
+Package pdftex.def Info: class_a_i_b_ad76f25ce86cb42028440f41c371903e0_ad76f25c
+e86cb42028440f41c371903e0_cgraph.pdf used on input line 290.
+(pdftex.def)             Requested size: 294.0pt x 100.00255pt.
+[8 <./class_a_i_b_ad76f25ce86cb42028440f41c371903e0_ad76f25ce86cb42028440f41c37
+1903e0_cgraph.pdf>]
+<class_a_i_b_a987107f3d7a04790f84c1e7eeee37575_a987107f3d7a04790f84c1e7eeee3757
+5_cgraph.pdf, id=1033, 271.0125pt x 100.375pt>
+File: class_a_i_b_a987107f3d7a04790f84c1e7eeee37575_a987107f3d7a04790f84c1e7eee
+e37575_cgraph.pdf Graphic file (type pdf)
+
+<use class_a_i_b_a987107f3d7a04790f84c1e7eeee37575_a987107f3d7a04790f84c1e7eeee
+37575_cgraph.pdf>
+Package pdftex.def Info: class_a_i_b_a987107f3d7a04790f84c1e7eeee37575_a987107f
+3d7a04790f84c1e7eeee37575_cgraph.pdf used on input line 426.
+(pdftex.def)             Requested size: 270.0pt x 100.00409pt.
+[9 <./class_a_i_b_a987107f3d7a04790f84c1e7eeee37575_a987107f3d7a04790f84c1e7eee
+e37575_cgraph.pdf>]
+<class_a_i_b_a77b6f74ea3ef39cb1ccb916db7a48740_a77b6f74ea3ef39cb1ccb916db7a4874
+0_cgraph.pdf, id=1098, 483.8075pt x 672.5125pt>
+File: class_a_i_b_a77b6f74ea3ef39cb1ccb916db7a48740_a77b6f74ea3ef39cb1ccb916db7
+a48740_cgraph.pdf Graphic file (type pdf)
+
+<use class_a_i_b_a77b6f74ea3ef39cb1ccb916db7a48740_a77b6f74ea3ef39cb1ccb916db7a
+48740_cgraph.pdf>
+Package pdftex.def Info: class_a_i_b_a77b6f74ea3ef39cb1ccb916db7a48740_a77b6f74
+ea3ef39cb1ccb916db7a48740_cgraph.pdf used on input line 544.
+(pdftex.def)             Requested size: 350.0pt x 486.53802pt.
+[10] [11 <./class_a_i_b_a77b6f74ea3ef39cb1ccb916db7a48740_a77b6f74ea3ef39cb1ccb
+916db7a48740_cgraph.pdf>] [12]
+<class_a_i_b_aff0f0a0db75a17efec4bd500b888232d_aff0f0a0db75a17efec4bd500b888232
+d_cgraph.pdf, id=1203, 315.1775pt x 291.0875pt>
+File: class_a_i_b_aff0f0a0db75a17efec4bd500b888232d_aff0f0a0db75a17efec4bd500b8
+88232d_cgraph.pdf Graphic file (type pdf)
+
+<use class_a_i_b_aff0f0a0db75a17efec4bd500b888232d_aff0f0a0db75a17efec4bd500b88
+8232d_cgraph.pdf>
+Package pdftex.def Info: class_a_i_b_aff0f0a0db75a17efec4bd500b888232d_aff0f0a0
+db75a17efec4bd500b888232d_cgraph.pdf used on input line 766.
+(pdftex.def)             Requested size: 314.0pt x 290.01634pt.
+[13] [14 <./class_a_i_b_aff0f0a0db75a17efec4bd500b888232d_aff0f0a0db75a17efec4b
+d500b888232d_cgraph.pdf>]) (./class_b_a_n_k.tex <class_b_a_n_k__inherit__graph.
+pdf, id=1272, 881.2925pt x 1044.90375pt>
+File: class_b_a_n_k__inherit__graph.pdf Graphic file (type pdf)
+<use class_b_a_n_k__inherit__graph.pdf>
+Package pdftex.def Info: class_b_a_n_k__inherit__graph.pdf used on input line 1
+4.
+(pdftex.def)             Requested size: 350.0pt x 414.97258pt.
+<class_b_a_n_k__coll__graph.pdf, id=1273, 221.82875pt x 674.52pt>
+File: class_b_a_n_k__coll__graph.pdf Graphic file (type pdf)
+<use class_b_a_n_k__coll__graph.pdf>
+Package pdftex.def Info: class_b_a_n_k__coll__graph.pdf used on input line 24.
+(pdftex.def)             Requested size: 180.8819pt x 550.0pt.
+[15 <./class_b_a_n_k__inherit__graph.pdf>] [16 <./class_b_a_n_k__coll__graph.pd
+f>]
+<class_b_a_n_k_a7382dd275d8f4f10a8b53ccbc93e1e87_a7382dd275d8f4f10a8b53ccbc93e1
+e87_cgraph.pdf, id=1331, 279.0425pt x 138.5175pt>
+File: class_b_a_n_k_a7382dd275d8f4f10a8b53ccbc93e1e87_a7382dd275d8f4f10a8b53ccb
+c93e1e87_cgraph.pdf Graphic file (type pdf)
+
+<use class_b_a_n_k_a7382dd275d8f4f10a8b53ccbc93e1e87_a7382dd275d8f4f10a8b53ccbc
+93e1e87_cgraph.pdf>
+Package pdftex.def Info: class_b_a_n_k_a7382dd275d8f4f10a8b53ccbc93e1e87_a7382d
+d275d8f4f10a8b53ccbc93e1e87_cgraph.pdf used on input line 122.
+(pdftex.def)             Requested size: 278.0pt x 138.00354pt.
+[17 <./class_b_a_n_k_a7382dd275d8f4f10a8b53ccbc93e1e87_a7382dd275d8f4f10a8b53cc
+bc93e1e87_cgraph.pdf>] [18] [19]) (./class_b_o_a.tex <class_b_o_a__inherit__gra
+ph.pdf, id=1555, 221.82875pt x 1044.90375pt>
+File: class_b_o_a__inherit__graph.pdf Graphic file (type pdf)
+<use class_b_o_a__inherit__graph.pdf>
+Package pdftex.def Info: class_b_o_a__inherit__graph.pdf used on input line 14.
+
+(pdftex.def)             Requested size: 116.76308pt x 550.0pt.
+[20] <class_b_o_a__coll__graph.pdf, id=1582, 221.82875pt x 1044.90375pt>
+File: class_b_o_a__coll__graph.pdf Graphic file (type pdf)
+<use class_b_o_a__coll__graph.pdf>
+Package pdftex.def Info: class_b_o_a__coll__graph.pdf used on input line 24.
+(pdftex.def)             Requested size: 116.76308pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[21 <./class_b_o_a__inherit__graph.pdf>] [22 <./class_b_o_a__coll__graph.pdf>] 
+[23]
+<class_b_o_a_ab87192ed986e601c2eb682ea3745daf0_ab87192ed986e601c2eb682ea3745daf
+0_cgraph.pdf, id=1748, 246.9225pt x 100.375pt>
+File: class_b_o_a_ab87192ed986e601c2eb682ea3745daf0_ab87192ed986e601c2eb682ea37
+45daf0_cgraph.pdf Graphic file (type pdf)
+
+<use class_b_o_a_ab87192ed986e601c2eb682ea3745daf0_ab87192ed986e601c2eb682ea374
+5daf0_cgraph.pdf>
+Package pdftex.def Info: class_b_o_a_ab87192ed986e601c2eb682ea3745daf0_ab87192e
+d986e601c2eb682ea3745daf0_cgraph.pdf used on input line 194.
+(pdftex.def)             Requested size: 246.0pt x 99.9995pt.
+[24 <./class_b_o_a_ab87192ed986e601c2eb682ea3745daf0_ab87192ed986e601c2eb682ea3
+745daf0_cgraph.pdf>]
+<class_b_o_a_a54fbcabb55b22fb72f45986768974403_a54fbcabb55b22fb72f4598676897440
+3_cgraph.pdf, id=1783, 300.12125pt x 100.375pt>
+File: class_b_o_a_a54fbcabb55b22fb72f45986768974403_a54fbcabb55b22fb72f45986768
+974403_cgraph.pdf Graphic file (type pdf)
+
+<use class_b_o_a_a54fbcabb55b22fb72f45986768974403_a54fbcabb55b22fb72f459867689
+74403_cgraph.pdf>
+Package pdftex.def Info: class_b_o_a_a54fbcabb55b22fb72f45986768974403_a54fbcab
+b55b22fb72f45986768974403_cgraph.pdf used on input line 286.
+(pdftex.def)             Requested size: 299.0pt x 100.00868pt.
+[25 <./class_b_o_a_a54fbcabb55b22fb72f45986768974403_a54fbcabb55b22fb72f4598676
+8974403_cgraph.pdf>]
+<class_b_o_a_a46ace5d3c945a423e93912673cadfad5_a46ace5d3c945a423e93912673cadfad
+5_cgraph.pdf, id=1830, 285.065pt x 100.375pt>
+File: class_b_o_a_a46ace5d3c945a423e93912673cadfad5_a46ace5d3c945a423e93912673c
+adfad5_cgraph.pdf Graphic file (type pdf)
+
+<use class_b_o_a_a46ace5d3c945a423e93912673cadfad5_a46ace5d3c945a423e93912673ca
+dfad5_cgraph.pdf>
+Package pdftex.def Info: class_b_o_a_a46ace5d3c945a423e93912673cadfad5_a46ace5d
+3c945a423e93912673cadfad5_cgraph.pdf used on input line 421.
+(pdftex.def)             Requested size: 284.0pt x 99.9995pt.
+[26 <./class_b_o_a_a46ace5d3c945a423e93912673cadfad5_a46ace5d3c945a423e93912673
+cadfad5_cgraph.pdf>]
+<class_b_o_a_af24b66f0e072b29abbbe5812cab48369_af24b66f0e072b29abbbe5812cab4836
+9_cgraph.pdf, id=1891, 497.86pt x 672.5125pt>
+File: class_b_o_a_af24b66f0e072b29abbbe5812cab48369_af24b66f0e072b29abbbe5812ca
+b48369_cgraph.pdf Graphic file (type pdf)
+
+<use class_b_o_a_af24b66f0e072b29abbbe5812cab48369_af24b66f0e072b29abbbe5812cab
+48369_cgraph.pdf>
+Package pdftex.def Info: class_b_o_a_af24b66f0e072b29abbbe5812cab48369_af24b66f
+0e072b29abbbe5812cab48369_cgraph.pdf used on input line 540.
+(pdftex.def)             Requested size: 350.0pt x 472.78735pt.
+[27] [28 <./class_b_o_a_af24b66f0e072b29abbbe5812cab48369_af24b66f0e072b29abbbe
+5812cab48369_cgraph.pdf>] [29]
+Overfull \hbox (44.24722pt too wide) in paragraph at lines 752--752
+[]       \T1/pcr/m/n/7 "$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 nDouble value : " << t
+his->GetV_double() << "$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 nFloat value : " << thi
+s->GetV_float() << "$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 nString value : " <<[] 
+ []
+
+
+<class_b_o_a_a348df0299997f81bcad0ec034dab0b8d_a348df0299997f81bcad0ec034dab0b8
+d_cgraph.pdf, id=1989, 324.21124pt x 291.0875pt>
+File: class_b_o_a_a348df0299997f81bcad0ec034dab0b8d_a348df0299997f81bcad0ec034d
+ab0b8d_cgraph.pdf Graphic file (type pdf)
+
+<use class_b_o_a_a348df0299997f81bcad0ec034dab0b8d_a348df0299997f81bcad0ec034da
+b0b8d_cgraph.pdf>
+Package pdftex.def Info: class_b_o_a_a348df0299997f81bcad0ec034dab0b8d_a348df02
+99997f81bcad0ec034dab0b8d_cgraph.pdf used on input line 766.
+(pdftex.def)             Requested size: 323.0pt x 290.01634pt.
+[30] [31 <./class_b_o_a_a348df0299997f81bcad0ec034dab0b8d_a348df0299997f81bcad0
+ec034dab0b8d_cgraph.pdf>]) (./class_b_o_i.tex <class_b_o_i__inherit__graph.pdf,
+ id=2051, 221.82875pt x 1044.90375pt>
+File: class_b_o_i__inherit__graph.pdf Graphic file (type pdf)
+<use class_b_o_i__inherit__graph.pdf>
+Package pdftex.def Info: class_b_o_i__inherit__graph.pdf used on input line 14.
+
+(pdftex.def)             Requested size: 116.76308pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[32] <class_b_o_i__coll__graph.pdf, id=2058, 221.82875pt x 1044.90375pt>
+File: class_b_o_i__coll__graph.pdf Graphic file (type pdf)
+<use class_b_o_i__coll__graph.pdf>
+Package pdftex.def Info: class_b_o_i__coll__graph.pdf used on input line 24.
+(pdftex.def)             Requested size: 116.76308pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[33 <./class_b_o_i__inherit__graph.pdf>] [34 <./class_b_o_i__coll__graph.pdf>] 
+[35]
+<class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_ae4263940f8ffdd40d5f01a714b20f79
+1_cgraph.pdf, id=2224, 230.8625pt x 100.375pt>
+File: class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_ae4263940f8ffdd40d5f01a714b
+20f791_cgraph.pdf Graphic file (type pdf)
+
+<use class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_ae4263940f8ffdd40d5f01a714b2
+0f791_cgraph.pdf>
+Package pdftex.def Info: class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_ae426394
+0f8ffdd40d5f01a714b20f791_cgraph.pdf used on input line 197.
+(pdftex.def)             Requested size: 230.0pt x 100.00102pt.
+[36 <./class_b_o_i_ae4263940f8ffdd40d5f01a714b20f791_ae4263940f8ffdd40d5f01a714
+b20f791_cgraph.pdf>]
+<class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_a9ff2d32c25c23a1bea6316f50c3bf67
+7_cgraph.pdf, id=2260, 296.10625pt x 100.375pt>
+File: class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_a9ff2d32c25c23a1bea6316f50c
+3bf677_cgraph.pdf Graphic file (type pdf)
+
+<use class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_a9ff2d32c25c23a1bea6316f50c3
+bf677_cgraph.pdf>
+Package pdftex.def Info: class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_a9ff2d32
+c25c23a1bea6316f50c3bf677_cgraph.pdf used on input line 288.
+(pdftex.def)             Requested size: 295.0pt x 100.00255pt.
+[37 <./class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_a9ff2d32c25c23a1bea6316f50
+c3bf677_cgraph.pdf>]
+<class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_ad53ae2918a656793b9d7a670d35ecfa
+3_cgraph.pdf, id=2306, 273.02pt x 100.375pt>
+File: class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_ad53ae2918a656793b9d7a670d3
+5ecfa3_cgraph.pdf Graphic file (type pdf)
+
+<use class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_ad53ae2918a656793b9d7a670d35
+ecfa3_cgraph.pdf>
+Package pdftex.def Info: class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_ad53ae29
+18a656793b9d7a670d35ecfa3_cgraph.pdf used on input line 424.
+(pdftex.def)             Requested size: 272.0pt x 100.00562pt.
+[38 <./class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_ad53ae2918a656793b9d7a670d
+35ecfa3_cgraph.pdf>]
+<class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_a4b4a3976cc13c4d3de0d7ff8882a7af
+3_cgraph.pdf, id=2367, 485.815pt x 672.5125pt>
+File: class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_a4b4a3976cc13c4d3de0d7ff888
+2a7af3_cgraph.pdf Graphic file (type pdf)
+
+<use class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_a4b4a3976cc13c4d3de0d7ff8882
+a7af3_cgraph.pdf>
+Package pdftex.def Info: class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_a4b4a397
+6cc13c4d3de0d7ff8882a7af3_cgraph.pdf used on input line 542.
+(pdftex.def)             Requested size: 350.0pt x 484.49596pt.
+[39] [40 <./class_b_o_i_a4b4a3976cc13c4d3de0d7ff8882a7af3_a4b4a3976cc13c4d3de0d
+7ff8882a7af3_cgraph.pdf>] [41]
+<class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_ab02a4dd4ebcc5b2abfaca19f2dff200
+6_cgraph.pdf, id=2465, 317.185pt x 291.0875pt>
+File: class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_ab02a4dd4ebcc5b2abfaca19f2d
+ff2006_cgraph.pdf Graphic file (type pdf)
+
+<use class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_ab02a4dd4ebcc5b2abfaca19f2df
+f2006_cgraph.pdf>
+Package pdftex.def Info: class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_ab02a4dd
+4ebcc5b2abfaca19f2dff2006_cgraph.pdf used on input line 764.
+(pdftex.def)             Requested size: 316.0pt x 290.02522pt.
+[42] [43 <./class_b_o_i_ab02a4dd4ebcc5b2abfaca19f2dff2006_ab02a4dd4ebcc5b2abfac
+a19f2dff2006_cgraph.pdf>]) (./classclient.tex <classclient__coll__graph.pdf, id
+=2527, 216.81pt x 182.6825pt>
+File: classclient__coll__graph.pdf Graphic file (type pdf)
+<use classclient__coll__graph.pdf>
+Package pdftex.def Info: classclient__coll__graph.pdf used on input line 14.
+(pdftex.def)             Requested size: 216.0pt x 182.01024pt.
+[44 <./classclient__coll__graph.pdf>]
+<classclient_a3c5e378b6df49d2d2eea4a073da5a594_a3c5e378b6df49d2d2eea4a073da5a59
+4_cgraph.pdf, id=2592, 611.28375pt x 138.5175pt>
+File: classclient_a3c5e378b6df49d2d2eea4a073da5a594_a3c5e378b6df49d2d2eea4a073d
+a5a594_cgraph.pdf Graphic file (type pdf)
+
+<use classclient_a3c5e378b6df49d2d2eea4a073da5a594_a3c5e378b6df49d2d2eea4a073da
+5a594_cgraph.pdf>
+Package pdftex.def Info: classclient_a3c5e378b6df49d2d2eea4a073da5a594_a3c5e378
+b6df49d2d2eea4a073da5a594_cgraph.pdf used on input line 136.
+(pdftex.def)             Requested size: 350.0pt x 79.30876pt.
+[45] [46 <./classclient_a3c5e378b6df49d2d2eea4a073da5a594_a3c5e378b6df49d2d2eea
+4a073da5a594_cgraph.pdf>]
+<classclient_ac0ebebd379895869c22f8919ad3bd37f_ac0ebebd379895869c22f8919ad3bd37
+f_cgraph.pdf, id=2639, 711.65875pt x 141.52875pt>
+File: classclient_ac0ebebd379895869c22f8919ad3bd37f_ac0ebebd379895869c22f8919ad
+3bd37f_cgraph.pdf Graphic file (type pdf)
+
+<use classclient_ac0ebebd379895869c22f8919ad3bd37f_ac0ebebd379895869c22f8919ad3
+bd37f_cgraph.pdf>
+Package pdftex.def Info: classclient_ac0ebebd379895869c22f8919ad3bd37f_ac0ebebd
+379895869c22f8919ad3bd37f_cgraph.pdf used on input line 253.
+(pdftex.def)             Requested size: 350.0pt x 69.6045pt.
+[47 <./classclient_ac0ebebd379895869c22f8919ad3bd37f_ac0ebebd379895869c22f8919a
+d3bd37f_cgraph.pdf>]
+<classclient_a94fb0b42124860568a011ed94f8bc9d5_a94fb0b42124860568a011ed94f8bc9d
+5_cgraph.pdf, id=2670, 584.1825pt x 138.5175pt>
+File: classclient_a94fb0b42124860568a011ed94f8bc9d5_a94fb0b42124860568a011ed94f
+8bc9d5_cgraph.pdf Graphic file (type pdf)
+
+<use classclient_a94fb0b42124860568a011ed94f8bc9d5_a94fb0b42124860568a011ed94f8
+bc9d5_cgraph.pdf>
+Package pdftex.def Info: classclient_a94fb0b42124860568a011ed94f8bc9d5_a94fb0b4
+2124860568a011ed94f8bc9d5_cgraph.pdf used on input line 358.
+(pdftex.def)             Requested size: 350.0pt x 82.99277pt.
+[48 <./classclient_a94fb0b42124860568a011ed94f8bc9d5_a94fb0b42124860568a011ed94
+f8bc9d5_cgraph.pdf>]
+<classclient_a71edd1265ba9ae03f71b5dbf54548696_a71edd1265ba9ae03f71b5dbf5454869
+6_cgraph.pdf, id=2700, 587.19376pt x 138.5175pt>
+File: classclient_a71edd1265ba9ae03f71b5dbf54548696_a71edd1265ba9ae03f71b5dbf54
+548696_cgraph.pdf Graphic file (type pdf)
+
+<use classclient_a71edd1265ba9ae03f71b5dbf54548696_a71edd1265ba9ae03f71b5dbf545
+48696_cgraph.pdf>
+Package pdftex.def Info: classclient_a71edd1265ba9ae03f71b5dbf54548696_a71edd12
+65ba9ae03f71b5dbf54548696_cgraph.pdf used on input line 443.
+(pdftex.def)             Requested size: 350.0pt x 82.5637pt.
+) (./class_my_test_c_ase.tex <class_my_test_c_ase__inherit__graph.pdf, id=2705,
+ 248.93pt x 1237.62375pt>
+File: class_my_test_c_ase__inherit__graph.pdf Graphic file (type pdf)
+<use class_my_test_c_ase__inherit__graph.pdf>
+Package pdftex.def Info: class_my_test_c_ase__inherit__graph.pdf used on input 
+line 14.
+(pdftex.def)             Requested size: 110.62726pt x 550.0pt.
+[49 <./classclient_a71edd1265ba9ae03f71b5dbf54548696_a71edd1265ba9ae03f71b5dbf5
+4548696_cgraph.pdf>] <class_my_test_c_ase__coll__graph.pdf, id=2718, 441.65pt x
+ 1381.16pt>
+File: class_my_test_c_ase__coll__graph.pdf Graphic file (type pdf)
+<use class_my_test_c_ase__coll__graph.pdf>
+Package pdftex.def Info: class_my_test_c_ase__coll__graph.pdf used on input lin
+e 24.
+(pdftex.def)             Requested size: 175.87514pt x 550.0pt.
+
+Underfull \vbox (badness 2753) has occurred while \output is active []
+
+[50 <./class_my_test_c_ase__inherit__graph.pdf>] [51 <./class_my_test_c_ase__co
+ll__graph.pdf>] [52] [53] [54]
+<class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_a9ec1ddfc6e7f727446e1a83
+55086c2dd_cgraph.pdf, id=2999, 607.26875pt x 138.5175pt>
+File: class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_a9ec1ddfc6e7f727446
+e1a8355086c2dd_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_a9ec1ddfc6e7f727446e
+1a8355086c2dd_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_
+a9ec1ddfc6e7f727446e1a8355086c2dd_cgraph.pdf used on input line 336.
+(pdftex.def)             Requested size: 350.0pt x 79.83504pt.
+[55 <./class_my_test_c_ase_a9ec1ddfc6e7f727446e1a8355086c2dd_a9ec1ddfc6e7f72744
+6e1a8355086c2dd_cgraph.pdf>]
+<class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_a2367b87338c4f61cc3ac319
+3651580d4_cgraph.pdf, id=3029, 602.25pt x 138.5175pt>
+File: class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_a2367b87338c4f61cc3
+ac3193651580d4_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_a2367b87338c4f61cc3a
+c3193651580d4_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_
+a2367b87338c4f61cc3ac3193651580d4_cgraph.pdf used on input line 439.
+(pdftex.def)             Requested size: 350.0pt x 80.50294pt.
+[56] [57 <./class_my_test_c_ase_a2367b87338c4f61cc3ac3193651580d4_a2367b87338c4
+f61cc3ac3193651580d4_cgraph.pdf>]
+<class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_abb973a1396c1083891d7684
+5e2cfaf64_cgraph.pdf, id=3074, 779.91376pt x 141.52875pt>
+File: class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_abb973a1396c1083891
+d76845e2cfaf64_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_abb973a1396c1083891d
+76845e2cfaf64_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_
+abb973a1396c1083891d76845e2cfaf64_cgraph.pdf used on input line 556.
+(pdftex.def)             Requested size: 350.0pt x 63.51242pt.
+[58 <./class_my_test_c_ase_abb973a1396c1083891d76845e2cfaf64_abb973a1396c108389
+1d76845e2cfaf64_cgraph.pdf>]
+<class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_afe25c2ed3a8ab035f472fff
+6575f0e48_cgraph.pdf, id=3100, 621.32124pt x 138.5175pt>
+File: class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_afe25c2ed3a8ab035f4
+72fff6575f0e48_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_afe25c2ed3a8ab035f47
+2fff6575f0e48_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_
+afe25c2ed3a8ab035f472fff6575f0e48_cgraph.pdf used on input line 640.
+(pdftex.def)             Requested size: 350.0pt x 78.02791pt.
+
+Overfull \vbox (35.52373pt too high) has occurred while \output is active []
+
+[59 <./class_my_test_c_ase_afe25c2ed3a8ab035f472fff6575f0e48_afe25c2ed3a8ab035f
+472fff6575f0e48_cgraph.pdf>]
+<class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_a72ce436fb3c78c3d76b6c48
+a5a2e6a76_cgraph.pdf, id=3136, 618.31pt x 138.5175pt>
+File: class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_a72ce436fb3c78c3d76
+b6c48a5a2e6a76_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_a72ce436fb3c78c3d76b
+6c48a5a2e6a76_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_
+a72ce436fb3c78c3d76b6c48a5a2e6a76_cgraph.pdf used on input line 763.
+(pdftex.def)             Requested size: 350.0pt x 78.41048pt.
+[60 <./class_my_test_c_ase_a72ce436fb3c78c3d76b6c48a5a2e6a76_a72ce436fb3c78c3d7
+6b6c48a5a2e6a76_cgraph.pdf>]
+<class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_af0cc86421d281cc4a583a39
+4ae86dbdd_cgraph.pdf, id=3165, 621.32124pt x 138.5175pt>
+File: class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_af0cc86421d281cc4a5
+83a394ae86dbdd_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_af0cc86421d281cc4a58
+3a394ae86dbdd_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_
+af0cc86421d281cc4a583a394ae86dbdd_cgraph.pdf used on input line 854.
+(pdftex.def)             Requested size: 350.0pt x 78.02791pt.
+[61 <./class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd_af0cc86421d281cc4a
+583a394ae86dbdd_cgraph.pdf>]
+<class_my_test_c_ase_a124c2540c72219b92c477a1fbda21409_a124c2540c72219b92c477a1
+fbda21409_cgraph.pdf, id=3190, 309.155pt x 122.4575pt>
+File: class_my_test_c_ase_a124c2540c72219b92c477a1fbda21409_a124c2540c72219b92c
+477a1fbda21409_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a124c2540c72219b92c477a1fbda21409_a124c2540c72219b92c4
+77a1fbda21409_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a124c2540c72219b92c477a1fbda21409_
+a124c2540c72219b92c477a1fbda21409_cgraph.pdf used on input line 892.
+(pdftex.def)             Requested size: 308.0pt x 122.01059pt.
+[62 <./class_my_test_c_ase_a124c2540c72219b92c477a1fbda21409_a124c2540c72219b92
+c477a1fbda21409_cgraph.pdf>]
+<class_my_test_c_ase_a8a198d6ef96a8a07ea7fa839ad068ffb_a8a198d6ef96a8a07ea7fa83
+9ad068ffb_cgraph.pdf, id=3238, 755.82375pt x 179.67125pt>
+File: class_my_test_c_ase_a8a198d6ef96a8a07ea7fa839ad068ffb_a8a198d6ef96a8a07ea
+7fa839ad068ffb_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a8a198d6ef96a8a07ea7fa839ad068ffb_a8a198d6ef96a8a07ea7
+fa839ad068ffb_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a8a198d6ef96a8a07ea7fa839ad068ffb_
+a8a198d6ef96a8a07ea7fa839ad068ffb_cgraph.pdf used on input line 980.
+(pdftex.def)             Requested size: 350.0pt x 83.20082pt.
+[63 <./class_my_test_c_ase_a8a198d6ef96a8a07ea7fa839ad068ffb_a8a198d6ef96a8a07e
+a7fa839ad068ffb_cgraph.pdf>]
+<class_my_test_c_ase_ad91f8c37cd32055b834c84f10edeb979_ad91f8c37cd32055b834c84f
+10edeb979_cgraph.pdf, id=3279, 755.82375pt x 179.67125pt>
+File: class_my_test_c_ase_ad91f8c37cd32055b834c84f10edeb979_ad91f8c37cd32055b83
+4c84f10edeb979_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_ad91f8c37cd32055b834c84f10edeb979_ad91f8c37cd32055b834
+c84f10edeb979_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_ad91f8c37cd32055b834c84f10edeb979_
+ad91f8c37cd32055b834c84f10edeb979_cgraph.pdf used on input line 1072.
+(pdftex.def)             Requested size: 350.0pt x 83.20082pt.
+[64 <./class_my_test_c_ase_ad91f8c37cd32055b834c84f10edeb979_ad91f8c37cd32055b8
+34c84f10edeb979_cgraph.pdf>]
+<class_my_test_c_ase_a2da7267d6799893e898032f5ae54c1e1_a2da7267d6799893e898032f
+5ae54c1e1_cgraph.pdf, id=3307, 568.1225pt x 111.41624pt>
+File: class_my_test_c_ase_a2da7267d6799893e898032f5ae54c1e1_a2da7267d6799893e89
+8032f5ae54c1e1_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a2da7267d6799893e898032f5ae54c1e1_a2da7267d6799893e898
+032f5ae54c1e1_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a2da7267d6799893e898032f5ae54c1e1_
+a2da7267d6799893e898032f5ae54c1e1_cgraph.pdf used on input line 1310.
+(pdftex.def)             Requested size: 350.0pt x 68.64214pt.
+[65pdfTeX warning (ext4): destination with the same identifier (name{class_my_t
+est_c_ase_a74ba217b63d4a21ff11575b136bc5c67_a74ba217b63d4a2\ETC.}) has been alr
+eady used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1313 
+       ]
+<class_my_test_c_ase_ad2bec86c60b7992f24c4d59a00a1433b_ad2bec86c60b7992f24c4d59
+a00a1433b_cgraph.pdf, id=3338, 568.1225pt x 111.41624pt>
+File: class_my_test_c_ase_ad2bec86c60b7992f24c4d59a00a1433b_ad2bec86c60b7992f24
+c4d59a00a1433b_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_ad2bec86c60b7992f24c4d59a00a1433b_ad2bec86c60b7992f24c
+4d59a00a1433b_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_ad2bec86c60b7992f24c4d59a00a1433b_
+ad2bec86c60b7992f24c4d59a00a1433b_cgraph.pdf used on input line 1356.
+(pdftex.def)             Requested size: 350.0pt x 68.64214pt.
+
+<class_my_test_c_ase_aadf771b5eefc5f32984cb6c177d217d0_aadf771b5eefc5f32984cb6c
+177d217d0_cgraph.pdf, id=3345, 565.11125pt x 111.41624pt>
+File: class_my_test_c_ase_aadf771b5eefc5f32984cb6c177d217d0_aadf771b5eefc5f3298
+4cb6c177d217d0_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_aadf771b5eefc5f32984cb6c177d217d0_aadf771b5eefc5f32984
+cb6c177d217d0_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_aadf771b5eefc5f32984cb6c177d217d0_
+aadf771b5eefc5f32984cb6c177d217d0_cgraph.pdf used on input line 1399.
+(pdftex.def)             Requested size: 350.0pt x 69.00595pt.
+[66 <./class_my_test_c_ase_a2da7267d6799893e898032f5ae54c1e1_a2da7267d6799893e8
+98032f5ae54c1e1_cgraph.pdf> <./class_my_test_c_ase_ad2bec86c60b7992f24c4d59a00a
+1433b_ad2bec86c60b7992f24c4d59a00a1433b_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./class_my_test_c_ase_ad2bec86c60b7992f24c4d59a0
+0a1433b_ad2bec86c60b7992f24c4d59a00a1433b_cgraph.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>]
+<class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc5181dae7_af72ca0f6e19543b2bc80f8f
+c5181dae7_cgraph.pdf, id=3371, 565.11125pt x 111.41624pt>
+File: class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc5181dae7_af72ca0f6e19543b2bc
+80f8fc5181dae7_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc5181dae7_af72ca0f6e19543b2bc8
+0f8fc5181dae7_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc5181dae7_
+af72ca0f6e19543b2bc80f8fc5181dae7_cgraph.pdf used on input line 1443.
+(pdftex.def)             Requested size: 350.0pt x 69.00595pt.
+[67 <./class_my_test_c_ase_aadf771b5eefc5f32984cb6c177d217d0_aadf771b5eefc5f329
+84cb6c177d217d0_cgraph.pdf> <./class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc518
+1dae7_af72ca0f6e19543b2bc80f8fc5181dae7_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./class_my_test_c_ase_af72ca0f6e19543b2bc80f8fc5
+181dae7_af72ca0f6e19543b2bc80f8fc5181dae7_cgraph.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>]
+<class_my_test_c_ase_a41c93b64fb95fa83809b6457b608e2da_a41c93b64fb95fa83809b645
+7b608e2da_cgraph.pdf, id=3415, 814.04124pt x 179.67125pt>
+File: class_my_test_c_ase_a41c93b64fb95fa83809b6457b608e2da_a41c93b64fb95fa8380
+9b6457b608e2da_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a41c93b64fb95fa83809b6457b608e2da_a41c93b64fb95fa83809
+b6457b608e2da_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a41c93b64fb95fa83809b6457b608e2da_
+a41c93b64fb95fa83809b6457b608e2da_cgraph.pdf used on input line 1517.
+(pdftex.def)             Requested size: 350.0pt x 77.24889pt.
+[68 <./class_my_test_c_ase_a41c93b64fb95fa83809b6457b608e2da_a41c93b64fb95fa838
+09b6457b608e2da_cgraph.pdf>]
+<class_my_test_c_ase_ae49b83ddf0fa297dbb8639001644fa5c_ae49b83ddf0fa297dbb86390
+01644fa5c_cgraph.pdf, id=3454, 787.94376pt x 179.67125pt>
+File: class_my_test_c_ase_ae49b83ddf0fa297dbb8639001644fa5c_ae49b83ddf0fa297dbb
+8639001644fa5c_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_ae49b83ddf0fa297dbb8639001644fa5c_ae49b83ddf0fa297dbb8
+639001644fa5c_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_ae49b83ddf0fa297dbb8639001644fa5c_
+ae49b83ddf0fa297dbb8639001644fa5c_cgraph.pdf used on input line 1614.
+(pdftex.def)             Requested size: 350.0pt x 79.80676pt.
+[69 <./class_my_test_c_ase_ae49b83ddf0fa297dbb8639001644fa5c_ae49b83ddf0fa297db
+b8639001644fa5c_cgraph.pdf>]
+<class_my_test_c_ase_afea0c5983bf1fcc38d8962cfa6277da4_afea0c5983bf1fcc38d8962c
+fa6277da4_cgraph.pdf, id=3484, 801.99625pt x 179.67125pt>
+File: class_my_test_c_ase_afea0c5983bf1fcc38d8962cfa6277da4_afea0c5983bf1fcc38d
+8962cfa6277da4_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_afea0c5983bf1fcc38d8962cfa6277da4_afea0c5983bf1fcc38d8
+962cfa6277da4_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_afea0c5983bf1fcc38d8962cfa6277da4_
+afea0c5983bf1fcc38d8962cfa6277da4_cgraph.pdf used on input line 1678.
+(pdftex.def)             Requested size: 350.0pt x 78.41132pt.
+[70 <./class_my_test_c_ase_afea0c5983bf1fcc38d8962cfa6277da4_afea0c5983bf1fcc38
+d8962cfa6277da4_cgraph.pdf>]
+<class_my_test_c_ase_a13635e729bf660619c7f6a75b414bc3f_a13635e729bf660619c7f6a7
+5b414bc3f_cgraph.pdf, id=3521, 962.59625pt x 204.765pt>
+File: class_my_test_c_ase_a13635e729bf660619c7f6a75b414bc3f_a13635e729bf660619c
+7f6a75b414bc3f_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a13635e729bf660619c7f6a75b414bc3f_a13635e729bf660619c7
+f6a75b414bc3f_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a13635e729bf660619c7f6a75b414bc3f_
+a13635e729bf660619c7f6a75b414bc3f_cgraph.pdf used on input line 1742.
+(pdftex.def)             Requested size: 350.0pt x 74.44958pt.
+
+<class_my_test_c_ase_a3937532fe2a85f7e61518b8abffdb09a_a3937532fe2a85f7e61518b8
+abffdb09a_cgraph.pdf, id=3543, 968.61874pt x 204.765pt>
+File: class_my_test_c_ase_a3937532fe2a85f7e61518b8abffdb09a_a3937532fe2a85f7e61
+518b8abffdb09a_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a3937532fe2a85f7e61518b8abffdb09a_a3937532fe2a85f7e615
+18b8abffdb09a_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a3937532fe2a85f7e61518b8abffdb09a_
+a3937532fe2a85f7e61518b8abffdb09a_cgraph.pdf used on input line 1806.
+(pdftex.def)             Requested size: 350.0pt x 73.99028pt.
+[71 <./class_my_test_c_ase_a13635e729bf660619c7f6a75b414bc3f_a13635e729bf660619
+c7f6a75b414bc3f_cgraph.pdf>]
+<class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d6defd62_ad5d3718a6ed5ef68ad71145
+6d6defd62_cgraph.pdf, id=3579, 871.255pt x 204.765pt>
+File: class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d6defd62_ad5d3718a6ed5ef68ad
+711456d6defd62_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d6defd62_ad5d3718a6ed5ef68ad7
+11456d6defd62_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d6defd62_
+ad5d3718a6ed5ef68ad711456d6defd62_cgraph.pdf used on input line 1856.
+(pdftex.def)             Requested size: 350.0pt x 82.2576pt.
+
+<class_my_test_c_ase_aa3a8c942db63dcf082f85013b7a09ee1_aa3a8c942db63dcf082f8501
+3b7a09ee1_cgraph.pdf, id=3587, 561.09625pt x 122.4575pt>
+File: class_my_test_c_ase_aa3a8c942db63dcf082f85013b7a09ee1_aa3a8c942db63dcf082
+f85013b7a09ee1_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_aa3a8c942db63dcf082f85013b7a09ee1_aa3a8c942db63dcf082f
+85013b7a09ee1_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_aa3a8c942db63dcf082f85013b7a09ee1_
+aa3a8c942db63dcf082f85013b7a09ee1_cgraph.pdf used on input line 1898.
+(pdftex.def)             Requested size: 350.0pt x 76.38625pt.
+[72 <./class_my_test_c_ase_a3937532fe2a85f7e61518b8abffdb09a_a3937532fe2a85f7e6
+1518b8abffdb09a_cgraph.pdf> <./class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d6d
+efd62_ad5d3718a6ed5ef68ad711456d6defd62_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./class_my_test_c_ase_ad5d3718a6ed5ef68ad711456d
+6defd62_ad5d3718a6ed5ef68ad711456d6defd62_cgraph.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>]
+<class_my_test_c_ase_a80f9123880a0b79e4119f2f4699847ec_a80f9123880a0b79e4119f2f
+4699847ec_cgraph.pdf, id=3618, 611.28375pt x 111.41624pt>
+File: class_my_test_c_ase_a80f9123880a0b79e4119f2f4699847ec_a80f9123880a0b79e41
+19f2f4699847ec_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a80f9123880a0b79e4119f2f4699847ec_a80f9123880a0b79e411
+9f2f4699847ec_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a80f9123880a0b79e4119f2f4699847ec_
+a80f9123880a0b79e4119f2f4699847ec_cgraph.pdf used on input line 1935.
+(pdftex.def)             Requested size: 350.0pt x 63.79182pt.
+[73 <./class_my_test_c_ase_aa3a8c942db63dcf082f85013b7a09ee1_aa3a8c942db63dcf08
+2f85013b7a09ee1_cgraph.pdf> <./class_my_test_c_ase_a80f9123880a0b79e4119f2f4699
+847ec_a80f9123880a0b79e4119f2f4699847ec_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./class_my_test_c_ase_a80f9123880a0b79e4119f2f46
+99847ec_a80f9123880a0b79e4119f2f4699847ec_cgraph.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>]
+<class_my_test_c_ase_a2f75b781b07bdbc3649c10d6845cb3cc_a2f75b781b07bdbc3649c10d
+6845cb3cc_cgraph.pdf, id=3669, 795.97375pt x 179.67125pt>
+File: class_my_test_c_ase_a2f75b781b07bdbc3649c10d6845cb3cc_a2f75b781b07bdbc364
+9c10d6845cb3cc_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a2f75b781b07bdbc3649c10d6845cb3cc_a2f75b781b07bdbc3649
+c10d6845cb3cc_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a2f75b781b07bdbc3649c10d6845cb3cc_
+a2f75b781b07bdbc3649c10d6845cb3cc_cgraph.pdf used on input line 2052.
+(pdftex.def)             Requested size: 350.0pt x 79.0035pt.
+[74 <./class_my_test_c_ase_a2f75b781b07bdbc3649c10d6845cb3cc_a2f75b781b07bdbc36
+49c10d6845cb3cc_cgraph.pdf>]
+<class_my_test_c_ase_aae8eeb07dfdc5411255b064bc57b855d_aae8eeb07dfdc5411255b064
+bc57b855d_cgraph.pdf, id=3689, 591.20876pt x 111.41624pt>
+File: class_my_test_c_ase_aae8eeb07dfdc5411255b064bc57b855d_aae8eeb07dfdc541125
+5b064bc57b855d_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_aae8eeb07dfdc5411255b064bc57b855d_aae8eeb07dfdc5411255
+b064bc57b855d_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_aae8eeb07dfdc5411255b064bc57b855d_
+aae8eeb07dfdc5411255b064bc57b855d_cgraph.pdf used on input line 2093.
+(pdftex.def)             Requested size: 350.0pt x 65.96112pt.
+
+<class_my_test_c_ase_afdb39bda80c1305ac1c4cc0e5ce022f4_afdb39bda80c1305ac1c4cc0
+e5ce022f4_cgraph.pdf, id=3716, 775.89874pt x 179.67125pt>
+File: class_my_test_c_ase_afdb39bda80c1305ac1c4cc0e5ce022f4_afdb39bda80c1305ac1
+c4cc0e5ce022f4_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_afdb39bda80c1305ac1c4cc0e5ce022f4_afdb39bda80c1305ac1c
+4cc0e5ce022f4_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_afdb39bda80c1305ac1c4cc0e5ce022f4_
+afdb39bda80c1305ac1c4cc0e5ce022f4_cgraph.pdf used on input line 2172.
+(pdftex.def)             Requested size: 350.0pt x 81.04869pt.
+[75 <./class_my_test_c_ase_aae8eeb07dfdc5411255b064bc57b855d_aae8eeb07dfdc54112
+55b064bc57b855d_cgraph.pdf>]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 2200--2200
+[]\T1/pcr/m/n/7 00591     std::shared_ptr<BANK> _FROM_BANK_ONE,_FROM_BANK_TWO,_
+FROM_BANK_THREE, _FROM_BANK_FOUR, _FROM_BANK_FIVE;[] 
+ []
+
+[76 <./class_my_test_c_ase_afdb39bda80c1305ac1c4cc0e5ce022f4_afdb39bda80c1305ac
+1c4cc0e5ce022f4_cgraph.pdf>]
+<class_my_test_c_ase_acdc0278b6fa7c0102b9e5cdfb68a41a1_acdc0278b6fa7c0102b9e5cd
+fb68a41a1_cgraph.pdf, id=3794, 772.8875pt x 179.67125pt>
+File: class_my_test_c_ase_acdc0278b6fa7c0102b9e5cdfb68a41a1_acdc0278b6fa7c0102b
+9e5cdfb68a41a1_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_acdc0278b6fa7c0102b9e5cdfb68a41a1_acdc0278b6fa7c0102b9
+e5cdfb68a41a1_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_acdc0278b6fa7c0102b9e5cdfb68a41a1_
+acdc0278b6fa7c0102b9e5cdfb68a41a1_cgraph.pdf used on input line 2253.
+(pdftex.def)             Requested size: 350.0pt x 81.36397pt.
+
+<class_my_test_c_ase_a03f867cf5e2295e4055fe88d825b1710_a03f867cf5e2295e4055fe88
+d825b1710_cgraph.pdf, id=3816, 776.9025pt x 179.67125pt>
+File: class_my_test_c_ase_a03f867cf5e2295e4055fe88d825b1710_a03f867cf5e2295e405
+5fe88d825b1710_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a03f867cf5e2295e4055fe88d825b1710_a03f867cf5e2295e4055
+fe88d825b1710_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a03f867cf5e2295e4055fe88d825b1710_
+a03f867cf5e2295e4055fe88d825b1710_cgraph.pdf used on input line 2317.
+(pdftex.def)             Requested size: 350.0pt x 80.94452pt.
+[77 <./class_my_test_c_ase_acdc0278b6fa7c0102b9e5cdfb68a41a1_acdc0278b6fa7c0102
+b9e5cdfb68a41a1_cgraph.pdf> <./class_my_test_c_ase_a03f867cf5e2295e4055fe88d825
+b1710_a03f867cf5e2295e4055fe88d825b1710_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./class_my_test_c_ase_a03f867cf5e2295e4055fe88d8
+25b1710_a03f867cf5e2295e4055fe88d825b1710_cgraph.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 2345--2345
+[]\T1/pcr/m/n/7 00636     std::shared_ptr<BANK> _FROM_BANK_ONE,_FROM_BANK_TWO,_
+FROM_BANK_THREE, _FROM_BANK_FOUR, _FROM_BANK_FIVE;[] 
+ []
+
+
+<class_my_test_c_ase_ab7d15a71958588c6402f234e106668b1_ab7d15a71958588c6402f234
+e106668b1_cgraph.pdf, id=3881, 773.89125pt x 179.67125pt>
+File: class_my_test_c_ase_ab7d15a71958588c6402f234e106668b1_ab7d15a71958588c640
+2f234e106668b1_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_ab7d15a71958588c6402f234e106668b1_ab7d15a71958588c6402
+f234e106668b1_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_ab7d15a71958588c6402f234e106668b1_
+ab7d15a71958588c6402f234e106668b1_cgraph.pdf used on input line 2398.
+(pdftex.def)             Requested size: 350.0pt x 81.25705pt.
+[78 <./class_my_test_c_ase_ab7d15a71958588c6402f234e106668b1_ab7d15a71958588c64
+02f234e106668b1_cgraph.pdf>]
+<class_my_test_c_ase_abbb762450dffd3be8bf9d1b6ec757466_abbb762450dffd3be8bf9d1b
+6ec757466_cgraph.pdf, id=3900, 337.26pt x 111.41624pt>
+File: class_my_test_c_ase_abbb762450dffd3be8bf9d1b6ec757466_abbb762450dffd3be8b
+f9d1b6ec757466_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_abbb762450dffd3be8bf9d1b6ec757466_abbb762450dffd3be8bf
+9d1b6ec757466_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_abbb762450dffd3be8bf9d1b6ec757466_
+abbb762450dffd3be8bf9d1b6ec757466_cgraph.pdf used on input line 2439.
+(pdftex.def)             Requested size: 336.0pt x 111.00284pt.
+
+<class_my_test_c_ase_a6399ca8bca3f10a0f114a070d3e3a570_a6399ca8bca3f10a0f114a07
+0d3e3a570_cgraph.pdf, id=3924, 751.80875pt x 179.67125pt>
+File: class_my_test_c_ase_a6399ca8bca3f10a0f114a070d3e3a570_a6399ca8bca3f10a0f1
+14a070d3e3a570_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_a6399ca8bca3f10a0f114a070d3e3a570_a6399ca8bca3f10a0f11
+4a070d3e3a570_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_a6399ca8bca3f10a0f114a070d3e3a570_
+a6399ca8bca3f10a0f114a070d3e3a570_cgraph.pdf used on input line 2490.
+(pdftex.def)             Requested size: 350.0pt x 83.64769pt.
+[79 <./class_my_test_c_ase_abbb762450dffd3be8bf9d1b6ec757466_abbb762450dffd3be8
+bf9d1b6ec757466_cgraph.pdf> <./class_my_test_c_ase_a6399ca8bca3f10a0f114a070d3e
+3a570_a6399ca8bca3f10a0f114a070d3e3a570_cgraph.pdf
+
+pdfTeX warning: pdflatex (file ./class_my_test_c_ase_a6399ca8bca3f10a0f114a070d
+3e3a570_a6399ca8bca3f10a0f114a070d3e3a570_cgraph.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>]
+<class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_ab9c76eb2dfd565a353ae9a5
+f604b36d9_cgraph.pdf, id=3971, 751.80875pt x 179.67125pt>
+File: class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_ab9c76eb2dfd565a353
+ae9a5f604b36d9_cgraph.pdf Graphic file (type pdf)
+
+<use class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_ab9c76eb2dfd565a353a
+e9a5f604b36d9_cgraph.pdf>
+Package pdftex.def Info: class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_
+ab9c76eb2dfd565a353ae9a5f604b36d9_cgraph.pdf used on input line 2542.
+(pdftex.def)             Requested size: 350.0pt x 83.64769pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2570--2571
+[]\T1/phv/m/n/10 Referenced by [][]complex[]_[]threaded[]_[]functionality[]_[]h
+undred[]_[]threads()[][], [][]complex[]_[]threaded[]_[]functionality[]_[]ten[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2570--2571
+\T1/phv/m/n/10 _[]threads()[][], [][]multi[]_[]threaded[]_[]multiple[]_[]object
+[]_[]exchange[]_[]test()[][], [][]multi[]_[]threaded[]_[]single[]_[]object[]_[]
+test[]_[]with[]_[]ten[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2570--2571
+\T1/phv/m/n/10 _[]threads()[][], [][]nested[]_[]hundred[]_[]thread[]_[]function
+ality()[][], [][]nested[]_[]thousand[]_[]thread[]_[]functionality()[][], [][]th
+readed[]_[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2570--2571
+\T1/phv/m/n/10 _[]thousand[]_[]threads()[][], [][]threaded[]_[]functionality[]_
+[]thousand[]_[]threads[]_[]six[]_[]account()[][], and [][]two[]_[]object[]_[]tr
+ansfer[]_[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2588--2589
+[]\T1/phv/m/n/10 Referenced by [][]threaded[]_[]functionality[]_[]hundred[]_[]t
+hreads[]_[]six[]_[]account()[][], [][]threaded[]_[]functionality[]_[]thousand[]
+_[]
+ []
+
+[80 <./class_my_test_c_ase_ab9c76eb2dfd565a353ae9a5f604b36d9_ab9c76eb2dfd565a35
+3ae9a5f604b36d9_cgraph.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2599--2600
+[]\T1/phv/m/n/10 Referenced by [][]complex[]_[]threaded[]_[]functionality[]_[]h
+undred[]_[]threads()[][], [][]complex[]_[]threaded[]_[]functionality[]_[]ten[]_
+[]
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 2599--2600
+\T1/phv/m/n/10 threads()[][], [][]multi[]_[]threaded[]_[]multiple[]_[]object[]_
+[]exchange[]_[]test()[][], [][]nested[]_[]hundred[]_[]thread[]_[]functionality(
+)[][], [][]nested[]_[]
+ []
+
+
+Underfull \hbox (badness 3343) in paragraph at lines 2599--2600
+\T1/phv/m/n/10 thousand[]_[]thread[]_[]functionality()[][], [][]threaded[]_[]fu
+nctionality[]_[]hundred[]_[]threads()[][], [][]threaded[]_[]functionality[]_[]h
+undred[]_[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2617--2618
+[]\T1/phv/m/n/10 Referenced by [][]threaded[]_[]functionality[]_[]hundred[]_[]t
+hreads[]_[]six[]_[]account()[][], [][]threaded[]_[]functionality[]_[]thousand[]
+_[]
+ []
+
+
+Underfull \hbox (badness 3907) in paragraph at lines 2628--2629
+[]\T1/phv/m/n/10 Referenced by [][][]_[]one[]_[]account[]_[]transfer[]_[]()[][]
+, [][]compare[]_[][]Transaction[]_[][]Manager[]_[]singleton[]_[]instance()[][],
+ [][]complex[]_[]
+ []
+
+
+Underfull \hbox (badness 5050) in paragraph at lines 2628--2629
+\T1/phv/m/n/10 threaded[]_[]functionality[]_[]hundred[]_[]threads()[][], [][]co
+mplex[]_[]threaded[]_[]functionality[]_[]ten[]_[]threads()[][], [][]decrease[]_
+[]nesting()[][],
+ []
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 2628--2629
+\T1/phv/m/n/10 test()[][], [][]multi[]_[]threaded[]_[]multiple[]_[]objects[]_[]
+test()[][], [][]multi[]_[]threaded[]_[]single[]_[]object[]_[]test[]_[]with[]_[]
+ten[]_[]threads()[][], [][]nested[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2628--2629
+\T1/phv/m/n/10 _[]hundred[]_[]thread[]_[]functionality()[][], [][]nested[]_[]th
+ousand[]_[]thread[]_[]functionality()[][], [][]nested[]_[]transaction[]_[]objec
+t[]_[]test()[][],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2628--2629
+[][]\T1/phv/m/n/10 object[]_[]not[]_[]registered[]_[]throw[]_[]runtime[]_[]erro
+r()[][], [][]register[]_[]null[]_[]pointer[]_[]throw[]_[]runtime[]_[]error()[][
+], [][]single[]_[]threaded[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2628--2629
+\T1/phv/m/n/10 _[]multiple[]_[]object[]_[]test()[][], [][]store[]_[]null[]_[]po
+inter[]_[]throw[]_[]runtime[]_[]error()[][], [][]threaded[]_[]functionality[]_[
+]hundred[]_[]threads()[][],
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 2639--2640
+[]\T1/phv/m/n/10 Referenced by [][]nested[]_[]transaction[]_[]object[]_[]test()
+[][], [][]threaded[]_[]functionality[]_[]hundred[]_[]threads[]_[]six[]_[]accoun
+t()[][], and
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 2650--2651
+[]\T1/phv/m/n/10 Referenced by [][]nested[]_[]transaction[]_[]object[]_[]test()
+[][], [][]threaded[]_[]functionality[]_[]hundred[]_[]threads[]_[]six[]_[]accoun
+t()[][], and
+ []
+
+) (./class_o_s_t_m.tex [81] <class_o_s_t_m__inherit__graph.pdf, id=4100, 881.29
+25pt x 1044.90375pt>
+File: class_o_s_t_m__inherit__graph.pdf Graphic file (type pdf)
+<use class_o_s_t_m__inherit__graph.pdf>
+Package pdftex.def Info: class_o_s_t_m__inherit__graph.pdf used on input line 1
+4.
+(pdftex.def)             Requested size: 350.0pt x 414.97258pt.
+<class_o_s_t_m__coll__graph.pdf, id=4101, 221.82875pt x 414.54875pt>
+File: class_o_s_t_m__coll__graph.pdf Graphic file (type pdf)
+<use class_o_s_t_m__coll__graph.pdf>
+Package pdftex.def Info: class_o_s_t_m__coll__graph.pdf used on input line 24.
+(pdftex.def)             Requested size: 221.0pt x 412.99797pt.
+[82 <./class_o_s_t_m__inherit__graph.pdf>] [83 <./class_o_s_t_m__coll__graph.pd
+f>] [84]
+<class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f0571619
+196_cgraph.pdf, id=4214, 331.2375pt x 111.41624pt>
+File: class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f05
+71619196_cgraph.pdf Graphic file (type pdf)
+
+<use class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f057
+1619196_cgraph.pdf>
+Package pdftex.def Info: class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968ed
+f778668bd0ec7603f0571619196_cgraph.pdf used on input line 150.
+(pdftex.def)             Requested size: 330.0pt x 111.00455pt.
+[85 <./class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f0
+571619196_cgraph.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[86] [87]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[88] [89] [90]
+<class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203309ae8
+a59_cgraph.pdf, id=4457, 363.3575pt x 519.9425pt>
+File: class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c2033
+09ae8a59_cgraph.pdf Graphic file (type pdf)
+
+<use class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c20330
+9ae8a59_cgraph.pdf>
+Package pdftex.def Info: class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a51339
+6a115f2987fd07c203309ae8a59_cgraph.pdf used on input line 706.
+(pdftex.def)             Requested size: 350.0pt x 500.84488pt.
+[91 <./class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_a513396a115f2987fd07c203
+309ae8a59_cgraph.pdf>] [92]) (./class_s_w_b_p_l_c.tex <class_s_w_b_p_l_c__inher
+it__graph.pdf, id=4530, 221.82875pt x 1044.90375pt>
+File: class_s_w_b_p_l_c__inherit__graph.pdf Graphic file (type pdf)
+<use class_s_w_b_p_l_c__inherit__graph.pdf>
+Package pdftex.def Info: class_s_w_b_p_l_c__inherit__graph.pdf used on input li
+ne 14.
+(pdftex.def)             Requested size: 116.76308pt x 550.0pt.
+
+Underfull \vbox (badness 6445) has occurred while \output is active []
+
+[93] <class_s_w_b_p_l_c__coll__graph.pdf, id=4538, 221.82875pt x 1044.90375pt>
+File: class_s_w_b_p_l_c__coll__graph.pdf Graphic file (type pdf)
+<use class_s_w_b_p_l_c__coll__graph.pdf>
+Package pdftex.def Info: class_s_w_b_p_l_c__coll__graph.pdf used on input line 
+24.
+(pdftex.def)             Requested size: 116.76308pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[94 <./class_s_w_b_p_l_c__inherit__graph.pdf>] [95 <./class_s_w_b_p_l_c__coll__
+graph.pdf>]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 148--148
+[]\T1/pcr/m/n/7 00035                                                          
+                                                 :[] 
+ []
+
+[96]
+<class_s_w_b_p_l_c_a33e460bff6f51b30209a6f5a25a24d7d_a33e460bff6f51b30209a6f5a2
+5a24d7d_cgraph.pdf, id=4701, 333.245pt x 100.375pt>
+File: class_s_w_b_p_l_c_a33e460bff6f51b30209a6f5a25a24d7d_a33e460bff6f51b30209a
+6f5a25a24d7d_cgraph.pdf Graphic file (type pdf)
+
+<use class_s_w_b_p_l_c_a33e460bff6f51b30209a6f5a25a24d7d_a33e460bff6f51b30209a6
+f5a25a24d7d_cgraph.pdf>
+Package pdftex.def Info: class_s_w_b_p_l_c_a33e460bff6f51b30209a6f5a25a24d7d_a3
+3e460bff6f51b30209a6f5a25a24d7d_cgraph.pdf used on input line 195.
+(pdftex.def)             Requested size: 332.0pt x 100.00716pt.
+[97 <./class_s_w_b_p_l_c_a33e460bff6f51b30209a6f5a25a24d7d_a33e460bff6f51b30209
+a6f5a25a24d7d_cgraph.pdf>]
+<class_s_w_b_p_l_c_a9468640482a6cfb9bfb4115fc59191d5_a9468640482a6cfb9bfb4115fc
+59191d5_cgraph.pdf, id=4737, 321.2pt x 100.375pt>
+File: class_s_w_b_p_l_c_a9468640482a6cfb9bfb4115fc59191d5_a9468640482a6cfb9bfb4
+115fc59191d5_cgraph.pdf Graphic file (type pdf)
+
+<use class_s_w_b_p_l_c_a9468640482a6cfb9bfb4115fc59191d5_a9468640482a6cfb9bfb41
+15fc59191d5_cgraph.pdf>
+Package pdftex.def Info: class_s_w_b_p_l_c_a9468640482a6cfb9bfb4115fc59191d5_a9
+468640482a6cfb9bfb4115fc59191d5_cgraph.pdf used on input line 288.
+(pdftex.def)             Requested size: 320.0pt x 100.00255pt.
+[98 <./class_s_w_b_p_l_c_a9468640482a6cfb9bfb4115fc59191d5_a9468640482a6cfb9bfb
+4115fc59191d5_cgraph.pdf>]
+<class_s_w_b_p_l_c_a77f0e0d6c08a95066d277bf6b2073a5c_a77f0e0d6c08a95066d277bf6b
+2073a5c_cgraph.pdf, id=4781, 350.30875pt x 100.375pt>
+File: class_s_w_b_p_l_c_a77f0e0d6c08a95066d277bf6b2073a5c_a77f0e0d6c08a95066d27
+7bf6b2073a5c_cgraph.pdf Graphic file (type pdf)
+
+<use class_s_w_b_p_l_c_a77f0e0d6c08a95066d277bf6b2073a5c_a77f0e0d6c08a95066d277
+bf6b2073a5c_cgraph.pdf>
+Package pdftex.def Info: class_s_w_b_p_l_c_a77f0e0d6c08a95066d277bf6b2073a5c_a7
+7f0e0d6c08a95066d277bf6b2073a5c_cgraph.pdf used on input line 424.
+(pdftex.def)             Requested size: 349.0pt x 100.00716pt.
+[99 <./class_s_w_b_p_l_c_a77f0e0d6c08a95066d277bf6b2073a5c_a77f0e0d6c08a95066d2
+77bf6b2073a5c_cgraph.pdf>]
+<class_s_w_b_p_l_c_a1e4b8f85d4e8e29429d691e258fea2e7_a1e4b8f85d4e8e29429d691e25
+8fea2e7_cgraph.pdf, id=4843, 564.1075pt x 672.5125pt>
+File: class_s_w_b_p_l_c_a1e4b8f85d4e8e29429d691e258fea2e7_a1e4b8f85d4e8e29429d6
+91e258fea2e7_cgraph.pdf Graphic file (type pdf)
+
+<use class_s_w_b_p_l_c_a1e4b8f85d4e8e29429d691e258fea2e7_a1e4b8f85d4e8e29429d69
+1e258fea2e7_cgraph.pdf>
+Package pdftex.def Info: class_s_w_b_p_l_c_a1e4b8f85d4e8e29429d691e258fea2e7_a1
+e4b8f85d4e8e29429d691e258fea2e7_cgraph.pdf used on input line 542.
+(pdftex.def)             Requested size: 350.0pt x 417.26129pt.
+[100] [101 <./class_s_w_b_p_l_c_a1e4b8f85d4e8e29429d691e258fea2e7_a1e4b8f85d4e8
+e29429d691e258fea2e7_cgraph.pdf>] [102]
+<class_s_w_b_p_l_c_a761c77b5a204b4ae05ffb01bd602c3c2_a761c77b5a204b4ae05ffb01bd
+602c3c2_cgraph.pdf, id=4941, 368.37625pt x 291.0875pt>
+File: class_s_w_b_p_l_c_a761c77b5a204b4ae05ffb01bd602c3c2_a761c77b5a204b4ae05ff
+b01bd602c3c2_cgraph.pdf Graphic file (type pdf)
+
+<use class_s_w_b_p_l_c_a761c77b5a204b4ae05ffb01bd602c3c2_a761c77b5a204b4ae05ffb
+01bd602c3c2_cgraph.pdf>
+Package pdftex.def Info: class_s_w_b_p_l_c_a761c77b5a204b4ae05ffb01bd602c3c2_a7
+61c77b5a204b4ae05ffb01bd602c3c2_cgraph.pdf used on input line 764.
+(pdftex.def)             Requested size: 350.0pt x 276.56264pt.
+[103 <./class_s_w_b_p_l_c_a761c77b5a204b4ae05ffb01bd602c3c2_a761c77b5a204b4ae05
+ffb01bd602c3c2_cgraph.pdf>]) (./class_t_m.tex <class_t_m__coll__graph.pdf, id=4
+994, 208.78pt x 293.095pt>
+File: class_t_m__coll__graph.pdf Graphic file (type pdf)
+<use class_t_m__coll__graph.pdf>
+Package pdftex.def Info: class_t_m__coll__graph.pdf used on input line 14.
+(pdftex.def)             Requested size: 208.0pt x 292.01645pt.
+[104]
+LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 34.
+LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 34.
+[105 <./class_t_m__coll__graph.pdf>] [106]
+Underfull \hbox (badness 6001) in paragraph at lines 138--139
+\T1/phv/m/n/10 _[]account[]_[]transfer[]_[]()[][], [][]client[]::[]_[]six[]_[]a
+ccount[]_[]transfer[]_[]()[][], [][]client[]::[]_[]two[]_[]account[]_[]transfer
+[]_[]()[][], [][]My[]Test[]C[]Ase[]::[]_[]two[]
+ []
+
+
+Underfull \hbox (badness 2790) in paragraph at lines 138--139
+\T1/phv/m/n/10 _[]account[]_[]transfer[]_[]()[][], [][]My[]Test[]C[]Ase[]::decr
+ease[]_[]nesting()[][], [][]My[]Test[]C[]Ase[]::decrease[]_[]nesting[]_[]fail()
+[][], [][]My[]Test[]C[]Ase[]
+ []
+
+
+<class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075_
+cgraph.pdf, id=5106, 411.5375pt x 100.375pt>
+File: class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a
+0075_cgraph.pdf Graphic file (type pdf)
+
+<use class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0
+075_cgraph.pdf>
+Package pdftex.def Info: class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226c
+c4080c931651b13f74a0075_cgraph.pdf used on input line 169.
+(pdftex.def)             Requested size: 350.0pt x 85.36661pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+[]\T1/phv/m/n/10 Referenced by [][]My[]Test[]C[]Ase[]::complex[]_[]threaded[]_[
+]functionality[]_[]hundred[]_[]threads()[][], [][]My[]Test[]C[]Ase[]::complex[]
+_[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+\T1/phv/m/n/10 Test[]C[]Ase[]::nested[]_[]transaction[]_[]object[]_[]test()[][]
+, [][]My[]Test[]C[]Ase[]::single[]_[]threaded[]_[]multiple[]_[]object[]_[]test(
+)[][], [][]My[]Test[]C[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+\T1/phv/m/n/10 Ase[]::threaded[]_[]functionality[]_[]hundred[]_[]threads()[][],
+ [][]My[]Test[]C[]Ase[]::threaded[]_[]functionality[]_[]hundred[]_[]threads[]_[
+]six[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
+\T1/phv/m/n/10 _[]account()[][], [][]My[]Test[]C[]Ase[]::threaded[]_[]functiona
+lity[]_[]thousand[]_[]threads()[][], [][]My[]Test[]C[]Ase[]::threaded[]_[]funct
+ionality[]_[]
+ []
+
+[107 <./class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f7
+4a0075_cgraph.pdf>]
+<class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06_
+cgraph.pdf, id=5158, 278.03876pt x 100.375pt>
+File: class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430ea
+de06_cgraph.pdf Graphic file (type pdf)
+
+<use class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430ead
+e06_cgraph.pdf>
+Package pdftex.def Info: class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f
+2429f2f524d25f430eade06_cgraph.pdf used on input line 227.
+(pdftex.def)             Requested size: 277.0pt x 100.00102pt.
+[108 <./class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430
+eade06_cgraph.pdf>]
+<class_t_m_a3285005a8f3e9fed99b024dac86fae05_a3285005a8f3e9fed99b024dac86fae05_
+cgraph.pdf, id=5200, 308.15125pt x 100.375pt>
+File: class_t_m_a3285005a8f3e9fed99b024dac86fae05_a3285005a8f3e9fed99b024dac86f
+ae05_cgraph.pdf Graphic file (type pdf)
+
+<use class_t_m_a3285005a8f3e9fed99b024dac86fae05_a3285005a8f3e9fed99b024dac86fa
+e05_cgraph.pdf>
+Package pdftex.def Info: class_t_m_a3285005a8f3e9fed99b024dac86fae05_a3285005a8
+f3e9fed99b024dac86fae05_cgraph.pdf used on input line 343.
+(pdftex.def)             Requested size: 307.0pt x 100.00716pt.
+[109 <./class_t_m_a3285005a8f3e9fed99b024dac86fae05_a3285005a8f3e9fed99b024dac8
+6fae05_cgraph.pdf>] [110]
+<class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e_
+cgraph.pdf, id=5253, 306.14375pt x 100.375pt>
+File: class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253
+376e_cgraph.pdf Graphic file (type pdf)
+
+<use class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb72533
+76e_cgraph.pdf>
+Package pdftex.def Info: class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c2
+4d9aa3aebd6dafb7253376e_cgraph.pdf used on input line 456.
+(pdftex.def)             Requested size: 305.0pt x 100.00562pt.
+
+Overfull \vbox (2.07391pt too high) has occurred while \output is active []
+
+[111 <./class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb72
+53376e_cgraph.pdf>]) (./class_t_x.tex <class_t_x__coll__graph.pdf, id=5297, 235
+.88126pt x 392.46625pt>
+File: class_t_x__coll__graph.pdf Graphic file (type pdf)
+<use class_t_x__coll__graph.pdf>
+Package pdftex.def Info: class_t_x__coll__graph.pdf used on input line 14.
+(pdftex.def)             Requested size: 235.0pt x 391.00406pt.
+
+Underfull \vbox (badness 4120) has occurred while \output is active []
+
+[112] [113 <./class_t_x__coll__graph.pdf>] [114] [115] [116]
+Underfull \hbox (badness 3049) in paragraph at lines 354--355
+[]\T1/phv/m/n/10 References [][]get[]_[]thread[]_[][]Map()[][], [][]main[]_[][]
+Process[]_[][]Map[]_[]collection[][], [][]process[]_[]map[]_[]collection[][], [
+][]register[]_[][]Lock[][], and
+ []
+
+[117]
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 409--409
+[]\T1/pcr/m/n/7 00144     std::map< int, std::shared_ptr<OSTM> >::iterator work
+ing_Map_collection_Object_Shared_Pointer_Iterator[] 
+ []
+
+
+<class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f51df97ac483e5bfe7db6ca6e_
+cgraph.pdf, id=5491, 295.1025pt x 100.375pt>
+File: class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f51df97ac483e5bfe7db6
+ca6e_cgraph.pdf Graphic file (type pdf)
+
+<use class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f51df97ac483e5bfe7db6c
+a6e_cgraph.pdf>
+Package pdftex.def Info: class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f5
+1df97ac483e5bfe7db6ca6e_cgraph.pdf used on input line 427.
+(pdftex.def)             Requested size: 294.0pt x 100.00255pt.
+[118 <./class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f51df97ac483e5bfe7d
+b6ca6e_cgraph.pdf>]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 468--468
+[]\T1/pcr/m/n/7 00288     std::map< int, std::shared_ptr<OSTM> >::iterator work
+ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
+ []
+
+
+Underfull \hbox (badness 768) in paragraph at lines 518--519
+[]\T1/phv/m/n/10 References [][][]_[]decrease[]_[]tx[]_[]nesting()[][], [][][]_
+[]release[]_[]object[]_[]lock()[][], [][][]_[]tx[]_[]nesting[]_[]level[][], [][
+]main[]_[][]Process[]_[][]Map[]_[]collection[][],
+ []
+
+[119]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 535--535
+[]\T1/pcr/m/n/7 00214     std::map< int, std::shared_ptr<OSTM> >::iterator work
+ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 553--553
+[]\T1/pcr/m/n/7 00225                 []throw[] std::runtime_error(std::string(
+[]"[RUNTIME ERROR : CAN'T FIND OBJECT COMMIT FUNCTION]"[])[] 
+ []
+
+
+Overfull \hbox (27.75554pt too wide) in paragraph at lines 585--585
+[]      \T1/pcr/m/n/7 working_Map_collection_Object_Shared_Pointer_Iterator->se
+cond, main_Process_Map_collection_Iterator->second);[] 
+ []
+
+
+Overfull \hbox (27.75554pt too wide) in paragraph at lines 609--609
+[]      \T1/pcr/m/n/7 main_Process_Map_collection_Iterator->second, working_Map
+_collection_Object_Shared_Pointer_Iterator->second);[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[120]
+<class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356b35e557448e58d260087356_
+cgraph.pdf, id=5554, 316.18124pt x 176.66pt>
+File: class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356b35e557448e58d26008
+7356_cgraph.pdf Graphic file (type pdf)
+
+<use class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356b35e557448e58d260087
+356_cgraph.pdf>
+Package pdftex.def Info: class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356
+b35e557448e58d260087356_cgraph.pdf used on input line 634.
+(pdftex.def)             Requested size: 315.0pt x 176.0126pt.
+[121 <./class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356b35e557448e58d260
+087356_cgraph.pdf>]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 747--747
+[]\T1/pcr/m/n/7 00157     std::map< int, std::shared_ptr<OSTM> >::iterator work
+ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
+ []
+
+
+Overfull \vbox (33.7781pt too high) has occurred while \output is active []
+
+[122] [123]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 896--896
+[]\T1/pcr/m/n/7 00187     std::map< int, std::shared_ptr<OSTM> >::iterator work
+ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
+ []
+
+[124] [125]) (./class_u_l_s_t_e_r.tex <class_u_l_s_t_e_r__inherit__graph.pdf, i
+d=5705, 221.82875pt x 1044.90375pt>
+File: class_u_l_s_t_e_r__inherit__graph.pdf Graphic file (type pdf)
+<use class_u_l_s_t_e_r__inherit__graph.pdf>
+Package pdftex.def Info: class_u_l_s_t_e_r__inherit__graph.pdf used on input li
+ne 14.
+(pdftex.def)             Requested size: 116.76308pt x 550.0pt.
+[126] <class_u_l_s_t_e_r__coll__graph.pdf, id=5716, 221.82875pt x 1044.90375pt>
+File: class_u_l_s_t_e_r__coll__graph.pdf Graphic file (type pdf)
+<use class_u_l_s_t_e_r__coll__graph.pdf>
+Package pdftex.def Info: class_u_l_s_t_e_r__coll__graph.pdf used on input line 
+24.
+(pdftex.def)             Requested size: 116.76308pt x 550.0pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[127 <./class_u_l_s_t_e_r__inherit__graph.pdf>] [128 <./class_u_l_s_t_e_r__coll
+__graph.pdf>]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 148--148
+[]\T1/pcr/m/n/7 00035                                                          
+                                                 :[] 
+ []
+
+[129]
+<class_u_l_s_t_e_r_ac7207ca64f86ef3081e176deb222805d_ac7207ca64f86ef3081e176deb
+222805d_cgraph.pdf, id=5879, 321.2pt x 100.375pt>
+File: class_u_l_s_t_e_r_ac7207ca64f86ef3081e176deb222805d_ac7207ca64f86ef3081e1
+76deb222805d_cgraph.pdf Graphic file (type pdf)
+
+<use class_u_l_s_t_e_r_ac7207ca64f86ef3081e176deb222805d_ac7207ca64f86ef3081e17
+6deb222805d_cgraph.pdf>
+Package pdftex.def Info: class_u_l_s_t_e_r_ac7207ca64f86ef3081e176deb222805d_ac
+7207ca64f86ef3081e176deb222805d_cgraph.pdf used on input line 194.
+(pdftex.def)             Requested size: 320.0pt x 100.00255pt.
+[130 <./class_u_l_s_t_e_r_ac7207ca64f86ef3081e176deb222805d_ac7207ca64f86ef3081
+e176deb222805d_cgraph.pdf>]
+<class_u_l_s_t_e_r_aeef5c3e20f2a82344b4b83e5ccf4cc40_aeef5c3e20f2a82344b4b83e5c
+cf4cc40_cgraph.pdf, id=5914, 318.18875pt x 100.375pt>
+File: class_u_l_s_t_e_r_aeef5c3e20f2a82344b4b83e5ccf4cc40_aeef5c3e20f2a82344b4b
+83e5ccf4cc40_cgraph.pdf Graphic file (type pdf)
+
+<use class_u_l_s_t_e_r_aeef5c3e20f2a82344b4b83e5ccf4cc40_aeef5c3e20f2a82344b4b8
+3e5ccf4cc40_cgraph.pdf>
+Package pdftex.def Info: class_u_l_s_t_e_r_aeef5c3e20f2a82344b4b83e5ccf4cc40_ae
+ef5c3e20f2a82344b4b83e5ccf4cc40_cgraph.pdf used on input line 287.
+(pdftex.def)             Requested size: 317.0pt x 99.9995pt.
+[131 <./class_u_l_s_t_e_r_aeef5c3e20f2a82344b4b83e5ccf4cc40_aeef5c3e20f2a82344b
+4b83e5ccf4cc40_cgraph.pdf>]
+<class_u_l_s_t_e_r_ad0c05e562b0c67283edfa4940c9aa728_ad0c05e562b0c67283edfa4940
+c9aa728_cgraph.pdf, id=5959, 341.275pt x 100.375pt>
+File: class_u_l_s_t_e_r_ad0c05e562b0c67283edfa4940c9aa728_ad0c05e562b0c67283edf
+a4940c9aa728_cgraph.pdf Graphic file (type pdf)
+
+<use class_u_l_s_t_e_r_ad0c05e562b0c67283edfa4940c9aa728_ad0c05e562b0c67283edfa
+4940c9aa728_cgraph.pdf>
+Package pdftex.def Info: class_u_l_s_t_e_r_ad0c05e562b0c67283edfa4940c9aa728_ad
+0c05e562b0c67283edfa4940c9aa728_cgraph.pdf used on input line 423.
+(pdftex.def)             Requested size: 340.0pt x 100.00562pt.
+[132 <./class_u_l_s_t_e_r_ad0c05e562b0c67283edfa4940c9aa728_ad0c05e562b0c67283e
+dfa4940c9aa728_cgraph.pdf>]
+<class_u_l_s_t_e_r_aa096fc13a27cf4c4238af3aad8382a13_aa096fc13a27cf4c4238af3aad
+8382a13_cgraph.pdf, id=6020, 555.07375pt x 672.5125pt>
+File: class_u_l_s_t_e_r_aa096fc13a27cf4c4238af3aad8382a13_aa096fc13a27cf4c4238a
+f3aad8382a13_cgraph.pdf Graphic file (type pdf)
+
+<use class_u_l_s_t_e_r_aa096fc13a27cf4c4238af3aad8382a13_aa096fc13a27cf4c4238af
+3aad8382a13_cgraph.pdf>
+Package pdftex.def Info: class_u_l_s_t_e_r_aa096fc13a27cf4c4238af3aad8382a13_aa
+096fc13a27cf4c4238af3aad8382a13_cgraph.pdf used on input line 541.
+(pdftex.def)             Requested size: 350.0pt x 424.05453pt.
+[133] [134 <./class_u_l_s_t_e_r_aa096fc13a27cf4c4238af3aad8382a13_aa096fc13a27c
+f4c4238af3aad8382a13_cgraph.pdf>] [135]
+<class_u_l_s_t_e_r_a341bbcb3f7d6ef10f30d4734ceed10ee_a341bbcb3f7d6ef10f30d4734c
+eed10ee_cgraph.pdf, id=6119, 362.35374pt x 291.0875pt>
+File: class_u_l_s_t_e_r_a341bbcb3f7d6ef10f30d4734ceed10ee_a341bbcb3f7d6ef10f30d
+4734ceed10ee_cgraph.pdf Graphic file (type pdf)
+
+<use class_u_l_s_t_e_r_a341bbcb3f7d6ef10f30d4734ceed10ee_a341bbcb3f7d6ef10f30d4
+734ceed10ee_cgraph.pdf>
+Package pdftex.def Info: class_u_l_s_t_e_r_a341bbcb3f7d6ef10f30d4734ceed10ee_a3
+41bbcb3f7d6ef10f30d4734ceed10ee_cgraph.pdf used on input line 763.
+(pdftex.def)             Requested size: 350.0pt x 281.16861pt.
+[136 <./class_u_l_s_t_e_r_a341bbcb3f7d6ef10f30d4734ceed10ee_a341bbcb3f7d6ef10f3
+0d4734ceed10ee_cgraph.pdf>]) (./class_u_n_b_l.tex <class_u_n_b_l__inherit__grap
+h.pdf, id=6171, 221.82875pt x 1044.90375pt>
+File: class_u_n_b_l__inherit__graph.pdf Graphic file (type pdf)
+<use class_u_n_b_l__inherit__graph.pdf>
+Package pdftex.def Info: class_u_n_b_l__inherit__graph.pdf used on input line 1
+4.
+(pdftex.def)             Requested size: 116.76308pt x 550.0pt.
+[137] <class_u_n_b_l__coll__graph.pdf, id=6183, 221.82875pt x 1044.90375pt>
+File: class_u_n_b_l__coll__graph.pdf Graphic file (type pdf)
+<use class_u_n_b_l__coll__graph.pdf>
+Package pdftex.def Info: class_u_n_b_l__coll__graph.pdf used on input line 24.
+(pdftex.def)             Requested size: 116.76308pt x 550.0pt.
+
+Underfull \vbox (badness 2753) has occurred while \output is active []
+
+[138 <./class_u_n_b_l__inherit__graph.pdf>] [139 <./class_u_n_b_l__coll__graph.
+pdf>] [140]
+<class_u_n_b_l_abbd578fbd58cf6f2143f17b3011f6c21_abbd578fbd58cf6f2143f17b3011f6
+c21_cgraph.pdf, id=6345, 271.0125pt x 100.375pt>
+File: class_u_n_b_l_abbd578fbd58cf6f2143f17b3011f6c21_abbd578fbd58cf6f2143f17b3
+011f6c21_cgraph.pdf Graphic file (type pdf)
+
+<use class_u_n_b_l_abbd578fbd58cf6f2143f17b3011f6c21_abbd578fbd58cf6f2143f17b30
+11f6c21_cgraph.pdf>
+Package pdftex.def Info: class_u_n_b_l_abbd578fbd58cf6f2143f17b3011f6c21_abbd57
+8fbd58cf6f2143f17b3011f6c21_cgraph.pdf used on input line 194.
+(pdftex.def)             Requested size: 270.0pt x 100.00409pt.
+[141 <./class_u_n_b_l_abbd578fbd58cf6f2143f17b3011f6c21_abbd578fbd58cf6f2143f17
+b3011f6c21_cgraph.pdf>]
+<class_u_n_b_l_a14d5e1adc618827667d8d9524abaf31b_a14d5e1adc618827667d8d9524abaf
+31b_cgraph.pdf, id=6382, 306.14375pt x 100.375pt>
+File: class_u_n_b_l_a14d5e1adc618827667d8d9524abaf31b_a14d5e1adc618827667d8d952
+4abaf31b_cgraph.pdf Graphic file (type pdf)
+
+<use class_u_n_b_l_a14d5e1adc618827667d8d9524abaf31b_a14d5e1adc618827667d8d9524
+abaf31b_cgraph.pdf>
+Package pdftex.def Info: class_u_n_b_l_a14d5e1adc618827667d8d9524abaf31b_a14d5e
+1adc618827667d8d9524abaf31b_cgraph.pdf used on input line 286.
+(pdftex.def)             Requested size: 305.0pt x 100.00562pt.
+[142 <./class_u_n_b_l_a14d5e1adc618827667d8d9524abaf31b_a14d5e1adc618827667d8d9
+524abaf31b_cgraph.pdf>]
+<class_u_n_b_l_a5dfe7f9e5fbb66abff9a73e40e803887_a5dfe7f9e5fbb66abff9a73e40e803
+887_cgraph.pdf, id=6426, 303.1325pt x 100.375pt>
+File: class_u_n_b_l_a5dfe7f9e5fbb66abff9a73e40e803887_a5dfe7f9e5fbb66abff9a73e4
+0e803887_cgraph.pdf Graphic file (type pdf)
+
+<use class_u_n_b_l_a5dfe7f9e5fbb66abff9a73e40e803887_a5dfe7f9e5fbb66abff9a73e40
+e803887_cgraph.pdf>
+Package pdftex.def Info: class_u_n_b_l_a5dfe7f9e5fbb66abff9a73e40e803887_a5dfe7
+f9e5fbb66abff9a73e40e803887_cgraph.pdf used on input line 422.
+(pdftex.def)             Requested size: 302.0pt x 100.00102pt.
+[143 <./class_u_n_b_l_a5dfe7f9e5fbb66abff9a73e40e803887_a5dfe7f9e5fbb66abff9a73
+e40e803887_cgraph.pdf>]
+<class_u_n_b_l_a32ab1105494f18bdb33e651e9bbfcd02_a32ab1105494f18bdb33e651e9bbfc
+d02_cgraph.pdf, id=6487, 515.9275pt x 672.5125pt>
+File: class_u_n_b_l_a32ab1105494f18bdb33e651e9bbfcd02_a32ab1105494f18bdb33e651e
+9bbfcd02_cgraph.pdf Graphic file (type pdf)
+
+<use class_u_n_b_l_a32ab1105494f18bdb33e651e9bbfcd02_a32ab1105494f18bdb33e651e9
+bbfcd02_cgraph.pdf>
+Package pdftex.def Info: class_u_n_b_l_a32ab1105494f18bdb33e651e9bbfcd02_a32ab1
+105494f18bdb33e651e9bbfcd02_cgraph.pdf used on input line 540.
+(pdftex.def)             Requested size: 350.0pt x 456.23523pt.
+[144] [145 <./class_u_n_b_l_a32ab1105494f18bdb33e651e9bbfcd02_a32ab1105494f18bd
+b33e651e9bbfcd02_cgraph.pdf>] [146]
+<class_u_n_b_l_a76d8bba21d64d79d8de63763b8acc1fd_a76d8bba21d64d79d8de63763b8acc
+1fd_cgraph.pdf, id=6584, 336.25626pt x 291.0875pt>
+File: class_u_n_b_l_a76d8bba21d64d79d8de63763b8acc1fd_a76d8bba21d64d79d8de63763
+b8acc1fd_cgraph.pdf Graphic file (type pdf)
+
+<use class_u_n_b_l_a76d8bba21d64d79d8de63763b8acc1fd_a76d8bba21d64d79d8de63763b
+8acc1fd_cgraph.pdf>
+Package pdftex.def Info: class_u_n_b_l_a76d8bba21d64d79d8de63763b8acc1fd_a76d8b
+ba21d64d79d8de63763b8acc1fd_cgraph.pdf used on input line 762.
+(pdftex.def)             Requested size: 335.0pt x 290.003pt.
+[147] [148 <./class_u_n_b_l_a76d8bba21d64d79d8de63763b8acc1fd_a76d8bba21d64d79d
+8de63763b8acc1fd_cgraph.pdf>]) (./_a_i_b_8cpp.tex <_a_i_b_8cpp__incl.pdf, id=66
+47, 327.2225pt x 325.215pt>
+File: _a_i_b_8cpp__incl.pdf Graphic file (type pdf)
+<use _a_i_b_8cpp__incl.pdf>
+Package pdftex.def Info: _a_i_b_8cpp__incl.pdf used on input line 10.
+(pdftex.def)             Requested size: 326.0pt x 323.99841pt.
+) (./_a_i_b_8cpp_source.tex [149 <./_a_i_b_8cpp__incl.pdf>]
+Overfull \hbox (19.25278pt too wide) in paragraph at lines 23--24
+[]\T1/pcr/m/n/7 00020 [] * $\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 brief getBaseCopy f
+unction, make deep copy of the object/pointer and Return a new std::shared_ptr<
+BANK>[] 
+ []
+
+[150]) (./_a_i_b_8h.tex <_a_i_b_8h__incl.pdf, id=6744, 327.2225pt x 269.005pt>
+File: _a_i_b_8h__incl.pdf Graphic file (type pdf)
+<use _a_i_b_8h__incl.pdf>
+Package pdftex.def Info: _a_i_b_8h__incl.pdf used on input line 12.
+(pdftex.def)             Requested size: 326.0pt x 267.99867pt.
+<_a_i_b_8h__dep__incl.pdf, id=6745, 312.16624pt x 269.005pt>
+File: _a_i_b_8h__dep__incl.pdf Graphic file (type pdf)
+<use _a_i_b_8h__dep__incl.pdf>
+Package pdftex.def Info: _a_i_b_8h__dep__incl.pdf used on input line 20.
+(pdftex.def)             Requested size: 311.0pt x 268.00688pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[151 <./_a_i_b_8h__incl.pdf>]) (./_a_i_b_8h_source.tex [152 <./_a_i_b_8h__dep__
+incl.pdf>]) (./_b_a_n_k_8cpp.tex <_b_a_n_k_8cpp__incl.pdf, id=6857, 327.2225pt 
+x 269.005pt>
+File: _b_a_n_k_8cpp__incl.pdf Graphic file (type pdf)
+<use _b_a_n_k_8cpp__incl.pdf>
+Package pdftex.def Info: _b_a_n_k_8cpp__incl.pdf used on input line 9.
+(pdftex.def)             Requested size: 326.0pt x 267.99867pt.
+) (./_b_a_n_k_8cpp_source.tex [153]) (./_b_a_n_k_8h.tex <_b_a_n_k_8h__incl.pdf,
+ id=6878, 327.2225pt x 212.795pt>
+File: _b_a_n_k_8h__incl.pdf Graphic file (type pdf)
+<use _b_a_n_k_8h__incl.pdf>
+Package pdftex.def Info: _b_a_n_k_8h__incl.pdf used on input line 9.
+(pdftex.def)             Requested size: 326.0pt x 211.99895pt.
+
+Underfull \vbox (badness 2277) has occurred while \output is active []
+
+[154 <./_b_a_n_k_8cpp__incl.pdf>] <_b_a_n_k_8h__dep__incl.pdf, id=6893, 630.355
+pt x 325.215pt>
+File: _b_a_n_k_8h__dep__incl.pdf Graphic file (type pdf)
+<use _b_a_n_k_8h__dep__incl.pdf>
+Package pdftex.def Info: _b_a_n_k_8h__dep__incl.pdf used on input line 17.
+(pdftex.def)             Requested size: 350.0pt x 180.57585pt.
+) (./_b_a_n_k_8h_source.tex [155 <./_b_a_n_k_8h__incl.pdf> <./_b_a_n_k_8h__dep_
+_incl.pdf
+
+pdfTeX warning: pdflatex (file ./_b_a_n_k_8h__dep__incl.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>]) (./_b_o_a_8cpp.tex <_b_o_a_8cpp__incl.pdf, id=6950, 327.2225pt x 325.215pt>
+File: _b_o_a_8cpp__incl.pdf Graphic file (type pdf)
+<use _b_o_a_8cpp__incl.pdf>
+Package pdftex.def Info: _b_o_a_8cpp__incl.pdf used on input line 9.
+(pdftex.def)             Requested size: 326.0pt x 323.99841pt.
+) (./_b_o_a_8cpp_source.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[156]
+Overfull \hbox (19.25278pt too wide) in paragraph at lines 21--22
+[]\T1/pcr/m/n/7 00018 [] * $\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 brief getBaseCopy f
+unction, make deep copy of the object/pointer and Return a new std::shared_ptr<
+BANK>[] 
+ []
+
+[157 <./_b_o_a_8cpp__incl.pdf>]
+Overfull \hbox (44.24722pt too wide) in paragraph at lines 57--57
+[]       \T1/pcr/m/n/7 "$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 nDouble value : " << t
+his->GetV_double() << "$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 nFloat value : " << thi
+s->GetV_float() << "$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 nString value : " <<[] 
+ []
+
+) (./_b_o_a_8h.tex <_b_o_a_8h__incl.pdf, id=7052, 327.2225pt x 269.005pt>
+File: _b_o_a_8h__incl.pdf Graphic file (type pdf)
+<use _b_o_a_8h__incl.pdf>
+Package pdftex.def Info: _b_o_a_8h__incl.pdf used on input line 12.
+(pdftex.def)             Requested size: 326.0pt x 267.99867pt.
+[158] <_b_o_a_8h__dep__incl.pdf, id=7070, 316.18124pt x 269.005pt>
+File: _b_o_a_8h__dep__incl.pdf Graphic file (type pdf)
+<use _b_o_a_8h__dep__incl.pdf>
+Package pdftex.def Info: _b_o_a_8h__dep__incl.pdf used on input line 20.
+(pdftex.def)             Requested size: 315.0pt x 268.0192pt.
+) (./_b_o_a_8h_source.tex [159 <./_b_o_a_8h__incl.pdf> <./_b_o_a_8h__dep__incl.
+pdf
+
+pdfTeX warning: pdflatex (file ./_b_o_a_8h__dep__incl.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+>] [160]) (./_b_o_i_8cpp.tex <_b_o_i_8cpp__incl.pdf, id=7180, 327.2225pt x 325.
+215pt>
+File: _b_o_i_8cpp__incl.pdf Graphic file (type pdf)
+<use _b_o_i_8cpp__incl.pdf>
+Package pdftex.def Info: _b_o_i_8cpp__incl.pdf used on input line 9.
+(pdftex.def)             Requested size: 326.0pt x 323.99841pt.
+) (./_b_o_i_8cpp_source.tex [161 <./_b_o_i_8cpp__incl.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[162]) (./_b_o_i_8h.tex <_b_o_i_8h__incl.pdf, id=7283, 327.2225pt x 269.005pt>
+File: _b_o_i_8h__incl.pdf Graphic file (type pdf)
+<use _b_o_i_8h__incl.pdf>
+Package pdftex.def Info: _b_o_i_8h__incl.pdf used on input line 12.
+(pdftex.def)             Requested size: 326.0pt x 267.99867pt.
+<_b_o_i_8h__dep__incl.pdf, id=7284, 314.17375pt x 269.005pt>
+File: _b_o_i_8h__dep__incl.pdf Graphic file (type pdf)
+<use _b_o_i_8h__dep__incl.pdf>
+Package pdftex.def Info: _b_o_i_8h__dep__incl.pdf used on input line 20.
+(pdftex.def)             Requested size: 313.0pt x 268.01099pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[163 <./_b_o_i_8h__incl.pdf>]) (./_b_o_i_8h_source.tex [164 <./_b_o_i_8h__dep__
+incl.pdf>]) (./client_8cpp.tex <client_8cpp__incl.pdf, id=7394, 1578.89874pt x 
+381.425pt>
+File: client_8cpp__incl.pdf Graphic file (type pdf)
+<use client_8cpp__incl.pdf>
+Package pdftex.def Info: client_8cpp__incl.pdf used on input line 9.
+(pdftex.def)             Requested size: 350.0pt x 84.54814pt.
+) (./client_8cpp_source.tex [165]) (./client_8h.tex <client_8h__incl.pdf, id=74
+11, 1578.89874pt x 325.215pt>
+File: client_8h__incl.pdf Graphic file (type pdf)
+<use client_8h__incl.pdf>
+Package pdftex.def Info: client_8h__incl.pdf used on input line 22.
+(pdftex.def)             Requested size: 350.0pt x 72.08841pt.
+<client_8h__dep__incl.pdf, id=7412, 292.09125pt x 212.795pt>
+File: client_8h__dep__incl.pdf Graphic file (type pdf)
+<use client_8h__dep__incl.pdf>
+Package pdftex.def Info: client_8h__dep__incl.pdf used on input line 30.
+(pdftex.def)             Requested size: 291.0pt x 212.01843pt.
+
+Underfull \vbox (badness 3189) has occurred while \output is active []
+
+[166 <./client_8cpp__incl.pdf> <./client_8h__incl.pdf
+
+pdfTeX warning: pdflatex (file ./client_8h__incl.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>]) (./client_8h_source.tex [167 <./client_8h__dep__incl.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[168]
+Overfull \hbox (52.95552pt too wide) in paragraph at lines 176--176
+[]      \T1/pcr/m/n/7 _from_one_, std::shared_ptr<OSTM> _from_two_, std::shared
+_ptr<OSTM> _from_three_, std::shared_ptr<OSTM> _from_four_[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[169]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[170]) (./main_8cpp.tex <main_8cpp__incl.pdf, id=7540, 1404.24625pt x 459.7175p
+t>
+File: main_8cpp__incl.pdf Graphic file (type pdf)
+<use main_8cpp__incl.pdf>
+Package pdftex.def Info: main_8cpp__incl.pdf used on input line 13.
+(pdftex.def)             Requested size: 350.0pt x 114.57835pt.
+) (./main_8cpp_source.tex [171 <./main_8cpp__incl.pdf>]) (./_my_test_c_ase_8cpp
+.tex <_my_test_c_ase_8cpp__incl.pdf, id=7572, 1534.73375pt x 448.67625pt>
+File: _my_test_c_ase_8cpp__incl.pdf Graphic file (type pdf)
+<use _my_test_c_ase_8cpp__incl.pdf>
+Package pdftex.def Info: _my_test_c_ase_8cpp__incl.pdf used on input line 13.
+(pdftex.def)             Requested size: 350.0pt x 102.31705pt.
+) (./_my_test_c_ase_8cpp_source.tex [172 <./_my_test_c_ase_8cpp__incl.pdf>]
+Overfull \hbox (31.95554pt too wide) in paragraph at lines 72--72
+[]      \T1/pcr/m/n/7 std::shared_ptr<OSTM> _from_two_, std::vector<std::shared
+_ptr<OSTM>> _customer_vec, [][]TM[][]& _tm, []double[] _amount) {[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[173]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[174]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[175]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[176]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 417--417
+[]\T1/pcr/m/n/7 00591     std::shared_ptr<BANK> _FROM_BANK_ONE,_FROM_BANK_TWO,_
+FROM_BANK_THREE, _FROM_BANK_FOUR, _FROM_BANK_FIVE;[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[177]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 465--465
+[]\T1/pcr/m/n/7 00636     std::shared_ptr<BANK> _FROM_BANK_ONE,_FROM_BANK_TWO,_
+FROM_BANK_THREE, _FROM_BANK_FOUR, _FROM_BANK_FIVE;[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[178]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[179]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[180]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[181]) (./_my_test_c_ase_8h.tex <_my_test_c_ase_8h__incl.pdf, id=8033, 1352.051
+25pt x 392.46625pt>
+File: _my_test_c_ase_8h__incl.pdf Graphic file (type pdf)
+<use _my_test_c_ase_8h__incl.pdf>
+Package pdftex.def Info: _my_test_c_ase_8h__incl.pdf used on input line 13.
+(pdftex.def)             Requested size: 350.0pt x 101.59566pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[182] <_my_test_c_ase_8h__dep__incl.pdf, id=8040, 247.92625pt x 156.585pt>
+File: _my_test_c_ase_8h__dep__incl.pdf Graphic file (type pdf)
+<use _my_test_c_ase_8h__dep__incl.pdf>
+Package pdftex.def Info: _my_test_c_ase_8h__dep__incl.pdf used on input line 21
+.
+(pdftex.def)             Requested size: 247.0pt x 156.00162pt.
+) (./_my_test_c_ase_8h_source.tex [183 <./_my_test_c_ase_8h__incl.pdf> <./_my_t
+est_c_ase_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./_my_test_c_ase_8h__dep__incl.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[184]) (./_o_s_t_m_8cpp.tex <_o_s_t_m_8cpp__incl.pdf, id=8116, 327.2225pt x 212
+.795pt>
+File: _o_s_t_m_8cpp__incl.pdf Graphic file (type pdf)
+<use _o_s_t_m_8cpp__incl.pdf>
+Package pdftex.def Info: _o_s_t_m_8cpp__incl.pdf used on input line 9.
+(pdftex.def)             Requested size: 326.0pt x 211.99895pt.
+) (./_o_s_t_m_8cpp_source.tex [185 <./_o_s_t_m_8cpp__incl.pdf>]) (./_o_s_t_m_8h
+.tex <_o_s_t_m_8h__incl.pdf, id=8194, 327.2225pt x 156.585pt>
+File: _o_s_t_m_8h__incl.pdf Graphic file (type pdf)
+<use _o_s_t_m_8h__incl.pdf>
+Package pdftex.def Info: _o_s_t_m_8h__incl.pdf used on input line 12.
+(pdftex.def)             Requested size: 326.0pt x 155.99922pt.
+[186] <_o_s_t_m_8h__dep__incl.pdf, id=8215, 716.6775pt x 381.425pt>
+File: _o_s_t_m_8h__dep__incl.pdf Graphic file (type pdf)
+<use _o_s_t_m_8h__dep__incl.pdf>
+Package pdftex.def Info: _o_s_t_m_8h__dep__incl.pdf used on input line 20.
+(pdftex.def)             Requested size: 350.0pt x 186.27713pt.
+) (./_o_s_t_m_8h_source.tex [187 <./_o_s_t_m_8h__incl.pdf> <./_o_s_t_m_8h__dep_
+_incl.pdf
+
+pdfTeX warning: pdflatex (file ./_o_s_t_m_8h__dep__incl.pdf): PDF inclusion: mu
+ltiple pdfs with page group included in a single page
+>]) (./_s_w_b_p_l_c_8cpp.tex <_s_w_b_p_l_c_8cpp__incl.pdf, id=8278, 327.2225pt 
+x 325.215pt>
+File: _s_w_b_p_l_c_8cpp__incl.pdf Graphic file (type pdf)
+<use _s_w_b_p_l_c_8cpp__incl.pdf>
+Package pdftex.def Info: _s_w_b_p_l_c_8cpp__incl.pdf used on input line 9.
+(pdftex.def)             Requested size: 326.0pt x 323.99841pt.
+) (./_s_w_b_p_l_c_8cpp_source.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[188]
+Overfull \hbox (19.25278pt too wide) in paragraph at lines 21--22
+[]\T1/pcr/m/n/7 00018 [] * $\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 brief getBaseCopy f
+unction, make deep copy of the object/pointer and Return a new std::shared_ptr<
+BANK>[] 
+ []
+
+[189 <./_s_w_b_p_l_c_8cpp__incl.pdf>]) (./_s_w_b_p_l_c_8h.tex <_s_w_b_p_l_c_8h_
+_incl.pdf, id=8374, 327.2225pt x 269.005pt>
+File: _s_w_b_p_l_c_8h__incl.pdf Graphic file (type pdf)
+<use _s_w_b_p_l_c_8h__incl.pdf>
+Package pdftex.def Info: _s_w_b_p_l_c_8h__incl.pdf used on input line 12.
+(pdftex.def)             Requested size: 326.0pt x 267.99867pt.
+[190] <_s_w_b_p_l_c_8h__dep__incl.pdf, id=8394, 292.09125pt x 269.005pt>
+File: _s_w_b_p_l_c_8h__dep__incl.pdf Graphic file (type pdf)
+<use _s_w_b_p_l_c_8h__dep__incl.pdf>
+Package pdftex.def Info: _s_w_b_p_l_c_8h__dep__incl.pdf used on input line 20.
+(pdftex.def)             Requested size: 291.0pt x 268.0233pt.
+) (./_s_w_b_p_l_c_8h_source.tex [191 <./_s_w_b_p_l_c_8h__incl.pdf> <./_s_w_b_p_
+l_c_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./_s_w_b_p_l_c_8h__dep__incl.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+>] [192]) (./_t_m_8cpp.tex <_t_m_8cpp__incl.pdf, id=8503, 650.43pt x 325.215pt>
+File: _t_m_8cpp__incl.pdf Graphic file (type pdf)
+<use _t_m_8cpp__incl.pdf>
+Package pdftex.def Info: _t_m_8cpp__incl.pdf used on input line 13.
+(pdftex.def)             Requested size: 350.0pt x 175.00311pt.
+) (./_t_m_8cpp_source.tex [193 <./_t_m_8cpp__incl.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[194]) (./_t_m_8h.tex <_t_m_8h__incl.pdf, id=8574, 636.3775pt x 269.005pt>
+File: _t_m_8h__incl.pdf Graphic file (type pdf)
+<use _t_m_8h__incl.pdf>
+Package pdftex.def Info: _t_m_8h__incl.pdf used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 147.9491pt.
+<_t_m_8h__dep__incl.pdf, id=8575, 292.09125pt x 269.005pt>
+File: _t_m_8h__dep__incl.pdf Graphic file (type pdf)
+<use _t_m_8h__dep__incl.pdf>
+Package pdftex.def Info: _t_m_8h__dep__incl.pdf used on input line 23.
+(pdftex.def)             Requested size: 291.0pt x 268.0233pt.
+[195 <./_t_m_8h__incl.pdf> <./_t_m_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./_t_m_8h__dep__incl.pdf): PDF inclusion: multip
+le pdfs with page group included in a single page
+>]) (./_t_m_8h_source.tex) (./_t_x_8cpp.tex <_t_x_8cpp__incl.pdf, id=8626, 593.
+21625pt x 269.005pt>
+File: _t_x_8cpp__incl.pdf Graphic file (type pdf)
+<use _t_x_8cpp__incl.pdf>
+Package pdftex.def Info: _t_x_8cpp__incl.pdf used on input line 10.
+(pdftex.def)             Requested size: 350.0pt x 158.71977pt.
+) (./_t_x_8cpp_source.tex [196] [197 <./_t_x_8cpp__incl.pdf>]
+Overfull \hbox (15.15555pt too wide) in paragraph at lines 116--116
+[]\T1/pcr/m/n/7 00144     std::map< int, std::shared_ptr<OSTM> >::iterator work
+ing_Map_collection_Object_Shared_Pointer_Iterator[] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 128--128
+[]\T1/pcr/m/n/7 00157     std::map< int, std::shared_ptr<OSTM> >::iterator work
+ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[198]
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 157--157
+[]\T1/pcr/m/n/7 00187     std::map< int, std::shared_ptr<OSTM> >::iterator work
+ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 180--180
+[]\T1/pcr/m/n/7 00214     std::map< int, std::shared_ptr<OSTM> >::iterator work
+ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 197--197
+[]\T1/pcr/m/n/7 00225                 []throw[] std::runtime_error(std::string(
+[]"[RUNTIME ERROR : CAN'T FIND OBJECT COMMIT FUNCTION]"[])[] 
+ []
+
+
+Overfull \hbox (27.75554pt too wide) in paragraph at lines 228--228
+[]      \T1/pcr/m/n/7 working_Map_collection_Object_Shared_Pointer_Iterator->se
+cond, main_Process_Map_collection_Iterator->second);[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[199]
+Overfull \hbox (27.75554pt too wide) in paragraph at lines 251--251
+[]      \T1/pcr/m/n/7 main_Process_Map_collection_Iterator->second, working_Map
+_collection_Object_Shared_Pointer_Iterator->second);[] 
+ []
+
+
+Overfull \hbox (19.35555pt too wide) in paragraph at lines 271--271
+[]\T1/pcr/m/n/7 00288     std::map< int, std::shared_ptr<OSTM> >::iterator work
+ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[200]) (./_t_x_8h.tex <_t_x_8h__incl.pdf, id=8780, 622.325pt x 212.795pt>
+File: _t_x_8h__incl.pdf Graphic file (type pdf)
+<use _t_x_8h__incl.pdf>
+Package pdftex.def Info: _t_x_8h__incl.pdf used on input line 18.
+(pdftex.def)             Requested size: 350.0pt x 119.6774pt.
+<_t_x_8h__dep__incl.pdf, id=8781, 292.09125pt x 325.215pt>
+File: _t_x_8h__dep__incl.pdf Graphic file (type pdf)
+<use _t_x_8h__dep__incl.pdf>
+Package pdftex.def Info: _t_x_8h__dep__incl.pdf used on input line 26.
+(pdftex.def)             Requested size: 291.0pt x 324.02818pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[201 <./_t_x_8h__incl.pdf>]) (./_t_x_8h_source.tex [202 <./_t_x_8h__dep__incl.p
+df>]) (./_u_l_s_t_e_r_8cpp.tex <_u_l_s_t_e_r_8cpp__incl.pdf, id=8850, 327.2225p
+t x 325.215pt>
+File: _u_l_s_t_e_r_8cpp__incl.pdf Graphic file (type pdf)
+<use _u_l_s_t_e_r_8cpp__incl.pdf>
+Package pdftex.def Info: _u_l_s_t_e_r_8cpp__incl.pdf used on input line 9.
+(pdftex.def)             Requested size: 326.0pt x 323.99841pt.
+) (./_u_l_s_t_e_r_8cpp_source.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[203]
+Overfull \hbox (19.25278pt too wide) in paragraph at lines 22--23
+[]\T1/pcr/m/n/7 00019 [] * $\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 brief getBaseCopy f
+unction, make deep copy of the object/pointer and Return a new std::shared_ptr<
+BANK>[] 
+ []
+
+[204 <./_u_l_s_t_e_r_8cpp__incl.pdf>]) (./_u_l_s_t_e_r_8h.tex <_u_l_s_t_e_r_8h_
+_incl.pdf, id=8944, 327.2225pt x 269.005pt>
+File: _u_l_s_t_e_r_8h__incl.pdf Graphic file (type pdf)
+<use _u_l_s_t_e_r_8h__incl.pdf>
+Package pdftex.def Info: _u_l_s_t_e_r_8h__incl.pdf used on input line 12.
+(pdftex.def)             Requested size: 326.0pt x 267.99867pt.
+[205] <_u_l_s_t_e_r_8h__dep__incl.pdf, id=8964, 292.09125pt x 269.005pt>
+File: _u_l_s_t_e_r_8h__dep__incl.pdf Graphic file (type pdf)
+<use _u_l_s_t_e_r_8h__dep__incl.pdf>
+Package pdftex.def Info: _u_l_s_t_e_r_8h__dep__incl.pdf used on input line 20.
+(pdftex.def)             Requested size: 291.0pt x 268.0233pt.
+) (./_u_l_s_t_e_r_8h_source.tex [206 <./_u_l_s_t_e_r_8h__incl.pdf> <./_u_l_s_t_
+e_r_8h__dep__incl.pdf
+
+pdfTeX warning: pdflatex (file ./_u_l_s_t_e_r_8h__dep__incl.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+>] [207]) (./_u_n_b_l_8cpp.tex <_u_n_b_l_8cpp__incl.pdf, id=9074, 327.2225pt x 
+325.215pt>
+File: _u_n_b_l_8cpp__incl.pdf Graphic file (type pdf)
+<use _u_n_b_l_8cpp__incl.pdf>
+Package pdftex.def Info: _u_n_b_l_8cpp__incl.pdf used on input line 9.
+(pdftex.def)             Requested size: 326.0pt x 323.99841pt.
+) (./_u_n_b_l_8cpp_source.tex [208 <./_u_n_b_l_8cpp__incl.pdf>]
+Overfull \hbox (19.25278pt too wide) in paragraph at lines 20--21
+[]\T1/pcr/m/n/7 00017 [] * $\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 brief getBaseCopy f
+unction, make deep copy of the object/pointer and Return a new std::shared_ptr<
+BANK>[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[209]) (./_u_n_b_l_8h.tex <_u_n_b_l_8h__incl.pdf, id=9177, 327.2225pt x 269.005
+pt>
+File: _u_n_b_l_8h__incl.pdf Graphic file (type pdf)
+<use _u_n_b_l_8h__incl.pdf>
+Package pdftex.def Info: _u_n_b_l_8h__incl.pdf used on input line 12.
+(pdftex.def)             Requested size: 326.0pt x 267.99867pt.
+<_u_n_b_l_8h__dep__incl.pdf, id=9178, 292.09125pt x 269.005pt>
+File: _u_n_b_l_8h__dep__incl.pdf Graphic file (type pdf)
+<use _u_n_b_l_8h__dep__incl.pdf>
+Package pdftex.def Info: _u_n_b_l_8h__dep__incl.pdf used on input line 20.
+(pdftex.def)             Requested size: 291.0pt x 268.0233pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[210 <./_u_n_b_l_8h__incl.pdf>]) (./_u_n_b_l_8h_source.tex [211 <./_u_n_b_l_8h_
+_dep__incl.pdf>]) [212]
+No file refman.ind.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 219.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 219.
+(./refman.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 219.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 219.
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: 2AB0652F89D91E368A7E6E13176154D8;24141.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 219.
+ ) 
+Here is how much of TeX's memory you used:
+ 17960 strings out of 493029
+ 343229 string characters out of 6136235
+ 377599 words of memory out of 5000000
+ 19086 multiletter control sequences out of 15000+600000
+ 55260 words of font info for 75 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 53i,16n,92p,9818b,636s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{namespace_cpp_unit} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{namespacestd} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{main_8cpp_source_l00013} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{client_8h_source_l00032} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00079} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00095} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00087} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00063} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00055} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00071} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00083} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00099} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00091} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00067} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00059} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00075} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8h_source_l00060} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00014} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00011} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8h_source_l00033} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8h_source_l00044} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00021} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8h_source_l00092} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8h_source_l00090} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8h_source_l00091} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8h_source_l00094} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8h_source_l00095} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8h_source_l00093} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8h_source_l00022} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8h_source_l00017} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00082} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00098} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00090} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00066} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00058} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00074} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00086} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00102} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00094} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00070} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00062} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00078} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8h_source_l00062} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00016} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00013} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8h_source_l00035} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8h_source_l00046} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00023} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8h_source_l00094} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8h_source_l00092} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8h_source_l00093} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8h_source_l00096} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8h_source_l00097} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8h_source_l00095} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8h_source_l00024} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8h_source_l00019} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8h_source_l00070} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00178} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00370} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00155} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00374} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00324} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00052} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8h_source_l00078} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00286} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8h_source_l00123} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8h_source_l00110} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00338} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00104} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8h_source_l00094} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8h_source_l00115} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00346} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00307} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00331} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00202} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00316} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00044} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00038} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8h_source_l00100} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8h_source_l00104} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00031} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8h_source_l00024} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8h_source_l00059} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8cpp_source_l00122} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8h_source_l00067} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8h_source_l00091} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8h_source_l00047} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_x_8cpp_source_l00072} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8h_source_l00042} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8cpp_source_l00043} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8h_source_l00063} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8h_source_l00021} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00081} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00097} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00089} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00065} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00057} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00073} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00085} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00101} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00093} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00069} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00061} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00077} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8h_source_l00063} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00015} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00012} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8h_source_l00035} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8h_source_l00046} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00022} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8h_source_l00095} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8h_source_l00093} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8h_source_l00094} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8h_source_l00097} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8h_source_l00098} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8h_source_l00096} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8h_source_l00024} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8h_source_l00019} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00140} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00081} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00034} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00035} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00033} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00105} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00119} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00133} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00120} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00147} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00112} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00126} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00097} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00038} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_s_w_b_p_l_c_8cpp_source_l00052} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_l_s_t_e_r_8cpp_source_l00053} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_u_n_b_l_8cpp_source_l00050} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00042} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00112} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00034} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00048} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00036} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00116} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00096} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00100} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00056} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00104} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00108} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00020} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8h_source_l00017} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8cpp_source_l00134} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00903} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8h_source_l00069} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8h_source_l00068} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8h_source_l00116} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00831} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8h_source_l00108} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00805} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00818} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8h_source_l00071} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8h_source_l00070} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8h_source_l00126} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00868} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00841} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00881} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00853} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8h_source_l00067} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8h_source_l00066} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8cpp_source_l00102} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8cpp_source_l00028} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00896} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00556} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00523} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00922} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00634} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00589} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00954} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8h_source_l00065} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00715} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00680} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00467} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00412} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00983} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l01040} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00012} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00009} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8h_source_l00061} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8h_source_l00018} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00765} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00748} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00787} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_t_m_8cpp_source_l00079} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{client_8h_source_l00038} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{client_8h_source_l00039} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{client_8h_source_l00034} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00077} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00093} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00085} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00061} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00053} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00069} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00081} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00097} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00089} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00065} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00057} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00049} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00073} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00035} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8h_source_l00065} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00012} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00015} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8h_source_l00037} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8cpp_source_l00022} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8h_source_l00049} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8h_source_l00098} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8h_source_l00096} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8h_source_l00097} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8h_source_l00100} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8h_source_l00101} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8h_source_l00099} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8h_source_l00024} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_i_8h_source_l00019} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00078} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00094} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00086} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00062} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00054} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00070} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00082} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00098} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00090} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00066} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00058} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00048} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00074} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00034} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8h_source_l00064} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00015} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00012} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8h_source_l00035} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8cpp_source_l00022} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8h_source_l00046} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8h_source_l00097} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8h_source_l00095} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8h_source_l00096} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8h_source_l00099} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8h_source_l00100} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8h_source_l00098} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8h_source_l00024} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_o_a_8h_source_l00018} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00050} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00054} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00052} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00266} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{client_8h_source_l00041} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{client_8h_source_l00170} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00194} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00074} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00320} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{client_8h_source_l00089} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{client_8h_source_l00236} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00126} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_my_test_c_ase_8cpp_source_l00020} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00046} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00044} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00048} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00051} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00055} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00053} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00047} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00045} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00049} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8cpp_source_l00011} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8cpp_source_l00014} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00029} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00023} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_b_a_n_k_8h_source_l00016} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00089} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00073} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00079} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00095} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00087} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00063} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00055} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00071} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00083} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00099} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00091} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00067} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00059} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00050} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00075} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_o_s_t_m_8cpp_source_l00066} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00037} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8h_source_l00066} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00017} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00014} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8h_source_l00036} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8cpp_source_l00024} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8h_source_l00048} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8h_source_l00098} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8h_source_l00096} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8h_source_l00097} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8h_source_l00100} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8h_source_l00101} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8h_source_l00099} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8h_source_l00023} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{_a_i_b_8h_source_l00018} has been referenced but do
+es not exist, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (216 pages, 1042453 bytes).
+PDF statistics:
+ 9739 PDF objects out of 10688 (max. 8388607)
+ 9145 compressed objects within 92 object streams
+ 1899 named destinations out of 2073 (max. 500000)
+ 1616 words of extra memory for PDF output out of 10000 (max. 10000000)
+

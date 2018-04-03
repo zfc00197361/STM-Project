@@ -46,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -110,30 +109,35 @@ Object Based Software Transactional Memory.</h1>
 <p><a class="el" href="class_o_s_t_m.html">OSTM</a> is a polymorphic solution to store and manage shared memory spaces within c++ programming context.<br />
  You can store and managed any kind of object in transactional environment as a shared and protected memory space, if your class inherited from the <a class="el" href="class_o_s_t_m.html">OSTM</a> base class, and follows the required steps.</p>
 <h2><a class="anchor" id="install_sec"></a>
-Brief. Download the zip file from the provided (Windows, Linux, MAC OSX)link in the web-site,</h2>
-<p>that contains the libostm.so, <a class="el" href="_t_m_8h.html">TM.h</a>, <a class="el" href="_t_x_8h.html">TX.h</a>, <a class="el" href="_o_s_t_m_8h.html">OSTM.h</a> files.Unzip the archive file to the desired destination possibly where you program is stored. Copy the library (Shared, Static) to the destination directory. Implement the inheritance from the base class. Create an executable, and run the application.</p>
+Installation of the Shared library on Linux platform.</h2>
+<p>Download the zip file from the provided (Windows, Linux, MAC OSX)link in the web-site, that contains the libostm.so, <a class="el" href="_t_m_8h.html">TM.h</a>, <a class="el" href="_t_x_8h.html">TX.h</a>, <a class="el" href="_o_s_t_m_8h.html">OSTM.h</a> files.Unzip the archive file to the desired destination possibly where you program is stored. Copy the library (Shared, Static) to the destination directory. Implement the inheritance from the base class. Create an executable, and run the application.</p>
 <h2><a class="anchor" id="step1"></a>
 Step 1: Download the archive file.</h2>
+<p>Go to the website <a href="http://serversite.info/ostm/#tutorial" target="_blank">Tutorial</a> and download the library to the required operating system platform. (Linux, Windows, Mac OSX)</p>
 <h2><a class="anchor" id="step2"></a>
 Step 2: Unzip in to the target destination.</h2>
+<p>Unzip the downloaded rar file. You can find the Shared, Static library and the *.h files in the unzipped folder. Copy the *.h files to the same folder where is the other C++ files are stored.</p>
 <h2><a class="anchor" id="step3"></a>
-Step 3: Copy the shared library (libostm.so) to the operating system folder where the other shared library are stored.</h2>
-<p>It will be different destination folder on different platforms. (Linux, Windows, Mac OS) <a href="http://serversite.info/ostm/#tutorial" target="_blank">More Information</a></p>
+Step 3: Copy the shared library.</h2>
+<p>The Shared library is a libostm.so file, that you need copy to the operating system directory where the other shared library are stored. It will be different destination folder on different platforms. (Linux, Windows, Mac OS) <a href="http://serversite.info/ostm/#tutorial" target="_blank">More Information</a></p>
 <h2><a class="anchor" id="step4"></a>
-Step 4: Achieve the required class hierarchy between the OSTM library and your own class structure.</h2>
-<p>Details and instruction of class hierarchy requirements can be found on the web-site. www.serversite.info/ostm</p>
+Step 4: Achieve the required class hierarchy.</h2>
+<p>To achieve the required class hierachy between the <a class="el" href="class_o_s_t_m.html">OSTM</a> library and your own class structure, you need to implement few steps to inherite from the <a class="el" href="class_o_s_t_m.html">OSTM</a> base class. Go to website <a href="http://serversite.info/ostm/#tutorial" target="_blank">Tutorial</a> for more details. Details and instruction of class hierarchy requirements can be found on the web-site. www.serversite.info/ostm</p>
 <h2><a class="anchor" id="step5"></a>
-Step 5: Create an executable file as you linking together the library, the *.h files with your own files.</h2>
+Step 5: Create an executable file.</h2>
+<p>You can create an executable file using the provided Makefile as you linking together the library (libostm.so), and the *.h files with your own files.</p>
 <h2><a class="anchor" id="step6"></a>
-Step 6: Now your application use transactional environment, that guarantees the consistency between object transactions.</h2>
+Step 6: Transactional Environment.</h2>
+<p>Now your application use transactional environment, that guarantees the consistency between object transactions.</p>
 <h2><a class="anchor" id="step7"></a>
 Step 7: Run the application.</h2>
+<p>Go to the directory where the executable was created, and used the following line in the terminal to run the application : ./EXECUTABLE_NAME </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Mar 11 2018 15:50:35 for C++ Software transactional Memory by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

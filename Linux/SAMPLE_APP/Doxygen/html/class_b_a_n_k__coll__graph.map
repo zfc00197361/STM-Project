@@ -1,0 +1,3 @@
+<map id="BANK" name="BANK">
+<area shape="rect" id="node2" href="$class_o_s_t_m.html" title="{OSTM\n|&#45; abort_Transaction\l&#45; canCommit\l&#45; mutex\l&#45; uniqueID\l&#45; version\l&#45; ZERO\l&#45; global_Unique_ID_Number\l|+ copy()\l+ Get_Unique_ID()\l+ Get_Version()\l+ getBaseCopy()\l+ increase_VersionNumber()\l+ Is_Abort_Transaction()\l+ Is_Can_Commit()\l+ lock_Mutex()\l+ OSTM()\l+ OSTM()\l+ Set_Abort_Transaction()\l+ Set_Can_Commit()\l+ Set_Unique_ID()\l+ Set_Version()\l+ toString()\l+ try_lock()\l+ unlock_Mutex()\l+ ~OSTM()\l&#45; Get_global_Unique_ID\l_Number()\l}" alt="" coords="5,5,193,449"/>
+</map>

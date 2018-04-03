@@ -46,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -145,9 +144,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8df39ced3b401aa466df97e26d14b1b7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7.html#a8df39ced3b401aa466df97e26d14b1b7">Is_Can_Commit</a> () const </td></tr>
 <tr class="memdesc:a8df39ced3b401aa466df97e26d14b1b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">@124 Function &lt;Is_Can_Commit&gt; boolean function to determin the object can comit or need to roolback.  <a href="class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7.html#a8df39ced3b401aa466df97e26d14b1b7">More...</a><br /></td></tr>
 <tr class="separator:a8df39ced3b401aa466df97e26d14b1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb6520023ed2c4a6188b688c46f192d0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0.html#afb6520023ed2c4a6188b688c46f192d0">is_Locked</a> ()</td></tr>
-<tr class="memdesc:afb6520023ed2c4a6188b688c46f192d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">@162 Function &lt;is_Locked&gt; Boolean function to try lock the object. If the object not locked then locks and return True it otherwise return False.  <a href="class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0.html#afb6520023ed2c4a6188b688c46f192d0">More...</a><br /></td></tr>
-<tr class="separator:afb6520023ed2c4a6188b688c46f192d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af192c598a3c647f37aaba5757e60240f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_t_m_af192c598a3c647f37aaba5757e60240f.html#af192c598a3c647f37aaba5757e60240f">lock_Mutex</a> ()</td></tr>
 <tr class="memdesc:af192c598a3c647f37aaba5757e60240f"><td class="mdescLeft">&#160;</td><td class="mdescRight">@145 Function &lt;lock_Mutex&gt; setter for mutex to lock the object  <a href="class_o_s_t_m_af192c598a3c647f37aaba5757e60240f.html#af192c598a3c647f37aaba5757e60240f">More...</a><br /></td></tr>
 <tr class="separator:af192c598a3c647f37aaba5757e60240f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +168,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a513396a115f2987fd07c203309ae8a59"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_t_m_a513396a115f2987fd07c203309ae8a59.html#a513396a115f2987fd07c203309ae8a59">toString</a> ()</td></tr>
 <tr class="memdesc:a513396a115f2987fd07c203309ae8a59"><td class="mdescLeft">&#160;</td><td class="mdescRight">The toString function displaying/representing the object on the terminal is string format.  <a href="class_o_s_t_m_a513396a115f2987fd07c203309ae8a59.html#a513396a115f2987fd07c203309ae8a59">More...</a><br /></td></tr>
 <tr class="separator:a513396a115f2987fd07c203309ae8a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3dd41488087b678c95b2f5c16486947"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_t_m_af3dd41488087b678c95b2f5c16486947.html#af3dd41488087b678c95b2f5c16486947">try_lock</a> ()</td></tr>
+<tr class="memdesc:af3dd41488087b678c95b2f5c16486947"><td class="mdescLeft">&#160;</td><td class="mdescRight">@162 Function &lt;is_Locked&gt; Boolean function to try lock the object. If the object not locked then locks and return True it otherwise return False.  <a href="class_o_s_t_m_af3dd41488087b678c95b2f5c16486947.html#af3dd41488087b678c95b2f5c16486947">More...</a><br /></td></tr>
+<tr class="separator:af3dd41488087b678c95b2f5c16486947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cd703bc26c719fd95b4f5362d050762"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762.html#a6cd703bc26c719fd95b4f5362d050762">unlock_Mutex</a> ()</td></tr>
 <tr class="memdesc:a6cd703bc26c719fd95b4f5362d050762"><td class="mdescLeft">&#160;</td><td class="mdescRight">@154 Function &lt;unlock_Mutex&gt; setter for mutex to unlock the object  <a href="class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762.html#a6cd703bc26c719fd95b4f5362d050762">More...</a><br /></td></tr>
 <tr class="separator:a6cd703bc26c719fd95b4f5362d050762"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -221,7 +220,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_o_s_t_m.html">OSTM</a></li>
-    <li class="footer">Generated on Sun Mar 11 2018 15:50:35 for C++ Software transactional Memory by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

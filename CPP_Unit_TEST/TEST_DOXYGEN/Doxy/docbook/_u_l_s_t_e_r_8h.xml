@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_u_l_s_t_e_r_8h">
+    <title>ULSTER.h File Reference</title>
+    <programlisting>#include &quot;BANK.h&quot;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;memory&gt;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+<para>Include dependency diagram for ULSTER.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_u_l_s_t_e_r_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for ULSTER.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_u_l_s_t_e_r_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="class_u_l_s_t_e_r">ULSTER</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file ULSTER.h</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 <emphasis class="comment">/*&#32;</emphasis>
+3 <emphasis class="comment">&#32;*&#32;File:&#32;&#32;&#32;ULSTER.h</emphasis>
+4 <emphasis class="comment">&#32;*&#32;Author:&#32;Zoltan&#32;Fuzesi</emphasis>
+5 <emphasis class="comment">&#32;*&#32;IT&#32;Carlow&#32;:&#32;C00197361</emphasis>
+6 <emphasis class="comment">&#32;*</emphasis>
+7 <emphasis class="comment">&#32;*&#32;Created&#32;on&#32;January&#32;17,&#32;2018,&#32;8:02&#32;PM</emphasis>
+8 <emphasis class="comment">&#32;*/</emphasis>
+9 
+10 <emphasis class="preprocessor">#ifndef&#32;ULSTER_H</emphasis>
+11 <emphasis class="preprocessor">#define&#32;ULSTER_H</emphasis>
+12 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_b_a_n_k_8h">BANK.h</link>&quot;</emphasis>
+13 <emphasis class="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+14 <emphasis class="preprocessor">#include&#32;&lt;memory&gt;</emphasis>
+15 <emphasis class="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+16 <emphasis class="comment">/*</emphasis>
+17 <emphasis class="comment">&#32;*&#32;Inherit&#32;from&#32;BANK</emphasis>
+18 <emphasis class="comment">&#32;*/</emphasis>
+<link linkend="class_u_l_s_t_e_r">19 </link><emphasis class="keyword">class&#32;</emphasis><link linkend="class_u_l_s_t_e_r">ULSTER</link>&#32;:&#32;<emphasis class="keyword">public</emphasis>&#32;<link linkend="class_b_a_n_k">BANK</link>&#32;{
+20 <emphasis class="keyword">public</emphasis>:
+21 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+22 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Constructor</emphasis>
+23 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_u_l_s_t_e_r_a637ad8cb5537167ab51cd079637a8323_1a637ad8cb5537167ab51cd079637a8323">24 </link>&#32;&#32;&#32;&#32;<link linkend="class_u_l_s_t_e_r_a637ad8cb5537167ab51cd079637a8323_1a637ad8cb5537167ab51cd079637a8323">ULSTER</link>()&#32;:&#32;<link linkend="class_b_a_n_k">BANK</link>()&#32;{
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_a13f0c2ce30f9e66e896633d81c9af979_1a13f0c2ce30f9e66e896633d81c9af979">accountNumber</link>&#32;=&#32;0;
+26 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_af98d3ed41f452b28f26994552465815c_1af98d3ed41f452b28f26994552465815c">balance</link>&#32;=&#32;50;
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_af8d138fdca14b59130b8b4ddd3d73b16_1af8d138fdca14b59130b8b4ddd3d73b16">firstName</link>&#32;=&#32;<emphasis class="stringliteral">&quot;Joe&quot;</emphasis>;
+28 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_afa319e559a6a7653aa67e6d8f801d7ee_1afa319e559a6a7653aa67e6d8f801d7ee">lastName</link>&#32;=&#32;<emphasis class="stringliteral">&quot;Blog&quot;</emphasis>;
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_a7a13c5988ddafa47b8d6eea3e77fd786_1a7a13c5988ddafa47b8d6eea3e77fd786">address</link>&#32;=&#32;<emphasis class="stringliteral">&quot;High&#32;street,&#32;Carlow&quot;</emphasis>;
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_a5dc42cbd515825463ba31c8d3dcfe1b6_1a5dc42cbd515825463ba31c8d3dcfe1b6">fullname</link>&#32;=&#32;<link linkend="class_u_l_s_t_e_r_af8d138fdca14b59130b8b4ddd3d73b16_1af8d138fdca14b59130b8b4ddd3d73b16">firstName</link>&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;<link linkend="class_u_l_s_t_e_r_afa319e559a6a7653aa67e6d8f801d7ee_1afa319e559a6a7653aa67e6d8f801d7ee">lastName</link>;
+31 &#32;&#32;&#32;&#32;};
+32 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+33 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Custom&#32;constructor</emphasis>
+34 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_u_l_s_t_e_r_ad80944864d4f907dd30b02a1d1a563cc_1ad80944864d4f907dd30b02a1d1a563cc">35 </link>&#32;&#32;&#32;&#32;<link linkend="class_u_l_s_t_e_r_ad80944864d4f907dd30b02a1d1a563cc_1ad80944864d4f907dd30b02a1d1a563cc">ULSTER</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_a13f0c2ce30f9e66e896633d81c9af979_1a13f0c2ce30f9e66e896633d81c9af979">accountNumber</link>,&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_af98d3ed41f452b28f26994552465815c_1af98d3ed41f452b28f26994552465815c">balance</link>,&#32;std::string&#32;<link linkend="class_u_l_s_t_e_r_af8d138fdca14b59130b8b4ddd3d73b16_1af8d138fdca14b59130b8b4ddd3d73b16">firstName</link>,&#32;std::string&#32;<link linkend="class_u_l_s_t_e_r_afa319e559a6a7653aa67e6d8f801d7ee_1afa319e559a6a7653aa67e6d8f801d7ee">lastName</link>,&#32;std::string&#32;<link linkend="class_u_l_s_t_e_r_a7a13c5988ddafa47b8d6eea3e77fd786_1a7a13c5988ddafa47b8d6eea3e77fd786">address</link>)&#32;:&#32;<link linkend="class_b_a_n_k">BANK</link>()&#32;{
+36 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;accountNumber&#32;=&#32;<link linkend="class_u_l_s_t_e_r_a13f0c2ce30f9e66e896633d81c9af979_1a13f0c2ce30f9e66e896633d81c9af979">accountNumber</link>;
+37 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;balance&#32;=&#32;<link linkend="class_u_l_s_t_e_r_af98d3ed41f452b28f26994552465815c_1af98d3ed41f452b28f26994552465815c">balance</link>;
+38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;firstName&#32;=&#32;<link linkend="class_u_l_s_t_e_r_af8d138fdca14b59130b8b4ddd3d73b16_1af8d138fdca14b59130b8b4ddd3d73b16">firstName</link>;
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;lastName&#32;=&#32;<link linkend="class_u_l_s_t_e_r_afa319e559a6a7653aa67e6d8f801d7ee_1afa319e559a6a7653aa67e6d8f801d7ee">lastName</link>;
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;address&#32;=&#32;<link linkend="class_u_l_s_t_e_r_a7a13c5988ddafa47b8d6eea3e77fd786_1a7a13c5988ddafa47b8d6eea3e77fd786">address</link>;
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_a5dc42cbd515825463ba31c8d3dcfe1b6_1a5dc42cbd515825463ba31c8d3dcfe1b6">fullname</link>&#32;=&#32;firstName&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;<link linkend="class_u_l_s_t_e_r_afa319e559a6a7653aa67e6d8f801d7ee_1afa319e559a6a7653aa67e6d8f801d7ee">lastName</link>;
+42 &#32;&#32;&#32;&#32;};
+43 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+44 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Custom&#32;constructor,&#32;used&#32;by&#32;the&#32;library&#32;for&#32;deep&#32;copying</emphasis>
+45 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_u_l_s_t_e_r_ac7207ca64f86ef3081e176deb222805d_1ac7207ca64f86ef3081e176deb222805d">46 </link>&#32;&#32;&#32;&#32;<link linkend="class_u_l_s_t_e_r_ac7207ca64f86ef3081e176deb222805d_1ac7207ca64f86ef3081e176deb222805d">ULSTER</link>(std::shared_ptr&lt;BANK&gt;&#32;obj,&#32;<emphasis class="keywordtype">int</emphasis>&#32;_version,&#32;<emphasis class="keywordtype">int</emphasis>&#32;_unique_id)&#32;:&#32;<link linkend="class_b_a_n_k">BANK</link>(_version,&#32;_unique_id)&#32;{
+47 
+48 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_a13f0c2ce30f9e66e896633d81c9af979_1a13f0c2ce30f9e66e896633d81c9af979">accountNumber</link>&#32;=&#32;obj-&gt;GetAccountNumber();
+49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_af98d3ed41f452b28f26994552465815c_1af98d3ed41f452b28f26994552465815c">balance</link>&#32;=&#32;obj-&gt;GetBalance();
+50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_af8d138fdca14b59130b8b4ddd3d73b16_1af8d138fdca14b59130b8b4ddd3d73b16">firstName</link>&#32;=&#32;obj-&gt;GetFirstName();
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_afa319e559a6a7653aa67e6d8f801d7ee_1afa319e559a6a7653aa67e6d8f801d7ee">lastName</link>&#32;=&#32;obj-&gt;GetLastName();
+52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_a7a13c5988ddafa47b8d6eea3e77fd786_1a7a13c5988ddafa47b8d6eea3e77fd786">address</link>&#32;=&#32;obj-&gt;GetAddress();
+53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_u_l_s_t_e_r_a5dc42cbd515825463ba31c8d3dcfe1b6_1a5dc42cbd515825463ba31c8d3dcfe1b6">fullname</link>&#32;=&#32;obj-&gt;GetFirstName()&#32;+&#32;<emphasis class="stringliteral">&quot;&#32;&quot;</emphasis>&#32;+&#32;obj-&gt;GetLastName();&#32;
+54 &#32;&#32;&#32;&#32;};
+55 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+56 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Copy&#32;constructor</emphasis>
+57 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+58 &#32;&#32;&#32;&#32;<link linkend="class_u_l_s_t_e_r_a637ad8cb5537167ab51cd079637a8323_1a637ad8cb5537167ab51cd079637a8323">ULSTER</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_u_l_s_t_e_r">ULSTER</link>&amp;&#32;orig);
+59 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+60 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Operator</emphasis>
+61 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<link linkend="class_u_l_s_t_e_r_aa096fc13a27cf4c4238af3aad8382a13_1aa096fc13a27cf4c4238af3aad8382a13">62 </link>&#32;&#32;&#32;&#32;<link linkend="class_u_l_s_t_e_r">ULSTER</link>&#32;<link linkend="class_u_l_s_t_e_r_aa096fc13a27cf4c4238af3aad8382a13_1aa096fc13a27cf4c4238af3aad8382a13">operator=</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_u_l_s_t_e_r">ULSTER</link>&amp;&#32;orig)&#32;{};
+63 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+64 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;de-constructor</emphasis>
+65 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+66 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_a4ceb68bdbc806f74f9e55096f8223453_1a4ceb68bdbc806f74f9e55096f8223453">~ULSTER</link>();
+67 &#32;&#32;&#32;&#32;
+68 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+69 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Implement&#32;OSTM&#32;virtual&#32;methods</emphasis>
+70 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+71 
+72 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_aeef5c3e20f2a82344b4b83e5ccf4cc40_1aeef5c3e20f2a82344b4b83e5ccf4cc40">copy</link>(std::shared_ptr&lt;OSTM&gt;&#32;to,&#32;std::shared_ptr&lt;OSTM&gt;&#32;from);
+73 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_u_l_s_t_e_r_ad0c05e562b0c67283edfa4940c9aa728_1ad0c05e562b0c67283edfa4940c9aa728">getBaseCopy</link>(std::shared_ptr&lt;OSTM&gt;&#32;<emphasis class="keywordtype">object</emphasis>);
+74 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_a341bbcb3f7d6ef10f30d4734ceed10ee_1a341bbcb3f7d6ef10f30d4734ceed10ee">toString</link>();
+75 &#32;&#32;&#32;&#32;
+76 &#32;&#32;&#32;&#32;<emphasis class="comment">/*</emphasis>
+77 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Implement&#32;BANK&#32;virtual&#32;methods</emphasis>
+78 <emphasis class="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+79 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_a5b0662f0524ce8ce710881a05b431fad_1a5b0662f0524ce8ce710881a05b431fad">SetAddress</link>(std::string&#32;<link linkend="class_u_l_s_t_e_r_a7a13c5988ddafa47b8d6eea3e77fd786_1a7a13c5988ddafa47b8d6eea3e77fd786">address</link>);
+80 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="class_u_l_s_t_e_r_ac31a16a960e53ea592b0d809a3ba167d_1ac31a16a960e53ea592b0d809a3ba167d">GetAddress</link>()&#32;<emphasis class="keyword">const</emphasis>;
+81 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_a288ded3e96cf65a066f13529db94b182_1a288ded3e96cf65a066f13529db94b182">SetBalance</link>(<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_af98d3ed41f452b28f26994552465815c_1af98d3ed41f452b28f26994552465815c">balance</link>);
+82 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_ae70da9686ac038862900182a984e56eb_1ae70da9686ac038862900182a984e56eb">GetBalance</link>()&#32;<emphasis class="keyword">const</emphasis>;
+83 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_ae28bbc54174cd9b3b268d827c122c412_1ae28bbc54174cd9b3b268d827c122c412">SetAccountNumber</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_a13f0c2ce30f9e66e896633d81c9af979_1a13f0c2ce30f9e66e896633d81c9af979">accountNumber</link>);
+84 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_a1ad672ae865a9f559bf4d3c33c243d63_1a1ad672ae865a9f559bf4d3c33c243d63">GetAccountNumber</link>()&#32;<emphasis class="keyword">const</emphasis>;
+85 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_ab2fec6b440c29b1953296ad23d4b432c_1ab2fec6b440c29b1953296ad23d4b432c">SetLastName</link>(std::string&#32;<link linkend="class_u_l_s_t_e_r_afa319e559a6a7653aa67e6d8f801d7ee_1afa319e559a6a7653aa67e6d8f801d7ee">lastName</link>);
+86 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="class_u_l_s_t_e_r_a9320b012bccda4ebf6b41c9ed972743c_1a9320b012bccda4ebf6b41c9ed972743c">GetLastName</link>()&#32;<emphasis class="keyword">const</emphasis>;
+87 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_a07b57449397c42be1c2b512851dceebd_1a07b57449397c42be1c2b512851dceebd">SetFirstName</link>(std::string&#32;<link linkend="class_u_l_s_t_e_r_af8d138fdca14b59130b8b4ddd3d73b16_1af8d138fdca14b59130b8b4ddd3d73b16">firstName</link>);
+88 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="class_u_l_s_t_e_r_a85ee4e42d9b309608d8dfbedac65ff27_1a85ee4e42d9b309608d8dfbedac65ff27">GetFirstName</link>()&#32;<emphasis class="keyword">const</emphasis>;
+89 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;<emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_a38d245bc2b6bb14bbb39c3347766140d_1a38d245bc2b6bb14bbb39c3347766140d">SetFullname</link>(std::string&#32;<link linkend="class_u_l_s_t_e_r_a5dc42cbd515825463ba31c8d3dcfe1b6_1a5dc42cbd515825463ba31c8d3dcfe1b6">fullname</link>);
+90 &#32;&#32;&#32;&#32;<emphasis class="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="class_u_l_s_t_e_r_abb93ac2163f908782d00cbae169ebb91_1abb93ac2163f908782d00cbae169ebb91">GetFullname</link>()&#32;<emphasis class="keyword">const</emphasis>;
+91 <emphasis class="keyword">private</emphasis>:
+<link linkend="class_u_l_s_t_e_r_a5dc42cbd515825463ba31c8d3dcfe1b6_1a5dc42cbd515825463ba31c8d3dcfe1b6">92 </link>&#32;&#32;&#32;&#32;std::string&#32;<link linkend="class_u_l_s_t_e_r_a5dc42cbd515825463ba31c8d3dcfe1b6_1a5dc42cbd515825463ba31c8d3dcfe1b6">fullname</link>;
+<link linkend="class_u_l_s_t_e_r_af8d138fdca14b59130b8b4ddd3d73b16_1af8d138fdca14b59130b8b4ddd3d73b16">93 </link>&#32;&#32;&#32;&#32;std::string&#32;<link linkend="class_u_l_s_t_e_r_af8d138fdca14b59130b8b4ddd3d73b16_1af8d138fdca14b59130b8b4ddd3d73b16">firstName</link>;
+<link linkend="class_u_l_s_t_e_r_afa319e559a6a7653aa67e6d8f801d7ee_1afa319e559a6a7653aa67e6d8f801d7ee">94 </link>&#32;&#32;&#32;&#32;std::string&#32;<link linkend="class_u_l_s_t_e_r_afa319e559a6a7653aa67e6d8f801d7ee_1afa319e559a6a7653aa67e6d8f801d7ee">lastName</link>;
+<link linkend="class_u_l_s_t_e_r_a13f0c2ce30f9e66e896633d81c9af979_1a13f0c2ce30f9e66e896633d81c9af979">95 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_a13f0c2ce30f9e66e896633d81c9af979_1a13f0c2ce30f9e66e896633d81c9af979">accountNumber</link>;
+<link linkend="class_u_l_s_t_e_r_af98d3ed41f452b28f26994552465815c_1af98d3ed41f452b28f26994552465815c">96 </link>&#32;&#32;&#32;&#32;<emphasis class="keywordtype">double</emphasis>&#32;<link linkend="class_u_l_s_t_e_r_af98d3ed41f452b28f26994552465815c_1af98d3ed41f452b28f26994552465815c">balance</link>;
+<link linkend="class_u_l_s_t_e_r_a7a13c5988ddafa47b8d6eea3e77fd786_1a7a13c5988ddafa47b8d6eea3e77fd786">97 </link>&#32;&#32;&#32;&#32;std::string&#32;<link linkend="class_u_l_s_t_e_r_a7a13c5988ddafa47b8d6eea3e77fd786_1a7a13c5988ddafa47b8d6eea3e77fd786">address</link>;
+98 
+99 };
+100 
+101 <emphasis class="preprocessor">#endif&#32;</emphasis><emphasis class="comment">/*&#32;ULSTER_H&#32;*/</emphasis><emphasis class="preprocessor"></emphasis>
+102 
+    </computeroutput></literallayout>
+</section>

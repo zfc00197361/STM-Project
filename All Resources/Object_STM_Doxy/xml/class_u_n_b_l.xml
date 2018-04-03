@@ -1,0 +1,620 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_u_n_b_l" kind="class" language="C++" prot="public">
+    <compoundname>UNBL</compoundname>
+    <basecompoundref refid="class_b_a_n_k" prot="public" virt="non-virtual">BANK</basecompoundref>
+    <includes refid="_u_n_b_l_8h" local="no">UNBL.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_n_b_l_1a67deb62f553fe1ece6feb73f12898e7a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string UNBL::fullname</definition>
+        <argsstring></argsstring>
+        <name>fullname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="92" column="1" bodyfile="UNBL.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_n_b_l_1acee1595bf1914ac220f7c810b174bd16" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string UNBL::firstName</definition>
+        <argsstring></argsstring>
+        <name>firstName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="93" column="1" bodyfile="UNBL.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_n_b_l_1a3f42790177cbe310536f53a7369ee194" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string UNBL::lastName</definition>
+        <argsstring></argsstring>
+        <name>lastName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="94" column="1" bodyfile="UNBL.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_n_b_l_1a90763c3044159862bcb9cd51d6b09f34" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int UNBL::accountNumber</definition>
+        <argsstring></argsstring>
+        <name>accountNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="95" column="1" bodyfile="UNBL.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_n_b_l_1afbe674996d7fddaffb55654e6a79f03b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double UNBL::balance</definition>
+        <argsstring></argsstring>
+        <name>balance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="96" column="1" bodyfile="UNBL.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_n_b_l_1acdaf39211e9b9c190a69bbbc590543e3" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string UNBL::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="97" column="1" bodyfile="UNBL.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_n_b_l_1aa264ef64c453e6049b3d4c984d84d1de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UNBL::UNBL</definition>
+        <argsstring>()</argsstring>
+        <name>UNBL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="24" column="1" bodyfile="UNBL.h" bodystart="24" bodyend="31"/>
+        <referencedby refid="class_u_n_b_l_1a5dfe7f9e5fbb66abff9a73e40e803887" compoundref="_u_n_b_l_8cpp" startline="21" endline="27">getBaseCopy</referencedby>
+        <referencedby refid="class_u_n_b_l_1abbd578fbd58cf6f2143f17b3011f6c21" compoundref="_u_n_b_l_8h" startline="46" endline="54">UNBL</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a9afc7728e8d9970b63592af018a2afb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UNBL::UNBL</definition>
+        <argsstring>(int accountNumber, double balance, std::string firstName, std::string lastName, std::string address)</argsstring>
+        <name>UNBL</name>
+        <param>
+          <type>int</type>
+          <declname>accountNumber</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>balance</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>firstName</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>lastName</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="35" column="1" bodyfile="UNBL.h" bodystart="35" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1abbd578fbd58cf6f2143f17b3011f6c21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UNBL::UNBL</definition>
+        <argsstring>(std::shared_ptr&lt; BANK &gt; obj, int _version, int _unique_id)</argsstring>
+        <name>UNBL</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_b_a_n_k" kindref="compound">BANK</ref> &gt;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_version</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_unique_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom constructor, used by the library for deep copying </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="46" column="1" bodyfile="UNBL.h" bodystart="46" bodyend="54"/>
+        <references refid="class_u_n_b_l_1aa264ef64c453e6049b3d4c984d84d1de" compoundref="_u_n_b_l_8h" startline="24" endline="31">UNBL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1aca7a99d7308d5d8dd5841a0eeeed0852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UNBL::UNBL</definition>
+        <argsstring>(const UNBL &amp;orig)</argsstring>
+        <name>UNBL</name>
+        <param>
+          <type>const <ref refid="class_u_n_b_l" kindref="compound">UNBL</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="58" column="1" bodyfile="UNBL.cpp" bodystart="11" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_u_n_b_l" kindref="compound">UNBL</ref></type>
+        <definition>UNBL UNBL::operator=</definition>
+        <argsstring>(const UNBL &amp;orig)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_u_n_b_l" kindref="compound">UNBL</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="62" column="1" bodyfile="UNBL.h" bodystart="62" bodyend="62"/>
+        <references refid="class_u_n_b_l_1a32d405e6e9adfab1ffdeec6406f9e72f" compoundref="_u_n_b_l_8cpp" startline="14" endline="15">~UNBL</references>
+        <references refid="class_u_n_b_l_1a14d5e1adc618827667d8d9524abaf31b" compoundref="_u_n_b_l_8cpp" startline="33" endline="42">copy</references>
+        <references refid="class_u_n_b_l_1a5dfe7f9e5fbb66abff9a73e40e803887" compoundref="_u_n_b_l_8cpp" startline="21" endline="27">getBaseCopy</references>
+        <references refid="class_u_n_b_l_1a76d8bba21d64d79d8de63763b8acc1fd" compoundref="_u_n_b_l_8cpp" startline="53" endline="56">toString</references>
+        <references refid="class_u_n_b_l_1acbd63767c5070d82605671cfce0433a9" compoundref="_u_n_b_l_8cpp" startline="58" endline="60">SetAddress</references>
+        <references refid="class_u_n_b_l_1a74f8896be6e93ad8f89ca3b0da83525a" compoundref="_u_n_b_l_8cpp" startline="62" endline="64">GetAddress</references>
+        <references refid="class_u_n_b_l_1a3b7b2089cf4e2995e99b860b1fb2e5cb" compoundref="_u_n_b_l_8cpp" startline="66" endline="68">SetBalance</references>
+        <references refid="class_u_n_b_l_1ad5b882bff8d1e2619b2ebbd170345c99" compoundref="_u_n_b_l_8cpp" startline="70" endline="72">GetBalance</references>
+        <references refid="class_u_n_b_l_1a0ee536d872c0f93486f942b268c2431e" compoundref="_u_n_b_l_8cpp" startline="74" endline="76">SetAccountNumber</references>
+        <references refid="class_u_n_b_l_1a44a84fb7fe8778e3048921581049c715" compoundref="_u_n_b_l_8cpp" startline="78" endline="80">GetAccountNumber</references>
+        <references refid="class_u_n_b_l_1abd683db339dffe71af3993a8a5cb5929" compoundref="_u_n_b_l_8cpp" startline="82" endline="84">SetLastName</references>
+        <references refid="class_u_n_b_l_1a27f19f2af5e1abd33b5c63f16b493f6c" compoundref="_u_n_b_l_8cpp" startline="86" endline="88">GetLastName</references>
+        <references refid="class_u_n_b_l_1aef061d2cba01bcd752e9305dc374cabc" compoundref="_u_n_b_l_8cpp" startline="90" endline="92">SetFirstName</references>
+        <references refid="class_u_n_b_l_1ae89215b95f2e11aa70f9c8bbfd55c10c" compoundref="_u_n_b_l_8cpp" startline="94" endline="96">GetFirstName</references>
+        <references refid="class_u_n_b_l_1a1b3f52c44756930c1ee4acb06f2634ad" compoundref="_u_n_b_l_8cpp" startline="98" endline="100">SetFullname</references>
+        <references refid="class_u_n_b_l_1a4292e9cafc42be3d9f4f3d6221bc9638" compoundref="_u_n_b_l_8cpp" startline="102" endline="104">GetFullname</references>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a32d405e6e9adfab1ffdeec6406f9e72f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>UNBL::~UNBL</definition>
+        <argsstring>()</argsstring>
+        <name>~UNBL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>de-constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="66" column="1" bodyfile="UNBL.cpp" bodystart="14" bodyend="15"/>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a14d5e1adc618827667d8d9524abaf31b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UNBL::copy</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; to, std::shared_ptr&lt; OSTM &gt; from)</argsstring>
+        <name>copy</name>
+        <reimplements refid="class_o_s_t_m_1a535d90fced5adbb70312c92f3778e08d">copy</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+<para>copy function, make deep copy of the object/pointer </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objTO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a std::shared_ptr&lt;BANK&gt; type object casted back from std::shared_ptr&lt;OSTM&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>objFROM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a std::shared_ptr&lt;BANK&gt; type object casted back from std::shared_ptr&lt;OSTM&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="72" column="1" bodyfile="UNBL.cpp" bodystart="33" bodyend="42"/>
+        <references refid="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93" compoundref="_o_s_t_m_8cpp" startline="66" endline="68">OSTM::Set_Unique_ID</references>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a5dfe7f9e5fbb66abff9a73e40e803887" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; OSTM &gt; UNBL::getBaseCopy</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; object)</argsstring>
+        <name>getBaseCopy</name>
+        <reimplements refid="class_o_s_t_m_1a0bfa3763bd441407dd6365f42714f94c">getBaseCopy</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>getBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr&lt;BANK&gt; type object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objTO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a <ref refid="class_b_a_n_k" kindref="compound">BANK</ref> type pointer for casting </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a std::shared_ptr&lt;BANK&gt; return type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="73" column="1" bodyfile="UNBL.cpp" bodystart="21" bodyend="27"/>
+        <references refid="class_u_n_b_l_1aa264ef64c453e6049b3d4c984d84d1de" compoundref="_u_n_b_l_8h" startline="24" endline="31">UNBL</references>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a76d8bba21d64d79d8de63763b8acc1fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UNBL::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_o_s_t_m_1a513396a115f2987fd07c203309ae8a59">toString</reimplements>
+        <briefdescription>
+<para>_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type </para>        </briefdescription>
+        <detaileddescription>
+<para>toString function, displays the object values in formatted way </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="74" column="1" bodyfile="UNBL.cpp" bodystart="53" bodyend="56"/>
+        <references refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" compoundref="_o_s_t_m_8cpp" startline="73" endline="76">OSTM::Get_Unique_ID</references>
+        <references refid="class_u_n_b_l_1a44a84fb7fe8778e3048921581049c715" compoundref="_u_n_b_l_8cpp" startline="78" endline="80">GetAccountNumber</references>
+        <references refid="class_u_n_b_l_1ad5b882bff8d1e2619b2ebbd170345c99" compoundref="_u_n_b_l_8cpp" startline="70" endline="72">GetBalance</references>
+        <references refid="class_u_n_b_l_1ae89215b95f2e11aa70f9c8bbfd55c10c" compoundref="_u_n_b_l_8cpp" startline="94" endline="96">GetFirstName</references>
+        <references refid="class_u_n_b_l_1a27f19f2af5e1abd33b5c63f16b493f6c" compoundref="_u_n_b_l_8cpp" startline="86" endline="88">GetLastName</references>
+        <references refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" compoundref="_o_s_t_m_8cpp" startline="89" endline="92">OSTM::Get_Version</references>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1acbd63767c5070d82605671cfce0433a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UNBL::SetAddress</definition>
+        <argsstring>(std::string address)</argsstring>
+        <name>SetAddress</name>
+        <reimplements refid="class_b_a_n_k_1a52ad99454b2059d44967868157208393">SetAddress</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="79" column="1" bodyfile="UNBL.cpp" bodystart="58" bodyend="60"/>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a74f8896be6e93ad8f89ca3b0da83525a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string UNBL::GetAddress</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAddress</name>
+        <reimplements refid="class_b_a_n_k_1a358741f647f9494026e02fd3fd27cde6">GetAddress</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="80" column="1" bodyfile="UNBL.cpp" bodystart="62" bodyend="64"/>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a3b7b2089cf4e2995e99b860b1fb2e5cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UNBL::SetBalance</definition>
+        <argsstring>(double balance)</argsstring>
+        <name>SetBalance</name>
+        <reimplements refid="class_b_a_n_k_1ae3e45b407bf8ec7175662442ea24b7c0">SetBalance</reimplements>
+        <param>
+          <type>double</type>
+          <declname>balance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="81" column="1" bodyfile="UNBL.cpp" bodystart="66" bodyend="68"/>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1ad5b882bff8d1e2619b2ebbd170345c99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double UNBL::GetBalance</definition>
+        <argsstring>() const </argsstring>
+        <name>GetBalance</name>
+        <reimplements refid="class_b_a_n_k_1a7ac46c74859cebdc933cb27e148d18b1">GetBalance</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="82" column="1" bodyfile="UNBL.cpp" bodystart="70" bodyend="72"/>
+        <referencedby refid="class_u_n_b_l_1a76d8bba21d64d79d8de63763b8acc1fd" compoundref="_u_n_b_l_8cpp" startline="53" endline="56">toString</referencedby>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a0ee536d872c0f93486f942b268c2431e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UNBL::SetAccountNumber</definition>
+        <argsstring>(int accountNumber)</argsstring>
+        <name>SetAccountNumber</name>
+        <reimplements refid="class_b_a_n_k_1a9d8fb8bde35d63eca7e9f87d22b45752">SetAccountNumber</reimplements>
+        <param>
+          <type>int</type>
+          <declname>accountNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="83" column="1" bodyfile="UNBL.cpp" bodystart="74" bodyend="76"/>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a44a84fb7fe8778e3048921581049c715" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int UNBL::GetAccountNumber</definition>
+        <argsstring>() const </argsstring>
+        <name>GetAccountNumber</name>
+        <reimplements refid="class_b_a_n_k_1a62adf3cea60d863a4a10eeee485fa1aa">GetAccountNumber</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="84" column="1" bodyfile="UNBL.cpp" bodystart="78" bodyend="80"/>
+        <referencedby refid="class_u_n_b_l_1a76d8bba21d64d79d8de63763b8acc1fd" compoundref="_u_n_b_l_8cpp" startline="53" endline="56">toString</referencedby>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1abd683db339dffe71af3993a8a5cb5929" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UNBL::SetLastName</definition>
+        <argsstring>(std::string lastName)</argsstring>
+        <name>SetLastName</name>
+        <reimplements refid="class_b_a_n_k_1a2dc1b7664f9e3b005cb33e71b2ba42ee">SetLastName</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>lastName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="85" column="1" bodyfile="UNBL.cpp" bodystart="82" bodyend="84"/>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a27f19f2af5e1abd33b5c63f16b493f6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string UNBL::GetLastName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetLastName</name>
+        <reimplements refid="class_b_a_n_k_1a4612063ec2bfd6d883a77a0d3697af90">GetLastName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="86" column="1" bodyfile="UNBL.cpp" bodystart="86" bodyend="88"/>
+        <referencedby refid="class_u_n_b_l_1a76d8bba21d64d79d8de63763b8acc1fd" compoundref="_u_n_b_l_8cpp" startline="53" endline="56">toString</referencedby>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1aef061d2cba01bcd752e9305dc374cabc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UNBL::SetFirstName</definition>
+        <argsstring>(std::string firstName)</argsstring>
+        <name>SetFirstName</name>
+        <reimplements refid="class_b_a_n_k_1a547cb9f21be894f045bb3cec6b12525c">SetFirstName</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>firstName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="87" column="1" bodyfile="UNBL.cpp" bodystart="90" bodyend="92"/>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1ae89215b95f2e11aa70f9c8bbfd55c10c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string UNBL::GetFirstName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFirstName</name>
+        <reimplements refid="class_b_a_n_k_1ad0ba1c785c67e7d4760dc8776f3d4bca">GetFirstName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="88" column="1" bodyfile="UNBL.cpp" bodystart="94" bodyend="96"/>
+        <referencedby refid="class_u_n_b_l_1a76d8bba21d64d79d8de63763b8acc1fd" compoundref="_u_n_b_l_8cpp" startline="53" endline="56">toString</referencedby>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a1b3f52c44756930c1ee4acb06f2634ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UNBL::SetFullname</definition>
+        <argsstring>(std::string fullname)</argsstring>
+        <name>SetFullname</name>
+        <reimplements refid="class_b_a_n_k_1a8845dbfc7ddfbc2e0c0efda561a70ec3">SetFullname</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>fullname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="89" column="1" bodyfile="UNBL.cpp" bodystart="98" bodyend="100"/>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_u_n_b_l_1a4292e9cafc42be3d9f4f3d6221bc9638" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string UNBL::GetFullname</definition>
+        <argsstring>() const </argsstring>
+        <name>GetFullname</name>
+        <reimplements refid="class_b_a_n_k_1aa1528c533bf6389bc8d7f3eeca114bab">GetFullname</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="UNBL.h" line="90" column="1" bodyfile="UNBL.cpp" bodystart="102" bodyend="104"/>
+        <referencedby refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" compoundref="_u_n_b_l_8h" startline="62" endline="62">operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Inherit from <ref refid="class_b_a_n_k" kindref="compound">BANK</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="210">
+        <label>OSTM</label>
+        <link refid="class_o_s_t_m"/>
+      </node>
+      <node id="209">
+        <label>BANK</label>
+        <link refid="class_b_a_n_k"/>
+        <childnode refid="210" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>UNBL</label>
+        <link refid="class_u_n_b_l"/>
+        <childnode refid="209" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="213">
+        <label>OSTM</label>
+        <link refid="class_o_s_t_m"/>
+      </node>
+      <node id="212">
+        <label>BANK</label>
+        <link refid="class_b_a_n_k"/>
+        <childnode refid="213" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>UNBL</label>
+        <link refid="class_u_n_b_l"/>
+        <childnode refid="212" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="UNBL.h" line="19" column="1" bodyfile="UNBL.h" bodystart="19" bodyend="99"/>
+    <listofallmembers>
+      <member refid="class_u_n_b_l_1a90763c3044159862bcb9cd51d6b09f34" prot="private" virt="non-virtual"><scope>UNBL</scope><name>accountNumber</name></member>
+      <member refid="class_u_n_b_l_1acdaf39211e9b9c190a69bbbc590543e3" prot="private" virt="non-virtual"><scope>UNBL</scope><name>address</name></member>
+      <member refid="class_u_n_b_l_1afbe674996d7fddaffb55654e6a79f03b" prot="private" virt="non-virtual"><scope>UNBL</scope><name>balance</name></member>
+      <member refid="class_b_a_n_k_1a0bc938356cebff14fb0560264abe5a34" prot="public" virt="non-virtual"><scope>UNBL</scope><name>BANK</name></member>
+      <member refid="class_b_a_n_k_1a7382dd275d8f4f10a8b53ccbc93e1e87" prot="public" virt="non-virtual"><scope>UNBL</scope><name>BANK</name></member>
+      <member refid="class_b_a_n_k_1a4dd657c30039ea00a040e6226c23ccd4" prot="public" virt="non-virtual"><scope>UNBL</scope><name>BANK</name></member>
+      <member refid="class_u_n_b_l_1a14d5e1adc618827667d8d9524abaf31b" prot="public" virt="virtual"><scope>UNBL</scope><name>copy</name></member>
+      <member refid="class_u_n_b_l_1acee1595bf1914ac220f7c810b174bd16" prot="private" virt="non-virtual"><scope>UNBL</scope><name>firstName</name></member>
+      <member refid="class_u_n_b_l_1a67deb62f553fe1ece6feb73f12898e7a" prot="private" virt="non-virtual"><scope>UNBL</scope><name>fullname</name></member>
+      <member refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" prot="public" virt="non-virtual"><scope>UNBL</scope><name>Get_Unique_ID</name></member>
+      <member refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" prot="public" virt="non-virtual"><scope>UNBL</scope><name>Get_Version</name></member>
+      <member refid="class_u_n_b_l_1a44a84fb7fe8778e3048921581049c715" prot="public" virt="virtual"><scope>UNBL</scope><name>GetAccountNumber</name></member>
+      <member refid="class_u_n_b_l_1a74f8896be6e93ad8f89ca3b0da83525a" prot="public" virt="virtual"><scope>UNBL</scope><name>GetAddress</name></member>
+      <member refid="class_u_n_b_l_1ad5b882bff8d1e2619b2ebbd170345c99" prot="public" virt="virtual"><scope>UNBL</scope><name>GetBalance</name></member>
+      <member refid="class_u_n_b_l_1a5dfe7f9e5fbb66abff9a73e40e803887" prot="public" virt="virtual"><scope>UNBL</scope><name>getBaseCopy</name></member>
+      <member refid="class_u_n_b_l_1ae89215b95f2e11aa70f9c8bbfd55c10c" prot="public" virt="virtual"><scope>UNBL</scope><name>GetFirstName</name></member>
+      <member refid="class_u_n_b_l_1a4292e9cafc42be3d9f4f3d6221bc9638" prot="public" virt="virtual"><scope>UNBL</scope><name>GetFullname</name></member>
+      <member refid="class_u_n_b_l_1a27f19f2af5e1abd33b5c63f16b493f6c" prot="public" virt="virtual"><scope>UNBL</scope><name>GetLastName</name></member>
+      <member refid="class_o_s_t_m_1a5f90caa4384d371c16b7cac860d9f89a" prot="public" virt="non-virtual"><scope>UNBL</scope><name>increase_VersionNumber</name></member>
+      <member refid="class_o_s_t_m_1afc2851abf5342c3c67342c2c14820115" prot="public" virt="non-virtual"><scope>UNBL</scope><name>Is_Abort_Transaction</name></member>
+      <member refid="class_o_s_t_m_1a8df39ced3b401aa466df97e26d14b1b7" prot="public" virt="non-virtual"><scope>UNBL</scope><name>Is_Can_Commit</name></member>
+      <member refid="class_o_s_t_m_1afb6520023ed2c4a6188b688c46f192d0" prot="public" virt="non-virtual"><scope>UNBL</scope><name>is_Locked</name></member>
+      <member refid="class_u_n_b_l_1a3f42790177cbe310536f53a7369ee194" prot="private" virt="non-virtual"><scope>UNBL</scope><name>lastName</name></member>
+      <member refid="class_o_s_t_m_1af192c598a3c647f37aaba5757e60240f" prot="public" virt="non-virtual"><scope>UNBL</scope><name>lock_Mutex</name></member>
+      <member refid="class_u_n_b_l_1a32ab1105494f18bdb33e651e9bbfcd02" prot="public" virt="non-virtual"><scope>UNBL</scope><name>operator=</name></member>
+      <member refid="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196" prot="public" virt="non-virtual"><scope>UNBL</scope><name>OSTM</name></member>
+      <member refid="class_o_s_t_m_1a2314f55a127b94aa8a51d19ba798401e" prot="public" virt="non-virtual"><scope>UNBL</scope><name>OSTM</name></member>
+      <member refid="class_o_s_t_m_1aba384cf65c5f56f5b86833730c3c6ea4" prot="public" virt="non-virtual"><scope>UNBL</scope><name>Set_Abort_Transaction</name></member>
+      <member refid="class_o_s_t_m_1a813ee61c9d1c83c6a6ae30d12aca8a5d" prot="public" virt="non-virtual"><scope>UNBL</scope><name>Set_Can_Commit</name></member>
+      <member refid="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93" prot="public" virt="non-virtual"><scope>UNBL</scope><name>Set_Unique_ID</name></member>
+      <member refid="class_o_s_t_m_1a9529ad8d6d28c1f0cc9b86ed91df1ae1" prot="public" virt="non-virtual"><scope>UNBL</scope><name>Set_Version</name></member>
+      <member refid="class_u_n_b_l_1a0ee536d872c0f93486f942b268c2431e" prot="public" virt="virtual"><scope>UNBL</scope><name>SetAccountNumber</name></member>
+      <member refid="class_u_n_b_l_1acbd63767c5070d82605671cfce0433a9" prot="public" virt="virtual"><scope>UNBL</scope><name>SetAddress</name></member>
+      <member refid="class_u_n_b_l_1a3b7b2089cf4e2995e99b860b1fb2e5cb" prot="public" virt="virtual"><scope>UNBL</scope><name>SetBalance</name></member>
+      <member refid="class_u_n_b_l_1aef061d2cba01bcd752e9305dc374cabc" prot="public" virt="virtual"><scope>UNBL</scope><name>SetFirstName</name></member>
+      <member refid="class_u_n_b_l_1a1b3f52c44756930c1ee4acb06f2634ad" prot="public" virt="virtual"><scope>UNBL</scope><name>SetFullname</name></member>
+      <member refid="class_u_n_b_l_1abd683db339dffe71af3993a8a5cb5929" prot="public" virt="virtual"><scope>UNBL</scope><name>SetLastName</name></member>
+      <member refid="class_u_n_b_l_1a76d8bba21d64d79d8de63763b8acc1fd" prot="public" virt="virtual"><scope>UNBL</scope><name>toString</name></member>
+      <member refid="class_u_n_b_l_1aa264ef64c453e6049b3d4c984d84d1de" prot="public" virt="non-virtual"><scope>UNBL</scope><name>UNBL</name></member>
+      <member refid="class_u_n_b_l_1a9afc7728e8d9970b63592af018a2afb8" prot="public" virt="non-virtual"><scope>UNBL</scope><name>UNBL</name></member>
+      <member refid="class_u_n_b_l_1abbd578fbd58cf6f2143f17b3011f6c21" prot="public" virt="non-virtual"><scope>UNBL</scope><name>UNBL</name></member>
+      <member refid="class_u_n_b_l_1aca7a99d7308d5d8dd5841a0eeeed0852" prot="public" virt="non-virtual"><scope>UNBL</scope><name>UNBL</name></member>
+      <member refid="class_o_s_t_m_1a6cd703bc26c719fd95b4f5362d050762" prot="public" virt="non-virtual"><scope>UNBL</scope><name>unlock_Mutex</name></member>
+      <member refid="class_b_a_n_k_1ad609a1e004efdebab6495d95eced2346" prot="public" virt="virtual"><scope>UNBL</scope><name>~BANK</name></member>
+      <member refid="class_o_s_t_m_1a30a17d73d0259c60eeab72d6dfa9ceb1" prot="public" virt="virtual"><scope>UNBL</scope><name>~OSTM</name></member>
+      <member refid="class_u_n_b_l_1a32d405e6e9adfab1ffdeec6406f9e72f" prot="public" virt="virtual"><scope>UNBL</scope><name>~UNBL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

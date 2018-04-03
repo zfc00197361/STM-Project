@@ -72,7 +72,7 @@ void TX::th_exit() {
 void TX::ostm_exit() {
     std::map<int, std::shared_ptr<OSTM>>::iterator main_Process_Map_collection_Iterator;
      
-    int ppid = _getpid();
+    int ppid = getpid();
     std::map<int, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection.find(ppid);
     if (process_map_collection_Iterator != TX::process_map_collection.end()) {
 
@@ -115,7 +115,7 @@ void TX::_register(std::shared_ptr<OSTM> object) {
         throw std::runtime_error(std::string("[RUNTIME ERROR : NULL POINTER IN REGISTER FUNCTION]") );
     }
     
-    int ppid = _getpid();
+    int ppid = getpid();
     std::map<int, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection.find(ppid);
     if (process_map_collection_Iterator == TX::process_map_collection.end()) {
         /*
@@ -350,7 +350,7 @@ void TX::_print_all_tx() {
     /*
      * All registered thread id in the TX global 
      */
-    int ppid = _getpid();
+    int ppid = getpid();
     std::map<int, std::map< int, int >>::iterator process_map_collection_Iterator = TX::process_map_collection.find(ppid);
     if (process_map_collection_Iterator != TX::process_map_collection.end()) {
 

@@ -4,13 +4,13 @@ run:library
 
 
 TM.o: TM.cpp
-	g++ -c "TM.cpp" -o TM.o
+	g++ -std=c++17 -c "TM.cpp" -o TM.o
 
 TX.o: TX.cpp
-	g++ -c "TX.cpp" -o TX.o 
+	g++ -std=c++17 -c "TX.cpp" -o TX.o 
 
 OSTM.o: OSTM.cpp
-	g++ -c "OSTM.cpp" -o OSTM.o
+	g++ -std=c++17 -c "OSTM.cpp" -o OSTM.o
 
 library: TM.o TX.o OSTM.o
 	@echo "** Building the O_STM library"

@@ -72,7 +72,7 @@ The purpose of this research document is to find all the answers associated with
 \section{Introduction}
 The Software Transactional memory is a promising alternative to the concurrency control in shared memory systems. Why do we need the STM solution if we can control the concurrent programming with mutex and semaphore. If the Transaction memory has been solved in the Hardware level why it is important to implement at software level as well. What is the difference between the diverse versions of C++ languages. Which is the best IDE and compiler to implement the STM library in C++ language.\\
 
-The aim of this project to create a C++ Software Transactional memory library to control concurrent programming features without locks. Software Transactional memory is a software solution for concurrency control in shared memory access. It provides lock free solution for threaded programming which reduces the challenges in concurrent programming. STM use Transactions to realize automatic conflicts resolution through atomic transactions and avoid the classical lock based associated problems like deadlock and livelock.\\
+The aim of this project to create a C++ Software Transactional memory library to control concurrent programming features without locks. Software Transactional memory is a software solution for concurrency control in shared memory access. It provides lock free solution for threaded programming which reduces the challenges in concurrent programming. STM use Transactions to realize automatic conflicts resolution through atomic transactions and avoid the classical lock based associated problems like deadlock and live lock.\\
 
 The research paper contains several sections to describe the main questions around the STM implementation.The first section begins with the concurrent and parallel concepts, such as why we need it and what is the problem with it. What is the difference between concurrent and parallel programming. What is the problem with concurrent programming and how to control the threads in concurrent programming environment.\\
 
@@ -173,12 +173,12 @@ Deadlock is a condition, when two threads try to access the same shared resource
 \end{figure}
 
 	\subsubsection{Live-lock}
-Live-lock is a  situation when two threads are repeatedly access the critical section and the program detect the deadlock situation and release the lock to the other thread. After, both threads are trying to access the critical section and release again, but no progress being made, hence the name is Livelock. \textit{\color{gray}Figure 9.}
+Live-lock is a  situation when two threads are repeatedly access the critical section and the program detect the deadlock situation and release the lock to the other thread. After, both threads are trying to access the critical section and release again, but no progress being made, hence the name is Live lock. \textit{\color{gray}Figure 9.}
 
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.5]{Pictures/livelock.png}
-\caption{\textit{\color{gray}Livelock situation \cite{installsetupconfig}.}}
+\caption{\textit{\color{gray}Live lock situation \cite{installsetupconfig}.}}
 \end{figure}
 
 	\subsubsection{Starvation}
@@ -689,7 +689,7 @@ sudo apt-get install libatomic-ops-dev
 export LIBAO_HOME=/usr/include/atomic_ops
 make
 \end{lstlisting}
-Runing make compiles tinySTM and puts a static library
+Running make compiles tinySTM and puts a static library
 file at~/tinySTM-0.9.9/lib/libstm.a. Anything we write
 to use tinySTM will need to link to this lib file. 
 
@@ -770,381 +770,6 @@ The changes between C++11 and C++14 are very small and not highly significant.\\
 \item deprecated Attribute : Deprecated attribute to mark to discourage use of entities.\cite{Sahoo}
 \end{enumerate}
 
-\subsection{New features in C++17}
-The next generation of C++ has a lots of new features in the language. The most significant updates in C++17 are the follows:\cite{Bartek}\\
-\begin{enumerate}
-\item auto rules for direct-list-initialization.
-\begin{lstlisting}
-auto x = foo(); // copy-initialization
-auto x{foo}; // direct-initialization, initializes an 
-				initializer_list
-int x = foo(); // copy-initialization
-int x{foo}; // direct-initialization
-\end{lstlisting}
-\item static assert with no message : allows to have conditions without passing the message.
-\begin{lstlisting}
-static_assert-declaration:
-static_assert ( constant-expression ) ;
-static_assert ( constant-expression , string-literal ) ;
-\end{lstlisting}
-\item type name in a template template parameter
-\begin{lstlisting}
-template <template <typename...> typename Container>
-//            used to be invalid ^^^^^^^^
-struct foo;
-
-foo<std::vector> my_foo;\\
-\end{lstlisting}
-\item Removing trigraphs
-\begin{lstlisting}
-Removes ??=, ??(, ??>, …
-\end{lstlisting}
-\item Nested namespace definition
-\begin{lstlisting}
-namespace A {
-    namespace B {
-        namespace C {
-            //…
-        }
-    }
-}
-\end{lstlisting}
-\item Attributes for namespaces and enumerators
-\begin{lstlisting}
-enum E {
-  foobar = 0,
-  foobat [[deprecated]] = foobar
-};
-
-E e = foobat; // Emits warning
-
-namespace [[deprecated]] old_stuff{
-    void legacy();
-}
-
-old_stuff::legacy(); // Emits warning
-\end{lstlisting}
-\item u8 character literals
-\begin{lstlisting}
-har x_ascii = { u'x' };
-\end{lstlisting}
-\item Allow constant evaluation for all non-type template arguments
-\begin{lstlisting}
-template<int *p> struct A {};
-int n;
-A<&n> a; // ok
-
-constexpr int *p() { return &n; }
-A<p()> b; // error before C++17
-\end{lstlisting}
-\item Fold Expressions
-\begin{lstlisting}
-template<typename... Args>
-auto SumWithOne(Args... args){
-    return (1 + ... + args);
-}
-\end{lstlisting}
-\item Unary fold expressions and empty parameter packs
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.4]{Pictures/table.png}
-\caption{\textit{\color{gray}Unary fold expressions. \cite{Bartek}.}}
-\end{figure}
-\item Remove Deprecated Use of the register Keyword
-\begin{lstlisting}
-storage-class-specifier:
-            register //removed
-            static
-            thread_local
-            extern
-            mutable
-\end{lstlisting}
-\item Remove Deprecated operator++(bool)
-\begin{lstlisting}
-VQ T& operator++(VQ T&);
-T operator++(VQ T&, int);
-\end{lstlisting}
-\item Removing Deprecated Exception Specifications from C++17
-\begin{lstlisting}
-void legacy() throw(something)
-//remove ->throw(something)
-try
-{
-    // function body as before
-}
-catch(const something&) {
-   throw;
-}
-catch(...) {
-   terminate();
-}
-\end{lstlisting}
-\item Make exception specifications part of the type system
-\begin{lstlisting}
-void (*p)();
-void (**pp)() noexcept = &p;
-// error: cannot convert to pointer 
-//to noexcept function
-
-struct S { typedef void (*p)();operator p(); };
-void (*q)() noexcept = S();// error: cannot convert 
-	to pointer to noexcept function
-\end{lstlisting}
-\item Aggregate initialization of classes with base classes
-\begin{lstlisting}
-struct base { int a1, a2; };
-struct derived : base { int b1; };
-
-derived d1{{1, 2}, 3};
-// full explicit initialization
-derived d1{{}, 1};
-// the base is value initialized
-\end{lstlisting}
-\item Lambda capture of *this
-\begin{lstlisting}
-struct S {
-int x ;
-void f() {
-// The following lambda captures are currently identical
-auto a = [&]() { x = 42 ; } 
-// OK: transformed to (*this).x
-auto b = [=]() { x = 43 ; }
-// OK: transformed to (*this).x
-a();
-assert( x == 42 );
-b();
-assert( x == 43 );
-}
-};
-\end{lstlisting}
-\item Using attribute namespaces without repetition
-\begin{lstlisting}
-FROM
-void f() {
-    [[rpr::kernel, rpr::target(cpu,gpu)]] 
-    // repetition
-    do-task();
-}
-TO
-void f() {
-    [[using rpr: kernel, target(cpu,gpu)]]
-    do-task();
-}
-\end{lstlisting}
-\item Dynamic memory allocation for over-aligned data
-\begin{lstlisting}
-class alignas(16) float4 {
-    float f[4];
-};
-float4 *p = new float4[1000];
-\end{lstlisting}
-\item has include in preprocessor conditionals
-\begin{lstlisting}
-#if __has_include(<optional>)
-#  include <optional>
-#  define have_optional 1
-#elif __has_include(<experimental/optional>)
-#  include <experimental/optional>
-#  define have_optional 1
-#  define experimental_optional 1
-#else
-#  define have_optional 0
-#endif
-\end{lstlisting}
-\item Template argument deduction for class templates
-\begin{lstlisting}
-void f(std::pair<int, char>);
-
-f(std::pair<int, char>(42, 'z'));
-\end{lstlisting}
-\item Non-type template parameters with auto type
-\begin{lstlisting}
-template <auto value> void f() { }
-f<10>();               // deduces int
-\end{lstlisting}
-\item Guaranteed copy elision
-\begin{lstlisting}
-Foo f() {  
-    return {};
-}
-
-int main() {  
-    auto &&foo = f();
-}
-\end{lstlisting}
-\item New specification for inheriting constructors
-\begin{lstlisting}
-// Inheriting constructor parameters are no longer
-// copied
-struct A { A(const A&) = delete; A(int); };
-struct B { B(A); void f(A); };
-struct C : B { using B::B; using B::f; };
-C c({0}); // was ill-formed, now ok (no copy made)
-c.f({0}); // ok (unchanged)
-\end{lstlisting}
-\item Direct-list-initialization of enumerations
-\begin{lstlisting}
-enum class Handle : uint32_t { Invalid = 0 };
-Handle h { 42 }; // OK
-\end{lstlisting}
-\item Stricter expression evaluation order
-\begin{lstlisting}
-// unspecified behaviour below!
-f(i++, i);
-
-v[i] = i++;
-
-std::map<int, int> m;
-m[0] = m.size(); // {{0, 0}} or {{0, 1}} ?
-\end{lstlisting}
-\item constexpr lambda expressions
-\begin{lstlisting}
-constexpr auto ID = [] (int n)  { return n; };
-constexpr int I = ID(3);
-static_assert(I == 3);
-
-constexpr int AddEleven(int n) {
-  // Initialization of the 'data member' for n can
-  occur within a constant expression since 'n' is
-  of literal type.
-  return [n] { return n + 11; }();
-}
-static_assert(AddEleven(5) == 16);
-\end{lstlisting}
-\item Different begin and end types in range-based for
-\begin{lstlisting}
-From
-{
-   auto && __range = for-range-initializer;
-   for ( auto __begin = begin-expr,
-              __end = end-expr;
-              __begin != __end;
-              ++__begin ) {
-        for-range-declaration = *__begin;
-        statement
-   }
-}
-To
-{
-  auto && __range = for-range-initializer;
-  auto __begin = begin-expr;
-  auto __end = end-expr;
-  for ( ; __begin != __end; ++__begin ) {
-    for-range-declaration = *__begin;
-    statement
-  }
-}
-\end{lstlisting}
-\item fallthrough attribute
-\begin{lstlisting}
-switch (c) {
-case 'a':
-    f(); // Warning emitted, fallthrough 
-    is perhaps a programmer error
-case 'b':
-    g();
-[[fallthrough]]; // Warning suppressed, 
-fallthrough is intentional
-case 'c':
-    h();
-}
-\end{lstlisting}
-\item nodiscard attribute
-\begin{lstlisting}
-[[nodiscard]] int foo();
-void bar() {
-    foo(); // Warning emitted, return value of a 
-    nodiscard function is discarded
-}
-\end{lstlisting}
-\item maybe unused attribute
-\begin{lstlisting}
-static void impl1() { ... } 
-// Compilers may warn about this
-[[maybe_unused]] static void impl2() { ... } 
-// Warning suppressed
-
-
-void foo() {
-          int x = 42;
-// Compilers may warn about this
-     [[maybe_unused]] int y = 42; 
-// Warning suppressed
-}
-\end{lstlisting}
-\item Ignore unknown attributes
-\begin{lstlisting}
-//compilers which don't support 
-MyCompilerSpecificNamespace will ignore this attribute
-[[MyCompilerSpecificNamespace::do_special_thing]]
-void foo();
-\end{lstlisting}
-\item Pack expansions in using-declarations
-\begin{lstlisting}
-template <typename... Ts>
-struct Overloader : Ts... {
-    using Ts::operator()...;
-    // […]
-};
-\end{lstlisting}
-\item Structured Binding Declarations
-\begin{lstlisting}
-From
-int a = 0;
-double b = 0.0;
-long c = 0;
-std::tie(a, b, c) = tuple;
- // a, b, c need to be declared first
-To
-auto [ a, b, c ] = tuple;
-\end{lstlisting}
-\item init-statements for if and switch
-\begin{lstlisting}
-if (auto val = GetValue(); condition(val))
-    // on success
-else
-    // on false...
-\end{lstlisting}
-\item Inline variables
-\begin{lstlisting}
-struct MyClass
-{
-    inline static const int sValue = 777;
-};
-\end{lstlisting}
-\item DR: Matching of template template-arguments excludes compatible templates
-\begin{lstlisting}
-template <template <typename> typename Container>
-struct A
-{
-    Container<int>    m_ints;
-    Container<double> m_doubles;
-};
-\end{lstlisting}
-\item std uncaught exceptions()
-\begin{lstlisting}
-int uncaught_exceptions() noexcept;
-\end{lstlisting}
-\item constexpr if-statements
-\begin{lstlisting}
-template <typename T>
-auto get_value(T t) {
-     if constexpr (std::is_arithmetic_v<T>) {
-         //...
-     }
-     else {
-         //...
-     }
-}
-\end{lstlisting}
-
-
-
-
-\end{enumerate}
-
-}
-
 
 \subsection{C++ Libraries}
 The C++ Object Oriented Programming language including a Standard Library what is a collection of classes and functions and the Standard Function Library that are inherited of C and part of the C++ ISO standard.\cite{Tutorialspointlibraries}\\
@@ -1188,11 +813,11 @@ The Standard Libraries provide several interface to manipulate data, function ob
 		\item condition variable
 		\end{itemize}
 		
-	\item Atomic operation library, provides components for atomic operations allowing for lockless concurrent programming.\cite{cppreferenceLib}
+	\item Atomic operation library, provides components for atomic operations allowing for lock-less concurrent programming.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item atomic
 		\end{itemize}
-	\item Filesystem library, provides facilities for performing operations on file systems and their components, such as paths, regular files, and directories.\cite{cppreferenceLib}
+	\item File system library, provides facilities for performing operations on file systems and their components, such as paths, regular files, and directories.\cite{cppreferenceLib}
 		\begin{itemize}
 		\item filesystem
 		\end{itemize}
@@ -1315,7 +940,7 @@ C++ is a compiled language while some other programming language is interpreted.
 \textbf{The main platforms for desktop computer are:}
 }
 \begin{enumerate}
-\item Mac OsX/Unix
+\item Mac OSX/Unix
 \item Windows
 \item Linux/Unix
 	\begin{enumerate}

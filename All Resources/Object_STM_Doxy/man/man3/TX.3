@@ -1,0 +1,249 @@
+.TH "TX" 3 "Sun Apr 1 2018" "Version v 0.0.1" "C++ Software Transactional Memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TX \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TX\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTX\fP (std::thread::id id)"
+.br
+.RI "\fIConstructor\&. \fP"
+.ti -1c
+.RI "\fB~TX\fP ()"
+.br
+.RI "\fIDe-constructor\&. \fP"
+.ti -1c
+.RI "\fBTX\fP (const \fBTX\fP &orig)"
+.br
+.RI "\fIDefault copy constructor\&. \fP"
+.ti -1c
+.RI "void \fBostm_exit\fP ()"
+.br
+.RI "\fIDelete all map entries associated with the main process\&. \fP"
+.ti -1c
+.RI "void \fB_register\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fIRegister \fBOSTM\fP pointer into STM library\&. \fP"
+.ti -1c
+.RI "std::shared_ptr< \fBOSTM\fP > \fBload\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fIload std::shared_ptr<OSTM>, returning an std::shared_ptr<OSTM> copy of the original pointer, to work with during transaction life time \fP"
+.ti -1c
+.RI "void \fBstore\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fIStore transactional changes\&. \fP"
+.ti -1c
+.RI "bool \fBcommit\fP ()"
+.br
+.RI "\fICommit transactional changes\&. \fP"
+.ti -1c
+.RI "void \fB_increase_tx_nesting\fP ()"
+.br
+.RI "\fIAdd \fBTX\fP nesting level by one\&. \fP"
+.ti -1c
+.RI "void \fB_decrease_tx_nesting\fP ()"
+.br
+.RI "\fIRemove \fBTX\fP nesting level by one\&. \fP"
+.ti -1c
+.RI "int \fBgetTest_counter\fP ()"
+.br
+.RI "\fIgetTest_counter TESTING ONLY!!! returning the value of the test_counter stored, number of rollbacks \fP"
+.ti -1c
+.RI "void \fB_print_all_tx\fP ()"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static int \fBtest_counter\fP = 0"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBTM\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 26 of file TX\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "TX::TX (std::thread::id id)"
+
+.PP
+Constructor\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fItransaction_Number\fP int, to store associated thread 
+.br
+\fI_tx_nesting_level\fP int, to store and indicate nesting level of transactions within transaction 
+.RE
+.PP
+
+.PP
+Definition at line 31 of file TX\&.cpp\&.
+.SS "TX::~TX ()"
+
+.PP
+De-constructor\&. 
+.PP
+Definition at line 38 of file TX\&.cpp\&.
+.SS "TX::TX (const \fBTX\fP & orig)"
+
+.PP
+Default copy constructor\&. 
+.PP
+Definition at line 44 of file TX\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void TX::_decrease_tx_nesting ()"
+
+.PP
+Remove \fBTX\fP nesting level by one\&. _decrease_tx_nesting decrease the value stored in _tx_nesting_level by one, when outer transactions commiting
+.PP
+\fBParameters:\fP
+.RS 4
+\fI_tx_nesting_level\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 316 of file TX\&.cpp\&.
+.SS "void TX::_increase_tx_nesting ()"
+
+.PP
+Add \fBTX\fP nesting level by one\&. _increase_tx_nesting increase the value stored in _tx_nesting_level by one, indicate that the transaction nested
+.PP
+\fBParameters:\fP
+.RS 4
+\fI_tx_nesting_level\fP int 
+.RE
+.PP
+
+.PP
+Definition at line 307 of file TX\&.cpp\&.
+.SS "void TX::_print_all_tx ()"
+ONLY FOR TESTING CHECK THE MAP AFTER THREAD EXIT AND ALL SHOULD BE DELETED!!!!!!! 
+.PP
+Definition at line 346 of file TX\&.cpp\&.
+.SS "void TX::_register (std::shared_ptr< \fBOSTM\fP > object)"
+
+.PP
+Register \fBOSTM\fP pointer into STM library\&. register void, receives an std::shared_ptr<OSTM> that point to the original memory space to protect from reca conditions
+.PP
+\fBParameters:\fP
+.RS 4
+\fIworking_Map_collection\fP std::map, store all the std::shared_ptr<OSTM> pointer in the transaction 
+.br
+\fImain_Process_Map_collection\fP std::map, store all std::shared_ptr<OSTM> from all transaction, used to lock and compare the objects 
+.br
+\fIprocess_map_collection\fP std::map, store all std::shared_ptr<OSTM> unique ID from all transaction, used to delete all pointers used by the main process, from all transaction before the program exit\&. 
+.br
+\fIstd::lock_guard\fP use register_Lock(mutex) shared lock between all transaction 
+.br
+\fIppid\fP int, store main process number 
+.RE
+.PP
+
+.PP
+Definition at line 104 of file TX\&.cpp\&.
+.SS "bool TX::commit ()"
+
+.PP
+Commit transactional changes\&. commit bool, returns boolean value TRUE/FALSE depends on the action taken within the function
+.PP
+\fBParameters:\fP
+.RS 4
+\fIworking_Map_collection\fP std::map, store all the std::shared_ptr<OSTM> pointer in the transaction 
+.br
+\fImain_Process_Map_collection\fP std::map, store all std::shared_ptr<OSTM> from all transaction, used to lock and compare the objects 
+.br
+\fIcan_Commit\fP bool, helps to make decision that the transaction can commit or rollback 
+.RE
+.PP
+
+.PP
+Definition at line 202 of file TX\&.cpp\&.
+.SS "int TX::getTest_counter ()"
+
+.PP
+getTest_counter TESTING ONLY!!! returning the value of the test_counter stored, number of rollbacks 
+.PP
+Definition at line 324 of file TX\&.cpp\&.
+.SS "std::shared_ptr< \fBOSTM\fP > TX::load (std::shared_ptr< \fBOSTM\fP > object)"
+
+.PP
+load std::shared_ptr<OSTM>, returning an std::shared_ptr<OSTM> copy of the original pointer, to work with during transaction life time Register \fBOSTM\fP pointer into STM library
+.PP
+\fBParameters:\fP
+.RS 4
+\fIworking_Map_collection\fP std::map, store all the std::shared_ptr<OSTM> pointer in the transaction 
+.RE
+.PP
+
+.PP
+Definition at line 155 of file TX\&.cpp\&.
+.SS "void TX::ostm_exit ()"
+
+.PP
+Delete all map entries associated with the main process\&. ostm_exit void, clear all elements from the shared global collections associated with the main process
+.PP
+\fBParameters:\fP
+.RS 4
+\fImain_Process_Map_collection\fP std::map, store all std::shared_ptr<OSTM> from all transaction shared between multiple processes 
+.br
+\fIprocess_map_collection\fP std::map, store all unique id from all transaction within main process DO NOT CALL THIS METHOD EXPLICITLY!!!!!! WILL DELETE ALL PROCESS ASSOCIATED ELEMENTS!!!! 
+.RE
+.PP
+
+.PP
+Definition at line 72 of file TX\&.cpp\&.
+.SS "void TX::store (std::shared_ptr< \fBOSTM\fP > object)"
+
+.PP
+Store transactional changes\&. store void, receive an std::shared_ptr<OSTM> object to store the changes within the transaction, depends the user action
+.PP
+\fBParameters:\fP
+.RS 4
+\fIworking_Map_collection\fP std::map, store all the std::shared_ptr<OSTM> pointer in the transaction 
+.RE
+.PP
+
+.PP
+Definition at line 178 of file TX\&.cpp\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class \fBTM\fP\fC [friend]\fP"
+Only \fBTM\fP Transaction Manager can create instance of \fBTX\fP Transaction 
+.PP
+Definition at line 72 of file TX\&.h\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "int TX::test_counter = 0\fC [static]\fP"
+
+.PP
+\fBParameters:\fP
+.RS 4
+\fItest_counter\fP int ONLY FOR TESTING!!!
+.br
+\fIstatic\fP Global counter for rollback 
+.RE
+.PP
+
+.PP
+Definition at line 80 of file TX\&.h\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software Transactional Memory from the source code\&.

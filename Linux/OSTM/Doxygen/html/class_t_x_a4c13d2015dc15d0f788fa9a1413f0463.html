@@ -46,7 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -120,30 +119,15 @@ $(document).ready(function(){initNavTree('class_t_x_a4c13d2015dc15d0f788fa9a1413
 
 <p>@253 _release_object_lock void function, is get called from commit function, with the purpose to release the locks on all the objects participating in the transaction </p>
 <p>_release_object_lock, Release the locks on all Shared global objects used by the transaction </p>
-<p>@255 Declare Iterator for working_Map_collection</p>
-<p>@255 Declare Iterator for working_Map_collection</p>
-<p>@260 Find Global shared original object by the transaction object unique ID</p>
-<p>@262 If object found, then release lock</p>
-<p>@264 Release object lock </p>
 
 <p>Definition at line <a class="el" href="_t_x_8cpp_source.html#l00253">253</a> of file <a class="el" href="_t_x_8cpp_source.html">TX.cpp</a>.</p>
 
 <p>References <a class="el" href="_t_x_8h_source.html#l00105">main_Process_Map_collection</a>, and <a class="el" href="_t_x_8h_source.html#l00093">working_Map_collection</a>.</p>
 
 <p>Referenced by <a class="el" href="_t_x_8cpp_source.html#l00177">commit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                             {</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    std::map&lt; int, std::shared_ptr&lt;OSTM&gt; &gt;::iterator working_Map_collection_Object_Shared_Pointer_Iterator;</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    std::map&lt;int, std::shared_ptr&lt;OSTM&gt;&gt;::iterator main_Process_Map_collection_Iterator;</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">for</span> (working_Map_collection_Object_Shared_Pointer_Iterator = <a class="code" href="class_t_x_a81aafda16e2f20e36ec6c68e584668ff.html#a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</a>.begin(); working_Map_collection_Object_Shared_Pointer_Iterator != <a class="code" href="class_t_x_a81aafda16e2f20e36ec6c68e584668ff.html#a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</a>.end(); working_Map_collection_Object_Shared_Pointer_Iterator++) {</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            main_Process_Map_collection_Iterator = <a class="code" href="class_t_x_a1a45d726894190695314464d7cd97c29.html#a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</a>.find((working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second)-&gt;Get_Unique_ID());</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keywordflow">if</span> (main_Process_Map_collection_Iterator != <a class="code" href="class_t_x_a1a45d726894190695314464d7cd97c29.html#a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</a>.end()) {</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                (main_Process_Map_collection_Iterator)-&gt;second-&gt;unlock_Mutex();</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            } </div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        }</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div><div class="ttc" id="class_t_x_a1a45d726894190695314464d7cd97c29_html_a1a45d726894190695314464d7cd97c29"><div class="ttname"><a href="class_t_x_a1a45d726894190695314464d7cd97c29.html#a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</a></div><div class="ttdeci">static std::map&lt; int, std::shared_ptr&lt; OSTM &gt; &gt; main_Process_Map_collection</div><div class="ttdef"><b>Definition:</b> <a href="_t_x_8h_source.html#l00105">TX.h:105</a></div></div>
+<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                             {</div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="comment">/* @255 Declare Iterator for working_Map_collection */</span></div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    std::map&lt; int, std::shared_ptr&lt;OSTM&gt; &gt;::iterator working_Map_collection_Object_Shared_Pointer_Iterator;</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="comment">/* @255 Declare Iterator for working_Map_collection */</span></div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    std::map&lt;int, std::shared_ptr&lt;OSTM&gt;&gt;::iterator main_Process_Map_collection_Iterator;</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">for</span> (working_Map_collection_Object_Shared_Pointer_Iterator = <a class="code" href="class_t_x_a81aafda16e2f20e36ec6c68e584668ff.html#a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</a>.begin(); working_Map_collection_Object_Shared_Pointer_Iterator != <a class="code" href="class_t_x_a81aafda16e2f20e36ec6c68e584668ff.html#a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</a>.end(); working_Map_collection_Object_Shared_Pointer_Iterator++) {</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="comment">/* @260 Find Global shared original object by the transaction object unique ID*/</span></div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            main_Process_Map_collection_Iterator = <a class="code" href="class_t_x_a1a45d726894190695314464d7cd97c29.html#a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</a>.find((working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second)-&gt;Get_Unique_ID());</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="comment">/* @262 If object found, then release lock*/</span></div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keywordflow">if</span> (main_Process_Map_collection_Iterator != <a class="code" href="class_t_x_a1a45d726894190695314464d7cd97c29.html#a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</a>.end()) {</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                <span class="comment">/* @264 Release object lock */</span></div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                (main_Process_Map_collection_Iterator)-&gt;second-&gt;unlock_Mutex();</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            } </div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        }</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div><div class="ttc" id="class_t_x_a1a45d726894190695314464d7cd97c29_html_a1a45d726894190695314464d7cd97c29"><div class="ttname"><a href="class_t_x_a1a45d726894190695314464d7cd97c29.html#a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</a></div><div class="ttdeci">static std::map&lt; int, std::shared_ptr&lt; OSTM &gt; &gt; main_Process_Map_collection</div><div class="ttdef"><b>Definition:</b> <a href="_t_x_8h_source.html#l00105">TX.h:105</a></div></div>
 <div class="ttc" id="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_html_a81aafda16e2f20e36ec6c68e584668ff"><div class="ttname"><a href="class_t_x_a81aafda16e2f20e36ec6c68e584668ff.html#a81aafda16e2f20e36ec6c68e584668ff">TX::working_Map_collection</a></div><div class="ttdeci">std::map&lt; int, std::shared_ptr&lt; OSTM &gt; &gt; working_Map_collection</div><div class="ttdef"><b>Definition:</b> <a href="_t_x_8h_source.html#l00093">TX.h:93</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413f0463_icgraph.png" border="0" usemap="#class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413f0463_icgraph" alt=""/></div>
-<map name="class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413f0463_icgraph" id="class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413f0463_icgraph">
-<area shape="rect" id="node2" href="class_t_x_a9dde5d356b35e557448e58d260087356.html#a9dde5d356b35e557448e58d260087356" title="@176 commit function, returns boolean value TRUE/FALSE depends on the action taken within the functio..." alt="" coords="223,5,313,32"/>
-</map>
-</div>
-</p>
-
 </div>
 </div>
 </div><!-- contents -->
@@ -152,7 +136,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_t_x.html">TX</a></li>
-    <li class="footer">Generated on Sun Mar 11 2018 15:50:35 for C++ Software transactional Memory by
+    <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

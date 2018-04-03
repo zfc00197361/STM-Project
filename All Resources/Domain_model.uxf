@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>4</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>276</x>
+      <y>516</y>
+      <w>84</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>BANK
+--
+
+--
+/virtual SetAddress():void/
+/virtual GetAddress():string/
+/virtual SetBalance():void/
+/virtual GetBalance():double/
+/virtual SetAccountNumber():void/
+/virtual GetAccountNumber():int/
+/virtual SetLastName():void/
+/virtual GetLastName():string/
+/virtual SetFirstName():void/
+/virtual GetFirstName():string/
+/virtual SetFullname():void/
+/virtual GetFullname():string/
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>164</x>
+      <y>652</y>
+      <w>84</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>AIB
+--
+-fullname:string
+-firstName:string
+-lastName:string
+-address:string
+-accountNumber:int
+-balance:double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>276</x>
+      <y>652</y>
+      <w>84</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>BOI
+--
+-fullname:string
+-firstName:string
+-lastName:string
+-address:string
+-accountNumber:int
+-balance:double
+--
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>388</x>
+      <y>652</y>
+      <w>84</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>ULSTER
+--
+-fullname:string
+-firstName:string
+-lastName:string
+-address:string
+-accountNumber:int
+-balance:double
+--
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>516</x>
+      <y>652</y>
+      <w>84</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>CARLOW_W
+--
+-_shop_address:string
+-_shop_name:string
+-_number_of_iphones:int
+-_number_of_samsung:int
+-_number_of_sony:int
+-_number_of_huawei:int
+-_number_of_nokia:int
+-_number_of_alcatel:int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>620</x>
+      <y>652</y>
+      <w>84</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>KILKENNY_W
+--
+-_shop_address:string
+-_shop_name:string
+-_number_of_iphones:int
+-_number_of_samsung:int
+-_number_of_sony:int
+-_number_of_huawei:int
+-_number_of_nokia:int
+-_number_of_alcatel:int
+--
+
+
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>308</x>
+      <y>608</y>
+      <w>12</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+group=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>308</x>
+      <y>608</y>
+      <w>128</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+group=1</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;300.0;60.0;300.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>608</y>
+      <w>120</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+group=1</panel_attributes>
+    <additional_attributes>280.0;10.0;280.0;60.0;10.0;60.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>316</x>
+      <y>460</y>
+      <w>184</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+group=3</panel_attributes>
+    <additional_attributes>440.0;10.0;440.0;80.0;10.0;80.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>488</x>
+      <y>460</y>
+      <w>184</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+group=3</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0;440.0;80.0;440.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>732</x>
+      <y>652</y>
+      <w>84</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>TULLOW_W
+--
+-_shop_address:string
+-_shop_name:string
+-_number_of_iphones:int
+-_number_of_samsung:int
+-_number_of_sony:int
+-_number_of_huawei:int
+-_number_of_nokia:int
+-_number_of_alcatel:int
+--
+
+
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>656</x>
+      <y>608</y>
+      <w>12</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+group=4</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>548</x>
+      <y>608</y>
+      <w>120</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+group=4</panel_attributes>
+    <additional_attributes>280.0;10.0;280.0;60.0;10.0;60.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>656</x>
+      <y>608</y>
+      <w>128</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+group=4</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;300.0;60.0;300.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>124</x>
+      <y>132</y>
+      <w>176</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>TM
+--
+-register_Lock:mutex
+-get_Lock:mutex
+-_tm_id:pid_t
+--
+-txMap():map&lt;std::thread::id, std::shared_ptr&lt;TX&gt;&gt;
+-process_map_collection():map&lt;pid_t, std::map&lt; std::thread::id, int &gt;&gt;
+-get_thread_Map():map&lt; std::thread::id, int &gt;
+-registerTX():void
++Instance():TM&amp;
++_get_tx():shared_ptr&lt;TX&gt;
++_TX_EXIT():void
++pint_all():void
+
+
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>396</x>
+      <y>312</y>
+      <w>188</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>OSTM
+--
+-version:int
+-uniqueID:int
+-canCommit:bool
+-abort_Transaction:bool
+-global_Unique_ID_Number:int
+-mutex:mutex
+--
+/virtual copy(std::shared_ptr&lt;OSTM&gt; from, std::shared_ptr&lt;OSTM&gt; to)/
+/virtual getBaseCopy(std::shared_ptr&lt;OSTM&gt; object):shared_ptr&lt;OSTM&gt;/
+/virtual toString():void/
+-Get_global_Unique_ID_Number():int
++Set_Unique_ID():void
++Get_Unique_ID():int
++Set_Version(int version):void
++Get_Version():int
++increase_VersionNumber():void
++Is_Can_Commit():bool
++Set_Can_Commit(bool canCommit):void
++Set_Abort_Transaction(bool abortTransaction):void
++Is_Abort_Transaction():bool
++lock_Mutex():void
++unlock_Mutex():void
++is_Locked():bool
+
+
+
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>608</x>
+      <y>516</y>
+      <w>104</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>WAREHOUSE
+--
+
+--
+/virtual SetNumber_of_alcatel():void/
+/virtual GetNumber_of_alcatel():int/
+/virtual SetNumber_of_nokia():void/
+/virtual GetNumber_of_nokia():int/
+/virtual SetNumber_of_huawei():void/
+/virtual GetNumber_of_huawei():int/
+/virtual SetNumber_of_sony():void/
+/virtual GetNumber_of_sony():int/
+/virtual SetNumber_of_samsung():void/
+/virtual GetNumber_of_samsung():int/
+/virtual SetNumber_of_iphones():void/
+/virtual GetNumber_of_iphones():int/
+
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>396</x>
+      <y>112</y>
+      <w>176</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>TX
+--
+-working_Map_collection:map&lt; int, std::shared_ptr&lt;OSTM&gt;&gt;
+-transaction_Number:thread::id
+-_tx_nesting_level:int
+-main_Process_Map_collection:map&lt;int, std::shared_ptr&lt;OSTM&gt;&gt;
+-process_map_collection:map&lt;pid_t, std::map&lt; int, int &gt;&gt;
+-register_Lock:mutex
++test_counter:int
+--
+-th_exit():void
+-_release_object_lock():void
+-_get_tx_number():thread::id
+-get_thread_Map():map&lt; int , int &gt;
++ostm_exit():void
++_register(std::shared_ptr&lt;OSTM&gt;  object):void
++load(std::shared_ptr&lt;OSTM&gt;  object):shared_ptr&lt;OSTM&gt;
++store(std::shared_ptr&lt;OSTM&gt;+ object):void
++commit():bool
++_increase_tx_nesting():void
++_decrease_tx_nesting():void
++getTest_counter():int
++_print_all_tx:void
+
+
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>296</x>
+      <y>164</y>
+      <w>108</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=0..n
+m2=0..1
+</panel_attributes>
+    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>484</x>
+      <y>252</y>
+      <w>20</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=0..n
+m2=0..1
+</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

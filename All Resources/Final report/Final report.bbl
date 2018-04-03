@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{sourceforge}
+S.~Media.
+\newblock {CppUnit - C++ port of JUnit.}
+\newblock \url{https://sourceforge.net/projects/cppunit/}.
+\newblock 2018 (Accessed : 31/03/2018).
+
+\bibitem{cookbook}
+Sourceforge.
+\newblock {CppUnit Cookbook.}
+\newblock \url{http://cppunit.sourceforge.net/doc/cvs/cppunit_cookbook.html}.
+\newblock N/A (Accessed : 31/03/2018).
+
+\end{thebibliography}

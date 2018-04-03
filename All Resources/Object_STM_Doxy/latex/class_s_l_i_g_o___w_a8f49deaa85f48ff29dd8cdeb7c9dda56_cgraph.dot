@@ -1,0 +1,27 @@
+digraph "SLIGO_W::toString"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SLIGO_W::toString",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="SLIGO_W::GetShop_name",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_s_l_i_g_o___w.html#ae788518e30d9d311eb28f37da932367a"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="OSTM::Get_Unique_ID",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_s_t_m.html#a5a01a8b98d16b1d1904ecf9356e7b71d",tooltip="getter for unique id "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="SLIGO_W::GetShop_address",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_s_l_i_g_o___w.html#a66a2315d531231e34c5056e9bc917797"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="SLIGO_W::GetNumber\l_of_iphones",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_s_l_i_g_o___w.html#a780b3a690f5cbbf7593ffc6612b3d743"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="SLIGO_W::GetNumber\l_of_samsung",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_s_l_i_g_o___w.html#aa4b6200a00c2a14924b7ff1ae3896b61"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="SLIGO_W::GetNumber\l_of_sony",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_s_l_i_g_o___w.html#a62822c4fb80f739bee61767238a29e14"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="SLIGO_W::GetNumber\l_of_huawei",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_s_l_i_g_o___w.html#a5804f623f4eb290df4f6b3aba59230d6"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="SLIGO_W::GetNumber\l_of_nokia",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_s_l_i_g_o___w.html#a1aa9c9f001b37f3fdcdffae009319298"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="SLIGO_W::GetNumber\l_of_alcatel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_s_l_i_g_o___w.html#a5afed1018d0629a1e08fc266d05a94d9"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="OSTM::Get_Version",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_o_s_t_m.html#a1f1db9d482f22c8e7caa17dfb340626b",tooltip="getter for version number "];
+}

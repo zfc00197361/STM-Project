@@ -1,0 +1,233 @@
+.TH "BOA" 3 "Sun Apr 1 2018" "Version v 0.0.1" "C++ Software Transactional Memory" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BOA \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <BOA\&.h>\fP
+.PP
+Inherits \fBBANK\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBOA\fP ()"
+.br
+.ti -1c
+.RI "\fBBOA\fP (int accountNumber, double balance, std::string firstName, std::string lastName, std::string address)"
+.br
+.ti -1c
+.RI "\fBBOA\fP (std::shared_ptr< \fBBANK\fP > obj, int _version, int _unique_id)"
+.br
+.ti -1c
+.RI "\fBBOA\fP (const \fBBOA\fP &orig)"
+.br
+.ti -1c
+.RI "\fBBOA\fP \fBoperator=\fP (const \fBBOA\fP &orig)"
+.br
+.ti -1c
+.RI "virtual \fB~BOA\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBcopy\fP (std::shared_ptr< \fBOSTM\fP > to, std::shared_ptr< \fBOSTM\fP > from)"
+.br
+.RI "\fIcopy function, make deep copy of the object/pointer \fP"
+.ti -1c
+.RI "virtual std::shared_ptr< \fBOSTM\fP > \fBgetBaseCopy\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fIgetBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr<BANK> type object \fP"
+.ti -1c
+.RI "virtual void \fBtoString\fP ()"
+.br
+.RI "\fI_cast, is use to cast bak the std::shared_ptr<OSTM> to the required type \fP"
+.ti -1c
+.RI "virtual void \fBSetAddress\fP (std::string address)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetAddress\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetBalance\fP (double balance)"
+.br
+.ti -1c
+.RI "virtual double \fBGetBalance\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetAccountNumber\fP (int accountNumber)"
+.br
+.ti -1c
+.RI "virtual int \fBGetAccountNumber\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetLastName\fP (std::string lastName)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetLastName\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetFirstName\fP (std::string firstName)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetFirstName\fP () const "
+.br
+.ti -1c
+.RI "virtual void \fBSetFullname\fP (std::string fullname)"
+.br
+.ti -1c
+.RI "virtual std::string \fBGetFullname\fP () const "
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Inherit from \fBBANK\fP 
+.PP
+Definition at line 18 of file BOA\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "BOA::BOA ()\fC [inline]\fP"
+Constructor 
+.PP
+Definition at line 24 of file BOA\&.h\&.
+.SS "BOA::BOA (int accountNumber, double balance, std::string firstName, std::string lastName, std::string address)\fC [inline]\fP"
+Custom constructor 
+.PP
+Definition at line 35 of file BOA\&.h\&.
+.SS "BOA::BOA (std::shared_ptr< \fBBANK\fP > obj, int _version, int _unique_id)\fC [inline]\fP"
+Custom constructor, used by the library for deep copying 
+.PP
+Definition at line 46 of file BOA\&.h\&.
+.SS "BOA::BOA (const \fBBOA\fP & orig)"
+Copy constructor 
+.PP
+Definition at line 12 of file BOA\&.cpp\&.
+.SS "BOA::~BOA ()\fC [virtual]\fP"
+de-constructor 
+.PP
+Definition at line 15 of file BOA\&.cpp\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void BOA::copy (std::shared_ptr< \fBOSTM\fP > to, std::shared_ptr< \fBOSTM\fP > from)\fC [virtual]\fP"
+
+.PP
+copy function, make deep copy of the object/pointer 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobjTO\fP is a std::shared_ptr<BANK> type object casted back from std::shared_ptr<OSTM> 
+.br
+\fIobjFROM\fP is a std::shared_ptr<BANK> type object casted back from std::shared_ptr<OSTM> 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 34 of file BOA\&.cpp\&.
+.SS "int BOA::GetAccountNumber () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 80 of file BOA\&.cpp\&.
+.SS "std::string BOA::GetAddress () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 64 of file BOA\&.cpp\&.
+.SS "double BOA::GetBalance () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 72 of file BOA\&.cpp\&.
+.SS "std::shared_ptr< \fBOSTM\fP > BOA::getBaseCopy (std::shared_ptr< \fBOSTM\fP > object)\fC [virtual]\fP"
+
+.PP
+getBaseCopy function, make deep copy of the object/pointer and Return a new std::shared_ptr<BANK> type object 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIobjTO\fP is a \fBBANK\fP type pointer for casting 
+.br
+\fIobj\fP is a std::shared_ptr<BANK> return type 
+.RE
+.PP
+
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 22 of file BOA\&.cpp\&.
+.SS "std::string BOA::GetFirstName () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 96 of file BOA\&.cpp\&.
+.SS "std::string BOA::GetFullname () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 104 of file BOA\&.cpp\&.
+.SS "std::string BOA::GetLastName () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 88 of file BOA\&.cpp\&.
+.SS "\fBBOA\fP BOA::operator= (const \fBBOA\fP & orig)\fC [inline]\fP"
+Operator 
+.PP
+Definition at line 64 of file BOA\&.h\&.
+.SS "void BOA::SetAccountNumber (int accountNumber)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 76 of file BOA\&.cpp\&.
+.SS "void BOA::SetAddress (std::string address)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 60 of file BOA\&.cpp\&.
+.SS "void BOA::SetBalance (double balance)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 68 of file BOA\&.cpp\&.
+.SS "void BOA::SetFirstName (std::string firstName)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 92 of file BOA\&.cpp\&.
+.SS "void BOA::SetFullname (std::string fullname)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 100 of file BOA\&.cpp\&.
+.SS "void BOA::SetLastName (std::string lastName)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 84 of file BOA\&.cpp\&.
+.SS "void BOA::toString ()\fC [virtual]\fP"
+
+.PP
+_cast, is use to cast bak the std::shared_ptr<OSTM> to the required type toString function, displays the object values in formatted way 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 54 of file BOA\&.cpp\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for C++ Software Transactional Memory from the source code\&.

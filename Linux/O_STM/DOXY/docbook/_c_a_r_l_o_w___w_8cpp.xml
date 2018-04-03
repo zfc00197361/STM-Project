@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_c_a_r_l_o_w___w_8cpp">
+    <title>CARLOW_W.cpp File Reference</title>
+    <programlisting>#include &quot;CARLOW_W.h&quot;</programlisting>
+<para>Include dependency diagram for CARLOW_W.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_c_a_r_l_o_w___w_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for CARLOW_W.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_c_a_r_l_o_w___w_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file CARLOW_W.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 
+2 <emphasis class="comment">/*&#32;</emphasis>
+3 <emphasis class="comment">&#32;*&#32;File:&#32;&#32;&#32;CARLOW_W.cpp</emphasis>
+4 <emphasis class="comment">&#32;*&#32;Author:&#32;Zoltan&#32;Fuzesi</emphasis>
+5 <emphasis class="comment">&#32;*&#32;IT&#32;Carlow&#32;:&#32;C00197361</emphasis>
+6 <emphasis class="comment">&#32;*</emphasis>
+7 <emphasis class="comment">&#32;*&#32;Created&#32;on&#32;January&#32;17,&#32;2018,&#32;8:02&#32;PM</emphasis>
+8 <emphasis class="comment">&#32;*/</emphasis>
+9 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_c_a_r_l_o_w___w_8h">CARLOW_W.h</link>&quot;</emphasis>
+10 
+11 
+12 <emphasis class="comment">//CARLOW_W::CARLOW_W()&#32;{</emphasis>
+13 <emphasis class="comment">//}</emphasis>
+<link linkend="class_c_a_r_l_o_w___w_aa628d46e58dfd0517f24499eca88138b_1aa628d46e58dfd0517f24499eca88138b">14 </link><link linkend="class_c_a_r_l_o_w___w_aa628d46e58dfd0517f24499eca88138b_1aa628d46e58dfd0517f24499eca88138b">CARLOW_W::~CARLOW_W</link>()&#32;{
+15 }
+16 
+<link linkend="class_c_a_r_l_o_w___w_a267a2792c59f475740a68953c8437205_1a267a2792c59f475740a68953c8437205">17 </link><link linkend="class_c_a_r_l_o_w___w_a8ae6ca6f4db7ea5240322fd27824c55a_1a8ae6ca6f4db7ea5240322fd27824c55a">CARLOW_W::CARLOW_W</link>(<emphasis class="keyword">const</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w">CARLOW_W</link>&amp;&#32;orig)&#32;{
+18 }
+<link linkend="class_c_a_r_l_o_w___w_a1a76566c3a7c01cf469007741dac6b97_1a1a76566c3a7c01cf469007741dac6b97">24 </link>std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_c_a_r_l_o_w___w_a1a76566c3a7c01cf469007741dac6b97_1a1a76566c3a7c01cf469007741dac6b97">CARLOW_W::getBaseCopy</link>(std::shared_ptr&lt;OSTM&gt;&#32;<emphasis class="keywordtype">object</emphasis>)
+25 {
+26 
+27 &#32;&#32;&#32;&#32;std::shared_ptr&lt;WAREHOUSE&gt;&#32;objTO&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link>&gt;(object);
+28 &#32;&#32;&#32;&#32;std::shared_ptr&lt;WAREHOUSE&gt;&#32;obj(<emphasis class="keyword">new</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_a8ae6ca6f4db7ea5240322fd27824c55a_1a8ae6ca6f4db7ea5240322fd27824c55a">CARLOW_W</link>(objTO,&#32;object-&gt;Get_Version(),<emphasis class="keywordtype">object</emphasis>-&gt;Get_Unique_ID()));
+29 &#32;&#32;&#32;&#32;std::shared_ptr&lt;OSTM&gt;&#32;ostm_obj&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_o_s_t_m">OSTM</link>&gt;(obj);
+30 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;ostm_obj;
+31 }
+<link linkend="class_c_a_r_l_o_w___w_ac91cb7cbae77752e334e273b97fb988b_1ac91cb7cbae77752e334e273b97fb988b">37 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_ac91cb7cbae77752e334e273b97fb988b_1ac91cb7cbae77752e334e273b97fb988b">CARLOW_W::copy</link>(std::shared_ptr&lt;OSTM&gt;&#32;to,&#32;std::shared_ptr&lt;OSTM&gt;&#32;from){
+38 
+39 &#32;&#32;&#32;&#32;std::shared_ptr&lt;CARLOW_W&gt;&#32;objTO&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_c_a_r_l_o_w___w">CARLOW_W</link>&gt;(to);
+40 &#32;&#32;&#32;&#32;std::shared_ptr&lt;CARLOW_W&gt;&#32;objFROM&#32;=&#32;std::dynamic_pointer_cast&lt;<link linkend="class_c_a_r_l_o_w___w">CARLOW_W</link>&gt;(from);
+41 &#32;&#32;&#32;&#32;objTO-&gt;<link linkend="class_c_a_r_l_o_w___w_acaa886b26f5a60d500f13709340d34cf_1acaa886b26f5a60d500f13709340d34cf">_shop_address</link>&#32;=&#32;objFROM-&gt;GetShop_address();
+42 &#32;&#32;&#32;&#32;objTO-&gt;_shop_name&#32;=&#32;objFROM-&gt;GetShop_name();
+43 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_iphones&#32;=&#32;objFROM-&gt;GetNumber_of_iphones();
+44 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_samsung&#32;=&#32;objFROM-&gt;GetNumber_of_samsung();
+45 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_sony&#32;=&#32;objFROM-&gt;GetNumber_of_sony();
+46 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_huawei&#32;=&#32;objFROM-&gt;GetNumber_of_huawei();
+47 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_nokia&#32;=&#32;objFROM-&gt;GetNumber_of_nokia();
+48 &#32;&#32;&#32;&#32;objTO-&gt;_number_of_alcatel&#32;=&#32;objFROM-&gt;GetNumber_of_alcatel();
+49 &#32;&#32;&#32;&#32;objTO-&gt;Set_Unique_ID(objFROM-&gt;Get_Unique_ID());
+50 &#32;&#32;&#32;&#32;objTO-&gt;Set_Version(objFROM-&gt;Get_Version());
+51 &#32;&#32;&#32;&#32;
+52 &#32;&#32;&#32;
+53 }
+57 <emphasis class="comment">//std::shared_ptr&lt;CARLOW_W&gt;&#32;CARLOW_W::_cast(std::shared_ptr&lt;OSTM&gt;&#32;_object){</emphasis>
+58 <emphasis class="comment">//&#32;&#32;&#32;&#32;</emphasis>
+59 <emphasis class="comment">//&#32;&#32;&#32;&#32;return&#32;std::static_pointer_cast&lt;CARLOW_W&gt;(_object);</emphasis>
+60 <emphasis class="comment">//}</emphasis>
+<link linkend="class_c_a_r_l_o_w___w_a79e683650f861b59752fb027a5f16e5a_1a79e683650f861b59752fb027a5f16e5a">64 </link><emphasis class="comment"></emphasis><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_a79e683650f861b59752fb027a5f16e5a_1a79e683650f861b59752fb027a5f16e5a">CARLOW_W::toString</link>()
+65 {
+66 &#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\n&quot;</emphasis>&#32;&lt;&lt;&#32;&#32;this-&gt;<link linkend="class_c_a_r_l_o_w___w_a68235a63964645c525620053a33de863_1a68235a63964645c525620053a33de863">GetShop_name</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nUnique&#32;ID&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_1a5a01a8b98d16b1d1904ecf9356e7b71d">Get_Unique_ID</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nShop&#32;Name&#32;:&#32;&quot;</emphasis>&#32;&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_c_a_r_l_o_w___w_a68235a63964645c525620053a33de863_1a68235a63964645c525620053a33de863">GetShop_name</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nShop&#32;Address&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_c_a_r_l_o_w___w_af48a2f69706be684115758820ce79ddd_1af48a2f69706be684115758820ce79ddd">GetShop_address</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Iphones&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_c_a_r_l_o_w___w_a50395c707116ea1176743ed98c6b1f76_1a50395c707116ea1176743ed98c6b1f76">GetNumber_of_iphones</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Samsung&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_c_a_r_l_o_w___w_aecc697b6d017d88f2bdbe3cea2bf3496_1aecc697b6d017d88f2bdbe3cea2bf3496">GetNumber_of_samsung</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Sony&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_c_a_r_l_o_w___w_a6d31219dac9b4d8842e14b7414ed286e_1a6d31219dac9b4d8842e14b7414ed286e">GetNumber_of_sony</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Huawei&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_c_a_r_l_o_w___w_aea38b51a44cda35a01beb7d45fa7a2a4_1aea38b51a44cda35a01beb7d45fa7a2a4">GetNumber_of_huawei</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Nokia&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_c_a_r_l_o_w___w_a4e3a644ee69bc4bc4ab3feac1493192b_1a4e3a644ee69bc4bc4ab3feac1493192b">GetNumber_of_nokia</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nNo.&#32;Alcatel&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_c_a_r_l_o_w___w_ae7ab8852e5eeff1c2cd397126fbac0e7_1ae7ab8852e5eeff1c2cd397126fbac0e7">GetNumber_of_alcatel</link>()&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;\nVersion&#32;number&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;&#32;this-&gt;<link linkend="class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_1a1f1db9d482f22c8e7caa17dfb340626b">Get_Version</link>()&#32;&lt;&lt;&#32;std::endl;
+67 }
+68 
+69 
+70 
+<link linkend="class_c_a_r_l_o_w___w_ad264954806d7fd6c418650a5c7c7defb_1ad264954806d7fd6c418650a5c7c7defb">71 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_ad264954806d7fd6c418650a5c7c7defb_1ad264954806d7fd6c418650a5c7c7defb">CARLOW_W::SetNumber_of_alcatel</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_acf1f9888b2ac011cd0e8bb49b10abd91_1acf1f9888b2ac011cd0e8bb49b10abd91">_number_of_alcatel</link>)&#32;{
+72 &#32;&#32;&#32;&#32;this-&gt;_number_of_alcatel&#32;=&#32;<link linkend="class_c_a_r_l_o_w___w_acf1f9888b2ac011cd0e8bb49b10abd91_1acf1f9888b2ac011cd0e8bb49b10abd91">_number_of_alcatel</link>;
+73 }
+74 
+<link linkend="class_c_a_r_l_o_w___w_ae7ab8852e5eeff1c2cd397126fbac0e7_1ae7ab8852e5eeff1c2cd397126fbac0e7">75 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_ae7ab8852e5eeff1c2cd397126fbac0e7_1ae7ab8852e5eeff1c2cd397126fbac0e7">CARLOW_W::GetNumber_of_alcatel</link>(){
+76 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_acf1f9888b2ac011cd0e8bb49b10abd91_1acf1f9888b2ac011cd0e8bb49b10abd91">_number_of_alcatel</link>;
+77 }
+78 
+<link linkend="class_c_a_r_l_o_w___w_af0f395409df02a42b3e9448d027d0776_1af0f395409df02a42b3e9448d027d0776">79 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_af0f395409df02a42b3e9448d027d0776_1af0f395409df02a42b3e9448d027d0776">CARLOW_W::SetNumber_of_nokia</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_ac4c7e47711cc4c9e0bc01fc37cabe7d1_1ac4c7e47711cc4c9e0bc01fc37cabe7d1">_number_of_nokia</link>)&#32;{
+80 &#32;&#32;&#32;&#32;this-&gt;_number_of_nokia&#32;=&#32;<link linkend="class_c_a_r_l_o_w___w_ac4c7e47711cc4c9e0bc01fc37cabe7d1_1ac4c7e47711cc4c9e0bc01fc37cabe7d1">_number_of_nokia</link>;
+81 }
+82 
+<link linkend="class_c_a_r_l_o_w___w_a4e3a644ee69bc4bc4ab3feac1493192b_1a4e3a644ee69bc4bc4ab3feac1493192b">83 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_a4e3a644ee69bc4bc4ab3feac1493192b_1a4e3a644ee69bc4bc4ab3feac1493192b">CARLOW_W::GetNumber_of_nokia</link>(){
+84 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_ac4c7e47711cc4c9e0bc01fc37cabe7d1_1ac4c7e47711cc4c9e0bc01fc37cabe7d1">_number_of_nokia</link>;
+85 }
+86 
+<link linkend="class_c_a_r_l_o_w___w_a016d1d51b091fc1732c2923a3baa2f58_1a016d1d51b091fc1732c2923a3baa2f58">87 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_a016d1d51b091fc1732c2923a3baa2f58_1a016d1d51b091fc1732c2923a3baa2f58">CARLOW_W::SetNumber_of_huawei</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_acc2837ed943bb51134e5878e818970fd_1acc2837ed943bb51134e5878e818970fd">_number_of_huawei</link>)&#32;{
+88 &#32;&#32;&#32;&#32;this-&gt;_number_of_huawei&#32;=&#32;<link linkend="class_c_a_r_l_o_w___w_acc2837ed943bb51134e5878e818970fd_1acc2837ed943bb51134e5878e818970fd">_number_of_huawei</link>;
+89 }
+90 
+<link linkend="class_c_a_r_l_o_w___w_aea38b51a44cda35a01beb7d45fa7a2a4_1aea38b51a44cda35a01beb7d45fa7a2a4">91 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_aea38b51a44cda35a01beb7d45fa7a2a4_1aea38b51a44cda35a01beb7d45fa7a2a4">CARLOW_W::GetNumber_of_huawei</link>(){
+92 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_acc2837ed943bb51134e5878e818970fd_1acc2837ed943bb51134e5878e818970fd">_number_of_huawei</link>;
+93 }
+94 
+<link linkend="class_c_a_r_l_o_w___w_ab255132fb2ef5678d00c74f90acdf2dd_1ab255132fb2ef5678d00c74f90acdf2dd">95 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_ab255132fb2ef5678d00c74f90acdf2dd_1ab255132fb2ef5678d00c74f90acdf2dd">CARLOW_W::SetNumber_of_sony</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_a080de2e63290db84a0b9898682b74f6e_1a080de2e63290db84a0b9898682b74f6e">_number_of_sony</link>)&#32;{
+96 &#32;&#32;&#32;&#32;this-&gt;_number_of_sony&#32;=&#32;<link linkend="class_c_a_r_l_o_w___w_a080de2e63290db84a0b9898682b74f6e_1a080de2e63290db84a0b9898682b74f6e">_number_of_sony</link>;
+97 }
+98 
+<link linkend="class_c_a_r_l_o_w___w_a6d31219dac9b4d8842e14b7414ed286e_1a6d31219dac9b4d8842e14b7414ed286e">99 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_a6d31219dac9b4d8842e14b7414ed286e_1a6d31219dac9b4d8842e14b7414ed286e">CARLOW_W::GetNumber_of_sony</link>(){
+100 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_a080de2e63290db84a0b9898682b74f6e_1a080de2e63290db84a0b9898682b74f6e">_number_of_sony</link>;
+101 }
+102 
+<link linkend="class_c_a_r_l_o_w___w_a6e629d8043c4c4266ecafa9f6a3e6447_1a6e629d8043c4c4266ecafa9f6a3e6447">103 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_a6e629d8043c4c4266ecafa9f6a3e6447_1a6e629d8043c4c4266ecafa9f6a3e6447">CARLOW_W::SetNumber_of_samsung</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_ae47f54289c630e38341ce8b2c8decf0f_1ae47f54289c630e38341ce8b2c8decf0f">_number_of_samsung</link>)&#32;{
+104 &#32;&#32;&#32;&#32;this-&gt;_number_of_samsung&#32;=&#32;<link linkend="class_c_a_r_l_o_w___w_ae47f54289c630e38341ce8b2c8decf0f_1ae47f54289c630e38341ce8b2c8decf0f">_number_of_samsung</link>;
+105 }
+106 
+<link linkend="class_c_a_r_l_o_w___w_aecc697b6d017d88f2bdbe3cea2bf3496_1aecc697b6d017d88f2bdbe3cea2bf3496">107 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_aecc697b6d017d88f2bdbe3cea2bf3496_1aecc697b6d017d88f2bdbe3cea2bf3496">CARLOW_W::GetNumber_of_samsung</link>(){
+108 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_ae47f54289c630e38341ce8b2c8decf0f_1ae47f54289c630e38341ce8b2c8decf0f">_number_of_samsung</link>;
+109 }
+110 
+<link linkend="class_c_a_r_l_o_w___w_ad58af9d68450f4fc70e0e1ecd4b1b498_1ad58af9d68450f4fc70e0e1ecd4b1b498">111 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_ad58af9d68450f4fc70e0e1ecd4b1b498_1ad58af9d68450f4fc70e0e1ecd4b1b498">CARLOW_W::SetNumber_of_iphones</link>(<emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_aff9e9a986b6390d6fa51f52d43a8c0e8_1aff9e9a986b6390d6fa51f52d43a8c0e8">_number_of_iphones</link>)&#32;{
+112 &#32;&#32;&#32;&#32;this-&gt;_number_of_iphones&#32;=&#32;<link linkend="class_c_a_r_l_o_w___w_aff9e9a986b6390d6fa51f52d43a8c0e8_1aff9e9a986b6390d6fa51f52d43a8c0e8">_number_of_iphones</link>;
+113 }
+114 
+<link linkend="class_c_a_r_l_o_w___w_a50395c707116ea1176743ed98c6b1f76_1a50395c707116ea1176743ed98c6b1f76">115 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_a50395c707116ea1176743ed98c6b1f76_1a50395c707116ea1176743ed98c6b1f76">CARLOW_W::GetNumber_of_iphones</link>(){
+116 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_aff9e9a986b6390d6fa51f52d43a8c0e8_1aff9e9a986b6390d6fa51f52d43a8c0e8">_number_of_iphones</link>;
+117 }
+118 
+<link linkend="class_c_a_r_l_o_w___w_a9d0dcf25c0a9eb8be530c27bd2cf8933_1a9d0dcf25c0a9eb8be530c27bd2cf8933">119 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_a9d0dcf25c0a9eb8be530c27bd2cf8933_1a9d0dcf25c0a9eb8be530c27bd2cf8933">CARLOW_W::SetShop_name</link>(std::string&#32;<link linkend="class_c_a_r_l_o_w___w_ad3ae4ca82f06287d8ad5bec07a43561a_1ad3ae4ca82f06287d8ad5bec07a43561a">_shop_name</link>)&#32;{
+120 &#32;&#32;&#32;&#32;this-&gt;_shop_name&#32;=&#32;<link linkend="class_c_a_r_l_o_w___w_ad3ae4ca82f06287d8ad5bec07a43561a_1ad3ae4ca82f06287d8ad5bec07a43561a">_shop_name</link>;
+121 }
+122 
+<link linkend="class_c_a_r_l_o_w___w_a68235a63964645c525620053a33de863_1a68235a63964645c525620053a33de863">123 </link>std::string&#32;<link linkend="class_c_a_r_l_o_w___w_a68235a63964645c525620053a33de863_1a68235a63964645c525620053a33de863">CARLOW_W::GetShop_name</link>(){
+124 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_ad3ae4ca82f06287d8ad5bec07a43561a_1ad3ae4ca82f06287d8ad5bec07a43561a">_shop_name</link>;
+125 }
+126 
+<link linkend="class_c_a_r_l_o_w___w_a6f66cd4c060b2b1ac6640768ad5c56e4_1a6f66cd4c060b2b1ac6640768ad5c56e4">127 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_a6f66cd4c060b2b1ac6640768ad5c56e4_1a6f66cd4c060b2b1ac6640768ad5c56e4">CARLOW_W::SetShop_address</link>(std::string&#32;<link linkend="class_c_a_r_l_o_w___w_acaa886b26f5a60d500f13709340d34cf_1acaa886b26f5a60d500f13709340d34cf">_shop_address</link>)&#32;{
+128 &#32;&#32;&#32;&#32;this-&gt;_shop_address&#32;=&#32;<link linkend="class_c_a_r_l_o_w___w_acaa886b26f5a60d500f13709340d34cf_1acaa886b26f5a60d500f13709340d34cf">_shop_address</link>;
+129 }
+130 
+<link linkend="class_c_a_r_l_o_w___w_af48a2f69706be684115758820ce79ddd_1af48a2f69706be684115758820ce79ddd">131 </link>std::string&#32;<link linkend="class_c_a_r_l_o_w___w_af48a2f69706be684115758820ce79ddd_1af48a2f69706be684115758820ce79ddd">CARLOW_W::GetShop_address</link>(){
+132 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_c_a_r_l_o_w___w_acaa886b26f5a60d500f13709340d34cf_1acaa886b26f5a60d500f13709340d34cf">_shop_address</link>;
+133 }
+134 
+135 
+136 
+    </computeroutput></literallayout>
+</section>

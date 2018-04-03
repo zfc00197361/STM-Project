@@ -1,0 +1,495 @@
+.TH "SWBPLC" 3 "Sun Apr 1 2018" "CppUnit test STM" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SWBPLC \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SWBPLC\&.h>\fP
+.PP
+Inherits \fBBANK\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBcopy\fP (std::shared_ptr< \fBOSTM\fP > to, std::shared_ptr< \fBOSTM\fP > from)"
+.br
+.RI "\fI\fBOSTM\fP required virtual method for deep copy\&. \fP"
+.ti -1c
+.RI "virtual int \fBGetAccountNumber\fP () const "
+.br
+.ti -1c
+.RI "virtual std::string \fBGetAddress\fP () const "
+.br
+.ti -1c
+.RI "virtual double \fBGetBalance\fP () const "
+.br
+.ti -1c
+.RI "virtual std::shared_ptr< \fBOSTM\fP > \fBgetBaseCopy\fP (std::shared_ptr< \fBOSTM\fP > object)"
+.br
+.RI "\fI\fBOSTM\fP required virtual method for returning a pointer that is copy of the original pointer\&. \fP"
+.ti -1c
+.RI "virtual std::string \fBGetFirstName\fP () const "
+.br
+.ti -1c
+.RI "virtual std::string \fBGetFullname\fP () const "
+.br
+.ti -1c
+.RI "virtual std::string \fBGetLastName\fP () const "
+.br
+.ti -1c
+.RI "\fBSWBPLC\fP \fBoperator=\fP (const \fBSWBPLC\fP &orig)"
+.br
+.ti -1c
+.RI "virtual void \fBSetAccountNumber\fP (int \fBaccountNumber\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBSetAddress\fP (std::string \fBaddress\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBSetBalance\fP (double \fBbalance\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBSetFirstName\fP (std::string \fBfirstName\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBSetFullname\fP (std::string \fBfullname\fP)"
+.br
+.ti -1c
+.RI "virtual void \fBSetLastName\fP (std::string \fBlastName\fP)"
+.br
+.ti -1c
+.RI "\fBSWBPLC\fP ()"
+.br
+.ti -1c
+.RI "\fBSWBPLC\fP (int \fBaccountNumber\fP, double \fBbalance\fP, std::string \fBfirstName\fP, std::string \fBlastName\fP, std::string \fBaddress\fP)"
+.br
+.ti -1c
+.RI "\fBSWBPLC\fP (std::shared_ptr< \fBBANK\fP > obj, int _version, int _unique_id)"
+.br
+.ti -1c
+.RI "\fBSWBPLC\fP (const \fBSWBPLC\fP &orig)"
+.br
+.ti -1c
+.RI "virtual void \fBtoString\fP ()"
+.br
+.RI "\fI\fBOSTM\fP required virtual method for display object\&. \fP"
+.ti -1c
+.RI "virtual \fB~SWBPLC\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBaccountNumber\fP"
+.br
+.ti -1c
+.RI "std::string \fBaddress\fP"
+.br
+.ti -1c
+.RI "double \fBbalance\fP"
+.br
+.ti -1c
+.RI "std::string \fBfirstName\fP"
+.br
+.ti -1c
+.RI "std::string \fBfullname\fP"
+.br
+.ti -1c
+.RI "std::string \fBlastName\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 19 of file SWBPLC\&.h\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SWBPLC::SWBPLC ()\fC [inline]\fP"
+
+.PP
+Definition at line 24 of file SWBPLC\&.h\&.
+.PP
+References accountNumber, address, balance, firstName, fullname, and lastName\&.
+.PP
+Referenced by getBaseCopy(), and SWBPLC()\&.
+.PP
+.nf
+24              : BANK() {
+25         this->accountNumber = 0;
+26         this->balance = 50;
+27         this->firstName = "Joe";
+28         this->lastName = "Blog";
+29         this->address = "High street, Carlow";
+30         this->fullname = firstName + " " + lastName;
+31     };
+.fi
+.SS "SWBPLC::SWBPLC (int accountNumber, double balance, std::string firstName, std::string lastName, std::string address)\fC [inline]\fP"
+
+.PP
+Definition at line 35 of file SWBPLC\&.h\&.
+.PP
+References accountNumber, address, balance, firstName, fullname, and lastName\&.
+.PP
+.nf
+35                                                                                                           : BANK() {
+36         this->accountNumber = accountNumber;
+37         this->balance = balance;
+38         this->firstName = firstName;
+39         this->lastName = lastName;
+40         this->address = address;
+41         this->fullname = firstName + " " + lastName;
+42     };
+.fi
+.SS "SWBPLC::SWBPLC (std::shared_ptr< \fBBANK\fP > obj, int _version, int _unique_id)\fC [inline]\fP"
+
+.PP
+Definition at line 46 of file SWBPLC\&.h\&.
+.PP
+References accountNumber, address, balance, firstName, fullname, lastName, and SWBPLC()\&.
+.PP
+.nf
+46                                                                   : BANK(_version, _unique_id) {
+47 
+48         this->accountNumber = obj->GetAccountNumber();
+49         this->balance = obj->GetBalance();
+50         this->firstName = obj->GetFirstName();
+51         this->lastName = obj->GetLastName();
+52         this->address = obj->GetAddress();
+53         this->fullname = obj->GetFirstName() + " " + obj->GetLastName();
+54         
+55     };
+.fi
+.SS "SWBPLC::SWBPLC (const \fBSWBPLC\fP & orig)"
+
+.PP
+Definition at line 12 of file SWBPLC\&.cpp\&.
+.PP
+.nf
+12                                  {
+13 }
+.fi
+.SS "SWBPLC::~SWBPLC ()\fC [virtual]\fP"
+
+.PP
+Definition at line 15 of file SWBPLC\&.cpp\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+15                 {
+16 }
+.fi
+.SH "Member Function Documentation"
+.PP 
+.SS "void SWBPLC::copy (std::shared_ptr< \fBOSTM\fP > from, std::shared_ptr< \fBOSTM\fP > to)\fC [virtual]\fP"
+
+.PP
+\fBOSTM\fP required virtual method for deep copy\&. 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 34 of file SWBPLC\&.cpp\&.
+.PP
+References OSTM::Set_Unique_ID()\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+34                                                                  {
+35 
+36     std::shared_ptr<SWBPLC> objTO = std::dynamic_pointer_cast<SWBPLC>(to);
+37     std::shared_ptr<SWBPLC> objFROM = std::dynamic_pointer_cast<SWBPLC>(from);
+38     objTO->Set_Unique_ID(objFROM->Get_Unique_ID());
+39     objTO->Set_Version(objFROM->Get_Version());
+40     objTO->SetAccountNumber(objFROM->GetAccountNumber());
+41     objTO->SetBalance(objFROM->GetBalance());
+42 
+43     
+44 }
+.fi
+.SS "int SWBPLC::GetAccountNumber () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 77 of file SWBPLC\&.cpp\&.
+.PP
+References accountNumber\&.
+.PP
+Referenced by operator=(), and toString()\&.
+.PP
+.nf
+77                                    {
+78     return accountNumber;
+79 }
+.fi
+.SS "std::string SWBPLC::GetAddress () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 61 of file SWBPLC\&.cpp\&.
+.PP
+References address\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+61                                    {
+62     return address;
+63 }
+.fi
+.SS "double SWBPLC::GetBalance () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 69 of file SWBPLC\&.cpp\&.
+.PP
+References balance\&.
+.PP
+Referenced by operator=(), and toString()\&.
+.PP
+.nf
+69                                 {
+70     return balance;
+71 }
+.fi
+.SS "std::shared_ptr< \fBOSTM\fP > SWBPLC::getBaseCopy (std::shared_ptr< \fBOSTM\fP > object)\fC [virtual]\fP"
+
+.PP
+\fBOSTM\fP required virtual method for returning a pointer that is copy of the original pointer\&. 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 22 of file SWBPLC\&.cpp\&.
+.PP
+References SWBPLC()\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+23 {
+24     std::shared_ptr<BANK> objTO = std::dynamic_pointer_cast<BANK>(object);
+25     std::shared_ptr<BANK> obj(new SWBPLC(objTO,object->Get_Version(),object->Get_Unique_ID())); 
+26     std::shared_ptr<OSTM> ostm_obj = std::dynamic_pointer_cast<OSTM>(obj);                                  
+27     return ostm_obj;
+28 }
+.fi
+.SS "std::string SWBPLC::GetFirstName () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 93 of file SWBPLC\&.cpp\&.
+.PP
+References firstName\&.
+.PP
+Referenced by operator=(), and toString()\&.
+.PP
+.nf
+93                                      {
+94     return firstName;
+95 }
+.fi
+.SS "std::string SWBPLC::GetFullname () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 101 of file SWBPLC\&.cpp\&.
+.PP
+References fullname\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+101                                     {
+102     return fullname;
+103 }
+.fi
+.SS "std::string SWBPLC::GetLastName () const\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 85 of file SWBPLC\&.cpp\&.
+.PP
+References lastName\&.
+.PP
+Referenced by operator=(), and toString()\&.
+.PP
+.nf
+85                                     {
+86     return lastName;
+87 }
+.fi
+.SS "\fBSWBPLC\fP SWBPLC::operator= (const \fBSWBPLC\fP & orig)\fC [inline]\fP"
+
+.PP
+Definition at line 63 of file SWBPLC\&.h\&.
+.PP
+References accountNumber, address, balance, copy(), firstName, fullname, GetAccountNumber(), GetAddress(), GetBalance(), getBaseCopy(), GetFirstName(), GetFullname(), GetLastName(), lastName, SetAccountNumber(), SetAddress(), SetBalance(), SetFirstName(), SetFullname(), SetLastName(), toString(), and ~SWBPLC()\&.
+.PP
+.nf
+63 {};
+.fi
+.SS "void SWBPLC::SetAccountNumber (int accountNumber)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 73 of file SWBPLC\&.cpp\&.
+.PP
+References accountNumber\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+73                                                {
+74     this->accountNumber = accountNumber;
+75 }
+.fi
+.SS "void SWBPLC::SetAddress (std::string address)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 57 of file SWBPLC\&.cpp\&.
+.PP
+References address\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+57                                          {
+58     this->address = address;
+59 }
+.fi
+.SS "void SWBPLC::SetBalance (double balance)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 65 of file SWBPLC\&.cpp\&.
+.PP
+References balance\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+65                                       {
+66     this->balance = balance;
+67 }
+.fi
+.SS "void SWBPLC::SetFirstName (std::string firstName)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 89 of file SWBPLC\&.cpp\&.
+.PP
+References firstName\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+89                                              {
+90     this->firstName = firstName;
+91 }
+.fi
+.SS "void SWBPLC::SetFullname (std::string fullname)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 97 of file SWBPLC\&.cpp\&.
+.PP
+References fullname\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+97                                            {
+98     this->fullname = fullname;
+99 }
+.fi
+.SS "void SWBPLC::SetLastName (std::string lastName)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBBANK\fP\&.
+.PP
+Definition at line 81 of file SWBPLC\&.cpp\&.
+.PP
+References lastName\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+81                                            {
+82     this->lastName = lastName;
+83 }
+.fi
+.SS "void SWBPLC::toString ()\fC [virtual]\fP"
+
+.PP
+\fBOSTM\fP required virtual method for display object\&. 
+.PP
+Reimplemented from \fBOSTM\fP\&.
+.PP
+Definition at line 52 of file SWBPLC\&.cpp\&.
+.PP
+References OSTM::Get_Unique_ID(), OSTM::Get_Version(), GetAccountNumber(), GetBalance(), GetFirstName(), and GetLastName()\&.
+.PP
+Referenced by operator=()\&.
+.PP
+.nf
+53 {
+54      std::cout << "\nSWBPLC BANK" << "\nUnique ID : " << this->Get_Unique_ID() << "\nInt account : " << this->GetAccountNumber() << "\nDouble value : " << this->GetBalance() << "\nFirst name: " << this->GetFirstName() << "\nLast name : " << this->GetLastName()  << "\nVersion number : " << this->Get_Version() << std::endl;
+55 }
+.fi
+.SH "Member Data Documentation"
+.PP 
+.SS "int SWBPLC::accountNumber\fC [private]\fP"
+
+.PP
+Definition at line 96 of file SWBPLC\&.h\&.
+.PP
+Referenced by GetAccountNumber(), operator=(), SetAccountNumber(), and SWBPLC()\&.
+.SS "std::string SWBPLC::address\fC [private]\fP"
+
+.PP
+Definition at line 98 of file SWBPLC\&.h\&.
+.PP
+Referenced by GetAddress(), operator=(), SetAddress(), and SWBPLC()\&.
+.SS "double SWBPLC::balance\fC [private]\fP"
+
+.PP
+Definition at line 97 of file SWBPLC\&.h\&.
+.PP
+Referenced by GetBalance(), operator=(), SetBalance(), and SWBPLC()\&.
+.SS "std::string SWBPLC::firstName\fC [private]\fP"
+
+.PP
+Definition at line 94 of file SWBPLC\&.h\&.
+.PP
+Referenced by GetFirstName(), operator=(), SetFirstName(), and SWBPLC()\&.
+.SS "std::string SWBPLC::fullname\fC [private]\fP"
+
+.PP
+Definition at line 93 of file SWBPLC\&.h\&.
+.PP
+Referenced by GetFullname(), operator=(), SetFullname(), and SWBPLC()\&.
+.SS "std::string SWBPLC::lastName\fC [private]\fP"
+
+.PP
+Definition at line 95 of file SWBPLC\&.h\&.
+.PP
+Referenced by GetLastName(), operator=(), SetLastName(), and SWBPLC()\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CppUnit test STM from the source code\&.

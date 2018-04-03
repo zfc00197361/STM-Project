@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_k_i_l_k_e_n_n_y___w">
+<title>KILKENNY_W class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_k_i_l_k_e_n_n_y___w_8h">&lt;KILKENNY_W.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for KILKENNY_W</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_k_i_l_k_e_n_n_y___w__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for KILKENNY_W</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_k_i_l_k_e_n_n_y___w__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_alcatel</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_huawei</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_iphones</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_nokia</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_samsung</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int _number_of_sony</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string _shop_address</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string _shop_name</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_k_i_l_k_e_n_n_y___w_a36a02e862f3563fbab3c94dfec4a0934_1a36a02e862f3563fbab3c94dfec4a0934">copy</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; to, std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; from)<para><emphasis>copy function, make deep copy of the object/pointer</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; <link linkend="class_k_i_l_k_e_n_n_y___w_ad8c5f7f6ac7689fa9acd6cafb0cb69a4_1ad8c5f7f6ac7689fa9acd6cafb0cb69a4">getBaseCopy</link> (
+std::shared_ptr&lt; <link linkend="class_o_s_t_m">OSTM</link> &gt; object)<para><emphasis>getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_k_i_l_k_e_n_n_y___w_a8f23cfd2feb57a5b67f16d49c137820f_1a8f23cfd2feb57a5b67f16d49c137820f">GetNumber_of_alcatel</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_k_i_l_k_e_n_n_y___w_a0b0689da37856045c9325e6723f78d4b_1a0b0689da37856045c9325e6723f78d4b">GetNumber_of_huawei</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_k_i_l_k_e_n_n_y___w_aa8eb9ca20372744a05ab64def268a940_1aa8eb9ca20372744a05ab64def268a940">GetNumber_of_iphones</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_k_i_l_k_e_n_n_y___w_ad1e54597be8ac03021520caf851981e4_1ad1e54597be8ac03021520caf851981e4">GetNumber_of_nokia</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_k_i_l_k_e_n_n_y___w_ac73e56bbdb3915546b8774f260edc30e_1ac73e56bbdb3915546b8774f260edc30e">GetNumber_of_samsung</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="class_k_i_l_k_e_n_n_y___w_a804254083a84b05b320e5723c0568e6f_1a804254083a84b05b320e5723c0568e6f">GetNumber_of_sony</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="class_k_i_l_k_e_n_n_y___w_ad35a9d60fff2a3c1088f93ff04e6d9d4_1ad35a9d60fff2a3c1088f93ff04e6d9d4">GetShop_address</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual std::string <link linkend="class_k_i_l_k_e_n_n_y___w_a93dac05f03edc97797f89501aa2af73a_1a93dac05f03edc97797f89501aa2af73a">GetShop_name</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_k_i_l_k_e_n_n_y___w_aee4c4b30bc934ff827f0851077b7fbab_1aee4c4b30bc934ff827f0851077b7fbab">KILKENNY_W</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_k_i_l_k_e_n_n_y___w_a292872c50225002759ebe70be3c96a72_1a292872c50225002759ebe70be3c96a72">KILKENNY_W</link> (
+std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_k_i_l_k_e_n_n_y___w_a6df9a34ae732b0196391aceecf865089_1a6df9a34ae732b0196391aceecf865089">KILKENNY_W</link> (
+std::shared_ptr&lt; <link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link> &gt; obj, int _version, int _unique_id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_k_i_l_k_e_n_n_y___w_a370a1fb0d26d2b80da6e1101921d1564_1a370a1fb0d26d2b80da6e1101921d1564">KILKENNY_W</link> (
+const <link linkend="class_k_i_l_k_e_n_n_y___w">KILKENNY_W</link> &amp; orig)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="class_k_i_l_k_e_n_n_y___w">KILKENNY_W</link> <link linkend="class_k_i_l_k_e_n_n_y___w_acff3cfb6cc15b4c4bc0dbe5685406393_1acff3cfb6cc15b4c4bc0dbe5685406393">operator=</link> (
+const <link linkend="class_k_i_l_k_e_n_n_y___w">KILKENNY_W</link> &amp; orig)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_k_i_l_k_e_n_n_y___w_ac4c3dbc9e74a4ae6c0a7e88d7a8f80a2_1ac4c3dbc9e74a4ae6c0a7e88d7a8f80a2">SetNumber_of_alcatel</link> (
+int _number_of_alcatel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_k_i_l_k_e_n_n_y___w_a2b89e05ada24ce0b7055f2b7cfb76e52_1a2b89e05ada24ce0b7055f2b7cfb76e52">SetNumber_of_huawei</link> (
+int _number_of_huawei)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_k_i_l_k_e_n_n_y___w_abdea4a1698ad841e4d758e6b3e3bef62_1abdea4a1698ad841e4d758e6b3e3bef62">SetNumber_of_iphones</link> (
+int _number_of_iphones)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_k_i_l_k_e_n_n_y___w_a3306af7f7a306f5198c6d78e6a54bf8f_1a3306af7f7a306f5198c6d78e6a54bf8f">SetNumber_of_nokia</link> (
+int _number_of_nokia)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_k_i_l_k_e_n_n_y___w_ac9ba94018b97ae9be58bde2690965612_1ac9ba94018b97ae9be58bde2690965612">SetNumber_of_samsung</link> (
+int _number_of_samsung)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_k_i_l_k_e_n_n_y___w_a6edadc355823944f30b94039abed1c9a_1a6edadc355823944f30b94039abed1c9a">SetNumber_of_sony</link> (
+int _number_of_sony)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_k_i_l_k_e_n_n_y___w_ac4ec867027aed72ff28bfe667da084cd_1ac4ec867027aed72ff28bfe667da084cd">SetShop_address</link> (
+std::string _shop_address)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_k_i_l_k_e_n_n_y___w_a8670e50802ffeb6a8b4c148c4f5183aa_1a8670e50802ffeb6a8b4c148c4f5183aa">SetShop_name</link> (
+std::string _shop_name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual void <link linkend="class_k_i_l_k_e_n_n_y___w_aea627b4c0efd0f725363556afe1ad849_1aea627b4c0efd0f725363556afe1ad849">toString</link> (
+)<para><emphasis>_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="class_k_i_l_k_e_n_n_y___w_a5b3f84f505c05449d9a7235f25ff3694_1a5b3f84f505c05449d9a7235f25ff3694">~KILKENNY_W</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>Inherit from <link linkend="class_w_a_r_e_h_o_u_s_e">WAREHOUSE</link> </para>
+                <para>Definition at line 19 of file KILKENNY_W.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>KILKENNY_W.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a36a02e862f3563fbab3c94dfec4a0934_1a36a02e862f3563fbab3c94dfec4a0934">
+                <title>void KILKENNY_W::copy (std::shared_ptr&lt; OSTM &gt; to, std::shared_ptr&lt; OSTM &gt; from)</title> <emphasis>copy function, make deep copy of the object/pointer</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>objTO</entry>
+                                <entry>
+<para>is a BANK* type object casted back from std::shared_ptr&lt;OSTM&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>objFROM</entry>
+                                <entry>
+<para>is a BANK* type object casted back from std::shared_ptr&lt;OSTM&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_ad8c5f7f6ac7689fa9acd6cafb0cb69a4_1ad8c5f7f6ac7689fa9acd6cafb0cb69a4">
+                <title>std::shared_ptr&lt; OSTM &gt; KILKENNY_W::getBaseCopy (std::shared_ptr&lt; OSTM &gt; object)</title> <emphasis>getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object</emphasis>
+                
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>objTO</entry>
+                                <entry>
+<para>is a <link linkend="class_b_a_n_k">BANK</link> type pointer for casting </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>obj</entry>
+                                <entry>
+<para>is a BANK* return type </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a8f23cfd2feb57a5b67f16d49c137820f_1a8f23cfd2feb57a5b67f16d49c137820f">
+                <title>int KILKENNY_W::GetNumber_of_alcatel ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a0b0689da37856045c9325e6723f78d4b_1a0b0689da37856045c9325e6723f78d4b">
+                <title>int KILKENNY_W::GetNumber_of_huawei ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_aa8eb9ca20372744a05ab64def268a940_1aa8eb9ca20372744a05ab64def268a940">
+                <title>int KILKENNY_W::GetNumber_of_iphones ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_ad1e54597be8ac03021520caf851981e4_1ad1e54597be8ac03021520caf851981e4">
+                <title>int KILKENNY_W::GetNumber_of_nokia ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_ac73e56bbdb3915546b8774f260edc30e_1ac73e56bbdb3915546b8774f260edc30e">
+                <title>int KILKENNY_W::GetNumber_of_samsung ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a804254083a84b05b320e5723c0568e6f_1a804254083a84b05b320e5723c0568e6f">
+                <title>int KILKENNY_W::GetNumber_of_sony ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_ad35a9d60fff2a3c1088f93ff04e6d9d4_1ad35a9d60fff2a3c1088f93ff04e6d9d4">
+                <title>std::string KILKENNY_W::GetShop_address ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a93dac05f03edc97797f89501aa2af73a_1a93dac05f03edc97797f89501aa2af73a">
+                <title>std::string KILKENNY_W::GetShop_name ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_aee4c4b30bc934ff827f0851077b7fbab_1aee4c4b30bc934ff827f0851077b7fbab">
+                <title>KILKENNY_W::KILKENNY_W ()</title> <emphasis></emphasis>
+                
+<para>Constructor </para>
+
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a292872c50225002759ebe70be3c96a72_1a292872c50225002759ebe70be3c96a72">
+                <title>KILKENNY_W::KILKENNY_W (std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)</title> <emphasis></emphasis>
+                
+<para>Custom constructor </para>
+
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a6df9a34ae732b0196391aceecf865089_1a6df9a34ae732b0196391aceecf865089">
+                <title>KILKENNY_W::KILKENNY_W (std::shared_ptr&lt; WAREHOUSE &gt; obj, int _version, int _unique_id)</title> <emphasis></emphasis>
+                
+<para>Custom constructor, used by the library for deep copying </para>
+
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a370a1fb0d26d2b80da6e1101921d1564_1a370a1fb0d26d2b80da6e1101921d1564">
+                <title>KILKENNY_W::KILKENNY_W (const KILKENNY_W &amp;orig)</title> <emphasis></emphasis>
+                
+<para>Copy constructor </para>
+
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_acff3cfb6cc15b4c4bc0dbe5685406393_1acff3cfb6cc15b4c4bc0dbe5685406393">
+                <title>KILKENNY_W KILKENNY_W::operator= (const KILKENNY_W &amp;orig)</title> <emphasis></emphasis>
+                
+<para>Operator </para>
+
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_ac4c3dbc9e74a4ae6c0a7e88d7a8f80a2_1ac4c3dbc9e74a4ae6c0a7e88d7a8f80a2">
+                <title>void KILKENNY_W::SetNumber_of_alcatel (int _number_of_alcatel)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a2b89e05ada24ce0b7055f2b7cfb76e52_1a2b89e05ada24ce0b7055f2b7cfb76e52">
+                <title>void KILKENNY_W::SetNumber_of_huawei (int _number_of_huawei)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_abdea4a1698ad841e4d758e6b3e3bef62_1abdea4a1698ad841e4d758e6b3e3bef62">
+                <title>void KILKENNY_W::SetNumber_of_iphones (int _number_of_iphones)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a3306af7f7a306f5198c6d78e6a54bf8f_1a3306af7f7a306f5198c6d78e6a54bf8f">
+                <title>void KILKENNY_W::SetNumber_of_nokia (int _number_of_nokia)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_ac9ba94018b97ae9be58bde2690965612_1ac9ba94018b97ae9be58bde2690965612">
+                <title>void KILKENNY_W::SetNumber_of_samsung (int _number_of_samsung)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a6edadc355823944f30b94039abed1c9a_1a6edadc355823944f30b94039abed1c9a">
+                <title>void KILKENNY_W::SetNumber_of_sony (int _number_of_sony)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_ac4ec867027aed72ff28bfe667da084cd_1ac4ec867027aed72ff28bfe667da084cd">
+                <title>void KILKENNY_W::SetShop_address (std::string _shop_address)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a8670e50802ffeb6a8b4c148c4f5183aa_1a8670e50802ffeb6a8b4c148c4f5183aa">
+                <title>void KILKENNY_W::SetShop_name (std::string _shop_name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_aea627b4c0efd0f725363556afe1ad849_1aea627b4c0efd0f725363556afe1ad849">
+                <title>void KILKENNY_W::toString ()</title> <emphasis>_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type</emphasis>
+                
+<para>toString function, displays the object values in formatted way </para>
+
+            </section>
+            <section xml:id="class_k_i_l_k_e_n_n_y___w_a5b3f84f505c05449d9a7235f25ff3694_1a5b3f84f505c05449d9a7235f25ff3694">
+                <title>KILKENNY_W::~KILKENNY_W ()</title> <emphasis></emphasis>
+                
+<para>de-constructor </para>
+
+            </section>
+</section>

@@ -8,7 +8,7 @@
 \usepackage{indentfirst}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
-
+\usepackage{enumitem}
 \usepackage{listings}
 \usepackage{color}
 \usepackage[hyphens,spaces,obeyspaces]{url}
@@ -57,6 +57,7 @@
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.7]{Pictures/carlow.png}
+
 \end{figure}
 		
 	\end{center}
@@ -152,8 +153,10 @@ The potential target users can be any programmer, how planning to use concurrent
 {\setlength{\parindent}{0cm}
 The potential target users can be who:
 \begin{enumerate}
-\item Want to avoid of mutex and semaphore.
-\item Want to use concurrent programming features.
+\item Individual programmers, software companies. 
+\item Want to use transactional environment.
+\item Want to avoid of lock based programming.
+\item Want to use concurrent programming features in safe environment.
 \item Want to avoid deadlock and livelock.
 \end{enumerate}
 }
@@ -202,7 +205,7 @@ As part of the metrics, the library should implement not functional requirements
 testability, adaptability, maintainability, scalability and portability between platforms. 
 \end{enumerate}
 
-`
+\newpage
 \section{Other STM libraries}
 The Software Transactional Memory was implemented in C/C++ language many time before. However, this project must produce a fully implemented STM library to support lock free transactions, possibly the library functionalities will be a bit restricted compare with the other C/C++ library implementations available. Why? Because those libraries are available years ago and developed over the time.\\
 
@@ -229,7 +232,62 @@ The Software Transactional Memory was implemented in many different languages as
 \item Commit and release the locks.
 \end{enumerate}
 
+\section{Project Iterations}
+\begin{center}
+\includegraphics[angle=90,width=\textwidth,height=\textheight, height=18cm, keepaspectratio]{Pictures/gant_chart.png}
+\end{center}
+\newpage
+\subsection{Detailed Iterations description}
 
+\textbf{2017/2018 }
+\begin{enumerate}[label*=\arabic*.]
+\item October
+\begin{enumerate}[label*=\arabic*.]
+	\item Project assigned.
+\end{enumerate}
+\item November
+\begin{enumerate}[label*=\arabic*.]
+	\item Writing Research Document .
+	\item Writing Functional Specification.
+	\item Writing Design Document.
+	\item \textbf{Begin Iteration 1 :} Research to find a C++ collection type to store any type of object. Try out boost-any C++ library.
+\end{enumerate}
+\item December 
+\begin{enumerate}[label*=\arabic*.]
+	\item Implementing template some functions and collections in the transaction class to store objects within the library. 
+	\item Implementing the OSTM base class (blueprint of the class) virtual methods and the .
+	\item Project assigned.
+	\item Project assigned.
+\end{enumerate}
+\item January 2018
+\begin{enumerate}[label*=\arabic*.]
+	\item Project assigned.
+	\item Project assigned.
+	\item Project assigned.
+	\item Project assigned.
+\end{enumerate}
+\item February
+\begin{enumerate}[label*=\arabic*.]
+	\item Project assigned.
+	\item Project assigned.
+	\item Project assigned.
+	\item Project assigned.
+\end{enumerate}
+\item March
+\begin{enumerate}[label*=\arabic*.]
+	\item Project assigned.
+	\item Project assigned.
+	\item Project assigned.
+	\item Project assigned.
+\end{enumerate}
+\item April
+\begin{enumerate}[label*=\arabic*.]
+	\item Project assigned.
+	\item Project assigned.
+	\item Project assigned.
+	\item Project assigned.
+\end{enumerate}
+\end{enumerate}
 
 \newpage
 \section{Bibliography}

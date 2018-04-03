@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_s_l_i_g_o___w" kind="class" language="C++" prot="public">
+    <compoundname>SLIGO_W</compoundname>
+    <basecompoundref refid="class_w_a_r_e_h_o_u_s_e" prot="public" virt="non-virtual">WAREHOUSE</basecompoundref>
+    <includes refid="_s_l_i_g_o___w_8h" local="no">SLIGO_W.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_s_l_i_g_o___w_1ade08b79101c67997dde54515f2088b9d" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SLIGO_W::_shop_address</definition>
+        <argsstring></argsstring>
+        <name>_shop_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="110" column="1" bodyfile="SLIGO_W.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_l_i_g_o___w_1a01bebef43ff4b4d9d728489f05b94d86" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string SLIGO_W::_shop_name</definition>
+        <argsstring></argsstring>
+        <name>_shop_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="111" column="1" bodyfile="SLIGO_W.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_l_i_g_o___w_1aa958eed564796bb349d15bf2b2e3208d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SLIGO_W::_number_of_iphones</definition>
+        <argsstring></argsstring>
+        <name>_number_of_iphones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="112" column="1" bodyfile="SLIGO_W.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_l_i_g_o___w_1a2c7845560ec14452132d659eb54f2cec" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SLIGO_W::_number_of_samsung</definition>
+        <argsstring></argsstring>
+        <name>_number_of_samsung</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="113" column="1" bodyfile="SLIGO_W.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_l_i_g_o___w_1a0ccf87fe78352e1eac98ed3c85810caa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SLIGO_W::_number_of_sony</definition>
+        <argsstring></argsstring>
+        <name>_number_of_sony</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="114" column="1" bodyfile="SLIGO_W.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_l_i_g_o___w_1af9ca2fb509b7b8ca9f1860ece827501f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SLIGO_W::_number_of_huawei</definition>
+        <argsstring></argsstring>
+        <name>_number_of_huawei</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="115" column="1" bodyfile="SLIGO_W.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_l_i_g_o___w_1a9fe78b9365c145432d58cb947b01111a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SLIGO_W::_number_of_nokia</definition>
+        <argsstring></argsstring>
+        <name>_number_of_nokia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="116" column="1" bodyfile="SLIGO_W.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_l_i_g_o___w_1acbf32331901a3fc710c5c97d286b6fcf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SLIGO_W::_number_of_alcatel</definition>
+        <argsstring></argsstring>
+        <name>_number_of_alcatel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="117" column="1" bodyfile="SLIGO_W.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a9b669809dc7cf8d9982181ac7997b0da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SLIGO_W::SLIGO_W</definition>
+        <argsstring>()</argsstring>
+        <name>SLIGO_W</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="24" column="1" bodyfile="SLIGO_W.h" bodystart="24" bodyend="34"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a37ead49afd27bfe7e404d1d7626f09fe" compoundref="_s_l_i_g_o___w_8cpp" startline="22" endline="29">getBaseCopy</referencedby>
+        <referencedby refid="class_s_l_i_g_o___w_1a5a969bbfbb08f8a5d29f766288f2f7e6" compoundref="_s_l_i_g_o___w_8h" startline="55" endline="67">SLIGO_W</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1aced291d99970ff1c2f2146256f400788" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SLIGO_W::SLIGO_W</definition>
+        <argsstring>(std::string address, std::string shop_name, int iphone, int samsung, int sony, int huawei, int nokia, int alcatel)</argsstring>
+        <name>SLIGO_W</name>
+        <param>
+          <type>std::string</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>shop_name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iphone</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>samsung</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sony</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>huawei</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nokia</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>alcatel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="38" column="1" bodyfile="SLIGO_W.h" bodystart="38" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a5a969bbfbb08f8a5d29f766288f2f7e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SLIGO_W::SLIGO_W</definition>
+        <argsstring>(std::shared_ptr&lt; WAREHOUSE &gt; obj, int _version, int _unique_id)</argsstring>
+        <name>SLIGO_W</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_w_a_r_e_h_o_u_s_e" kindref="compound">WAREHOUSE</ref> &gt;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_version</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_unique_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom constructor, used by the library for deep copying </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="55" column="1" bodyfile="SLIGO_W.h" bodystart="55" bodyend="67"/>
+        <references refid="class_s_l_i_g_o___w_1a9b669809dc7cf8d9982181ac7997b0da" compoundref="_s_l_i_g_o___w_8h" startline="24" endline="34">SLIGO_W</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1abd92acb0451fe449fbdb7c3c2a6701b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SLIGO_W::SLIGO_W</definition>
+        <argsstring>(const SLIGO_W &amp;orig)</argsstring>
+        <name>SLIGO_W</name>
+        <param>
+          <type>const <ref refid="class_s_l_i_g_o___w" kindref="compound">SLIGO_W</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="71" column="1" bodyfile="SLIGO_W.cpp" bodystart="15" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_s_l_i_g_o___w" kindref="compound">SLIGO_W</ref></type>
+        <definition>SLIGO_W SLIGO_W::operator=</definition>
+        <argsstring>(const SLIGO_W &amp;orig)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_s_l_i_g_o___w" kindref="compound">SLIGO_W</ref> &amp;</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Operator </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="75" column="1" bodyfile="SLIGO_W.h" bodystart="75" bodyend="75"/>
+        <references refid="class_s_l_i_g_o___w_1aa6cc833af07309dee5eb2493cddf443c" compoundref="_s_l_i_g_o___w_8cpp" startline="12" endline="13">~SLIGO_W</references>
+        <references refid="class_s_l_i_g_o___w_1acd5ae7347e6ca94c52eb013e07a66116" compoundref="_s_l_i_g_o___w_8cpp" startline="35" endline="51">copy</references>
+        <references refid="class_s_l_i_g_o___w_1a37ead49afd27bfe7e404d1d7626f09fe" compoundref="_s_l_i_g_o___w_8cpp" startline="22" endline="29">getBaseCopy</references>
+        <references refid="class_s_l_i_g_o___w_1a8f49deaa85f48ff29dd8cdeb7c9dda56" compoundref="_s_l_i_g_o___w_8cpp" startline="62" endline="65">toString</references>
+        <references refid="class_s_l_i_g_o___w_1abbd14fe78b2f5881020630842194aa5b" compoundref="_s_l_i_g_o___w_8cpp" startline="69" endline="71">SetNumber_of_alcatel</references>
+        <references refid="class_s_l_i_g_o___w_1a5afed1018d0629a1e08fc266d05a94d9" compoundref="_s_l_i_g_o___w_8cpp" startline="73" endline="75">GetNumber_of_alcatel</references>
+        <references refid="class_s_l_i_g_o___w_1a2b748e4d815e0f2bdb8fb1b0e85b2636" compoundref="_s_l_i_g_o___w_8cpp" startline="77" endline="79">SetNumber_of_nokia</references>
+        <references refid="class_s_l_i_g_o___w_1a1aa9c9f001b37f3fdcdffae009319298" compoundref="_s_l_i_g_o___w_8cpp" startline="81" endline="83">GetNumber_of_nokia</references>
+        <references refid="class_s_l_i_g_o___w_1a3f770536e7ae43cba203b36b452bca76" compoundref="_s_l_i_g_o___w_8cpp" startline="85" endline="87">SetNumber_of_huawei</references>
+        <references refid="class_s_l_i_g_o___w_1a5804f623f4eb290df4f6b3aba59230d6" compoundref="_s_l_i_g_o___w_8cpp" startline="89" endline="91">GetNumber_of_huawei</references>
+        <references refid="class_s_l_i_g_o___w_1abbfe7001333b8c0b57a22f09ec4c3c1d" compoundref="_s_l_i_g_o___w_8cpp" startline="93" endline="95">SetNumber_of_sony</references>
+        <references refid="class_s_l_i_g_o___w_1a62822c4fb80f739bee61767238a29e14" compoundref="_s_l_i_g_o___w_8cpp" startline="97" endline="99">GetNumber_of_sony</references>
+        <references refid="class_s_l_i_g_o___w_1ace5a2d4fae4c84710a648062e60022d2" compoundref="_s_l_i_g_o___w_8cpp" startline="101" endline="103">SetNumber_of_samsung</references>
+        <references refid="class_s_l_i_g_o___w_1aa4b6200a00c2a14924b7ff1ae3896b61" compoundref="_s_l_i_g_o___w_8cpp" startline="105" endline="107">GetNumber_of_samsung</references>
+        <references refid="class_s_l_i_g_o___w_1ad2f09386c9305c63a94ab171861eb3a9" compoundref="_s_l_i_g_o___w_8cpp" startline="109" endline="111">SetNumber_of_iphones</references>
+        <references refid="class_s_l_i_g_o___w_1a780b3a690f5cbbf7593ffc6612b3d743" compoundref="_s_l_i_g_o___w_8cpp" startline="113" endline="115">GetNumber_of_iphones</references>
+        <references refid="class_s_l_i_g_o___w_1ad2a9668f07e63bed2bb5da576cbb55b7" compoundref="_s_l_i_g_o___w_8cpp" startline="117" endline="119">SetShop_name</references>
+        <references refid="class_s_l_i_g_o___w_1ae788518e30d9d311eb28f37da932367a" compoundref="_s_l_i_g_o___w_8cpp" startline="121" endline="123">GetShop_name</references>
+        <references refid="class_s_l_i_g_o___w_1af442340c69e1f50622014d459320f003" compoundref="_s_l_i_g_o___w_8cpp" startline="125" endline="127">SetShop_address</references>
+        <references refid="class_s_l_i_g_o___w_1a66a2315d531231e34c5056e9bc917797" compoundref="_s_l_i_g_o___w_8cpp" startline="129" endline="131">GetShop_address</references>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1aa6cc833af07309dee5eb2493cddf443c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>SLIGO_W::~SLIGO_W</definition>
+        <argsstring>()</argsstring>
+        <name>~SLIGO_W</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>de-constructor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="79" column="1" bodyfile="SLIGO_W.cpp" bodystart="12" bodyend="13"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1acd5ae7347e6ca94c52eb013e07a66116" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SLIGO_W::copy</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; to, std::shared_ptr&lt; OSTM &gt; from)</argsstring>
+        <name>copy</name>
+        <reimplements refid="class_o_s_t_m_1a535d90fced5adbb70312c92f3778e08d">copy</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+<para>copy function, make deep copy of the object/pointer </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objTO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a BANK* type object casted back from std::shared_ptr&lt;OSTM&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>objFROM</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a BANK* type object casted back from std::shared_ptr&lt;OSTM&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="85" column="1" bodyfile="SLIGO_W.cpp" bodystart="35" bodyend="51"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a37ead49afd27bfe7e404d1d7626f09fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; OSTM &gt; SLIGO_W::getBaseCopy</definition>
+        <argsstring>(std::shared_ptr&lt; OSTM &gt; object)</argsstring>
+        <name>getBaseCopy</name>
+        <reimplements refid="class_o_s_t_m_1a0bfa3763bd441407dd6365f42714f94c">getBaseCopy</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_o_s_t_m" kindref="compound">OSTM</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+<para>getBaseCopy function, make deep copy of the object/pointer and Return a new BANK* type object </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objTO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a <ref refid="class_b_a_n_k" kindref="compound">BANK</ref> type pointer for casting </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is a BANK* return type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="86" column="1" bodyfile="SLIGO_W.cpp" bodystart="22" bodyend="29"/>
+        <references refid="class_s_l_i_g_o___w_1a9b669809dc7cf8d9982181ac7997b0da" compoundref="_s_l_i_g_o___w_8h" startline="24" endline="34">SLIGO_W</references>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a8f49deaa85f48ff29dd8cdeb7c9dda56" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SLIGO_W::toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <reimplements refid="class_o_s_t_m_1a513396a115f2987fd07c203309ae8a59">toString</reimplements>
+        <briefdescription>
+<para>_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type </para>        </briefdescription>
+        <detaileddescription>
+<para>toString function, displays the object values in formatted way </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="87" column="1" bodyfile="SLIGO_W.cpp" bodystart="62" bodyend="65"/>
+        <references refid="class_s_l_i_g_o___w_1ae788518e30d9d311eb28f37da932367a" compoundref="_s_l_i_g_o___w_8cpp" startline="121" endline="123">GetShop_name</references>
+        <references refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" compoundref="_o_s_t_m_8cpp" startline="73" endline="76">OSTM::Get_Unique_ID</references>
+        <references refid="class_s_l_i_g_o___w_1a66a2315d531231e34c5056e9bc917797" compoundref="_s_l_i_g_o___w_8cpp" startline="129" endline="131">GetShop_address</references>
+        <references refid="class_s_l_i_g_o___w_1a780b3a690f5cbbf7593ffc6612b3d743" compoundref="_s_l_i_g_o___w_8cpp" startline="113" endline="115">GetNumber_of_iphones</references>
+        <references refid="class_s_l_i_g_o___w_1aa4b6200a00c2a14924b7ff1ae3896b61" compoundref="_s_l_i_g_o___w_8cpp" startline="105" endline="107">GetNumber_of_samsung</references>
+        <references refid="class_s_l_i_g_o___w_1a62822c4fb80f739bee61767238a29e14" compoundref="_s_l_i_g_o___w_8cpp" startline="97" endline="99">GetNumber_of_sony</references>
+        <references refid="class_s_l_i_g_o___w_1a5804f623f4eb290df4f6b3aba59230d6" compoundref="_s_l_i_g_o___w_8cpp" startline="89" endline="91">GetNumber_of_huawei</references>
+        <references refid="class_s_l_i_g_o___w_1a1aa9c9f001b37f3fdcdffae009319298" compoundref="_s_l_i_g_o___w_8cpp" startline="81" endline="83">GetNumber_of_nokia</references>
+        <references refid="class_s_l_i_g_o___w_1a5afed1018d0629a1e08fc266d05a94d9" compoundref="_s_l_i_g_o___w_8cpp" startline="73" endline="75">GetNumber_of_alcatel</references>
+        <references refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" compoundref="_o_s_t_m_8cpp" startline="89" endline="92">OSTM::Get_Version</references>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1abbd14fe78b2f5881020630842194aa5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SLIGO_W::SetNumber_of_alcatel</definition>
+        <argsstring>(int _number_of_alcatel)</argsstring>
+        <name>SetNumber_of_alcatel</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a91b45d7d40a154308644a9f2b1767d28">SetNumber_of_alcatel</reimplements>
+        <param>
+          <type>int</type>
+          <declname>_number_of_alcatel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="91" column="1" bodyfile="SLIGO_W.cpp" bodystart="69" bodyend="71"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a5afed1018d0629a1e08fc266d05a94d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int SLIGO_W::GetNumber_of_alcatel</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_alcatel</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a9d9d5bc37ddd3763ea633d07785b6020">GetNumber_of_alcatel</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="92" column="1" bodyfile="SLIGO_W.cpp" bodystart="73" bodyend="75"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a8f49deaa85f48ff29dd8cdeb7c9dda56" compoundref="_s_l_i_g_o___w_8cpp" startline="62" endline="65">toString</referencedby>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a2b748e4d815e0f2bdb8fb1b0e85b2636" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SLIGO_W::SetNumber_of_nokia</definition>
+        <argsstring>(int _number_of_nokia)</argsstring>
+        <name>SetNumber_of_nokia</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a300d1fe21a47e45c0d5d27e25add346f">SetNumber_of_nokia</reimplements>
+        <param>
+          <type>int</type>
+          <declname>_number_of_nokia</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="93" column="1" bodyfile="SLIGO_W.cpp" bodystart="77" bodyend="79"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a1aa9c9f001b37f3fdcdffae009319298" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int SLIGO_W::GetNumber_of_nokia</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_nokia</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a1a0f7539989c00290934e8b671f2fb1c">GetNumber_of_nokia</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="94" column="1" bodyfile="SLIGO_W.cpp" bodystart="81" bodyend="83"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a8f49deaa85f48ff29dd8cdeb7c9dda56" compoundref="_s_l_i_g_o___w_8cpp" startline="62" endline="65">toString</referencedby>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a3f770536e7ae43cba203b36b452bca76" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SLIGO_W::SetNumber_of_huawei</definition>
+        <argsstring>(int _number_of_huawei)</argsstring>
+        <name>SetNumber_of_huawei</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1ad29bd0333bd7f17178dc107a00e23954">SetNumber_of_huawei</reimplements>
+        <param>
+          <type>int</type>
+          <declname>_number_of_huawei</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="95" column="1" bodyfile="SLIGO_W.cpp" bodystart="85" bodyend="87"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a5804f623f4eb290df4f6b3aba59230d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int SLIGO_W::GetNumber_of_huawei</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_huawei</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1acacc58d1ceea41e968a6d245007ea127">GetNumber_of_huawei</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="96" column="1" bodyfile="SLIGO_W.cpp" bodystart="89" bodyend="91"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a8f49deaa85f48ff29dd8cdeb7c9dda56" compoundref="_s_l_i_g_o___w_8cpp" startline="62" endline="65">toString</referencedby>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1abbfe7001333b8c0b57a22f09ec4c3c1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SLIGO_W::SetNumber_of_sony</definition>
+        <argsstring>(int _number_of_sony)</argsstring>
+        <name>SetNumber_of_sony</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a709e5a9f4b439d0507fe74cc1a362ee1">SetNumber_of_sony</reimplements>
+        <param>
+          <type>int</type>
+          <declname>_number_of_sony</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="97" column="1" bodyfile="SLIGO_W.cpp" bodystart="93" bodyend="95"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a62822c4fb80f739bee61767238a29e14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int SLIGO_W::GetNumber_of_sony</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_sony</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1abb7da1fee113e81fbb06190606fddb4d">GetNumber_of_sony</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="98" column="1" bodyfile="SLIGO_W.cpp" bodystart="97" bodyend="99"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a8f49deaa85f48ff29dd8cdeb7c9dda56" compoundref="_s_l_i_g_o___w_8cpp" startline="62" endline="65">toString</referencedby>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1ace5a2d4fae4c84710a648062e60022d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SLIGO_W::SetNumber_of_samsung</definition>
+        <argsstring>(int _number_of_samsung)</argsstring>
+        <name>SetNumber_of_samsung</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a5564efbb5f54f663208a17c6f7f440e2">SetNumber_of_samsung</reimplements>
+        <param>
+          <type>int</type>
+          <declname>_number_of_samsung</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="99" column="1" bodyfile="SLIGO_W.cpp" bodystart="101" bodyend="103"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1aa4b6200a00c2a14924b7ff1ae3896b61" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int SLIGO_W::GetNumber_of_samsung</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_samsung</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a817b030450f48bc24e3cc6de5dadefec">GetNumber_of_samsung</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="100" column="1" bodyfile="SLIGO_W.cpp" bodystart="105" bodyend="107"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a8f49deaa85f48ff29dd8cdeb7c9dda56" compoundref="_s_l_i_g_o___w_8cpp" startline="62" endline="65">toString</referencedby>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1ad2f09386c9305c63a94ab171861eb3a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SLIGO_W::SetNumber_of_iphones</definition>
+        <argsstring>(int _number_of_iphones)</argsstring>
+        <name>SetNumber_of_iphones</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a05e7450e1f1e711a53a4d9d40fb9dfa3">SetNumber_of_iphones</reimplements>
+        <param>
+          <type>int</type>
+          <declname>_number_of_iphones</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="101" column="1" bodyfile="SLIGO_W.cpp" bodystart="109" bodyend="111"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a780b3a690f5cbbf7593ffc6612b3d743" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int SLIGO_W::GetNumber_of_iphones</definition>
+        <argsstring>()</argsstring>
+        <name>GetNumber_of_iphones</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a08312d1a68ff48d459ad637df6aaf2f1">GetNumber_of_iphones</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="102" column="1" bodyfile="SLIGO_W.cpp" bodystart="113" bodyend="115"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a8f49deaa85f48ff29dd8cdeb7c9dda56" compoundref="_s_l_i_g_o___w_8cpp" startline="62" endline="65">toString</referencedby>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1ad2a9668f07e63bed2bb5da576cbb55b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SLIGO_W::SetShop_name</definition>
+        <argsstring>(std::string _shop_name)</argsstring>
+        <name>SetShop_name</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1ae5cb8c03a4ef0d2e84bbe34312bb01e4">SetShop_name</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>_shop_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="103" column="1" bodyfile="SLIGO_W.cpp" bodystart="117" bodyend="119"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1ae788518e30d9d311eb28f37da932367a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string SLIGO_W::GetShop_name</definition>
+        <argsstring>()</argsstring>
+        <name>GetShop_name</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a4d39386ec25ec71b513eb7382e5cd869">GetShop_name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="104" column="1" bodyfile="SLIGO_W.cpp" bodystart="121" bodyend="123"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a8f49deaa85f48ff29dd8cdeb7c9dda56" compoundref="_s_l_i_g_o___w_8cpp" startline="62" endline="65">toString</referencedby>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1af442340c69e1f50622014d459320f003" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SLIGO_W::SetShop_address</definition>
+        <argsstring>(std::string _shop_address)</argsstring>
+        <name>SetShop_address</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a1accf4c214a11a532cad88729d44b91d">SetShop_address</reimplements>
+        <param>
+          <type>std::string</type>
+          <declname>_shop_address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="105" column="1" bodyfile="SLIGO_W.cpp" bodystart="125" bodyend="127"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_s_l_i_g_o___w_1a66a2315d531231e34c5056e9bc917797" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>std::string</type>
+        <definition>std::string SLIGO_W::GetShop_address</definition>
+        <argsstring>()</argsstring>
+        <name>GetShop_address</name>
+        <reimplements refid="class_w_a_r_e_h_o_u_s_e_1a50c29c2f95d148239e8b43b8a0046a31">GetShop_address</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SLIGO_W.h" line="106" column="1" bodyfile="SLIGO_W.cpp" bodystart="129" bodyend="131"/>
+        <referencedby refid="class_s_l_i_g_o___w_1a8f49deaa85f48ff29dd8cdeb7c9dda56" compoundref="_s_l_i_g_o___w_8cpp" startline="62" endline="65">toString</referencedby>
+        <referencedby refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" compoundref="_s_l_i_g_o___w_8h" startline="75" endline="75">operator=</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Inherit from <ref refid="class_w_a_r_e_h_o_u_s_e" kindref="compound">WAREHOUSE</ref> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="181">
+        <label>WAREHOUSE</label>
+        <link refid="class_w_a_r_e_h_o_u_s_e"/>
+        <childnode refid="182" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>OSTM</label>
+        <link refid="class_o_s_t_m"/>
+      </node>
+      <node id="180">
+        <label>SLIGO_W</label>
+        <link refid="class_s_l_i_g_o___w"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="184">
+        <label>WAREHOUSE</label>
+        <link refid="class_w_a_r_e_h_o_u_s_e"/>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>OSTM</label>
+        <link refid="class_o_s_t_m"/>
+      </node>
+      <node id="183">
+        <label>SLIGO_W</label>
+        <link refid="class_s_l_i_g_o___w"/>
+        <childnode refid="184" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="SLIGO_W.h" line="19" column="1" bodyfile="SLIGO_W.h" bodystart="19" bodyend="119"/>
+    <listofallmembers>
+      <member refid="class_s_l_i_g_o___w_1acbf32331901a3fc710c5c97d286b6fcf" prot="private" virt="non-virtual"><scope>SLIGO_W</scope><name>_number_of_alcatel</name></member>
+      <member refid="class_s_l_i_g_o___w_1af9ca2fb509b7b8ca9f1860ece827501f" prot="private" virt="non-virtual"><scope>SLIGO_W</scope><name>_number_of_huawei</name></member>
+      <member refid="class_s_l_i_g_o___w_1aa958eed564796bb349d15bf2b2e3208d" prot="private" virt="non-virtual"><scope>SLIGO_W</scope><name>_number_of_iphones</name></member>
+      <member refid="class_s_l_i_g_o___w_1a9fe78b9365c145432d58cb947b01111a" prot="private" virt="non-virtual"><scope>SLIGO_W</scope><name>_number_of_nokia</name></member>
+      <member refid="class_s_l_i_g_o___w_1a2c7845560ec14452132d659eb54f2cec" prot="private" virt="non-virtual"><scope>SLIGO_W</scope><name>_number_of_samsung</name></member>
+      <member refid="class_s_l_i_g_o___w_1a0ccf87fe78352e1eac98ed3c85810caa" prot="private" virt="non-virtual"><scope>SLIGO_W</scope><name>_number_of_sony</name></member>
+      <member refid="class_s_l_i_g_o___w_1ade08b79101c67997dde54515f2088b9d" prot="private" virt="non-virtual"><scope>SLIGO_W</scope><name>_shop_address</name></member>
+      <member refid="class_s_l_i_g_o___w_1a01bebef43ff4b4d9d728489f05b94d86" prot="private" virt="non-virtual"><scope>SLIGO_W</scope><name>_shop_name</name></member>
+      <member refid="class_s_l_i_g_o___w_1acd5ae7347e6ca94c52eb013e07a66116" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>copy</name></member>
+      <member refid="class_o_s_t_m_1a5a01a8b98d16b1d1904ecf9356e7b71d" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>Get_Unique_ID</name></member>
+      <member refid="class_o_s_t_m_1a1f1db9d482f22c8e7caa17dfb340626b" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>Get_Version</name></member>
+      <member refid="class_s_l_i_g_o___w_1a37ead49afd27bfe7e404d1d7626f09fe" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>getBaseCopy</name></member>
+      <member refid="class_s_l_i_g_o___w_1a5afed1018d0629a1e08fc266d05a94d9" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>GetNumber_of_alcatel</name></member>
+      <member refid="class_s_l_i_g_o___w_1a5804f623f4eb290df4f6b3aba59230d6" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>GetNumber_of_huawei</name></member>
+      <member refid="class_s_l_i_g_o___w_1a780b3a690f5cbbf7593ffc6612b3d743" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>GetNumber_of_iphones</name></member>
+      <member refid="class_s_l_i_g_o___w_1a1aa9c9f001b37f3fdcdffae009319298" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>GetNumber_of_nokia</name></member>
+      <member refid="class_s_l_i_g_o___w_1aa4b6200a00c2a14924b7ff1ae3896b61" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>GetNumber_of_samsung</name></member>
+      <member refid="class_s_l_i_g_o___w_1a62822c4fb80f739bee61767238a29e14" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>GetNumber_of_sony</name></member>
+      <member refid="class_s_l_i_g_o___w_1a66a2315d531231e34c5056e9bc917797" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>GetShop_address</name></member>
+      <member refid="class_s_l_i_g_o___w_1ae788518e30d9d311eb28f37da932367a" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>GetShop_name</name></member>
+      <member refid="class_o_s_t_m_1a5f90caa4384d371c16b7cac860d9f89a" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>increase_VersionNumber</name></member>
+      <member refid="class_o_s_t_m_1afc2851abf5342c3c67342c2c14820115" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>Is_Abort_Transaction</name></member>
+      <member refid="class_o_s_t_m_1a8df39ced3b401aa466df97e26d14b1b7" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>Is_Can_Commit</name></member>
+      <member refid="class_o_s_t_m_1afb6520023ed2c4a6188b688c46f192d0" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>is_Locked</name></member>
+      <member refid="class_o_s_t_m_1af192c598a3c647f37aaba5757e60240f" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>lock_Mutex</name></member>
+      <member refid="class_s_l_i_g_o___w_1a64051fdd5b3ebc47b0a74b42eb092c1b" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>operator=</name></member>
+      <member refid="class_o_s_t_m_1a968edf778668bd0ec7603f0571619196" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>OSTM</name></member>
+      <member refid="class_o_s_t_m_1a2314f55a127b94aa8a51d19ba798401e" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>OSTM</name></member>
+      <member refid="class_o_s_t_m_1aba384cf65c5f56f5b86833730c3c6ea4" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>Set_Abort_Transaction</name></member>
+      <member refid="class_o_s_t_m_1a813ee61c9d1c83c6a6ae30d12aca8a5d" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>Set_Can_Commit</name></member>
+      <member refid="class_o_s_t_m_1ab5019a32185631c08abbf826422f2d93" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>Set_Unique_ID</name></member>
+      <member refid="class_o_s_t_m_1a9529ad8d6d28c1f0cc9b86ed91df1ae1" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>Set_Version</name></member>
+      <member refid="class_s_l_i_g_o___w_1abbd14fe78b2f5881020630842194aa5b" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>SetNumber_of_alcatel</name></member>
+      <member refid="class_s_l_i_g_o___w_1a3f770536e7ae43cba203b36b452bca76" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>SetNumber_of_huawei</name></member>
+      <member refid="class_s_l_i_g_o___w_1ad2f09386c9305c63a94ab171861eb3a9" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>SetNumber_of_iphones</name></member>
+      <member refid="class_s_l_i_g_o___w_1a2b748e4d815e0f2bdb8fb1b0e85b2636" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>SetNumber_of_nokia</name></member>
+      <member refid="class_s_l_i_g_o___w_1ace5a2d4fae4c84710a648062e60022d2" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>SetNumber_of_samsung</name></member>
+      <member refid="class_s_l_i_g_o___w_1abbfe7001333b8c0b57a22f09ec4c3c1d" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>SetNumber_of_sony</name></member>
+      <member refid="class_s_l_i_g_o___w_1af442340c69e1f50622014d459320f003" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>SetShop_address</name></member>
+      <member refid="class_s_l_i_g_o___w_1ad2a9668f07e63bed2bb5da576cbb55b7" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>SetShop_name</name></member>
+      <member refid="class_s_l_i_g_o___w_1a9b669809dc7cf8d9982181ac7997b0da" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>SLIGO_W</name></member>
+      <member refid="class_s_l_i_g_o___w_1aced291d99970ff1c2f2146256f400788" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>SLIGO_W</name></member>
+      <member refid="class_s_l_i_g_o___w_1a5a969bbfbb08f8a5d29f766288f2f7e6" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>SLIGO_W</name></member>
+      <member refid="class_s_l_i_g_o___w_1abd92acb0451fe449fbdb7c3c2a6701b7" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>SLIGO_W</name></member>
+      <member refid="class_s_l_i_g_o___w_1a8f49deaa85f48ff29dd8cdeb7c9dda56" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>toString</name></member>
+      <member refid="class_o_s_t_m_1a6cd703bc26c719fd95b4f5362d050762" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>unlock_Mutex</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a7a924d389af91f54ed0e1d1d8d56ec57" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>WAREHOUSE</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a91a50ed8f6eeb344b1785f750532b18a" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>WAREHOUSE</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1a4782d251d2203377f8e9f331ba3b0a7e" prot="public" virt="non-virtual"><scope>SLIGO_W</scope><name>WAREHOUSE</name></member>
+      <member refid="class_o_s_t_m_1a30a17d73d0259c60eeab72d6dfa9ceb1" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>~OSTM</name></member>
+      <member refid="class_s_l_i_g_o___w_1aa6cc833af07309dee5eb2493cddf443c" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>~SLIGO_W</name></member>
+      <member refid="class_w_a_r_e_h_o_u_s_e_1ad5aa686839d7be9bfea33d469c58086b" prot="public" virt="virtual"><scope>SLIGO_W</scope><name>~WAREHOUSE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
