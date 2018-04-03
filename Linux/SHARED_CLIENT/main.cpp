@@ -130,13 +130,14 @@ void _nesting_(std::shared_ptr<OSTM> _to_, std::shared_ptr<OSTM> _from_, TM& _tm
     /*!
      * Register the two single account
      */
+    std::shared_ptr<OSTM> hahah(new AIB(100, 500, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
     try {
         tx->_register(_to_);
         tx->_register(_from_);
         /*!
          * Declare required pointers 
          */
-        std::shared_ptr<BANK> _TO_BANK_, _FROM_BANK_;
+        std::shared_ptr<BANK> _TO_BANK_, _FROM_BANK_, HAHAHA;
         std::shared_ptr<OSTM> _TO_OSTM_, _FROM_OSTM_;
 
 
@@ -146,6 +147,7 @@ void _nesting_(std::shared_ptr<OSTM> _to_, std::shared_ptr<OSTM> _from_, TM& _tm
             /*!
              * From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
              */
+            HAHAHA = std::dynamic_pointer_cast<BANK> (tx->load(hahah));
             _TO_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_to_));
             _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_));
             /*!

@@ -2,7 +2,7 @@
 \BOOKMARK [1][-]{section.2}{About the project}{}% 2
 \BOOKMARK [1][-]{section.3}{Problems encountered and resolved}{}% 3
 \BOOKMARK [2][-]{subsection.3.1}{Storing unknown objects}{section.3}% 4
-\BOOKMARK [2][-]{subsection.3.2}{Template class and function}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Template class and functions}{section.3}% 5
 \BOOKMARK [2][-]{subsection.3.3}{RAW pointers with polymorphic objects}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.4}{Segmentation fault, deadlock, live-lock}{section.3}% 7
 \BOOKMARK [2][-]{subsection.3.5}{Synchronizing commit function without locking code segment }{section.3}% 8
