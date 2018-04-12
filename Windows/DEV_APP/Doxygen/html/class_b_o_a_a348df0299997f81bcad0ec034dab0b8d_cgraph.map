@@ -1,6 +1,0 @@
-<map id="BOA::toString" name="BOA::toString">
-<area shape="rect" id="node2" href="$class_b_o_a.html#ad64bd63675f8902153aa6767994f05dc" title="BOA::GetAccountNumber" alt="" coords="156,5,329,32"/>
-<area shape="rect" id="node3" href="$class_b_o_a.html#a07e30b7e5f5f20392b94af7344fd550c" title="BOA::GetBalance" alt="" coords="179,56,306,83"/>
-<area shape="rect" id="node4" href="$class_b_o_a.html#ae6bb3df4e1fb210610325ffd1985c7c0" title="BOA::GetFirstName" alt="" coords="173,107,313,133"/>
-<area shape="rect" id="node5" href="$class_b_o_a.html#a081383edefc1f66b80c3fb8862ab070b" title="BOA::GetLastName" alt="" coords="173,157,312,184"/>
-</map>

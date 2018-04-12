@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  7 MAR 2018 18:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.1)  8 APR 2018 19:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1024,8 +1024,7 @@ Package caption Info: longtable package is loaded.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
-))
-No file refman.aux.
+)) (./refman.aux)
 \openout1 = `refman.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 117.
@@ -1135,6 +1134,8 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 117.
 LaTeX Info: Redefining \pageref on input line 117.
 LaTeX Info: Redefining \nameref on input line 117.
+
+(./refman.out) (./refman.out)
 \@outlinefile=\write4
 \openout4 = `refman.out'.
 
@@ -1179,12 +1180,78 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 22.39185pt on input line 134.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 22.39185pt on input line 134.
+ (./refman.toc
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 1.
+ [3
+
+] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+ [][] [][][]\T1/phv/m/n/10 /media/zoltan/[]Data/00[]_[]2018[]_[][]I[]T[]Carlow/
+00[]_[][]Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]Sync/[]Shared[]_[][]O
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
+ [][] [][][]\T1/phv/m/n/10 /media/zoltan/[]Data/00[]_[]2018[]_[][]I[]T[]Carlow/
+00[]_[][]Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]Sync/[]Shared[]_[][]O
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+ [][] [][][]\T1/phv/m/n/10 /media/zoltan/[]Data/00[]_[]2018[]_[][]I[]T[]Carlow/
+00[]_[][]Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]Sync/[]Shared[]_[][]O
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+ [][] [][][]\T1/phv/m/n/10 /media/zoltan/[]Data/00[]_[]2018[]_[][]I[]T[]Carlow/
+00[]_[][]Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]Sync/[]Shared[]_[][]O
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+ [][] [][][]\T1/phv/m/n/10 /media/zoltan/[]Data/00[]_[]2018[]_[][]I[]T[]Carlow/
+00[]_[][]Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]Sync/[]Shared[]_[][]O
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
+ [][] [][][]\T1/phv/m/n/10 /media/zoltan/[]Data/00[]_[]2018[]_[][]I[]T[]Carlow/
+00[]_[][]Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]Sync/[]Shared[]_[][]O
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+ [][] [][][]\T1/phv/m/n/10 /media/zoltan/[]Data/00[]_[]2018[]_[][]I[]T[]Carlow/
+00[]_[][]Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]Sync/[]Shared[]_[][]O
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+ [][] [][][]\T1/phv/m/n/10 /media/zoltan/[]Data/00[]_[]2018[]_[][]I[]T[]Carlow/
+00[]_[][]Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]Sync/[]Shared[]_[][]O
+[] 
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
- [3
-
-] [4
+ [5] [6
 
 ]
 Package hyperref Info: Option `pageanchor' set `true' on input line 137.
@@ -1223,46 +1290,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--18
 
 [1
 
-])
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 142.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 142.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 142.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 142.
- [2]
+]) [2]
 Chapter 2.
-(./annotated.tex
-
-LaTeX Warning: Reference `class_o_s_t_m' on page 3 undefined on input line 3.
-
-
-LaTeX Warning: Reference `class_t_m' on page 3 undefined on input line 4.
-
-
-LaTeX Warning: Reference `class_t_x' on page 3 undefined on input line 5.
-
-) [3
+(./annotated.tex) [3
 
 ] [4
 
 ]
 Chapter 3.
 (./files.tex
-
-LaTeX Warning: Reference `_o_s_t_m_8cpp' on page 5 undefined on input line 3.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 3--3
  [][] \T1/phv/m/n/10 /media/zoltan/[]Data/00[]_[]2018[]_[][]I[]T[]Carlow/00[]_[
 ][]Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]Sync/[]Shared[]_[][]O[]_[][
 ]S[]T[] 
  []
-
-
-LaTeX Warning: Reference `_o_s_t_m_8h' on page 5 undefined on input line 4.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--4
@@ -1272,17 +1313,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
  []
 
 
-LaTeX Warning: Reference `_t_m_8cpp' on page 5 undefined on input line 5.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 5--5
  [][] \T1/phv/m/n/10 /media/zoltan/[]Data/00[]_[]2018[]_[][]I[]T[]Carlow/00[]_[
 ][]Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]Sync/[]Shared[]_[][]O[]_[][
 ]S[]T[] 
  []
-
-
-LaTeX Warning: Reference `_t_m_8h' on page 5 undefined on input line 6.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--6
@@ -1292,17 +1327,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--6
  []
 
 
-LaTeX Warning: Reference `_t_x_8cpp' on page 5 undefined on input line 7.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 7--7
  [][] \T1/phv/m/n/10 /media/zoltan/[]Data/00[]_[]2018[]_[][]I[]T[]Carlow/00[]_[
 ][]Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]Sync/[]Shared[]_[][]O[]_[][
 ]S[]T[] 
  []
-
-
-LaTeX Warning: Reference `_t_x_8h' on page 5 undefined on input line 8.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--8
@@ -1312,19 +1341,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--8
  []
 
 
-LaTeX Warning: Reference `c__standard__headers__indexer_8c' on page 5 undefined
- on input line 9.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 9--9
  [][] \T1/phv/m/n/10 /media/zoltan/[]Data/00[]_[]2018[]_[][]I[]T[]Carlow/00[]_[
 ][]Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]Sync/[]Shared[]_[][]O[]_[][
 ]S[]T[] 
  []
-
-
-LaTeX Warning: Reference `cpp__standard__headers__indexer_8cpp' on page 5 undef
-ined on input line 10.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--10
@@ -1357,11 +1378,6 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 [7]
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 62.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.1 on input line 79.
-
 LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
 (Font)              Font shape `T1/phv/bc/sl' tried instead on input line 91.
 LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
@@ -1371,9 +1387,6 @@ LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
 LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
 (Font)              scaled to size 6.29996pt on input line 91.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 91.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 91.
@@ -1395,8 +1408,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 91.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.2 on input line 108.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 91.
 
 
 LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
@@ -1424,7 +1437,7 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 4.3 on input line 162.
 
 
-<class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_icgraph.pdf, id=174, 321.2pt x
+<class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_icgraph.pdf, id=551, 321.2pt x
  100.375pt>
 File: class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_icgraph.pdf Graphic file 
 (type pdf)
@@ -1445,7 +1458,7 @@ Package longtable Warning: Column widths have changed
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9 <./class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d_icgraph.pdf>]
-<class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_icgraph.pdf, id=195, 307.1475p
+<class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_icgraph.pdf, id=567, 307.1475p
 t x 100.375pt>
 File: class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b_icgraph.pdf Graphic file 
 (type pdf)
@@ -1468,7 +1481,7 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 4.5 on input line 239.
 
 
-<class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_icgraph.pdf, id=197, 363.3575p
+<class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_icgraph.pdf, id=569, 363.3575p
 t x 100.375pt>
 File: class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_icgraph.pdf Graphic file 
 (type pdf)
@@ -1498,7 +1511,7 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 4.6 on input line 270.
 
 
-<class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_icgraph.pdf, id=219, 346.29375
+<class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_icgraph.pdf, id=589, 346.29375
 pt x 100.375pt>
 File: class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_icgraph.pdf Graphic file 
 (type pdf)
@@ -1521,7 +1534,7 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 4.7 on input line 301.
 
 
-<class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_icgraph.pdf, id=220, 324.21124
+<class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_icgraph.pdf, id=590, 324.21124
 pt x 100.375pt>
 File: class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b7_icgraph.pdf Graphic file 
 (type pdf)
@@ -1536,10 +1549,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 323.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.8 on input line 332.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11 <./class_o_s_t_m_afc2851abf5342c3c67342c2c14820115_icgraph.pdf> <./class_o
@@ -1549,7 +1558,7 @@ pdfTeX warning: pdflatex (file ./class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b
 7_icgraph.pdf): PDF inclusion: multiple pdfs with page group included in a sing
 le page
 >]
-<class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_icgraph.pdf, id=243, 297.11pt 
+<class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_icgraph.pdf, id=611, 297.11pt 
 x 100.375pt>
 File: class_o_s_t_m_afb6520023ed2c4a6188b688c46f192d0_icgraph.pdf Graphic file 
 (type pdf)
@@ -1563,11 +1572,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 354.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.9 on input line 363.
-
-
-<class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_icgraph.pdf, id=244, 303.1325p
+<class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_icgraph.pdf, id=612, 303.1325p
 t x 100.375pt>
 File: class_o_s_t_m_af192c598a3c647f37aaba5757e60240f_icgraph.pdf Graphic file 
 (type pdf)
@@ -1590,7 +1595,7 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 4.10 on input line 394.
 
 
-<class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_icgraph.pdf, id=245, 353.32pt 
+<class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_icgraph.pdf, id=613, 353.32pt 
 x 100.375pt>
 File: class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_icgraph.pdf Graphic file 
 (type pdf)
@@ -1621,7 +1626,7 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 4.11 on input line 425.
 
 
-<class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_icgraph.pdf, id=267, 331.2375p
+<class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_icgraph.pdf, id=633, 331.2375p
 t x 100.375pt>
 File: class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_icgraph.pdf Graphic file 
 (type pdf)
@@ -1644,7 +1649,7 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 4.12 on input line 456.
 
 
-<class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_icgraph.pdf, id=268, 320.19624
+<class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_icgraph.pdf, id=634, 320.19624
 pt x 100.375pt>
 File: class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_icgraph.pdf Graphic file 
 (type pdf)
@@ -1672,7 +1677,7 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 4.13 on input line 487.
 
 
-<class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_icgraph.pdf, id=291, 306.14375
+<class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_icgraph.pdf, id=655, 306.14375
 pt x 100.375pt>
 File: class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_icgraph.pdf Graphic file 
 (type pdf)
@@ -1682,7 +1687,7 @@ Package pdftex.def Info: class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_icgrap
 h.pdf used on input line 498.
 (pdftex.def)             Requested size: 305.0pt x 100.00562pt.
 
-<class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_cgraph.pdf, id=293, 363.3575pt
+<class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_cgraph.pdf, id=657, 363.3575pt
  x 519.9425pt>
 File: class_o_s_t_m_a513396a115f2987fd07c203309ae8a59_cgraph.pdf Graphic file (
 type pdf)
@@ -1706,11 +1711,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 535.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.14 on input line 544.
-
-
-<class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_icgraph.pdf, id=314, 314.17375
+<class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_icgraph.pdf, id=676, 314.17375
 pt x 100.375pt>
 File: class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_icgraph.pdf Graphic file 
 (type pdf)
@@ -1749,10 +1750,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [16 <./class_o_s_t_m_a6cd703bc26c719fd95b4f5362d050762_icgraph.pdf>]
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.15 on input line 48.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 59.
 
@@ -1761,7 +1758,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 59.
 
 
-<class_t_m_a5e2d1127f2429f2f524d25f430eade06_cgraph.pdf, id=363, 278.03876pt x 
+<class_t_m_a5e2d1127f2429f2f524d25f430eade06_cgraph.pdf, id=720, 278.03876pt x 
 100.375pt>
 File: class_t_m_a5e2d1127f2429f2f524d25f430eade06_cgraph.pdf Graphic file (type
  pdf)
@@ -1769,10 +1766,6 @@ File: class_t_m_a5e2d1127f2429f2f524d25f430eade06_cgraph.pdf Graphic file (type
 Package pdftex.def Info: class_t_m_a5e2d1127f2429f2f524d25f430eade06_cgraph.pdf
  used on input line 74.
 (pdftex.def)             Requested size: 277.0pt x 100.00102pt.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.16 on input line 98.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1794,10 +1787,6 @@ T[]M/[][]T[]
 
 ) (./class_t_x.tex [18]
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.17 on input line 71.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `alignment tab' on input line 97.
 
@@ -1818,7 +1807,7 @@ Package longtable Warning: Column widths have changed
 (longtable)                in table 4.18 on input line 126.
 
 
-<class_t_x_aa3ac499f576326588628ade96b27b4b1_icgraph.pdf, id=437, 316.18124pt x
+<class_t_x_aa3ac499f576326588628ade96b27b4b1_icgraph.pdf, id=786, 316.18124pt x
  100.375pt>
 File: class_t_x_aa3ac499f576326588628ade96b27b4b1_icgraph.pdf Graphic file (typ
 e pdf)
@@ -1865,19 +1854,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 181.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.20 on input line 200.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.21 on input line 226.
-
-
 Overfull \vbox (26.56493pt too high) has occurred while \output is active []
 
 
 [20]
-<class_t_x_a9dde5d356b35e557448e58d260087356_cgraph.pdf, id=468, 316.18124pt x 
+<class_t_x_a9dde5d356b35e557448e58d260087356_cgraph.pdf, id=811, 316.18124pt x 
 100.375pt>
 File: class_t_x_a9dde5d356b35e557448e58d260087356_cgraph.pdf Graphic file (type
  pdf)
@@ -1895,19 +1876,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 263.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.22 on input line 274.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 285.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.23 on input line 298.
-
-
-<class_t_x_aa9739c5c2077454c779098db7baefc2b_icgraph.pdf, id=470, 278.03876pt x
+<class_t_x_aa9739c5c2077454c779098db7baefc2b_icgraph.pdf, id=813, 278.03876pt x
  100.375pt>
 File: class_t_x_aa9739c5c2077454c779098db7baefc2b_icgraph.pdf Graphic file (typ
 e pdf)
@@ -1922,16 +1895,8 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 320.
 
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.24 on input line 331.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 351.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.25 on input line 358.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 367--368
@@ -1963,7 +1928,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 tandard[]_[]headers[]_[]indexer.c File Ref-er-
  []
 
-<c__standard__headers__indexer_8c__incl.pdf, id=521, 1286.8075pt x 200.75pt>
+<c__standard__headers__indexer_8c__incl.pdf, id=854, 1286.8075pt x 200.75pt>
 File: c__standard__headers__indexer_8c__incl.pdf Graphic file (type pdf)
 
 <use c__standard__headers__indexer_8c__incl.pdf>
@@ -1983,7 +1948,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]
  []
 
-<_o_s_t_m_8cpp__incl.pdf, id=536, 327.2225pt x 245.91875pt>
+<_o_s_t_m_8cpp__incl.pdf, id=867, 327.2225pt x 245.91875pt>
 File: _o_s_t_m_8cpp__incl.pdf Graphic file (type pdf)
 
 <use _o_s_t_m_8cpp__incl.pdf>
@@ -1995,14 +1960,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]
  []
 
-<_o_s_t_m_8h__incl.pdf, id=542, 327.2225pt x 189.70876pt>
+<_o_s_t_m_8h__incl.pdf, id=872, 327.2225pt x 189.70876pt>
 File: _o_s_t_m_8h__incl.pdf Graphic file (type pdf)
 
 <use _o_s_t_m_8h__incl.pdf>
 Package pdftex.def Info: _o_s_t_m_8h__incl.pdf used on input line 11.
 (pdftex.def)             Requested size: 326.0pt x 188.99907pt.
 
-<_o_s_t_m_8h__dep__incl.pdf, id=543, 538.01pt x 401.5pt>
+<_o_s_t_m_8h__dep__incl.pdf, id=873, 538.01pt x 401.5pt>
 File: _o_s_t_m_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _o_s_t_m_8h__dep__incl.pdf>
@@ -2028,7 +1993,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]
  []
 
-<_t_m_8cpp__incl.pdf, id=564, 650.43pt x 358.33875pt>
+<_t_m_8cpp__incl.pdf, id=893, 650.43pt x 358.33875pt>
 File: _t_m_8cpp__incl.pdf Graphic file (type pdf)
 
 <use _t_m_8cpp__incl.pdf>
@@ -2044,13 +2009,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]
  []
 
-<_t_m_8h__incl.pdf, id=584, 636.3775pt x 302.12875pt>
+<_t_m_8h__incl.pdf, id=912, 636.3775pt x 302.12875pt>
 File: _t_m_8h__incl.pdf Graphic file (type pdf)
  <use _t_m_8h__incl.pdf>
 Package pdftex.def Info: _t_m_8h__incl.pdf used on input line 14.
 (pdftex.def)             Requested size: 350.0pt x 166.1667pt.
 
-<_t_m_8h__dep__incl.pdf, id=585, 249.93375pt x 222.8325pt>
+<_t_m_8h__dep__incl.pdf, id=913, 249.93375pt x 222.8325pt>
 File: _t_m_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _t_m_8h__dep__incl.pdf>
@@ -2062,7 +2027,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]
  []
 
-<_t_x_8cpp__incl.pdf, id=587, 593.21625pt x 302.12875pt>
+<_t_x_8cpp__incl.pdf, id=915, 593.21625pt x 302.12875pt>
 File: _t_x_8cpp__incl.pdf Graphic file (type pdf)
 
 <use _t_x_8cpp__incl.pdf>
@@ -2085,13 +2050,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []Modules/06[]_[][]Project/[]Documents/[]Git[]_[][]
  []
 
-<_t_x_8h__incl.pdf, id=607, 622.325pt x 245.91875pt>
+<_t_x_8h__incl.pdf, id=934, 622.325pt x 245.91875pt>
 File: _t_x_8h__incl.pdf Graphic file (type pdf)
  <use _t_x_8h__incl.pdf>
 Package pdftex.def Info: _t_x_8h__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 138.30643pt.
 
-<_t_x_8h__dep__incl.pdf, id=608, 431.6125pt x 312.16624pt>
+<_t_x_8h__dep__incl.pdf, id=935, 431.6125pt x 312.16624pt>
 File: _t_x_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _t_x_8h__dep__incl.pdf>
@@ -2120,34 +2085,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 169.
 (./refman.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 169.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 169.
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: 4F5439D7AEEA52DCC01AFE1330A34BAF;22506.
 
-
-Package rerunfilecheck Warning: File `refman.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `refman.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  4F5439D7AEEA52DCC01AFE1330A34BAF;22506.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 169.
  ) 
 Here is how much of TeX's memory you used:
- 15227 strings out of 493029
- 221742 string characters out of 6136233
- 312340 words of memory out of 5000000
- 18243 multiletter control sequences out of 15000+600000
+ 15309 strings out of 493029
+ 223227 string characters out of 6136235
+ 330360 words of memory out of 5000000
+ 18317 multiletter control sequences out of 15000+600000
  67161 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,16n,92p,4119b,635s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,16n,92p,4119b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
@@ -2159,10 +2112,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (36 pages, 228940 bytes).
+Output written on refman.pdf (38 pages, 241140 bytes).
 PDF statistics:
- 732 PDF objects out of 1000 (max. 8388607)
- 616 compressed objects within 7 object streams
+ 1061 PDF objects out of 1200 (max. 8388607)
+ 940 compressed objects within 10 object streams
  225 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 720 words of extra memory for PDF output out of 10000 (max. 10000000)
 

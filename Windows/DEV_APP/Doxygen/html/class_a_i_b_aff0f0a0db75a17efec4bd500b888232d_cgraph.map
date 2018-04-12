@@ -1,6 +1,0 @@
-<map id="AIB::toString" name="AIB::toString">
-<area shape="rect" id="node2" href="$class_a_i_b.html#aef34bfbf20d767114e05b8b532cab777" title="AIB::GetAccountNumber" alt="" coords="151,5,317,32"/>
-<area shape="rect" id="node3" href="$class_a_i_b.html#ac75087ae73c308bd946e47a71dc85b86" title="AIB::GetBalance" alt="" coords="174,56,294,83"/>
-<area shape="rect" id="node4" href="$class_a_i_b.html#aa0833919c1c211481560cd88cb5b381b" title="AIB::GetFirstName" alt="" coords="167,107,301,133"/>
-<area shape="rect" id="node5" href="$class_a_i_b.html#a1b09db7268734beeaf6a9e7e9d8feb02" title="AIB::GetLastName" alt="" coords="167,157,301,184"/>
-</map>

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.1)  3 APR 2018 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.1)  10 APR 2018 13:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -272,45 +272,71 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip55
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count110
+\sf@farskip=\skip56
+\sf@captopadj=\dimen121
+\sf@capskip=\skip57
+\sf@nearskip=\skip58
+\c@subfigure=\count111
+\c@subfigure@save=\count112
+\c@lofdepth=\count113
+\c@subtable=\count114
+\c@subtable@save=\count115
+\c@lotdepth=\count116
+\sf@top=\skip59
+\sf@bottom=\skip60
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 24.
 
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
 (./Final report.aux)
 \openout1 = `"Final report.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 38.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen121
+\scratchcounter=\count117
+\scratchdimen=\dimen122
 \scratchbox=\box31
-\nofMPsegments=\count111
-\nofMParguments=\count112
+\nofMPsegments=\count118
+\nofMParguments=\count119
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen122
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen123
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
 \everyMPtoPDFconversion=\toks20
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -327,9 +353,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count116
+\c@lstlisting=\count123
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 33.
+Package hyperref Info: Link coloring ON on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -337,30 +363,30 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count117
+\c@section@level=\count124
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
 
 (./Final report.out) (./Final report.out)
 \@outlinefile=\write3
 \openout3 = `"Final report.out"'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 
 <Pictures/carlow.png, id=164, 266.9975pt x 144.54pt>
 File: Pictures/carlow.png Graphic file (type png)
  <use Pictures/carlow.png>
-Package pdftex.def Info: Pictures/carlow.png used on input line 59.
+Package pdftex.def Info: Pictures/carlow.png used on input line 64.
 (pdftex.def)             Requested size: 186.89696pt x 101.17729pt.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Pictures/carlow.png>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
 
 (./Final report.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -382,138 +408,173 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 ...ion Manager functions}{14}{subsection.8.2}
+l.32 ...ion Manager functions}{17}{subsection.8.2}
                                                    [1])
 \tf@toc=\write4
 \openout4 = `"Final report.toc"'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 100.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 101.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 106.
 [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
+Underfull \hbox (badness 10000) in paragraph at lines 157--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
 [8]
-Overfull \hbox (1.76006pt too wide) in paragraph at lines 186--187
+Overfull \hbox (1.76006pt too wide) in paragraph at lines 193--194
 []\OT1/ptm/m/n/12 Building code, us-ing poly-mor-phic pro-gram-ming fea-tures t
 o han-dle un-known
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
-[10]
-Overfull \hbox (25.6162pt too wide) in paragraph at lines 219--221
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+[10] [11]
+Overfull \hbox (25.6162pt too wide) in paragraph at lines 239--241
 \OT1/ptm/m/n/12 The an-other part that needed re-search, is unit test-ing for C
 ++ pro-gram-ming language.[[]]
  []
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 226.
+(hyperref)                than one, level fixed on input line 246.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 248--249
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+
+ []
+
+<Pictures/TM.png, id=354, 916.42375pt x 337.26pt>
+File: Pictures/TM.png Graphic file (type png)
+ <use Pictures/TM.png>
+Package pdftex.def Info: Pictures/TM.png used on input line 254.
+(pdftex.def)             Requested size: 366.563pt x 134.9016pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+[13 <./Pictures/TM.png>] <Pictures/TX.png, id=361, 694.595pt x 261.97874pt>
+File: Pictures/TX.png Graphic file (type png)
+
+<use Pictures/TX.png>
+Package pdftex.def Info: Pictures/TX.png used on input line 267.
+(pdftex.def)             Requested size: 416.76022pt x 157.18845pt.
+
+Overfull \hbox (26.76022pt too wide) in paragraph at lines 267--268
+ [][] 
+ []
+
+<Pictures/BASE.png, id=362, 473.77pt x 597.23125pt>
+File: Pictures/BASE.png Graphic file (type png)
+ <use Pictures/BASE.png>
+Package pdftex.def Info: Pictures/BASE.png used on input line 276.
+(pdftex.def)             Requested size: 170.71652pt x 215.20357pt.
+
+<Pictures/aib.png, id=363, 340.27126pt x 337.26pt>
+File: Pictures/aib.png Graphic file (type png)
+ <use Pictures/aib.png>
+Package pdftex.def Info: Pictures/aib.png used on input line 278.
+(pdftex.def)             Requested size: 170.71652pt x 169.20595pt.
+
+[14 <./Pictures/TX.png>] [15 <./Pictures/BASE.png> <./Pictures/aib.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 250--251
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
 
  []
 
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+<Pictures/commit.png, id=379, 325.215pt x 139.52126pt>
+File: Pictures/commit.png Graphic file (type png)
 
- []
-
-[15]
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 272.
-
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
-File: omlptm.fd 
-)
-LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 272.
-
-Overfull \hbox (85.20483pt too wide) in paragraph at lines 276--277
-[][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
+<use Pictures/commit.png>
+Package pdftex.def Info: Pictures/commit.png used on input line 303.
+(pdftex.def)             Requested size: 170.71652pt x 73.24123pt.
 
 
-Overfull \hbox (27.60425pt too wide) in paragraph at lines 285--286
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (42.0044pt too wide) in paragraph at lines 289--290
-[][][][][][][][][][][][][][][][][][][] 
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
+Underfull \hbox (badness 10000) in paragraph at lines 312--315
 
  []
 
@@ -523,11 +584,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--317
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
-[17] [18] (./Final report.bbl
+[17 <./Pictures/commit.png>]
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 327.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
+File: omlptm.fd 
+)
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 327.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 331.
+
+Overfull \hbox (36.00433pt too wide) in paragraph at lines 331--332
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[18] <Pictures/test.png, id=411, 1950.28625pt x 501.875pt>
+File: Pictures/test.png Graphic file (type png)
+
+<use Pictures/test.png>
+Package pdftex.def Info: Pictures/test.png used on input line 367.
+(pdftex.def)             Requested size: 390.05034pt x 100.37321pt.
+
+Overfull \hbox (17.67516pt too wide) in paragraph at lines 367--368
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
+
+ []
+
+[19 <./Pictures/test.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 373--374
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
+
+ []
+
+[20] (./Final report.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
@@ -539,34 +642,34 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--14
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
- [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 387.
+ [21]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 387.
  (./Final report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 330.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 330.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 387.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 387.
 Package rerunfilecheck Info: File `"Final report".out' has not changed.
 (rerunfilecheck)             Checksum: 9CEA6965B0E727C36D0DC689DC1DECB1;2819.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 330.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 387.
  ) 
 Here is how much of TeX's memory you used:
- 8773 strings out of 493029
- 131174 string characters out of 6136235
- 225967 words of memory out of 5000000
- 12095 multiletter control sequences out of 15000+600000
- 22984 words of font info for 46 fonts, out of 8000000 for 9000
+ 9169 strings out of 493029
+ 137145 string characters out of 6136235
+ 261368 words of memory out of 5000000
+ 12461 multiletter control sequences out of 15000+600000
+ 26195 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,43p,1262b,1094s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,58p,1079b,1251s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "Final report.pdf" (22 pages, 125574 bytes).
+Output written on "Final report.pdf" (24 pages, 432621 bytes).
 PDF statistics:
- 462 PDF objects out of 1000 (max. 8388607)
- 425 compressed objects within 5 object streams
- 120 named destinations out of 1000 (max. 500000)
- 326 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 492 PDF objects out of 1000 (max. 8388607)
+ 441 compressed objects within 5 object streams
+ 130 named destinations out of 1000 (max. 500000)
+ 356 words of extra memory for PDF output out of 10000 (max. 10000000)
 

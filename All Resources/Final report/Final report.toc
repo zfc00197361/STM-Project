@@ -18,23 +18,23 @@
 \contentsline {subsection}{\numberline {5.1}Technical learning}{9}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Personal learning}{10}{subsection.5.2}
 \contentsline {section}{\numberline {6}What I would do differently if starting it again}{10}{section.6}
-\contentsline {section}{\numberline {7}Report on document update}{10}{section.7}
-\contentsline {subsection}{\numberline {7.1}Additional research}{11}{subsection.7.1}
-\contentsline {section}{\numberline {8}Module description}{11}{section.8}
+\contentsline {section}{\numberline {7}Report on document update}{11}{section.7}
+\contentsline {subsection}{\numberline {7.1}Additional research}{12}{subsection.7.1}
+\contentsline {section}{\numberline {8}Module description}{12}{section.8}
 \contentsline {subsubsection}{\numberline {8.0.1}Transaction Manager}{12}{subsubsection.8.0.1}
-\contentsline {subsubsection}{\numberline {8.0.2}Transaction object}{12}{subsubsection.8.0.2}
-\contentsline {subsubsection}{\numberline {8.0.3}Base object}{13}{subsubsection.8.0.3}
-\contentsline {subsection}{\numberline {8.1}Public API functions for transactions}{13}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Register}{13}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Load}{13}{subsubsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.3}Store}{13}{subsubsection.8.1.3}
-\contentsline {subsubsection}{\numberline {8.1.4}Commit}{14}{subsubsection.8.1.4}
-\contentsline {subsection}{\numberline {8.2}Private API and Transaction Manager functions}{14}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}Transaction Manager}{14}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Transaction object}{15}{subsubsection.8.2.2}
-\contentsline {section}{\numberline {9}Data structure}{15}{section.9}
-\contentsline {subsection}{\numberline {9.1}Transaction Manager}{16}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Transaction object (TX)}{16}{subsection.9.2}
-\contentsline {section}{\numberline {10}Testing}{16}{section.10}
-\contentsline {section}{\numberline {11}Conclusion}{17}{section.11}
-\contentsline {section}{\numberline {12}Bibliography}{19}{section.12}
+\contentsline {subsubsection}{\numberline {8.0.2}Transaction object}{13}{subsubsection.8.0.2}
+\contentsline {subsubsection}{\numberline {8.0.3}Base object}{14}{subsubsection.8.0.3}
+\contentsline {subsection}{\numberline {8.1}Public API functions for transactions}{15}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Register}{15}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Load}{15}{subsubsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.3}Store}{16}{subsubsection.8.1.3}
+\contentsline {subsubsection}{\numberline {8.1.4}Commit}{16}{subsubsection.8.1.4}
+\contentsline {subsection}{\numberline {8.2}Private API and Transaction Manager functions}{17}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}Transaction Manager}{17}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Transaction object}{17}{subsubsection.8.2.2}
+\contentsline {section}{\numberline {9}Data structure}{18}{section.9}
+\contentsline {subsection}{\numberline {9.1}Transaction Manager}{18}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Transaction object (TX)}{18}{subsection.9.2}
+\contentsline {section}{\numberline {10}Testing}{19}{section.10}
+\contentsline {section}{\numberline {11}Conclusion}{20}{section.11}
+\contentsline {section}{\numberline {12}Bibliography}{21}{section.12}

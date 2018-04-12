@@ -147,7 +147,7 @@ void _nesting_(std::shared_ptr<OSTM> _to_, std::shared_ptr<OSTM> _from_, TM& _tm
             /*!
              * From std::shared_ptr<OSTM> to std::shared_ptr<BANK> to access the virtual methods
              */
-            HAHAHA = std::dynamic_pointer_cast<BANK> (tx->load(hahah));
+           // HAHAHA = std::dynamic_pointer_cast<BANK> (tx->load(hahah));
             _TO_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_to_));
             _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_));
             /*!
@@ -267,7 +267,7 @@ int main(void) {
      * If the threadArraySize is divisible with three, the threads will be distributed between function.<br>
      * However, you can creates any number of threads, but to follow the correct output should increase the IF ELSE statement to distribute the threads in equal number. 
      */
-    int threadArraySize = 300;
+    int threadArraySize = 1000;
     std::thread thArray[threadArraySize];
 
     /*!

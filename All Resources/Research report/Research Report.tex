@@ -21,7 +21,11 @@
     citecolor = gray,
     linktoc=all
 }
-
+\lstset { %
+	language=C++,
+	backgroundcolor=\color{black!5}, % set backgroundcolor
+	basicstyle=\footnotesize,% basic font setting
+}
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\textit{\color{gray}\today}}
@@ -72,24 +76,24 @@ The purpose of this research document is to find all the answers associated with
 \section{Introduction}
 The Software Transactional memory is a promising alternative to the concurrency control in shared memory systems. Why do we need the STM solution if we can control the concurrent programming with mutex and semaphore. If the Transaction memory has been solved in the Hardware level why it is important to implement at software level as well. What is the difference between the diverse versions of C++ languages. Which is the best IDE and compiler to implement the STM library in C++ language.\\
 
-The aim of this project to create a C++ Software Transactional memory library to control concurrent programming features without locks. Software Transactional memory is a software solution for concurrency control in shared memory access. It provides lock free solution for threaded programming which reduces the challenges in concurrent programming. STM use Transactions to realize automatic conflicts resolution through atomic transactions and avoid the classical lock based associated problems like deadlock and live lock.\\
+The aim of this project to create a C++ Software Transactional memory library to control concurrent programming environment without locks. Software Transactional memory is a software solution for concurrency control with shared memory access. It provides lock free solution in threaded programming environment, and reduces the challenges in concurrent programming. STM use Transactions to detect conflicts within the shared memory spaces, through atomic transactions and avoid the classical lock based associated problems like deadlock and live lock.\\
 
-The research paper contains several sections to describe the main questions around the STM implementation.The first section begins with the concurrent and parallel concepts, such as why we need it and what is the problem with it. What is the difference between concurrent and parallel programming. What is the problem with concurrent programming and how to control the threads in concurrent programming environment.\\
+The research paper contains several sections to describe the main questions around the STM implementation.The first section begins with the concurrent and parallel concepts, such as why we need it and what is the problem with them. What is the difference between concurrent and parallel programming. What is the problem with concurrent programming and how to control the threads in concurrent programming environment.\\
 
-The next section discusses the STM concepts and how it works. Discover the benefits and the problems associated with the software level transactional memory, give sample code for atomic transaction and describe the logical solution, what I need to implement in the project.\\
+The next section discusses the Software Transactional Memory concepts and how it is works. Discover the benefits and the problems associated with the software level transactional memory control, give sample code for atomic transaction and describe the logical solution, what I need to implement in this project.\\
 
 The following section describes some of the previous STM library implementations in different programming languages with very short explanation.\\
 
 The C++14/17 section will mostly list the differences between the two versions of C++ release and the C++17 version libraries.\\
 
-The last section discusses the difference between the most popular Integrated Development Environment(IDE) functionalities and the available compilers to the  different platforms. This section helps me to choose the best IDE and the compiler version to create the STM library.    
+The last section discusses the difference between the most popular Integrated Development Environment(IDE) functionalities and the available compilers on the main platforms. That section helps me to choose the best IDE and the compiler version to create the STM library.    
 
 
 \section{Concurrency}
 \subsection{What is concurrency}    
-Concurrency in the real-world example could be when many things are happening at the same time simultaneously with someone, example eating the breakfast, reading the newspaper, listening to music and typing text messages. In computer science concurrency is a stage of system/process where multiple processes are executing at the same time and may or may not sharing resources and communicating with each other. The concurrency in a system program required parallel processing, but the challenge with concurrent programming, that the running processes on the processor is running sequentially. To achieve concurrent processing, the process need to split into multiple smaller processes, and running them concurrently. On the modern computers where is more core available inside the CPU (Central Processing Unit) and the programming module not using concurrent programming features the processes can run parallel at same time on the different cores, but those processes are completely independent and not sharing resources.\\ 
+Concurrency in the real-world example could be, when many things are happening at the same time simultaneously with someone, example eating the breakfast, reading the newspaper, listening to music and typing text messages. In computer science concurrency is a stage of system/process where multiple processes are executing at the same time and may or may not sharing resources and communicating with each other. The concurrency in a system program not required parallel processing, but the challenge with concurrent programming, that the running processes on the processor is running sequentially. To achieve concurrent processing, the process need to split into multiple smaller processes, and running them concurrently. On the modern computers where is more core available inside the CPU (Central Processing Unit) and the programming module not using concurrent programming features, the different processes can run parallel at same time on the different cores, but those processes are completely independent and not sharing resources.\\ 
 
-To execute a process on the CPU cores concurrently/parallel at the same time, that requires threaded programming. On a single core processor never able to get true concurrency, but true concurrency with threaded programming can happen on multi-core processors.\textit{\color{gray}Figure 1.}
+To execute a process on the CPU cores concurrently at the same time, that requires threaded programming. On a single core processor never able to get true concurrency, but true concurrency with threaded programming can happen on multi-core processors.\textit{\color{gray}Figure 1.}
 
 \begin{figure}[h!]
 \centering
@@ -117,7 +121,7 @@ Back in days the computers had only one core in the CPU, and all the processes, 
   \end{minipage}
 \end{figure}
 
-On the modern computers the CPU has more than one core, the processes can run parallel on the different cores at the same time. So, if multiple processes running on the operating system, those processes can be executing same time on the same processor on different cores. With these changes of the CPU architecture the parallel computing has been achieved but the single processes still running sequentially on the separated cores inside the processor without threaded programming. Therefore, the true concurrency is the parallel execution on the different cores at the same time, with diverse threads form the same process.
+On the modern computers the CPU has more than one core, the processes can run parallel on the different cores at the same time. So if multiple processes running on the operating system, those processes can be executing same time on the same processor on different cores. With these changes of the CPU architecture the parallel computing has been achieved but the single processes still running sequentially on the separated cores inside the processor without threaded programming. Therefore, the true concurrency is the parallel execution on the different cores at the same time, with diverse threads form the same process.
 
 \subsection{Parallel vs. Concurrent}
 The parallel computing is executing multiple processes simultaneously on separated cores, while concurrent computing is composing independent processes working together. 
@@ -131,7 +135,7 @@ The parallel computing is executing multiple processes simultaneously on separat
 Concurrent computing can happen on single core processor, however if programming design apply threaded programming, that can’t help to run process faster on single core. The process with threaded programming design can run faster on multi-core, since the different processes and the multiple threads can run parallel on multiple cores. \textit{\color{gray}Figure 4.}\\
 
 \subsection{Process vs. Thread}
-Process (heavy-weight) is a running instance single thread of program in execution. Each process has its own address space in the memory, that is not shared between the running processes. If two processes need to communicate, they must use IPC (Inter Process Communication) which allows processes to communicate and synchronize their actions. This Inter Process Communication happen through the OS (operating system). There are two types of communications such as message passing and shared memory. The OS controlling how to use the shared memory and use lock to close out the other process while the another read or write the memory space. The other way for communication between processes is the message passing, where pipe created between the processes and use consumer-producer synchronization. To create processes can be expensive, as each process has its own address space, program code, file handles.\\
+Process (heavy-weight) is a running instance single thread of program in execution. Each process has its own address space in the memory, that is not shared between the running processes. If two processes need to communicate, they must use IPC (Inter Process Communication) which allows processes to communicate and synchronize their actions. This Inter Process Communication happen through the OS (operating system). There are two types of communications such as message passing and shared memory. The OS controlling how to use the shared memory and use lock to close out the other process while the another read or write the memory space. The other way for communication between processes is the message passing, where pipe created between the processes and use consumer-producer synchronization. To create processes can be expensive, as each process has its own address space, program code and file handles.\\
 
 \begin{figure}[h!]
 \centering
@@ -160,8 +164,8 @@ The multi-threaded programming use parallel and concurrent programming design, t
 To solve race condition, in concurrent programming design must use mutex and semaphores to control the shared memory space/shared variables access by the multiple threads.
 
 	\subsubsection{Mutual Exclusion and Semaphores}
-Mutex is a mutual exclusive flag. Mutual exclusion is a type of gate that is ensuring to reduce accessibility to a shared resource to only one thread at the same time. The other solution is to use Semaphores. Semaphores is somewhat like an integer value and can do only two operations on it, increment and decrement. Those two operations can happen through methods like Signal and Wait. If the value of the Semaphore is zero, then other threads cannot be pass the line where the method call happened.\citep{Nick&Julie}
-So, mutual exclusion and Semaphores can solve the race conditions problem, but may lead to other problems like Deadlock - Live lock and Starvation.
+Mutex is a mutual exclusive flag. Mutual exclusion is a type of gate that is ensuring to reduce accessibility to a shared resource to only one thread at the same time. The other solution is to use Semaphores. Semaphores is somewhat like an integer value and can do only two operations on it, increment and decrement. Those two operations can happen through methods like Signal and Wait. If the value of the Semaphore is zero, then other threads cannot be pass the line where the value of the Semaphore not change to positive value.\citep{Nick&Julie}
+So the mutual exclusion and Semaphores can solve the race conditions problem, but may lead to other problems like Deadlock - Live lock and Starvation.
 
 	\subsubsection{Deadlock}
 Deadlock is a condition, when two threads try to access the same shared resource and waiting for each other to do some action. Deadlock often arises because the control of semaphore or mutex applied logically wrong way to protect the critical section to access by more than one thread at the same time.\textit{\color{gray}Figure 8.}
@@ -207,7 +211,7 @@ Maximum CPU throughput:\\
 Parallel concurrent programming design only way to exploit the multi-core CPU in efficient manner. \\
 
 High performance:\\
-While single threaded application performs the same no matter how many cores in the CPU, the concurrent application uses all the cores in the CPU.}
+While single threaded application performs the same no matter how many cores in the CPU, the concurrent/parallel applications are uses all the cores in the CPU.}
 	\subsubsection{Disadvantages}
 {\setlength{\parindent}{0cm}
 The main disadvantages of the concurrent/multi-threaded application are:\\
@@ -222,9 +226,9 @@ Much harder to regenerate the same error in the multi-threaded application and h
 
 \section{Software Transactional Memory (STM)}
 \textit{"Software Transactional Memory (STM) is a mechanism that allows transactions on memory similar to database transactions."}\cite{Haskell}
-STM is a concurrency control for threaded programming, that does not use locks and semaphores as its primary locking mechanism. However, concurrent programming with locks and semaphores solving the issues to access shared memory space by more than one thread at the same time, but it is still very complicate to write efficient programs by the programmers specially if the software is working in big scale.\\
+STM is a concurrency control for threaded programming, that can use locks and semaphores as its primary locking mechanism, but gives lock free programming environment to the client applications. However, concurrent programming with locks and semaphores solving the issues to access shared memory space by more than one thread at the same time, but it is still very complicate to write efficient programs by the programmers, specially if the software is working in big scale.\\
 
-Software Transactional memory use transaction instead of locks and semaphores, that is similar to the database systems. The main purpose of STM to avoid concurrent programming issues and guaranties safety operations on shared memory space.\cite{Kasper}\\
+Software Transactional memory use transaction with memory base locking, that is similar to the database systems. The main purpose of STM to avoid concurrent programming issues and guaranties safety operations on shared memory space.\cite{Kasper}\\
 
 The hardware support for STM is the Hardware Transactional memory(HTM).
 A Hardware Transactional Memory (HTM) system uses multi-word(multi-fixed size piece of data) synchronization operations of the CPU for threads to manipulating shared data.\\
@@ -240,9 +244,9 @@ There are four properties of the transaction operations, it know as the ACID pro
 \end{enumerate}
 
 \subsection{Transaction.}
-In real life example for transaction is a money transfer between two account in the bank. When someone wants to transfer some amount of money from his/her bank account to an another bank account, the biggest problem is the state of the transferred amount of money. How the system should implement the transaction?  First decrement the source bank account and the increment the destination bank account with the amount was sent. The other solution could be if the target account in incremented and then the source decremented? What's happen with the transferred money if the system goes down during the transaction before the amount arrived to the destination, but the source account decremented already?\\
+In real life example for transaction is a money transfer between two account within a bank. When someone wants to transfer some amount of money from his/her bank account to an another bank account, the biggest problem is the state of the transferred amount of money. How the system should implement the transaction?  First decrement the source bank account and the increment the destination bank account with the amount was sent. The other solution could be if the target account in incremented and then the source decremented? What's happen with the transferred money if the system goes down during the transaction before the amount arrived to the destination, but the source account decremented already?\\
 
-The solution for those questions is the Transaction. The transaction is a way of processing, where all the separated processes need to succeed, otherwise the transaction will fail. In the bank transfer case, if the destination bank account is not available, then all the processes involved in the transaction will rolling back, and the amount of money goes back to the source bank account.\textit{\color{gray}Figure 9.}\\
+The solution for those questions is the Transaction. The transaction is a way of processing, where all the separated processes need to succeed, otherwise the transaction will fail. In the bank transfer case, if the destination bank account is not available, then all the processes involved in the transaction will rolling back, and the amount of money goes back to the source bank account. These changes must happen as a single unit of execution.\textit{\color{gray}Figure 9.}\\
 
 \begin{figure}[h!]
 \centering
@@ -251,12 +255,12 @@ The solution for those questions is the Transaction. The transaction is a way of
 \end{figure}
 
 \subsection{Transactional Memory(TM).}
-Transaction Memory is an approach of concurrency management and it is called optimistic, because assume multiple transactions can complete frequently without interfering with each other. Transactional Memory is a synchronization for the threaded/multi-core programming to simplify concurrent programming to avoid of the concurrent programming issues like Deadlock, Race Condition, Corruption, Lost wakeup. The Transactional Memory control provides atomic and isolated execution for region of codes. The abstraction of the atomic transaction required a hardware mechanism, that detect conflicts and revert back all the changes made on the shared memory space.\\
+Transaction Memory is an approach of concurrency management and it is called optimistic, because assume multiple transactions can complete frequently without interfering with each other. Transactional Memory is a synchronization for the threaded/multi-core application to simplify concurrent program execution to avoid of the concurrent programming issues like Deadlock, Race Condition, Corruption, Lost wakeup. The Transactional Memory control provides atomic and isolated execution for region of codes. The abstraction of the atomic transaction required a hardware mechanism, that detect conflicts and revert back all the changes made on the shared memory space.\\
 
 When any thread enters the block of code that is use atomic execution, the other threads can't access or see any modification until the thread is not finished with the code execution and leave the block. This software design can avoid of unnecessary concurrent programming conflicts and the shared variables overwriting issues. \cite{BDJ}\\
 
 
-The concurrency control mechanism analogous to the database transactions that controls the access to the shared memory in concurrent programming. The STM functions are alternative to the lock-based synchronization mechanism, but it is implemented in a lock-free way. The transaction is when a block of code executes series of actions on the shared memory space. \citep{STM} While database transaction as a result are written to the disk, until Software Transactional Memory has a life-time while the code executing and only change the state of the shared variable by the threads in the memory.\textit{\color{gray}Figure 12.}
+The concurrency control mechanism similar to the database transactions, where controls the access to the shared memory in concurrent manner. The Transactional Memory functions are alternative to the lock-based synchronization mechanism, but it is implemented in a lock-free way. The transaction is when a block of code executes series of actions on the shared memory space. \citep{STM} While database transaction as a result are written to the disk, until Transactional Memory has a life-time while the code executing and only change the state of the shared variable by the threads in the memory.\textit{\color{gray}Figure 12.}
 
 \begin{figure}[h!]
 \centering
@@ -267,7 +271,7 @@ The concurrency control mechanism analogous to the database transactions that co
 
 
 \subsubsection{How does it work?}
-The Transactional Memory software solution allowing the transactions within the process to be executed in parallel and monitoring the access to the shared/transaction variables. Whit this transaction synchronization monitoring solution the software able to detect a conflict between transactions and allowing only one transaction at the same time to access the shared variable and rolling back to the other transactions. So, because the  Transaction Memory is lock free, the threads are not waiting to the lock, all of them can access the atomic block in parallel and make changes on the shared memory space. Increasing the associated version number with the memory block and assuming there is no conflict happens. When the threads are finish with the atomic block execution, they are checking the version number associated with the memory block in which they are working on and if the version number are higher then the version number use by the thread, that is indicates, other threads are made changes on the same memory space. In this case the transaction can not happen and must to restart/roll-back caused by the version number conflict. In this case the thread must roll-back all the changes happened on the variable and restart the transaction. This process will goes on until all the transaction finish they execution and the threads are joining back to the main process. \cite{Stack}\textit{\color{gray}Figure 13.}\\
+The Transactional Memory software solution allowing the transactions within the process to be executed in parallel and monitoring the access to the shared/transaction variables. Whit this transaction synchronization monitoring solution the software able to detect a conflict between transactions and allowing only one transaction at the same time to access the shared variable and rolling back the other transactions. So because the  Transaction Memory is lock free, the threads are not waiting to the lock, all of them can access the atomic block in parallel and make changes on the shared memory space. Increasing the associated version number with the memory block and assuming there is no conflict happens. When the threads are finish with the atomic block execution, they are checking the version number associated with the shared memory block in which they are working on, and if the version number are higher on the shared memory then the version number use by the thread, that is indicates that other threads are made changes on the same memory space. In this case the transaction can not happen and must restart/roll-back caused by the version number conflict. In this case the thread must roll-back all the changes happened on the variable and restart the transaction. This process will goes on until all the transaction finish they execution and the threads are joining back to the main process. \cite{Stack}\textit{\color{gray}Figure 13.}\\
 
 \begin{figure}[h!]
 \centering
@@ -300,7 +304,7 @@ The simple illustration of Software Transactional Memory, need at least two thre
 \end{figure}
 
 
-When the first thread(T1) get ownership of the memory address and the second thread(T2) try to access the same memory space, then the second thread will fail. Because, the software use STM implementation, the method must be use atomic and the second thread keep trying get access to the memory space. When the first thread(T1) finish it is action with the shared variable, then releasing the memory space and the second thread(T2) can execute the it's transaction on the shared variable.\cite{Dennis} \\
+When the first thread(T1) get ownership of the memory address and the second thread(T2) try to access the same memory space, then the second thread will fail. Because the software use STM implementation, the method must be atomic and the second thread keep trying get access to the memory space. When the first thread(T1) finish it is action with the shared variable, then releasing the memory space and the second thread(T2) can make its changes on the shared variable.\cite{Dennis} \\
 
 
 {\setlength{\parindent}{0cm}
@@ -319,14 +323,14 @@ All updates occur via transactions:\cite{Kenneth}\textit{\color{gray}Figure 16.}
 
 \subsection{STM algorithms}
 \subsubsection{Lock based concurrency}
-Is a mechanism to control threads to access shared memory space. It uses locks to take control or ownership of the mutex lock before any other thread can access then critical section to make changes on the shared variable. Whit this way of programming design the object is associated with the lock.\cite{Volkmann}\\
+Is a mechanism to control threads to access shared memory space. It uses locks on the memory space to take control or ownership of the mutex lock before any other thread can access then critical section to make changes on the shared variable. Whit this way of programming design the object is associated with the lock.\cite{Volkmann}\\
 
 {\setlength{\parindent}{0cm}
 \textbf{Benefits :} in very small system easier to implement lock based concurrency.\\
 
 \textbf{Issues:} needs explicit control of lock, that can be very difficult in big system. Easy to produce deadlock, livelock.}\\
 \subsubsection{Actor based concurrency}
-The actor model is an another way to control concurrent programming. In this way the actors are  separate light-weight threads. Instead take ownership of the lock the actors are communicating with each other via message passing.cite{Volkmann}\\
+The actor model is an another way to control concurrent programming. In this way the actors are  separate light-weight threads. Instead take ownership of the lock the actors are communicating with each other via message passing.\citep{Volkmann}
 
 {\setlength{\parindent}{0cm}
 \textbf{Benefit :} memory not shared.\\
@@ -344,7 +348,7 @@ Why programmers should use Software Transactional Memory implementation if the s
 
 In other worlds the STM try to simplifying the concurrent programming. In threaded programming must use locks and condition variables. With STM easier to write clear code, since don't need to use locks and condition variables and programmer can specify code regions are executing atomically.\\
 
-Locking provides poor support for code compositions and reuse. The software that use transactional programming features, every shared memory access divided into transactions, which are indented to be executed atomically. All the transactions operations are atomically in which all changes takes place or all rolling back if any part of the transactions has failed.\citep{STM}
+Locking provides poor support for code compositions and reuse. The software that use transactional programming features, every shared memory access divided into transactions, which are indented to be executed atomically. All the transactions operations are atomic in which all changes takes place or all rolling back if any part of the transactions has failed.\citep{STM}
 
 \subsection{STM Code semantics.}
 "\textit{C++ supports transactional memory in two flavours: synchronized blocks and atomic blocks.}\cite{Grimm}
@@ -424,7 +428,7 @@ atomic_noexcept			atomic_noexcept
 {\setlength{\parindent}{0cm}
 The output can be like the follow:\\
 \textbf{Hello Hello ... Hello}\\
-It could be print more Hello because one of the transaction rolls back and restart the transaction!\\
+It could be print more Hello because one of the transaction rolls back and then restart the transaction!\\
 }
 
 {\setlength{\parindent}{0cm}
@@ -652,7 +656,7 @@ STM make programmers life easier since don't need to use semaphores and mutex lo
 There are advantages and disadvantages with the Software Transactional Memory.
 \subsubsection{Advantage of STM.}
 \begin{enumerate}
-\item Crossing the the memory barrier.
+\item Crossing the memory barrier.
 \item Easier to read, write, extend.
 \item Transactional methods and variables.
 \item Deadlock and live-lock are prevented.
@@ -1004,7 +1008,7 @@ Supported platforms :
 \item MacOS
 \end{enumerate}
 
-\item \textbf{Microsoft Visual Studio(MSVS) : } is Microsoft IDE that available in free community version and payable professional version. MVSV is a very powerful software developer kit to create desktop, web, mobile, console and nearly any kind of application. It's code editor support IntelliSense(code completition) and code refactoring. MSVS has built integrated debugger that works on source-code and on machine-code level as well. As a built in feature MSVS able to create C++ GUI application without any external library. However, it is works on Windows platform and just released to Mac OsX, Microsoft Visual Studio is a very powerful Integrated Development Environment.\cite{VS}\\
+\item \textbf{Microsoft Visual Studio(MSVS) : } is Microsoft IDE that available in free community version and payable professional version. MVSV is a very powerful software developer kit to create desktop, web, mobile, console and nearly any kind of application. It's code editor support IntelliSense(code completition) and code refactoring. MSVS has built integrated debugger that works on source-code and on machine-code level as well. As a built in feature MSVS able to create C++ GUI application without any external library. However, it is works on Windows platform and just released to Mac OsX.\cite{VS}\\
 
 \begin{figure}[h!]
 \centering
@@ -1085,7 +1089,7 @@ Supported platforms :
 }
 
 \subsection{Compilers}
-While the IDE helps to create a runnable code the compiler takes this program code or source code/high-level language and converts it to machine code or low-level language. Then that code will be translated to an executable file that the computer able to run on the operating system. In other word, the compiler converts the instructions set to machine code that computer can run. The different platforms has many different free and payable compilers available to use. There are  major different between the compilers like code optimization, minor syntactical difference, runtime libraries used, header, implementation and more.\cite{Bolton}\\
+While the IDE helps to create a runnable code the compiler takes this program code or source code/high-level language and converts it to machine code or low-level language. Then that code will be translated to an executable file that the computer able to run on the operating system. In other word, the compiler converts the instructions set to machine code that computer can run. The different platforms has many different free and payable compilers available to use. There are  major different between the compilers like code optimization, minor syntactical difference, runtime libraries used, header implementation and many more.\cite{Bolton}\\
 
 To create a cross-platform project in C++ has no real solution. The best way to run a C++ application on the target platform is to use the default platform supported or a platform specific compiler.\\
 
@@ -1141,9 +1145,9 @@ As advantages in concurrent programming design  is to help increase the performa
 However, it has lots of advantages that must mention the difficulties with the code writing design and the complicated debugging process as the disadvantages.   
 
 \subsection{Software Transactional Memory}
-The Software Transactional Memory is a lock free solution of concurrent programming, since it doesn't need to use mutex and semaphores to control threads. It is easier to read , maintain, extend and work with the high level objects and modules. It offers transactional environment without extra hardware cost.\\ 
+The Software Transactional Memory is a lock free solution of concurrent programming, since it doesn't need to use mutex and semaphores to control threads if we use compiler supported syntaxes, but it need a special compiler support. The another way to create STM to use shared memory based locking with mutex lock. It is easier to read , maintain, extend and work with the high level objects and modules. It offers transactional environment without extra hardware cost.\\ 
 
-As the main advantages the STM prevents deadlock, livelock, uses transactional methods, atomic variables and controlling the threads in easier manner than the semaphores and mutex can. As a disadvantage, performance issues can happen because the transactions may roll back too many times before the threads finish their execution in the transactional function.\\
+As the main advantages the STM prevents deadlock, livelock, uses transactional methods and controlling the threads in easier manner than the semaphores and mutex can. As a disadvantage, performance issues can happen because the transactions may roll back too many times before the threads finish their execution in the transactional function.\\
 
 \subsection{Platform and Compilers}
 C and C++ programming languages are required compiler to translate the source code to object code or machine code to run on the operating system. Every programming language has many different versions of compiler on the different operating platforms. However, there are many compiler forms in  diverse languages, no real cross-platform compiler solution to the C programming language family. If the source code is written in the plain C99 or C++11 standard without any external library, that should be able to compile on any Unix standard operation system platform but not on Windows. To get working on Windows platform, it needs to use conditional compilation with \#if preprocessor directive to wrap all the operating specific services at compilation time.\\ 

@@ -1,4 +1,0 @@
-<map id="BOI::GetBalance" name="BOI::GetBalance">
-<area shape="rect" id="node2" href="$class_b_o_i.html#a4b4a3976cc13c4d3de0d7ff8882a7af3" title="BOI::operator=" alt="" coords="321,5,429,32"/>
-<area shape="rect" id="node3" href="$class_b_o_i.html#ab02a4dd4ebcc5b2abfaca19f2dff2006" title="_cast, is use to cast bak the std::shared_ptr&lt;OSTM&gt; to the required type " alt="" coords="175,31,273,57"/>
-</map>

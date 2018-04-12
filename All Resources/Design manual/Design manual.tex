@@ -27,6 +27,11 @@
     showstringspaces=false,
     morekeywords={include, printf,transactionManager,transaction,startTransaction,TM, TX,createTX,destroyTX,storeTransaction,commitTransaction,commitTransactions,std::this_thread::get_id()}
 }
+\lstset { %
+	language=C++,
+	backgroundcolor=\color{black!5}, % set backgroundcolor
+	basicstyle=\footnotesize,% basic font setting
+}
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\textit{\color{gray}\today}}
@@ -80,7 +85,7 @@
 \setcounter{page}{1}
 
 \section{Introduction}
-This document is introducing the design of the C++ STM library logic and structure. The document will describe the flow of the data within the library and the external application that uses the STM library. The use case diagram will discover the possible library API interface functionalities that need to implement in the project. With the use cases and the detailed use cases can characterize the required steps and potential alternative steps during the library execution life cycle. The domain model shows the main functionality of the library and the association between the software components, follows with the sequence diagram that helps to understand the sequence of steps required to implement lock free, object based locking atomic, transactional mechanism.\\
+This document is introducing the design of the C++ STM library logic and structure. The document will describe the flow of the data within the library and the external application that uses the STM library. The use case diagram will discover the possible library API interface functionalities that need to implement in the project. With the use cases and the detailed use cases can characterize the required steps and potential alternative steps during the library execution life cycle. The domain model shows the main functionality of the library and the association between the software components, follows with the sequence diagram that helps to understand the sequence of steps required to implement lock free, object based locking, transactional mechanism.\\
 
 This document helps to discover the potential errors and required handlers with the use cases and the sequence diagram. However, this diagrams and use case descriptions are identify the potential issues and risks, that may can mislead the future development if not well designed. To use, or test the STM library implementation, the programmers must to write their own client application and includes the library, like any other (external) libraries in C or C++ programming design. The usage of the library will happen with the API function calls, that will be described in the use case diagram and studies thoroughly in the detailed use cases.\\
  
@@ -111,7 +116,7 @@ When the \textbf{create transaction} API call happens by the application, the li
 
 The \textbf{start transaction} API call will starting the process of the Object transactional life cycle. First, place the object into the (global shared) read set, and creates a copy of it to the write set, to use it for local temporary changes, and add a version number to it, as a counter to determine the Object changes. Because more then one thread can use the same object, it must check the version number at the first step to determine the changes at early stage of the object transactional life cycle. If the version number in the object is different then the global version number, the transaction will cancel and restart. If the version number that the object hold and the global version number in the write set are same, then the copy of the object in the write set will update to the new required value. Before the original object can change from the local copy, the transaction library must check the version numbers equality again. If the version numbers are same, that means no other process accessed the same object during the updating process, and the object can get assign the new value. Otherwise, the transaction must cancel and the life cycle restart again.\\
 
-In this phase of the program execution, the transaction marked as processable process, and the \textbf{commit method} available for execution. This API call will update the original object, update/increase the version number assigned to it and returns back to the main process to finish it execution. If other processes or thread are still using the same object, they must detect the changes on the version number, and restart the transactional if required.
+In this phase of the program execution, the transaction marked as processable process, and the \textbf{commit method} available for execution. This API call will update the original object, update/increase the version number assigned to it and returns back to the main process to finish its execution. If other processes or thread are still using the same object, they must detect the changes on the version number, and restart the transaction if required.
 
 \newpage
 \section{API usage}
@@ -425,7 +430,7 @@ bool storeTransactions(std::thread::id id, vector<Tobj*> & accounts){
 
 \newpage
 \section{Use case}
-This section of the document the use case diagram will list the API actions or event steps, to define the interactions within the processes.
+This section of the document the use case diagram will list the API functions or events, to define the interactions between the client application and the library.
 
 \begin{figure}[h!]
 \centering

@@ -14,6 +14,7 @@
 \usepackage[hyphens,spaces,obeyspaces]{url}
 \usepackage{hyperref}
 \pagenumbering{roman}
+\usepackage{subfig}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -21,7 +22,11 @@
     citecolor = gray,
     linktoc=all
 }
-
+\lstset { %
+    language=C++,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\textit{\color{gray}\today}}
@@ -149,8 +154,10 @@ The initial goal was to implement a Software Transactional Solution in C++ langu
 \item Comparison: Compare with other STM approaches.
 \end{enumerate}
 \subsection{Achieved}
-\textbf{Mandatory} : The STM implementation has achieved using any number of threads/transactions, and any number of objects/complexity. The prove that the transactions are not visible to other transactions, the test cases using multiple threads with the same objects, cause race condition. If the transactions are invisible to each other, and checking the other objects at commit time, the objects state should be consistent when all the transactions are finish with its changes on the objects. The memory of course is shared between transaction, to prove it we can display the object after all transactions finish with the computation on them, and if all the transactions accessed the same objects the final value should increased and consistent. Of course, to prove the STM not corrupting the objects within the transactions, we can execute the same code repeatedly, and the object state after the transactions finished should be same all the time.\\
-The library fully documented with the Doxygen document generating tool and linked, available through the project website alongside the tutorials and the downloadable multi platform (Windows, Linux, MAC OSX) library files.
+\textbf{Mandatory} : The STM implementation has achieved using any number of threads/transactions, and any number of objects/complexity. The prove that the transactions are not visible to other transactions, the test cases using multiple threads with the same objects, to cause race conditions. If the transactions are invisible to each other, and checking the other objects at commit time, the objects state should be consistent when all the transactions are finish with its changes on the objects.\\
+The memory of course is shared between transaction, to prove it we can display the object values/state after all transactions finish with the computation on them, and if all the transactions accessed the same objects the final value/state should increased and consistent. To prove the STM not corrupting the objects within the transactions, we can execute the same code repeatedly, and the object state after the transactions finished should be same all the time.\\
+
+The library fully documented with the Doxygen document generating tool and linked, available through the project website alongside the tutorials and the downloadable multi platform (Windows, Linux, MAC OSX) library files.\\
 
 As an extra the transaction nesting is added to the library, where we can nesting our transactions to any level. It means, if the transaction dependent on other logical inner transaction, all the nested transaction will be executed as a a single unit.\\
 
@@ -159,7 +166,7 @@ As an extra the transaction nesting is added to the library, where we can nestin
 \textbf{Exceptional}: Benchmarks, is not implemented yet, but hopefully it will be ready to the end of the project lifetime. To compare with other similar STM solution is not the easiest task, since my library using objects, and the most STM solution with available code using primitive type pointer based implementation. 
 
 \subsection{Not achieved}
-The Software Transactional Memory is a very research heavy area, and most of the papers I found during my research are from Master and PHD level. It is not an easy subject, and I should try using different collection like binary tree, Red-Black tree, linked list and many other structure to compare the performance between them.\\
+The Software Transactional Memory is a very research heavy area, and most of the papers I found during my research are from Master and PHD level. It is not an easy subject, and I should try using different data structure like binary tree, Red-Black tree, linked list and many other to compare the performance between them.\\
 
 
 \newpage
@@ -194,46 +201,86 @@ During the development I have learning a lots from transactions, concurrency con
 \subsection{Personal learning}
 \textbf{I have learned from my project:}
 \begin{enumerate}
-\item Time management.
-\item Setting targets for iterations.
-\item Why good research is very important.
-\item Design efficient code in productive way.
-\item Design the solution first in theory on paper, before jump into the code.
+\item \textit{\textbf{Time management}}.\\
+Deliver planned portion of the project for a given deadline. 
+\item \textit{\textbf{Setting more specific targets for iterations}}.\\
+There was no weakly plan for the iterations, I only had a big picture to achieve to the end of the iterations. 
+\item \textit{\textbf{Why good research is very important.}}\\
+If I spend a bit more time on a given question, that caused problem later in the development, that can save lots of time and I don't need to repeat a research around the given problem. 
+\item \textit{\textbf{Design efficient code in productive way}}.\\
+The first versions of the library contains huge amount code, where the single \textit{\textbf{load}} function was much bigger then the whole transaction class at the end of the project.
+\item \textit{\textbf{Design the solution first in theory on paper, before jump into the code}}.\\
+Before this project I had a bad hobbit, like jump into the code and design the the application on the fly. The structure of the project with the research and design documents shows a different way, how to think about the problem before start coding.     
 \end{enumerate}
 
 \section{What I would do differently if starting it again}
-If I've to do this project again, I would spend more bit more time with research on pointers, and not relying on the opinion by other programmers and on my personal preference. If I use smart pointers from the begging, I should not redesign my code from RAW pointers. The another area to spend more time is the way of store the unknown objects. When I found the third party boost library, I've finished the research and made my decision to use it. With a bit more research on boot library I could save lots of time, because most of the code needed to be redesign when it was replaced with standard map collection using inheritance. Otherwise, the project was out of my comfort zone, and everything about Software Transactional Memory concepts was completely new to me.\\
+If I've to do this project again, I would spend bit more time with research on the object base locking and not spending that much time to find out all the compiler supported transactional syntaxes. My library use object rather than primitive type variable in the  library.\\
+
+At the end my project ended up with object base locking and using the base operating system provided compiler. The area I would spend more time the pointers, and not relying on the opinion by other programmers and on my personal preference. If I use smart pointers from the begging, I don't need to redesign my code from RAW pointers to smart pointers.\\
+
+The another area to spend more time is the way of store the unknown objects. When I found the third party boost library, I've finished the research and made my decision to use it. With a bit more research on boot library I could save lots of time, because most of the code needed to be redesign when it was replaced with standard map collection using inheritance. Otherwise, the project was out of my comfort zone, and everything about Software Transactional Memory concepts was completely new to me.\\
 
 \section{Report on document update}
 Between the design document and the final implementation there is some changes.
 \begin{enumerate}
-\item There is no start transaction API function.\\
+\item \textbf{There is no start transaction API function}.\\
 The library API design was similar to TinyStm (STM library) API implementation, where is the client application need to notify the library to start the transaction. In my library solution, the singleton Transaction Manager manages all the transactions and the management is automatically behind the scene.  
-\item Object names and API function declarations.\\
+\item \textbf{Object names and API function declarations}.\\
 In the design document, perhaps in the first iterations the process id, and the thread id was part of the parameters in the API functions. Because, it makes the library usage very difficult, I tried to remove all the extra requirements in the API function parameters, and keep them as simple as possible. The object and function names are changed as well, now they are shorter and more meaningful.
-\item Domain model.
+\item \textbf{There is no functions to receive collections}.
+In the design document I have separated functions to work with collections, but those ideas are removed from the final product. The client application can iterate through the collections to register and make changes on the objects. It gives full control on the objects to the client application rather than trusting in the library.
+\item \textbf{Double version checking}.
+The library use object based locking mechanism, that close out other transactions while a single transaction has ownership on the objects. With this design, the another transactions cannot access the same object and the double checking mechanism not necessary, only makes the execution time longer.
+\item \textbf{Domain model}.
 Actually the Domain model has change a lot about the API functions, for this reason I have added the new updated domain model to the Design Document with the connected sample classes. I found better way to manage the transactions, if I leave only few available options to the client application to use, and manage everything by the library automatically. In this way the library has less API function, that makes it easier to use, but has better management in my opinion. 
 \end{enumerate}
 
 \subsection{Additional research}
 A small additional research required to the nested transactions implementation, because it was not in the description and the research was narrowed down to the main functionalities.\\
-The another part that needed research, is unit testing for C++ programming language.\cite{cookbook} As everything else, the unit testing for c++ language is more difficult then sequential programming.
+The another part that needed research, is unit testing for C++ programming language.\cite{cookbook} As everything else, the unit testing for c++ multi-threaded environment is more difficult then sequential programming.
 
 \section{Module description}
 The Software Transactional Memory C++ library, is a concurrency control mechanism, analogous to the database transactions. The library provide lock free programming solution to the client application, to manage shared memory spaces between transactions. The library built up from three main parts, Transaction Manager, the transaction object and the base object. If the client application using my library, then the way of programming in the client application is exactly same, as to programming a sequential coded application. The library take care of the thread synchronization, race-condition and memory corruption protection. The client application only need to create and use the threads, but doesn't need to worry about locking any function or code segment.   
 
 
 \subsubsection{Transaction Manager}
-The Transaction Manager responsible to manage all the transaction associated with the connected client application. When a Transaction Manager requested from the library, then a singleton object provided to the application to manage the transactional environment. The Transaction Manager is the only object who has permission to create a transaction object. The client application cannot create or request a transaction. This restriction was necessary to implement, because the library need full control on the created transactions with a single controller. Every single public API function, which receiving a reference of an object, could throw a runtime error, if the client application try to use or store an illegal or null pointer.\\
+The Transaction Manager responsible to manage all the transaction associated with the connected client application. When a Transaction Manager requested from the library, then a singleton object provided to the application to manage the transactional environment. The Transaction Manager is the only object who has permission to create a transaction object. The client application cannot create or request a transaction. This restriction was necessary to implement, because the library need full control on the created transactions with a single controller. Every single public API function in the library, could throw a runtime error, if the client application try to use an illegal or null pointer of an object.\\
 
 \textbf{\textit{"TX EXIT"}} public function is providing the memory clearing management to the library. If the library shared, then the used memory by the main process should be cleaned up before the process exit. However, the library using smart pointer, that get destroyed when goes out of the scope, the process associated collections are still in the memory. The \textbf{\textit{"TX EXIT"}} function should be called by the client application, to delete all process maintained values. The Transaction Manager in this function deletes all the main process specific stored values, and calls the \textbf{\textit{"ostm exit"}} transactional function to clean up the global map from the main process specific memory spaces as well. In this way the shared library still running in the background in the operating system, but not accumulating the memory usage. \\ 
 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{Pictures/TM.png}
+\caption*{\textit{\color{gray}Transaction Manager.}}
+\end{figure}
+
 \subsubsection{Transaction object}
-The transaction objects created by the Transaction Manager can access the library API functions, to mange polymorphic objects throughout the transaction lifetime. It's including to register, load, store and commit the objects accessed by the transaction. There are more functions in the library, but those functions are not accessible to the client application. Those functions are private and automated within the transactions. Transaction can handle all process specific objects. The process can be the main process or light-weight process as well. To use transactions, doesn't need to used threads at all. All transaction has private objects and collections, and sharing some class level field and collection too. The class level sharing necessary to use, because the library must let to communicate the transactions when they needed. These communications are not controlled, since the thread sequence executions are completely random, controlled by the kernel. The communication happens in the register function, because all the transaction accessing the shared collection with write access. The sharing happens on the original objects between all the executing transactions, and its controlled by the objects locking mechanism itself.  
+The transaction objects created by the Transaction Manager can access the library API functions, to mange polymorphic objects throughout the transaction lifetime. It's including to register, load, store and commit the objects accessed by the transaction. There are more functions in the library, but those functions are not accessible to the client application. Those functions are private and automated within the transactions. Transaction can handle all process specific objects. The process can be the main process or light-weight process as well. To use transactions, doesn't need to used threads at all.\\
+
+All transaction has private objects and collections, and sharing some class level field and collection too. The class level sharing necessary to use, because the library must let communicate the transactions when they needed. These communications are not controlled, since the thread sequence executions are completely random, controlled by the kernel. The communication happens in the register function, because all the transaction accessing the shared collection with write access. The sharing happens on the original objects between all the executing transactions when ever they needed, and its controlled by the objects locking mechanism itself.  
+
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{Pictures/TX.png}
+\caption*{\textit{\color{gray}Transaction Object.}}
+\end{figure}
 
 \subsubsection{Base object}
-The base object provides all the required fields and functions to the inherited classes to work with the library. It is creating the uniqueness to the inherited objects, that required by the library to identify every single objects is used, registered within the library. The base object providing the locking and the copying mechanism to the library as well, through polymorphic behaviour. 
-  
+The base object provides all the required fields and functions to the inherited classes to work with the library. It is creating the uniqueness to the inherited objects, that required by the library to identify every single objects used, registered within the library. The base object providing the locking and the copying mechanism to the library as well, through polymorphic behaviour. 
+
+\begin{figure}%
+    \centering
+    \subfloat[Inheritance from base object]{{\includegraphics[width=6cm]{Pictures/BASE.png} }}%
+    \qquad
+    \subfloat[Target class inheritance]{{\includegraphics[width=6cm]{Pictures/aib.png} }}%
+    \caption*{\textit{\color{gray}OSTM based object types}}%
+    \label{fig:example}%
+\end{figure}
+
+\newpage
 \subsection{Public API functions for transactions}
 \subsubsection{Register}
 The register function receiving a base class type smart pointer to register into the library. If the object already registered, the library will ignore the register request. When the object registered first time within the library, goes into the global shared map, and a copy of the object( working copy ) get registered in the transaction as well. This object will be used to make temporary changes associated with the target object, memory space during the transaction what is invisible to other transactions. 
@@ -249,7 +296,13 @@ The commit API call is the most complex function in the transaction. First the l
 
 When the transaction get access/ownership to the object, then will lock it, and compare the version number associated with working copy and the original object. If any of the object within the transaction collection has different version number than the global shared original object, the transaction should finish and get the new updated values for all the working copies. When the transaction finishes, it will call the private function in the library, to unlock all the global objects associated with the transaction.\\
 
-If the transaction committed all the changes on all the objects, then return true to the client application to indicate the transaction successful finished with the changes. If any version conflict was detected during the transaction, the function  returns false to the client application to indicate, it need to restart the transaction. Since, the commit function doesn't take any object reference, because it knows all the associated working copies and global shared objects with the transaction, we cannot cause any programmed error from outside in the commit phase with illegal object or null pointer.
+If the transaction committed all the changes on all the objects, then return true to the client application to indicate the transaction successful finished. If any version conflict was detected during the transaction, the function  returns false to the client application to indicate, it need to restart the transaction. Since, the commit function doesn't take any object reference, because it knows all the associated working copies and global shared objects with the transaction, we cannot cause any programmed error from outside in the commit phase with illegal object or null pointer.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6cm]{Pictures/commit.png}
+\caption*{\textit{\color{gray}Automated functions.}}
+\end{figure}
 
 \subsection{Private API and Transaction Manager functions}
 \subsubsection{Transaction Manager}
@@ -259,7 +312,9 @@ When the singleton Transaction Manager request for a transaction object, the tra
 During the register process, the transaction request a new map from a private function to every single application, to store all the associated transactions with the main process.\\
 If the transaction finish or need to restart, will call the private function to release all the global shared objects, give access to the other transactions make changes on them.\\ 
 When the transaction finish with the changes on the objects, it calls the exit private function to clean up all the associated working copies from the memory.\\
+
 The transaction manger can  call a function to clean up the global shared map from all the associated memory spaces before the application exists.\\
+
 The transaction manager can call a function to increase a value within the transaction to indicating the nesting level. To decrease a nesting level, the transaction need make a call from the commit function, if the transaction want to commit the changes, but the transaction is nested.
 
 \section{Data structure}
@@ -269,32 +324,32 @@ The library need to create good few collections to keep the association between 
 \subsection{Transaction Manager}
 To store all transactional objects created with Transaction Manager:
 \begin{lstlisting}
-map<std::thread::id, std::shared_ptr<TX>>txMap;
+std::map<std::thread::id, std::shared_ptr<TX>>txMap;
 \end{lstlisting}
 To store all process (threads) associated keys to find when deleting transactions. 
 \begin{lstlisting}
-map<int, std::map< std::thread::id, int >> process_map_collection;
+std::map<int, std::map< std::thread::id, int >> process_map_collection;
 \end{lstlisting}
 Function used to return a map to insert to the process map collection as an inner value.
 \begin{lstlisting}
-:map< std::thread::id, int > get_thread_Map();
+std::map< std::thread::id, int > get_thread_Map();
 \end{lstlisting}
 \subsection{Transaction object (TX)}
 To store parent based pointers to make invisible changes during isolated transaction.
 \begin{lstlisting}
-map< int, std::shared_ptr<OSTM>  > working_Map_collection;
+std::map< int, std::shared_ptr<OSTM>  > working_Map_collection;
 \end{lstlisting}
 To store parent based pointers to control/lock and compare objects version number within transactions.
 \begin{lstlisting}
-map<int, std::shared_ptr<OSTM>  >main_Process_Map_collection
+std::map<int, std::shared_ptr<OSTM>  >main_Process_Map_collection
 \end{lstlisting}
 To store all process associated keys to find when deleting transactions.
 \begin{lstlisting}
-map<int, std::map< int, int >> process_map_collection;
+std::map<int, std::map< int, int >> process_map_collection;
 \end{lstlisting}
 Function used to returning and map to insert to the process map collection as an inner value
 \begin{lstlisting}
-map< int , int > get_thread_Map()
+std::map< int , int > get_thread_Map()
 \end{lstlisting}
 \section{Testing}
 As part of the developer tools I used CppUnit, unit testing framework to test the API functions and the library functionality.  
@@ -309,15 +364,17 @@ As part of the developer tools I used CppUnit, unit testing framework to test th
 \item Complex transaction with multiple threads and object collections.
 \end{enumerate}
 
-The documentation with the test code from the CppUnit test, can be found on the project website under CppUnit test.
-\section{Conclusion}
-This project was out of my comfort zone, with the concurrent programming and the Transactional environment. During my internship I have met with the transactions in Java framework, and now I had chance to learn how to implement it with C++ programming language. This project is really different from another project or from previous experience, where we need to create communication between programming components, create GIU interface to interact with the system and store values in the database.\\
+\includegraphics[scale=0.2]{Pictures/test.png}
 
-This project required to produce a library(s), that can be used by other c++ applications. The most time consuming part of the project was to find out the best base class and create the client application to use the library, with the polymorphic objects/classes, that is after all not part of the final product, but without that development and implementation the library development is impossible to carry out.\\
+\textit{\textbf{The documentation with the test code from the CppUnit test, can be found on the project website under CppUnit test.}}
+\section{Conclusion}
+This project was out of my comfort zone, with the concurrent programming and the Transactional environment. During my internship I have met with the transactions in Java framework, and now I had chance to learn how to implement it in C++ programming language. This project is really different from another project or from previous experience, where we need to create communication between programming components, create GIU interface to interact with the system and store values in the database.\\
+
+This project required to produce a library(s), that can be used by other ++ applications. The most time consuming part of the project was to find out the best base class and create the client application to use the library, with the polymorphic objects/classes, that is after all not part of the final product, but without that development and implementation the library development is impossible to carry out.\\
 
 I think it is not an easy subject, since we need to working with multi threaded environment, without any visual feedback. The only visual feedback is the console could be, where is the threads can printing out the feedback/string in any order, since we are not using lock in the code segment. If we using lock in the code segment to control the threads visual feedback, then the code is behaving differently then it suppose to be.\\ 
 
-I have learned a lot from this project, how to control multiple threads without locking, and implement transactional environment without using any framework or someone else library. However, Software transactional Memory obsolete over the past few years, I think it is a very good experience/knowledge to know how transactions are implemented in the applications.
+I have learned a lot from this project, how to control multiple threads without locking, and implement transactional environment without using any framework or someone else library. However, Software transactional Memory obsolete over the past few years, I think it is a very good experience/knowledge to know how transactions are implemented in the applications or libraries.
 \newpage
 \section{Bibliography}
 \begin{center}

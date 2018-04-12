@@ -1,4 +1,0 @@
-<map id="_two_account_transfer_" name="_two_account_transfer_">
-<area shape="rect" id="node2" href="$main_8cpp.html#a5675cb594d74aa1bf5e80233370ffd81" title="nesting function, takes two std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well " alt="" coords="215,5,293,32"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="341,5,392,32"/>
-</map>

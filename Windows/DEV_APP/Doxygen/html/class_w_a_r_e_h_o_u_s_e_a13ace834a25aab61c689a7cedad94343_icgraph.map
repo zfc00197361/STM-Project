@@ -1,6 +1,0 @@
-<map id="WAREHOUSE::SetNumber_of_nokia" name="WAREHOUSE::SetNumber_of_nokia">
-<area shape="rect" id="node2" href="$main_8cpp.html#a12500f2bcc3c3bb8ad7dd9d74c1637d1" title="_complex_warehouse\l_transfer_" alt="" coords="739,21,887,63"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a52fcb0d50c67be8cd20f2aca338683c7" title="nested_warehouse_transfer function, takes three std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manage..." alt="" coords="495,29,691,55"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#a1c170f18aac9dbb8aba1ad2f7e4619cc" title="warehouse_transfer function, takes two std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manager..." alt="" coords="267,79,418,106"/>
-<area shape="rect" id="node5" href="$class_w_a_r_e_h_o_u_s_e.html#a91a50ed8f6eeb344b1785f750532b18a" title="WAREHOUSE::WAREHOUSE" alt="" coords="239,130,447,157"/>
-</map>

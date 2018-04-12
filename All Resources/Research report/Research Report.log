@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.3.26)  1 APR 2018 00:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.1)  10 APR 2018 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **"Research Report.tex"
 (./Research Report.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 69 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
@@ -91,7 +91,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen110
 \Gin@req@width=\dimen111
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/placeins.sty
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
@@ -266,24 +266,33 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 23.
 
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
 (./Research Report.aux)
 \openout1 = `"Research Report.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -323,7 +332,7 @@ e
 ))
 \c@lstlisting=\count115
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring ON on input line 33.
+Package hyperref Info: Link coloring ON on input line 37.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -333,28 +342,28 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count116
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
+LaTeX Info: Redefining \ref on input line 37.
+LaTeX Info: Redefining \pageref on input line 37.
+LaTeX Info: Redefining \nameref on input line 37.
 
 (./Research Report.out) (./Research Report.out)
 \@outlinefile=\write3
 \openout3 = `"Research Report.out"'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
 
 <Pictures/carlow.png, id=237, 266.9975pt x 144.54pt>
 File: Pictures/carlow.png Graphic file (type png)
  <use Pictures/carlow.png>
-Package pdftex.def Info: Pictures/carlow.png used on input line 59.
+Package pdftex.def Info: Pictures/carlow.png used on input line 63.
 (pdftex.def)             Requested size: 186.89696pt x 101.17729pt.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Pictures/carlow.png>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
 
 (./Research Report.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -382,16 +391,6 @@ l.35 ...umberline {5}STM Libraries}{26}{section.5}
 \openout4 = `"Research Report.toc"'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
@@ -401,9 +400,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-[1
 
-]
 Underfull \hbox (badness 10000) in paragraph at lines 81--82
 
  []
@@ -413,10 +410,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+[1
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+]
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
@@ -426,7 +435,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
 File: Pictures/Concurrency_multicore-multithreada.png Graphic file (type png)
  <use Pictures/Concurrency_multicore-multithreada.png>
 Package pdftex.def Info: Pictures/Concurrency_multicore-multithreada.png used o
-n input line 96.
+n input line 100.
 (pdftex.def)             Requested size: 184.0622pt x 113.67441pt.
 
 
@@ -445,7 +454,7 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
@@ -454,14 +463,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--106
 File: Pictures/single_core.png Graphic file (type png)
 
 <use Pictures/single_core.png>
-Package pdftex.def Info: Pictures/single_core.png used on input line 110.
+Package pdftex.def Info: Pictures/single_core.png used on input line 114.
 (pdftex.def)             Requested size: 155.99762pt x 141.44214pt.
 
 <Pictures/multi_core.png, id=397, 301.125pt x 273.02pt>
 File: Pictures/multi_core.png Graphic file (type png)
 
 <use Pictures/multi_core.png>
-Package pdftex.def Info: Pictures/multi_core.png used on input line 115.
+Package pdftex.def Info: Pictures/multi_core.png used on input line 119.
 (pdftex.def)             Requested size: 155.99762pt x 141.44214pt.
 
 <Pictures/concurrent_vs_parallel.png, id=400, 877.2775pt x 250.9375pt>
@@ -469,7 +478,7 @@ File: Pictures/concurrent_vs_parallel.png Graphic file (type png)
 
 <use Pictures/concurrent_vs_parallel.png>
 Package pdftex.def Info: Pictures/concurrent_vs_parallel.png used on input line
- 127.
+ 131.
 (pdftex.def)             Requested size: 263.18527pt x 75.28181pt.
 
 
@@ -479,12 +488,12 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
@@ -493,25 +502,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 134--135
 File: Pictures/single_multi_thread.png Graphic file (type png)
 
 <use Pictures/single_multi_thread.png>
-Package pdftex.def Info: Pictures/single_multi_thread.png used on input line 13
-8.
+Package pdftex.def Info: Pictures/single_multi_thread.png used on input line 14
+2.
 (pdftex.def)             Requested size: 301.12425pt x 212.2926pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 
-Overfull \hbox (14.67188pt too wide) in paragraph at lines 145--146
+Overfull \hbox (14.67188pt too wide) in paragraph at lines 149--150
 \OT1/ptm/m/n/12 de-sign, that de-rives to new is-sues and re-quire cre-at-ing l
 ocks on shared vari-ables/mem-
  []
@@ -521,13 +530,13 @@ ocks on shared vari-ables/mem-
 File: Pictures/issue1.png Graphic file (type png)
 
 <use Pictures/issue1.png>
-Package pdftex.def Info: Pictures/issue1.png used on input line 150.
+Package pdftex.def Info: Pictures/issue1.png used on input line 154.
 (pdftex.def)             Requested size: 155.99762pt x 127.85257pt.
  <Pictures/issue2.png, id=424, 337.26pt x 256.96pt>
 File: Pictures/issue2.png Graphic file (type png)
 
 <use Pictures/issue2.png>
-Package pdftex.def Info: Pictures/issue2.png used on input line 155.
+Package pdftex.def Info: Pictures/issue2.png used on input line 159.
 (pdftex.def)             Requested size: 155.99762pt x 118.85782pt.
  [6 <./Pictures/single_multi_thread.png> <./Pictures/issue1.png> <./Pictures/is
 sue2.png>]
@@ -535,17 +544,17 @@ sue2.png>]
 File: Pictures/deadlock.png Graphic file (type png)
 
 <use Pictures/deadlock.png>
-Package pdftex.def Info: Pictures/deadlock.png used on input line 171.
+Package pdftex.def Info: Pictures/deadlock.png used on input line 175.
 (pdftex.def)             Requested size: 200.7495pt x 122.95906pt.
  [7 <./Pictures/deadlock.png>]
 <Pictures/livelock.png, id=445, 311.66437pt x 199.49532pt>
 File: Pictures/livelock.png Graphic file (type png)
 
 <use Pictures/livelock.png>
-Package pdftex.def Info: Pictures/livelock.png used on input line 180.
+Package pdftex.def Info: Pictures/livelock.png used on input line 184.
 (pdftex.def)             Requested size: 155.8318pt x 99.7474pt.
 
-Overfull \hbox (3.52103pt too wide) in paragraph at lines 185--186
+Overfull \hbox (3.52103pt too wide) in paragraph at lines 189--190
 []\OT1/ptm/m/n/12 Starvation is the state when some threads are mak-ing progres
 s, but other threads
  []
@@ -554,70 +563,70 @@ s, but other threads
 File: Pictures/starvation.jpg Graphic file (type jpg)
 
 <use Pictures/starvation.jpg>
-Package pdftex.def Info: Pictures/starvation.jpg used on input line 189.
+Package pdftex.def Info: Pictures/starvation.jpg used on input line 193.
 (pdftex.def)             Requested size: 240.90184pt x 135.50728pt.
  [8 <./Pictures/livelock.png> <./Pictures/starvation.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 198--199
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--205
+Underfull \hbox (badness 10000) in paragraph at lines 207--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--214
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
 
  []
 
 [9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 224--226
+Overfull \hbox (0.24849pt too wide) in paragraph at lines 228--230
+\OT1/ptm/m/n/12 client ap-pli-ca-tions. How-ever, con-cur-rent pro-gram-ming wi
+th locks and semaphores
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--230
 
  []
 
 
-Overfull \hbox (11.18889pt too wide) in paragraph at lines 227--228
-[]\OT1/ptm/m/n/12 Software Trans-ac-tional mem-ory use trans-ac-tion in-stead o
-f locks and semaphores,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--231
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
 [10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
@@ -625,27 +634,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--246
 File: Pictures/realLife.png Graphic file (type png)
 
 <use Pictures/realLife.png>
-Package pdftex.def Info: Pictures/realLife.png used on input line 249.
+Package pdftex.def Info: Pictures/realLife.png used on input line 253.
 (pdftex.def)             Requested size: 385.74411pt x 84.31564pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 260--261
 
  []
 
 [11 <./Pictures/realLife.png>]
+Overfull \hbox (3.01694pt too wide) in paragraph at lines 263--264
+[]\OT1/ptm/m/n/12 The con-cur-rency con-trol mech-a-nism sim-i-lar to the datab
+ase trans-ac-tions, where
+ []
+
 <Pictures/lockvsatomicjpg.png, id=489, 1344.02126pt x 441.65pt>
 File: Pictures/lockvsatomicjpg.png Graphic file (type png)
 
 <use Pictures/lockvsatomicjpg.png>
-Package pdftex.def Info: Pictures/lockvsatomicjpg.png used on input line 263.
+Package pdftex.def Info: Pictures/lockvsatomicjpg.png used on input line 267.
 (pdftex.def)             Requested size: 268.79948pt x 88.32843pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
@@ -654,24 +668,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 270--271
 File: Pictures/rollback.png Graphic file (type png)
 
 <use Pictures/rollback.png>
-Package pdftex.def Info: Pictures/rollback.png used on input line 274.
+Package pdftex.def Info: Pictures/rollback.png used on input line 278.
 (pdftex.def)             Requested size: 106.59906pt x 140.32532pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
 <Pictures/STM.png, id=504, 319.1925pt x 245.91875pt>
 File: Pictures/STM.png Graphic file (type png)
  <use Pictures/STM.png>
-Package pdftex.def Info: Pictures/STM.png used on input line 290.
+Package pdftex.def Info: Pictures/STM.png used on input line 294.
 (pdftex.def)             Requested size: 127.67473pt x 98.36575pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
@@ -679,14 +693,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 294--295
 File: Pictures/STMtwoThreads.png Graphic file (type png)
 
 <use Pictures/STMtwoThreads.png>
-Package pdftex.def Info: Pictures/STMtwoThreads.png used on input line 298.
+Package pdftex.def Info: Pictures/STMtwoThreads.png used on input line 302.
 (pdftex.def)             Requested size: 90.08633pt x 99.62193pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
@@ -695,49 +709,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 303--304
 File: Pictures/STMRollback.png Graphic file (type png)
 
 <use Pictures/STMRollback.png>
-Package pdftex.def Info: Pictures/STMRollback.png used on input line 316.
+Package pdftex.def Info: Pictures/STMRollback.png used on input line 320.
 (pdftex.def)             Requested size: 336.45746pt x 267.39935pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
 
  []
 
 [14 <./Pictures/STM.png> <./Pictures/STMtwoThreads.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 327--328
-
- []
-
-
-Overfull \hbox (14.83978pt too wide) in paragraph at lines 329--330
-\OT1/ptm/m/n/12 lock the ac-tors are com-mu-ni-cat-ing with each other via mes-
-sage pass-ing.citeVolkmann 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 329--330
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
+
+ []
+
 [15 <./Pictures/STMRollback.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
@@ -753,85 +746,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--341
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 360.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 364.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 360.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 364.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 372.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 372.
  [17]
-Underfull \hbox (badness 10000) in paragraph at lines 386--392
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 386.
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--396
 
  []
 
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 398.
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 402.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
-LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 398.
+LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 402.
 
-Underfull \hbox (badness 10000) in paragraph at lines 402--405
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 406--407
+Underfull \hbox (badness 10000) in paragraph at lines 406--409
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--410
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 413--414
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 425--429
+Underfull \hbox (badness 10000) in paragraph at lines 429--433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--433
+Underfull \hbox (badness 10000) in paragraph at lines 435--437
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--449
+Underfull \hbox (badness 10000) in paragraph at lines 449--453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--449
+Underfull \hbox (badness 10000) in paragraph at lines 449--453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--451
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
 
  []
 
-[19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 507--508
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 509--510
-
- []
-
-
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 511--512
 
  []
@@ -841,13 +841,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 513--514
 
  []
 
-
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 515--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--528
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
 
@@ -856,222 +861,212 @@ Underfull \hbox (badness 10000) in paragraph at lines 530--532
 
  []
 
-[21] [22]
-Overfull \hbox (0.77538pt too wide) in paragraph at lines 593--594
+
+Underfull \hbox (badness 10000) in paragraph at lines 534--536
+
+ []
+
+[21]
+Overfull \hbox (0.77538pt too wide) in paragraph at lines 597--598
 \OT1/ptm/m/n/12 Atomically per-forms bit-wise OR be-tween the ar-gu-ment and th
 e value of the atomic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--598
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
 
  []
 
-
-Overfull \hbox (13.2041pt too wide) in paragraph at lines 626--627
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 649--650
+[22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
 
  []
 
-[24] [25]
-Overfull \hbox (47.94653pt too wide) in paragraph at lines 692--695
+[24]
+Overfull \hbox (47.94653pt too wide) in paragraph at lines 696--699
 \OT1/ptm/m/n/12 Running make com-piles tinySTM and puts a static li-brary file 
 at /tinySTM-0.9.9/lib/libstm.a.
  []
 
 
-Overfull \hbox (0.40442pt too wide) in paragraph at lines 704--706
+Overfull \hbox (0.40442pt too wide) in paragraph at lines 708--710
 \OT1/ptm/m/it/12 trans-ac-tional sys-tem which is de-vel-oped and main-tained a
 t sun micro-systems.\OT1/ptm/m/n/12 [[]]
  []
 
-[26
+[25
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 711--712
+Underfull \hbox (badness 10000) in paragraph at lines 715--716
+
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 733--735
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 760--761
 
  []
 
 [27]
-Overfull \hbox (27.60425pt too wide) in paragraph at lines 726--727
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 729--731
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
 
  []
 
 
-Overfull \hbox (78.00476pt too wide) in paragraph at lines 744--745
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Underfull \hbox (badness 10000) in paragraph at lines 765--766
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 779--780
+
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 756--757
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 786.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 758--759
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 761--762
-
- []
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 775--776
-
- []
-
-
-Overfull \hbox (27.53403pt too wide) in paragraph at lines 790--791
+Overfull \hbox (27.53403pt too wide) in paragraph at lines 794--795
 []\OT1/ptm/m/n/12 Object Ori-ented Class Li-braries : Col-lec-tion of Classes a
 nd in-her-ited functions.[[]] 
  []
 
-[30] [31] [32]
-Overfull \hbox (1.90492pt too wide) in paragraph at lines 886--887
+[29] [30] [31]
+Overfull \hbox (1.90492pt too wide) in paragraph at lines 890--891
 []\OT1/ptm/m/n/12 The Lo-cal-iza-tion li-brary, in-cludes in-ter-na-tion-al-iza
 -tion sup-port for char-
  []
 
 
-Overfull \hbox (27.22469pt too wide) in paragraph at lines 902--903
+Overfull \hbox (27.22469pt too wide) in paragraph at lines 906--907
 []\OT1/ptm/m/n/12 Dynamic mem-ory man-age-ment, smart point-ers en-able au-to-m
 atic, exception-
  []
 
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 941--942
+
+ []
+
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 937--938
-
- []
-
-[34]
-Underfull \hbox (badness 10000) in paragraph at lines 966--968
+Underfull \hbox (badness 10000) in paragraph at lines 970--972
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 969--971
+Underfull \hbox (badness 10000) in paragraph at lines 973--975
 
  []
 
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 972--973
+
+Underfull \hbox (badness 10000) in paragraph at lines 976--977
 
  []
 
-<Pictures/qtcreator.jpg, id=936, 481.8pt x 261.22594pt>
+[34] <Pictures/qtcreator.jpg, id=934, 481.8pt x 261.22594pt>
 File: Pictures/qtcreator.jpg Graphic file (type jpg)
 
 <use Pictures/qtcreator.jpg>
-Package pdftex.def Info: Pictures/qtcreator.jpg used on input line 976.
+Package pdftex.def Info: Pictures/qtcreator.jpg used on input line 980.
 (pdftex.def)             Requested size: 240.8994pt x 130.61264pt.
- [36 <./Pictures/qtcreator.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1007--1008
+ [35 <./Pictures/qtcreator.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1012
 
  []
 
-<Pictures/visualStudio.png, id=953, 481.8pt x 301.125pt>
+<Pictures/visualStudio.png, id=952, 481.8pt x 301.125pt>
 File: Pictures/visualStudio.png Graphic file (type png)
 
 <use Pictures/visualStudio.png>
-Package pdftex.def Info: Pictures/visualStudio.png used on input line 1011.
+Package pdftex.def Info: Pictures/visualStudio.png used on input line 1015.
 (pdftex.def)             Requested size: 240.8994pt x 150.56212pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1035
+ [36 <./Pictures/visualStudio.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1038--1039
 
  []
 
-<Pictures/netbeans.png, id=974, 632.3625pt x 442.65375pt>
+<Pictures/netbeans.png, id=970, 632.3625pt x 442.65375pt>
 File: Pictures/netbeans.png Graphic file (type png)
 
 <use Pictures/netbeans.png>
-Package pdftex.def Info: Pictures/netbeans.png used on input line 1038.
+Package pdftex.def Info: Pictures/netbeans.png used on input line 1042.
 (pdftex.def)             Requested size: 316.18048pt x 221.32632pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[38 <./Pictures/visualStudio.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1057--1058
+
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1062
 
  []
 
-<Pictures/emacs.png, id=994, 724.7075pt x 656.4525pt>
+[37] <Pictures/emacs.png, id=995, 724.7075pt x 656.4525pt>
 File: Pictures/emacs.png Graphic file (type png)
- <use Pictures/emacs.png>
-Package pdftex.def Info: Pictures/emacs.png used on input line 1061.
+
+<use Pictures/emacs.png>
+Package pdftex.def Info: Pictures/emacs.png used on input line 1065.
 (pdftex.def)             Requested size: 362.35286pt x 328.22545pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[39 <./Pictures/netbeans.png>] [40 <./Pictures/emacs.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1089
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1090--1091
-
- []
-
-
+[38 <./Pictures/netbeans.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1092--1093
 
  []
 
-
+[39 <./Pictures/emacs.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1094--1095
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1097
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1098--1099
+
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 1127--1128
+
+ []
+
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1124
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1134
 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1129--1130
-
- []
-
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 1137--1138
+Underfull \hbox (badness 10000) in paragraph at lines 1141--1142
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1144--1145
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1147
+Underfull \hbox (badness 10000) in paragraph at lines 1150--1151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1150
+Underfull \hbox (badness 10000) in paragraph at lines 1153--1154
 
  []
 
-[44
+[43
 
-] [45] (./Research Report.bbl
+] [44] (./Research Report.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
@@ -1152,7 +1147,7 @@ Underfull \hbox (badness 1189) in paragraph at lines 63--67
 /m/n/12 https : / / www .
  []
 
-[46]
+[45]
 Underfull \hbox (badness 3492) in paragraph at lines 82--86
 []\OT1/ptm/m/n/12 Q. Doc-u-men-ta-tion.  Qt Doc-u-men-ta-tion.  [][]$\OT1/pcr/m
 /n/12 http : / / doc . qt . io /
@@ -1216,7 +1211,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--146
 y -[]
  []
 
-[47]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 148--152
 []\OT1/ptm/m/n/12 E. Kasper.  A Soft-ware Trans-ac-tional Mem-ory Li-brary for
  []
@@ -1289,7 +1284,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--214
 ] create -[] qt -[]
  []
 
-[48]
+[47]
 Underfull \hbox (badness 4279) in paragraph at lines 228--232
 []\OT1/ptm/m/n/12 N. org.  Net-beans IDE fea-tures.  [][]$\OT1/pcr/m/n/12 https
  : / / netbeans . org /
@@ -1352,7 +1347,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--280
 \OT1/pcr/m/n/12 techopedia . com / definition / 26184 / c -[] programming -[]
  []
 
-[49]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 282--287
 \OT1/pcr/m/n/12 id . pt / []mcouceiro / eurotm / finalevent2015 / riegel . pdf$
 [][]\OT1/ptm/m/n/12 .
@@ -1394,40 +1389,40 @@ T1/pcr/m/n/12 http : / /
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1162.
- [50]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1162.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1166.
+ [49]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1166.
  (./Research Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1162.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1162.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1166.
 
 Package rerunfilecheck Info: File `"Research Report".out' has not changed.
 (rerunfilecheck)             Checksum: 577412B964424492EDBF5FC339D3F29D;3958.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1162.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1166.
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 760 ({)
+### simple group (level 1) entered at line 764 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9138 strings out of 493077
- 136546 string characters out of 6138296
- 229203 words of memory out of 5000000
- 12066 multiletter control sequences out of 15000+600000
- 21355 words of font info for 44 fonts, out of 8000000 for 9000
+ 9583 strings out of 493029
+ 142644 string characters out of 6136235
+ 264218 words of memory out of 5000000
+ 12512 multiletter control sequences out of 15000+600000
+ 26250 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,49p,1467b,1612s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,58p,1493b,1769s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on "Research Report.pdf" (53 pages, 1141066 bytes).
+Output written on "Research Report.pdf" (52 pages, 1144016 bytes).
 PDF statistics:
- 1330 PDF objects out of 1440 (max. 8388607)
- 1209 compressed objects within 13 object streams
- 485 named destinations out of 1000 (max. 500000)
+ 1327 PDF objects out of 1440 (max. 8388607)
+ 1207 compressed objects within 13 object streams
+ 484 named destinations out of 1000 (max. 500000)
  570 words of extra memory for PDF output out of 10000 (max. 10000000)
 

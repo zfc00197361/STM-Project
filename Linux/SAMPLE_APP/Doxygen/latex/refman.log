@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.21)  14 MAR 2018 14:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.1)  8 APR 2018 17:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1069,18 +1069,16 @@ Package hyperref Info: Option `unicode' set `true' on input line 121.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 12.9599pt on input line 126.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 128.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 130.
+(Font)              scaled to size 8.09995pt on input line 128.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 133.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 137.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 133.
+(Font)              scaled to size 12.9599pt on input line 137.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 12.9599pt on input line 133.
+(Font)              scaled to size 12.9599pt on input line 137.
 (./refman.toc
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
@@ -1108,8 +1106,10 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
-Package hyperref Info: Option `pageanchor' set `true' on input line 135.
+Package hyperref Info: Option `pageanchor' set `true' on input line 139.
 [1] (./index.tex
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
@@ -1204,13 +1204,8 @@ Package pdftex.def Info: class_a_i_b_a22b11c50b0986326c86315957528bf79_a22b11c5
 0b0986326c86315957528bf79_icgraph.pdf used on input line 268.
 (pdftex.def)             Requested size: 258.0pt x 100.01021pt.
 [10 <./class_a_i_b_aa0faccb7aadf423d12bddb2469ff5053_aa0faccb7aadf423d12bddb246
-9ff5053_cgraph.pdf>]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 3 on input line 296.
-
-[11 <./class_a_i_b_a22b11c50b0986326c86315957528bf79_a22b11c50b0986326c86315957
-528bf79_icgraph.pdf>]
+9ff5053_cgraph.pdf>] [11 <./class_a_i_b_a22b11c50b0986326c86315957528bf79_a22b1
+1c50b0986326c86315957528bf79_icgraph.pdf>]
 <class_a_i_b_ad76f25ce86cb42028440f41c371903e0_ad76f25ce86cb42028440f41c371903e
 0_cgraph.pdf, id=765, 295.1025pt x 100.375pt>
 File: class_a_i_b_ad76f25ce86cb42028440f41c371903e0_ad76f25ce86cb42028440f41c37
@@ -1286,11 +1281,6 @@ pdfTeX warning: pdflatex (file ./class_a_i_b_ac75087ae73c308bd946e47a71dc85b86_
 ac75087ae73c308bd946e47a71dc85b86_icgraph.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
 >]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4 on input line 504.
-
-
 <class_a_i_b_a987107f3d7a04790f84c1e7eeee37575_a987107f3d7a04790f84c1e7eeee3757
 5_cgraph.pdf, id=859, 271.0125pt x 100.375pt>
 File: class_a_i_b_a987107f3d7a04790f84c1e7eeee37575_a987107f3d7a04790f84c1e7eee
@@ -1612,10 +1602,6 @@ Package pdftex.def Info: class_b_o_i_a617f46a599129178c6b11b4846759a6c_a617f46a
 599129178c6b11b4846759a6c_icgraph.pdf used on input line 276.
 (pdftex.def)             Requested size: 260.0pt x 100.00102pt.
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 7 on input line 302.
-
-
 <class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_a9ff2d32c25c23a1bea6316f50c3bf67
 7_cgraph.pdf, id=1630, 296.10625pt x 100.375pt>
 File: class_b_o_i_a9ff2d32c25c23a1bea6316f50c3bf677_a9ff2d32c25c23a1bea6316f50c
@@ -1692,11 +1678,6 @@ pdfTeX warning: pdflatex (file ./class_b_o_i_a25b289dece2a1685bb9d1a9332c9be0b_
 a25b289dece2a1685bb9d1a9332c9be0b_icgraph.pdf): PDF inclusion: multiple pdfs wi
 th page group included in a single page
 >]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 8 on input line 509.
-
-
 <class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_ad53ae2918a656793b9d7a670d35ecfa
 3_cgraph.pdf, id=1738, 273.02pt x 100.375pt>
 File: class_b_o_i_ad53ae2918a656793b9d7a670d35ecfa3_ad53ae2918a656793b9d7a670d3
@@ -1921,10 +1902,6 @@ File: class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f05
 Package pdftex.def Info: class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968ed
 f778668bd0ec7603f0571619196_cgraph.pdf used on input line 146.
 (pdftex.def)             Requested size: 330.0pt x 111.00455pt.
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 9 on input line 169.
-
 [50 <./class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f0
 571619196_cgraph.pdf>]
 Underfull \hbox (badness 10000) detected at line 224
@@ -1989,10 +1966,6 @@ Package pdftex.def Info: class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_a5f90c
 aa4384d371c16b7cac860d9f89a_icgraph.pdf used on input line 428.
 (pdftex.def)             Requested size: 350.0pt x 96.68817pt.
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 10 on input line 448.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [53 <./class_o_s_t_m_a5f90caa4384d371c16b7cac860d9f89a_a5f90caa4384d371c16b7cac
@@ -2037,11 +2010,6 @@ pdfTeX warning: pdflatex (file ./class_o_s_t_m_a8df39ced3b401aa466df97e26d14b1b
 7_a8df39ced3b401aa466df97e26d14b1b7_icgraph.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
 >]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 11 on input line 576.
-
-
 <class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_aba384cf65c5f56f5b86833730c3c6
 ea4_icgraph.pdf, id=2332, 353.32pt x 100.375pt>
 File: class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea4_aba384cf65c5f56f5b8683373
@@ -2060,11 +2028,6 @@ pdfTeX warning: pdflatex (file ./class_o_s_t_m_aba384cf65c5f56f5b86833730c3c6ea
 4_aba384cf65c5f56f5b86833730c3c6ea4_icgraph.pdf): PDF inclusion: multiple pdfs 
 with page group included in a single page
 >]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 12 on input line 622.
-
-
 <class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_a813ee61c9d1c83c6a6ae30d12aca8
 a5d_icgraph.pdf, id=2362, 331.2375pt x 100.375pt>
 File: class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_a813ee61c9d1c83c6a6ae30d1
@@ -2075,10 +2038,6 @@ aca8a5d_icgraph.pdf>
 Package pdftex.def Info: class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_a813ee
 61c9d1c83c6a6ae30d12aca8a5d_icgraph.pdf used on input line 648.
 (pdftex.def)             Requested size: 330.0pt x 100.00409pt.
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 13 on input line 668.
-
 
 <class_o_s_t_m_ab5019a32185631c08abbf826422f2d93_ab5019a32185631c08abbf826422f2
 d93_icgraph.pdf, id=2374, 437.635pt x 176.66pt>
@@ -2092,11 +2051,6 @@ a32185631c08abbf826422f2d93_icgraph.pdf used on input line 694.
 (pdftex.def)             Requested size: 350.0pt x 141.28505pt.
 [56 <./class_o_s_t_m_a813ee61c9d1c83c6a6ae30d12aca8a5d_a813ee61c9d1c83c6a6ae30d
 12aca8a5d_icgraph.pdf>]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 14 on input line 714.
-
-
 <class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_a9529ad8d6d28c1f0cc9b86ed91df1
 ae1_icgraph.pdf, id=2397, 306.14375pt x 100.375pt>
 File: class_o_s_t_m_a9529ad8d6d28c1f0cc9b86ed91df1ae1_a9529ad8d6d28c1f0cc9b86ed
@@ -2345,11 +2299,6 @@ File: class_t_x__coll__graph.pdf Graphic file (type pdf)
 Package pdftex.def Info: class_t_x__coll__graph.pdf used on input line 13.
 (pdftex.def)             Requested size: 235.0pt x 369.00383pt.
 [69] [70 <./class_t_x__coll__graph.pdf>] [71]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 15 on input line 107.
-
-
 <class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f576326588628ade96b27b4b1_
 icgraph.pdf, id=2920, 316.18124pt x 100.375pt>
 File: class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f576326588628ade96b27
@@ -2362,11 +2311,6 @@ Package pdftex.def Info: class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f5
 (pdftex.def)             Requested size: 315.0pt x 100.00716pt.
 [72 <./class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f576326588628ade96b2
 7b4b1_icgraph.pdf>] [73]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 16 on input line 307.
-
-
 Underfull \hbox (badness 3049) in paragraph at lines 314--315
 []\T1/phv/m/n/10 References [][]get[]_[]thread[]_[][]Map()[][], [][]main[]_[][]
 Process[]_[][]Map[]_[]collection[][], [][]process[]_[]map[]_[]collection[][], [
@@ -2503,19 +2447,10 @@ pdfTeX warning: pdflatex (file ./class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_a3
 f5671423cb7b9f9c98f8a25f2a4b545_icgraph.pdf): PDF inclusion: multiple pdfs with
  page group included in a single page
 >]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 17 on input line 649.
-
-
 Overfull \hbox (19.35555pt too wide) in paragraph at lines 662--662
 []\T1/pcr/m/n/7 00139     std::map< int, std::shared_ptr<OSTM> >::iterator work
 ing_Map_collection_Object_Shared_Pointer_Iterator;[] 
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 18 on input line 697.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2543,10 +2478,6 @@ c2b_icgraph.pdf>
 Package pdftex.def Info: class_t_x_aa9739c5c2077454c779098db7baefc2b_aa9739c5c2
 077454c779098db7baefc2b_icgraph.pdf used on input line 751.
 (pdftex.def)             Requested size: 350.0pt x 99.71461pt.
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 19 on input line 771.
-
 [79 <./class_t_x_aa9739c5c2077454c779098db7baefc2b_aa9739c5c2077454c779098db7ba
 efc2b_icgraph.pdf>]
 Overfull \hbox (19.35555pt too wide) in paragraph at lines 788--788
@@ -2559,10 +2490,6 @@ Overfull \hbox (15.15555pt too wide) in paragraph at lines 798--799
 []\T1/pcr/m/n/7 00171     } []else[] { []throw[] std::runtime_error(std::string
 ([]"[RUNTIME ERROR : NO OBJECT FOUND STORE FUNCTION, CANNOT[] 
  []
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 20 on input line 819.
 
 
 <class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_ae045534c4a9d39bd5c6ea2a39a372a79_
@@ -3049,30 +2976,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [112 <./_t_x_8h__incl.pdf>]) (./_t_x_8h_source.tex [113 <./_t_x_8h__dep__incl.p
 df>]) [114]
 No file refman.ind.
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
 (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
 Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: 01315A193065D249C9E81826AA52A5BE;15492.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
- 16586 strings out of 493029
- 291566 string characters out of 6136233
- 328609 words of memory out of 5000000
+ 16585 strings out of 493029
+ 291560 string characters out of 6136235
+ 328499 words of memory out of 5000000
  18741 multiletter control sequences out of 15000+600000
- 56414 words of font info for 76 fonts, out of 8000000 for 9000
+ 55260 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,16n,92p,3985b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{_t_x_8h_source_l00074} has been referenced but do
@@ -3500,7 +3421,7 @@ r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (117 pages, 640354 bytes).
+Output written on refman.pdf (117 pages, 632734 bytes).
 PDF statistics:
  4685 PDF objects out of 5155 (max. 8388607)
  4268 compressed objects within 43 object streams

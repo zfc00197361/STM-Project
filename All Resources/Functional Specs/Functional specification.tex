@@ -21,7 +21,11 @@
     citecolor = gray,
     linktoc=all
 }
-
+\lstset { %
+	language=C++,
+	backgroundcolor=\color{black!5}, % set backgroundcolor
+	basicstyle=\footnotesize,% basic font setting
+}
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\textit{\color{gray}\today}}
@@ -76,14 +80,14 @@ The purpose of this project to implement a Software Transactional Memory library
 
 As the mandatory requirements, the project will be fully documented by the Doxygen document generator tool, to provide the description of the available interface functions to other programmers, if they intend to use the library. Create a test application to demonstrate the library usage.\\
 
-To make it available on different operating systems, or at least on Linux and Windows, then possibly Mac OsX, the library will be tested and available in cross platform versions. As a final result, create benchmarking test, to compare with other Software Transactional Memory solutions or similar systems.
+To make it available on different operating systems, the library will be developed and tested on Linux, Windows and MAC OSX to make it available in cross platform versions. As a final result, create benchmarking test, to compare with other Software Transactional Memory solutions or similar systems.
 
 \clearpage
 \section{What the product can do}
-The STM library will be developed in C++14 language syntax to provide lock free solution to client applications to protect shared memory within a transactional process. It will support an API interface to the applications to enable library call(s) after a transaction object has created. It will allows to the transaction object to pass objects to  the library, to process them. As the part of the transaction process, the library will create a transaction, make shared local data structure to store values involved in the transaction, and when finish with the changes, try to end the transaction and only write changes in the memory spaces if the transaction not fail. When the transaction fails, then restart the transaction. Because the STM library provide transactional environment to the client applications, the programmers don't need to worry about to use mutex, semaphore and can avoid of deadlock and livelock situations.
+The STM library will be developed in C++14 language syntax to provide lock free solution to client applications to protect shared memory within a transactional process. It will support an API interface to the applications to enable library call(s) after a transaction object has created. It will allows the transaction object to pass objects to the library, to store and make changes on them. As the part of the transaction process, the library will create a transaction, make shared local data structure to store objects involved in the transactions, and when finish with the changes, try to end the transaction and only write changes in the memory spaces if the transaction not fail. When the transaction fails, then need to restart the process. Because the STM library provide transactional environment to the client applications, the programmers don't need to worry about to use mutex, semaphore and can avoid of deadlock and livelock situations.
 
 \section{Functional description}
-Software Transactional Memory allows to compose several actions, that all can be execute together and run as a single transaction. There will be numerous function in the library, such as create a transaction and receive values/pointers to work with, and these functions will working together to achieve the transactional function. When the transaction library receive the data to work with, then will create and start the transaction. In the next step try to commit the changes, that need to carry out on the shared data. It is involves in few inner steps such as compare the version numbers and update the changes. If the version number are different between the working object and the global object, then the transaction will restart. The transaction steps are detailed in below.
+Software Transactional Memory allows to compose several actions, that all can be execute together and run as a single transaction. The library will provide public API functions, such as register, load, store and commit to use values/pointers to work with, and these functions will working together to achieve the transactional behaviour. When the transaction library receive the data to work with, then will create and start a transaction. At the last step in the transaction try to commit the changes, that need to carry out on the shared data. It is involves in few inner steps such as compare the version numbers and update the changes. If the version number are different between the working object and the global object, then the transaction will restart. The transaction steps are detailed in below.
 
 \begin{figure}[h!]
 \centering
@@ -118,13 +122,13 @@ The values/object received by the transactional memory library, it creates a cop
 A copy created and associating a version number with it. This version number will be used to determine the changes on the value/object by the other transactions within the context.
 
 \subsection{Start transaction}
-When the transaction start, the library check the version number associated with the data/object, to compare against the transaction own copy. If the version numbers are not the same, then the transaction aborting and restart with the new copy of the version number. If the version numbers are same, then the transaction locks the global data set copy of the value/object and make the changes are required. Before the transaction commit, make permanent changes on the value/object used in the transaction it needs to compare the version number again to determine the conflicts.   
+When the transaction start, the library check the version number associated with the data/object, to compare against the transaction own copy. If the version numbers are not the same, then the transaction aborting and restart with the new copy of the origanl object. If the version numbers are same, then the transaction locks the global data set copy of the value/object and make the changes. Before the transaction commit, make permanent changes on the value/object used in the transaction it needs to compare the version number again to determine the conflicts.   
 
 \subsection{Commit transaction}
-This phase of the transaction, the library locks the used shared memory spaces in an atomic block, and hide from the other processes to write changes in to the local data set. After the changes has made on the local data set, before finalize the write process to the destination shared memory spaces, must to determine if any other process had accessed the same data set, and made changes on it. It is happening with compare the transaction version number associated with the shared memory space version number. The transaction commits the changes if no conflict detected between version numbers. When changes make then release the lock on the data/object and the transaction has finished.\\ 
+This phase of the transaction, the library locks the used shared memory spaces in an atomic block, and hide from the other processes to write changes into the local data set. After the changes has made on the local data set, before finalize the write process to the destination shared memory spaces, must to determine if any other process had accessed the same data set, and made changes on it. It is happening with compare the transaction object version number with the shared memory space version number. The transaction commits the changes if no conflict detected between version numbers. When the changes has made on the shared memory space, then release the lock on the data/object and the transaction has finished.\\ 
 
 \subsubsection{Version checking}
-The version number representing the changes associated with the object accessed by the transactions. The transaction can detect the conflict early when first time accessing the value or when the transaction attempts to commit. When a transaction commit the changes, write the new values to the shared memory space, and the same time increasing the global version number to indicate to the other transactions, that some changes happened with the object. At commit time the transaction compare the local object version numbers against the global object version number. The version number in the actual transaction and the global version number associated with the object must match. If the values are not the same the transaction will be cancelled and rolling back the changes before writing the new value to the shared memory space and restart the transaction.
+The version number representing the changes associated with the object accessed by the transactions. The transaction can detect the conflict early when first time accessing the value or when the transaction attempts to commit. When a transaction commit the changes, write the new values to the shared memory space, and the same time increasing the global version number to indicate to the other transactions, that some changes happened with the object. At commit time the transaction compare the local object version numbers against the global object version number. The version number in the actual transaction and the global version number associated with the object must match. If the values are not the same the transaction will be cancelled and rolling back the changes  and restart the transaction.
 
 \begin{figure}[h!]
 \centering
@@ -139,7 +143,7 @@ The roll-back part of the transaction, simply goes back to the begging of the tr
 \subsubsection{Updating}
 At commit time, if the compared versions are holding same values, then the transaction updating the shared memory space on the target data set and closing the transaction. \\
 
-The following code snippet is an atomic transaction to change nodes in linked list structure:
+The following code snippet is an atomic transaction with compiler support to change nodes in linked list structure:
 \begin{lstlisting}
 atomic {
   int x = node.head;
@@ -148,7 +152,7 @@ atomic {
 \end{lstlisting}
 
 \section{Target users}
-The potential target users can be any programmer, how planning to use concurrent programming features in their application, but in the same time they wants to avoid of the lock based programming disadvantages. Since, STM provide interface to access the built in transactional functionalities through object accessible method call, it is easy to use because only need to include the library into the software application.\\
+The potential target users can be any programmer, how planning to use concurrent programming features in their application, but in the same time they wants to avoid of the lock based programming disadvantages. Since, STM provide interface to access the built in transactional functionalities through object accessible method call, it is easy to use because only need to include the library into the client application.\\
 
 {\setlength{\parindent}{0cm}
 The potential target users can be who:
@@ -163,7 +167,7 @@ The potential target users can be who:
 
 \clearpage
 \section{Metrics}
-The C++14 Software transactional Memory project is successful, when the library working as it is expected in all circumstances with no error accepted. To fulfil these achievement the project must produce the following requirements:\\
+The C++14 Software transactional Memory project is successful, when the library working as it is expected in all circumstances. To fulfil these achievement the project must produce the following requirements:\\
 
 
 \textbf{Mandatory requirements:} 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.1)  1 APR 2018 14:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.1)  8 APR 2018 19:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1067,18 +1067,24 @@ Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 121.
 
 Package hyperref Info: Option `unicode' set `true' on input line 121.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 126.
+(Font)              scaled to size 18.66588pt on input line 127.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 127.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 127.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 128.
+(Font)              scaled to size 15.55188pt on input line 131.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 149.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 137.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 149.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 137.
+(Font)              scaled to size 12.9599pt on input line 149.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 12.9599pt on input line 137.
+(Font)              scaled to size 12.9599pt on input line 149.
 (./refman.toc
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
@@ -1106,8 +1112,10 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
-Package hyperref Info: Option `pageanchor' set `true' on input line 139.
-(./index.tex
+Package hyperref Info: Option `pageanchor' set `true' on input line 151.
+[1] (./index.tex
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 7.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
@@ -1121,15 +1129,12 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 11.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [1]) (./annotated.tex) (./files.tex [2]) (./class_o_s_t_m.tex <class_o_s_t_m_
-_coll__graph.pdf, id=292, 221.82875pt x 414.54875pt>
+)) [2] (./annotated.tex) (./files.tex) (./class_o_s_t_m.tex <class_o_s_t_m__col
+l__graph.pdf, id=290, 221.82875pt x 414.54875pt>
 File: class_o_s_t_m__coll__graph.pdf Graphic file (type pdf)
 <use class_o_s_t_m__coll__graph.pdf>
 Package pdftex.def Info: class_o_s_t_m__coll__graph.pdf used on input line 13.
 (pdftex.def)             Requested size: 221.0pt x 412.99797pt.
-
-Underfull \vbox (badness 5460) has occurred while \output is active []
-
 [3]
 LaTeX Font Info:    Try loading font information for TS1+phv on input line 19.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
@@ -1149,7 +1154,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 6.29996pt on input line 22.
 [4 <./class_o_s_t_m__coll__graph.pdf>] [5]
 <class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f0571619
-196_cgraph.pdf, id=407, 331.2375pt x 111.41624pt>
+196_cgraph.pdf, id=405, 331.2375pt x 111.41624pt>
 File: class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f05
 71619196_cgraph.pdf Graphic file (type pdf)
 
@@ -1167,11 +1172,15 @@ LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
 LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
 (Font)              scaled to size 6.29996pt on input line 147.
 
-LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 187.
+Overfull \vbox (16.90369pt too high) has occurred while \output is active []
 
 [6 <./class_o_s_t_m_a968edf778668bd0ec7603f0571619196_a968edf778668bd0ec7603f05
 71619196_cgraph.pdf>]
+
+LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
+(Font)              using `T1/pcr/m/n' instead on input line 187.
+
+
 Underfull \hbox (badness 10000) detected at line 213
 [][][]
  []
@@ -1183,7 +1192,7 @@ Underfull \hbox (badness 10000) detected at line 329
 
 
 <class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f42714f
-94c_cgraph.pdf, id=496, 388.45125pt x 519.9425pt>
+94c_cgraph.pdf, id=493, 388.45125pt x 519.9425pt>
 File: class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f4
 2714f94c_cgraph.pdf Graphic file (type pdf)
 
@@ -1192,9 +1201,6 @@ File: class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd6365f4
 Package pdftex.def Info: class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3
 763bd441407dd6365f42714f94c_cgraph.pdf used on input line 350.
 (pdftex.def)             Requested size: 350.0pt x 468.48343pt.
-
-Underfull \vbox (badness 1571) has occurred while \output is active []
-
 [8] [9 <./class_o_s_t_m_a0bfa3763bd441407dd6365f42714f94c_a0bfa3763bd441407dd63
 65f42714f94c_cgraph.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1650,24 +1656,27 @@ le pdfs with page group included in a single page
 
 ]
 No file refman.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
 (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
 Package rerunfilecheck Info: File `refman.out' has not changed.
 (rerunfilecheck)             Checksum: 2C415E1FFF49ED98A7410BF5C1ECAC56;9425.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
  ) 
 Here is how much of TeX's memory you used:
- 15424 strings out of 493029
- 231182 string characters out of 6136235
+ 15429 strings out of 493029
+ 231255 string characters out of 6136235
  319064 words of memory out of 5000000
- 18235 multiletter control sequences out of 15000+600000
- 55260 words of font info for 75 fonts, out of 8000000 for 9000
+ 18240 multiletter control sequences out of 15000+600000
+ 60308 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,16n,92p,1867b,634s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{_t_x_8h_source_l00074} has been referenced but do
@@ -1870,7 +1879,7 @@ r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
 e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (48 pages, 321122 bytes).
+Output written on refman.pdf (48 pages, 321499 bytes).
 PDF statistics:
  1880 PDF objects out of 2073 (max. 8388607)
  1761 compressed objects within 18 object streams

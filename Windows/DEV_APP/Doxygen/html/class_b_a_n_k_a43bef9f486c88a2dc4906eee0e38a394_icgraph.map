@@ -1,8 +1,0 @@
-<map id="BANK::SetBalance" name="BANK::SetBalance">
-<area shape="rect" id="node2" href="$main_8cpp.html#a0099d241c74532abfb1baae50a52da52" title="complex_transfer function, takes two std::shared_ptr&lt;OSTM&gt; pointer, a vector of std::shared_ptr&lt;OSTM&gt;..." alt="" coords="201,5,337,32"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#a5675cb594d74aa1bf5e80233370ffd81" title="nesting function, takes two std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well " alt="" coords="397,107,476,133"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#a944b67b9489cc68c8eac66d42f4515ec" title="six_account_transfer function, takes six std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manager..." alt="" coords="190,107,347,133"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#a83aef8c5b69afef4e38d14c17fe782b3" title="two_account_transfer function, takes two std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manager..." alt="" coords="188,157,349,184"/>
-<area shape="rect" id="node7" href="$class_b_a_n_k.html#a7382dd275d8f4f10a8b53ccbc93e1e87" title="BANK::BANK" alt="" coords="217,208,321,235"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="524,107,575,133"/>
-</map>
