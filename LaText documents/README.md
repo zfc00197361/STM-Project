@@ -1,1 +1,1 @@
-All documents and resources are stored here
+The LaText used resource are store in this directory.
