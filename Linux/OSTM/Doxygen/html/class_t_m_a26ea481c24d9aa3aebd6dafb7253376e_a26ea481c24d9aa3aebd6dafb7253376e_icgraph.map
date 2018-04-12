@@ -1,3 +1,0 @@
-<map id="TM::registerTX" name="TM::registerTX">
-<area shape="rect" id="node2" href="$class_t_m_a41cb0226cc4080c931651b13f74a0075.html#a41cb0226cc4080c931651b13f74a0075" title="@81 _get_tx std::shared_ptr&lt;TX&gt;, return an trtansaction Object as a shared_ptr, if TX not exists then..." alt="" coords="163,5,255,32"/>
-</map>

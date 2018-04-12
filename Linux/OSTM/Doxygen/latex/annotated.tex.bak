@@ -1,6 +1,0 @@
-\subsection{Class List}
-Here are the classes, structs, unions and interfaces with brief descriptions\+:\begin{DoxyCompactList}
-\item\contentsline{section}{\hyperlink{class_o_s_t_m}{O\+S\+TM} }{\pageref{class_o_s_t_m}}{}
-\item\contentsline{section}{\hyperlink{class_t_m}{TM} }{\pageref{class_t_m}}{}
-\item\contentsline{section}{\hyperlink{class_t_x}{TX} }{\pageref{class_t_x}}{}
-\end{DoxyCompactList}

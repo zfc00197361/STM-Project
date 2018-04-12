@@ -1,8 +1,0 @@
-<map id="AIB::toString" name="AIB::toString">
-<area shape="rect" id="node2" href="$class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="155,5,313,32"/>
-<area shape="rect" id="node3" href="$class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="164,56,304,83"/>
-<area shape="rect" id="node4" href="$class_a_i_b_aef34bfbf20d767114e05b8b532cab777.html#aef34bfbf20d767114e05b8b532cab777" title="AIB::GetAccountNumber" alt="" coords="151,107,317,133"/>
-<area shape="rect" id="node5" href="$class_a_i_b_ac75087ae73c308bd946e47a71dc85b86.html#ac75087ae73c308bd946e47a71dc85b86" title="AIB::GetBalance" alt="" coords="174,157,294,184"/>
-<area shape="rect" id="node6" href="$class_a_i_b_aa0833919c1c211481560cd88cb5b381b.html#aa0833919c1c211481560cd88cb5b381b" title="AIB::GetFirstName" alt="" coords="167,208,301,235"/>
-<area shape="rect" id="node7" href="$class_a_i_b_a1b09db7268734beeaf6a9e7e9d8feb02.html#a1b09db7268734beeaf6a9e7e9d8feb02" title="AIB::GetLastName" alt="" coords="167,259,301,285"/>
-</map>

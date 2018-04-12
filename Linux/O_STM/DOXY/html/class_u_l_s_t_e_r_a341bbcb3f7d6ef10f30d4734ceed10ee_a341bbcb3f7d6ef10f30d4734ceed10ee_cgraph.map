@@ -1,8 +1,0 @@
-<map id="ULSTER::toString" name="ULSTER::toString">
-<area shape="rect" id="node2" href="$class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="201,5,360,32"/>
-<area shape="rect" id="node3" href="$class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="211,56,351,83"/>
-<area shape="rect" id="node4" href="$class_u_l_s_t_e_r_a1ad672ae865a9f559bf4d3c33c243d63.html#a1ad672ae865a9f559bf4d3c33c243d63" title="ULSTER::GetAccountNumber" alt="" coords="181,107,380,133"/>
-<area shape="rect" id="node5" href="$class_u_l_s_t_e_r_ae70da9686ac038862900182a984e56eb.html#ae70da9686ac038862900182a984e56eb" title="ULSTER::GetBalance" alt="" coords="205,157,356,184"/>
-<area shape="rect" id="node6" href="$class_u_l_s_t_e_r_a85ee4e42d9b309608d8dfbedac65ff27.html#a85ee4e42d9b309608d8dfbedac65ff27" title="ULSTER::GetFirstName" alt="" coords="198,208,363,235"/>
-<area shape="rect" id="node7" href="$class_u_l_s_t_e_r_a9320b012bccda4ebf6b41c9ed972743c.html#a9320b012bccda4ebf6b41c9ed972743c" title="ULSTER::GetLastName" alt="" coords="199,259,363,285"/>
-</map>

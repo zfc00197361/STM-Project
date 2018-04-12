@@ -1,3 +1,0 @@
-<map id="TX::ostm_exit" name="TX::ostm_exit">
-<area shape="rect" id="node2" href="$class_t_m_a5e2d1127f2429f2f524d25f430eade06.html#a5e2d1127f2429f2f524d25f430eade06" title="@108 _TX_EXIT void, when the thread calls the ostm_exit function in the transaction, and it will clear all elements from the shared global collection associated with the main process " alt="" coords="157,5,268,32"/>
-</map>

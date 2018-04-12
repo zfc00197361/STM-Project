@@ -1,9 +1,0 @@
-digraph "SLIGO_W::SetNumber_of_samsung"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="SLIGO_W::SetNumber\l_of_samsung",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="SLIGO_W::operator=",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_s_l_i_g_o___w.html#a64051fdd5b3ebc47b0a74b42eb092c1b"];
-}

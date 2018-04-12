@@ -1,6 +1,0 @@
-<map id="TM::registerTX" name="TM::registerTX">
-<area shape="rect" id="node2" href="$class_t_m_a41cb0226cc4080c931651b13f74a0075.html#a41cb0226cc4080c931651b13f74a0075" title="@81 _get_tx std::shared_ptr&lt;TX&gt;, return an trtansaction Object as a shared_ptr, if TX not exists then..." alt="" coords="163,29,255,56"/>
-<area shape="rect" id="node3" href="$main_8cpp_a5675cb594d74aa1bf5e80233370ffd81.html#a5675cb594d74aa1bf5e80233370ffd81" title="nesting function, takes two std::shared_ptr&lt;OSTM&gt; pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from one account to the another account This function create nested transactions inside the transaction, and call other function to nesting the transaction as well " alt="" coords="512,29,591,56"/>
-<area shape="rect" id="node4" href="$main_8cpp_a840291bc02cba5474a4cb46a9b9566fe.html#a840291bc02cba5474a4cb46a9b9566fe" title="main" alt="" coords="639,29,689,56"/>
-<area shape="rect" id="node5" href="$main_8cpp_a83aef8c5b69afef4e38d14c17fe782b3.html#a83aef8c5b69afef4e38d14c17fe782b3" title="two_account_transfer function, takes two OSTM type shared pointer, the Transaction manager..." alt="" coords="303,80,464,106"/>
-</map>
