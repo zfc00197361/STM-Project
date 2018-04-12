@@ -1,4 +1,0 @@
-<map id="MyTestCAse" name="MyTestCAse">
-<area shape="rect" id="node3" href="$class_t_m.html" title="{TM\n|&#45; get_Lock\l&#45; register_Lock\l&#45; txMap\l&#45; _tm_id\l&#45; process_map_collection\l|+ _get_tx()\l+ _TX_EXIT()\l+ get_thread_Map()\l+ operator==()\l+ print_all()\l+ Instance()\l&#45; operator=()\l&#45; registerTX()\l&#45; TM()\l&#45; TM()\l&#45; ~TM()\l}" alt="" coords="109,5,279,288"/>
-<area shape="rect" id="node4" href="$classclient.html" title="{client\n|+ value\l|+ _complex_transfer_()\l+ _nesting_()\l+ _six_account_transfer_()\l+ _two_account_transfer_()\l+ client()\l}" alt="" coords="303,79,485,215"/>
-</map>

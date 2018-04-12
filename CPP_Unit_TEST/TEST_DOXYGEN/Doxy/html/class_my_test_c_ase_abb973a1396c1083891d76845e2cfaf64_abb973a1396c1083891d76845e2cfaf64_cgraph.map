@@ -1,7 +1,0 @@
-<map id="MyTestCAse::_nesting_" name="MyTestCAse::_nesting_">
-<area shape="rect" id="node2" href="$class_t_m_a41cb0226cc4080c931651b13f74a0075.html#a41cb0226cc4080c931651b13f74a0075" title="_get_tx std::shared_ptr&lt;TX&gt;, returning a shared pointer with the transaction " alt="" coords="473,5,565,32"/>
-<area shape="rect" id="node5" href="$class_my_test_c_ase_af0cc86421d281cc4a583a394ae86dbdd.html#af0cc86421d281cc4a583a394ae86dbdd" title="Testin transaction between two pointer. " alt="" coords="216,25,404,66"/>
-<area shape="rect" id="node6" href="$class_b_a_n_k_ae3e45b407bf8ec7175662442ea24b7c0.html#ae3e45b407bf8ec7175662442ea24b7c0" title="BANK::SetBalance" alt="" coords="452,60,587,87"/>
-<area shape="rect" id="node3" href="$class_t_m_a26ea481c24d9aa3aebd6dafb7253376e.html#a26ea481c24d9aa3aebd6dafb7253376e" title="get_thread_Map returning and map to insert to the process_map_collection as an inner value ..." alt="" coords="635,5,744,32"/>
-<area shape="rect" id="node4" href="$class_t_m_afb8bc9f42fe06c52747beb7f4c46915c.html#afb8bc9f42fe06c52747beb7f4c46915c" title="get_thread_Map std::map, returning a map to store all unique ID from all objects from all transaction..." alt="" coords="792,5,935,32"/>
-</map>

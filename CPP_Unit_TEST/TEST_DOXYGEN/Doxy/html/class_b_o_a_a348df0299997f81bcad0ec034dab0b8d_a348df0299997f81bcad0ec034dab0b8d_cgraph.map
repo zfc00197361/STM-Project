@@ -1,8 +1,0 @@
-<map id="BOA::toString" name="BOA::toString">
-<area shape="rect" id="node2" href="$class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="163,5,322,32"/>
-<area shape="rect" id="node3" href="$class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="173,56,313,83"/>
-<area shape="rect" id="node4" href="$class_b_o_a_ad64bd63675f8902153aa6767994f05dc.html#ad64bd63675f8902153aa6767994f05dc" title="BOA::GetAccountNumber" alt="" coords="156,107,329,133"/>
-<area shape="rect" id="node5" href="$class_b_o_a_a07e30b7e5f5f20392b94af7344fd550c.html#a07e30b7e5f5f20392b94af7344fd550c" title="BOA::GetBalance" alt="" coords="179,157,306,184"/>
-<area shape="rect" id="node6" href="$class_b_o_a_ae6bb3df4e1fb210610325ffd1985c7c0.html#ae6bb3df4e1fb210610325ffd1985c7c0" title="BOA::GetFirstName" alt="" coords="173,208,313,235"/>
-<area shape="rect" id="node7" href="$class_b_o_a_a081383edefc1f66b80c3fb8862ab070b.html#a081383edefc1f66b80c3fb8862ab070b" title="BOA::GetLastName" alt="" coords="173,259,312,285"/>
-</map>

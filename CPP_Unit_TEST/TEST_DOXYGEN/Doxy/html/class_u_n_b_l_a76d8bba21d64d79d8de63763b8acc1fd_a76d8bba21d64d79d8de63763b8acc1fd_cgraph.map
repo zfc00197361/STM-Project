@@ -1,8 +1,0 @@
-<map id="UNBL::toString" name="UNBL::toString">
-<area shape="rect" id="node2" href="$class_o_s_t_m_a5a01a8b98d16b1d1904ecf9356e7b71d.html#a5a01a8b98d16b1d1904ecf9356e7b71d" title="getter for unique id " alt="" coords="175,5,334,32"/>
-<area shape="rect" id="node3" href="$class_o_s_t_m_a1f1db9d482f22c8e7caa17dfb340626b.html#a1f1db9d482f22c8e7caa17dfb340626b" title="getter for version number " alt="" coords="185,56,325,83"/>
-<area shape="rect" id="node4" href="$class_u_n_b_l_a44a84fb7fe8778e3048921581049c715.html#a44a84fb7fe8778e3048921581049c715" title="UNBL::GetAccountNumber" alt="" coords="164,107,345,133"/>
-<area shape="rect" id="node5" href="$class_u_n_b_l_ad5b882bff8d1e2619b2ebbd170345c99.html#ad5b882bff8d1e2619b2ebbd170345c99" title="UNBL::GetBalance" alt="" coords="187,157,322,184"/>
-<area shape="rect" id="node6" href="$class_u_n_b_l_ae89215b95f2e11aa70f9c8bbfd55c10c.html#ae89215b95f2e11aa70f9c8bbfd55c10c" title="UNBL::GetFirstName" alt="" coords="181,208,329,235"/>
-<area shape="rect" id="node7" href="$class_u_n_b_l_a27f19f2af5e1abd33b5c63f16b493f6c.html#a27f19f2af5e1abd33b5c63f16b493f6c" title="UNBL::GetLastName" alt="" coords="181,259,328,285"/>
-</map>
