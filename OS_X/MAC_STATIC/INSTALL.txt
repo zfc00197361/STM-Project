@@ -1,0 +1,3 @@
+Copy the lib_o_stm.a file to the C++ working directory
+
+
