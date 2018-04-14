@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{Performance}
+N.~A. Gulfam~Abbas.
+\newblock {Performance Tradeoffs in Software Transactional Memorys .}
+\newblock
+  \url{https://pdfs.semanticscholar.org/5ca0/50378c9e45bb0215a558ebd18d9fad7cc8bc.pdf}.
+\newblock 2010 (Accessed : 12/04/2018).
+
 \bibitem{sourceforge}
 S.~Media.
 \newblock {CppUnit - C++ port of JUnit.}

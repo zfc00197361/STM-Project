@@ -3,7 +3,7 @@ EXE =Test02
 CC = g++
 #DOXYGEN = doxygen
 PROGRAM = app
-CFLAGS =-std=c++14 -pthread 
+CFLAGS =-std=c++14 -pthread -pg
 CFILES = main.cpp AIB.cpp ULSTER.cpp BOA.cpp UNBL.cpp SWBPLC.cpp
 HFILES = TM.h TX.h OSTM.h AIB.h ULSTER.h BOA.h UNBL.h SWBPLC.h
 

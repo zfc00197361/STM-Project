@@ -23,12 +23,12 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Template class and functions}{3}{subsection.3.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}RAW pointers with polymorphic objects}{3}{subsection.3.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Segmentation fault, deadlock, live-lock}{4}{subsection.3.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Synchronizing commit function without locking code segment }{4}{subsection.3.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Synchronizing commit function without locking code segment }{5}{subsection.3.5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Resolved problems }{5}{subsection.3.6}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.1}Storing unknown objects }{5}{subsubsection.3.6.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.2}Template class and function }{5}{subsubsection.3.6.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.3}RAW pointers with polymorphic objects}{5}{subsubsection.3.6.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.4}Segmentation fault}{5}{subsubsection.3.6.4}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.6.4}Segmentation fault}{6}{subsubsection.3.6.4}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Project description/achievement}{7}{section.4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Achieved}{7}{subsection.4.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Not achieved}{8}{subsection.4.2}}
@@ -44,7 +44,7 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {8.0.2}Transaction object}{13}{subsubsection.8.0.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {8.0.3}Base object}{14}{subsubsection.8.0.3}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:example}{{\caption@xref {fig:example}{ on input line 280}}{15}{Base object}{subfigure.1.2}{}}
+\newlabel{fig:example}{{\caption@xref {fig:example}{ on input line 291}}{15}{Base object}{subfigure.1.2}{}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Inheritance from base object}}}{15}{subfigure.1.1}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Target class inheritance}}}{15}{subfigure.1.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Public API functions for transactions}{15}{subsection.8.1}}
@@ -61,10 +61,30 @@
 \citation{sourceforge}
 \citation{cookbook}
 \@writefile{toc}{\contentsline {section}{\numberline {10}Testing}{19}{section.10}}
-\@writefile{toc}{\contentsline {section}{\numberline {11}Conclusion}{20}{section.11}}
+\@writefile{toc}{\contentsline {section}{\numberline {11}Benchmark}{20}{section.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.1}Page Fault}{20}{subsection.11.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {11.2}Transactions}{21}{subsection.11.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.2.1}Low number of transaction test}{21}{subsubsection.11.2.1}}
+\citation{Performance}
+\citation{Performance}
+\citation{Performance}
+\newlabel{fig:example}{{\caption@xref {fig:example}{ on input line 430}}{22}{Low number of transaction test}{subfigure.1.2}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {My library}}}{22}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Other solutions}}}{22}{subfigure.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.2.2}Two objects threaded transaction test}{22}{subsubsection.11.2.2}}
+\newlabel{fig:example}{{\caption@xref {fig:example}{ on input line 444}}{23}{Two objects threaded transaction test}{subfigure.1.2}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Simple transaction}}}{23}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Nested Transaction}}}{23}{subfigure.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.2.3}Six objects threaded transaction test}{23}{subsubsection.11.2.3}}
+\newlabel{fig:example}{{\caption@xref {fig:example}{ on input line 460}}{23}{Six objects threaded transaction test}{subfigure.1.2}{}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Simple transaction}}}{23}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Nested Transaction}}}{23}{subfigure.1.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {11.2.4}Collection of objects in transaction}{23}{subsubsection.11.2.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {12}Conclusion}{25}{section.12}}
 \bibstyle{abbrv}
 \bibdata{database.bib}
-\bibcite{sourceforge}{{1}{}{{}}{{}}}
-\bibcite{cookbook}{{2}{}{{}}{{}}}
+\bibcite{Performance}{{1}{}{{}}{{}}}
+\bibcite{sourceforge}{{2}{}{{}}{{}}}
+\bibcite{cookbook}{{3}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\@writefile{toc}{\contentsline {section}{\numberline {12}Bibliography}{21}{section.12}}
+\@writefile{toc}{\contentsline {section}{\numberline {13}Bibliography}{26}{section.13}}

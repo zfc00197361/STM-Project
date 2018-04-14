@@ -5,12 +5,12 @@
 \contentsline {subsection}{\numberline {3.2}Template class and functions}{3}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}RAW pointers with polymorphic objects}{3}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Segmentation fault, deadlock, live-lock}{4}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Synchronizing commit function without locking code segment }{4}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.5}Synchronizing commit function without locking code segment }{5}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}Resolved problems }{5}{subsection.3.6}
 \contentsline {subsubsection}{\numberline {3.6.1}Storing unknown objects }{5}{subsubsection.3.6.1}
 \contentsline {subsubsection}{\numberline {3.6.2}Template class and function }{5}{subsubsection.3.6.2}
 \contentsline {subsubsection}{\numberline {3.6.3}RAW pointers with polymorphic objects}{5}{subsubsection.3.6.3}
-\contentsline {subsubsection}{\numberline {3.6.4}Segmentation fault}{5}{subsubsection.3.6.4}
+\contentsline {subsubsection}{\numberline {3.6.4}Segmentation fault}{6}{subsubsection.3.6.4}
 \contentsline {section}{\numberline {4}Project description/achievement}{7}{section.4}
 \contentsline {subsection}{\numberline {4.1}Achieved}{7}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Not achieved}{8}{subsection.4.2}
@@ -36,5 +36,12 @@
 \contentsline {subsection}{\numberline {9.1}Transaction Manager}{18}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}Transaction object (TX)}{18}{subsection.9.2}
 \contentsline {section}{\numberline {10}Testing}{19}{section.10}
-\contentsline {section}{\numberline {11}Conclusion}{20}{section.11}
-\contentsline {section}{\numberline {12}Bibliography}{21}{section.12}
+\contentsline {section}{\numberline {11}Benchmark}{20}{section.11}
+\contentsline {subsection}{\numberline {11.1}Page Fault}{20}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Transactions}{21}{subsection.11.2}
+\contentsline {subsubsection}{\numberline {11.2.1}Low number of transaction test}{21}{subsubsection.11.2.1}
+\contentsline {subsubsection}{\numberline {11.2.2}Two objects threaded transaction test}{22}{subsubsection.11.2.2}
+\contentsline {subsubsection}{\numberline {11.2.3}Six objects threaded transaction test}{23}{subsubsection.11.2.3}
+\contentsline {subsubsection}{\numberline {11.2.4}Collection of objects in transaction}{23}{subsubsection.11.2.4}
+\contentsline {section}{\numberline {12}Conclusion}{25}{section.12}
+\contentsline {section}{\numberline {13}Bibliography}{26}{section.13}

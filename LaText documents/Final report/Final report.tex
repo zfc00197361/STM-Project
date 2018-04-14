@@ -17,11 +17,12 @@
 \usepackage{subfig}
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    urlcolor=blue,
+    linkcolor=black,
+    urlcolor=black,
     citecolor = gray,
     linktoc=all
 }
+
 \lstset { %
     language=C++,
     backgroundcolor=\color{black!5}, % set backgroundcolor
@@ -109,7 +110,17 @@ During the research I have found the boost c++ library, as a best solution to st
 In c++ programming language, if we intend to use shared or static library with the client application, the header files must be include in the developed code directory/compilation process. If the code contains a template class or function, that means the code will be checked in runtime, and must be placed in the header file. So, if all the code relying on template class or function, the static or shared library can not be build, because only the *.cpp files are build into the library file. To solve this problem, I need to remove the boost library, and redesign the code with standard c++ solution, provided by the available libraries in the  language, and providing only the functions declaration in the c++ header files.
 
 \subsection{RAW pointers with polymorphic objects}
-During the research, all of the documentation found by the internet, was used RAW pointers. For this reason, and because the RAW pointers the fastest in c++ language, I used as a first solution. The RAW pointers did not cause any problem during the development, until the memory management test. The memory management test happened with \textbf{Valgrind} programming tool for memory debugging, memory leak detection, and code profiling. With this test in the project I have faced with memory leaks. The library use virtual method in the base class to copying the objects within the transactions, and these methods are implemented in the child classes, and can be used by the polymorphic class behaviour. This function cause memory leaks during copying the child class instance. I have tried to use smart pointer in this function to bridge the memory leaks, but because the library doesn't know anything about the connected classes, the casting in the library from smart pointer to RAW pointer is impossible without the target class reference.
+During the research, all of the documentation found by the internet used RAW pointers. For this reason, and because the RAW pointers the fastest in c++ language, I used as a first solution. The RAW pointers did not cause any problem during the development, until the memory management test. The memory management test happened with \textbf{Valgrind} programming tool for memory debugging, memory leak detection, and code profiling.\\
+
+With this test in the project I have faced with memory leaks. The library use virtual method in the base class to copying the objects within the transactions, and these methods are implemented in the child classes, and it can be used by the polymorphic class behaviour. This functions causing memory leaks during copying the child class instance. I have tried to use smart pointer in this function to bridge the memory leaks, but because the library doesn't know anything about the connected classes, the casting in the library from smart pointer to RAW pointer is impossible without the target class reference.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{Pictures/memory.png}
+\caption*{\textit{\color{gray}No memory leaks with smart pointers using 300 threads.}}
+\end{figure}
+
+The \textbf{\textit{==26335==  still reachable: 72,704 bytes in 1 block}} part of the report is a common problem when using Valgrind with different version of compiler and Linux distributions. 
 
 \subsection{Segmentation fault, deadlock, live-lock}
 This are the more frequent problems when working with multi threaded programming environment. Since the project not using mutex locks to lock code sections, apart from registering the the objects and transactions, it is a huge challenge to find where is the memory corruption deadlock or live-lock happens. Sometimes, the code executing correctly, but sometimes throws an error or just hanging forever, that depends the threads sequence execution in the background and the number of threads used in the process. The code might throws an error with hundred threads but might not if the process uses only ten threads. Even, if the code executing correctly, it should be executed multiple times, to make sure there is no corruption or other locking events happen.\\
@@ -367,6 +378,100 @@ As part of the developer tools I used CppUnit, unit testing framework to test th
 \includegraphics[scale=0.2]{Pictures/test.png}
 
 \textit{\textbf{The documentation with the test code from the CppUnit test, can be found on the project website under CppUnit test.}}
+
+\section{Benchmark}
+
+\subsection{Page Fault}
+A \textbf{major page} fault occurs when disk access required from an application. When an application loaded into the memory, and an instruction need to be execute, the Linux kernel will search in the physical memory and CPU cache. If data/instruction doesn't exist in the searched memory, the Linux issues a major page fault.\\
+\begin{flushleft}
+When the page fault handler able to handle the request without require a disk search (I/O), it is treated as a \textbf{minor page} fault.
+\end{flushleft}
+\begin{flushleft}
+If the application uses to much memory that can not be handle by the main memory, that can cause major page fault what will slow down the application.
+\end{flushleft}
+
+\begin{flushleft}
+0.01user 0.00system 0:00.01elapsed 109\% CPU (0avgtext+0avgdata 3828maxresident)k
+0inputs+0outputs (0major+203minor)pagefaults 0swaps
+\end{flushleft}
+
+\begin{flushleft}
+The following diagram shows the Minor Page faults during thread creations. There was no Major Page fault in the test.
+\end{flushleft}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{Pictures/minor_fault.png}
+\caption*{\textit{\color{gray}Minor Page fault 10 to 10000 threads.}}
+\end{figure}
+
+
+\newpage
+\subsection{Transactions}
+At this part in the benchmarking, I'll use the same objects between the treads, to force the library to restart the transactions as much as possible. First, I'll use low number of threads to compare the library with other Software Transactional Memory solutions, from the past decades. All the test will be done with the average calculation in a way to executing the same transactions more times and the average will be used in the test output.
+
+\subsubsection{Low number of transaction test}
+In the past the Software Transactional Memory solution used up to 16 threads to test the performance of the library. In this test I'll use the same six objects in all of the transactions to cause rollback as much as possible.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{Pictures/base_transaction.png}
+\caption*{\textit{\color{gray}Low number of the reads 2 - 16.}}
+\end{figure}
+
+\newpage
+To comparing my Software Transactional Memory library with other similar solution need to have some information how the test was carries out. The best resource to compare the number of transaction roll-backs between the libraries found in a Master Thesis\cite{Performance}  from 2010. However, there is no information about the number of memory spaces used in the transactions, only the number of threads, I assume the two object comparison with same amount of threads will be good enough.
+\begin{figure}[h!]%
+    \centering
+    \subfloat[My library]{{\includegraphics[width=6cm]{Pictures/myLibrary.png} }}%
+    \qquad
+    \subfloat[Other solutions]{{\includegraphics[width=6cm]{Pictures/compare.png} }}%
+    \caption*{\textit{\color{gray}Compare with other libraries from Master Thesis\cite{Performance}}}%
+    \label{fig:example}%
+\end{figure}
+
+I used only two objects in this test, but the previous test with six objects produces 5.9 retries with 8 threads. 
+
+\subsubsection{Two objects threaded transaction test}
+The following diagrams shows the number of roll-backs with two objects accessed by various number of threads in simple transactions and nested transactions.
+
+\begin{figure}[h!]%
+    \centering
+    \subfloat[Simple transaction]{{\includegraphics[width=6cm]{Pictures/two_object.png} }}%
+    \qquad
+    \subfloat[Nested Transaction]{{\includegraphics[width=6cm]{Pictures/two_object_nested.png} }}%
+    \caption*{\textit{\color{gray}Number of rollbacks}}%
+    \label{fig:example}%
+\end{figure}
+
+As we can see between the two diagram, test and nested test, the nested transactions are more expensive than the simple transaction. While the transactions are starting a new inner transaction, and the same time the other transactions are commits the changes with the same objects, it causing lots of starvation, and required restart the transactions more the once, if we using high number of threads. 
+  
+
+\newpage
+\subsubsection{Six objects threaded transaction test}
+The following diagrams shows the number of roll-backs with six objects accessed by various number of threads in simple transactions and nested transactions.
+
+\begin{figure}[h!]%
+    \centering
+    \subfloat[Simple transaction]{{\includegraphics[width=6cm]{Pictures/six_object.png} }}%
+    \qquad
+    \subfloat[Nested Transaction]{{\includegraphics[width=6cm]{Pictures/six_object_nested.png} }}%
+    \caption*{\textit{\color{gray}Number of rollbacks}}%
+    \label{fig:example}%
+\end{figure}
+The transaction having higher number of same objects (six in this case) causing similar starvation like the nested transactions with two objects. Even nesting these transactions causing high number of roll-back. 
+
+
+\subsubsection{Collection of objects in transaction}
+When transaction have a collection of objects, the execution are exactly the same like the other transactions with single object, but the complexity can cause very long execution time, specially if more transaction accessing the same collection. For this reason I'll test only the transaction without nesting with high number of objects and low number of threads.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.6]{Pictures/collection.png}
+\caption*{\textit{\color{gray}Transactions with 600 object in the collection.}}
+\end{figure}
+
+\newpage
 \section{Conclusion}
 This project was out of my comfort zone, with the concurrent programming and the Transactional environment. During my internship I have met with the transactions in Java framework, and now I had chance to learn how to implement it in C++ programming language. This project is really different from another project or from previous experience, where we need to create communication between programming components, create GIU interface to interact with the system and store values in the database.\\
 

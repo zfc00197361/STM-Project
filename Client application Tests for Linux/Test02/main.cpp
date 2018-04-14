@@ -107,6 +107,35 @@ void _six_account_transfer_(std::shared_ptr<OSTM> _to_, std::shared_ptr<OSTM> _f
             /*!
              * Commit changes
              */
+                 /*!
+             * NESTED TRANSACTION
+             */
+            std::shared_ptr<TX> txTwo = _tm._get_tx();
+
+            bool nestedDone = false;
+            while (!nestedDone) {
+                _TO_ = std::dynamic_pointer_cast<BANK> (tx->load(_to_));
+                _FROM_ONE_ = std::dynamic_pointer_cast<BANK> (tx->load(_from_one_));
+                /*!
+                 * Make changes with the objects
+                 */
+                _TO_->SetBalance(_TO_->GetBalance() + (_amount * 5));
+                _FROM_ONE_->SetBalance(_FROM_ONE_->GetBalance() - _amount);
+                /*!
+                 * From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+                 */
+                _TO_OSTM = std::dynamic_pointer_cast<OSTM> (_TO_);
+                _FROM_ONE_OSTM = std::dynamic_pointer_cast<OSTM> (_FROM_ONE_);
+                /*!
+                 * Store changes
+                 */
+                txTwo->store(_TO_OSTM);
+                txTwo->store(_FROM_ONE_OSTM);
+                /*!
+                 * Commit changes
+                 */
+                nestedDone = txTwo->commit();
+            }
             done = tx->commit();
         }
     } catch (std::runtime_error& e) {
@@ -160,32 +189,32 @@ void _two_account_transfer_(std::shared_ptr<OSTM> _to_, std::shared_ptr<OSTM> _f
             /*!
              * NESTED TRANSACTION
              */
-            std::shared_ptr<TX> txTwo = _tm._get_tx();
-
-            bool nestedDone = false;
-            while (!nestedDone) {
-                _TO_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_to_));
-                _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_from_));
-                /*!
-                 * Make changes with the objects
-                 */
-                _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
-                _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
-                /*!
-                 * From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
-                 */
-                _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
-                _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
-                /*!
-                 * Store changes
-                 */
-                txTwo->store(_TO_OSTM_);
-                txTwo->store(_FROM_OSTM_);
-                /*!
-                 * Commit changes
-                 */
-                nestedDone = txTwo->commit();
-            }
+//            std::shared_ptr<TX> txTwo = _tm._get_tx();
+//
+//            bool nestedDone = false;
+//            while (!nestedDone) {
+//                _TO_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_to_));
+//                _FROM_BANK_ = std::dynamic_pointer_cast<BANK> (txTwo->load(_from_));
+//                /*!
+//                 * Make changes with the objects
+//                 */
+//                _TO_BANK_->SetBalance(_TO_BANK_->GetBalance() + _amount);
+//                _FROM_BANK_->SetBalance(_FROM_BANK_->GetBalance() - _amount);
+//                /*!
+//                 * From std::shared_ptr<BANK> to std::shared_ptr<OSTM> to store the memory spaces
+//                 */
+//                _TO_OSTM_ = std::dynamic_pointer_cast<OSTM> (_TO_BANK_);
+//                _FROM_OSTM_ = std::dynamic_pointer_cast<OSTM> (_FROM_BANK_);
+//                /*!
+//                 * Store changes
+//                 */
+//                txTwo->store(_TO_OSTM_);
+//                txTwo->store(_FROM_OSTM_);
+//                /*!
+//                 * Commit changes
+//                 */
+//                nestedDone = txTwo->commit();
+//            }
             /*!
              * Commit changes
              */
@@ -282,27 +311,27 @@ int main(void) {
      * vector_number is 100 at the moment<br>
      * for(int i=0;i<vector_number;++i)
      */
-    for (int i = 0; i < vector_number; ++i) {
-        if (i % 6 == 0) {
-            std::shared_ptr<OSTM> sharedptr(new AIB(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
-            _customer_vec.push_back(std::move(sharedptr));
-        } else if (i % 5 == 0) {
-            std::shared_ptr<OSTM> sharedptr(new BOI(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
-            _customer_vec.push_back(std::move(sharedptr));
-        } else if (i % 4 == 0) {
-            std::shared_ptr<OSTM> sharedptr(new BOA(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
-            _customer_vec.push_back(std::move(sharedptr));
-        } else if (i % 3 == 0) {
-            std::shared_ptr<OSTM> sharedptr(new SWBPLC(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
-            _customer_vec.push_back(std::move(sharedptr));
-        } else if (i % 2 == 0) {
-            std::shared_ptr<OSTM> sharedptr(new ULSTER(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
-            _customer_vec.push_back(std::move(sharedptr));
-        } else if (i % 1 == 0) {
-            std::shared_ptr<OSTM> sharedptr(new UNBL(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
-            _customer_vec.push_back(std::move(sharedptr));
-        }
-    }
+//    for (int i = 0; i < vector_number; ++i) {
+//        if (i % 6 == 0) {
+//            std::shared_ptr<OSTM> sharedptr(new AIB(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
+//            _customer_vec.push_back(std::move(sharedptr));
+//        } else if (i % 5 == 0) {
+//            std::shared_ptr<OSTM> sharedptr(new BOI(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
+//            _customer_vec.push_back(std::move(sharedptr));
+//        } else if (i % 4 == 0) {
+//            std::shared_ptr<OSTM> sharedptr(new BOA(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
+//            _customer_vec.push_back(std::move(sharedptr));
+//        } else if (i % 3 == 0) {
+//            std::shared_ptr<OSTM> sharedptr(new SWBPLC(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
+//            _customer_vec.push_back(std::move(sharedptr));
+//        } else if (i % 2 == 0) {
+//            std::shared_ptr<OSTM> sharedptr(new ULSTER(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
+//            _customer_vec.push_back(std::move(sharedptr));
+//        } else if (i % 1 == 0) {
+//            std::shared_ptr<OSTM> sharedptr(new UNBL(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
+//            _customer_vec.push_back(std::move(sharedptr));
+//        }
+//    }
 
 
     /*!
@@ -338,7 +367,7 @@ int main(void) {
      * If the threadArraySize is divisible with three, the threads will be distributed between function.<br>
      * However, you can creates any number of threads, but to follow the correct output should increase the IF ELSE statement to distribute the threads in equal number. 
      */
-    int threadArraySize = 3;
+    int threadArraySize = 8;
     std::thread thArray[threadArraySize];
 
     /*!
@@ -354,15 +383,15 @@ int main(void) {
          * thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount)<br>
          * thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
          */
-       // thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount);
+    //    thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount);
     
         //thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
-            if (i % 3 == 0) 
-                thArray[i] = std::thread(_two_account_transfer_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
-            else if (i % 2 == 0)
-                thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount);
-            else if (i % 1 == 0)
-                thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
+//            if (i % 3 == 0) 
+               thArray[i] = std::thread(_two_account_transfer_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+//            else if (i % 2 == 0)
+//                thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount);
+//            else if (i % 1 == 0)
+ //               thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
 
     }
     /*
@@ -389,9 +418,9 @@ int main(void) {
         swplc_ptr->toString();
         ulster_ptr->toString();
         unbl_ptr->toString();
-        for(int i=0; i<vector_number; ++i){
-            _customer_vec[i]->toString();
-        }
+//        for(int i=0; i<vector_number; ++i){
+//            _customer_vec[i]->toString();
+//        }
 
 
     std::cout << "\nMAIN PROCESS EXIT !!!! " << std::endl;
