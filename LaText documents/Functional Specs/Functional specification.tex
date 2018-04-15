@@ -16,8 +16,8 @@
 \pagenumbering{roman}
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    urlcolor=blue,
+    linkcolor=black,
+    urlcolor=black,
     citecolor = gray,
     linktoc=all
 }
@@ -122,7 +122,7 @@ The values/object received by the transactional memory library, it creates a cop
 A copy created and associating a version number with it. This version number will be used to determine the changes on the value/object by the other transactions within the context.
 
 \subsection{Start transaction}
-When the transaction start, the library check the version number associated with the data/object, to compare against the transaction own copy. If the version numbers are not the same, then the transaction aborting and restart with the new copy of the origanl object. If the version numbers are same, then the transaction locks the global data set copy of the value/object and make the changes. Before the transaction commit, make permanent changes on the value/object used in the transaction it needs to compare the version number again to determine the conflicts.   
+When the transaction start, the library check the version number associated with the data/object, to compare against the transaction own copy. If the version numbers are not the same, then the transaction aborting and restart with the new copy of the original object. If the version numbers are same, then the transaction locks the global data set copy of the value/object and make the changes. Before the transaction commit, make permanent changes on the value/object used in the transaction it needs to compare the version number again to determine the conflicts.   
 
 \subsection{Commit transaction}
 This phase of the transaction, the library locks the used shared memory spaces in an atomic block, and hide from the other processes to write changes into the local data set. After the changes has made on the local data set, before finalize the write process to the destination shared memory spaces, must to determine if any other process had accessed the same data set, and made changes on it. It is happening with compare the transaction object version number with the shared memory space version number. The transaction commits the changes if no conflict detected between version numbers. When the changes has made on the shared memory space, then release the lock on the data/object and the transaction has finished.\\ 

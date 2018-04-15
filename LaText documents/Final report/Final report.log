@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.1)  13 APR 2018 22:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.4.1)  14 APR 2018 20:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -387,7 +387,7 @@ LaTeX Info: Redefining \nameref on input line 39.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
 
-<Pictures/carlow.png, id=192, 266.9975pt x 144.54pt>
+<Pictures/carlow.png, id=196, 266.9975pt x 144.54pt>
 File: Pictures/carlow.png Graphic file (type png)
  <use Pictures/carlow.png>
 Package pdftex.def Info: Pictures/carlow.png used on input line 65.
@@ -419,348 +419,404 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 ...ion Manager functions}{17}{subsection.8.2}
+l.32 ...ion Manager functions}{19}{subsection.8.2}
                                                    [1])
 \tf@toc=\write4
 \openout4 = `"Final report.toc"'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--96
+Overfull \hbox (8.83986pt too wide) in paragraph at lines 94--95
+\OT1/ptm/m/n/12 lan-guage ex-ten-sions, spe-cific com-piler sup-port, that re-q
+uired to in-stall or re-place/up-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 98.
+
+Overfull \hbox (20.23859pt too wide) in paragraph at lines 98--99
+\OT1/ptm/m/n/12 API func-tion-al-ity can be found on the project web-site. \OT1
+/ptm/b/it/12 http://glasnost.itcarlow.ie/ soft-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 107.
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 115.
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
-[3] <Pictures/memory.png, id=326, 456.70625pt x 175.65625pt>
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+<Pictures/memory.png, id=332, 456.70625pt x 175.65625pt>
 File: Pictures/memory.png Graphic file (type png)
 
 <use Pictures/memory.png>
-Package pdftex.def Info: Pictures/memory.png used on input line 119.
+Package pdftex.def Info: Pictures/memory.png used on input line 130.
 (pdftex.def)             Requested size: 319.69218pt x 122.95853pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+ [4 <./Pictures/memory.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-[4 <./Pictures/memory.png>] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 [8]
-Overfull \hbox (1.76006pt too wide) in paragraph at lines 204--205
-[]\OT1/ptm/m/n/12 Building code, us-ing poly-mor-phic pro-gram-ming fea-tures t
-o han-dle un-known
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 230--231
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
 
 [10] [11]
-Overfull \hbox (25.6162pt too wide) in paragraph at lines 250--252
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+
+ []
+
+[12] [13]
+Overfull \hbox (25.6162pt too wide) in paragraph at lines 269--271
 \OT1/ptm/m/n/12 The an-other part that needed re-search, is unit test-ing for C
 ++ pro-gram-ming language.[[]]
  []
 
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 257.
+(hyperref)                than one, level fixed on input line 276.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
-<Pictures/TM.png, id=398, 916.42375pt x 337.26pt>
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+<Pictures/TM.png, id=413, 916.42375pt x 337.26pt>
 File: Pictures/TM.png Graphic file (type png)
  <use Pictures/TM.png>
-Package pdftex.def Info: Pictures/TM.png used on input line 265.
+Package pdftex.def Info: Pictures/TM.png used on input line 284.
 (pdftex.def)             Requested size: 366.563pt x 134.9016pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
-[13 <./Pictures/TM.png>] <Pictures/TX.png, id=406, 694.595pt x 261.97874pt>
+[15 <./Pictures/TM.png>] <Pictures/TX.png, id=420, 694.595pt x 261.97874pt>
 File: Pictures/TX.png Graphic file (type png)
 
 <use Pictures/TX.png>
-Package pdftex.def Info: Pictures/TX.png used on input line 278.
+Package pdftex.def Info: Pictures/TX.png used on input line 297.
 (pdftex.def)             Requested size: 416.76022pt x 157.18845pt.
 
-Overfull \hbox (26.76022pt too wide) in paragraph at lines 278--279
+Overfull \hbox (26.76022pt too wide) in paragraph at lines 297--298
  [][] 
  []
 
-<Pictures/BASE.png, id=407, 473.77pt x 597.23125pt>
+[16 <./Pictures/TX.png>] <Pictures/BASE.png, id=428, 473.77pt x 597.23125pt>
 File: Pictures/BASE.png Graphic file (type png)
- <use Pictures/BASE.png>
-Package pdftex.def Info: Pictures/BASE.png used on input line 287.
+
+<use Pictures/BASE.png>
+Package pdftex.def Info: Pictures/BASE.png used on input line 306.
 (pdftex.def)             Requested size: 170.71652pt x 215.20357pt.
-
-<Pictures/aib.png, id=408, 340.27126pt x 337.26pt>
+ <Pictures/aib.png, id=429, 340.27126pt x 337.26pt>
 File: Pictures/aib.png Graphic file (type png)
- <use Pictures/aib.png>
-Package pdftex.def Info: Pictures/aib.png used on input line 289.
+
+<use Pictures/aib.png>
+Package pdftex.def Info: Pictures/aib.png used on input line 308.
 (pdftex.def)             Requested size: 170.71652pt x 169.20595pt.
-
-[14 <./Pictures/TX.png>] [15 <./Pictures/BASE.png> <./Pictures/aib.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 308--309
+ [17 <./Pictures/BASE.png> <./Pictures/aib.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
 
  []
 
-<Pictures/commit.png, id=424, 325.215pt x 139.52126pt>
-File: Pictures/commit.png Graphic file (type png)
-
-<use Pictures/commit.png>
-Package pdftex.def Info: Pictures/commit.png used on input line 314.
-(pdftex.def)             Requested size: 170.71652pt x 73.24123pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 323--326
-
- []
-
-
+[18]
 Underfull \hbox (badness 10000) in paragraph at lines 327--328
 
  []
 
+<Pictures/commit.png, id=443, 325.215pt x 139.52126pt>
+File: Pictures/commit.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+<use Pictures/commit.png>
+Package pdftex.def Info: Pictures/commit.png used on input line 333.
+(pdftex.def)             Requested size: 170.71652pt x 73.24123pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--345
 
  []
 
-[17 <./Pictures/commit.png>]
-LaTeX Font Info:    Try loading font information for OML+ptm on input line 338.
+[19 <./Pictures/commit.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
+
+ []
+
+LaTeX Font Info:    Try loading font information for OML+ptm on input line 357.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 338.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 357.
+ [20]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 342.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 361.
 
-Overfull \hbox (36.00433pt too wide) in paragraph at lines 342--343
+Overfull \hbox (36.00433pt too wide) in paragraph at lines 361--362
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[18] <Pictures/test.png, id=455, 1950.28625pt x 501.875pt>
+[21] <Pictures/test.png, id=478, 1950.28625pt x 501.875pt>
 File: Pictures/test.png Graphic file (type png)
 
 <use Pictures/test.png>
-Package pdftex.def Info: Pictures/test.png used on input line 378.
+Package pdftex.def Info: Pictures/test.png used on input line 397.
 (pdftex.def)             Requested size: 390.05034pt x 100.37321pt.
 
-Overfull \hbox (17.67516pt too wide) in paragraph at lines 378--379
+Overfull \hbox (17.67516pt too wide) in paragraph at lines 397--398
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
-[19 <./Pictures/test.png>]
-<Pictures/minor_fault.png, id=470, 463.7325pt x 256.96pt>
+<Pictures/minor_fault.png, id=479, 463.7325pt x 256.96pt>
 File: Pictures/minor_fault.png Graphic file (type png)
 
 <use Pictures/minor_fault.png>
-Package pdftex.def Info: Pictures/minor_fault.png used on input line 404.
+Package pdftex.def Info: Pictures/minor_fault.png used on input line 423.
 (pdftex.def)             Requested size: 278.24164pt x 154.17719pt.
- [20 <./Pictures/minor_fault.png>]
-<Pictures/base_transaction.png, id=476, 927.465pt x 531.9875pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[22 <./Pictures/test.png>]
+<Pictures/base_transaction.png, id=490, 927.465pt x 531.9875pt>
 File: Pictures/base_transaction.png Graphic file (type png)
 
 <use Pictures/base_transaction.png>
-Package pdftex.def Info: Pictures/base_transaction.png used on input line 418.
+Package pdftex.def Info: Pictures/base_transaction.png used on input line 437.
 (pdftex.def)             Requested size: 370.97943pt x 212.79123pt.
- [21 <./Pictures/base_transaction.png>]pdfTeX warning (ext4): destination with 
-the same identifier (name{subfigure.1.1}) has been already used, duplicate igno
-red
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[23 <./Pictures/minor_fault.png>]pdfTeX warning (ext4): destination with the sa
+me identifier (name{subfigure.1.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.426     \subfloat
-                   [My library]{{\includegraphics[width=6cm]{Pictures/myLibr...
-<Pictures/myLibrary.png, id=483, 928.46875pt x 521.95pt>
-File: Pictures/myLibrary.png Graphic file (type png)
+l.447     \subfloat
+                   [My library]{{\includegraphics[width=6cm]{Pictures/comare...
+<Pictures/comare32.png, id=498, 700.6175pt x 394.47375pt>
+File: Pictures/comare32.png Graphic file (type png)
 
-<use Pictures/myLibrary.png>
-Package pdftex.def Info: Pictures/myLibrary.png used on input line 426.
-(pdftex.def)             Requested size: 170.71652pt x 95.96988pt.
+<use Pictures/comare32.png>
+Package pdftex.def Info: Pictures/comare32.png used on input line 447.
+(pdftex.def)             Requested size: 170.71652pt x 96.12022pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.428     \subfloat
+l.449     \subfloat
                    [Other solutions]{{\includegraphics[width=6cm]{Pictures/c...
-<Pictures/compare.png, id=484, 561.09625pt x 400.49625pt>
+<Pictures/compare.png, id=499, 561.09625pt x 400.49625pt>
 File: Pictures/compare.png Graphic file (type png)
 
 <use Pictures/compare.png>
-Package pdftex.def Info: Pictures/compare.png used on input line 428.
+Package pdftex.def Info: Pictures/compare.png used on input line 449.
 (pdftex.def)             Requested size: 170.71652pt x 121.84868pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.1
-}) has been already used, duplicate ignored
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[24 <./Pictures/base_transaction.png>]pdfTeX warning (ext4): destination with t
+he same identifier (name{subfigure.1.1}) has been already used, duplicate ignor
+ed
 <to be read again> 
                    \relax 
-l.440     \subfloat
+l.460     \subfloat
                    [Simple transaction]{{\includegraphics[width=6cm]{Picture...
-<Pictures/two_object.png, id=487, 465.74pt x 256.96pt>
+<Pictures/two_object.png, id=508, 465.74pt x 256.96pt>
 File: Pictures/two_object.png Graphic file (type png)
 
 <use Pictures/two_object.png>
-Package pdftex.def Info: Pictures/two_object.png used on input line 440.
+Package pdftex.def Info: Pictures/two_object.png used on input line 460.
 (pdftex.def)             Requested size: 170.71652pt x 94.18758pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.442     \subfloat
+l.462     \subfloat
                    [Nested Transaction]{{\includegraphics[width=6cm]{Picture...
-<Pictures/two_object_nested.png, id=488, 461.725pt x 262.9825pt>
+<Pictures/two_object_nested.png, id=509, 461.725pt x 262.9825pt>
 File: Pictures/two_object_nested.png Graphic file (type png)
 
 <use Pictures/two_object_nested.png>
-Package pdftex.def Info: Pictures/two_object_nested.png used on input line 442.
+Package pdftex.def Info: Pictures/two_object_nested.png used on input line 462.
 
 (pdftex.def)             Requested size: 170.71652pt x 97.23378pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[22 <./Pictures/myLibrary.png> <./Pictures/compare.png>]pdfTeX warning (ext4): 
-destination with the same identifier (name{subfigure.1.1}) has been already use
-d, duplicate ignored
+ [25 <./Pictures/comare32.png> <./Pictures/compare.png> <./Pictures/two_object.
+png> <./Pictures/two_object_nested.png>]pdfTeX warning (ext4): destination with
+ the same identifier (name{subfigure.1.1}) has been already used, duplicate ign
+ored
 <to be read again> 
                    \relax 
-l.456     \subfloat
+l.476     \subfloat
                    [Simple transaction]{{\includegraphics[width=6cm]{Picture...
-<Pictures/six_object.png, id=496, 638.385pt x 359.3425pt>
+<Pictures/six_object.png, id=516, 638.385pt x 359.3425pt>
 File: Pictures/six_object.png Graphic file (type png)
 
 <use Pictures/six_object.png>
-Package pdftex.def Info: Pictures/six_object.png used on input line 456.
+Package pdftex.def Info: Pictures/six_object.png used on input line 476.
 (pdftex.def)             Requested size: 170.71652pt x 96.09163pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.458     \subfloat
+l.478     \subfloat
                    [Nested Transaction]{{\includegraphics[width=6cm]{Picture...
-<Pictures/six_object_nested.png, id=497, 638.385pt x 350.30875pt>
+<Pictures/six_object_nested.png, id=517, 638.385pt x 350.30875pt>
 File: Pictures/six_object_nested.png Graphic file (type png)
 
 <use Pictures/six_object_nested.png>
-Package pdftex.def Info: Pictures/six_object_nested.png used on input line 458.
+Package pdftex.def Info: Pictures/six_object_nested.png used on input line 478.
 
 (pdftex.def)             Requested size: 170.71652pt x 93.67592pt.
 
-<Pictures/collection.png, id=498, 579.16376pt x 326.21875pt>
+<Pictures/collection.png, id=518, 579.16376pt x 326.21875pt>
 File: Pictures/collection.png Graphic file (type png)
 
 <use Pictures/collection.png>
-Package pdftex.def Info: Pictures/collection.png used on input line 470.
+Package pdftex.def Info: Pictures/collection.png used on input line 490.
 (pdftex.def)             Requested size: 347.50093pt x 195.73274pt.
- [23 <./Pictures/two_object.png> <./Pictures/two_object_nested.png> <./Pictures
-/six_object.png> <./Pictures/six_object_nested.png>] [24 <./Pictures/collection
-.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[26 <./Pictures/six_object.png> <./Pictures/six_object_nested.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 478--479
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
 
  []
 
-[25] (./Final report.bbl
+[27 <./Pictures/collection.png>] [28] (./Final report.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
@@ -778,38 +834,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--21
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 492.
- [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 492.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 517.
+ [29]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 517.
  (./Final report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 492.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 492.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 517.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 517.
 Package rerunfilecheck Info: File `"Final report".out' has not changed.
-(rerunfilecheck)             Checksum: C0E2E07F2FEC0B469FCE8ECD9F9864AC;3379.
+(rerunfilecheck)             Checksum: FE91A777D29DB4EC77FB7F5718715ED0;3440.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 492.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 517.
  ) 
 Here is how much of TeX's memory you used:
- 9249 strings out of 493029
- 138939 string characters out of 6136235
+ 9254 strings out of 493029
+ 138977 string characters out of 6136235
  261372 words of memory out of 5000000
- 12511 multiletter control sequences out of 15000+600000
+ 12512 multiletter control sequences out of 15000+600000
  26195 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,58p,967b,1251s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,58p,898b,1251s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "Final report.pdf" (29 pages, 657255 bytes).
+Output written on "Final report.pdf" (32 pages, 654142 bytes).
 PDF statistics:
- 583 PDF objects out of 1000 (max. 8388607)
- 515 compressed objects within 6 object streams
- 150 named destinations out of 1000 (max. 500000)
- 462 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 604 PDF objects out of 1000 (max. 8388607)
+ 533 compressed objects within 6 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 470 words of extra memory for PDF output out of 10000 (max. 10000000)
 

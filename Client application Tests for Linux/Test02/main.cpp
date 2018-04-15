@@ -40,7 +40,7 @@
 /*!
  * \param vector_number control the size of the vector to store std::shared_ptr<OSTM> pointer
  */
-static int vector_number = 600;
+static int vector_number = 30;
 
 /*!
  * \brief _six_account_transfer_ function, takes six std::shared_ptr<OSTM> pointer, the Transaction manager, and the amount to use in the transaction and transfer the _amount value from five account to one account
@@ -311,27 +311,27 @@ int main(void) {
      * vector_number is 100 at the moment<br>
      * for(int i=0;i<vector_number;++i)
      */
-//    for (int i = 0; i < vector_number; ++i) {
-//        if (i % 6 == 0) {
-//            std::shared_ptr<OSTM> sharedptr(new AIB(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
-//            _customer_vec.push_back(std::move(sharedptr));
-//        } else if (i % 5 == 0) {
-//            std::shared_ptr<OSTM> sharedptr(new BOI(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
-//            _customer_vec.push_back(std::move(sharedptr));
-//        } else if (i % 4 == 0) {
-//            std::shared_ptr<OSTM> sharedptr(new BOA(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
-//            _customer_vec.push_back(std::move(sharedptr));
-//        } else if (i % 3 == 0) {
-//            std::shared_ptr<OSTM> sharedptr(new SWBPLC(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
-//            _customer_vec.push_back(std::move(sharedptr));
-//        } else if (i % 2 == 0) {
-//            std::shared_ptr<OSTM> sharedptr(new ULSTER(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
-//            _customer_vec.push_back(std::move(sharedptr));
-//        } else if (i % 1 == 0) {
-//            std::shared_ptr<OSTM> sharedptr(new UNBL(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
-//            _customer_vec.push_back(std::move(sharedptr));
-//        }
-//    }
+    for (int i = 0; i < vector_number; ++i) {
+        if (i % 6 == 0) {
+            std::shared_ptr<OSTM> sharedptr(new AIB(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
+            _customer_vec.push_back(std::move(sharedptr));
+        } else if (i % 5 == 0) {
+            std::shared_ptr<OSTM> sharedptr(new BOI(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
+            _customer_vec.push_back(std::move(sharedptr));
+        } else if (i % 4 == 0) {
+            std::shared_ptr<OSTM> sharedptr(new BOA(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
+            _customer_vec.push_back(std::move(sharedptr));
+        } else if (i % 3 == 0) {
+            std::shared_ptr<OSTM> sharedptr(new SWBPLC(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
+            _customer_vec.push_back(std::move(sharedptr));
+        } else if (i % 2 == 0) {
+            std::shared_ptr<OSTM> sharedptr(new ULSTER(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
+            _customer_vec.push_back(std::move(sharedptr));
+        } else if (i % 1 == 0) {
+            std::shared_ptr<OSTM> sharedptr(new UNBL(i, 50, "Joe", "Blog", "High street, Kilkenny, Co.Kilkenny"));
+            _customer_vec.push_back(std::move(sharedptr));
+        }
+    }
 
 
     /*!
@@ -387,11 +387,11 @@ int main(void) {
     
         //thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
 //            if (i % 3 == 0) 
-               thArray[i] = std::thread(_two_account_transfer_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
+ //              thArray[i] = std::thread(_two_account_transfer_, aib_ptr, boi_ptr, std::ref(tm), transferAmount);
 //            else if (i % 2 == 0)
 //                thArray[i] = std::thread(_six_account_transfer_, boi_ptr, boa_ptr, swplc_ptr, ulster_ptr, aib_ptr, unbl_ptr, std::ref(tm), transferAmount);
 //            else if (i % 1 == 0)
- //               thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
+                thArray[i] = std::thread(_complex_transfer_, aib_ptr, boi_ptr, std::ref(_customer_vec), std::ref(tm), transferAmount);
 
     }
     /*

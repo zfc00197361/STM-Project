@@ -3,45 +3,46 @@
 \contentsline {section}{\numberline {3}Problems encountered and resolved}{2}{section.3}
 \contentsline {subsection}{\numberline {3.1}Storing unknown objects}{3}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Template class and functions}{3}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}RAW pointers with polymorphic objects}{3}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Segmentation fault, deadlock, live-lock}{4}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.3}RAW pointers with polymorphic objects}{4}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Segmentation fault, deadlock, live-lock}{5}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Synchronizing commit function without locking code segment }{5}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Resolved problems }{5}{subsection.3.6}
-\contentsline {subsubsection}{\numberline {3.6.1}Storing unknown objects }{5}{subsubsection.3.6.1}
-\contentsline {subsubsection}{\numberline {3.6.2}Template class and function }{5}{subsubsection.3.6.2}
-\contentsline {subsubsection}{\numberline {3.6.3}RAW pointers with polymorphic objects}{5}{subsubsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6}Resolved problems }{6}{subsection.3.6}
+\contentsline {subsubsection}{\numberline {3.6.1}Storing unknown objects }{6}{subsubsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.2}Template class and function }{6}{subsubsection.3.6.2}
+\contentsline {subsubsection}{\numberline {3.6.3}RAW pointers with polymorphic objects}{6}{subsubsection.3.6.3}
 \contentsline {subsubsection}{\numberline {3.6.4}Segmentation fault}{6}{subsubsection.3.6.4}
-\contentsline {section}{\numberline {4}Project description/achievement}{7}{section.4}
-\contentsline {subsection}{\numberline {4.1}Achieved}{7}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Not achieved}{8}{subsection.4.2}
-\contentsline {section}{\numberline {5}What learned}{9}{section.5}
-\contentsline {subsection}{\numberline {5.1}Technical learning}{9}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Personal learning}{10}{subsection.5.2}
-\contentsline {section}{\numberline {6}What I would do differently if starting it again}{10}{section.6}
-\contentsline {section}{\numberline {7}Report on document update}{11}{section.7}
-\contentsline {subsection}{\numberline {7.1}Additional research}{12}{subsection.7.1}
-\contentsline {section}{\numberline {8}Module description}{12}{section.8}
-\contentsline {subsubsection}{\numberline {8.0.1}Transaction Manager}{12}{subsubsection.8.0.1}
-\contentsline {subsubsection}{\numberline {8.0.2}Transaction object}{13}{subsubsection.8.0.2}
-\contentsline {subsubsection}{\numberline {8.0.3}Base object}{14}{subsubsection.8.0.3}
-\contentsline {subsection}{\numberline {8.1}Public API functions for transactions}{15}{subsection.8.1}
-\contentsline {subsubsection}{\numberline {8.1.1}Register}{15}{subsubsection.8.1.1}
-\contentsline {subsubsection}{\numberline {8.1.2}Load}{15}{subsubsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.3}Store}{16}{subsubsection.8.1.3}
-\contentsline {subsubsection}{\numberline {8.1.4}Commit}{16}{subsubsection.8.1.4}
-\contentsline {subsection}{\numberline {8.2}Private API and Transaction Manager functions}{17}{subsection.8.2}
-\contentsline {subsubsection}{\numberline {8.2.1}Transaction Manager}{17}{subsubsection.8.2.1}
-\contentsline {subsubsection}{\numberline {8.2.2}Transaction object}{17}{subsubsection.8.2.2}
-\contentsline {section}{\numberline {9}Data structure}{18}{section.9}
-\contentsline {subsection}{\numberline {9.1}Transaction Manager}{18}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Transaction object (TX)}{18}{subsection.9.2}
-\contentsline {section}{\numberline {10}Testing}{19}{section.10}
-\contentsline {section}{\numberline {11}Benchmark}{20}{section.11}
-\contentsline {subsection}{\numberline {11.1}Page Fault}{20}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Transactions}{21}{subsection.11.2}
-\contentsline {subsubsection}{\numberline {11.2.1}Low number of transaction test}{21}{subsubsection.11.2.1}
-\contentsline {subsubsection}{\numberline {11.2.2}Two objects threaded transaction test}{22}{subsubsection.11.2.2}
-\contentsline {subsubsection}{\numberline {11.2.3}Six objects threaded transaction test}{23}{subsubsection.11.2.3}
-\contentsline {subsubsection}{\numberline {11.2.4}Collection of objects in transaction}{23}{subsubsection.11.2.4}
-\contentsline {section}{\numberline {12}Conclusion}{25}{section.12}
-\contentsline {section}{\numberline {13}Bibliography}{26}{section.13}
+\contentsline {section}{\numberline {4}Project description/achievement}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Achieved}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Not achieved}{9}{subsection.4.2}
+\contentsline {section}{\numberline {5}What learned}{11}{section.5}
+\contentsline {subsection}{\numberline {5.1}Technical learning}{11}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Personal learning}{12}{subsection.5.2}
+\contentsline {section}{\numberline {6}What I would do differently if starting it again}{12}{section.6}
+\contentsline {section}{\numberline {7}Report on document update}{13}{section.7}
+\contentsline {subsection}{\numberline {7.1}Additional research}{14}{subsection.7.1}
+\contentsline {section}{\numberline {8}Module description}{14}{section.8}
+\contentsline {subsubsection}{\numberline {8.0.1}Transaction Manager}{15}{subsubsection.8.0.1}
+\contentsline {subsubsection}{\numberline {8.0.2}Transaction object}{16}{subsubsection.8.0.2}
+\contentsline {subsubsection}{\numberline {8.0.3}Base object}{17}{subsubsection.8.0.3}
+\contentsline {subsection}{\numberline {8.1}Public API functions for transactions}{18}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Register}{18}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Load}{18}{subsubsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.3}Store}{18}{subsubsection.8.1.3}
+\contentsline {subsubsection}{\numberline {8.1.4}Commit}{18}{subsubsection.8.1.4}
+\contentsline {subsection}{\numberline {8.2}Private API and Transaction Manager functions}{19}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}Transaction Manager}{19}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Transaction object}{20}{subsubsection.8.2.2}
+\contentsline {section}{\numberline {9}Data structure}{20}{section.9}
+\contentsline {subsection}{\numberline {9.1}Transaction Manager}{20}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Transaction object (TX)}{21}{subsection.9.2}
+\contentsline {section}{\numberline {10}Testing}{21}{section.10}
+\contentsline {section}{\numberline {11}Benchmark}{22}{section.11}
+\contentsline {subsection}{\numberline {11.1}Page Fault}{22}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Transactions}{23}{subsection.11.2}
+\contentsline {subsubsection}{\numberline {11.2.1}Low number of threads transaction test}{23}{subsubsection.11.2.1}
+\contentsline {subsubsection}{\numberline {11.2.2}Two objects threaded transaction test}{25}{subsubsection.11.2.2}
+\contentsline {subsubsection}{\numberline {11.2.3}Six objects threaded transaction test}{26}{subsubsection.11.2.3}
+\contentsline {subsubsection}{\numberline {11.2.4}Collection of objects in transaction}{26}{subsubsection.11.2.4}
+\contentsline {section}{\numberline {12}Conclusion}{27}{section.12}
+\contentsline {section}{\numberline {13}Acknowledgements}{28}{section.13}
+\contentsline {section}{\numberline {14}Bibliography}{29}{section.14}

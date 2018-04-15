@@ -39,9 +39,10 @@
 \BOOKMARK [1][-]{section.11}{Benchmark}{}% 39
 \BOOKMARK [2][-]{subsection.11.1}{Page Fault}{section.11}% 40
 \BOOKMARK [2][-]{subsection.11.2}{Transactions}{section.11}% 41
-\BOOKMARK [3][-]{subsubsection.11.2.1}{Low number of transaction test}{subsection.11.2}% 42
+\BOOKMARK [3][-]{subsubsection.11.2.1}{Low number of threads transaction test}{subsection.11.2}% 42
 \BOOKMARK [3][-]{subsubsection.11.2.2}{Two objects threaded transaction test}{subsection.11.2}% 43
 \BOOKMARK [3][-]{subsubsection.11.2.3}{Six objects threaded transaction test}{subsection.11.2}% 44
 \BOOKMARK [3][-]{subsubsection.11.2.4}{Collection of objects in transaction}{subsection.11.2}% 45
 \BOOKMARK [1][-]{section.12}{Conclusion}{}% 46
-\BOOKMARK [1][-]{section.13}{Bibliography}{}% 47
+\BOOKMARK [1][-]{section.13}{Acknowledgements}{}% 47
+\BOOKMARK [1][-]{section.14}{Bibliography}{}% 48
