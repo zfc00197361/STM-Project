@@ -39,7 +39,7 @@ public:
      /*!
      * \brief OSTM required virtual method for display object
      */
-    virtual void toString(){};
+    virtual void toString() = 0;
     /*!
      * \brief setter for unique id
      */
