@@ -1,4 +1,0 @@
-Copy the lib_o_stm.dylib to /usr/lib directory
-
-sudo cp lib_o_stm.dylib /usr/lib
-

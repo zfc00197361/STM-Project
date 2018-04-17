@@ -1,0 +1,350 @@
+\hypertarget{_t_x_8cpp_source}{}\subsection{T\+X.\+cpp}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/* }
+00002 \textcolor{comment}{ * File:   TX.cpp}
+00003 \textcolor{comment}{ * Author: Zoltan Fuzesi C00197361, }
+00004 \textcolor{comment}{ * IT Carlow, Software Engineering, }
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * Supervisor : Joe Kehoe, }
+00007 \textcolor{comment}{ *}
+00008 \textcolor{comment}{ * C++ Software Transactional Memory, }
+00009 \textcolor{comment}{ * }
+00010 \textcolor{comment}{ * Created on December 18, 2017, 2:09 PM}
+00011 \textcolor{comment}{ * OSTM base class function declarations.}
+00012 \textcolor{comment}{ */}
+00013 
+00014 \textcolor{preprocessor}{#include "\hyperlink{_t_x_8h}{TX.h}"}
+00015 \textcolor{preprocessor}{#include <iostream>}
+00016 \textcolor{comment}{/*}
+00017 \textcolor{comment}{  @19 main\_Process\_Map\_collection, register static Global class level map to store all transactional
+       objects/pointers}
+00018 \textcolor{comment}{ */}
+00019 std::map<int, std::shared\_ptr<OSTM> >\hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection};
+00020 \textcolor{comment}{/*}
+00021 \textcolor{comment}{  @23 process\_map\_collection, register static Global class level map to store all transaction number
+       associated with the main process}
+00022 \textcolor{comment}{ */}
+00023 std::map<pid\_t, std::map< int, int >> \hyperlink{class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f}{TX::process\_map\_collection};
+00024 \textcolor{comment}{/*}
+00025 \textcolor{comment}{  @27 egister\_Lock, register static class level shared std:mutex to protect shared map during transaction
+       registration}
+00026 \textcolor{comment}{ */}
+00027 std::mutex \hyperlink{class_t_x_aa688a8c96fa3cdf8cd92e267463536dc_aa688a8c96fa3cdf8cd92e267463536dc}{TX::register\_Lock};
+00028 \textcolor{comment}{/*}
+00029 \textcolor{comment}{  @31 test\_counter, register class level Integer variable to store the umber of rollback happens, for
+       testing purposes}
+00030 \textcolor{comment}{ */}
+00031 \textcolor{keywordtype}{int} \hyperlink{class_t_x_a25838234aab99ae891a90eb8623a8b3c_a25838234aab99ae891a90eb8623a8b3c}{TX::test\_counter} = 0;
+\hypertarget{_t_x_8cpp_source.tex_l00036}{}\hyperlink{class_t_x_a8a4b83eab0171ae834bfa92bbced1094_a8a4b83eab0171ae834bfa92bbced1094}{00036} \hyperlink{class_t_x_a8a4b83eab0171ae834bfa92bbced1094_a8a4b83eab0171ae834bfa92bbced1094}{TX::TX}(std::thread::id \textcolor{keywordtype}{id}) \{
+00037     \textcolor{comment}{/* @38 Integer field <transaction\_Number> indicates the transaction number to the Transaction manager 
+      */}
+00038     this->\hyperlink{class_t_x_a145a1c74b521f277fe481971a930b249_a145a1c74b521f277fe481971a930b249}{transaction\_Number} = id;
+00039     \textcolor{comment}{/* @40 Integer field <\_tx\_nesting\_level> indicates the nesting level to the transaction itself */}
+00040     this->\hyperlink{class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_ae8f413fd7f4fea322e7ad3c668f9898e}{\_tx\_nesting\_level} = 0;
+00041 \}
+\hypertarget{_t_x_8cpp_source.tex_l00045}{}\hyperlink{class_t_x_abecf854cc3228ab6dd51175b3cd1c70a_abecf854cc3228ab6dd51175b3cd1c70a}{00045} \hyperlink{class_t_x_abecf854cc3228ab6dd51175b3cd1c70a_abecf854cc3228ab6dd51175b3cd1c70a}{TX::~TX}() \{
+00046     \textcolor{comment}{/* Destroy the object. */}
+00047 \}
+\hypertarget{_t_x_8cpp_source.tex_l00052}{}\hyperlink{class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_ae045534c4a9d39bd5c6ea2a39a372a79}{00052} \textcolor{keywordtype}{void} \hyperlink{class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_ae045534c4a9d39bd5c6ea2a39a372a79}{TX::th\_exit}() \{
+00053     \textcolor{comment}{/* @54 If bigger than ZERO, means active nested transactions running in background, do not delete
+       anything yet */}
+00054     \textcolor{keywordflow}{if} (this->\hyperlink{class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_ae8f413fd7f4fea322e7ad3c668f9898e}{\_tx\_nesting\_level} > 0) \{
+00055         \textcolor{comment}{/* Active nested transactions running in background, do not delete anything yet */}
+00056     \} \textcolor{keywordflow}{else} \{
+00057         \textcolor{comment}{/* Remove all elements map entries from transaction and clear the map */}
+00058         \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.clear();
+00059     \}
+00060 \}
+00061 
+\hypertarget{_t_x_8cpp_source.tex_l00068}{}\hyperlink{class_t_x_aa9739c5c2077454c779098db7baefc2b_aa9739c5c2077454c779098db7baefc2b}{00068} \textcolor{keywordtype}{void} \hyperlink{class_t_x_aa9739c5c2077454c779098db7baefc2b_aa9739c5c2077454c779098db7baefc2b}{TX::ostm\_exit}() \{
+00069     \textcolor{comment}{/* @70 Declare Iterator main\_Process\_Map\_collection\_Iterator */}
+00070     std::map<int, std::shared\_ptr<OSTM>>::iterator main\_Process\_Map\_collection\_Iterator;
+00071     \textcolor{comment}{/* @72 getppid() return the actual main process thread id, I used it to associate the Transactionas
+       with the main processes */}
+00072     pid\_t ppid = getppid();
+00073     \textcolor{comment}{/* @74 process\_map\_collection try to find the main process by it's ppid if registred in the library */}
+00074     std::map<pid\_t, std::map< int, int >>::iterator process\_map\_collection\_Iterator = 
+      \hyperlink{class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f}{TX::process\_map\_collection}.find(ppid);
+00075     \textcolor{comment}{/* @76 Check if iterator NOT pointing to the end of the process\_map\_collection then remove all
+       associated elements */}
+00076     \textcolor{keywordflow}{if} (process\_map\_collection\_Iterator != \hyperlink{class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f}{TX::process\_map\_collection}.end()) \{
+00077         \textcolor{comment}{/* @78 Iterate through the process\_map\_collection to find all transaction associated with main
+       process */}
+00078         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} current = process\_map\_collection\_Iterator->second.begin(); current != 
+      process\_map\_collection\_Iterator->second.end(); ++current) \{
+00079             \textcolor{comment}{/* @80 Find the OSTM object in the Global shared map */}
+00080             main\_Process\_Map\_collection\_Iterator = 
+      \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}.find(current->first);
+00081             \textcolor{comment}{/* @82 If object found then delete it*/}
+00082             \textcolor{keywordflow}{if} (main\_Process\_Map\_collection\_Iterator != 
+      \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}.end())\{
+00083                 \textcolor{comment}{/* @84 Delete element from shared main\_Process\_Map\_collection by object by the unique key,
+       and the shaed\_ptr will destroy automatically */}
+00084                 \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}.erase(
+      main\_Process\_Map\_collection\_Iterator->first);      
+00085             \}
+00086         \}
+00087         \textcolor{comment}{/* @88 Delete main process from Process\_map\_collection */}
+00088         \hyperlink{class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f}{TX::process\_map\_collection}.erase(process\_map\_collection\_Iterator->first);
+00089     \}
+00090 \}
+00091 
+\hypertarget{_t_x_8cpp_source.tex_l00096}{}\hyperlink{class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f51df97ac483e5bfe7db6ca6e}{00096} \textcolor{keywordtype}{void} \hyperlink{class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_abc32af2f51df97ac483e5bfe7db6ca6e}{TX::\_register}(std::shared\_ptr<OSTM> \textcolor{keywordtype}{object}) \{
+00097     \textcolor{comment}{/* @98 register\_Lock(mutex) shared lock between all transaction. MUST USE SHARED LOCK TO PROTECT SHARED
+       GLOBAL MAP/COLLECTION */}
+00098     std::lock\_guard<std::mutex> guard(\hyperlink{class_t_x_aa688a8c96fa3cdf8cd92e267463536dc_aa688a8c96fa3cdf8cd92e267463536dc}{TX::register\_Lock});
+00099     \textcolor{comment}{/* @100 RUNTIME ERROR. Check for null pointer ! Null pointer can cause segmentation fault!!! */}
+00100     \textcolor{keywordflow}{if}(\textcolor{keywordtype}{object} == \textcolor{keyword}{nullptr})\{
+00101         \textcolor{keywordflow}{throw} std::runtime\_error(std::string(\textcolor{stringliteral}{"[RUNTIME ERROR : NULL POINTER IN REGISTER FUNCTION]"}) );
+00102     \}
+00103     \textcolor{comment}{/* @104 getppid() return the actual main process thread id, I used it to associate the Transactionas
+       with the main processes */}
+00104     pid\_t ppid = getppid();
+00105     \textcolor{comment}{/* @106 Declare and initialize Iterator for process\_map\_collection, find main process*/}
+00106     std::map<pid\_t, std::map< int, int >>::iterator process\_map\_collection\_Iterator = 
+      \hyperlink{class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f}{TX::process\_map\_collection}.find(ppid);
+00107     \textcolor{comment}{/* @108 If iterator cannot find main process, then register*/}
+00108     \textcolor{keywordflow}{if} (process\_map\_collection\_Iterator == \hyperlink{class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f}{TX::process\_map\_collection}.end()) \{
+00109         \textcolor{comment}{/* @110 Create new empty map */}
+00110         std::map< int, int >map =  \hyperlink{class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_a3f5671423cb7b9f9c98f8a25f2a4b545}{get\_thread\_Map}();
+00111         \textcolor{comment}{/* @112 Register main process/application to the global map */}
+00112         \hyperlink{class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f}{TX::process\_map\_collection}.insert(\{ppid, map\});
+00113         \textcolor{comment}{/* @114 Get the map if registered first time */}
+00114         process\_map\_collection\_Iterator = \hyperlink{class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f}{TX::process\_map\_collection}.find(ppid);
+00115     \}
+00116     \textcolor{comment}{/* @117 Declare and initialize Iterator for main\_Process\_Map\_collection, find by original object */}
+00117     std::map<int, std::shared\_ptr<OSTM>>::iterator main\_Process\_Map\_collection\_Iterator = 
+      \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}.find(object->Get\_Unique\_ID());
+00118     \textcolor{comment}{/* @119 If object cannot find, then register */}
+00119     \textcolor{keywordflow}{if} (main\_Process\_Map\_collection\_Iterator == \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}
+      .end()) \{
+00120         \textcolor{comment}{/* '121 Insert the origin object to the GLOBAL MAP shared between transactions */}
+00121         \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}.insert(\{\textcolor{keywordtype}{object}->Get\_Unique\_ID(), \textcolor{keywordtype}{
+      object}\});
+00122         \textcolor{comment}{/* @123 Insert object ID to the GLOBAL MAP as a helper to clean up at end of main process, Second
+       value (1) not specified yet */}
+00123         process\_map\_collection\_Iterator->second.insert(\{\textcolor{keywordtype}{object}->Get\_Unique\_ID(), 1\});
+00124     \} 
+00125     \textcolor{comment}{/* @126 Declare and initialize Iterator for working\_Map\_collection, find copy of the original object */}
+00126     std::map< int, std::shared\_ptr<OSTM> >::iterator working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator 
+      = \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.find(object->Get\_Unique\_ID());
+00127     \textcolor{comment}{/* @128 If copy of the object not found, then register */}
+00128     \textcolor{keywordflow}{if} (working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator == 
+      \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.end()) \{
+00129         \textcolor{comment}{/* @130 Register transaction own copy of the original object */}
+00130         \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.insert(\{\textcolor{keywordtype}{object}->Get\_Unique\_ID(), \textcolor{keywordtype}{object}->getBaseCopy(\textcolor{keywordtype}{
+      object})\});
+00131     \}
+00132 \}
+\hypertarget{_t_x_8cpp_source.tex_l00137}{}\hyperlink{class_t_x_a1d78262b8831ddd042ed491f2e600e24_a1d78262b8831ddd042ed491f2e600e24}{00137} std::shared\_ptr<OSTM> \hyperlink{class_t_x_a1d78262b8831ddd042ed491f2e600e24_a1d78262b8831ddd042ed491f2e600e24}{TX::load}(std::shared\_ptr<OSTM> \textcolor{keywordtype}{object}) \{
+00138     \textcolor{comment}{/* @139 Declare and initialize Iterator for working\_Map\_collection */}
+00139     std::map< int, std::shared\_ptr<OSTM> >::iterator working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator;
+00140     \textcolor{comment}{/* @141 RUNTIME ERROR. Check for null pointer ! Null pointer can cause segmentation fault!!! */}
+00141     \textcolor{keywordflow}{if}(\textcolor{keywordtype}{object} == \textcolor{keyword}{nullptr})\{
+00142         \textcolor{keywordflow}{throw} std::runtime\_error(std::string(\textcolor{stringliteral}{"[RUNTIME ERROR : NULL POINTER IN LOAD FUNCTION]"}) );
+00143     \}
+00144     \textcolor{comment}{/* @145 Find copy object in working\_Map\_collection by the object unique ID*/}
+00145     working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator = 
+      \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.find(object->Get\_Unique\_ID());
+00146     \textcolor{comment}{/* @147 If object found, then return it */}
+00147     \textcolor{keywordflow}{if} (working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator != 
+      \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.end()) \{
+00148         \textcolor{comment}{/* @149 Returning a copy of the working copy object */}
+00149         \textcolor{keywordflow}{return} working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second->getBaseCopy(
+      working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second);
+00150     \textcolor{comment}{/* @151 If no object found, throw runtime error */}  
+00151     \} \textcolor{keywordflow}{else} \{ \textcolor{keywordflow}{throw} std::runtime\_error(std::string(\textcolor{stringliteral}{"[RUNTIME ERROR : NO OBJECT FOUND LOAD FUNCTION]"}) );\}
+00152 \}
+\hypertarget{_t_x_8cpp_source.tex_l00157}{}\hyperlink{class_t_x_a7dbcb369aa4a3370b6c6829d278ece5d_a7dbcb369aa4a3370b6c6829d278ece5d}{00157} \textcolor{keywordtype}{void} \hyperlink{class_t_x_a7dbcb369aa4a3370b6c6829d278ece5d_a7dbcb369aa4a3370b6c6829d278ece5d}{TX::store}(std::shared\_ptr<OSTM> \textcolor{keywordtype}{object}) \{
+00158     \textcolor{comment}{/* @159 RUNTIME ERROR. Check for null pointer ! Null pointer can cause segmentation fault!!! */}
+00159     \textcolor{keywordflow}{if}(\textcolor{keywordtype}{object} == \textcolor{keyword}{nullptr})\{
+00160         \textcolor{keywordflow}{throw} std::runtime\_error(std::string(\textcolor{stringliteral}{"[RUNTIME ERROR : NULL POINTER IN STORE FUNCTION]"}) );
+00161     \}
+00162     \textcolor{comment}{/* @163 Declare and initialize Iterator for working\_Map\_collection */}
+00163     std::map< int, std::shared\_ptr<OSTM> >::iterator working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator;
+00164     \textcolor{comment}{/* @165 Find copy object in working\_Map\_collection by the object unique ID*/}
+00165     working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator = 
+      \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.find(object->Get\_Unique\_ID());
+00166     \textcolor{comment}{/* @167 If object found, then replace it */}
+00167     \textcolor{keywordflow}{if} (working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator != 
+      \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.end()) \{
+00168         \textcolor{comment}{/* @169 Replace copy object in working\_Map\_collection associated with the unique ID key*/}
+00169         working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second = object;
+00170     \textcolor{comment}{/* @171 If error happes during store procees throw runtime error */}  
+00171     \} \textcolor{keywordflow}{else} \{ \textcolor{keywordflow}{throw} std::runtime\_error(std::string(\textcolor{stringliteral}{"[RUNTIME ERROR : NO OBJECT FOUND STORE FUNCTION, CANNOT
+       STORE OBJECT]"}) );\}
+00172 \}
+\hypertarget{_t_x_8cpp_source.tex_l00177}{}\hyperlink{class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356b35e557448e58d260087356}{00177} \textcolor{keywordtype}{bool} \hyperlink{class_t_x_a9dde5d356b35e557448e58d260087356_a9dde5d356b35e557448e58d260087356}{TX::commit}() \{
+00178     \textcolor{comment}{/* @179 Declare can\_Commit boolean variable */}
+00179     \textcolor{keywordtype}{bool} can\_Commit = \textcolor{keyword}{true};
+00180     \textcolor{comment}{/* @182 Dealing with nested transactions first. if nesting level bigger than ZERO do not commit yet */}
+00181     \textcolor{keywordflow}{if} (this->\hyperlink{class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_ae8f413fd7f4fea322e7ad3c668f9898e}{\_tx\_nesting\_level} > 0) \{
+00182         \textcolor{comment}{/* @183 Decrease nesting level @see \_decrease\_tx\_nesting() */}
+00183         \hyperlink{class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f576326588628ade96b27b4b1}{\_decrease\_tx\_nesting}();
+00184         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00185     \} 
+00186     \textcolor{comment}{/* @187 Declare and initialize Iterator for working\_Map\_collection */}
+00187     std::map< int, std::shared\_ptr<OSTM> >::iterator working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator;
+00188     \textcolor{comment}{/* @189 Declare and initialize Iterator for main\_Process\_Map\_collectio */}
+00189     std::map<int, std::shared\_ptr<OSTM>>::iterator main\_Process\_Map\_collection\_Iterator;
+00190     \textcolor{comment}{/* @191 Iterate through the working\_Map\_collection, for all associated copy objetcs */}
+00191     \textcolor{keywordflow}{for} (working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator = 
+      \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.begin(); working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator
+       != \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.end(); 
+      working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator++) \{
+00192             \textcolor{comment}{/* @193 Find the Original object in the Shared global colection by the copy object unique ID */}
+00193             main\_Process\_Map\_collection\_Iterator = 
+      \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}.find(
+      working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second->Get\_Unique\_ID());
+00194             \textcolor{comment}{/* @195 RUNTIME ERROR. If no object found ! Null pointer can cause segmentation fault!!! */}
+00195             \textcolor{keywordflow}{if}(main\_Process\_Map\_collection\_Iterator == 
+      \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}.end())
+00196             \{
+00197                 \textcolor{keywordflow}{throw} std::runtime\_error(std::string(\textcolor{stringliteral}{"[RUNTIME ERROR : CAN'T FIND OBJECT COMMIT FUNCTION]"})
+      );
+00198             \}
+00199 
+00200         \textcolor{comment}{/* @200 Busy waiting WHILE try\_lock function return false, If the object locked by another
+       transaction, then waith until it's get unlocked, then lock it */}
+00201         \textcolor{keywordflow}{while}(!(main\_Process\_Map\_collection\_Iterator->second)->try\_lock());
+00202         \textcolor{comment}{/* @203 Compare the original global object version number with the working object version number.
+       If the version number not same, then it cannot coomit*/}
+00203         \textcolor{keywordflow}{if} (main\_Process\_Map\_collection\_Iterator->second->Get\_Version() > 
+      working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second->Get\_Version()) \{
+00204             \textcolor{comment}{/* @2005 Set object boolean value to FALSE, cannot commit */}
+00205             working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second->Set\_Can\_Commit(\textcolor{keyword}{false});
+00206             \textcolor{comment}{/* @207 Set canCommit false Indicate rollback must happen */}
+00207             can\_Commit = \textcolor{keyword}{false};
+00208             \textcolor{keywordflow}{break};
+00209         \} \textcolor{keywordflow}{else} \{
+00210             \textcolor{comment}{/* @210 If version number are has same value set object boolean value to TRUE*/} 
+00211             working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second->Set\_Can\_Commit(\textcolor{keyword}{true});
+00212         \}
+00213     \}
+00214     \textcolor{comment}{/* @214 IF can\_Commit boolean value setted for FALSE then rollback all copy object in the transaction
+       to the Global object values*/}
+00215     \textcolor{keywordflow}{if} (!can\_Commit) \{
+00216         \textcolor{comment}{/* @217 iterate through all transaction copy objects one by one */}
+00217         \textcolor{keywordflow}{for} (working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator = 
+      \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.begin(); working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator
+       != \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.end(); 
+      working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator++) \{
+00218             \textcolor{comment}{/* @219 Find the Global shared object by the transaction copy object unique ID */}
+00219             main\_Process\_Map\_collection\_Iterator  = 
+      \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}.find(
+      working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second->Get\_Unique\_ID());
+00220             \textcolor{comment}{/* @221 Copy all Global shared original objects changed values by another transaction to the
+       transaction copy objetcs */}
+00221             (working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second)->copy(
+      working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second, main\_Process\_Map\_collection\_Iterator->second);
+00222         \}
+00223         \textcolor{comment}{/* @224 When the transaction finish to change copying all values from original objects to local
+       copy, then release all Global shared objects. @see \_release\_object\_lock() */}
+00224         \hyperlink{class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413f0463}{\_release\_object\_lock}();
+00225         \textcolor{comment}{/* @226 Return FALSE to indicate the transaction must restart !*/}
+00226         \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+00227     \} \textcolor{keywordflow}{else} \{
+00228         \textcolor{comment}{/* @229 Iterate through working\_map\_collection. If no conflict detected in early stage in the
+       transaction, then commit all the local changes to shared Global objects */}
+00229         \textcolor{keywordflow}{for} (working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator = 
+      \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.begin(); working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator
+       != \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.end(); 
+      working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator++) \{
+00230                 \textcolor{comment}{/* @231 Find the Global shared object by the transaction copy object unique ID */}
+00231                 main\_Process\_Map\_collection\_Iterator = 
+      \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}.find((
+      working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second)->Get\_Unique\_ID());
+00232                 \textcolor{comment}{/* @233 If Global shared object found then commit changes */}
+00233                 \textcolor{keywordflow}{if} (main\_Process\_Map\_collection\_Iterator != 
+      \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}.end()) \{
+00234                     \textcolor{comment}{/* @235 Copy over local transaction object values to original Global object*/}
+00235                     (main\_Process\_Map\_collection\_Iterator->second)->copy(
+      main\_Process\_Map\_collection\_Iterator->second, working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second);
+00236                     \textcolor{comment}{/* @237 Increase the version number in the original pointer*/}
+00237                     main\_Process\_Map\_collection\_Iterator->second->increase\_VersionNumber();
+00238                 \textcolor{comment}{/* @195 RUNTIME ERROR. If no object found ! Null pointer can cause segmentation fault!!! */}
+00239                 \} \textcolor{keywordflow}{else} \{ \textcolor{keywordflow}{throw} std::runtime\_error(std::string(\textcolor{stringliteral}{"[RUNTIME ERROR : CAN'T FIND OBJECT COMMIT
+       FUNCTION]"})); \}
+00240         \}
+00241         \textcolor{comment}{/* @242 When the transaction finish with commit all changes, then release all Global shared
+       objects. @see \_release\_object\_lock() */}
+00242         \hyperlink{class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413f0463}{\_release\_object\_lock}();
+00243         \textcolor{comment}{/* @244 Transaction object clean up all associated values, clean memory. @see th\_exit()*/}
+00244         this->\hyperlink{class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_ae045534c4a9d39bd5c6ea2a39a372a79}{th\_exit}();
+00245         \textcolor{comment}{/* @246 Return TRUE, indicate the transaction has finished. */}
+00246         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+00247     \}
+00248 \}
+00249 
+\hypertarget{_t_x_8cpp_source.tex_l00253}{}\hyperlink{class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413f0463}{00253} \textcolor{keywordtype}{void} \hyperlink{class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_a4c13d2015dc15d0f788fa9a1413f0463}{TX::\_release\_object\_lock}()\{
+00254     \textcolor{comment}{/* @255 Declare Iterator for working\_Map\_collection */}
+00255     std::map< int, std::shared\_ptr<OSTM> >::iterator working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator;
+00256     \textcolor{comment}{/* @255 Declare Iterator for working\_Map\_collection */}
+00257     std::map<int, std::shared\_ptr<OSTM>>::iterator main\_Process\_Map\_collection\_Iterator;
+00258     \textcolor{keywordflow}{for} (working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator = 
+      \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.begin(); working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator
+       != \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.end(); 
+      working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator++) \{
+00259             \textcolor{comment}{/* @260 Find Global shared original object by the transaction object unique ID*/}
+00260             main\_Process\_Map\_collection\_Iterator = 
+      \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}.find((
+      working\_Map\_collection\_Object\_Shared\_Pointer\_Iterator->second)->Get\_Unique\_ID());
+00261             \textcolor{comment}{/* @262 If object found, then release lock*/}
+00262             \textcolor{keywordflow}{if} (main\_Process\_Map\_collection\_Iterator != 
+      \hyperlink{class_t_x_a1a45d726894190695314464d7cd97c29_a1a45d726894190695314464d7cd97c29}{TX::main\_Process\_Map\_collection}.end()) \{
+00263                 \textcolor{comment}{/* @264 Release object lock */}
+00264                 (main\_Process\_Map\_collection\_Iterator)->second->unlock\_Mutex();
+00265             \} 
+00266         \}
+00267 \}
+00268 
+\hypertarget{_t_x_8cpp_source.tex_l00272}{}\hyperlink{class_t_x_a1384bdf12d795854b5d32e7f61ffbdb8_a1384bdf12d795854b5d32e7f61ffbdb8}{00272} \textcolor{keywordtype}{void} \hyperlink{class_t_x_a1384bdf12d795854b5d32e7f61ffbdb8_a1384bdf12d795854b5d32e7f61ffbdb8}{TX::\_increase\_tx\_nesting}() \{
+00273     \textcolor{comment}{/* @274 Increase transaction nesting level */}
+00274     this->\hyperlink{class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_ae8f413fd7f4fea322e7ad3c668f9898e}{\_tx\_nesting\_level} += 1;
+00275 \}
+\hypertarget{_t_x_8cpp_source.tex_l00279}{}\hyperlink{class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f576326588628ade96b27b4b1}{00279} \textcolor{keywordtype}{void} \hyperlink{class_t_x_aa3ac499f576326588628ade96b27b4b1_aa3ac499f576326588628ade96b27b4b1}{TX::\_decrease\_tx\_nesting}() \{
+00280     \textcolor{comment}{/* @281 Decrease transaction nesting level */}
+00281     this->\hyperlink{class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_ae8f413fd7f4fea322e7ad3c668f9898e}{\_tx\_nesting\_level} -= 1;
+00282 ;
+00283 \}
+\hypertarget{_t_x_8cpp_source.tex_l00287}{}\hyperlink{class_t_x_ae9bf97930c4670f59d334b345353a71e_ae9bf97930c4670f59d334b345353a71e}{00287} \textcolor{keywordtype}{int} \hyperlink{class_t_x_ae9bf97930c4670f59d334b345353a71e_ae9bf97930c4670f59d334b345353a71e}{TX::getTest\_counter}() \{
+00288     \textcolor{comment}{/* @289 return class level value hold by test\_counter variable */}
+00289     \textcolor{keywordflow}{return} \hyperlink{class_t_x_a25838234aab99ae891a90eb8623a8b3c_a25838234aab99ae891a90eb8623a8b3c}{TX::test\_counter};
+00290 \}
+\hypertarget{_t_x_8cpp_source.tex_l00294}{}\hyperlink{class_t_x_a9eba04944d449285905b60ec47223cff_a9eba04944d449285905b60ec47223cff}{00294} \textcolor{keyword}{const} std::thread::id \hyperlink{class_t_x_a9eba04944d449285905b60ec47223cff_a9eba04944d449285905b60ec47223cff}{TX::\_get\_tx\_number}()\textcolor{keyword}{ const }\{
+00295     \textcolor{comment}{/* @296 Return the transaction nuber */}
+00296     \textcolor{keywordflow}{return} \hyperlink{class_t_x_a145a1c74b521f277fe481971a930b249_a145a1c74b521f277fe481971a930b249}{transaction\_Number};
+00297 \}
+\hypertarget{_t_x_8cpp_source.tex_l00301}{}\hyperlink{class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_a3f5671423cb7b9f9c98f8a25f2a4b545}{00301} std::map< int, int > \hyperlink{class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_a3f5671423cb7b9f9c98f8a25f2a4b545}{TX::get\_thread\_Map}() \{
+00302     \textcolor{comment}{/* @303 initialize empty map hold int key and values*/}
+00303     std::map< int, int > thread\_Map;
+00304     \textcolor{comment}{/* @305 Return the map*/}
+00305     \textcolor{keywordflow}{return} thread\_Map;
+00306 \}
+00307 
+\hypertarget{_t_x_8cpp_source.tex_l00311}{}\hyperlink{class_t_x_a3d96ed91eb9ec73e16589f705661c5a7_a3d96ed91eb9ec73e16589f705661c5a7}{00311} \textcolor{keywordtype}{void} \hyperlink{class_t_x_a3d96ed91eb9ec73e16589f705661c5a7_a3d96ed91eb9ec73e16589f705661c5a7}{TX::\_print\_all\_tx}() \{
+00312     \textcolor{comment}{/* @313 initialise Iterator */}
+00313     std::map< int, std::shared\_ptr<OSTM> >::iterator it;
+00314     \textcolor{comment}{/* @315 getppid() return the actual main process thread id, I used it to associate the Transactionas
+       with the main processes */}
+00315     pid\_t ppid = getppid();
+00316     \textcolor{comment}{/* '317 initialize and assign Iterator to process\_map\_collection, by the main process id (ppid) */}
+00317     std::map<pid\_t, std::map< int, int >>::iterator process\_map\_collection\_Iterator = 
+      \hyperlink{class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f}{TX::process\_map\_collection}.find(ppid);
+00318     \textcolor{comment}{/* @319 If there is an entry associated with the process then print out all transactions. */}
+00319     \textcolor{keywordflow}{if} (process\_map\_collection\_Iterator != \hyperlink{class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f}{TX::process\_map\_collection}.end()) \{
+00320         \textcolor{comment}{/* @321 Iterate through process\_map\_collection*/}
+00321         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} current = process\_map\_collection\_Iterator->second.begin(); current != 
+      process\_map\_collection\_Iterator->second.end(); ++current) \{
+00322             \textcolor{comment}{/* @323 Assign value to iterator */}
+00323             it = \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.find(current->first);
+00324             \textcolor{comment}{/* @325 If value found, then print it */}
+00325             \textcolor{keywordflow}{if}(it != \hyperlink{class_t_x_a81aafda16e2f20e36ec6c68e584668ff_a81aafda16e2f20e36ec6c68e584668ff}{working\_Map\_collection}.end())\{
+00326                 \textcolor{comment}{/* @327 print out the transaction number */}
+00327                 std::cout << \textcolor{stringliteral}{"[Unique number ] : "} <<it->second->Get\_Unique\_ID() << std::endl;
+00328             \} 
+00329         \}
+00330     \}
+00331 \}
+\end{DoxyCode}

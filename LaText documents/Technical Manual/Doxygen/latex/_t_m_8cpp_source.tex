@@ -1,0 +1,148 @@
+\hypertarget{_t_m_8cpp_source}{}\subsection{T\+M.\+cpp}
+
+\begin{DoxyCode}
+00001 \textcolor{comment}{/* }
+00002 \textcolor{comment}{ * File:   TM.cpp}
+00003 \textcolor{comment}{ * Author: Zoltan Fuzesi C00197361, }
+00004 \textcolor{comment}{ * IT Carlow, Software Engineering, }
+00005 \textcolor{comment}{ *}
+00006 \textcolor{comment}{ * Supervisor : Joe Kehoe, }
+00007 \textcolor{comment}{ *}
+00008 \textcolor{comment}{ * C++ Software Transactional Memory, }
+00009 \textcolor{comment}{ * }
+00010 \textcolor{comment}{ * Created on December 18, 2017, 2:09 PM}
+00011 \textcolor{comment}{ * OSTM base class function declarations.}
+00012 \textcolor{comment}{ */}
+00013 
+00014 \textcolor{preprocessor}{#include "\hyperlink{_t_m_8h}{TM.h}"}
+00015 \textcolor{preprocessor}{#include <thread>}
+00016 \textcolor{preprocessor}{#include <unistd.h>}
+00017 \textcolor{preprocessor}{#include <sys/types.h>}
+00018 \textcolor{preprocessor}{#include <iostream>}
+00019 
+00020 \textcolor{comment}{/*}
+00021 \textcolor{comment}{   @23 \_tm\_id pid\_t, process id determine the actual process between process in the STM library}
+00022 \textcolor{comment}{ */}
+00023 pid\_t \hyperlink{class_t_m_a9d49d0ddef82337e54b684c9e1e8ad21_a9d49d0ddef82337e54b684c9e1e8ad21}{TM::\_tm\_id};
+00024 \textcolor{comment}{/*}
+00025 \textcolor{comment}{   @27 static Global std::map process\_map\_collection store all transactional objects/pointers}
+00026 \textcolor{comment}{ */}
+00027 std::map<pid\_t, std::map< std::thread::id, int >> \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection};
+\hypertarget{_t_m_8cpp_source.tex_l00031}{}\hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_a7ce5f35e0dae76df4fe116cf905bbe60}{00031} \hyperlink{class_t_m}{TM}& \hyperlink{class_t_m_a7ce5f35e0dae76df4fe116cf905bbe60_a7ce5f35e0dae76df4fe116cf905bbe60}{TM::Instance}() \{
+00032    \textcolor{comment}{/* @33 \_instance TM, static class reference to the instance of the Transaction Manager class */}
+00033     \textcolor{keyword}{static} \hyperlink{class_t_m}{TM} \_instance;
+00034     \textcolor{comment}{/* @35 \_instance ppid, assigning the process id whoever created the Singleton instance */}
+00035     \_instance.\hyperlink{class_t_m_a9d49d0ddef82337e54b684c9e1e8ad21_a9d49d0ddef82337e54b684c9e1e8ad21}{\_tm\_id} = getpid();
+00036     \textcolor{comment}{/* @37 return Singleton instance */}
+00037     \textcolor{keywordflow}{return} \_instance;
+00038 \}
+00039 
+\hypertarget{_t_m_8cpp_source.tex_l00045}{}\hyperlink{class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e}{00045} \textcolor{keywordtype}{void} \hyperlink{class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e}{TM::registerTX}()
+00046 \{
+00047   \textcolor{comment}{/* @49 guard std::lock\_guard, locks the register\_Lock mutex, unlock automatically when goes out of the
+       scope register\_Lock std::mutex, used by the lock\_guard to protect shared map from race conditions */}
+00048     std::lock\_guard<std::mutex> guard(\hyperlink{class_t_m_aeb26546681bfe64e21606b8c012bb8c3_aeb26546681bfe64e21606b8c012bb8c3}{register\_Lock});
+00049     \textcolor{comment}{/* @51 getppid() return the actual main process thread id, I used it to associate the Transactionas
+       with the main processes */}
+00050     pid\_t ppid = getppid();
+00051 
+00052     \textcolor{comment}{/* @53 process\_map\_collection try to find the main process by it's ppid if registred in the library */}
+00053     std::map<pid\_t, std::map< std::thread::id, int >>::iterator process\_map\_collection\_Iterator = 
+      \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.find(ppid);
+00054     \textcolor{comment}{/* @55 Check if iterator pointing to the end of the process map then register */}
+00055     \textcolor{keywordflow}{if} (process\_map\_collection\_Iterator == \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.end()) \{
+00056         \textcolor{comment}{/* @57 Require new map to insert to the process map as a value by the ppid key  */}
+00057         std::map< std::thread::id, int >map = \hyperlink{class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46915c}{get\_thread\_Map}();
+00058         \textcolor{comment}{/* @59 Register main process/application to the global map  */}
+00059         \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.insert(\{ppid, map\});
+00060 
+00061     \}
+00062     \textcolor{comment}{/* @63 txMap std::map, collection to store all transaction created by the Transaction Manager */}
+00063     std::map<std::thread::id, std::shared\_ptr < TX>>::iterator it = \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.find(
+      std::this\_thread::get\_id());
+00064     \textcolor{comment}{/* @65 Check if iterator pointing to the end of the txMap then insert */}
+00065     \textcolor{keywordflow}{if} (it == \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.end()) \{
+00066         \textcolor{comment}{/* @67 Create a new Transaction Object as a shared pointer */}
+00067         std::shared\_ptr<TX> \_transaction\_object(\textcolor{keyword}{new} \hyperlink{class_t_x}{TX}(std::this\_thread::get\_id()));
+00068         \textcolor{comment}{/* @69 txMap insert the new transaction into the txMap by the threadID key */}
+00069         \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.insert(\{std::this\_thread::get\_id(), \_transaction\_object\});
+00070         \textcolor{comment}{/* @71 Get the map if the transaction registered first time */}
+00071         process\_map\_collection\_Iterator = \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.find(ppid);
+00072         \textcolor{comment}{/* @73 Insert to the GLOBAL MAP as a helper to clean up at end of main process. The value 1 is not
+       used yet */}
+00073         process\_map\_collection\_Iterator->second.insert(\{std::this\_thread::get\_id(), 1\});
+00074     \}
+00075 \}
+00076 
+\hypertarget{_t_m_8cpp_source.tex_l00081}{}\hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{00081} std::shared\_ptr<TX>\textcolor{keyword}{const} \hyperlink{class_t_m_a41cb0226cc4080c931651b13f74a0075_a41cb0226cc4080c931651b13f74a0075}{TM::\_get\_tx}()
+00082 \{
+00083    
+00084     \textcolor{comment}{/* @85 guard std::lock\_guard, locks the get\_Lock mutex, unlock automatically when goes out of the scope
+       get\_Lock std::mutex, used by the lock\_guard to protect txMap from race conditions */}
+00085     std::lock\_guard<std::mutex> guard(\hyperlink{class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_a123bc5aa0766a7b909bebc54a429e5b0}{get\_Lock});
+00086     \textcolor{comment}{/* @87 txMap try to find the TX Transaction object by it's actual thread ID if registred in the txMap 
+      */}
+00087     std::map<std::thread::id, std::shared\_ptr<TX>>::iterator it = \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.find(std::this\_thread::get\_id(
+      ));
+00088     \textcolor{comment}{/* @89 Check if iterator pointing to the end of the txMap then insert */}
+00089     \textcolor{keywordflow}{if}(it == \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.end())
+00090     \{
+00091       \textcolor{comment}{/* @92 If cannot find then call the register function to register the thread with a transaction */}
+00092        \hyperlink{class_t_m_a26ea481c24d9aa3aebd6dafb7253376e_a26ea481c24d9aa3aebd6dafb7253376e}{registerTX}();
+00093        \textcolor{comment}{/* @94 If it's registered first time then we need to find it after registration */}
+00094        it = \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.find(std::this\_thread::get\_id());
+00095        
+00096     \} \textcolor{keywordflow}{else} \{
+00097         \textcolor{comment}{/* @98 If transaction already registered, it means the thread participating in nested transactions,
+       and increase the nesting */}
+00098         it->second->\_increase\_tx\_nesting();
+00099     \}
+00100     \textcolor{comment}{/* @101 Returning back the transaction (TX) object to the thread */}
+00101     \textcolor{keywordflow}{return} it->second;
+00102 
+00103 \}
+\hypertarget{_t_m_8cpp_source.tex_l00108}{}\hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{00108} \textcolor{keywordtype}{void} \hyperlink{class_t_m_a5e2d1127f2429f2f524d25f430eade06_a5e2d1127f2429f2f524d25f430eade06}{TM::\_TX\_EXIT}()\{
+00109     \textcolor{comment}{/*  @110 Transaction manger create a local Transaction Object to access the TX class function without
+       nesting any transaction */}
+00110     \hyperlink{class_t_x}{TX} tx(std::this\_thread::get\_id());
+00111     \textcolor{comment}{/* @112 getppid() return the actual main process thread id, I used it to associate the Transactionas
+       with the main processes */}
+00112     pid\_t ppid = getppid();
+00113     \textcolor{comment}{/* @114 process\_map\_collection try to find the main process by it's ppid if registred in the library */}
+00114     std::map<pid\_t, std::map< std::thread::id, int >>::iterator process\_map\_collection\_Iterator = 
+      \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.find(ppid);
+00115     \textcolor{comment}{/* @116 Check if iterator NOT pointing to the end of the process map then register */}
+00116     \textcolor{keywordflow}{if} (process\_map\_collection\_Iterator != \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.end()) \{
+00117         \textcolor{comment}{/* @118 Iterate through the process\_map\_collection to find all transaction associated with main
+       process */}
+00118         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} current = process\_map\_collection\_Iterator->second.begin(); current != 
+      process\_map\_collection\_Iterator->second.end(); ++current) \{
+00119             \textcolor{comment}{/* @120 Delete all transaction associated with the actual main process */}
+00120             \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.erase(current->first);
+00121         \}
+00122         \textcolor{comment}{/* @123 When all transaction deleted, delete the main process from the Transacion Manager */}
+00123         \hyperlink{class_t_m_a6d417b18213968da2a70a914e80d639b_a6d417b18213968da2a70a914e80d639b}{TM::process\_map\_collection}.erase(ppid);
+00124     \}
+00125     \textcolor{comment}{/* @126 TX class delete all Global Object shared between the transaction. This function calls only when
+       the main process exists to clear out memory */}
+00126     tx.\hyperlink{class_t_x_aa9739c5c2077454c779098db7baefc2b_aa9739c5c2077454c779098db7baefc2b}{ostm\_exit}();
+00127 \}
+\hypertarget{_t_m_8cpp_source.tex_l00132}{}\hyperlink{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_a1d6891b1d3e71cc0acef54e7afe71c09}{00132} \textcolor{keywordtype}{void} \hyperlink{class_t_m_a1d6891b1d3e71cc0acef54e7afe71c09_a1d6891b1d3e71cc0acef54e7afe71c09}{TM::print\_all}()\{
+00133     \textcolor{comment}{/* @134 Locking the print function */}
+00134     \hyperlink{class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_a123bc5aa0766a7b909bebc54a429e5b0}{get\_Lock}.lock();
+00135     \textcolor{comment}{/* @136 Iterate through the txMap to print out the thread id's*/}
+00136     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} current = \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.begin(); current != \hyperlink{class_t_m_a0333dfa193ea99d7626de74a2b932e9b_a0333dfa193ea99d7626de74a2b932e9b}{txMap}.end(); ++current) \{
+00137         \textcolor{comment}{/* @138 Print key (thread number)*/}
+00138         std::cout << \textcolor{stringliteral}{"KEY : "} << current->first << std::endl;
+00139     \}
+00140     \textcolor{comment}{/* @140 Unlocking the print function*/}
+00141     \hyperlink{class_t_m_a123bc5aa0766a7b909bebc54a429e5b0_a123bc5aa0766a7b909bebc54a429e5b0}{get\_Lock}.unlock();
+00142 \}
+00143 
+\hypertarget{_t_m_8cpp_source.tex_l00148}{}\hyperlink{class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46915c}{00148} std::map< std::thread::id, int > \hyperlink{class_t_m_afb8bc9f42fe06c52747beb7f4c46915c_afb8bc9f42fe06c52747beb7f4c46915c}{TM::get\_thread\_Map}() \{
+00149     \textcolor{comment}{/*  @150 thread\_Map std::map< int, int > create a map to store int key and int value */} 
+00150     std::map< std::thread::id, int > thread\_Map;
+00151     \textcolor{comment}{/* @152 return the map */}
+00152     \textcolor{keywordflow}{return} thread\_Map;
+00153 \}
+\end{DoxyCode}

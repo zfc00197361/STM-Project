@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_t_x_8cpp">
+    <title>TX.cpp File Reference</title>
+    <programlisting>#include &quot;TX.h&quot;</programlisting>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+<para>Include dependency diagram for TX.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_t_x_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for TX.cpp</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_t_x_8cpp__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file TX.cpp</para>
+    </simplesect>
+    <literallayout><computeroutput>
+1 <emphasis class="comment">/*&#32;</emphasis>
+2 <emphasis class="comment">&#32;*&#32;File:&#32;&#32;&#32;TX.cpp</emphasis>
+3 <emphasis class="comment">&#32;*&#32;Author:&#32;Zoltan&#32;Fuzesi&#32;C00197361,&#32;</emphasis>
+4 <emphasis class="comment">&#32;*&#32;IT&#32;Carlow,&#32;Software&#32;Engineering,&#32;</emphasis>
+5 <emphasis class="comment">&#32;*</emphasis>
+6 <emphasis class="comment">&#32;*&#32;Supervisor&#32;:&#32;Joe&#32;Kehoe,&#32;</emphasis>
+7 <emphasis class="comment">&#32;*</emphasis>
+8 <emphasis class="comment">&#32;*&#32;C++&#32;Software&#32;Transactional&#32;Memory,&#32;</emphasis>
+9 <emphasis class="comment">&#32;*&#32;</emphasis>
+10 <emphasis class="comment">&#32;*&#32;Created&#32;on&#32;December&#32;18,&#32;2017,&#32;2:09&#32;PM</emphasis>
+11 <emphasis class="comment">&#32;*&#32;OSTM&#32;base&#32;class&#32;function&#32;declarations.</emphasis>
+12 <emphasis class="comment">&#32;*/</emphasis>
+13 
+14 <emphasis class="preprocessor">#include&#32;&quot;<link linkend="_t_x_8h">TX.h</link>&quot;</emphasis>
+15 <emphasis class="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+16 <emphasis class="comment">/*</emphasis>
+17 <emphasis class="comment">&#32;&#32;@19&#32;main_Process_Map_collection,&#32;register&#32;static&#32;Global&#32;class&#32;level&#32;map&#32;to&#32;store&#32;all&#32;transactional&#32;objects/pointers</emphasis>
+18 <emphasis class="comment">&#32;*/</emphasis>
+19 std::map&lt;int,&#32;std::shared_ptr&lt;OSTM&gt;&#32;&gt;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>;
+20 <emphasis class="comment">/*</emphasis>
+21 <emphasis class="comment">&#32;&#32;@23&#32;process_map_collection,&#32;register&#32;static&#32;Global&#32;class&#32;level&#32;map&#32;to&#32;store&#32;all&#32;transaction&#32;number&#32;associated&#32;with&#32;the&#32;main&#32;process</emphasis>
+22 <emphasis class="comment">&#32;*/</emphasis>
+23 std::map&lt;pid_t,&#32;std::map&lt;&#32;int,&#32;int&#32;&gt;&gt;&#32;<link linkend="class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f">TX::process_map_collection</link>;
+24 <emphasis class="comment">/*</emphasis>
+25 <emphasis class="comment">&#32;&#32;@27&#32;egister_Lock,&#32;register&#32;static&#32;class&#32;level&#32;shared&#32;std:mutex&#32;to&#32;protect&#32;shared&#32;map&#32;during&#32;transaction&#32;registration</emphasis>
+26 <emphasis class="comment">&#32;*/</emphasis>
+27 std::mutex&#32;<link linkend="class_t_x_aa688a8c96fa3cdf8cd92e267463536dc_1aa688a8c96fa3cdf8cd92e267463536dc">TX::register_Lock</link>;
+28 <emphasis class="comment">/*</emphasis>
+29 <emphasis class="comment">&#32;&#32;@31&#32;test_counter,&#32;register&#32;class&#32;level&#32;Integer&#32;variable&#32;to&#32;store&#32;the&#32;umber&#32;of&#32;rollback&#32;happens,&#32;for&#32;testing&#32;purposes</emphasis>
+30 <emphasis class="comment">&#32;*/</emphasis>
+31 <emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_x_a25838234aab99ae891a90eb8623a8b3c_1a25838234aab99ae891a90eb8623a8b3c">TX::test_counter</link>&#32;=&#32;0;
+<link linkend="class_t_x_a8a4b83eab0171ae834bfa92bbced1094_1a8a4b83eab0171ae834bfa92bbced1094">36 </link><link linkend="class_t_x_a8a4b83eab0171ae834bfa92bbced1094_1a8a4b83eab0171ae834bfa92bbced1094">TX::TX</link>(std::thread::id&#32;<emphasis class="keywordtype">id</emphasis>)&#32;{
+37 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@38&#32;Integer&#32;field&#32;&lt;transaction_Number&gt;&#32;indicates&#32;the&#32;transaction&#32;number&#32;to&#32;the&#32;Transaction&#32;manager&#32;*/</emphasis>
+38 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_t_x_a145a1c74b521f277fe481971a930b249_1a145a1c74b521f277fe481971a930b249">transaction_Number</link>&#32;=&#32;id;
+39 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@40&#32;Integer&#32;field&#32;&lt;_tx_nesting_level&gt;&#32;indicates&#32;the&#32;nesting&#32;level&#32;to&#32;the&#32;transaction&#32;itself&#32;*/</emphasis>
+40 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_1ae8f413fd7f4fea322e7ad3c668f9898e">_tx_nesting_level</link>&#32;=&#32;0;
+41 }
+<link linkend="class_t_x_abecf854cc3228ab6dd51175b3cd1c70a_1abecf854cc3228ab6dd51175b3cd1c70a">45 </link><link linkend="class_t_x_abecf854cc3228ab6dd51175b3cd1c70a_1abecf854cc3228ab6dd51175b3cd1c70a">TX::~TX</link>()&#32;{
+46 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;Destroy&#32;the&#32;object.&#32;*/</emphasis>
+47 }
+<link linkend="class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_1ae045534c4a9d39bd5c6ea2a39a372a79">52 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_1ae045534c4a9d39bd5c6ea2a39a372a79">TX::th_exit</link>()&#32;{
+53 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@54&#32;If&#32;bigger&#32;than&#32;ZERO,&#32;means&#32;active&#32;nested&#32;transactions&#32;running&#32;in&#32;background,&#32;do&#32;not&#32;delete&#32;anything&#32;yet&#32;*/</emphasis>
+54 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(this-&gt;<link linkend="class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_1ae8f413fd7f4fea322e7ad3c668f9898e">_tx_nesting_level</link>&#32;&gt;&#32;0)&#32;{
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;Active&#32;nested&#32;transactions&#32;running&#32;in&#32;background,&#32;do&#32;not&#32;delete&#32;anything&#32;yet&#32;*/</emphasis>
+56 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;{
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;Remove&#32;all&#32;elements&#32;map&#32;entries&#32;from&#32;transaction&#32;and&#32;clear&#32;the&#32;map&#32;*/</emphasis>
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.clear();
+59 &#32;&#32;&#32;&#32;}
+60 }
+61 
+<link linkend="class_t_x_aa9739c5c2077454c779098db7baefc2b_1aa9739c5c2077454c779098db7baefc2b">68 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_x_aa9739c5c2077454c779098db7baefc2b_1aa9739c5c2077454c779098db7baefc2b">TX::ostm_exit</link>()&#32;{
+69 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@70&#32;Declare&#32;Iterator&#32;main_Process_Map_collection_Iterator&#32;*/</emphasis>
+70 &#32;&#32;&#32;&#32;std::map&lt;int,&#32;std::shared_ptr&lt;OSTM&gt;&gt;::iterator&#32;main_Process_Map_collection_Iterator;
+71 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@72&#32;getppid()&#32;return&#32;the&#32;actual&#32;main&#32;process&#32;thread&#32;id,&#32;I&#32;used&#32;it&#32;to&#32;associate&#32;the&#32;Transactionas&#32;with&#32;the&#32;main&#32;processes&#32;*/</emphasis>
+72 &#32;&#32;&#32;&#32;pid_t&#32;ppid&#32;=&#32;getppid();
+73 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@74&#32;process_map_collection&#32;try&#32;to&#32;find&#32;the&#32;main&#32;process&#32;by&#32;it&apos;s&#32;ppid&#32;if&#32;registred&#32;in&#32;the&#32;library&#32;*/</emphasis>
+74 &#32;&#32;&#32;&#32;std::map&lt;pid_t,&#32;std::map&lt;&#32;int,&#32;int&#32;&gt;&gt;::iterator&#32;process_map_collection_Iterator&#32;=&#32;<link linkend="class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f">TX::process_map_collection</link>.find(ppid);
+75 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@76&#32;Check&#32;if&#32;iterator&#32;NOT&#32;pointing&#32;to&#32;the&#32;end&#32;of&#32;the&#32;process_map_collection&#32;then&#32;remove&#32;all&#32;associated&#32;elements&#32;*/</emphasis>
+76 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(process_map_collection_Iterator&#32;!=&#32;<link linkend="class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f">TX::process_map_collection</link>.end())&#32;{
+77 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@78&#32;Iterate&#32;through&#32;the&#32;process_map_collection&#32;to&#32;find&#32;all&#32;transaction&#32;associated&#32;with&#32;main&#32;process&#32;*/</emphasis>
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keyword">auto</emphasis>&#32;current&#32;=&#32;process_map_collection_Iterator-&gt;second.begin();&#32;current&#32;!=&#32;process_map_collection_Iterator-&gt;second.end();&#32;++current)&#32;{
+79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@80&#32;Find&#32;the&#32;OSTM&#32;object&#32;in&#32;the&#32;Global&#32;shared&#32;map&#32;*/</emphasis>
+80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;main_Process_Map_collection_Iterator&#32;=&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.find(current-&gt;first);
+81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@82&#32;If&#32;object&#32;found&#32;then&#32;delete&#32;it*/</emphasis>
+82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(main_Process_Map_collection_Iterator&#32;!=&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.end()){
+83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@84&#32;Delete&#32;element&#32;from&#32;shared&#32;main_Process_Map_collection&#32;by&#32;object&#32;by&#32;the&#32;unique&#32;key,&#32;and&#32;the&#32;shaed_ptr&#32;will&#32;destroy&#32;automatically&#32;*/</emphasis>
+84 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.erase(main_Process_Map_collection_Iterator-&gt;first);&#32;&#32;&#32;&#32;&#32;&#32;
+85 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+86 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+87 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@88&#32;Delete&#32;main&#32;process&#32;from&#32;Process_map_collection&#32;*/</emphasis>
+88 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f">TX::process_map_collection</link>.erase(process_map_collection_Iterator-&gt;first);
+89 &#32;&#32;&#32;&#32;}
+90 }
+91 
+<link linkend="class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_1abc32af2f51df97ac483e5bfe7db6ca6e">96 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_x_abc32af2f51df97ac483e5bfe7db6ca6e_1abc32af2f51df97ac483e5bfe7db6ca6e">TX::_register</link>(std::shared_ptr&lt;OSTM&gt;&#32;<emphasis class="keywordtype">object</emphasis>)&#32;{
+97 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@98&#32;register_Lock(mutex)&#32;shared&#32;lock&#32;between&#32;all&#32;transaction.&#32;MUST&#32;USE&#32;SHARED&#32;LOCK&#32;TO&#32;PROTECT&#32;SHARED&#32;GLOBAL&#32;MAP/COLLECTION&#32;*/</emphasis>
+98 &#32;&#32;&#32;&#32;std::lock_guard&lt;std::mutex&gt;&#32;guard(<link linkend="class_t_x_aa688a8c96fa3cdf8cd92e267463536dc_1aa688a8c96fa3cdf8cd92e267463536dc">TX::register_Lock</link>);
+99 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@100&#32;RUNTIME&#32;ERROR.&#32;Check&#32;for&#32;null&#32;pointer&#32;!&#32;Null&#32;pointer&#32;can&#32;cause&#32;segmentation&#32;fault!!!&#32;*/</emphasis>
+100 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(<emphasis class="keywordtype">object</emphasis>&#32;==&#32;<emphasis class="keyword">nullptr</emphasis>){
+101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;std::runtime_error(std::string(<emphasis class="stringliteral">&quot;[RUNTIME&#32;ERROR&#32;:&#32;NULL&#32;POINTER&#32;IN&#32;REGISTER&#32;FUNCTION]&quot;</emphasis>)&#32;);
+102 &#32;&#32;&#32;&#32;}
+103 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@104&#32;getppid()&#32;return&#32;the&#32;actual&#32;main&#32;process&#32;thread&#32;id,&#32;I&#32;used&#32;it&#32;to&#32;associate&#32;the&#32;Transactionas&#32;with&#32;the&#32;main&#32;processes&#32;*/</emphasis>
+104 &#32;&#32;&#32;&#32;pid_t&#32;ppid&#32;=&#32;getppid();
+105 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@106&#32;Declare&#32;and&#32;initialize&#32;Iterator&#32;for&#32;process_map_collection,&#32;find&#32;main&#32;process*/</emphasis>
+106 &#32;&#32;&#32;&#32;std::map&lt;pid_t,&#32;std::map&lt;&#32;int,&#32;int&#32;&gt;&gt;::iterator&#32;process_map_collection_Iterator&#32;=&#32;<link linkend="class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f">TX::process_map_collection</link>.find(ppid);
+107 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@108&#32;If&#32;iterator&#32;cannot&#32;find&#32;main&#32;process,&#32;then&#32;register*/</emphasis>
+108 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(process_map_collection_Iterator&#32;==&#32;<link linkend="class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f">TX::process_map_collection</link>.end())&#32;{
+109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@110&#32;Create&#32;new&#32;empty&#32;map&#32;*/</emphasis>
+110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::map&lt;&#32;int,&#32;int&#32;&gt;map&#32;=&#32;&#32;<link linkend="class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_1a3f5671423cb7b9f9c98f8a25f2a4b545">get_thread_Map</link>();
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@112&#32;Register&#32;main&#32;process/application&#32;to&#32;the&#32;global&#32;map&#32;*/</emphasis>
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f">TX::process_map_collection</link>.insert({ppid,&#32;map});
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@114&#32;Get&#32;the&#32;map&#32;if&#32;registered&#32;first&#32;time&#32;*/</emphasis>
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process_map_collection_Iterator&#32;=&#32;<link linkend="class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f">TX::process_map_collection</link>.find(ppid);
+115 &#32;&#32;&#32;&#32;}
+116 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@117&#32;Declare&#32;and&#32;initialize&#32;Iterator&#32;for&#32;main_Process_Map_collection,&#32;find&#32;by&#32;original&#32;object&#32;*/</emphasis>
+117 &#32;&#32;&#32;&#32;std::map&lt;int,&#32;std::shared_ptr&lt;OSTM&gt;&gt;::iterator&#32;main_Process_Map_collection_Iterator&#32;=&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.find(object-&gt;Get_Unique_ID());
+118 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@119&#32;If&#32;object&#32;cannot&#32;find,&#32;then&#32;register&#32;*/</emphasis>
+119 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(main_Process_Map_collection_Iterator&#32;==&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.end())&#32;{
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;&apos;121&#32;Insert&#32;the&#32;origin&#32;object&#32;to&#32;the&#32;GLOBAL&#32;MAP&#32;shared&#32;between&#32;transactions&#32;*/</emphasis>
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.insert({<emphasis class="keywordtype">object</emphasis>-&gt;Get_Unique_ID(),&#32;<emphasis class="keywordtype">object</emphasis>});
+122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@123&#32;Insert&#32;object&#32;ID&#32;to&#32;the&#32;GLOBAL&#32;MAP&#32;as&#32;a&#32;helper&#32;to&#32;clean&#32;up&#32;at&#32;end&#32;of&#32;main&#32;process,&#32;Second&#32;value&#32;(1)&#32;not&#32;specified&#32;yet&#32;*/</emphasis>
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;process_map_collection_Iterator-&gt;second.insert({<emphasis class="keywordtype">object</emphasis>-&gt;Get_Unique_ID(),&#32;1});
+124 &#32;&#32;&#32;&#32;}&#32;
+125 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@126&#32;Declare&#32;and&#32;initialize&#32;Iterator&#32;for&#32;working_Map_collection,&#32;find&#32;copy&#32;of&#32;the&#32;original&#32;object&#32;*/</emphasis>
+126 &#32;&#32;&#32;&#32;std::map&lt;&#32;int,&#32;std::shared_ptr&lt;OSTM&gt;&#32;&gt;::iterator&#32;working_Map_collection_Object_Shared_Pointer_Iterator&#32;=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.find(object-&gt;Get_Unique_ID());
+127 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@128&#32;If&#32;copy&#32;of&#32;the&#32;object&#32;not&#32;found,&#32;then&#32;register&#32;*/</emphasis>
+128 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(working_Map_collection_Object_Shared_Pointer_Iterator&#32;==&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.end())&#32;{
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@130&#32;Register&#32;transaction&#32;own&#32;copy&#32;of&#32;the&#32;original&#32;object&#32;*/</emphasis>
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.insert({<emphasis class="keywordtype">object</emphasis>-&gt;Get_Unique_ID(),&#32;<emphasis class="keywordtype">object</emphasis>-&gt;getBaseCopy(<emphasis class="keywordtype">object</emphasis>)});
+131 &#32;&#32;&#32;&#32;}
+132 }
+<link linkend="class_t_x_a1d78262b8831ddd042ed491f2e600e24_1a1d78262b8831ddd042ed491f2e600e24">137 </link>std::shared_ptr&lt;OSTM&gt;&#32;<link linkend="class_t_x_a1d78262b8831ddd042ed491f2e600e24_1a1d78262b8831ddd042ed491f2e600e24">TX::load</link>(std::shared_ptr&lt;OSTM&gt;&#32;<emphasis class="keywordtype">object</emphasis>)&#32;{
+138 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@139&#32;Declare&#32;and&#32;initialize&#32;Iterator&#32;for&#32;working_Map_collection&#32;*/</emphasis>
+139 &#32;&#32;&#32;&#32;std::map&lt;&#32;int,&#32;std::shared_ptr&lt;OSTM&gt;&#32;&gt;::iterator&#32;working_Map_collection_Object_Shared_Pointer_Iterator;
+140 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@141&#32;RUNTIME&#32;ERROR.&#32;Check&#32;for&#32;null&#32;pointer&#32;!&#32;Null&#32;pointer&#32;can&#32;cause&#32;segmentation&#32;fault!!!&#32;*/</emphasis>
+141 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(<emphasis class="keywordtype">object</emphasis>&#32;==&#32;<emphasis class="keyword">nullptr</emphasis>){
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;std::runtime_error(std::string(<emphasis class="stringliteral">&quot;[RUNTIME&#32;ERROR&#32;:&#32;NULL&#32;POINTER&#32;IN&#32;LOAD&#32;FUNCTION]&quot;</emphasis>)&#32;);
+143 &#32;&#32;&#32;&#32;}
+144 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@145&#32;Find&#32;copy&#32;object&#32;in&#32;working_Map_collection&#32;by&#32;the&#32;object&#32;unique&#32;ID*/</emphasis>
+145 &#32;&#32;&#32;&#32;working_Map_collection_Object_Shared_Pointer_Iterator&#32;=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.find(object-&gt;Get_Unique_ID());
+146 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@147&#32;If&#32;object&#32;found,&#32;then&#32;return&#32;it&#32;*/</emphasis>
+147 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(working_Map_collection_Object_Shared_Pointer_Iterator&#32;!=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.end())&#32;{
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@149&#32;Returning&#32;a&#32;copy&#32;of&#32;the&#32;working&#32;copy&#32;object&#32;*/</emphasis>
+149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second-&gt;getBaseCopy(working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second);
+150 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@151&#32;If&#32;no&#32;object&#32;found,&#32;throw&#32;runtime&#32;error&#32;*/</emphasis>&#32;&#32;
+151 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;std::runtime_error(std::string(<emphasis class="stringliteral">&quot;[RUNTIME&#32;ERROR&#32;:&#32;NO&#32;OBJECT&#32;FOUND&#32;LOAD&#32;FUNCTION]&quot;</emphasis>)&#32;);}
+152 }
+<link linkend="class_t_x_a7dbcb369aa4a3370b6c6829d278ece5d_1a7dbcb369aa4a3370b6c6829d278ece5d">157 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_x_a7dbcb369aa4a3370b6c6829d278ece5d_1a7dbcb369aa4a3370b6c6829d278ece5d">TX::store</link>(std::shared_ptr&lt;OSTM&gt;&#32;<emphasis class="keywordtype">object</emphasis>)&#32;{
+158 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@159&#32;RUNTIME&#32;ERROR.&#32;Check&#32;for&#32;null&#32;pointer&#32;!&#32;Null&#32;pointer&#32;can&#32;cause&#32;segmentation&#32;fault!!!&#32;*/</emphasis>
+159 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(<emphasis class="keywordtype">object</emphasis>&#32;==&#32;<emphasis class="keyword">nullptr</emphasis>){
+160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;std::runtime_error(std::string(<emphasis class="stringliteral">&quot;[RUNTIME&#32;ERROR&#32;:&#32;NULL&#32;POINTER&#32;IN&#32;STORE&#32;FUNCTION]&quot;</emphasis>)&#32;);
+161 &#32;&#32;&#32;&#32;}
+162 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@163&#32;Declare&#32;and&#32;initialize&#32;Iterator&#32;for&#32;working_Map_collection&#32;*/</emphasis>
+163 &#32;&#32;&#32;&#32;std::map&lt;&#32;int,&#32;std::shared_ptr&lt;OSTM&gt;&#32;&gt;::iterator&#32;working_Map_collection_Object_Shared_Pointer_Iterator;
+164 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@165&#32;Find&#32;copy&#32;object&#32;in&#32;working_Map_collection&#32;by&#32;the&#32;object&#32;unique&#32;ID*/</emphasis>
+165 &#32;&#32;&#32;&#32;working_Map_collection_Object_Shared_Pointer_Iterator&#32;=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.find(object-&gt;Get_Unique_ID());
+166 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@167&#32;If&#32;object&#32;found,&#32;then&#32;replace&#32;it&#32;*/</emphasis>
+167 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(working_Map_collection_Object_Shared_Pointer_Iterator&#32;!=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.end())&#32;{
+168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@169&#32;Replace&#32;copy&#32;object&#32;in&#32;working_Map_collection&#32;associated&#32;with&#32;the&#32;unique&#32;ID&#32;key*/</emphasis>
+169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second&#32;=&#32;object;
+170 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@171&#32;If&#32;error&#32;happes&#32;during&#32;store&#32;procees&#32;throw&#32;runtime&#32;error&#32;*/</emphasis>&#32;&#32;
+171 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;std::runtime_error(std::string(<emphasis class="stringliteral">&quot;[RUNTIME&#32;ERROR&#32;:&#32;NO&#32;OBJECT&#32;FOUND&#32;STORE&#32;FUNCTION,&#32;CANNOT&#32;STORE&#32;OBJECT]&quot;</emphasis>)&#32;);}
+172 }
+<link linkend="class_t_x_a9dde5d356b35e557448e58d260087356_1a9dde5d356b35e557448e58d260087356">177 </link><emphasis class="keywordtype">bool</emphasis>&#32;<link linkend="class_t_x_a9dde5d356b35e557448e58d260087356_1a9dde5d356b35e557448e58d260087356">TX::commit</link>()&#32;{
+178 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@179&#32;Declare&#32;can_Commit&#32;boolean&#32;variable&#32;*/</emphasis>
+179 &#32;&#32;&#32;&#32;<emphasis class="keywordtype">bool</emphasis>&#32;can_Commit&#32;=&#32;<emphasis class="keyword">true</emphasis>;
+180 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@182&#32;Dealing&#32;with&#32;nested&#32;transactions&#32;first.&#32;if&#32;nesting&#32;level&#32;bigger&#32;than&#32;ZERO&#32;do&#32;not&#32;commit&#32;yet&#32;*/</emphasis>
+181 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(this-&gt;<link linkend="class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_1ae8f413fd7f4fea322e7ad3c668f9898e">_tx_nesting_level</link>&#32;&gt;&#32;0)&#32;{
+182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@183&#32;Decrease&#32;nesting&#32;level&#32;@see&#32;_decrease_tx_nesting()&#32;*/</emphasis>
+183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_x_aa3ac499f576326588628ade96b27b4b1_1aa3ac499f576326588628ade96b27b4b1">_decrease_tx_nesting</link>();
+184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">true</emphasis>;
+185 &#32;&#32;&#32;&#32;}&#32;
+186 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@187&#32;Declare&#32;and&#32;initialize&#32;Iterator&#32;for&#32;working_Map_collection&#32;*/</emphasis>
+187 &#32;&#32;&#32;&#32;std::map&lt;&#32;int,&#32;std::shared_ptr&lt;OSTM&gt;&#32;&gt;::iterator&#32;working_Map_collection_Object_Shared_Pointer_Iterator;
+188 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@189&#32;Declare&#32;and&#32;initialize&#32;Iterator&#32;for&#32;main_Process_Map_collectio&#32;*/</emphasis>
+189 &#32;&#32;&#32;&#32;std::map&lt;int,&#32;std::shared_ptr&lt;OSTM&gt;&gt;::iterator&#32;main_Process_Map_collection_Iterator;
+190 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@191&#32;Iterate&#32;through&#32;the&#32;working_Map_collection,&#32;for&#32;all&#32;associated&#32;copy&#32;objetcs&#32;*/</emphasis>
+191 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(working_Map_collection_Object_Shared_Pointer_Iterator&#32;=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.begin();&#32;working_Map_collection_Object_Shared_Pointer_Iterator&#32;!=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.end();&#32;working_Map_collection_Object_Shared_Pointer_Iterator++)&#32;{
+192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@193&#32;Find&#32;the&#32;Original&#32;object&#32;in&#32;the&#32;Shared&#32;global&#32;colection&#32;by&#32;the&#32;copy&#32;object&#32;unique&#32;ID&#32;*/</emphasis>
+193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;main_Process_Map_collection_Iterator&#32;=&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.find(working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second-&gt;Get_Unique_ID());
+194 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@195&#32;RUNTIME&#32;ERROR.&#32;If&#32;no&#32;object&#32;found&#32;!&#32;Null&#32;pointer&#32;can&#32;cause&#32;segmentation&#32;fault!!!&#32;*/</emphasis>
+195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(main_Process_Map_collection_Iterator&#32;==&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.end())
+196 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">throw</emphasis>&#32;std::runtime_error(std::string(<emphasis class="stringliteral">&quot;[RUNTIME&#32;ERROR&#32;:&#32;CAN&apos;T&#32;FIND&#32;OBJECT&#32;COMMIT&#32;FUNCTION]&quot;</emphasis>));
+198 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+199 
+200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@200&#32;Busy&#32;waiting&#32;WHILE&#32;try_lock&#32;function&#32;return&#32;false,&#32;If&#32;the&#32;object&#32;locked&#32;by&#32;another&#32;transaction,&#32;then&#32;waith&#32;until&#32;it&apos;s&#32;get&#32;unlocked,&#32;then&#32;lock&#32;it&#32;*/</emphasis>
+201 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">while</emphasis>(!(main_Process_Map_collection_Iterator-&gt;second)-&gt;try_lock());
+202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@203&#32;Compare&#32;the&#32;original&#32;global&#32;object&#32;version&#32;number&#32;with&#32;the&#32;working&#32;object&#32;version&#32;number.&#32;If&#32;the&#32;version&#32;number&#32;not&#32;same,&#32;then&#32;it&#32;cannot&#32;coomit*/</emphasis>
+203 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(main_Process_Map_collection_Iterator-&gt;second-&gt;Get_Version()&#32;&gt;&#32;working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second-&gt;Get_Version())&#32;{
+204 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@2005&#32;Set&#32;object&#32;boolean&#32;value&#32;to&#32;FALSE,&#32;cannot&#32;commit&#32;*/</emphasis>
+205 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second-&gt;Set_Can_Commit(<emphasis class="keyword">false</emphasis>);
+206 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@207&#32;Set&#32;canCommit&#32;false&#32;Indicate&#32;rollback&#32;must&#32;happen&#32;*/</emphasis>
+207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;can_Commit&#32;=&#32;<emphasis class="keyword">false</emphasis>;
+208 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">break</emphasis>;
+209 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;{
+210 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@210&#32;If&#32;version&#32;number&#32;are&#32;has&#32;same&#32;value&#32;set&#32;object&#32;boolean&#32;value&#32;to&#32;TRUE*/</emphasis>&#32;
+211 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second-&gt;Set_Can_Commit(<emphasis class="keyword">true</emphasis>);
+212 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+213 &#32;&#32;&#32;&#32;}
+214 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@214&#32;IF&#32;can_Commit&#32;boolean&#32;value&#32;setted&#32;for&#32;FALSE&#32;then&#32;rollback&#32;all&#32;copy&#32;object&#32;in&#32;the&#32;transaction&#32;to&#32;the&#32;Global&#32;object&#32;values*/</emphasis>
+215 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(!can_Commit)&#32;{
+216 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@217&#32;iterate&#32;through&#32;all&#32;transaction&#32;copy&#32;objects&#32;one&#32;by&#32;one&#32;*/</emphasis>
+217 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(working_Map_collection_Object_Shared_Pointer_Iterator&#32;=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.begin();&#32;working_Map_collection_Object_Shared_Pointer_Iterator&#32;!=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.end();&#32;working_Map_collection_Object_Shared_Pointer_Iterator++)&#32;{
+218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@219&#32;Find&#32;the&#32;Global&#32;shared&#32;object&#32;by&#32;the&#32;transaction&#32;copy&#32;object&#32;unique&#32;ID&#32;*/</emphasis>
+219 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;main_Process_Map_collection_Iterator&#32;&#32;=&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.find(working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second-&gt;Get_Unique_ID());
+220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@221&#32;Copy&#32;all&#32;Global&#32;shared&#32;original&#32;objects&#32;changed&#32;values&#32;by&#32;another&#32;transaction&#32;to&#32;the&#32;transaction&#32;copy&#32;objetcs&#32;*/</emphasis>
+221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second)-&gt;copy(working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second,&#32;main_Process_Map_collection_Iterator-&gt;second);
+222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@224&#32;When&#32;the&#32;transaction&#32;finish&#32;to&#32;change&#32;copying&#32;all&#32;values&#32;from&#32;original&#32;objects&#32;to&#32;local&#32;copy,&#32;then&#32;release&#32;all&#32;Global&#32;shared&#32;objects.&#32;@see&#32;_release_object_lock()&#32;*/</emphasis>
+224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_1a4c13d2015dc15d0f788fa9a1413f0463">_release_object_lock</link>();
+225 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@226&#32;Return&#32;FALSE&#32;to&#32;indicate&#32;the&#32;transaction&#32;must&#32;restart&#32;!*/</emphasis>
+226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">false</emphasis>;
+227 &#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;{
+228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@229&#32;Iterate&#32;through&#32;working_map_collection.&#32;If&#32;no&#32;conflict&#32;detected&#32;in&#32;early&#32;stage&#32;in&#32;the&#32;transaction,&#32;then&#32;commit&#32;all&#32;the&#32;local&#32;changes&#32;to&#32;shared&#32;Global&#32;objects&#32;*/</emphasis>
+229 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(working_Map_collection_Object_Shared_Pointer_Iterator&#32;=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.begin();&#32;working_Map_collection_Object_Shared_Pointer_Iterator&#32;!=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.end();&#32;working_Map_collection_Object_Shared_Pointer_Iterator++)&#32;{
+230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@231&#32;Find&#32;the&#32;Global&#32;shared&#32;object&#32;by&#32;the&#32;transaction&#32;copy&#32;object&#32;unique&#32;ID&#32;*/</emphasis>
+231 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;main_Process_Map_collection_Iterator&#32;=&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.find((working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second)-&gt;Get_Unique_ID());
+232 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@233&#32;If&#32;Global&#32;shared&#32;object&#32;found&#32;then&#32;commit&#32;changes&#32;*/</emphasis>
+233 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(main_Process_Map_collection_Iterator&#32;!=&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.end())&#32;{
+234 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@235&#32;Copy&#32;over&#32;local&#32;transaction&#32;object&#32;values&#32;to&#32;original&#32;Global&#32;object*/</emphasis>
+235 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(main_Process_Map_collection_Iterator-&gt;second)-&gt;copy(main_Process_Map_collection_Iterator-&gt;second,&#32;working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second);
+236 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@237&#32;Increase&#32;the&#32;version&#32;number&#32;in&#32;the&#32;original&#32;pointer*/</emphasis>
+237 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;main_Process_Map_collection_Iterator-&gt;second-&gt;increase_VersionNumber();
+238 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@195&#32;RUNTIME&#32;ERROR.&#32;If&#32;no&#32;object&#32;found&#32;!&#32;Null&#32;pointer&#32;can&#32;cause&#32;segmentation&#32;fault!!!&#32;*/</emphasis>
+239 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis class="keywordflow">else</emphasis>&#32;{&#32;<emphasis class="keywordflow">throw</emphasis>&#32;std::runtime_error(std::string(<emphasis class="stringliteral">&quot;[RUNTIME&#32;ERROR&#32;:&#32;CAN&apos;T&#32;FIND&#32;OBJECT&#32;COMMIT&#32;FUNCTION]&quot;</emphasis>));&#32;}
+240 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+241 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@242&#32;When&#32;the&#32;transaction&#32;finish&#32;with&#32;commit&#32;all&#32;changes,&#32;then&#32;release&#32;all&#32;Global&#32;shared&#32;objects.&#32;@see&#32;_release_object_lock()&#32;*/</emphasis>
+242 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_1a4c13d2015dc15d0f788fa9a1413f0463">_release_object_lock</link>();
+243 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@244&#32;Transaction&#32;object&#32;clean&#32;up&#32;all&#32;associated&#32;values,&#32;clean&#32;memory.&#32;@see&#32;th_exit()*/</emphasis>
+244 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="class_t_x_ae045534c4a9d39bd5c6ea2a39a372a79_1ae045534c4a9d39bd5c6ea2a39a372a79">th_exit</link>();
+245 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@246&#32;Return&#32;TRUE,&#32;indicate&#32;the&#32;transaction&#32;has&#32;finished.&#32;*/</emphasis>
+246 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<emphasis class="keyword">true</emphasis>;
+247 &#32;&#32;&#32;&#32;}
+248 }
+249 
+<link linkend="class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_1a4c13d2015dc15d0f788fa9a1413f0463">253 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_x_a4c13d2015dc15d0f788fa9a1413f0463_1a4c13d2015dc15d0f788fa9a1413f0463">TX::_release_object_lock</link>(){
+254 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@255&#32;Declare&#32;Iterator&#32;for&#32;working_Map_collection&#32;*/</emphasis>
+255 &#32;&#32;&#32;&#32;std::map&lt;&#32;int,&#32;std::shared_ptr&lt;OSTM&gt;&#32;&gt;::iterator&#32;working_Map_collection_Object_Shared_Pointer_Iterator;
+256 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@255&#32;Declare&#32;Iterator&#32;for&#32;working_Map_collection&#32;*/</emphasis>
+257 &#32;&#32;&#32;&#32;std::map&lt;int,&#32;std::shared_ptr&lt;OSTM&gt;&gt;::iterator&#32;main_Process_Map_collection_Iterator;
+258 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(working_Map_collection_Object_Shared_Pointer_Iterator&#32;=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.begin();&#32;working_Map_collection_Object_Shared_Pointer_Iterator&#32;!=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.end();&#32;working_Map_collection_Object_Shared_Pointer_Iterator++)&#32;{
+259 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@260&#32;Find&#32;Global&#32;shared&#32;original&#32;object&#32;by&#32;the&#32;transaction&#32;object&#32;unique&#32;ID*/</emphasis>
+260 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;main_Process_Map_collection_Iterator&#32;=&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.find((working_Map_collection_Object_Shared_Pointer_Iterator-&gt;second)-&gt;Get_Unique_ID());
+261 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@262&#32;If&#32;object&#32;found,&#32;then&#32;release&#32;lock*/</emphasis>
+262 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(main_Process_Map_collection_Iterator&#32;!=&#32;<link linkend="class_t_x_a1a45d726894190695314464d7cd97c29_1a1a45d726894190695314464d7cd97c29">TX::main_Process_Map_collection</link>.end())&#32;{
+263 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@264&#32;Release&#32;object&#32;lock&#32;*/</emphasis>
+264 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;(main_Process_Map_collection_Iterator)-&gt;second-&gt;unlock_Mutex();
+265 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;
+266 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+267 }
+268 
+<link linkend="class_t_x_a1384bdf12d795854b5d32e7f61ffbdb8_1a1384bdf12d795854b5d32e7f61ffbdb8">272 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_x_a1384bdf12d795854b5d32e7f61ffbdb8_1a1384bdf12d795854b5d32e7f61ffbdb8">TX::_increase_tx_nesting</link>()&#32;{
+273 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@274&#32;Increase&#32;transaction&#32;nesting&#32;level&#32;*/</emphasis>
+274 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_1ae8f413fd7f4fea322e7ad3c668f9898e">_tx_nesting_level</link>&#32;+=&#32;1;
+275 }
+<link linkend="class_t_x_aa3ac499f576326588628ade96b27b4b1_1aa3ac499f576326588628ade96b27b4b1">279 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_x_aa3ac499f576326588628ade96b27b4b1_1aa3ac499f576326588628ade96b27b4b1">TX::_decrease_tx_nesting</link>()&#32;{
+280 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@281&#32;Decrease&#32;transaction&#32;nesting&#32;level&#32;*/</emphasis>
+281 &#32;&#32;&#32;&#32;this-&gt;<link linkend="class_t_x_ae8f413fd7f4fea322e7ad3c668f9898e_1ae8f413fd7f4fea322e7ad3c668f9898e">_tx_nesting_level</link>&#32;-=&#32;1;
+282 ;
+283 }
+<link linkend="class_t_x_ae9bf97930c4670f59d334b345353a71e_1ae9bf97930c4670f59d334b345353a71e">287 </link><emphasis class="keywordtype">int</emphasis>&#32;<link linkend="class_t_x_ae9bf97930c4670f59d334b345353a71e_1ae9bf97930c4670f59d334b345353a71e">TX::getTest_counter</link>()&#32;{
+288 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@289&#32;return&#32;class&#32;level&#32;value&#32;hold&#32;by&#32;test_counter&#32;variable&#32;*/</emphasis>
+289 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_t_x_a25838234aab99ae891a90eb8623a8b3c_1a25838234aab99ae891a90eb8623a8b3c">TX::test_counter</link>;
+290 }
+<link linkend="class_t_x_a9eba04944d449285905b60ec47223cff_1a9eba04944d449285905b60ec47223cff">294 </link><emphasis class="keyword">const</emphasis>&#32;std::thread::id&#32;<link linkend="class_t_x_a9eba04944d449285905b60ec47223cff_1a9eba04944d449285905b60ec47223cff">TX::_get_tx_number</link>()<emphasis class="keyword">&#32;const&#32;</emphasis>{
+295 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@296&#32;Return&#32;the&#32;transaction&#32;nuber&#32;*/</emphasis>
+296 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;<link linkend="class_t_x_a145a1c74b521f277fe481971a930b249_1a145a1c74b521f277fe481971a930b249">transaction_Number</link>;
+297 }
+<link linkend="class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_1a3f5671423cb7b9f9c98f8a25f2a4b545">301 </link>std::map&lt;&#32;int,&#32;int&#32;&gt;&#32;<link linkend="class_t_x_a3f5671423cb7b9f9c98f8a25f2a4b545_1a3f5671423cb7b9f9c98f8a25f2a4b545">TX::get_thread_Map</link>()&#32;{
+302 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@303&#32;initialize&#32;empty&#32;map&#32;hold&#32;int&#32;key&#32;and&#32;values*/</emphasis>
+303 &#32;&#32;&#32;&#32;std::map&lt;&#32;int,&#32;int&#32;&gt;&#32;thread_Map;
+304 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@305&#32;Return&#32;the&#32;map*/</emphasis>
+305 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">return</emphasis>&#32;thread_Map;
+306 }
+307 
+<link linkend="class_t_x_a3d96ed91eb9ec73e16589f705661c5a7_1a3d96ed91eb9ec73e16589f705661c5a7">311 </link><emphasis class="keywordtype">void</emphasis>&#32;<link linkend="class_t_x_a3d96ed91eb9ec73e16589f705661c5a7_1a3d96ed91eb9ec73e16589f705661c5a7">TX::_print_all_tx</link>()&#32;{
+312 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@313&#32;initialise&#32;Iterator&#32;*/</emphasis>
+313 &#32;&#32;&#32;&#32;std::map&lt;&#32;int,&#32;std::shared_ptr&lt;OSTM&gt;&#32;&gt;::iterator&#32;it;
+314 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@315&#32;getppid()&#32;return&#32;the&#32;actual&#32;main&#32;process&#32;thread&#32;id,&#32;I&#32;used&#32;it&#32;to&#32;associate&#32;the&#32;Transactionas&#32;with&#32;the&#32;main&#32;processes&#32;*/</emphasis>
+315 &#32;&#32;&#32;&#32;pid_t&#32;ppid&#32;=&#32;getppid();
+316 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;&apos;317&#32;initialize&#32;and&#32;assign&#32;Iterator&#32;to&#32;process_map_collection,&#32;by&#32;the&#32;main&#32;process&#32;id&#32;(ppid)&#32;*/</emphasis>
+317 &#32;&#32;&#32;&#32;std::map&lt;pid_t,&#32;std::map&lt;&#32;int,&#32;int&#32;&gt;&gt;::iterator&#32;process_map_collection_Iterator&#32;=&#32;<link linkend="class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f">TX::process_map_collection</link>.find(ppid);
+318 &#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@319&#32;If&#32;there&#32;is&#32;an&#32;entry&#32;associated&#32;with&#32;the&#32;process&#32;then&#32;print&#32;out&#32;all&#32;transactions.&#32;*/</emphasis>
+319 &#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>&#32;(process_map_collection_Iterator&#32;!=&#32;<link linkend="class_t_x_a2e3cd2f52fd93cf6ef3eb3c1cb830b9f_1a2e3cd2f52fd93cf6ef3eb3c1cb830b9f">TX::process_map_collection</link>.end())&#32;{
+320 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@321&#32;Iterate&#32;through&#32;process_map_collection*/</emphasis>
+321 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">for</emphasis>&#32;(<emphasis class="keyword">auto</emphasis>&#32;current&#32;=&#32;process_map_collection_Iterator-&gt;second.begin();&#32;current&#32;!=&#32;process_map_collection_Iterator-&gt;second.end();&#32;++current)&#32;{
+322 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@323&#32;Assign&#32;value&#32;to&#32;iterator&#32;*/</emphasis>
+323 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;it&#32;=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.find(current-&gt;first);
+324 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@325&#32;If&#32;value&#32;found,&#32;then&#32;print&#32;it&#32;*/</emphasis>
+325 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="keywordflow">if</emphasis>(it&#32;!=&#32;<link linkend="class_t_x_a81aafda16e2f20e36ec6c68e584668ff_1a81aafda16e2f20e36ec6c68e584668ff">working_Map_collection</link>.end()){
+326 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis class="comment">/*&#32;@327&#32;print&#32;out&#32;the&#32;transaction&#32;number&#32;*/</emphasis>
+327 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis class="stringliteral">&quot;[Unique&#32;number&#32;]&#32;:&#32;&quot;</emphasis>&#32;&lt;&lt;it-&gt;second-&gt;Get_Unique_ID()&#32;&lt;&lt;&#32;std::endl;
+328 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;
+329 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+330 &#32;&#32;&#32;&#32;}
+331 }
+    </computeroutput></literallayout>
+</section>
