@@ -1,2 +1,2 @@
-The SHARED directory contains the lib_o_stm.dylib file.
-The STATIC directory contains the lib_o_stm.a
+The SHARED directory contains the lib_o_stm.dylib file.<br>
+The STATIC directory contains the lib_o_stm.a<br>
