@@ -13,7 +13,7 @@ HFILES = TM.h TX.h OSTM.h <YOUR HEADER FILES><br>
 <br>
 all:$(PROGRAM)<br>
 <br>
-###Rule for STATIC linking
+###Rule for STATIC linking<br>
 $(PROGRAM):$(CFILES) $(HFILES)<br>
 	$(CC) $(CFLAGS) *.cpp lib_o_stm.a  -o $(EXE)<br>
 clean:<br>

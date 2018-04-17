@@ -14,7 +14,7 @@ HFILES = TM.h TX.h OSTM.h  <YOUR HEADER FILES><br>
 <br>
 all:$(PROGRAM)<br>
 <br>
-###Rule for SHARED linking
+###Rule for SHARED linking<br>
 $(PROGRAM):$(CFILES) $(HFILES)<br>
 	$(CC) $(CFLAGS) *.cpp -I -L /usr/lib/lib_o_stm.so  -o $(EXE)	<br>
 clean:<br>
